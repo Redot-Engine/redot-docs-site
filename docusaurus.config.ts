@@ -43,8 +43,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/redot-engine/redot-docs-site/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/redot-engine/redot-docs-site/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -57,7 +56,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: 'Redot Engine Docs',

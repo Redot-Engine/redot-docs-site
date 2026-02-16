@@ -1,30 +1,215 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Redot Engine Theme - Dark Mode Only
+ * Matching the Blazor website styling
  */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #F28C38;
+  --ifm-color-primary-dark: #d97d2e;
+  --ifm-color-primary-darker: #cc7529;
+  --ifm-color-primary-darkest: #a85e21;
+  --ifm-color-primary-light: #f5984c;
+  --ifm-color-primary-lighter: #f6a058;
+  --ifm-color-primary-lightest: #f9b77a;
+  
+  --ifm-background-color: #0e0e0e;
+  --ifm-background-surface-color: #0e0e0e;
+  
+  --ifm-navbar-background-color: #0a0a0a;
+  --ifm-footer-background-color: #050505;
+  
+  --ifm-font-family-base: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --ifm-heading-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(242, 140, 56, 0.1);
+  
+  --ifm-color-emphasis-300: rgba(255, 255, 255, 0.08);
+  --ifm-color-emphasis-400: rgba(255, 255, 255, 0.1);
+  --ifm-color-emphasis-600: rgba(255, 255, 255, 0.5);
+  --ifm-color-emphasis-700: rgba(255, 255, 255, 0.6);
+  
+  --ifm-toc-border-color: rgba(255, 255, 255, 0.08);
+  --ifm-hr-border-color: rgba(255, 255, 255, 0.08);
+  --ifm-color-secondary: rgba(255, 255, 255, 0.5);
+  
+  --ifm-link-color: #F28C38;
+  --ifm-link-hover-color: #f5984c;
+  
+  --ifm-menu-color: rgba(255, 255, 255, 0.7);
+  --ifm-menu-color-active: #F28C38;
+  --ifm-menu-color-background-hover: rgba(255, 255, 255, 0.04);
+  --ifm-menu-color-background-active: rgba(242, 140, 56, 0.1);
+  
+  --ifm-sidebar-background-color: #0a0a0a;
+  
+  --ifm-card-background-color: #0a0a0a;
+  
+  --ifm-global-spacing: 1.5rem;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+html {
+  background-color: #0e0e0e;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #F28C38;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar__link {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s ease;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: #F28C38;
+}
+
+.footer {
+  background-color: #050505;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer__link-item {
+  color: rgba(255, 255, 255, 0.5) !important;
+  transition: color 0.2s ease;
+}
+
+.footer__link-item:hover {
+  color: #F28C38 !important;
+}
+
+.menu__link {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.menu__link:hover {
+  color: #F28C38;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.menu__link--active {
+  color: #F28C38;
+  background-color: rgba(242, 140, 56, 0.1);
+}
+
+.table-of-contents__link {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s ease;
+}
+
+.table-of-contents__link:hover,
+.table-of-contents__link--active {
+  color: #F28C38;
+}
+
+.theme-doc-sidebar-container {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card {
+  background-color: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(242, 140, 56, 0.12);
+  border-color: rgba(242, 140, 56, 0.3);
+}
+
+.pagination-nav__link {
+  background-color: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: border-color 0.2s ease;
+}
+
+.pagination-nav__link:hover {
+  border-color: rgba(242, 140, 56, 0.3);
+}
+
+.pagination-nav__sublabel {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.pagination-nav__label {
+  color: #F28C38;
+}
+
+button[class*='toggle_'] {
+  display: none !important;
+}
+
+.theme-doc-version-badge {
+  background-color: rgba(242, 140, 56, 0.15);
+  color: #F28C38;
+}
+
+.alert {
+  border-left-color: #F28C38;
+}
+
+.alert--info {
+  --ifm-alert-background-color: rgba(242, 140, 56, 0.1);
+  --ifm-alert-color: #F28C38;
+}
+
+.alert--warning {
+  --ifm-alert-background-color: rgba(255, 107, 107, 0.1);
+  --ifm-alert-color: #ff6b6b;
+}
+
+code {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.prism-code {
+  background-color: #0a0a0a !important;
+}
+
+::selection {
+  background-color: rgba(242, 140, 56, 0.3);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 768px) {
+  .navbar__link,
+  .menu__link {
+    min-height: 44px;
+  }
 }

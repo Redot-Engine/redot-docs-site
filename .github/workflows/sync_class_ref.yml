@@ -57,3 +57,19 @@ jobs:
         run: |
           ./.engine-src/doc/tools/make_md.py --color -o ./classes -l en ./.engine-src/doc/classes ./.engine-src/modules ./.engine-src/platform
 
+      - name: Submit a pull-request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: 'classref: Sync with current ${{ env.engine_rev }} branch (${{ steps.engine.outputs.rev_hash_short }})'
+          branch: 'classref/sync-${{ steps.engine.outputs.rev_hash_short }}'
+          add-paths: './classes'
+          delete-branch: true
+
+          # Configure the commit author.
+          author: 'Redot Organization <noreply@redotengine.org>'
+          committer: 'Redot Organization <noreply@redotengine.org>'
+
+          # Configure the pull-request.
+          title: 'classref: Sync with current ${{ env.engine_rev }} branch (${{ steps.engine.outputs.rev_hash_short }})'
+          body: 'Update Redot API online class reference to match the engine at https://github.com/Redot-Engine/redot-engine/commit/${{ steps.engine.outputs.rev_hash }} (`${{ env.engine_rev }}`).'
+          labels: 'area:class reference,bug,enhancement'

@@ -1,5 +1,7 @@
 import os
 import re
+import sys
+import argparse
 
 def convert_rst_to_md(rst_content):
     lines = rst_content.splitlines()
@@ -154,17 +156,29 @@ def convert_rst_to_md(rst_content):
     return result
 
 def main():
-    directory = 'docs/About'
+    parser = argparse.ArgumentParser(description='Convert RST files in a directory to Markdown.')
+    parser.add_argument('directory', help='Relative path to the directory containing RST files')
+    args = parser.parse_args()
+
+    directory = args.directory
+
+    if not os.path.isdir(directory):
+        print(f"Error: {directory} is not a valid directory.")
+        sys.exit(1)
+
     for filename in os.listdir(directory):
         if filename.endswith('.rst'):
             rst_path = os.path.join(directory, filename)
             md_path = os.path.join(directory, filename[:-4] + '.md')
             print(f"Converting {rst_path} to {md_path}")
-            with open(rst_path, 'r', encoding='utf-8') as f:
-                content = f.read()
-            md_content = convert_rst_to_md(content)
-            with open(md_path, 'w', encoding='utf-8') as f:
-                f.write(md_content)
+            try:
+                with open(rst_path, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                md_content = convert_rst_to_md(content)
+                with open(md_path, 'w', encoding='utf-8') as f:
+                    f.write(md_content)
+            except Exception as e:
+                print(f"Failed to convert {rst_path}: {e}")
 
 if __name__ == '__main__':
     main()

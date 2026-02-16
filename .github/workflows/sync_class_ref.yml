@@ -1,0 +1,59 @@
+name: Sync Class Reference
+
+on:
+  workflow_dispatch:
+  # Scheduled updates only run on the default/master branch.
+  # Other branches need to be run manually (usually after a new release for that branch).
+  schedule:
+    # Run it at (European) night time every Saturday.
+    # The offset is there to try and avoid high load times.
+    - cron: '15 3 * * 6'
+
+# Make sure jobs cannot overlap.
+concurrency:
+  group: classref-sync-ci-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    # Don't run scheduled runs on forks unless the CI_SYNC_CLASS_REF_CRON variable is set to 'true'.
+    # Manual runs can still be triggered as normal.
+    name: Update class reference files based on the engine revision
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      engine_rev: 'master'
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout the documentation repository
+        uses: actions/checkout@v4
+
+      - name: Checkout the engine repository
+        uses: actions/checkout@v4
+        with:
+          repository: 'Redot-Engine/redot-engine'
+          # Use the appropriate branch for the documentation version.
+          ref: ${{ env.engine_rev }}
+          path: './.engine-src'
+
+      - name: Store the engine revision
+        id: 'engine'
+        run: |
+          cd ./.engine-src
+          hash=$(git rev-parse HEAD)
+          hash_short=$(git rev-parse --short HEAD)
+          echo "Checked out redot-engine/redot-engine at $hash"
+          echo "rev_hash=$hash" >> $GITHUB_OUTPUT
+          echo "rev_hash_short=$hash_short" >> $GITHUB_OUTPUT
+
+      - name: Remove old documentation
+        run: |
+          rm ./docs/Classes/class_*.md
+
+      - name: Build new documentation
+        run: |
+          ./.engine-src/doc/tools/make_md.py --color -o ./classes -l en ./.engine-src/doc/classes ./.engine-src/modules ./.engine-src/platform
+

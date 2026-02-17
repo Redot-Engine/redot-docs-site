@@ -183,12 +183,6 @@ pkg_add \
 
 </TabItem>
 
-</Tabs>
-
-        .. hint::
-
-            For audio support, you can optionally install ``pulseaudio``.
-
 <TabItem value="openbsd" label="OpenBSD">
 
 pkg_add \
@@ -256,6 +250,8 @@ eopkg install -y \
   pulseaudio-devel
 
 </TabItem>
+
+</Tabs>
 
 ## Compiling
 

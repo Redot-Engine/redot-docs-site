@@ -17,7 +17,7 @@ Before you get started, make sure that you have:
 
 ``python3 -m pip`` (Unix) or  ``py -m pip`` (Windows) instead of ``pip3``.
 If both approaches fail, `make sure that you have pip3 installed
-&lt;https://pip.pypa.io/en/stable/installation/&gt;`__.
+<https://pip.pypa.io/en/stable/installation/>`__.
 
 :::
 
@@ -28,52 +28,59 @@ If both approaches fail, `make sure that you have pip3 installed
     a.  Create the virtual environment:
 
 <Tabs>
+<TabItem value="windows" label="Windows">
 
+```pwsh
+py -m venv godot-docs-venv
+```
+
+</TabItem>
+<TabItem value="other" label="Other platforms">
+
+```sh
+python3 -m venv godot-docs-venv
+```
+
+</TabItem>
 </Tabs>
-
-            .. group-tab:: Windows
-
-                .. code:: pwsh
-
-                    py -m venv godot-docs-venv
-
-            .. group-tab:: Other platforms
-
-                .. code:: sh
-
-                    python3 -m venv godot-docs-venv
 
     b.  Activate the virtual environment:
 
 <Tabs>
+<TabItem value="windows" label="Windows">
 
-            .. group-tab:: Windows
+```pwsh
+godot-docs-venv\Scripts\activate.bat
+```
 
-                .. code:: pwsh
+</TabItem>
+<TabItem value="other" label="Other platforms">
 
-                    godot-docs-venv\Scripts\activate.bat
+```sh
+source godot-docs-venv/bin/activate
+```
 
-            .. group-tab:: Other platforms
-
-                .. code:: sh
-
-                    source godot-docs-venv/bin/activate
+</TabItem>
+</Tabs>
 
     c.  *(Optional)* Update pre-installed packages:
 
 <Tabs>
+<TabItem value="windows" label="Windows">
 
-            .. group-tab:: Windows
+```pwsh
+py -m pip install --upgrade pip setuptools
+```
 
-                .. code:: pwsh
+</TabItem>
+<TabItem value="other" label="Other platforms">
 
-                    py -m pip install --upgrade pip setuptools
+```sh
+pip3 install --upgrade pip setuptools
+```
 
-            .. group-tab:: Other platforms
-
-                .. code:: sh
-
-                    pip3 install --upgrade pip setuptools
+</TabItem>
+</Tabs>
 
 2.  Clone the docs repo:
 
@@ -147,18 +154,21 @@ which slows it down.
 If you have at least 16 GB of RAM, you can speed up compilation by running:
 
 <Tabs>
+<TabItem value="windows" label="Windows">
 
-    .. group-tab:: Windows
+```pwsh
+set SPHINXOPTS=-j2 && make html
+```
 
-        .. code:: pwsh
+</TabItem>
+<TabItem value="other" label="Other platforms">
 
-            set SPHINXOPTS=-j2 && make html
+```sh
+make html SPHINXOPTS=-j2
+```
 
-    .. group-tab:: Other platforms
-
-        .. code:: sh
-
-            make html SPHINXOPTS=-j2
+</TabItem>
+</Tabs>
 
 You can use ``-j auto`` to use all available CPU threads, but this can use a lot
 of RAM if you have a lot of CPU threads. For instance, on a system with 32 CPU
@@ -172,9 +182,3 @@ You can specify a list of files to build, which can greatly speed up compilation
 .. code:: sh
 
     make html FILELIST='classes/class_node.rst classes/class_resource.rst'
-
-</Tabs>
-
-</Tabs>
-
-</Tabs>

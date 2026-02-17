@@ -406,9 +406,9 @@ aforementioned ``-j`` option for all future builds:
 
 </TabItem>
 
-#### SCU (single compilation unit) build
-
 </Tabs>
+
+#### SCU (single compilation unit) build
 
 Regular builds tend to be bottlenecked by including large numbers of headers
 in each compilation translation unit. Primarily to speed up development (rather

@@ -70,6 +70,7 @@ jobs:
           labels: 'area:class reference,bug,enhancement'
 
       - name: Commit additional changes
+        uses: actions/checkout@v4
         run: |
           git checkout classref/sync-${{ steps.engine.outputs.rev_hash_short }}
           git config user.name Redot Organization

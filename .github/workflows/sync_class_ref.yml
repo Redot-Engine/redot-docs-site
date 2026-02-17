@@ -32,6 +32,11 @@ jobs:
     steps:
       - name: Checkout the documentation repository
         uses: actions/checkout@v4
+        with:
+          repository: 'Redot-Engine/redot-engine'
+          # Use the appropriate branch for the documentation version.
+          ref: ${{ env.engine_rev }}
+          path: './.engine-doc'
 
       - name: Checkout the engine repository
         uses: actions/checkout@v4
@@ -53,19 +58,18 @@ jobs:
 
       - name: Remove old documentation
         run: |
-          rm ${{ github.workspace }}/docs/Classes/class_*.md
+          rm ${{ github.workspace }}/.engine-doc/docs/Classes/class_*.md
 
       - name: Build new documentation
         run: |
-          ./.engine-src/doc/tools/make_md.py --color -o ${{ github.workspace }}/class_md -l en ./.engine-src/doc/classes ./.engine-src/modules ./.engine-src/platform
-          cp -r ${{ github.workspace }}/class_md ${{ github.workspace }}/docs/Classes
+          ./.engine-src/doc/tools/make_md.py --color -o ${{ github.workspace }}/.engine-doc/docs/Classes -l en ./.engine-src/doc/classes ./.engine-src/modules ./.engine-src/platform
 
       - name: Submit a pull-request
         uses: peter-evans/create-pull-request@v7
         with:
           commit-message: 'classref: Sync with current ${{ env.engine_rev }} branch (${{ steps.engine.outputs.rev_hash_short }})'
           branch: 'classref/sync-${{ steps.engine.outputs.rev_hash_short }}'
-          add-paths: '${{ github.workspace }}/docs/Classes'
+          add-paths: '${{ github.workspace }}/.engine-doc/docs/Classes'
           delete-branch: true
 
           # Configure the commit author.
@@ -76,13 +80,3 @@ jobs:
           title: 'classref: Sync with current ${{ env.engine_rev }} branch (${{ steps.engine.outputs.rev_hash_short }})'
           body: 'Update Redot API online class reference to match the engine at https://github.com/Redot-Engine/redot-engine/commit/${{ steps.engine.outputs.rev_hash }} (`${{ env.engine_rev }}`).'
           labels: 'area:class reference,bug,enhancement'
-
-      - name: Commit additional changes
-        run: |
-          git checkout classref/sync-${{ steps.engine.outputs.rev_hash_short }}
-          git config user.name Redot Organization
-          git config user.email noreply@redotengine.org
-          cp -r ${{ github.workspace }}/class_md ${{ github.workspace }}/docs/Classes
-          git add ${{ github.workspace }}/docs/Classes
-          git commit -m "classref: Sync with current ${{ env.engine_rev }} branch (${{ steps.engine.outputs.rev_hash_short }})"
-          git push

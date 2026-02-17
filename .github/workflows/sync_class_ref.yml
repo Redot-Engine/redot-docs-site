@@ -83,5 +83,6 @@ jobs:
           git config user.name Redot Organization
           git config user.email noreply@redotengine.org
           cp -r ${{ github.workspace }}/class_md ${{ github.workspace }}/docs/Classes
+          git add ${{ github.workspace }}/docs/Classes
           git commit -m "classref: Sync with current ${{ env.engine_rev }} branch (${{ steps.engine.outputs.rev_hash_short }})"
           git push

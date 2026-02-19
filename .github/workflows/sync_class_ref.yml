@@ -62,6 +62,9 @@ jobs:
       - name: Submit a pull-request
         uses: peter-evans/create-pull-request@v7
         with:
+          # Use a PAT/App token instead of GITHUB_TOKEN so PR events can trigger other workflows.
+          # Maintainers must add CLASSREF_PR_TOKEN secret with contents:write + pull_requests:write.
+          token: '${{ secrets.CLASSREF_PR_TOKEN }}'
           commit-message: 'classref: Sync with current ${{ env.engine_rev }} branch (${{ steps.engine.outputs.rev_hash_short }})'
           branch: 'classref/sync-${{ steps.engine.outputs.rev_hash_short }}'
           add-paths: '${{ github.workspace }}/docs/Classes'

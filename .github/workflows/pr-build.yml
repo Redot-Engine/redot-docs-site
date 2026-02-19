@@ -23,9 +23,21 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      - name: Prepare PR metadata artifact
+        run: |
+          mkdir -p pr-metadata
+          echo "${{ github.event.pull_request.number }}" > pr-metadata/pr_number.txt
+
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: docusaurus-build
           path: build
+          retention-days: 1
+
+      - name: Upload PR metadata artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-metadata
+          path: pr-metadata
           retention-days: 1

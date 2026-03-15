@@ -3,7 +3,7 @@
 # Import plugins
 
 :::note
-
+This tutorial assumes you already know how to make generic plugins. If
 in doubt, refer to the [doc_making_plugins](doc_making_plugins) page. This also
 assumes you are acquainted with Godot's import system.
 
@@ -129,7 +129,7 @@ plugin can understand. If an extension is recognized by more than one plugin,
 the user can select which one to use when importing the files.
 
 :::tip
-
+Common extensions like ``.json`` and ``.txt`` might be used by many
 plugins. Also, there could be files in the project that are just data
 for the game and should not be imported. You have to be careful when
 importing to validate the data. Never expect the file to be well-formed.
@@ -167,7 +167,7 @@ In our case it's a [class_StandardMaterial3D](class_StandardMaterial3D), which c
 objects.
 
 :::note
-
+If you need to import different types from the same extension, you
 have to create multiple import plugins. You can abstract the import
 code on another file to avoid duplication in this regard.
 
@@ -268,7 +268,7 @@ options and the presets only change the value you may want to create the array
 of options first and then change it based on the preset.
 
 :::warning
-
+The ``_get_import_options`` method is called even if you don't
 define presets (by making ``_get_preset_count`` return zero). You
 have to return an array even it's empty, otherwise you can get
 errors.

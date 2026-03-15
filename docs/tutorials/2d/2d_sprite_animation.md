@@ -20,6 +20,9 @@ with [AnimationPlayer ](class_AnimationPlayer) and the *Animation*
 property of [Sprite2D ](class_Sprite2D).
 
 :::note
+Art for the following examples by https://opengameart.org/users/ansimuz and tgfcoder.
+
+:::
 
 ## Individual images with AnimatedSprite2D
 
@@ -38,7 +41,7 @@ with the following nodes:
 ![Image](img/2d_animation_tree1.webp)
 
 :::note
-
+The root node could also be :ref:`Area2D <class_Area2D>` or
 [RigidBody2D ](class_RigidBody2D). The animation will still be
 made in the same way. Once the animation is completed, you can
 assign a shape to the CollisionShape2D. See
@@ -189,7 +192,7 @@ setting up your scene tree:
 ![Image](img/2d_animation_tree2.webp)
 
 :::note
-
+The root node could also be :ref:`Area2D <class_Area2D>` or
 [RigidBody2D ](class_RigidBody2D). The animation will still be
 made in the same way. Once the animation is completed, you can
 assign a shape to the CollisionShape2D. See
@@ -290,7 +293,7 @@ public partial class Character : CharacterBody2D
 </Tabs>
 
 :::note
-
+If updating both an animation and a separate property at once
 (for example, a platformer may update the sprite's ``h_flip``/``v_flip``
 properties when a character turns while starting a 'turning' animation),
 it's important to keep in mind that ``play()`` isn't applied instantly.
@@ -310,5 +313,3 @@ but it provides additional functionality, since you can also
 animate other properties like position or scale.
 The class ``AnimationPlayer`` can also be used with an ``AnimatedSprite2D``.
 Experiment to see what works best for your needs.
-
-:::

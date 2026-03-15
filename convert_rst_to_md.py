@@ -169,29 +169,38 @@ def convert_rst_to_md(rst_content):
         
 
         # Admonitions
-        match_admonition = re.match(r'^\s*\.\.\s+(note|warning|seealso|important|tip)::', line, re.IGNORECASE)
+        match_admonition = re.match(r'^\s*\.\.\s+(note|warning|seealso|important|tip)::\s*(.*)', line, re.IGNORECASE)
         if match_admonition:
             adm_type = match_admonition.group(1).lower()
+            content_on_same_line = match_admonition.group(2).strip()
             if adm_type == 'seealso': adm_type = 'info'
             md_lines.append('')
             md_lines.append(f':::{adm_type}')
-            md_lines.append('')
+            if content_on_same_line:
+                md_lines.append(content_on_same_line)
+            else:
+                md_lines.append('')
             i += 1
-            while i < len(lines) and not lines[i].strip():
-                i += 1
-            if i < len(lines):
-                # We need to process the admonition block as well.
-                indent = len(lines[i]) - len(lines[i].lstrip())
-                block = []
-                while i < len(lines) and (not lines[i].strip() or (len(lines[i]) - len(lines[i].lstrip()) >= indent)):
-                    block.append(lines[i]) 
-                    i += 1
-                
-                # Recursively process the block content
-                processed_block = convert_rst_to_md("\n".join(l[indent:] for l in block))
-                # Skip any added Tabs import from recursion
-                processed_lines = [l for l in processed_block.splitlines() if not l.startswith('import ')]
-                md_lines.extend(processed_lines)
+            
+            # Find the first non-empty line to determine indentation
+            next_i = i
+            while next_i < len(lines) and not lines[next_i].strip():
+                next_i += 1
+            
+            if next_i < len(lines):
+                indent = len(lines[next_i]) - len(lines[next_i].lstrip())
+                if indent > 0:
+                    i = next_i
+                    block = []
+                    while i < len(lines) and (not lines[i].strip() or (len(lines[i]) - len(lines[i].lstrip()) >= indent)):
+                        block.append(lines[i]) 
+                        i += 1
+                    
+                    # Recursively process the block content
+                    processed_block = convert_rst_to_md("\n".join(l[indent:] for l in block))
+                    # Skip any added Tabs import from recursion
+                    processed_lines = [l for l in processed_block.splitlines() if not l.startswith('import ')]
+                    md_lines.extend(processed_lines)
 
             md_lines.append('')
             md_lines.append(':::')

@@ -16,6 +16,9 @@ flexibility, provide a solid foundation for creating engaging 2D games.
 This page will show you the 2D workspace and how you can get to know it.
 
 :::tip
+If you would like to get an introduction to 3D, see :ref:`doc_introduction_to_3d`.
+
+:::
 
 ## 2D workspace
 
@@ -160,6 +163,9 @@ Use the three-dot menu for this:
   - Make Bone2D Node(s) from Node(s): Converts selected node(s) into Bone2D. 
 
 :::info
+To learn more about Skeletons, see :ref:`doc_cutout_animation`.
+
+:::
 
 - **Project Camera Override**: Temporarily replaces the active camera in the level 
   (e.g., the camera following the player) with the camera in the editor's viewport, allowing
@@ -238,7 +244,7 @@ dragging them all the way back to the ruler.
 You can also enable snapping to the created guides using the `Smart Snap` menu.
 
 :::note
-
+If you cannot create a line, or do not see previously created guides, make sure that
 they are visible by checking the `View` menu of the viewport. `Y` toggles their visibility, 
 by default. Also, make sure you have at least one node in the scene.
 
@@ -303,9 +309,6 @@ Then, you can drag a 3D scene as a child of the SubViewport:
 ![Image](img/3d_in_2d_demo_editor.webp)
 
 :::info
-
-:::
-
-:::
+You can check the demo on: `3D in 2D Viewport demo <https://godotengine.org/asset-library/asset/2804>`__.
 
 :::

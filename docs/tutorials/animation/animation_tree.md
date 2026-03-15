@@ -299,7 +299,7 @@ This problem can be solved by adding a Property track for Position as an initial
 ![Image](img/blending4.webp)
 
 :::note
-
+Be aware that the ``RESET`` animation exists to define the default pose when loading an object originally.
 It is assumed to have only one frame and is not expected to be played back using the timeline.
 
 :::

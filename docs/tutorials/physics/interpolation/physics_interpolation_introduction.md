@@ -106,7 +106,7 @@ physics tick X coordinate was 10 units, and the current physics tick X coordinat
 is 30 units.
 
 :::note
-
+Although the maths is explained here, you do not have to worry about the
 details, as this step will be performed for you. Under the hood, Godot
 may use more complex forms of interpolation, but linear interpolation is
 the easiest in terms of explanation.
@@ -163,7 +163,7 @@ Let's break that down:
   according to how far we are through the physics tick.
 
 :::note
-
+Although this example interpolates the position, the same thing can be
 done with the rotation and scale of objects. It is not necessary to know
 the details as Godot will do all this for you.
 
@@ -219,7 +219,7 @@ second). In some ways the second term is more accurate, because it can also be u
 to interpolate objects that are not driven by physics.
 
 :::tip
-
+Although physics interpolation is usually a good choice, there are
 exceptions where you may choose not to use Godot's built-in physics
 interpolation (or use it in a limited fashion). An example category is
 internet multiplayer games. Multiplayer games often receive tick or timing

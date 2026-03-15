@@ -261,7 +261,7 @@ the nodes' parameters in the running project.
 ![Image](img/overview_remote.webp)
 
 :::note
-
+Some editor settings related to debugging can be found inside
 the **Editor Settings**, under the **Network &gt; Debug** and **Debugger** sections.
 
 :::

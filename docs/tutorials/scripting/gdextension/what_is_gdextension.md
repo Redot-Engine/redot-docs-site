@@ -8,7 +8,7 @@ native [shared libraries ](https://en.wikipedia.org/wiki/Library_(computing)#Sha
 at runtime. You can use it to run native code without compiling it with the engine.
 
 :::note
-
+GDExtension is *not* a scripting language and has no relation to
 [GDScript ](doc_gdscript).
 
 :::

@@ -14,7 +14,7 @@ walking you through the process of writing a shader with both vertex and
 fragment functions. This tutorial targets absolute beginners to shaders.
 
 :::note
-
+If you have experience writing shaders and are just looking for an
 overview of how shaders work in Godot, see the [Shading Reference ](toc-shading-reference).
 
 :::

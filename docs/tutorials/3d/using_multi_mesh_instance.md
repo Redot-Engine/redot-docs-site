@@ -34,6 +34,9 @@ the scene. Your scene tree would look like this:
 ![Image](img/multimesh_scene_tree.png)
 
 :::note
+For simplicity's sake, this tutorial uses built-in primitives.
+
+:::
 
 Now you have everything ready. Select the MultiMeshInstance3D node and look at the
 toolbar, you should see an extra button called ``MultiMesh`` next to ``View``.
@@ -92,5 +95,3 @@ The end result should look like this:
 ![Image](img/multimesh_result.png)
 
 To change the result, repeat the previous steps with different parameters.
-
-:::

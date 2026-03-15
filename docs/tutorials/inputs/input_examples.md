@@ -13,7 +13,7 @@ of the most common scenarios, which you can use as starting points for your
 own projects.
 
 :::note
-
+For a detailed overview of how Godot's input event system works,
 see [doc_inputevent](doc_inputevent).
 
 :::
@@ -150,7 +150,7 @@ It inherits from the following classes:
 - [InputEventMouseButton ](class_InputEventMouseButton) - contains the index of the button that was pressed, whether it was a double-click, etc.
 
 :::tip
-
+It's a good idea to keep the class reference open while you're working
 with events so you can check the event type's available properties and
 methods.
 
@@ -285,7 +285,7 @@ public override void _Input(InputEvent @event)
 </Tabs>
 
 :::tip
-
+See :ref:`@GlobalScope_Key <enum_@GlobalScope_Key>` for a list of keycode
 constants.
 
 :::
@@ -353,7 +353,7 @@ public override void _Input(InputEvent @event)
 </Tabs>
 
 :::tip
-
+See :ref:`@GlobalScope_Key <enum_@GlobalScope_Key>` for a list of keycode
 constants.
 
 :::
@@ -510,7 +510,7 @@ a mouse click event, and [InputEventScreenDrag ](class_InputEventScreenDrag)
 works much the same as mouse motion.
 
 :::tip
-
+To test your touch events on a non-touchscreen device, open Project
 Settings and go to the "Input Devices/Pointing" section. Enable "Emulate
 Touch From Mouse" and your project will interpret mouse clicks and
 motion as touch events.

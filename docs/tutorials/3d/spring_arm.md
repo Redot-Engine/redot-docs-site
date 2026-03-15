@@ -36,7 +36,7 @@ This pyramid represents the **near plane** of the camera:
 ![Image](img/spring_arm_camera_shape.webp)
 
 :::note
-
+If the spring arm is given a specific shape, then that shape will **always** be used.
 The camera's shape is only used if the camera is a **direct child** of the spring arm.
 
 If no shape is provided and the camera is not a direct child, the spring arm will fall back to using a ray cast which is inaccurate for camera collisions and not recommended.
@@ -56,6 +56,9 @@ When the shape hits something, the camera will be placed at or near the collisio
 Let's add a spring arm camera setup to the platformer demo.
 
 :::note
+You can download the Platformer 3D demo on `GitHub <https://github.com/godotengine/godot-demo-projects/tree/master/3d/platformer>`_ or using the `Asset Library <https://godotengine.org/asset-library/asset/2748>`_.
+
+:::
 
 In general, for a third-person camera setup, you will have three nodes as children of the node that you're following:
 
@@ -78,7 +81,7 @@ Give the spring arm a length of ``3`` so that it is placed behind the character:
 ![Image](img/spring_arm_length_setup.webp)
 
 :::note
-
+Leave the **Shape** of the spring arm as ``<empty>``. This way, it will use the camera's pyramid shape.
 If you want, you can also try other shapes - a sphere is a common choice since it slides smoothly along edges.
 
 :::
@@ -115,5 +118,3 @@ Run the game and notice that mouse movement now rotates the camera around the ch
 <video src="/video/spring_arm_camera.webm" controls autoplay loop muted>
   Camera attached to a spring arm colliding with walls
 </video>
-
-:::

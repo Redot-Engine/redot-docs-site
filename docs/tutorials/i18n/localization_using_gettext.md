@@ -6,7 +6,7 @@ also supports loading translation files written in the GNU gettext
 format (text-based ``.po`` and compiled ``.mo`` since Godot 4.0).
 
 :::note
-
+For an introduction to gettext, check out
 [A Quick Gettext Tutorial ](https://www.labri.fr/perso/fleury/posts/programming/a-quick-gettext-tutorial.html).
 It's written with C projects in mind, but much of the advice
 also applies to Godot (with the exception of ``xgettext``).
@@ -156,7 +156,7 @@ in the file dialog. The locale will be inferred from the
 ``"Language: &lt;code&gt;\n"`` property in the messages file.
 
 :::note
-
+See :ref:`doc_internationalizing_games` for more information on
 importing and testing translations in Godot.
 
 :::

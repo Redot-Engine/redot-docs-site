@@ -31,7 +31,7 @@ After profiling, you can look back at the results for a frame.
    Results of a profile of one of the demo projects.
 
 :::note
-
+We can see the cost of built-in processes such as physics and audio,
 as well as seeing the cost of our own scripting functions at the
 bottom.
 

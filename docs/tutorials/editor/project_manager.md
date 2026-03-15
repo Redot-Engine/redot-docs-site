@@ -39,7 +39,7 @@ To create a new project:
 ![Image](img/editor_ui_intro_project_manager_04.webp)
 
 :::note
-
+You can optionally choose a version control system. Currently, only
 [git ](https://git-scm.com)_ is supported and it needs the Godot Git Plugin to be installed, 
 either manually or using the [Asset Library ](doc_using_assetlib). To learn more about the Godot Git Plugin, see its [wiki ](https://github.com/godotengine/godot-git-plugin/wiki)_.
 

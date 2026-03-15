@@ -1898,7 +1898,7 @@ vec2 **textureQueryLod**\ (\ |gsampler3D| s, vec3 p) [🔗](shader_func_textureQ
 vec2 **textureQueryLod**\ (\ samplerCube s, vec3 p) [🔗](shader_func_textureQueryLod)
 
 :::note
-
+Available only in the fragment shader.
 Compute the level-of-detail that would be used to sample from a texture.
 
 The mipmap array(s) that would be accessed is returned in the x component of
@@ -2288,7 +2288,7 @@ vec4(Sample_i0_j1(p, base).comps,
 |vec_type| **dFdx**\ (\ |vec_type| p) [🔗](shader_func_dFdx)
 
 :::note
-
+Available only in the fragment shader.
 Returns the partial derivative of ``p`` with respect to the window x coordinate using local differencing.
 
 Returns either [dFdxCoarse](shader_func_dFdxCoarse) or [dFdxFine](shader_func_dfdxFine).
@@ -2306,13 +2306,14 @@ have undefined results, as do mixed-order derivatives such as ``dFdx(dFdy(n))``.
     The expression of which to take the partial derivative.
 
 :::note
+It is assumed that the expression ``p`` is continuous and therefore expressions evaluated via non-uniform control flow may be undefined.
+
+:::
 
 :return:
     The partial derivative of ``p``.
 
 https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dFdx.xhtml
-
-:::
 
 :::
 
@@ -2349,7 +2350,7 @@ have undefined results, as do mixed-order derivatives such as ``dFdx(dFdy(n))``.
         The expression of which to take the partial derivative.
 
 :::note
-
+It is assumed that the expression ``p`` is continuous and therefore
 expressions evaluated via non-uniform control flow may be undefined.
 
 :::
@@ -2388,7 +2389,7 @@ have undefined results, as do mixed-order derivatives such as ``dFdx(dFdy(n))``.
         The expression of which to take the partial derivative.
 
 :::note
-
+It is assumed that the expression ``p`` is continuous and therefore expressions evaluated via non-uniform control flow may be undefined.
 :return:
     The partial derivative of ``p``.
 
@@ -2404,7 +2405,7 @@ https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dFdxFine.xhtml
 |vec_type| **dFdy**\ (\ |vec_type| p) [🔗](shader_func_dFdy)
 
 :::note
-
+Available only in the fragment shader.
 Returns the partial derivative of ``p`` with respect to the window y coordinate using local differencing.
 
 Returns either [dFdyCoarse](shader_func_dFdyCoarse) or [dFdyFine](shader_func_dfdyFine).
@@ -2422,13 +2423,14 @@ have undefined results, as do mixed-order derivatives such as ``dFdx(dFdy(n))``.
     The expression of which to take the partial derivative.
 
 :::note
+It is assumed that the expression ``p`` is continuous and therefore expressions evaluated via non-uniform control flow may be undefined.
+
+:::
 
 :return:
     The partial derivative of ``p``.
 
 https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dFdy.xhtml
-
-:::
 
 :::
 
@@ -2453,18 +2455,19 @@ Not available when using the Compatibility renderer.
     would be allowed for the corresponding dFdyFine and dFdyFine functions.
 
 :::warning
-
+Expressions that imply higher order derivatives such as ``dFdx(dFdx(n))`` have undefined results, as do mixed-order derivatives such as ``dFdx(dFdy(n))``.
 :param p:
     The expression of which to take the partial derivative.
 
 :::note
+It is assumed that the expression ``p`` is continuous and therefore expressions evaluated via non-uniform control flow may be undefined.
+
+:::
 
 :return:
     The partial derivative of ``p``.
 
 https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dFdyCoarse.xhtml
-
-:::
 
 :::
 
@@ -2487,18 +2490,19 @@ Not available when using the Compatibility renderer.
     Calculates derivatives using local differencing based on the value of ``p`` for the current fragment and its immediate neighbor(s).
 
 :::warning
-
+Expressions that imply higher order derivatives such as ``dFdx(dFdx(n))`` have undefined results, as do mixed-order derivatives such as ``dFdx(dFdy(n))``.
 :param p:
     The expression of which to take the partial derivative.
 
 :::note
+It is assumed that the expression ``p`` is continuous and therefore expressions evaluated via non-uniform control flow may be undefined.
+
+:::
 
 :return:
     The partial derivative of ``p``.
 
 https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dFdyFine.xhtml
-
-:::
 
 :::
 
@@ -2979,6 +2983,7 @@ The result will be undefined if:
     all other bits taken directly from the corresponding bits of base.
 
 :::note
+If bits is zero, the result will be the original value of base.
 
 :::warning
 
@@ -3072,7 +3077,7 @@ https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/bitfieldInsert.xhtml
     Find the index of the least significant bit set to ``1``.
 
 :::note
-
+If ``value`` is zero, ``-1`` will be returned.
 :param value:
     The value whose bits to scan.
 
@@ -3107,7 +3112,7 @@ For signed integer types, the sign bit is checked first and then:
 :::
 
 :::note
-
+For a value of zero or negative 1, -1 will be returned.
 :param value:
     The value whose bits to scan.
 
@@ -3273,7 +3278,7 @@ x = significand * 2 ^ exponent
     For a floating-point value of zero, the significand and exponent are both zero.
 
 :::warning
-
+For a floating-point value that is an infinity or a floating-point NaN, the results are undefined.
 :param x:
     The value from which significand and exponent are to be extracted.
 

@@ -137,7 +137,7 @@ on Linux/\*BSD. You can override the ``XDG_DATA_HOME``, ``XDG_CONFIG_HOME`` and
 paths.
 
 :::note
-
+If you use `Godot packaged as a Flatpak
 &lt;https://flathub.org/apps/details/org.godotengine.Godot&gt;`__, the
 editor data paths will be located in subfolders in
 ``~/.var/app/org.godotengine.Godot/``.

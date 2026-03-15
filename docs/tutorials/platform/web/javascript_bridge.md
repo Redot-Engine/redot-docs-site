@@ -301,7 +301,7 @@ private void MyFunc3()
 </Tabs>
 
 :::tip
-
+GDScript's multi-line strings, surrounded by 3 quotes ``"""`` as in
 ``my_func3()`` above, are useful to keep JavaScript code readable.
 
 :::

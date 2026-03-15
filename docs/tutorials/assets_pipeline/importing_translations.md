@@ -29,7 +29,7 @@ translated to other languages. The unique ID can be a number, a string,
 or a string with a number (it's just a unique string anyway).
 
 :::note
-
+If you need a more powerful file format, Godot also supports
 loading translations written in the gettext ``.po`` format. See
 [doc_localization_using_gettext](doc_localization_using_gettext) for details.
 

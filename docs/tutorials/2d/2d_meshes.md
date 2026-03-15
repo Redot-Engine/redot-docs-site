@@ -9,6 +9,9 @@ Godot's 2D engine is a pure two-dimensional engine, so it can't really display 3
 via ``Viewport`` and ``ViewportTexture``).
 
 :::info
+If you are interested in displaying 3D meshes on a 2D viewport, see the :ref:`doc_viewport_as_texture` tutorial.
+
+:::
 
 2D meshes are meshes that contain two-dimensional geometry (Z can be omitted or ignored) instead of 3D.
 You can experiment creating them yourself using ``SurfaceTool`` from code and displaying them in a ``MeshInstance2D`` node.
@@ -46,5 +49,3 @@ The default values are good enough for many cases, but you can change growth and
 Finally, push the ``Convert 2D Mesh`` button and your Sprite2D will be replaced:
 
 ![Image](img/mesh2d5.png)
-
-:::

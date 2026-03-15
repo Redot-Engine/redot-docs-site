@@ -102,6 +102,9 @@ There are three types of icons:
 - **Themed Icons (optional):** Starting from Android 13 (inclusive), Themed Icons were introduced. Applications will need to include a monochrome icon to enable this feature. The user's launcher application will control the icon's theme. Must be at least 432×432 px.
 
 :::info
+It's important to adhere to some rules when designing adaptive icons. `Google Design has provided a nice article <https://medium.com/google-design/designing-adaptive-icons-515af294c783>`_ that helps to understand those rules and some of the capabilities of adaptive icons.
+
+:::
 
 .. caution:: The most important adaptive icon design rule is to have your icon critical elements inside the safe zone: a centered circle with a diameter of 66dp (264 pixels on ``xxxhdpi``) to avoid being clipped by the launcher.
 
@@ -183,5 +186,3 @@ the export menu.
      - ``GODOT_ANDROID_KEYSTORE_RELEASE_USER``
    * - Options / Keystore / Release Password
      - ``GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD``
-
-:::

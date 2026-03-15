@@ -54,7 +54,7 @@ CanvasLayers are independent of tree order, and they only depend on
 their layer number, so they can be instantiated when needed.
 
 :::note
-
+CanvasLayers aren't necessary to control the drawing order of nodes.
 The standard way to ensuring that a node is correctly drawn 'in front' or 'behind' others is to manipulate the
 order of the nodes in the scene panel. Perhaps counterintuitively, the topmost nodes in the scene panel are drawn
 on *behind* lower ones in the viewport. 2D nodes also have the [CanvasItem.z_index ](class_CanvasItem_property_z_index)

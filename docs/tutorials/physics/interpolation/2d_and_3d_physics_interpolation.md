@@ -43,7 +43,7 @@ enter the tree. This reduces boiler plate, and reduces the effort required to ge
 an existing project working.
 
 :::note
-
+If you move objects *after* adding to the scene tree, you will still need
 to call ``reset_physics_interpolation()`` as with 3D.
 
 :::

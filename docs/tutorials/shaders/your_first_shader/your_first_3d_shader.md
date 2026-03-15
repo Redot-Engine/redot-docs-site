@@ -23,7 +23,7 @@ will take the concepts from this tutorial and set up
 custom materials in a fragment shader by writing an ocean water shader.
 
 :::note
-
+This tutorial assumes some basic shader knowledge such as types
 (``vec2``, ``float``, ``sampler2D``), and functions. If you are
 uncomfortable with these concepts it is best to get a gentle
 introduction from `The Book of Shaders
@@ -183,7 +183,7 @@ your [NoiseTexture2D ](class_noisetexture2D) click beside where it says "Noise" 
 FastNoiseLite".
 
 :::note
-
+:ref:`FastNoiseLite <class_fastnoiselite>` is used by the NoiseTexture2D to
 generate a heightmap.
 
 :::
@@ -251,7 +251,7 @@ mesh.material.set_shader_parameter("height_scale", 0.5)
 ```
 
 :::note
-
+Changing uniforms in Spatial-based nodes is different from
 CanvasItem-based nodes. Here, we set the material inside the PlaneMesh
 resource. In other mesh resources you may need to first access the
 material by calling ``surface_get_material()``. While in the

@@ -32,7 +32,7 @@ The **App Store Team ID** and (Bundle) **Identifier** options in the **Applicati
 are required. Leaving them blank will cause the exporter to throw an error.
 
 :::note
-
+| If you encounter an error during export similar to
 | ``JSON text did not start with array or object and option to allow fragments not set``
 | then it might be due to a malformated **App Store Team ID**!
 | The exporter expects a (10 characters long) code like ``ABCDE12XYZ`` and not, e.g., your name as Xcode likes to display in the *Signing & Capabilities* tab.
@@ -48,14 +48,14 @@ After you click **Export Project**, there are still two important options left:
 ![Image](img/ios_export_file.png)
 
 :::note
-
+This tutorial uses **exported_xcode_project_name**, but you will use your
 project's name. When you see **exported_xcode_project_name**
 in the following steps, replace it with the name you used instead.
 
 :::
 
 :::note
-
+Avoid using spaces when you choose your **exported_xcode_project_name** as
 this can lead to corruption in your XCode project file.
 
 :::
@@ -81,7 +81,7 @@ In the following example:
   * **godot_project_to_export** is the name of the Godot project.
 
 :::note
-
+**godot_project_to_export** must not be the same as **exported_xcode_project_name**
 to prevent signing issues in Xcode.
 
 :::

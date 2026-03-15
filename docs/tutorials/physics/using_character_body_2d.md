@@ -13,7 +13,7 @@ works and what their pros and cons are. In this tutorial, we'll look at the
 of how to use it.
 
 :::note
-
+While this document uses ``CharacterBody2D`` in its examples, the same
 concepts apply in 3D as well.
 
 :::
@@ -27,14 +27,14 @@ have to write some code to create their behavior, it also means you have more
 precise control over how they move and react.
 
 :::note
-
+This document assumes you're familiar with Godot's various physics
 bodies. Please read [doc_physics_introduction](doc_physics_introduction) first, for an overview
 of the physics options.
 
 :::
 
 :::tip
-
+A `CharacterBody2D` can be affected by gravity and other forces,
 but you must calculate the movement in code. The physics engine will
 not move a `CharacterBody2D`.
 
@@ -47,6 +47,9 @@ directly. Instead, you use the ``move_and_collide()`` or ``move_and_slide()`` me
 These methods move the body along a given vector and detect collisions.
 
 :::warning
+You should handle physics body movement in the ``_physics_process()`` callback.
+
+:::
 
 The two movement methods serve different purposes, and later in this tutorial, you'll
 see examples of how they work.
@@ -170,6 +173,9 @@ for (int i = 0; i < GetSlideCollisionCount(); i++)
 </Tabs>
 
 :::note
+`get_slide_collision_count()` only counts times the body has collided and changed direction.
+
+:::
 
 See [KinematicCollision2D ](class_KinematicCollision2D) for details on what
 collision data is returned.
@@ -255,6 +261,9 @@ from the Filesystem dock to the *Texture* property of the ``Sprite2D``). In the
 size the rectangle to fit over the sprite image.
 
 :::note
+See :ref:`doc_2d_movement` for examples of implementing 2D movement schemes.
+
+:::
 
 Attach a script to the CharacterBody2D and add the following code:
 
@@ -602,9 +611,3 @@ There is a lot more that goes into a complete platformer character: acceleration
 double-jumps, coyote-time, and many more. The code above is just a starting point.
 You can use it as a base to expand into whatever movement behavior you need for
 your own projects.
-
-:::
-
-:::
-
-:::

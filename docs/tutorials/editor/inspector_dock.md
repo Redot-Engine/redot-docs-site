@@ -5,6 +5,9 @@
 This page explains how the Inspector dock works in-depth. You will learn how to edit properties, fold and unfold areas, use the search bar, and more.
 
 :::warning
+This page is a work-in-progress.
+
+:::
 
 ## Overview of the interface
 
@@ -27,5 +30,3 @@ If you click the tool menu icon, a drop-down menu offers some view and edit opti
 Then comes the search bar. Type anything in it to filter displayed properties. Delete the text to clear the search.
 
 ![Image](img/inspector_search_bar.png)
-
-:::

@@ -263,7 +263,7 @@ To use Blender-style transform shortcuts in Godot, go to the Editor Settings'
   **Begin Rotate Transformation**.
 
 :::tip
-
+More shortcuts can be found on the
 [doc_default_key_mapping_shortcuts_spatial_editor](doc_default_key_mapping_shortcuts_spatial_editor) page.
 
 :::
@@ -302,6 +302,9 @@ the 3D modeling software), including animation, skeletal rigs, blend shapes, or
 as simple resources.
 
 :::info
+See :ref:`doc_importing_3d_scenes` for more on importing.
+
+:::
 
 ### Generated geometry
 
@@ -317,7 +320,7 @@ that will not be updated often), as creating vertex arrays and
 submitting them to the 3D API has a significant performance cost.
 
 :::note
-
+To learn about prototyping inside Godot or using external tools, see
 [doc_csg_tools](doc_csg_tools).
 
 :::
@@ -415,5 +418,3 @@ quite dark unless the background environment is very bright.
 Most outdoor scenes have a directional light (the sun or moon), while indoor
 scenes typically have several positional lights (lamps, torches, …).
 See [doc_lights_and_shadows](doc_lights_and_shadows) for more information on setting up lights in Godot.
-
-:::

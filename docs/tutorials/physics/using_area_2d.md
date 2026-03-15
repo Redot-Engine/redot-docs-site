@@ -12,7 +12,7 @@ works and what their pros and cons are. In this tutorial, we'll look at the
 [Area2D ](class_Area2D) node and show some examples of how it can be used.
 
 :::note
-
+This document assumes you're familiar with Godot's various physics
 bodies. Please read [doc_physics_introduction](doc_physics_introduction) first.
 
 :::
@@ -65,7 +65,7 @@ use ``area_entered``. However, let's assume our player is a ``CharacterBody2D``
 ``body_entered`` signal.
 
 :::note
-
+If you're not familiar with using signals, see :ref:`doc_signals` for
 an introduction.
 
 :::

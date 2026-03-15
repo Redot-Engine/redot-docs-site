@@ -19,7 +19,7 @@ In general, keeping your code consistent in your projects and within your team i
 more important than following this guide to a tee.
 
 :::note
-
+Godot's built-in shader editor uses a lot of these conventions
 by default. Let it help you.
 
 :::

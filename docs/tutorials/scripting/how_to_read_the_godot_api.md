@@ -143,7 +143,7 @@ use case(s) and/or the affects of changing it. It may include code samples
 and/or links to relevant parts of the Godot API.
 
 :::note
-
+Knowing the setter and getter names is useful when one must bind a
 method name or [Callable](class_Callable) to something.
 
 :::

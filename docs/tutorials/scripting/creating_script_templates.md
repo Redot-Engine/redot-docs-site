@@ -123,7 +123,7 @@ This is an example of utilizing custom templates at editor and project level:
 ![Image](img/script_create_dialog_custom_templates.webp)
 
 :::note
-
+The script templates have the same extension as the regular script
 files. This may lead to an issue of a script parser treating those templates as
 actual scripts within a project. To avoid this, make sure to ignore the
 directory containing them by creating an empty ``.gdignore`` file. The directory won't be

@@ -40,6 +40,9 @@ animation. For example, you can call ``queue_free()`` to delete a node at the
 end of a death animation.
 
 :::note
+The events placed on the call method track are not executed when the animation is previewed in the editor for safety.
+
+:::
 
 To create such a track in the editor, click "Add Track -&gt; Call Method Track." Then, a window
 opens and lets you select the node to associate with the track. To call one of
@@ -143,6 +146,9 @@ A bezier curve track is similar to a property track, except it allows you to
 animate a property's value using a bezier curve.
 
 :::note
+Bezier curve track and property track cannot be blended in :ref:`AnimationPlayer <class_AnimationPlayer>` and :ref:`AnimationTree <class_AnimationTree>`.
+
+:::
 
 To create one, click "Add Track -&gt; Bezier Curve Track". As with property tracks,
 you need to select a node and a property to animate. To open the bezier curve
@@ -216,13 +222,9 @@ If an animation is already playing and you want to stop it early, you can create
 a key and have it set to `[STOP]` in the inspector.
 
 :::note
-
+If you instanced a scene that contains an animation player into your
 scene, you need to enable "Editable Children" in the scene tree to
 access its animation player. Also, an animation player cannot
 reference itself.
-
-:::
-
-:::
 
 :::

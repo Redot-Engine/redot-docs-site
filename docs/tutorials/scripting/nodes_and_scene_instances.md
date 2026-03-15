@@ -111,7 +111,7 @@ public override void _Ready()
 </Tabs>
 
 :::note
-
+As with file paths, you can use ".." to get a parent node. The best
 practice is to avoid doing that though not to break encapsulation.
 You can also start the path with a forward
 slash to make it absolute, in which case your topmost node would be

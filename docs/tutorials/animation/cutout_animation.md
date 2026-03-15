@@ -120,7 +120,7 @@ proper place in the hierarchy. This means it wouldn't be affected by the movemen
 of the torso. We'll fix this problem with ``RemoteTransform2D`` nodes.
 
 :::note
-
+You can also fix depth ordering problems by adjusting the Z property
 of any node inheriting from Node2D.
 
 :::

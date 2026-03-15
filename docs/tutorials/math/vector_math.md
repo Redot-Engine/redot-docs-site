@@ -12,7 +12,7 @@ uses them extensively. Developing a good understanding of vector math is
 essential to becoming a strong game developer.
 
 :::note
-
+This tutorial is **not** a formal textbook on linear algebra. We will
 only be looking at how it is applied to game development. For a
 broader look at the mathematics, see
 https://www.khanacademy.org/math/linear-algebra
@@ -28,7 +28,7 @@ values such as ``(4, 3)``.
 ![Image](img/vector_axis1.png)
 
 :::note
-
+If you're new to computer graphics, it might seem odd that the
 positive ``y`` axis points **downwards** instead of upwards, as you
 probably learned in math class. However, this is common in most
 computer graphics applications.
@@ -166,7 +166,7 @@ Note that adding ``a + b`` gives the same result as ``b + a``.
 ## Scalar multiplication
 
 :::note
-
+Vectors represent both direction and magnitude. A value representing
 only magnitude is called a **scalar**. Scalars use the
 [class_float](class_float) type in Godot.
 
@@ -203,7 +203,7 @@ var e = d * -2; // (1, 2) * -2 = (-2, -4)
 ![Image](img/vector_mult1.png)
 
 :::note
-
+Multiplying a vector by a positive scalar does not change its direction, only
 its magnitude. Multiplying with a negative scalar results in a vector in the
 opposite direction. This is how you **scale** a vector.
 
@@ -224,7 +224,7 @@ can find the position for step 2 by adding the velocity to the current position.
 ![Image](img/vector_movement1.png)
 
 :::tip
-
+Velocity measures the **change** in position per unit of time. The new
 position is found by adding the velocity multiplied by the elapsed time
 (here assumed to be one unit, e.g. 1 s) to the previous position.
 
@@ -245,6 +245,9 @@ pointing from the tank to the robot.
 ![Image](img/vector_subtract2.webp)
 
 :::tip
+To find a vector pointing from ``A`` to ``B``, use ``B - A``.
+
+:::
 
 ### Unit vectors
 
@@ -282,7 +285,7 @@ a = a.Normalized();
 </Tabs>
 
 :::warning
-
+Because normalization involves dividing by the vector's length, you
 cannot normalize a vector of length ``0``. Attempting to do so
 would normally result in an error. In GDScript though, trying to
 call the ``normalized()`` method on a vector of length 0 leaves the
@@ -509,7 +512,7 @@ The cross product is not mathematically defined in 2D. The [Vector2.cross() ](cl
 product for 2D vectors.
 
 :::note
-
+In the cross product, order matters. ``a.cross(b)`` does not give the
 same result as ``b.cross(a)``. The resulting vectors point in
 **opposite** directions.
 
@@ -572,5 +575,3 @@ For more information on using vector math in Godot, see the following articles:
 
 - [doc_vectors_advanced](doc_vectors_advanced)
 - [doc_matrices_and_transforms](doc_matrices_and_transforms)
-
-:::

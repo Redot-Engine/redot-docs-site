@@ -25,7 +25,7 @@ Because of the large difference in performance, it often makes sense to re-build
 In summary, you can use the low-level networking API for maximum control and implement everything on top of bare network protocols or use the high-level API based on [SceneTree ](class_SceneTree) that does most of the heavy lifting behind the scenes in a generally optimized way.
 
 :::note
-
+Most of Godot's supported platforms offer all or most of the mentioned high- and low-level networking
 features. As networking is always largely hardware and operating system dependent, however,
 some features may change or not be available on some target platforms. Most notably,
 the HTML5 platform currently offers WebSockets and WebRTC support but lacks some of the higher-level features, as
@@ -34,7 +34,7 @@ well as raw access to low-level protocols like TCP and UDP.
 :::
 
 :::note
-
+More about TCP/IP, UDP, and networking:
 https://gafferongames.com/post/udp_vs_tcp/
 
 Gaffer On Games has a lot of useful articles about networking in Games
@@ -44,7 +44,7 @@ Gaffer On Games has a lot of useful articles about networking in Games
 :::
 
 :::warning
-
+Adding networking to your game comes with some responsibility.
 It can make your application vulnerable if done wrong and may lead to cheats or exploits.
 It may even allow an attacker to compromise the machines your application runs on
 and use your servers to send spam, attack others or steal your users' data if they play your game.

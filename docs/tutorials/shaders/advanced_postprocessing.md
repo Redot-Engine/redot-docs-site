@@ -51,7 +51,7 @@ void vertex() {
 ```
 
 :::note
-
+In versions of Godot earlier than 4.3, this code recommended using ``POSITION = vec4(VERTEX, 1.0);``
 which implicitly assumed the clip-space near plane was at ``0.0``.
 That code is now incorrect and will not work in versions 4.3+ as we
 use a "reversed-z" depth buffer now where the near plane is at ``1.0``.
@@ -91,7 +91,7 @@ float depth = texture(depth_texture, SCREEN_UV).x;
 ```
 
 :::note
-
+Similar to accessing the screen texture, accessing the depth texture is only
 possible when reading from the current viewport. The depth texture cannot be
 accessed from another viewport to which you have rendered.
 
@@ -245,7 +245,7 @@ func _ready():
 ```
 
 :::note
-
+The triangle is specified in normalized device coordinates.
 Recall, NDC run from ``-1.0`` to ``1.0`` in both the ``x`` and ``y``
 directions. This makes the screen ``2`` units wide and ``2`` units
 tall. In order to cover the entire screen with a single triangle, use

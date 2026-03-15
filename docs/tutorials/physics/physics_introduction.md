@@ -20,7 +20,7 @@ In this guide, you will learn:
 -   When and why to choose one type over another
 
 :::note
-
+This document's examples will use 2D objects. Every 2D physics object
 and collision shape has a direct equivalent in 3D and in most cases
 they work in much the same way.
 
@@ -65,7 +65,7 @@ as children. These shapes are used to define the object's collision bounds
 and to detect contact with other objects.
 
 :::note
-
+In order to detect collisions, at least one ``Shape2D`` must be
 assigned to the object.
 
 :::
@@ -75,7 +75,7 @@ or [CollisionPolygon2D ](class_CollisionPolygon2D) as a child of the object.
 These nodes allow you to draw the shape directly in the editor workspace.
 
 :::important
-
+Be careful to never scale your collision shapes in the editor.
 The "Scale" property in the Inspector should remain ``(1, 1)``. When changing
 the size of the collision shape, you should always use the size handles, **not**
 the ``Node2D`` scale handles. Scaling a shape can result in unexpected
@@ -339,7 +339,7 @@ properties directly, but rather applying forces (``thrust`` and ``torque``) to
 the body and letting the physics engine calculate the resulting movement.
 
 :::note
-
+When a rigid body goes to sleep, the ``_integrate_forces()``
 function will not be called. To override this behavior, you will
 need to keep the body awake by creating a collision, applying a
 force to it, or by disabling the [can_sleep ](class_RigidBody2D_property_can_sleep)
@@ -484,7 +484,7 @@ possible to code this response yourself after using ``move_and_collide()``,
 without writing much code.
 
 :::warning
-
+``move_and_slide()`` automatically includes the timestep in its
 calculation, so you should **not** multiply the velocity vector
 by ``delta``. This does **not** apply to ``gravity`` as it is an
 acceleration and is time dependent, and needs to be scaled by

@@ -100,7 +100,7 @@ HTML page. This allows to, for example, load webfonts and third-party
 JavaScript APIs, include CSS, or run JavaScript code.
 
 :::important
-
+Each project must generate their own HTML file. On export,
 several text placeholders are replaced in the generated HTML
 file specifically for the given export options. Any direct
 modifications to that HTML file will be lost in future exports.
@@ -165,7 +165,7 @@ native platforms are more complicated on the web platform. Following is a list
 of limitations you should be aware of when porting a Godot game to the web.
 
 :::important
-
+Browser vendors are making more and more functionalities only
 available in [secure contexts ](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts),
 this means that such features are only be available if the web
 page is served via a secure HTTPS connection (localhost is
@@ -215,7 +215,7 @@ Some browsers restrict autoplay for audio on websites. The easiest way around th
 player to click, tap or press a key/button to enable audio, for instance when displaying a splash screen at the start of your game.
 
 :::info
-
+Google offers additional information about their `Web Audio autoplay
 policies &lt;https://sites.google.com/a/chromium.org/dev/audio-video/autoplay&gt;`__.
 
 Apple's Safari team also posted additional information about their `Auto-Play Policy Changes for macOS
@@ -224,7 +224,7 @@ Apple's Safari team also posted additional information about their `Auto-Play Po
 :::
 
 :::warning
-
+Access to microphone requires a
 [secure context ](doc_javascript_secure_contexts).
 
 :::
@@ -255,6 +255,9 @@ additionally, due to the API asynchronous nature might not be reliable when
 accessed from GDScript.
 
 :::warning
+Requires a :ref:`secure context <doc_javascript_secure_contexts>`.
+
+:::
 
 ### Gamepads
 
@@ -265,6 +268,9 @@ does not provide a reliable way to detect the gamepad information necessary
 to remap them based on model/vendor/OS due to privacy considerations.
 
 :::warning
+Requires a :ref:`secure context <doc_javascript_secure_contexts>`.
+
+:::
 
 ### Boot splash is not displayed
 
@@ -389,7 +395,3 @@ the export menu.
      - Environment variable
    * - Encryption / Encryption Key
      - ``GODOT_SCRIPT_ENCRYPTION_KEY``
-
-:::
-
-:::

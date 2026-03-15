@@ -11,7 +11,7 @@ users to create the most common shapes by combining primitives.
 Interior environments can be created by using inverted primitives.
 
 :::note
-
+The CSG nodes in Godot are mainly intended for prototyping. There is
 no built-in support for UV mapping or editing 3D polygons (though
 extruded 2D polygons can be used with the CSGPolygon3D node). In
 addition CSG can't reliably create meshes made up of multiple nodes
@@ -81,7 +81,7 @@ The [CSGPolygon3D ](class_CSGPolygon3D) node extrude along a Polygon drawn in
 ![Image](img/csg_poly.png)
 
 :::note
-
+The **Path** mode must be provided with a :ref:`Path3D <class_Path3D>`
 node to work. In the Path node, draw the path and the polygon in
 CSGPolygon3D will extrude along the given path.
 
@@ -129,7 +129,7 @@ union, intersection, or subtraction, in tree order, and apply them to itself one
 after the other.
 
 :::note
-
+In the interest of performance, make sure CSG geometry remains
 relatively simple, as complex meshes can take a while to process.
 If adding objects together (such as table and room objects), create
 them as separate CSG trees. Forcing too many objects in a single tree
@@ -143,7 +143,7 @@ Only use binary operations where you actually need them.
 We will prototype a room to practice the use of CSG tools.
 
 :::tip
-
+Working in **Orthogonal** projection gives a better view when combining
 the CSG shapes.
 
 :::
@@ -159,7 +159,7 @@ Our level will contain these objects:
 Create a scene with a Node3D node as root node.
 
 :::tip
-
+The default lighting of the environment doesn't provide clear shading
 at some angles. Change the display mode using **Display Overdraw** in
 the 3D viewport menu, or add a DirectionalLight node to help you see
 clearly.
@@ -189,7 +189,7 @@ Adjust their placement to resemble a desk.
 ![Image](img/csg_desk.png)
 
 :::note
-
+CSG nodes inside a CSGCombiner3D will only process their operation
 within the combiner. Therefore, CSGCombiner3Ds are used to organize
 CSG nodes.
 
@@ -222,7 +222,7 @@ Try to re-parent the ``pillow`` node to the root ``Node3D`` node; the hole will
 disappear.
 
 :::note
-
+This is to illustrate the effect of CSG processing order.
 Since the root node is not a CSG node, the CSGCombiner3D nodes are
 the end of the operations; this shows the use of CSGCombiner3D to
 organize the CSG scene.
@@ -295,7 +295,7 @@ usage to organic surfaces like terrain. Still, when prototyping, it can be used
 to quickly apply textures to CSG-based levels.
 
 :::note
-
+If you need some textures for prototyping, Kenney made a
 [set of CC0-licensed prototype textures ](https://kenney.nl/assets/prototype-textures)_.
 
 :::
@@ -320,7 +320,7 @@ playing with the **Scale** and **Offset** properties just above. Higher values
 in the **Scale** property will cause the texture to repeat more often.
 
 :::tip
-
+You can copy a StandardMaterial3D to reuse it across CSG nodes. To do so,
 click the dropdown arrow next to a material property in the Inspector
 and choose **Copy**. To paste it, select the node you'd like to apply
 the material onto, click the dropdown arrow next to its material

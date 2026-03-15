@@ -88,7 +88,7 @@ the reflection and the ``ALBEDO`` color. A high ``METALLIC`` almost ignores
 ![Image](img/PBR.png)
 
 :::note
-
+``METALLIC`` should be close to ``0`` or ``1`` for proper PBR shading.
 Only set it between them for blending between materials.
 
 :::

@@ -1197,7 +1197,7 @@ If you pass a name to the enum, it will put all the keys inside a constant
 a dictionary can also be used with a named enum.
 
 :::important
-
+Keys in a named enum are not registered
 as global constants. They should be accessed prefixed
 by the enum's name (``Name.KEY``).
 
@@ -1292,7 +1292,7 @@ func void_function() -> void:
 ```
 
 :::note
-
+Non-void functions must **always** return a value, so if your code has
 branching statements (such as an ``if``/``else`` construct), all the
 possible paths must have a return. E.g., if you have a ``return``
 inside an ``if`` block but not after it, the editor will raise an
@@ -2298,7 +2298,7 @@ func _ready():
 See [doc_running_code_in_the_editor](doc_running_code_in_the_editor) for more information.
 
 :::warning
-
+Be cautious when freeing nodes with ``queue_free()`` or ``free()``
 in a tool script (especially the script's owner itself). As tool
 scripts run their code in the editor, misusing them may lead to
 crashing the editor.
@@ -2591,7 +2591,7 @@ func wait_button():
 ```
 
 :::note
-
+Unlike ``yield`` in previous Godot versions, you cannot obtain the function state object.
 This is done to ensure type safety.
 With this type safety in place, a function cannot say that it returns an ``int`` while it actually returns a function state object
 during runtime.

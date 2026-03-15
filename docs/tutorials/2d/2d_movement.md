@@ -91,7 +91,7 @@ We can then set our velocity by multiplying this direction vector, which has a
 length of ``1``, by our desired speed.
 
 :::tip
-
+If you've never used vector math before, or need a refresher,
 you can see an explanation of vector usage in Godot at [doc_vector_math](doc_vector_math).
 
 :::
@@ -342,7 +342,7 @@ Uncommenting the ``look_at()`` line will also turn the body to point in its
 direction of motion if you prefer.
 
 :::tip
-
+This technique can also be used as the basis of a "following" character.
 The ``target`` position can be that of any object you want to move to.
 
 :::

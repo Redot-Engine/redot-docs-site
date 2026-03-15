@@ -41,14 +41,14 @@ fully utilize the Godot Engine. Nearly all parameters that can be adjusted via
 the user interface can also be modified directly through code.
 
 :::note
-
+If you would like to use an external text editor or prefer to use C#
 in your project, see [doc_external_editor](doc_external_editor) and
 [doc_c_sharp_setup_external_editor](doc_c_sharp_setup_external_editor).
 
 :::
 
 :::tip
-
+Similar to many parts of the Godot's interface, the text editor can
 also be customized by changing its settings to your liking. You can access
 these settings by opening **Editor &gt; Editor Settings** and going to the **Text Editor**
 group.
@@ -127,6 +127,9 @@ this file will appear in the results. To reset the filter, clear the filter bar.
 An asterisk (*) next to a file name indicates that the file has unsaved changes.
 
 :::tip
+If you just enter "*" in the filter bar, you can display all unsaved files.
+
+:::
 
 You can drag a file to change the ordering. Middle-clicking on a file closes it.
 Right-clicking on a file provides several options to save or close files, or to 
@@ -156,7 +159,7 @@ variety of tools and options, such as file management, search and replace, debug
 controls, and code formatting features.
 
 :::tip
-
+An asterisk (*) next to an action means that this operation is also available
 in the context menu, which can be opened by right-clicking in the code editor.
 
 :::
@@ -307,9 +310,12 @@ The **Search** menu provides the following options:
 ![Image](img/editor_ui_script_editor_replaceinfiles.webp)
 
 :::warning
+Note that "Replace in Files" operation cannot be undone!
+
+:::
 
 :::tip
-
+Both the **Find in Files** and **Replace in Files** windows share the **Search...**
 and **Replace...** buttons. The only difference in the latter window is an additional text
 field that automatically fills in the search results panel when the **Replace...** button
 is clicked. The replacement operation is only executed if you click the **Replace All**
@@ -354,7 +360,7 @@ The **Go To** menu lets you navigate within the code at ease with these options:
 ### Coding area
 
 :::note
-
+This section will only cover the basics of the coding area in terms of the user
 interface. To learn more about scripting in Godot, refer to the [doc_gdscript](doc_gdscript) or
 [Scripting ](toc-learn-scripting) documentation.
 
@@ -393,7 +399,3 @@ Line 55 is a breakpoint that can be used in [debugging ](doc_overview_of_debuggi
 Many of the colors of the text editor such as highlighting colors, or even breakpoint or
 bookmark icon colors can be customized. You can experiment them by opening the text editor
 settings navigating to **Editor &gt; Editor Settings &gt; Text Editor** section.
-
-:::
-
-:::

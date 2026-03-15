@@ -919,7 +919,7 @@ objects in a scene, like having foliage bend when the player is nearby, or havin
 objects move with the wind.
 
 :::note
-
+*Global uniforms* are not the same as *global scope* for an individual
 shader. While regular uniforms are defined outside of shader functions and are
 therefore the global scope of the shader, global uniforms are global to all
 shaders in the entire project (but within each shader, are also in the global
@@ -1077,7 +1077,7 @@ material.set_shader_parameter("colors", [Vector3(1, 0, 0), Vector3(0, 1, 0), Vec
 ```
 
 :::note
-
+The first argument to ``set_shader_parameter`` is the name of the uniform
 in the shader. It must match *exactly* to the name of the uniform in
 the shader or else it will not be recognized.
 
@@ -1122,7 +1122,7 @@ table of the corresponding types:
 | **samplerExternalOES** | **ExternalTexture** | Only supported in Compatibility/Android platform. |
 
 :::note
-
+Be careful when setting shader uniforms from GDScript, no error will
 be thrown if the type does not match. Your shader will just exhibit
 undefined behavior.
 

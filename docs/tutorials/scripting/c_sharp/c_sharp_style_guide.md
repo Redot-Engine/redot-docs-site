@@ -10,7 +10,7 @@ the conventions and guidelines mentioned in this article are those most widely a
 of the language, we encourage you to do the same, especially if you do not have such a guide yet.
 
 :::note
-
+This article is by no means an exhaustive guide on how to follow the standard coding
 conventions or best practices. If you feel unsure of an aspect which is not covered here,
 please refer to more comprehensive documentation, such as
 [C# Coding Conventions ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions) or

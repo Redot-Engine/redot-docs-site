@@ -561,13 +561,13 @@ handled and how they can be customized with
 described in [doc_accessing_data_or_logic_from_object](doc_accessing_data_or_logic_from_object).
 
 :::info
-
+For binding properties using the above methods in C++, see
 [doc_binding_properties_using_set_get_property_list](doc_binding_properties_using_set_get_property_list).
 
 :::
 
 :::warning
-
+The script must operate in the ``@tool`` mode so the above methods
 can work from within the editor.
 
 :::

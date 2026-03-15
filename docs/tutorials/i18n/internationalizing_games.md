@@ -20,7 +20,7 @@ translations page before, we recommend you give it a read before reading this
 page.
 
 :::note
-
+We will be using the official demo as an example; you can
 [download it from the Asset Library ](https://godotengine.org/asset-library/asset/2776).
 
 :::

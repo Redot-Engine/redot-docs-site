@@ -146,7 +146,7 @@ To load the engine manually the :js:meth:`Engine.load` static method must be cal
 this method is static, multiple engine instances can be spawned if the share the same ``wasm``.
 
 :::note
-
+Multiple instances cannot be spawned by default, as the engine is immediately unloaded after it is initialized.
 To prevent this from happening see the :js:attr:`unloadAfterInit` override option. It is still possible
 to unload the engine manually afterwards by calling the :js:meth:`Engine.unload` static method. Unloading the engine
 frees browser memory by unloading files that are no longer needed once the instance is initialized.

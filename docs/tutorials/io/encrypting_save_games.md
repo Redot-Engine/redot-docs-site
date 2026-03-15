@@ -63,7 +63,7 @@ f.StoreVar(gameState);
 Note that ``OS.get_unique_id()`` does not work on UWP or HTML5.
 
 :::note
-
+This method cannot really prevent players from editing their savegames
 locally because, since the encryption key is stored inside the game, the player
 can still decrypt and edit the file themselves. The only way to prevent this
 from being possible is to store the save data on a remote server, where players

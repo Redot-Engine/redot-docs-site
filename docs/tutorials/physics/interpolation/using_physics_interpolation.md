@@ -43,7 +43,7 @@ usage if the game is rendering at high FPS, since AI logic (for example) will no
 longer run on every rendered frame.
 
 :::note
-
+If you attempt to set the transform of interpolated objects *outside* the
 physics tick, the calculations for the interpolated position will be
 incorrect, and you will get jitter. This jitter may not be visible on
 your machine, but it *will* occur for some players. For this reason,
@@ -54,7 +54,7 @@ if this case is detected.
 :::
 
 :::tip
-
+This is only a *soft rule*. There are some occasions where you might want
 to teleport objects outside of the physics tick (for instance when
 starting a level, or respawning objects). Still, in general, you should be
 applying transforms from the physics tick.
@@ -70,7 +70,7 @@ rather than each frame ("idle"), **if** you are using them to move objects (*the
 methods can also be used to control properties that are not interpolated*).
 
 :::note
-
+Also consider that nodes can be moved not just by moving themselves, but
 also by moving parent nodes in the [SceneTree](class_SceneTree). The
 movement of parents should therefore also only occur during physics ticks.
 
@@ -94,7 +94,7 @@ As a rough guide:
     "Simple physics behaviour"
 
 :::note
-
+You can always change the tick rate as you develop, it is as simple as
 changing the project setting.
 
 :::
@@ -140,7 +140,7 @@ will act as though a tick of simulation has already taken place. This will
 immediately start moving the object, instead of having a tick delay standing still.
 
 :::important
-
+Make sure you set the transform and call
 ``reset_physics_interpolation()`` in the correct order as shown
 above, otherwise you will see unwanted "streaking".
 

@@ -31,6 +31,9 @@ Peers connect to a signaling server (for example a WebSocket server) and send th
 WebRTC is implemented in Godot via two main classes [WebRTCPeerConnection ](class_WebRTCPeerConnection) and [WebRTCDataChannel ](class_WebRTCDataChannel), plus the multiplayer API implementation [WebRTCMultiplayerPeer ](class_WebRTCMultiplayerPeer). See section on [high-level multiplayer ](doc_high_level_multiplayer) for more details.
 
 :::note
+These classes are available automatically in HTML5, but **require an external GDExtension plugin on native (non-HTML5) platforms**. Check out the `webrtc-native plugin repository <https://github.com/godotengine/webrtc-native>`__ for instructions and to get the latest `release <https://github.com/godotengine/webrtc-native/releases>`__.
+
+:::
 
 :::warning
 
@@ -146,6 +149,9 @@ func send_message(message):
 And now for the local signaling server:
 
 :::note
+This local signaling server is supposed to be used as a :ref:`singleton <doc_singletons_autoload>` to connect two peers in the same scene.
+
+:::
 
 ```
 # A local signaling server. Add this to autoloads with name "Signaling" (/root/Signaling)
@@ -214,7 +220,3 @@ This will print something similar to this:
 ### Remote signaling with WebSocket
 
 A more advanced demo using WebSocket for signaling peers and [WebRTCMultiplayerPeer ](class_WebRTCMultiplayerPeer) is available in the [godot demo projects ](https://github.com/godotengine/godot-demo-projects) under `networking/webrtc_signaling`.
-
-:::
-
-:::

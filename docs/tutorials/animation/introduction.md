@@ -339,6 +339,9 @@ When using the keyframe icon next to a property in the inspector the editor will
 ask you to automatically create a RESET track.
 
 :::note
+RESET tracks are also used as reference values for blending. See also `For better blending <../animation/animation_tree.html#for-better-blending>`__.
+
+:::
 
 ## Onion Skinning
 
@@ -352,5 +355,3 @@ is being animated in its previous positions in the animation.
 The three dots button next to the onion skinning button opens a dropdown
 menu that lets you adjust how it works, including the ability to use
 onion skinning for future frames.
-
-:::

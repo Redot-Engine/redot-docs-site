@@ -166,7 +166,7 @@ In Godot's **Editor → Editor Settings** menu:
 - Set **Dotnet** -&gt; **Editor** -&gt; **External Editor** to **Visual Studio**.
 
 :::note
-
+If you see an error like "Unable to find package Godot.NET.Sdk",
 your NuGet configuration may be incorrect and need to be fixed.
 
 A simple way to fix the NuGet configuration file is to regenerate it.

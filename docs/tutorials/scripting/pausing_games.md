@@ -43,7 +43,7 @@ for all nodes. Second, the behavior of certain nodes will stop or start
 depending on their process mode.
 
 :::note
-
+The physics servers can be made active while the game is
 paused by using their ``set_active`` methods.
 
 :::

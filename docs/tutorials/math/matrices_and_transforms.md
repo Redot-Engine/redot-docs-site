@@ -18,7 +18,7 @@ Most of this guide focuses on 2D, using [class_Transform2D](class_Transform2D) a
 [class_Vector2](class_Vector2), but the way things work in 3D is very similar.
 
 :::note
-
+As mentioned in the previous tutorial, it is important to
 remember that in Godot, the Y axis points *down* in 2D.
 This is the opposite of how most schools teach linear
 algebra, with the Y axis pointing up.
@@ -26,7 +26,7 @@ algebra, with the Y axis pointing up.
 :::
 
 :::note
-
+The convention is that the X axis is red, the Y axis is
 green, and the Z axis is blue. This tutorial is color-coded
 to match these conventions, but we will also represent
 the origin vector with a blue color.
@@ -113,7 +113,7 @@ To calculate the object's scale from an existing transformation
 matrix, you can use ``length()`` on each of the column vectors.
 
 :::note
-
+In actual projects, you can use the ``scaled()``
 method to perform scaling.
 
 :::
@@ -155,7 +155,7 @@ hardest thing you need to know.
 ![Image](img/matrices_and_transforms/rotate2.png)
 
 :::note
-
+Godot represents all rotations with radians, not degrees.
 A full turn is `TAU` or `PI*2` radians, and a quarter
 turn of 90 degrees is `TAU/4` or `PI/2` radians. Working
 with `TAU` usually results in more readable code.
@@ -163,7 +163,7 @@ with `TAU` usually results in more readable code.
 :::
 
 :::note
-
+Fun fact: In addition to Y being *down* in Godot, rotation
 is represented clockwise. This means that all the math and
 trig functions behave the same as a Y-is-up CCW system,
 since these differences "cancel out". You can think of
@@ -216,7 +216,7 @@ To calculate the object's rotation from an existing transformation
 matrix, you can use ``atan2(t.x.y, t.x.x)``, where t is the Transform2D.
 
 :::note
-
+In actual projects, you can use the ``rotated()``
 method to perform rotations.
 
 :::
@@ -268,7 +268,7 @@ the right when ``translated_local()`` with ``Vector2.UP``. To translate
 *relative to the global/parent frame* use ``translated()`` instead.
 
 :::note
-
+Godot's 2D uses coordinates based on pixels, so in actual
 projects you will want to translate by hundreds of units.
 
 :::
@@ -333,7 +333,7 @@ Transform = t; // Change the node's transform to what we calculated.
 ### Shearing the transformation matrix (advanced)
 
 :::note
-
+If you are only looking for how to *use* transformation matrices,
 feel free to skip this section of the tutorial. This section
 explores an uncommonly used aspect of transformation matrices
 for the purpose of building an understanding of them.
@@ -397,7 +397,7 @@ Transform = t; // Change the node's transform to what we calculated.
 </Tabs>
 
 :::note
-
+You can't set the raw values of a Transform2D in the editor,
 so you *must* use code if you want to shear the object.
 
 :::
@@ -428,7 +428,7 @@ the object, and the relationship between the basis vectors and how the
 object's "UV" or "intra-coordinates" have their world position changed.
 
 :::note
-
+In Godot, all transform math is done relative to the parent node.
 When we refer to "world position", that would be relative to the
 node's parent instead, if the node had a parent.
 
@@ -510,7 +510,7 @@ GD.Print(new Vector2(0, 100) * Transform);
 </Tabs>
 
 :::note
-
+If you know in advance that the transform is positioned at
 (0, 0), you can use the "basis_xform" or "basis_xform_inv"
 methods instead, which skip dealing with translation.
 
@@ -555,7 +555,7 @@ Transform = t;
 For moving in 3D, you would need to replace "x" with "basis.x".
 
 :::note
-
+In actual projects, you can use ``translate_object_local`` in 3D
 or ``move_local_x`` and ``move_local_y`` in 2D to do this.
 
 :::
@@ -674,6 +674,9 @@ Transform = parent * child;
 </Tabs>
 
 :::note
+When multiplying matrices, order matters! Don't mix them up.
+
+:::
 
 Lastly, applying the identity transform will always do nothing.
 
@@ -773,7 +776,7 @@ this project which has colored lines and cubes to help visualize the
 https://github.com/godotengine/godot-demo-projects/tree/master/misc/matrix_transform
 
 :::note
-
+You cannot edit Node2D's transform matrix directly in Godot 4.0's
 inspector. This may be changed in a future release of Godot.
 
 :::
@@ -807,5 +810,3 @@ https://www.youtube.com/watch?v=mvmuCPvRoWQ
 https://www.youtube.com/watch?v=d4EgbgTm0Bg
 
 https://eater.net/quaternions
-
-:::

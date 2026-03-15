@@ -82,7 +82,7 @@ These properties can be accessed from both the ``start()`` and ``process()`` fun
 | in uint **AMOUNT_RATIO** | Value of :ref:`amount_ratio&lt;class_GPUParticles2D_property_amount_ratio&gt;` (:ref:`3D&lt;class_GPUParticles3D_property_amount_ratio&gt;`) property of Particles node. |
 
 :::note
-
+In order to use the ``COLOR`` variable in a StandardMaterial3D, set ``vertex_color_use_as_albedo``
 to ``true``. In a ShaderMaterial, access it with the ``COLOR`` variable.
 
 :::

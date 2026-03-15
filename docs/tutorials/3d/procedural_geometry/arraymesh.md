@@ -207,7 +207,7 @@ if (arrMesh != null)
 </Tabs>
 
 :::note
-
+In this example, we used ``Mesh.PRIMITIVE_TRIANGLES``, but you can use any primitive type
 available from mesh.
 
 :::

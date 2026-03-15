@@ -10,6 +10,9 @@ of making a procedural planet like the one below:
 ![Image](img/planet_example.png)
 
 :::note
+This tutorial does not cover how to code a dynamic atmosphere like the one this planet has.
+
+:::
 
 This tutorial assumes you are familiar with how to set up a basic scene including:
 a [Camera3D ](class_Camera3D), a [light source ](class_OmniLight3D), a
@@ -52,7 +55,7 @@ This will ensure that the [ColorRect ](class_ColorRect) takes up the entire [Sub
 Next, we add a [Shader Material ](class_ShaderMaterial) to the [ColorRect ](class_ColorRect) (ColorRect &gt; CanvasItem &gt; Material &gt; Material &gt; ``New ShaderMaterial``).
 
 :::note
-
+Basic familiarity with shading is recommended for this tutorial. However, even if you are new
 to shaders, all the code will be provided, so you should have no problem following along.
 
 :::
@@ -129,7 +132,7 @@ have pinching at the poles. This pinching is due to the way Godot maps textures 
 projection, which translates a spherical map onto a 2D plane.
 
 :::note
-
+If you are interested in a little extra information on the technique, we will be converting from
 spherical coordinates into Cartesian coordinates. Spherical coordinates map the longitude and
 latitude of the sphere, while Cartesian coordinates are, for all intents and purposes, a
 vector from the center of the sphere to the point.
@@ -190,6 +193,9 @@ float noise(vec3 p) {
 ```
 
 :::note
+All credit goes to the author, Inigo Quilez. It is published under the ``MIT`` licence.
+
+:::
 
 Now to use ``noise``, add the following to the    ``fragment`` function:
 
@@ -202,6 +208,9 @@ COLOR.xyz = vec3(n * 0.5 + 0.5);
 ![Image](img/planet_noise.webp)
 
 :::note
+In order to highlight the texture, we set the material to unshaded.
+
+:::
 
 You can see now that the noise indeed wraps seamlessly around the sphere. Although this
 looks nothing like the planet you were promised. So let's move onto something more colorful.
@@ -313,9 +322,3 @@ in the scene so you can see the effect of the reflections on the ocean.
 ![Image](img/planet_ocean_reflect.webp)
 
 And there you have it. A procedural planet generated using a [SubViewport ](class_SubViewport).
-
-:::
-
-:::
-
-:::

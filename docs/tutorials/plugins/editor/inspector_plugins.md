@@ -23,6 +23,9 @@ between 0 and 99.
 Create a new empty plugin to get started.
 
 :::info
+See :ref:`doc_making_plugins` guide to set up your new plugin.
+
+:::
 
 Let's assume you've called your plugin folder ``my_inspector_plugin``. If so,
 you should end up with a new ``addons/my_inspector_plugin`` folder that contains
@@ -36,7 +39,7 @@ you should remove the instance you have added by calling
 ``remove_inspector_plugin()``.
 
 :::note
-
+Here, you are loading a script and not a packed scene. Therefore you
 should use ``new()`` instead of ``instantiate()``.
 
 :::
@@ -105,6 +108,9 @@ method. This function is called for each edited [class_Object](class_Object) and
 return ``true`` if this plugin should handle the object or its properties.
 
 :::note
+This includes any :ref:`class_Resource` attached to the object.
+
+:::
 
 You can implement four other methods to add controls to the inspector at
 specific positions. The ``_parse_begin()`` and ``_parse_end()`` methods are called
@@ -337,7 +343,3 @@ public partial class RandomIntEditor : EditorProperty
 Using the example code above you should be able to make a custom widget that
 replaces the default [class_SpinBox](class_SpinBox) control for integers with a
 [class_Button](class_Button) that generates random values.
-
-:::
-
-:::

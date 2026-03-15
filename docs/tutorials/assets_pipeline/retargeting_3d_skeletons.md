@@ -16,7 +16,7 @@ The Skeleton stores the Transform values necessary for the default pose as Bone 
 If Bone Pose is equal to Bone Rest, it means that the Skeleton is in the default pose.
 
 :::note
-
+Godot 3.x and Godot 4.0+ have different Bone Pose behaviors.
 In Godot 3.x, Bone Pose is relative to Bone Rest, but in Godot 4.0+,
 it includes Bone Rest. See this [article ](https://godotengine.org/article/animation-data-redesign-40)_.
 
@@ -46,7 +46,7 @@ Godot has a preset called [class_skeletonprofilehumanoid](class_skeletonprofileh
 This tutorial proceeds with the assumption that you are using [class_skeletonprofilehumanoid](class_skeletonprofilehumanoid).
 
 :::note
-
+If you need a profile that is different from :ref:`class_skeletonprofilehumanoid`, you can export
 a [class_skeletonprofile](class_skeletonprofile) from the editor by selecting a Skeleton3D and using the **Skeleton3D** menu in the 3D viewport's toolbar.
 
 :::
@@ -61,7 +61,7 @@ by a magenta / red button (depending on the editor setting). It does not block t
 but it warns that animations may not be shared correctly.
 
 :::note
-
+The auto-mapping uses pattern matching for the bone names. So we recommend
 to use common English names for bones.
 
 :::
@@ -126,6 +126,9 @@ but the internal Transforms are different from the definition.
 This option fixes such models by applying Transforms on import.
 
 :::note
+If the imported scene contains objects other than Skeletons, this option may have a negative effect.
+
+:::
 
 #### Normalize Position Tracks
 
@@ -144,7 +147,7 @@ With [class_skeletonprofilehumanoid](class_skeletonprofilehumanoid), ``scale_bas
 Unifies the models' Bone Rests by overwriting it to match the reference poses defined in the [class_skeletonprofile](class_skeletonprofile).
 
 :::note
-
+This is the most important option for sharing animations in Godot 4.0+,
 but be aware that this option can produce horrible results **if the original Bone Rest set externally is important**.
 If you want to share animations with keeping the original Bone Rest,
 consider to use the [Realtime Retarget Module ](https://github.com/TokageItLab/realtime_retarget)_.
@@ -165,5 +168,3 @@ the [class_skeletonprofile](class_skeletonprofile) bone names you do not want fi
 
 Also, for models with bent knees or feet, it may be necessary to adjust the ``scale_base_bone`` height.
 For that, you can use ``base_height_adjustment`` option.
-
-:::

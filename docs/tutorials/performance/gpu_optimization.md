@@ -22,7 +22,7 @@ performance is by examining changes in the time spent rendering each frame.
 ## Draw calls, state changes, and APIs
 
 :::note
-
+The following section is not relevant to end-users, but is useful to
 provide background information that is relevant in later sections.
 
 :::

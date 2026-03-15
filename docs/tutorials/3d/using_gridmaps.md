@@ -131,11 +131,11 @@ placing it with Left-Click in the editor window. Use Right-click to remove a til
 Use the arrows next to the "GridMap" menu to change the floor that you are working on.
 
 Click on the "GridMap" menu to see options and shortcuts. For example, pressing
-:kbd:`S` rotates a tile around the y-axis.
+`S` rotates a tile around the y-axis.
 
 ![Image](img/gridmap_menu.png)
 
-Holding :kbd:`Shift` and dragging with the left mouse button will draw a selection
+Holding `Shift` and dragging with the left mouse button will draw a selection
 box. You can duplicate or clear the selected area using the respective menu
 options.
 

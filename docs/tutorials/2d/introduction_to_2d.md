@@ -37,9 +37,9 @@ You can drag and drop compatible nodes from the FileSystem dock to add them to t
 viewport as nodes.
 Dragging and dropping adds the dragged node as a sibling of the selected node 
 (if the root node is selected, adds as a child).
-Keeping :kbd:`Shift` pressed when dropping adds the node as a child of the selected node.
-Holding :kbd:`Alt` when dropping adds the node as a child of the root node.
-If :kbd:`Alt + Shift` is held when dropping, the node type can be selected if 
+Keeping `Shift` pressed when dropping adds the node as a child of the selected node.
+Holding `Alt` when dropping adds the node as a child of the root node.
+If `Alt + Shift` is held when dropping, the node type can be selected if 
 applicable.
 
 ### Main toolbar
@@ -52,21 +52,21 @@ from left to right:
 
 ![Image](img/2d_toolbar.webp)
 
-- **Select Mode** (:kbd:`Q`): Allows selection of nodes in the viewport. Left clicking on a node 
+- **Select Mode** (`Q`): Allows selection of nodes in the viewport. Left clicking on a node 
   in the viewport selects it.
   Left clicking and dragging a rectangle selects all nodes within the rectangle's boundaries,
   once released.
-  Holding :kbd:`Shift` while selecting adds more nodes to the selection.
-  Clicking on a selected node while holding :kbd:`Shift` deselects the node.
-  In this mode, you can drag the selected node(s) to move, press :kbd:`Ctrl` to switch to the 
+  Holding `Shift` while selecting adds more nodes to the selection.
+  Clicking on a selected node while holding `Shift` deselects the node.
+  In this mode, you can drag the selected node(s) to move, press `Ctrl` to switch to the 
   rotation mode temporarily, or use the red circles to scale it. If multiple nodes are 
   selected, only movement and rotation are possible. In this mode, rotation and scaling 
   will not use the snapping options if snapping is enabled.
-- **Move Mode** (:kbd:`W`): Enables move (or translate) mode for the selected nodes. See 
+- **Move Mode** (`W`): Enables move (or translate) mode for the selected nodes. See 
   [doc_introduction_to_2d_the_viewport](doc_introduction_to_2d_the_viewport) for more details.
-- **Rotate Mode** (:kbd:`E`): Enables rotation mode for the selected nodes. See 
+- **Rotate Mode** (`E`): Enables rotation mode for the selected nodes. See 
   [doc_introduction_to_2d_the_viewport](doc_introduction_to_2d_the_viewport) for more details.
-- **Scale Mode** (:kbd:`S`): Enables scaling and displays scaling gizmos in both 
+- **Scale Mode** (`S`): Enables scaling and displays scaling gizmos in both 
   axes for the selected node(s). See [doc_introduction_to_2d_the_viewport](doc_introduction_to_2d_the_viewport) for more details.
 - **Show list of selectable nodes at position clicked**: As the description suggests, 
   this provides a list of selectable nodes at the clicked position as a context menu, if 
@@ -77,16 +77,16 @@ from left to right:
   center if the ``centered`` property is set to ``true``. If you would like to change the 
   rotation pivot of a node, click this button and choose a new location by left clicking. 
   The node rotates considering this point. If you have multiple nodes selected, this icon 
-  will add a temporary pivot to be used commonly by all selected nodes. Pressing :kbd:`Shift` 
+  will add a temporary pivot to be used commonly by all selected nodes. Pressing `Shift` 
   and clicking this button will create the pivot at the center of selected nodes. If any of 
   the snap options are enabled, the pivot will also snap to them it when dragged.
-- **Pan Mode** (:kbd:`G`): Allows you to navigate in the viewport without accidentally selecting any nodes.
-  In other modes, you can also hold :kbd:`Space` and drag with the left mouse button to do the same.
+- **Pan Mode** (`G`): Allows you to navigate in the viewport without accidentally selecting any nodes.
+  In other modes, you can also hold `Space` and drag with the left mouse button to do the same.
 - **Ruler Mode**: After enabling, click on the viewport to display the current global 
   x and y coordinates. Dragging from a position to another one measures the distance in pixels.
   If you drag diagonally, it will draw a triangle and show the separate distances in terms 
   of x, y, and total distance to the target, including the angles to the axes in degrees.
-  The :kbd:`R` key activates the ruler. If snapping is enabled, it also displays the 
+  The `R` key activates the ruler. If snapping is enabled, it also displays the 
   measurements in terms of grid count:
 
 ![Image](img/2d_ruler_with_snap.webp)
@@ -146,13 +146,13 @@ Use the three-dot menu for this:
   - Scale Step: Determines the scaling increment factor. For example, if it is 0.1, it will 
     change the scaling at 0.1 steps if scaling snap is enabled and the scaling mode is used.
 
-- **Lock selected nodes** (:kbd:`Ctrl + L`). Locks the selected nodes, preventing selection and movement in the 
-  viewport. Clicking the button again (or using :kbd:`Ctrl + Shift + L`) unlocks the selected 
+- **Lock selected nodes** (`Ctrl + L`). Locks the selected nodes, preventing selection and movement in the 
+  viewport. Clicking the button again (or using `Ctrl + Shift + L`) unlocks the selected 
   nodes. Locked nodes can only be selected in the scene tree.
   They can easily be identified by a padlock next to their node names in the scene tree. 
   Clicking on this padlock also unlocks the nodes.
-- **Group selected nodes** (:kbd:`Ctrl + G`). This allows selection of the root node if any 
-  of the children are selected. Using :kbd:`Ctrl + G` ungroups them. Additionally, clicking 
+- **Group selected nodes** (`Ctrl + G`). This allows selection of the root node if any 
+  of the children are selected. Using `Ctrl + G` ungroups them. Additionally, clicking 
   the ungroup button in the scene tree performs the same action.
 - **Skeleton Options**: Provides options to work with Skeleton2D and Bone2D.
 
@@ -205,9 +205,9 @@ interfaces visually:
 
 Middle-clicking and dragging the mouse will pan the view. 
 The scrollbars on the right or bottom of the viewport also move the view.
-Alternatively, the :kbd:`G` or :kbd:`Space` keys can be used.
+Alternatively, the `G` or `Space` keys can be used.
 If you enable `Editor Settings &gt; Editors &gt; Panning &gt; Simple Panning`, you can activate
-panning directly with :kbd:`Space` only, without requiring dragging.
+panning directly with `Space` only, without requiring dragging.
 
 The viewport has buttons on the top-left.
 **Center View** centers the selected node(s) in the screen. Useful if you have a large scene 
@@ -239,7 +239,7 @@ You can also enable snapping to the created guides using the `Smart Snap` menu.
 
 :::note
 
-they are visible by checking the `View` menu of the viewport. :kbd:`Y` toggles their visibility, 
+they are visible by checking the `View` menu of the viewport. `Y` toggles their visibility, 
 by default. Also, make sure you have at least one node in the scene.
 
 :::
@@ -247,9 +247,9 @@ by default. Also, make sure you have at least one node in the scene.
 Depending on the tool chosen in the toolbar, left-clicking will have a primary action in the 
 viewport.
 For example, the `Select Mode` will select the left-clicked node in the viewport.
-Sometimes, left-clicking can be combined with a modifier (e.g., :kbd:`Ctrl`, or :kbd:`Shift`) to 
+Sometimes, left-clicking can be combined with a modifier (e.g., `Ctrl`, or `Shift`) to 
 perform secondary actions.
-For example, keeping :kbd:`Shift` pressed while dragging a node in the Select or Move modes will 
+For example, keeping `Shift` pressed while dragging a node in the Select or Move modes will 
 try to snap the node in a single axis while moving.
 
 Right clicking in the viewport provides two options to create a node or instantiate a scene 
@@ -277,9 +277,9 @@ Viewport has a **View** menu which provides several options to change the look o
   (shown with padlock), `Groups` (shown with two squares), and `Transformation` (shown with 
   green and red lines) indicators.
 - **Center Selection**: The same as the **Center View** button inside the viewport. Centers the selected 
-  node(s) in the view. :kbd:`F` is the default shortcut.
+  node(s) in the view. `F` is the default shortcut.
 - **Frame to Selection**: Similar to `Center Selection`, but also changes the zoom factor to fit the 
-  contents in the screen. :kbd:`Shift + F` is the default shortcut.
+  contents in the screen. `Shift + F` is the default shortcut.
 - **Clear Guides**: Deletes all guides from the screen. You will need to recreate them if 
   you plan to use them later. 
 - **Preview Canvas Scale**: Toggles the preview for scaling of canvas in the editor when the zoom 

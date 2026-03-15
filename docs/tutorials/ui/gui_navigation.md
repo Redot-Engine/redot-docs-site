@@ -38,7 +38,7 @@ Neighbor options are used to define nodes for 4-directional navigation, such
 as using arrow keys or a D-pad on a controller. For example, the bottom neighbor
 will be used when navigating down with the down arrow or by pushing down on
 the D-pad. The "Next" and "Previous" options are used with the focus shift button,
-such as :kbd:`Tab` on desktop operating systems.
+such as `Tab` on desktop operating systems.
 
 :::note
 

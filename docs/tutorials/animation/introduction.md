@@ -88,7 +88,7 @@ node.
 If you animate the wrong property, you can edit a track's path at any time
 by double-clicking on it and typing the new path. Play the animation using the
 "Play from beginning" button |Play from beginning| (or pressing
-:kbd:`Shift + D` on keyboard) to see the changes instantly.
+`Shift + D` on keyboard) to see the changes instantly.
 
 :::
 

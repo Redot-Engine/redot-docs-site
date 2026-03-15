@@ -484,7 +484,7 @@ There are two ways to achieve this in a non-destructive manner, so you can keep
 editing the original text afterwards:
 
 - Select your text object in Inkscape, then duplicate it in place by pressing
-  :kbd:`Ctrl + D` and use **Path &gt; Object to Path**. Hide the original text
+  `Ctrl + D` and use **Path &gt; Object to Path**. Hide the original text
   object afterwards using the **Layers and Objects** dock.
 - Use the Inkscape command line to export an SVG from another SVG file with text
   converted to paths:

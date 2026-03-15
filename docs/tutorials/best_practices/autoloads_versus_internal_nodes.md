@@ -96,7 +96,7 @@ An autoload is *not* necessarily a singleton. Nothing prevents you from
 instantiating copies of an autoloaded node. An autoload is only a tool that
 makes a node load automatically as a child of the root of your scene tree,
 regardless of your game's node structure or which scene you run, e.g. by
-pressing the :kbd:`F6` key.
+pressing the `F6` key.
 
 As a result, you can get the autoloaded node, for example an autoload called
 ``Sound``, by calling ``get_node("/root/Sound")``.

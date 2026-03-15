@@ -520,7 +520,7 @@ methods instead, which skip dealing with translation.
 
 A common operation, especially in 3D games, is to move an object relative
 to itself. For example, in first-person shooter games, you would want the
-character to move forward (-Z axis) when you press :kbd:`W`.
+character to move forward (-Z axis) when you press `W`.
 
 Since the basis vectors are the orientation relative to the parent,
 and the origin vector is the position relative to the parent, we can

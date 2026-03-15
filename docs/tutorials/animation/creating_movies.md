@@ -92,7 +92,7 @@ the output file path. This path can be set for all scenes in the Project Setting
 Alternatively, you can set the output file path on a per-scene basis by adding a
 String metadata with the name ``movie_file`` to the scene's **root node**. This
 is only used when the main scene is set to the scene in question, or when
-running the scene directly by pressing :kbd:`F6` (:kbd:`Cmd + R` on macOS).
+running the scene directly by pressing `F6` (`Cmd + R` on macOS).
 
 ![Image](img/creating_movies_set_per_scene_metadata.webp)
 
@@ -246,7 +246,7 @@ top of the window, or call ``get_tree().quit()`` in a script. You can also use
 the ``--quit-after N`` command line argument where ``N`` is the number of frames
 to render before quitting.
 
-Pressing :kbd:`F8` (:kbd:`Cmd + .` on macOS) or pressing :kbd:`Ctrl + C` on the
+Pressing `F8` (`Cmd + .` on macOS) or pressing `Ctrl + C` on the
 terminal running Godot is **not recommended**, as it will result in an
 improperly formatted AVI file with no duration information. For PNG image
 sequences, PNG images will not be negatively altered, but the associated WAV file

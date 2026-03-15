@@ -28,9 +28,9 @@ Some of the key features of the text editor are listed below:
 - Automatic indentation.
 - Code folding.
 - Customizable theme.
-- Multiple carets, which can be enabled using :kbd:`Alt + Left Click`.
+- Multiple carets, which can be enabled using `Alt + Left Click`.
 - Auto-completion of variables, functions, constants, etc.
-- Inline refactoring of symbols by selecting them and using :kbd:`Ctrl + D`.
+- Inline refactoring of symbols by selecting them and using `Ctrl + D`.
 - Mass find and replace across project files.
 
 ## Usage
@@ -81,8 +81,8 @@ the line numbers. Clicking on one will jump to that line.
 You can also choose to ignore warnings by opening the list and 
 clicking ``Ignore``.
 The status bar also lets you change the zoom level of the code by clicking 
-the percentage value. You can also use :kbd:`Ctrl + Mouse Wheel` 
-(:kbd:`Cmd + Mouse Wheel` on Mac) to achieve the same effect.
+the percentage value. You can also use `Ctrl + Mouse Wheel` 
+(`Cmd + Mouse Wheel` on Mac) to achieve the same effect.
 The status bar also shows the current position of the caret in terms of line and
 column, and whether the indentation is done using tabs, or spaces.
 
@@ -259,8 +259,8 @@ The **Edit** menu provides several options for line operations:
     the readability of larger scripts. See [doc_gdscript_builtin_types](doc_gdscript_builtin_types) for more.
 
 - **Completion Query**: Suggests from built-in or user created symbols to auto-complete the
-  partially written code. :kbd:`Up` and :kbd:`Down` arrows navigate up and down, pressing
-  :kbd:`Enter` or :kbd:`Tab` accepts and adds the highlighted symbol to the code. :kbd:`Tab` will also replace existing text to the right of the caret.
+  partially written code. `Up` and `Down` arrows navigate up and down, pressing
+  `Enter` or `Tab` accepts and adds the highlighted symbol to the code. `Tab` will also replace existing text to the right of the caret.
 - **Trim Trailing Whitespaces**: Removes extra spacing at the end of each line in the file.
 - **Trim Final Newlines**: Removes the extra new lines at the end of the file.
 - **Indentation**: Provides options for the indentation of the open file. Depending
@@ -292,7 +292,7 @@ The **Search** menu provides the following options:
 
 - **Replace...**: Opens the find and replace bar under the status bar to find text and replace it in the open file.  You can choose to replace them one 
   at a time or all at once. Additionally, you can limit the replacement to the selected 
-  text by checking the **Selection Only** checkbox in the find and replace bar. You can also use :kbd:`Ctrl + D` to 
+  text by checking the **Selection Only** checkbox in the find and replace bar. You can also use `Ctrl + D` to 
   additionally select the next instance of the currently selected text, allowing you to perform an in-line replacement on multiple occurrences.
 - **Find in Files...**: Opens a window to search for text within the files in the project 
   folder. Selecting "Find..." starts with the chosen folder, and includes the file extensions 
@@ -320,7 +320,7 @@ this panel.
 
 ![Image](img/editor_ui_script_editor_replace_all.webp)
 
-- **Contextual Help***: Opens the list of built-in class reference similar to pressing :kbd:`F1`
+- **Contextual Help***: Opens the list of built-in class reference similar to pressing `F1`
   on a symbol, or choosing **Lookup Symbol** from the context menu.
 
 The **Go To** menu lets you navigate within the code at ease with these options:

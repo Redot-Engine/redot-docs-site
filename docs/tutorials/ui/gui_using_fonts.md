@@ -412,7 +412,7 @@ true vector data can be resized to any size without losing quality.
 After downloading the generated font file, load it in your Godot project then
 specify it as a custom font for a Label, RichTextLabel or Label3D node. Switch
 over to the Fontello web interface, then copy the character by selecting it then
-pressing :kbd:`Ctrl + C` (:kbd:`Cmd + C` on macOS). Paste the character in the
+pressing `Ctrl + C` (`Cmd + C` on macOS). Paste the character in the
 **Text** property of your Label node. The character will appear as a placeholder
 glyph in the inspector, but it should appear correctly in the 2D/3D viewport.
 

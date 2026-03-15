@@ -627,7 +627,7 @@ func _run():
 ```
 
 This ``_run()`` method is executed when you use **File &gt; Run** or the keyboard
-shortcut :kbd:`Ctrl + Shift + X` while the EditorScript is the currently open
+shortcut `Ctrl + Shift + X` while the EditorScript is the currently open
 script in the script editor. This keyboard shortcut is only effective when
 currently focused on the script editor.
 

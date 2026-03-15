@@ -221,7 +221,7 @@ Don't use multiline comment syntax if your comment can fit on a single line:
 :::note
 
 In the shader editor, to make the selected code a comment (or uncomment it),
-press :kbd:`Ctrl + K`. This feature adds or removes ``//`` at the start of
+press `Ctrl + K`. This feature adds or removes ``//`` at the start of
 the selected lines.
 
 :::

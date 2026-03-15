@@ -22,7 +22,7 @@ in the user's browser.
 :::tip
 
 Use the browser-integrated developer console, usually opened
-with :kbd:`F12` (:kbd:`Cmd + Option + I` on macOS), to view
+with `F12` (`Cmd + Option + I` on macOS), to view
 **debug information** like JavaScript, engine, and WebGL errors.
 
 :::
@@ -359,7 +359,7 @@ python serve.py --root .
 ```
 
 On Windows, you can open a command prompt in the current folder by holding
-:kbd:`Shift` and right-clicking on empty space in Windows Explorer, then
+`Shift` and right-clicking on empty space in Windows Explorer, then
 choosing **Open PowerShell window here**.
 
 This will serve the contents of the current folder and open the default web

@@ -290,6 +290,7 @@ def convert_rst_to_md(rst_content):
 
         line = re.sub(r':ref:`([^<]+)\s*<([^>]+)>`', r'[\1](\2)', line)
         line = re.sub(r':ref:`([^`]+)`', r'[\1](\1)', line)
+        line = re.sub(r':kbd:`([^`]+)`', r'`\1`', line)
         line = re.sub(r'`([^<]+)\s*<([^>]+)>`_', r'[\1](\2)', line)
         line = re.sub(r'`([^`]+)`_', r'[\1](\1)', line)
         

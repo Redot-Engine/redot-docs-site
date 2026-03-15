@@ -127,7 +127,7 @@ This is caused by the NVIDIA graphics driver injecting an overlay to display
 instant replay information on ShadowPlay recording. This overlay can only be
 seen on Windows, as Linux does not have support for ShadowPlay.
 
-To disable this overlay, press :kbd:`Alt + Z` (default shortcut for the NVIDIA overlay)
+To disable this overlay, press `Alt + Z` (default shortcut for the NVIDIA overlay)
 and disable **Settings &gt; HUD Layout &gt; Status Indicator** in the NVIDIA overlay.
 
 Alternatively, you can install the `new NVIDIA app
@@ -189,7 +189,7 @@ currently does not support :abbr:`HDR (High Dynamic Range)` *output*
 As [most displays are not designed to display SDR content in HDR mode ](https://tftcentral.co.uk/articles/heres-why-you-should-only-enable-hdr-mode-on-your-pc-when-you-are-viewing-hdr-content)_,
 it is recommended to disable HDR in the Windows settings when not running applications
 that use HDR output. On Windows 11, this can be done by pressing
-:kbd:`Windows + Alt + B` (this shortcut is part of the Xbox Game Bar app).
+`Windows + Alt + B` (this shortcut is part of the Xbox Game Bar app).
 To toggle HDR automatically based on applications currently running, you can use
 [AutoActions ](https://github.com/Codectory/AutoActions)_.
 

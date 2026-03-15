@@ -76,7 +76,7 @@ to the ``sources`` variable which already includes all the source files of your 
 it means we are currently trying to compile the library when the ``godot_cpp`` is set to a version before 4.3.
 
 After loading the extension in a 4.3 Godot editor or later and open the documentation of your extension class
-either by :kbd:`Ctrl + Click` in the script editor or the Editor help dialog you will see something like this:
+either by `Ctrl + Click` in the script editor or the Editor help dialog you will see something like this:
 
 ![Image](img/gdextension_docs_generation.webp)
 

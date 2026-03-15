@@ -198,7 +198,7 @@ atlases, then choose **Open Atlas Merging Tool**:
    Opening the atlas merging tool after creating multiple atlases
 
 This will open a dialog, in which you can select several atlases by holding
-:kbd:`Shift` or :kbd:`Ctrl` then clicking on multiple elements:
+`Shift` or `Ctrl` then clicking on multiple elements:
 
 ![Image](img/using_tilesets_atlas_merging_tool_dialog.webp)
 
@@ -284,13 +284,13 @@ in the TileSet atlas inspector:
 
    Opening the collision editor while in Select mode
 
-You can quickly create a rectangle collision shape by pressing :kbd:`F` while
+You can quickly create a rectangle collision shape by pressing `F` while
 the TileSet editor is focused. If the keyboard shortcut doesn't work, try
 clicking in the empty area around the polygon editor to focus it:
 
 ![Image](img/using_tilesets_using_default_rectangle_collision.webp)
 
-   Using default rectangle collision shape by pressing :kbd:`F`
+   Using default rectangle collision shape by pressing `F`
 
 In this tile collision editor, you have access to all the 2D polygon editing tools:
 
@@ -467,10 +467,10 @@ If you wish to configure various properties on several tiles at once,
 choose the **Select** mode at the top of the TileSet editor:
 
 After doing this, you can select multiple tiles on the right column by holding
-:kbd:`Shift` then clicking on tiles. You can also perform rectangle selection by
+`Shift` then clicking on tiles. You can also perform rectangle selection by
 holding down the left mouse button then dragging the mouse. Lastly, you can
 deselect tiles that were already selected (without affecting the rest of the
-selection) by holding :kbd:`Shift` then clicking on a selected tile.
+selection) by holding `Shift` then clicking on a selected tile.
 
 You can then assign properties using the inspector in the middle column of the
 TileSet editor. Only properties that you change here will be applied to all

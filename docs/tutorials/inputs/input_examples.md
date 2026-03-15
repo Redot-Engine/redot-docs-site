@@ -145,7 +145,7 @@ consider [InputEventMouseButton ](class_InputEventMouseButton).
 It inherits from the following classes:
 
 - [InputEvent ](class_InputEvent) - the base class for all input events
-- [InputEventWithModifiers ](class_InputEventWithModifiers) - adds the ability to check if modifiers are pressed, such as :kbd:`Shift` or :kbd:`Alt`.
+- [InputEventWithModifiers ](class_InputEventWithModifiers) - adds the ability to check if modifiers are pressed, such as `Shift` or `Alt`.
 - [InputEventMouse ](class_InputEventMouse) - adds mouse event properties, such as ``position``
 - [InputEventMouseButton ](class_InputEventMouseButton) - contains the index of the button that was pressed, whether it was a double-click, etc.
 
@@ -248,7 +248,7 @@ public override void _Input(InputEvent @event)
 Keyboard events are captured in [InputEventKey ](class_InputEventKey).
 While it's recommended to use input actions instead, there may be cases where
 you want to specifically look at key events. For this example, let's check for
-the :kbd:`T`:
+the `T`:
 
 <Tabs>
 
@@ -310,8 +310,8 @@ for more information.
 Modifier properties are inherited from
 [InputEventWithModifiers ](class_InputEventWithModifiers). This allows
 you to check for modifier combinations using boolean properties. Let's imagine
-you want one thing to happen when the :kbd:`T` is pressed, but something
-different when it's :kbd:`Shift + T`:
+you want one thing to happen when the `T` is pressed, but something
+different when it's `Shift + T`:
 
 <Tabs>
 

@@ -71,7 +71,7 @@ preview sun and sky into the scene as nodes.
 
 :::tip
 
-If you hold :kbd:`Shift` while clicking **Add Sun to Scene** or **Add
+If you hold `Shift` while clicking **Add Sun to Scene** or **Add
 Environment to Scene** in the preview environment editor, this will add both
 a preview sun and environment to the current scene (as if you clicked both
 buttons separately). Use this to speed up project setup and prototyping.

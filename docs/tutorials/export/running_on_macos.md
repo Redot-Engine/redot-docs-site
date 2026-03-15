@@ -107,7 +107,7 @@ When you run the app for the first time, the following dialog is displayed:
 
 To run this app, you should remove the quarantine extended file attribute manually:
 
-* Open ``Terminal.app`` (press :kbd:`Cmd + Space` and enter ``Terminal``).
+* Open ``Terminal.app`` (press `Cmd + Space` and enter ``Terminal``).
 
 * Navigate to the folder containing the target application.
 
@@ -131,7 +131,7 @@ To run this app, you can ad-hoc sign it yourself:
 
 * Install ``Xcode`` for the App Store, start it and confirm command line tools installation.
 
-* Open ``Terminal.app`` (press :kbd:`Cmd + Space` and enter ``Terminal``).
+* Open ``Terminal.app`` (press `Cmd + Space` and enter ``Terminal``).
 
 * Navigate to the folder containing the target application.
 

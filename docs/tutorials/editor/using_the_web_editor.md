@@ -99,7 +99,7 @@ To import an existing project, the current process is as follows:
 Unlike the native version of Godot, the web editor is constrained to a single
 window. Therefore, it cannot open a new window when running the project.
 Instead, when you run the project by clicking the Run button or pressing
-:kbd:`F5`, it will appear to "replace" the editor window.
+`F5`, it will appear to "replace" the editor window.
 
 The web editor offers an alternative way to deal with the editor and game
 windows (which are now "tabs"). You can switch between the **Editor** and

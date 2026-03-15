@@ -23,7 +23,7 @@ or split it to a separate window by choosing **Make Floating** in the submenu th
 
 To move a floating dock back to the editor window, close the dock window using
 the **×** button in the top-right corner of the window (or in the top-left
-corner on macOS). Alternatively, you can press :kbd:`Alt + F4` while the split
+corner on macOS). Alternatively, you can press `Alt + F4` while the split
 window is focused.
 
 ## Splitting the script or shader editor to its own window
@@ -57,7 +57,7 @@ the top-right corner of the script editor:
 To go back to the previous state (with the script/shader editor embedded in the
 editor window), close the split window using the **×** button in the top-right
 corner of the window (or in the top-left corner on macOS). Alternatively, you
-can press :kbd:`Alt + F4` while the split window is focused.
+can press `Alt + F4` while the split window is focused.
 
 ## Customizing editor layouts
 

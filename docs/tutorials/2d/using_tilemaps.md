@@ -147,7 +147,7 @@ the top-left corner.
 
 :::
 
-You can also hold down :kbd:`Shift` to append to the current selection. When
+You can also hold down `Shift` to append to the current selection. When
 selecting more than one tile, multiple tiles will be placed every time you
 perform a painting operation. This can be used to paint structures composed of
 multiple tiles in a single click (such as large platforms or trees).
@@ -187,24 +187,24 @@ Select tiles by clicking a single tile, or by holding down the left mouse button
 select multiple with a rectangle in the 2D editor. Note that empty space cannot be
 selected: if you create a rectangle selection, only non-empty tiles will be selected.
 
-To append to the current selection, hold :kbd:`Shift` then select a tile.
-To remove from the current selection, hold :kbd:`Ctrl` then select a tile.
+To append to the current selection, hold `Shift` then select a tile.
+To remove from the current selection, hold `Ctrl` then select a tile.
 
 The selection can then be used in any other painting mode to quickly create copies
 of an already-placed pattern.
 
-You can remove the selected tiles from the TileMap by pressing :kbd:`Del`.
+You can remove the selected tiles from the TileMap by pressing `Del`.
 
-You can toggle this mode temporarily while in Paint mode by holding :kbd:`Ctrl`
+You can toggle this mode temporarily while in Paint mode by holding `Ctrl`
 then performing a selection.
 
 :::tip
 
 You can copy and paste tiles that were already placed by performing a
-selection, pressing :kbd:`Ctrl + C` then pressing :kbd:`Ctrl + V`.
+selection, pressing `Ctrl + C` then pressing `Ctrl + V`.
 The selection will be pasted after left-clicking. You can press
-:kbd:`Ctrl + V` another time to perform more copies this way.
-Right-click or press :kbd:`Escape` to cancel pasting.
+`Ctrl + V` another time to perform more copies this way.
+Right-click or press `Escape` to cancel pasting.
 
 :::
 
@@ -222,16 +222,16 @@ the left mouse button.
 
 :::tip
 
-While in Paint mode, you can draw a line by holding :kbd:`Shift` *before*
+While in Paint mode, you can draw a line by holding `Shift` *before*
 holding down the left mouse button, then dragging the mouse to the line's end
 point. This is identical to using the Line tool described below.
 
-You can also draw a rectangle by holding :kbd:`Ctrl` and :kbd:`Shift`
+You can also draw a rectangle by holding `Ctrl` and `Shift`
 *before* holding down the left mouse button, then dragging the mouse to the
 rectangle's end point. This is identical to using the Rectangle tool
 described below.
 
-Lastly, you can pick existing tiles in the 2D editor by holding :kbd:`Ctrl`
+Lastly, you can pick existing tiles in the 2D editor by holding `Ctrl`
 then clicking on a tile (or holding and dragging the mouse).
 This will switch the currently painted tile(s) to the tile(s) you've just clicked.
 This is identical to using the Picker tool described below.
@@ -249,7 +249,7 @@ If you have selected multiple tiles in the TileMap or using the Selection tool,
 you can place them in a repeating pattern across the line.
 
 You can toggle this mode temporarily while in Paint or Eraser mode by holding
-:kbd:`Shift` then drawing.
+`Shift` then drawing.
 
 ![Image](img/using_tilesets_line_tool_multiple_tiles.webp)
 
@@ -267,7 +267,7 @@ If you have selected multiple tiles in the TileMap or using the Selection tool,
 you can place them in a repeating pattern within the rectangle.
 
 You can toggle this mode temporarily while in Paint or Eraser mode by holding
-:kbd:`Ctrl` and :kbd:`Shift` then drawing.
+`Ctrl` and `Shift` then drawing.
 
 ### Bucket Fill
 
@@ -297,12 +297,12 @@ you can place them in a repeating pattern within the filled area.
 ### Picker
 
 After selecting Picker mode, you can pick existing tiles in the 2D editor by
-holding :kbd:`Ctrl` then clicking on a tile. This will switch the currently
+holding `Ctrl` then clicking on a tile. This will switch the currently
 painted tile to the tile you've just clicked. You can also pick multiple tiles
 at once by holding down the left mouse button and forming a rectangle selection.
 Only non-empty tiles can be picked.
 
-You can toggle this mode temporarily while in Paint mode by holding :kbd:`Ctrl`
+You can toggle this mode temporarily while in Paint mode by holding `Ctrl`
 then clicking or dragging the mouse.
 
 ### Eraser
@@ -353,8 +353,8 @@ premade *patterns* of tiles to place together in a go. This can be done on a
 per-TileMap basis by choosing the **Patterns** tab of the TileMap editor.
 
 To create a new pattern, switch to Select mode, perform a selection and press
-:kbd:`Ctrl + C`. Click on empty space within the Patterns tab (a blue focus
-rectangle should appear around the empty space), then press :kbd:`Ctrl + V`:
+`Ctrl + C`. Click on empty space within the Patterns tab (a blue focus
+rectangle should appear around the empty space), then press `Ctrl + V`:
 
 ![Image](img/using_tilemaps_create_pattern.webp)
 

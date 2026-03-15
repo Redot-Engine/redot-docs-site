@@ -291,7 +291,7 @@ table to find its new name.
 :::tip
 
 You can use the **Replace in Files** dialog to speed up replacement by pressing
-:kbd:`Ctrl + Shift + R` while the script editor is open. However, be careful
+`Ctrl + Shift + R` while the script editor is open. However, be careful
 as the Replace in Files dialog doesn't offer any way to undo a replacement.
 Use version control to commit your upgrade work regularly.
 Command line tools such as [sd ](https://github.com/chmln/sd)_ can also be used

@@ -392,9 +392,6 @@ allows maximizing the performance of bilinear 3D scaling.
 The ``configure()`` function in RenderSceneBuffersRD reallocates the 2D/3D
 buffers when the resolution or scaling changes.
 
-.. UPDATE: Planned feature. When dynamic resolution scaling is supported,
-.. update this paragraph.
-
 Dynamic resolution scaling isn't supported yet, but is planned in a future Godot
 release.
 
@@ -411,9 +408,6 @@ release.
 
 2D light rendering is performed in a single pass to allow for better performance
 with large amounts of lights.
-
-.. UPDATE: Planned feature. When Forward+ and Mobile feature 2D batching,
-.. update this.
 
 The Forward+ and Mobile rendering methods don't feature 2D batching yet, but
 it's planned for a future release.
@@ -475,9 +469,6 @@ with shadows in the camera frustum at a time and for those lights to be spread
 apart so that each object is only touched by 1 or 2 shadowed lights at a time.
 The maximum number of lights visible at once can be adjusted in the project
 settings.
-
-.. UPDATE: Planned feature. When static and dynamic shadow rendering are
-.. separated, update this paragraph.
 
 In all 3 methods, lights without shadows are much cheaper than lights with
 shadows. To improve performance, lights are only updated when the light is

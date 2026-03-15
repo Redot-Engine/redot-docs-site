@@ -15,7 +15,7 @@ by [Microsoft ](https://microsoft.com) (not to be confused with [doc_configuring
 - When using the clangd extension, run ``scons compiledb=yes``.
 - From the Visual Studio Code's main screen open the Godot root folder with
   **File &gt; Open Folder...**.
-- Press :kbd:`Ctrl + Shift + P` to open the command prompt window and enter *Configure Task*.
+- Press `Ctrl + Shift + P` to open the command prompt window and enter *Configure Task*.
 
 ![Image](img/vscode_configure_task.png)
 
@@ -57,7 +57,7 @@ Arguments can be different based on your own setup and needs. See
 
 To run and debug the project you need to create a new configuration in the ``launch.json`` file.
 
-- Press :kbd:`Ctrl + Shift + D` to open the Run panel.
+- Press `Ctrl + Shift + D` to open the Run panel.
 - If ``launch.json`` file is missing you will be prompted to create a new one.
 
 ![Image](img/vscode_1_create_launch.json.png)
@@ -69,7 +69,8 @@ To run and debug the project you need to create a new configuration in the ``lau
 <Tabs>
 
 <TabItem value="linuxbsd" label="LinuxBSD">
-```
+
+```js
 {
   "name": "Launch Project",
   "type": "lldb",
@@ -86,10 +87,12 @@ To run and debug the project you need to create a new configuration in the ``lau
   "preLaunchTask": "build"
 }
 ```
+
 </TabItem>
 
 <TabItem value="linuxbsd_gdb" label="LinuxBSD_gdb">
-```
+
+```js
 {
   "name": "Launch Project",
   "type": "cppdbg",
@@ -117,11 +120,14 @@ To run and debug the project you need to create a new configuration in the ``lau
   ],
   "preLaunchTask": "build"
 }
+
 ```
+
 </TabItem>
 
 <TabItem value="windows" label="Windows">
-```
+
+```js
 {
   "name": "Launch Project",
   "type": "cppvsdbg",
@@ -137,11 +143,14 @@ To run and debug the project you need to create a new configuration in the ``lau
   "visualizerFile": "${workspaceFolder}/platform/windows/godot.natvis",
   "preLaunchTask": "build"
 }
+
 ```
+
 </TabItem>
 
 <TabItem value="mac" label="Mac">
-```
+
+```js
 {
   "name": "Launch Project",
   "type": "lldb",
@@ -155,7 +164,9 @@ To run and debug the project you need to create a new configuration in the ``lau
     "process launch -- --editor --path path-to-your-godot-project-folder"
   ]
 }
+
 ```
+
 </TabItem>
 
 </Tabs>

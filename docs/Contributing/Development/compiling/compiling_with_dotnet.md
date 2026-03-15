@@ -12,7 +12,7 @@
 ## Enable the .NET module
 
 :::note
-
+C# support for Godot has historically used the
 [Mono ](https://www.mono-project.com/) runtime instead of the
 [.NET Runtime ](https://github.com/dotnet/runtime) and internally
 many things are still named ``mono`` instead of ``dotnet`` or
@@ -54,7 +54,7 @@ might have similarly named binaries without this suffix. These binaries can't be
 used to generate the .NET glue.
 
 :::note
-
+The glue sources must be regenerated every time the ClassDB-registered
 API changes. That is, for example, when a new method is registered to
 the scripting API or one of the parameters of such a method changes.
 Godot will print an error at startup if there is an API mismatch
@@ -76,7 +76,7 @@ If everything went well, the ``GodotSharp`` directory, containing the managed
 libraries, should have been created in the ``bin`` directory.
 
 :::note
-
+By default, all development builds share a version number, which can
 cause some issues with caching of the NuGet packages. To solve this
 issue either use ``GODOT_VERSION_STATUS`` to give every build a unique
 version or delete ``GodotNuGetFallbackFolder`` after every build to
@@ -193,8 +193,6 @@ bin/godot.linuxbsd.editor.x86_64.mono --headless --generate-mono-glue modules/mo
 ./modules/mono/build_scripts/build_assemblies.py --godot-output-dir=./bin --godot-platform=linuxbsd
 
 ```
-
-.. _compiling_with_dotnet_data_directory:
 
 ## Data directory
 

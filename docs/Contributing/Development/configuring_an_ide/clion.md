@@ -41,6 +41,9 @@ To add a custom build target that invokes SCons for compilation:
 - Give the tool a name, e.g. ``Build Godot debug``, set **Program** to ``scons``, set **Arguments** to the compilation settings you want (see [compiling Godot ](toc-devel-compiling)), and set the **Working directory** to ``$ProjectFileDir$``, which equals the Godot root directory. Click **OK** to create the tool.
 
 :::note
+CLion does not expand shell commands like ``scons -j$(nproc)``. Use concrete values instead, e.g. ``scons -j8``.
+
+:::
 
 ![Image](img/clion-create-build-tool.webp)
 
@@ -69,5 +72,3 @@ You can now build, run, debug, profile, and Valgrind check the Godot editor via 
 ![Image](img/clion-build-run.png)
 
 When playing a scene, the Godot editor will spawn a separate process. You can debug this process in CLion by going to **Run &gt; Attach to process...**, typing ``godot``, and selecting the Godot process with the highest **pid** (process ID), which will usually be the running project.
-
-:::

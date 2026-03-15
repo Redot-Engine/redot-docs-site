@@ -230,7 +230,7 @@ building for every platform (instructions in the previous sections),
 your module will be included.
 
 :::note
-
+There is a parameter limit of 5 in C++ modules for things such
 as subclasses. This can be raised to 13 by including the header
 file ``core/method_bind_ext.gen.inc``.
 
@@ -244,12 +244,15 @@ You can now use your newly created module from any script:
 
 <TabItem value="gdscript" label="GDScript">
 
+```gdscript
 var s = Summator.new()
 s.add(10)
 s.add(20)
 s.add(30)
 print(s.get_total())
 s.reset()
+
+```
 
 </TabItem>
 
@@ -258,7 +261,7 @@ s.reset()
 The output will be ``60``.
 
 :::info
-
+The previous Summator example is great for small, custom modules,
 but what if you want to use a larger, external library? Refer to
 [doc_binding_to_external_libraries](doc_binding_to_external_libraries) for details about binding to
 external libraries.
@@ -266,7 +269,7 @@ external libraries.
 :::
 
 :::warning
-
+If your module is meant to be accessed from the running project
 (not just from the editor), you must also recompile every export
 template you plan to use, then specify the path to the custom
 template in each export preset. Otherwise, you'll get errors when
@@ -381,7 +384,7 @@ void unregister_summator_types();
 ```
 
 :::note
-
+Unlike other register methods, we have to explicitly define
 ``MODULE_SUMMATOR_HAS_PREREGISTER`` to let the build system know what
 relevant method calls to include at compile time. The module's name
 has to be converted to uppercase as well.

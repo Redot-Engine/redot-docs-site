@@ -19,7 +19,7 @@ files in the `godot-docs GitHub repository
 request triggers a rebuild of the online documentation upon merging.
 
 :::info
-
+For details on Git usage and the pull request workflow, please
 refer to the [doc_pr_workflow](doc_pr_workflow) page. Most of what it describes
 regarding the main godotengine/godot repository is also valid for
 the docs repository.
@@ -27,7 +27,7 @@ the docs repository.
 :::
 
 :::warning
-
+The class reference's source files are in the `Godot engine
 repository &lt;https://github.com/godotengine/godot&gt;`_. We generate
 the [Class Reference ](doc_class_reference) section of this documentation
 from them. If you want to update the description of a class, its
@@ -72,7 +72,7 @@ reference &lt;https://github.com/godotengine/godot/tree/master/doc/classes&gt;`_
 See [doc_updating_the_class_reference](doc_updating_the_class_reference) for details.
 
 :::info
-
+To build the manual and test changes on your computer, see
 [doc_building_the_manual](doc_building_the_manual).
 
 :::
@@ -177,40 +177,41 @@ the `Sphinx directives documentation
 To add images, please put them in an ``img/`` folder next to the ``.rst`` file with
 a meaningful name and include them in your page with:
 
-.. code:: rst
+```rst
+.. image:: img/image_name.webp
 
-   .. image:: img/image_name.webp
+```
 
 Alternatively, you can use the `figure` directive, which gives the image a contrasting
 border and allows centering it on the page.
 
-.. code:: rst
+```rst
+.. figure:: img/image_name.webp
+    :align: center
 
-    .. figure:: img/image_name.webp
-        :align: center
+```
 
 You can also include attachments as support material for a tutorial, by placing them
 into a ``files/`` folder next to the ``.rst`` file, and using this inline markup:
 
-.. code:: rst
-
-   :download:`file_name.zip &lt;files/file_name.zip&gt;`
-
-Consider using the `godot-docs-project-starters &lt;https://github.com/godotengine/godot-docs-project-starters&gt;`
+```rst
+Consider using the `godot-docs-project-starters <https://github.com/godotengine/godot-docs-project-starters>`
 repository for hosting support materials, such as project templates and asset packs.
 You can use a direct link to the generated archive from that repository with the regular
 link markup:
 
 .. code:: rst
 
-   [file_name.zip ](https://github.com/godotengine/godot-docs-project-starters/releases/download/latest-4.x/file_name.zip)
+   `file_name.zip <https://github.com/godotengine/godot-docs-project-starters/releases/download/latest-4.x/file_name.zip>`_
 
-## License
+License
+-------
 
 This documentation and every page it contains is published under the terms of
 the `Creative Commons Attribution 3.0 license (CC BY 3.0)
-&lt;https://creativecommons.org/licenses/by/3.0/&gt;`_, with attribution to "Juan
+<https://creativecommons.org/licenses/by/3.0/>`_, with attribution to "Juan
 Linietsky, Ariel Manzur and the Godot community".
 
 By contributing to the documentation on the GitHub repository, you agree that
 your changes are distributed under this license.
+```

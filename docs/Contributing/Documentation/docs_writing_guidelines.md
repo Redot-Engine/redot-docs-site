@@ -503,8 +503,8 @@ class names, which you can't fold, are ``Classes`` e.g. the
 
 Keyboard and mouse shortcuts should make use of the ``:kbd:`` tag, which allows
 shortcuts to stand out from the rest of the text and inline code. Use the
-compact form for modifier keys (:kbd:`Ctrl`/:kbd:`Cmd`) instead of their spelled
-out form (:kbd:`Control`/:kbd:`Command`). For combinations, use the ``+`` symbol
+compact form for modifier keys (`Ctrl`/`Cmd`) instead of their spelled
+out form (`Control`/`Command`). For combinations, use the ``+`` symbol
 with a space on either side of the symbol.
 
 Make sure to mention shortcuts that differ on macOS compared to other platforms.
@@ -514,9 +514,9 @@ You can find a list of all shortcuts, including what they are on macOS, on
 Try to integrate the shortcut into sentences the best you can. Here are some
 examples with the ``:kbd:`` tag left as-is for better visibility:
 
-- Press ``:kbd:`Ctrl + Alt + T``` to toggle the panel (``:kbd:`Opt + Cmd + T``` on macOS).
-- Press ``:kbd:`Space``` and hold the left mouse button to pan in the 2D editor.
-- Press ``:kbd:`Shift + Up Arrow``` to move the node upwards by 8 pixels.
+- Press ```Ctrl + Alt + T``` to toggle the panel (```Opt + Cmd + T``` on macOS).
+- Press ```Space``` and hold the left mouse button to pan in the 2D editor.
+- Press ```Shift + Up Arrow``` to move the node upwards by 8 pixels.
 
 ## Manual style guidelines
 
@@ -526,7 +526,7 @@ Use your best judgement. If you can write more clearly by breaking one of these
 guidelines, please do! But remember that the guidelines exist for a reason.
 
 :::note
-
+In many cases, the manual does not follow these guidelines. If you are
 already making changes to a paragraph or section of the docs, update it to
 follow these standards. Avoid making unrelated changes that *only* update style,
 since every change will require the paragraph to be re-translated.
@@ -537,23 +537,13 @@ since every change will require the paragraph to be re-translated.
 
 There are a few styles that the manual uses.
 
-+---------------------+--------------------------+------------------------------------------------------------------------+
-| Style               | RST formatting           | Typical usage                                                          |
-+=====================+==========================+========================================================================+
-| Plaintext           | ``text``                 | Used for most text.                                                    |
-+---------------------+--------------------------+------------------------------------------------------------------------+
-| *Italics*           | ``*text*``               | Used for emphasis. Used for introducing new terms.                     |
-+---------------------+--------------------------+------------------------------------------------------------------------+
-| **Bold**            | ``**text**``             | Used for emphasis, and for editor UI like menus and windows.           |
-|                     |                          |                                                                        |
-+---------------------+--------------------------+------------------------------------------------------------------------+
-| ``Code``            | `` text ``               | Used for variable names, literal values, and code snippets. ``code`` is|
-|                     |                          | used in many cases where you would use "quoted plaintext" in typical   |
-|                     |                          | English.                                                               |
-+---------------------+--------------------------+------------------------------------------------------------------------+
-| "Quotes"            | ``"text"``               | Used for some literal or quoted values. In many cases, another         |
-|                     |                          | style is preferred.                                                    |
-+---------------------+--------------------------+------------------------------------------------------------------------+
+| Style | RST formatting | Typical usage |
+| --- | --- | --- |
+| Plaintext | ``text`` | Used for most text. |
+| *Italics* | ``*text*`` | Used for emphasis. Used for introducing new terms. |
+| **Bold** | ``**text**`` | Used for emphasis, and for editor UI like menus and windows. |
+| ``Code`` | `` text `` | Used for variable names, literal values, and code snippets. ``code`` is used in many cases where you would use "quoted plaintext" in typical English. |
+| "Quotes" | ``"text"`` | Used for some literal or quoted values. In many cases, another style is preferred. |
 
 ### Emphasis
 
@@ -618,7 +608,7 @@ reader must navigate. Use ``&gt;`` as a separator. You can omit ellipses in menu
     - Select **Scene &gt; Export As &gt; MeshLibrary**.
 
 :::note
-
+Sometimes, ``->`` or ``→`` is used as a separator. This is nonstandard.
 Replace it with ``&gt;`` if you are already making changes to a section.
 
 :::
@@ -671,13 +661,13 @@ trailing whitespace when you do.
 ```
 
 :::tip
-
+In most text editors, you can add a vertical guide or "ruler" at 80
 characters. For example, in Visual Studio Code, you can add the following to
 your ``settings.json`` to add rulers at 80 and 100 characters:
 
-.. code:: json
-
-    "editor.rulers": [80,100],
+```json
+"editor.rulers": [80,100],
+```
 
 :::
 

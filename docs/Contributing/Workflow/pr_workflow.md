@@ -28,7 +28,7 @@ The [repository on GitHub ](https://github.com/godotengine/godot) is a
 issue tracker and PR system.
 
 :::note
-
+If you are contributing to the documentation, its repository can
 be found [here ](https://github.com/godotengine/godot-docs).
 
 :::
@@ -44,7 +44,7 @@ as it enforces one commit per file and per modification,
 which quickly leads to PRs with an unreadable Git history (especially after peer review).
 
 :::info
-
+The first sections of Git's "Book" are a good introduction to
 the tool's philosophy and the various commands you need to
 master in your daily workflow. You can read them online on the
 [Git SCM ](https://git-scm.com/book/en/v2) website.
@@ -91,7 +91,7 @@ download Git from [its website ](https://git-scm.com) if you're using Windows or
 macOS, or install it through your package manager if you're using Linux.
 
 :::note
-
+If you are on Windows, open Git Bash to type commands. macOS and Linux users
 can use their respective terminals.
 
 :::
@@ -129,7 +129,7 @@ You only need to do the above steps once, as long as you keep that local
 metadata is hidden in its ``.git`` subfolder).
 
 :::note
-
+*Branch it, pull it, code it, stage it, commit, push it, rebase
 it... technologic.*
 
 This bad take on Daft Punk's *Technologic* shows the general
@@ -231,7 +231,7 @@ You will then be back to the original state of your branch before calling
 ``git pull --rebase``.
 
 :::note
-
+If you omit the ``--rebase`` argument, you will instead create a merge
 commit which tells Git what to make of the two distinct branches. If any
 conflicts arise, they would be resolved all at once via this merge commit.
 
@@ -253,7 +253,7 @@ have made any other changes that have resulted in undesired history, the best op
 is to use an *interactive rebase* on the upstream branch. See the [dedicated section ](doc_pr_workflow_rebase) for instructions.
 
 :::tip
-
+If at any time you want to *reset* a local branch to a given commit or branch,
 you can do so with ``git reset --hard &lt;commit ID&gt;`` or
 ``git reset --hard &lt;remote&gt;/&lt;branch&gt;`` (e.g. ``git reset --hard upstream/master``).
 
@@ -442,10 +442,6 @@ git push --force origin better-project-manager
 
 ```
 
-.. Kept for compatibility with the previous title, linked in many PRs.
-
-.. _mastering-the-pr-workflow-the-rebase:
-
 ## The interactive rebase
 
 If you didn't follow the above steps closely to *amend* changes into a commit
@@ -478,7 +474,7 @@ git rebase -i upstream/master
 ```
 
 :::note
-
+Referencing branches in Git is a bit tricky due to the distinction
 between remote and local branches. Here, ``upstream/master`` (with a
 `/`) is a local branch which has been pulled from the ``upstream``
 remote's ``master`` branch.

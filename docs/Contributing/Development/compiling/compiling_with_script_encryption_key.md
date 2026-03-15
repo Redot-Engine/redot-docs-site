@@ -63,19 +63,28 @@ aeb1bc56aaf580cc31784e9c41551e9ed976ecba10d315db591e749f3f64890f
 
 <TabItem value="linux_macos" label="Linux/macOS">
 
-`export SCRIPT_AES256_ENCRYPTION_KEY="your_generated_key"`
+```bash
+export SCRIPT_AES256_ENCRYPTION_KEY="your_generated_key"
+
+```
 
 </TabItem>
 
 <TabItem value="windows__cmd_" label="Windows (cmd)">
 
-`set SCRIPT_AES256_ENCRYPTION_KEY=your_generated_key`
+```bat
+set SCRIPT_AES256_ENCRYPTION_KEY=your_generated_key
+
+```
 
 </TabItem>
 
 <TabItem value="windows__powershell_" label="Windows (PowerShell)">
 
-`$env:SCRIPT_AES256_ENCRYPTION_KEY="your_generated_key"`
+```bat
+$env:SCRIPT_AES256_ENCRYPTION_KEY="your_generated_key"
+
+```
 
 </TabItem>
 

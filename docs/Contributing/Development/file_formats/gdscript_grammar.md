@@ -6,7 +6,7 @@ This is the formal grammar of GDScript written in [EBNF ](https://en.wikipedia.o
 for reference purposes.
 
 :::note
-
+This grammar is descriptive only, derived from the reference
 documentation and current implementation. The GDScript parser is
 **not** generated from a grammar definition. Inconsistencies here
 likely mean an error in this grammar, not a bug in GDScript.

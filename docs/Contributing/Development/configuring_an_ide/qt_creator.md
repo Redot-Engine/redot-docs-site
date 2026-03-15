@@ -21,7 +21,7 @@
 ![Image](img/qtcreator-apply-import-filter.png)
 
 :::note
-
+You can change this configuration later by right-clicking on your project
 and selecting the **Edit Files...** option.
 
 ![Image](img/qtcreator-edit-files-menu.png)
@@ -42,16 +42,14 @@ and selecting the **Edit Files...** option.
 - Click **Add Build Step &gt; Custom Process Step** to add a new build step
   with the following settings:
 
-  +-----------+------------------------------------------------------------------------------+
-  | Command   | **scons**                                                                    |
-  +-----------+------------------------------------------------------------------------------+
-  | Arguments | See [doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem) for a full list of arguments. |
-  +-----------+------------------------------------------------------------------------------+
+| Command | **scons** |
+| --- | --- |
+| Arguments | See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments. |
 
 ![Image](img/qtcreator-set-scons-command.png)
 
 :::note
-
+If the build fails with ``Could not start process "scons"``, it can mean that ``scons``
 is not in your ``PATH`` environment variable. In this case, you'll have to specify the
 full path to the SCons binary.
 

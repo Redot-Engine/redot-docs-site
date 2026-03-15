@@ -1,8 +1,6 @@
 
 # Handling compatibility breakages
 
-.. TODO: Elaborate on types of compatibility and procedure.
-
 So you've added a new parameter to a method, changed the return type,
 changed the type of a parameter, or changed its default value,
 and now the automated testing is complaining about compatibility breakages?
@@ -11,8 +9,6 @@ Breaking compatibility should be avoided, but when necessary there are systems i
 to handle this in a way that makes the transition as smooth as possible.
 
 ## A practical example
-
-.. TODO: Add example that showcases more details like original default arguments etc.
 
 These changes are taken from [pull request #88047 ](https://github.com/godotengine/godot/pull/88047), which added
 new pathing options to ``AStarGrid2D`` and other AStar classes.

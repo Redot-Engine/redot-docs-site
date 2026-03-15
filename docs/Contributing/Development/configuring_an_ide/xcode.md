@@ -20,11 +20,9 @@ download it from the Mac App Store.
 
 - Fill out the form with the following settings:
 
-  +------------+------------------------------------------------------------------------------+
-  | Arguments  | See [doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem) for a full list of arguments. |
-  +------------+------------------------------------------------------------------------------+
-  | Directory  | A full path to the Godot root folder                                         |
-  +------------+------------------------------------------------------------------------------+
+| Arguments | See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments. |
+| --- | --- |
+| Directory | A full path to the Godot root folder |
 
 - Add a Command Line Tool target which will be used for indexing the project by
   choosing **File &gt; New &gt; Target...**.
@@ -36,6 +34,9 @@ download it from the Mac App Store.
 ![Image](img/xcode_5_select_command_line_target.webp)
 
 :::note
+Name it something so you know not to compile with this target (e.g. ``GodotXcodeIndex``).
+
+:::
 
 - For this target open the **Build Settings** tab and look for **Header Search Paths**.
 - Set **Header Search Paths** to the absolute path to the Godot root folder. You need to
@@ -88,5 +89,3 @@ run the project.
 
 If you run into any issues, ask for help in one of
 [Godot's community channels ](https://godotengine.org/community)_.
-
-:::

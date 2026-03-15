@@ -20,7 +20,7 @@ with the solution file, it can be generated using SCons.
 - Use the **Build** top menu to build the project.
 
 :::warning
-
+Visual Studio must be configured with the C++ package. It can be selected
 in the installer:
 
 ![Image](img/vs_1_install_cpp_package.png)
@@ -56,7 +56,7 @@ To learn more about command line arguments, refer to the
 Even if you start the project without a debugger attached it can still be connected to the running
 process using **Debug &gt; Attach to Process...** menu.
 
-To check that everything is working, put a breakpoint in ``main.cpp`` and press :kbd:`F5` to
+To check that everything is working, put a breakpoint in ``main.cpp`` and press `F5` to
 start debugging.
 
 ![Image](img/vs_4_debugging_main.png)

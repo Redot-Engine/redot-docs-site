@@ -39,15 +39,11 @@ platform/<your_platform>/  // Replace <your_platform> with a folder
 - Apply the changes.
 - Under **Custom Build System** add a new build configuration with the following settings:
 
-  +-----------------+------------------------------------------------------------------------------+
-  | Build Directory | *blank*                                                                      |
-  +-----------------+------------------------------------------------------------------------------+
-  | Enable          | **True**                                                                     |
-  +-----------------+------------------------------------------------------------------------------+
-  | Executable      | **scons**                                                                    |
-  +-----------------+------------------------------------------------------------------------------+
-  | Arguments       | See [doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem) for a full list of arguments. |
-  +-----------------+------------------------------------------------------------------------------+
+| Build Directory | *blank* |
+| --- | --- |
+| Enable | **True** |
+| Executable | **scons** |
+| Arguments | See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments. |
 
 ![Image](img/kdevelop_buildconfig.png)
 

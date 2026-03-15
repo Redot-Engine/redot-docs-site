@@ -1,5 +1,3 @@
-.. _docs_image_guidelines:
-
 # Creating documentation images and videos
 
 Throughout the documentation, images are often needed to make the explanation
@@ -13,13 +11,13 @@ explain the process from beginning to end.
 To take a picture of something in Godot, a screen capture tool can be used.
 
 On Windows 10 and 11 that would be the Snip & Sketch program.
-Pressing :kbd:`Windows + Shift + S` lets you take a screenshot
+Pressing `Windows + Shift + S` lets you take a screenshot
 of a portion of the screen and save it to the clipboard.
 After pressing those keys, click and drag over
 the area you wish to take a picture of.
 
-On macOS, pressing :kbd:`Shift + Command + 3` does the same.
-To take a picture of the entire screen press :kbd:`Shift + Command + 4`.
+On macOS, pressing `Shift + Command + 3` does the same.
+To take a picture of the entire screen press `Shift + Command + 4`.
 All screenshots taken will be saved to the desktop.
 
 Each Linux desktop environment has it's own screenshot tool. For example,
@@ -96,7 +94,7 @@ and the controls will return.
 As explained earlier on this page, all images taken on a screen that is a higher resolution
 than 1080p should be scaled down. To do this in Krita click on **Image** on the top bar, and
 from the dropdown menu select **Scale Image To New Size**. This menu can also be opened by
-pressing :kbd:`Ctrl + Alt + I`. On this menu you want to adjust the pixel dimensions. For
+pressing `Ctrl + Alt + I`. On this menu you want to adjust the pixel dimensions. For
 anything taken on a 4K monitor change the value of the width and height to half of its current
 value, for anything taken on a 1440p monitor multiply the width and height by 0.75. Make
 sure the **Constrain Proportions** box at the bottom of the menu is checked so you only have

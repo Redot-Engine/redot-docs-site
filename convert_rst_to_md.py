@@ -48,7 +48,7 @@ def convert_rst_to_md(rst_content):
 
         if is_tabs_open:
             # Check if we should close Tabs because next line is not a tab
-            is_tab_directive = re.match(r'^\s*\.\. code-tab::', line) or re.match(r'^\s*\.\. tab::', line)
+            is_tab_directive = re.match(r'^\s*\.\. (code-tab|tab|group-tab)::', line)
             
             # If the current line is an empty line, check if the NEXT non-empty line is a tab directive
             if not line.strip():
@@ -56,7 +56,7 @@ def convert_rst_to_md(rst_content):
                 while next_non_empty < len(lines) and not lines[next_non_empty].strip():
                     next_non_empty += 1
                 if next_non_empty < len(lines):
-                    is_tab_directive = re.match(r'^\s*\.\. code-tab::', lines[next_non_empty]) or re.match(r'^\s*\.\. tab::', lines[next_non_empty])
+                    is_tab_directive = re.match(r'^\s*\.\. (code-tab|tab|group-tab)::', lines[next_non_empty])
                 else:
                     is_tab_directive = False
             
@@ -103,7 +103,7 @@ def convert_rst_to_md(rst_content):
                 i += 2
                 continue
 
-        # Handle tabs and code-tabs
+        # Handle tabs, code-tabs, and group-tabs
         if line.strip() == '.. tabs::':
             md_lines.append('')
             md_lines.append('<Tabs>')
@@ -112,9 +112,9 @@ def convert_rst_to_md(rst_content):
             i += 1
             continue
         
-        match_tab = re.match(r'^\s*\.\. tab::\s+(.*)', line)
+        match_tab = re.match(r'^\s*\.\. (tab|group-tab)::\s+(.*)', line)
         if match_tab:
-            label = match_tab.group(1).strip()
+            label = match_tab.group(2).strip()
             value = re.sub(r'[^a-z0-9_]', '_', label.lower())
             i += 1
             # Skip optional labels or other options
@@ -207,8 +207,8 @@ def convert_rst_to_md(rst_content):
             md_lines.append('')
             continue
 
-        # Handle generic code blocks (.. code-block::)
-        match_code = re.match(r'^\s*\.\.\s+code-block::\s*(\w+)?', line)
+        # Handle generic code blocks (.. code-block:: and .. code::)
+        match_code = re.match(r'^\s*\.\.\s+(?:code-block|code)::\s*(\w+)?', line)
         if match_code:
             lang = match_code.group(1) or ""
             i += 1

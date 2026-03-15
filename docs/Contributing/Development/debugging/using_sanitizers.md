@@ -142,27 +142,31 @@ On Linux, if you stumble upon the following error:
 
 You may need to temporarily lower the Address Space Layout Randomization (ASLR) entropy in your system with:
 
-.. code:: sh
+```sh
+sudo sysctl vm.mmap_rnd_bits=28
 
-    sudo sysctl vm.mmap_rnd_bits=28
+```
 
 Or preferably disable it entirely with:
 
-.. code:: sh
+```sh
+sudo sysctl kernel.randomize_va_space=0
 
-    sudo sysctl kernel.randomize_va_space=0
+```
 
 And as soon as you are done with the thread sanitizer, increase the ASLR entropy with:
 
-.. code:: sh
+```sh
+sudo sysctl vm.mmap_rnd_bits=32
 
-    sudo sysctl vm.mmap_rnd_bits=32
+```
 
 Or re-enable ASLR with:
 
-.. code:: sh
+```sh
+sudo sysctl kernel.randomize_va_space=2
 
-    sudo sysctl kernel.randomize_va_space=2
+```
 
 Rebooting your machine will also revert the ASLR state to its default values.
 

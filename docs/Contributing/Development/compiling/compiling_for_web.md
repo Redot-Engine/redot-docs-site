@@ -19,7 +19,7 @@ To compile export templates for the Web, the following is required:
 - [SCons 4.0+ ](https://scons.org/pages/download.html)_ build system.
 
 :::info
-
+To get the Godot source code for compiling, see
 [doc_getting_source](doc_getting_source).
 
 For a general overview of SCons usage for Godot, see

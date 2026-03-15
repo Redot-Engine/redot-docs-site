@@ -20,7 +20,7 @@ you can install using the Visual Studio Installer. Ensure all dependencies are i
 before you continue to the next steps.
 
 :::tip
-
+If you already use Visual Studio as your main IDE, you can use the same solution file in Rider.
 Rider and Visual Studio use the same solution format, so you can switch between the two IDEs without rebuilding the solution file.
 Debug configurations need to be changed when going from one IDE to another.
 
@@ -44,7 +44,7 @@ The ``dev_build`` parameter makes sure the debug symbols are included, allowing 
   or by using the **Open** option inside of Rider.
 
 :::note
-
+Rider could fail to build the solution.
 If that is the case, try running `git clean -xdf` to remove all traces of the previous build artifacts
 and regenerate the build files using the `scons` command again. Restarting the terminal and your
 development environment may help.

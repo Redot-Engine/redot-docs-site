@@ -93,7 +93,7 @@ constants and methods you will find in the class reference. Godot generates and
 updates the XML automatically.
 
 :::note
-
+For some modules in the engine's source code, you'll find the XML
 files in the ``modules/&lt;module_name&gt;/doc_classes/`` directory instead.
 
 :::
@@ -133,42 +133,19 @@ Linking
 Whenever you link to a member of another class, you need to specify the class name.
 For links to the same class, the class name is optional and can be omitted.
 
-+--------------------------------+-----------------------------------------+--------------------------------------------------------------+
-| Tag and Description            | Example                                 | Result                                                       |
-+================================+=========================================+==============================================================+
-| | ``[Class]``                  | ``Move the [Sprite2D].``                | Move the [class_Sprite2D](class_Sprite2D).                              |
-| | Link to class                |                                         |                                                              |
-+--------------------------------+-----------------------------------------+--------------------------------------------------------------+
-| | ``[annotation Class.name]``  | ``See [annotation @GDScript.@rpc].``    | See [@GDScript.@rpc ](class_@GDScript_annotation_@rpc). |
-| | Link to annotation           |                                         |                                                              |
-+--------------------------------+-----------------------------------------+--------------------------------------------------------------+
-| | ``[constant Class.name]``    | ``See [constant Color.RED].``           | See [Color.RED ](class_Color_constant_RED).             |
-| | Link to constant             |                                         |                                                              |
-+--------------------------------+-----------------------------------------+--------------------------------------------------------------+
-| | ``[enum Class.name]``        | ``See [enum Mesh.ArrayType].``          | See [Mesh.ArrayType ](enum_Mesh_ArrayType).             |
-| | Link to enum                 |                                         |                                                              |
-+--------------------------------+-----------------------------------------+--------------------------------------------------------------+
-| | ``[member Class.name]``      | ``Get [member Node2D.scale].``          | Get [Node2D.scale ](class_Node2D_property_scale).       |
-| | Link to member               |                                         |                                                              |
-+--------------------------------+-----------------------------------------+--------------------------------------------------------------+
-| | ``[method Class.name]``      | ``Call [method Node3D.hide].``          | Call [Node3D.hide() ](class_Node3D_method_hide).        |
-| | Link to method               |                                         |                                                              |
-+--------------------------------+-----------------------------------------+--------------------------------------------------------------+
-| | ``[constructor Class.name]`` | ``Use [constructor Color.Color].``      | Use  [Color.Color ](class_Color_constructor_Color).     |
-| | Link to built-in constructor |                                         |                                                              |
-+--------------------------------+-----------------------------------------+--------------------------------------------------------------+
-| | ``[operator Class.name]``    | ``Use [operator Color.operator *].``    | Use  [Color.operator * ](class_Color_operator_mul_int). |
-| | Link to built-in operator    |                                         |                                                              |
-+--------------------------------+-----------------------------------------+--------------------------------------------------------------+
-| | ``[signal Class.name]``      | ``Emit [signal Node.renamed].``         | Emit [Node.renamed ](class_Node_signal_renamed).        |
-| | Link to signal               |                                         |                                                              |
-+--------------------------------+-----------------------------------------+--------------------------------------------------------------+
-| | ``[theme_item Class.name]``  | ``See [theme_item Label.font].``        | See [Label.font ](class_Label_theme_font_font).         |
-| | Link to theme item           |                                         |                                                              |
-+--------------------------------+-----------------------------------------+--------------------------------------------------------------+
-| | ``[param name]``             | ``Takes [param size] for the size.``    | Takes ``size`` for the size.                                 |
-| | Parameter name (as code)     |                                         |                                                              |
-+--------------------------------+-----------------------------------------+--------------------------------------------------------------+
+| Tag and Description | Example | Result |
+| --- | --- | --- |
+|  | ``[Class]`` Link to class | ``Move the [Sprite2D].`` | Move the :ref:`class_Sprite2D`. |
+|  | ``[annotation Class.name]`` Link to annotation | ``See [annotation @GDScript.@rpc].`` | See :ref:`@GDScript.@rpc &lt;class_@GDScript_annotation_@rpc&gt;`. |
+|  | ``[constant Class.name]`` Link to constant | ``See [constant Color.RED].`` | See :ref:`Color.RED &lt;class_Color_constant_RED&gt;`. |
+|  | ``[enum Class.name]`` Link to enum | ``See [enum Mesh.ArrayType].`` | See :ref:`Mesh.ArrayType &lt;enum_Mesh_ArrayType&gt;`. |
+|  | ``[member Class.name]`` Link to member | ``Get [member Node2D.scale].`` | Get :ref:`Node2D.scale &lt;class_Node2D_property_scale&gt;`. |
+|  | ``[method Class.name]`` Link to method | ``Call [method Node3D.hide].`` | Call :ref:`Node3D.hide() &lt;class_Node3D_method_hide&gt;`. |
+|  | ``[constructor Class.name]`` Link to built-in constructor | ``Use [constructor Color.Color].`` | Use  :ref:`Color.Color &lt;class_Color_constructor_Color&gt;`. |
+|  | ``[operator Class.name]`` Link to built-in operator | ``Use [operator Color.operator *].`` | Use  :ref:`Color.operator * &lt;class_Color_operator_mul_int&gt;`. |
+|  | ``[signal Class.name]`` Link to signal | ``Emit [signal Node.renamed].`` | Emit :ref:`Node.renamed &lt;class_Node_signal_renamed&gt;`. |
+|  | ``[theme_item Class.name]`` Link to theme item | ``See [theme_item Label.font].`` | See :ref:`Label.font &lt;class_Label_theme_font_font&gt;`. |
+|  | ``[param name]`` Parameter name (as code) | ``Takes [param size] for the size.`` | Takes ``size`` for the size. |
 
 :::note
 
@@ -179,42 +156,18 @@ Currently only [class_@GDScript](class_@GDScript) has annotations.
 Formatting text
 """""""""""""""
 
-+--------------------------------+----------------------------------------------+------------------------------------+
-| Tag and Description            | Example                                      | Result                             |
-+================================+==============================================+====================================+
-| | ``[br]``                     | | ``Line 1.[br]``                            | | Line 1.                          |
-| | Line break                   | | ``Line 2.``                                | | Line 2.                          |
-+--------------------------------+----------------------------------------------+------------------------------------+
-| | ``[lb]`` ``[rb]``            | ``[lb]b[rb]text[lb]/b[rb]``                  | [b]text[/b]                        |
-| | ``[`` and ``]`` respectively |                                              |                                    |
-+--------------------------------+----------------------------------------------+------------------------------------+
-| | ``[b]`` ``[/b]``             | ``Do [b]not[/b] call this method.``          | Do **not** call this method.       |
-| | Bold                         |                                              |                                    |
-+--------------------------------+----------------------------------------------+------------------------------------+
-| | ``[i]`` ``[/i]``             | ``Returns the [i]global[/i] position.``      | Returns the *global* position.     |
-| | Italic                       |                                              |                                    |
-+--------------------------------+----------------------------------------------+------------------------------------+
-| | ``[u]`` ``[/u]``             | ``[u]Always[/u] use this method.``           | .. raw:: html                      |
-| | Underline                    |                                              |                                    |
-|                                |                                              |     &lt;u&gt;Always&lt;/u&gt; use this method. |
-+--------------------------------+----------------------------------------------+------------------------------------+
-| | ``[s]`` ``[/s]``             | ``[s]Outdated information.[/s]``             | .. raw:: html                      |
-| | Strikethrough                |                                              |                                    |
-|                                |                                              |     &lt;s&gt;Outdated information.&lt;/s&gt;   |
-+--------------------------------+----------------------------------------------+------------------------------------+
-| | ``[url]`` ``[/url]``         | | ``[url]https://example.com[/url]``         | | https://example.com              |
-| | Hyperlink                    | | [`[url=https://example.com]Website[/url]`` | | `Website ](https://example.com) |
-+--------------------------------+----------------------------------------------+------------------------------------+
-| | ``[center]`` ``[/center]``   | ``[center]2 + 2 = 4[/center]``               | .. raw:: html                      |
-| | Horizontal centering         |                                              |                                    |
-|                                |                                              |     &lt;center&gt;2 + 2 = 4&lt;/center&gt;     |
-+--------------------------------+----------------------------------------------+------------------------------------+
-| | ``[kbd]`` ``[/kbd]``         | ``Press [kbd]Ctrl + C[/kbd].``               | Press :kbd:`Ctrl + C`.             |
-| | Keyboard/mouse shortcut      |                                              |                                    |
-+--------------------------------+----------------------------------------------+------------------------------------+
-| | ``[code]`` ``[/code]``       | ``Returns [code]true[/code].``               | Returns ``true``.                  |
-| | Inline code fragment         |                                              |                                    |
-+--------------------------------+----------------------------------------------+------------------------------------+
+| Tag and Description | Example | Result |
+| --- | --- | --- |
+|  | ``[br]`` Line break |  | ``Line 1.[br]`` ``Line 2.`` |  | Line 1. Line 2. |
+|  | ``[lb]`` ``[rb]`` ``[`` and ``]`` respectively | ``[lb]b[rb]text[lb]/b[rb]`` | [b]text[/b] |
+|  | ``[b]`` ``[/b]`` Bold | ``Do [b]not[/b] call this method.`` | Do **not** call this method. |
+|  | ``[i]`` ``[/i]`` Italic | ``Returns the [i]global[/i] position.`` | Returns the *global* position. |
+|  | ``[u]`` ``[/u]`` Underline | ``[u]Always[/u] use this method.`` &lt;u&gt;Always&lt;/u&gt; use this method. | .. raw:: html |
+|  | ``[s]`` ``[/s]`` Strikethrough | ``[s]Outdated information.[/s]`` &lt;s&gt;Outdated information.&lt;/s&gt; | .. raw:: html |
+|  | ``[url]`` ``[/url]`` Hyperlink |  | ``[url]https://example.com[/url]`` ``[url=https://example.com]Website[/url]`` |  | https://example.com `Website &lt;https://example.com&gt;`_ |
+|  | ``[center]`` ``[/center]`` Horizontal centering | ``[center]2 + 2 = 4[/center]`` &lt;center&gt;2 + 2 = 4&lt;/center&gt; | .. raw:: html |
+|  | ``[kbd]`` ``[/kbd]`` Keyboard/mouse shortcut | ``Press [kbd]Ctrl + C[/kbd].`` | Press :kbd:`Ctrl + C`. |
+|  | ``[code]`` ``[/code]`` Inline code fragment | ``Returns [code]true[/code].`` | Returns ``true``. |
 
 :::note
 
@@ -304,20 +257,26 @@ The above will display as:
 
 <TabItem value="gdscript" label="GDScript">
 
+```gdscript
 func _ready():
     var sprite = get_node("Sprite2D")
     print(sprite.get_pos())
 
+```
+
 </TabItem>
 
 <TabItem value="csharp" label="Csharp">
-```
+
+```csharp
 public override void _Ready()
 {
     var sprite = GetNode("Sprite2D");
     GD.Print(sprite.GetPos());
 }
+
 ```
+
 </TabItem>
 
 </Tabs>

@@ -50,87 +50,47 @@ though all Variant types excluding Nil and Object are non-nullable.
 
 These types are available in Variant:
 
-+---------------------------------+---------------------------+
-| Type                            | Notes                     |
-+=================================+===========================+
-| Nil (can only store ``null``)   | Nullable type             |
-+---------------------------------+---------------------------+
-| [class_bool](class_bool)               |                           |
-+---------------------------------+---------------------------+
-| [class_int](class_int)                |                           |
-+---------------------------------+---------------------------+
-| [class_float](class_float)              |                           |
-+---------------------------------+---------------------------+
-| [class_string](class_string)             |                           |
-+---------------------------------+---------------------------+
-| [class_vector2](class_vector2)            |                           |
-+---------------------------------+---------------------------+
-| [class_vector2i](class_vector2i)           |                           |
-+---------------------------------+---------------------------+
-| [class_rect2](class_rect2)              | 2D counterpart of AABB    |
-+---------------------------------+---------------------------+
-| [class_rect2i](class_rect2i)             |                           |
-+---------------------------------+---------------------------+
-| [class_vector3](class_vector3)            |                           |
-+---------------------------------+---------------------------+
-| [class_vector3i](class_vector3i)           |                           |
-+---------------------------------+---------------------------+
-| [class_transform2d](class_transform2d)        |                           |
-+---------------------------------+---------------------------+
-| [class_vector4](class_vector4)            |                           |
-+---------------------------------+---------------------------+
-| [class_vector4i](class_vector4i)           |                           |
-+---------------------------------+---------------------------+
-| [class_plane](class_plane)              |                           |
-+---------------------------------+---------------------------+
-| [class_quaternion](class_quaternion)         |                           |
-+---------------------------------+---------------------------+
-| [class_aabb](class_aabb)               | 3D counterpart of Rect2   |
-+---------------------------------+---------------------------+
-| [class_basis](class_basis)              |                           |
-+---------------------------------+---------------------------+
-| [class_transform3d](class_transform3d)        |                           |
-+---------------------------------+---------------------------+
-| [class_projection](class_projection)         |                           |
-+---------------------------------+---------------------------+
-| [class_color](class_color)              |                           |
-+---------------------------------+---------------------------+
-| [class_stringname](class_stringname)         |                           |
-+---------------------------------+---------------------------+
-| [class_nodepath](class_nodepath)           |                           |
-+---------------------------------+---------------------------+
-| [class_rid](class_rid)                |                           |
-+---------------------------------+---------------------------+
-| [class_object](class_object)             | Nullable type             |
-+---------------------------------+---------------------------+
-| [class_callable](class_callable)           |                           |
-+---------------------------------+---------------------------+
-| [class_signal](class_signal)             |                           |
-+---------------------------------+---------------------------+
-| [class_dictionary](class_dictionary)         |                           |
-+---------------------------------+---------------------------+
-| [class_array](class_array)              |                           |
-+---------------------------------+---------------------------+
-| [class_packedbytearray](class_packedbytearray)    |                           |
-+---------------------------------+---------------------------+
-| [class_packedint32array](class_packedint32array)   |                           |
-+---------------------------------+---------------------------+
-| [class_packedint64array](class_packedint64array)   |                           |
-+---------------------------------+---------------------------+
-| [class_packedfloat32array](class_packedfloat32array) |                           |
-+---------------------------------+---------------------------+
-| [class_packedfloat64array](class_packedfloat64array) |                           |
-+---------------------------------+---------------------------+
-| [class_packedstringarray](class_packedstringarray)  |                           |
-+---------------------------------+---------------------------+
-| [class_packedvector2array](class_packedvector2array) |                           |
-+---------------------------------+---------------------------+
-| [class_packedvector3array](class_packedvector3array) |                           |
-+---------------------------------+---------------------------+
-| [class_packedcolorarray](class_packedcolorarray)   |                           |
-+---------------------------------+---------------------------+
-| [class_packedvector4array](class_packedvector4array) |                           |
-+---------------------------------+---------------------------+
+| Type | Notes |
+| --- | --- |
+| Nil (can only store ``null``) | Nullable type |
+| :ref:`class_bool` |  |
+| :ref:`class_int` |  |
+| :ref:`class_float` |  |
+| :ref:`class_string` |  |
+| :ref:`class_vector2` |  |
+| :ref:`class_vector2i` |  |
+| :ref:`class_rect2` | 2D counterpart of AABB |
+| :ref:`class_rect2i` |  |
+| :ref:`class_vector3` |  |
+| :ref:`class_vector3i` |  |
+| :ref:`class_transform2d` |  |
+| :ref:`class_vector4` |  |
+| :ref:`class_vector4i` |  |
+| :ref:`class_plane` |  |
+| :ref:`class_quaternion` |  |
+| :ref:`class_aabb` | 3D counterpart of Rect2 |
+| :ref:`class_basis` |  |
+| :ref:`class_transform3d` |  |
+| :ref:`class_projection` |  |
+| :ref:`class_color` |  |
+| :ref:`class_stringname` |  |
+| :ref:`class_nodepath` |  |
+| :ref:`class_rid` |  |
+| :ref:`class_object` | Nullable type |
+| :ref:`class_callable` |  |
+| :ref:`class_signal` |  |
+| :ref:`class_dictionary` |  |
+| :ref:`class_array` |  |
+| :ref:`class_packedbytearray` |  |
+| :ref:`class_packedint32array` |  |
+| :ref:`class_packedint64array` |  |
+| :ref:`class_packedfloat32array` |  |
+| :ref:`class_packedfloat64array` |  |
+| :ref:`class_packedstringarray` |  |
+| :ref:`class_packedvector2array` |  |
+| :ref:`class_packedvector3array` |  |
+| :ref:`class_packedcolorarray` |  |
+| :ref:`class_packedvector4array` |  |
 
 ## Containers: Array and Dictionary
 

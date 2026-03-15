@@ -53,7 +53,7 @@ Windows example:
 
 ![Image](img/code_blocks_scons_windows.png)
 
-Code::Blocks should now be configured to build Godot; so either select **Build &gt; Build**, click the gear button, or press :kbd:`Ctrl + F9`.
+Code::Blocks should now be configured to build Godot; so either select **Build &gt; Build**, click the gear button, or press `Ctrl + F9`.
 
 ## Configuring the run
 
@@ -63,7 +63,7 @@ Deselect the **Auto-generate filename prefix** and **Auto-generate filename exte
 
 ![Image](img/code_blocks_build_targets.png)
 
-Code::Blocks should now be configured to run your compiled Godot executable; so either select **Build &gt; Run**, click the green arrow button, or press :kbd:`Ctrl + F10`.
+Code::Blocks should now be configured to run your compiled Godot executable; so either select **Build &gt; Run**, click the green arrow button, or press `Ctrl + F10`.
 
 There are two additional points worth noting. First, if required, the **Execution working dir** field can be used to test specific projects, by setting it to the folder containing the ``project.godot`` file. Second, the **Build targets** tab can be used to add and remove build targets for working with and creating different builds.
 

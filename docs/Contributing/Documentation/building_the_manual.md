@@ -14,9 +14,10 @@ Before you get started, make sure that you have:
 - [Python ](https://www.python.org/) 3
 
 :::note
-
+Python 3 should come with the ``pip3`` command. You may need to write
 ``python3 -m pip`` (Unix) or  ``py -m pip`` (Windows) instead of ``pip3``.
-If both approaches fail, [make sure that you have pip3 installed](https://pip.pypa.io/en/stable/installation/).
+If both approaches fail, `make sure that you have pip3 installed
+&lt;https://pip.pypa.io/en/stable/installation/&gt;`__.
 
 :::
 
@@ -27,6 +28,7 @@ If both approaches fail, [make sure that you have pip3 installed](https://pip.py
     a.  Create the virtual environment:
 
 <Tabs>
+
 <TabItem value="windows" label="Windows">
 
 ```pwsh
@@ -34,18 +36,21 @@ py -m venv godot-docs-venv
 ```
 
 </TabItem>
-<TabItem value="other" label="Other platforms">
+
+<TabItem value="other_platforms" label="Other platforms">
 
 ```sh
 python3 -m venv godot-docs-venv
 ```
 
 </TabItem>
+
 </Tabs>
 
     b.  Activate the virtual environment:
 
 <Tabs>
+
 <TabItem value="windows" label="Windows">
 
 ```pwsh
@@ -53,18 +58,21 @@ godot-docs-venv\Scripts\activate.bat
 ```
 
 </TabItem>
-<TabItem value="other" label="Other platforms">
+
+<TabItem value="other_platforms" label="Other platforms">
 
 ```sh
 source godot-docs-venv/bin/activate
 ```
 
 </TabItem>
+
 </Tabs>
 
     c.  *(Optional)* Update pre-installed packages:
 
 <Tabs>
+
 <TabItem value="windows" label="Windows">
 
 ```pwsh
@@ -72,38 +80,44 @@ py -m pip install --upgrade pip setuptools
 ```
 
 </TabItem>
-<TabItem value="other" label="Other platforms">
+
+<TabItem value="other_platforms" label="Other platforms">
 
 ```sh
 pip3 install --upgrade pip setuptools
 ```
 
 </TabItem>
+
 </Tabs>
 
 2.  Clone the docs repo:
 
-    .. code:: sh
+```sh
+git clone https://github.com/godotengine/godot-docs.git
 
-        git clone https://github.com/godotengine/godot-docs.git
+```
 
 3.  Change directory into the docs repo:
 
-    .. code:: sh
+```sh
+cd godot-docs
 
-        cd godot-docs
+```
 
 4.  Install the required packages:
 
-    .. code:: sh
+```sh
+pip3 install -r requirements.txt
 
-        pip3 install -r requirements.txt
+```
 
 5.  Build the docs:
 
-    .. code:: sh
+```sh
+make html
 
-        make html
+```
 
 :::note
 
@@ -113,9 +127,10 @@ On Windows, that command will run ``make.bat`` instead of GNU Make (or an altern
 
     Alternatively, you can build the documentation by running the sphinx-build program manually:
 
-    .. code:: sh
+```sh
+sphinx-build -b html ./ _build/html
 
-        sphinx-build -b html ./ _build/html
+```
 
 The compilation will take some time as the ``classes/`` folder contains hundreds of files.
 See [doc_building_the_manual:performance](doc_building_the_manual:performance).
@@ -127,9 +142,10 @@ your web browser.
 
 If you run into errors, you may try the following command:
 
-.. code:: sh
+```sh
+make SPHINXBUILD=~/.local/bin/sphinx-build html
 
-    make SPHINXBUILD=~/.local/bin/sphinx-build html
+```
 
 If you get a ``MemoryError`` or ``EOFError``, you can remove the ``classes/`` folder and
 run ``make`` again.
@@ -153,6 +169,7 @@ which slows it down.
 If you have at least 16 GB of RAM, you can speed up compilation by running:
 
 <Tabs>
+
 <TabItem value="windows" label="Windows">
 
 ```pwsh
@@ -160,13 +177,15 @@ set SPHINXOPTS=-j2 && make html
 ```
 
 </TabItem>
-<TabItem value="other" label="Other platforms">
+
+<TabItem value="other_platforms" label="Other platforms">
 
 ```sh
 make html SPHINXOPTS=-j2
 ```
 
 </TabItem>
+
 </Tabs>
 
 You can use ``-j auto`` to use all available CPU threads, but this can use a lot
@@ -178,6 +197,6 @@ RAM for Sphinx alone.
 
 You can specify a list of files to build, which can greatly speed up compilation:
 
-.. code:: sh
-
-    make html FILELIST='classes/class_node.rst classes/class_resource.rst'
+```sh
+make html FILELIST='classes/class_node.rst classes/class_resource.rst'
+```

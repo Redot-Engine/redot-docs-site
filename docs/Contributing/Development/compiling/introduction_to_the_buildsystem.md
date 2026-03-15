@@ -360,7 +360,7 @@ scons profile=path/to/custom.py
 ```
 
 :::note
-
+Build options set from the file can be overridden by the command line
 options.
 
 :::
@@ -390,19 +390,28 @@ aforementioned ``-j`` option for all future builds:
 
 <TabItem value="linux_macos" label="Linux/macOS">
 
-`export SCONSFLAGS="-j4"`
+```bash
+export SCONSFLAGS="-j4"
+
+```
 
 </TabItem>
 
 <TabItem value="windows__cmd_" label="Windows (cmd)">
 
-`set SCONSFLAGS=-j4`
+```bat
+set SCONSFLAGS=-j4
+
+```
 
 </TabItem>
 
 <TabItem value="windows__powershell_" label="Windows (PowerShell)">
 
-`$env:SCONSFLAGS="-j4"`
+```powershell
+$env:SCONSFLAGS="-j4"
+
+```
 
 </TabItem>
 
@@ -422,7 +431,7 @@ files, which can dramatically decrease build times.
 To perform an SCU build, use the ``scu_build=yes`` SCons option.
 
 :::note
-
+When developing a Pull Request using SCU builds, be sure to make a
 regular build prior to submitting the PR. This is because SCU builds
 by nature include headers from earlier ``.cpp`` files in the
 translation unit, therefore won't catch all the includes you will

@@ -36,7 +36,7 @@ For compiling under Windows, the following is required:
   Studio releases.
 
 :::note
-
+If you have `Scoop <https://scoop.sh/>`_ installed, you can easily
 install MinGW and other dependencies using the following command
 
 ```
@@ -46,7 +46,7 @@ scoop install gcc python scons make mingw
 :::
 
 :::note
-
+If you have `MSYS2 <https://www.msys2.org/>`_ installed, you can easily
 install MinGW and other dependencies using the following command
 
 ```
@@ -61,7 +61,7 @@ For each MSYS2 MinGW subsystem, you should then run
 :::
 
 :::info
-
+To get the Godot source code for compiling, see
 [doc_getting_source](doc_getting_source).
 
 For a general overview of SCons usage for Godot, see
@@ -110,8 +110,8 @@ To prevent slowdowns caused by continuous virus scanning during compilation,
 add the Godot source folder to the list of exceptions in your antivirus
 software.
 
-For Windows Defender, hit the :kbd:`Windows` key, type "Windows Security"
-then hit :kbd:`Enter`. Click on **Virus & threat protection** on the left
+For Windows Defender, hit the `Windows` key, type "Windows Security"
+then hit `Enter`. Click on **Virus & threat protection** on the left
 panel. Under **Virus & threat protection settings** click on **Manage Settings**
 and scroll down to **Exclusions**. Click **Add or remove exclusions** then
 add the Godot source folder.
@@ -157,7 +157,7 @@ C:\godot> scons platform=windows
 ```
 
 :::note
-
+When compiling with multiple CPU threads, SCons may warn about
 pywin32 being missing. You can safely ignore this warning.
 
 :::
@@ -181,7 +181,7 @@ This executable file contains the whole engine and runs without any
 dependencies. Running it will bring up the Project Manager.
 
 :::tip
-
+If you are compiling Godot for production use, you can
 make the final executable smaller and faster by adding the
 SCons option ``production=yes``. This enables additional compiler
 optimizations and link-time optimization.
@@ -194,7 +194,7 @@ with the above option, use ``production=yes lto=none`` or ``production=yes lto=t
 :::
 
 :::note
-
+If you want to use separate editor settings for your own Godot builds
 and official releases, you can enable
 [doc_data_paths_self_contained_mode](doc_data_paths_self_contained_mode) by creating a file called
 ``._sc_`` or ``_sc_`` in the ``bin/`` folder.
@@ -222,7 +222,7 @@ optional PIX and Agility SDK components).
   need it below.
 
 :::note
-
+You can optionally build the godot-nir-static libraries yourself with
 the following steps:
 
 1. Install the Python package [mako ](https://www.makotemplates.org)
@@ -270,13 +270,13 @@ Optionally, you can compile with the following for additional features:
   file to some path.
 
 :::note
-
+If you use a preview version of the Agility SDK, remember to enable
 developer mode in Windows; otherwise it won't be used.
 
 :::
 
 :::note
-
+If you want to use a PIX with MinGW build, navigate to PIX runtime
 directory and use the following commands to generate import library
 
 ```
@@ -307,7 +307,7 @@ C:\godot> scons platform=windows d3d12=yes mesa_libs=<...> agility_sdk_path=<...
 ```
 
 :::note
-
+For the Agility SDK's DLLs you have to explicitly choose the kind of
 workflow. Single-arch is the default (DLLs copied to ``bin/``). If you
 pass ``agility_sdk_multi_arch=yes`` to SCons, you'll opt-in for
 multi-arch. DLLs will be copied to the appropriate ``bin/&lt;arch&gt;/``
@@ -325,7 +325,7 @@ By default, Godot is built with dynamically linked ANGLE, you can use it by plac
 ``libEGL.dll`` and ``libGLESv2.dll`` alongside the executable.
 
 :::note
-
+You can use dynamically linked ANGLE with export templates as well, rename
 aforementioned DLLs to ``libEGL.{architecture}.dll`` and ``libGLESv2.{architecture}.dll``
 and place them alongside export template executables, and libraries will
 be automatically copied during the export process.
@@ -343,7 +343,7 @@ scons platform=windows angle_libs=<...>
 ```
 
 :::note
-
+You can optionally build the godot-angle-static libraries yourself with
 the following steps:
 
 1. Clone the [godot-angle-static ](https://github.com/godotengine/godot-angle-static)
@@ -393,6 +393,9 @@ You will be able to open Godot's source in a Visual Studio solution now,
 and able to build Godot using Visual Studio's **Build** button.
 
 :::info
+See :ref:`doc_configuring_an_ide_vs` for further details.
+
+:::
 
 ## Cross-compiling for Windows from other operating systems
 
@@ -402,29 +405,12 @@ and 64-bit variants, or [MinGW-LLVM ](https://github.com/mstorsjo/llvm-mingw/rel
 which comes as a single archive for all target architectures.
 The package names may differ based on your distribution, here are some known ones:
 
-+----------------+--------------------------------------------------------------+
-| **Arch Linux** | ::                                                           |
-|                |                                                              |
-|                |     pacman -Sy mingw-w64                                     |
-+----------------+--------------------------------------------------------------+
-| **Debian** /   | ::                                                           |
-| **Ubuntu**     |                                                              |
-|                |     apt install mingw-w64                                    |
-+----------------+--------------------------------------------------------------+
-| **Fedora**     | ::                                                           |
-|                |                                                              |
-|                |     dnf install mingw64-gcc-c++ mingw64-winpthreads-static \ |
-|                |                 mingw32-gcc-c++ mingw32-winpthreads-static   |
-+----------------+--------------------------------------------------------------+
-| **macOS**      | ::                                                           |
-|                |                                                              |
-|                |     brew install mingw-w64                                   |
-+----------------+--------------------------------------------------------------+
-| **Mageia**     | ::                                                           |
-|                |                                                              |
-|                |     urpmi mingw64-gcc-c++ mingw64-winpthreads-static \       |
-|                |           mingw32-gcc-c++ mingw32-winpthreads-static         |
-+----------------+--------------------------------------------------------------+
+| **Arch Linux** | :: pacman -Sy mingw-w64 |
+| --- | --- |
+| **Debian** / **Ubuntu** | :: apt install mingw-w64 |
+| **Fedora** | :: dnf install mingw64-gcc-c++ mingw64-winpthreads-static \ mingw32-gcc-c++ mingw32-winpthreads-static |
+| **macOS** | :: brew install mingw-w64 |
+| **Mageia** | :: urpmi mingw64-gcc-c++ mingw64-winpthreads-static \ mingw32-gcc-c++ mingw32-winpthreads-static |
 
 Before attempting the compilation, SCons will check for
 the following binaries in your ``PATH`` environment variable
@@ -465,9 +451,12 @@ ${MINGW_PREFIX}/bin/x86_64-w64-mingw32-gcc --version
 ```
 
 :::note
+If you are building with MinGW-LLVM, add ``use_llvm=yes`` to the ``scons`` command.
+
+:::
 
 :::note
-
+When cross-compiling for Windows using MinGW-w64, keep in mind only
 ``x86_64`` and ``x86_32`` architectures are supported. MinGW-LLVM supports
 ``arm64`` as well. Be sure to specify the right ``arch=`` option when
 invoking SCons if building from a different architecture.
@@ -554,7 +543,3 @@ Select matching architecture in the export config.
 You don't need to copy them in this case, just reference the resulting
 files in the ``bin\`` directory of your Godot source folder, so the next
 time you build, you will automatically have the custom templates referenced.
-
-:::
-
-:::

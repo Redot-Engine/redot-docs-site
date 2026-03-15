@@ -67,15 +67,11 @@ doctest.
 The wildcard syntax ``*`` is supported for matching any number of characters in
 test suites, test cases, and source file names:
 
-+--------------------+---------------+------------------------+
-| **Filter options** | **Shorthand** | **Examples**           |
-+--------------------+---------------+------------------------+
-| ``--test-suite``   | ``-ts``       | ``-ts="*[GDScript]*"`` |
-+--------------------+---------------+------------------------+
-| ``--test-case``    | ``-tc``       | ``-tc="*[String]*"``   |
-+--------------------+---------------+------------------------+
-| ``--source-file``  | ``-sf``       | ``-sf="*test_color*"`` |
-+--------------------+---------------+------------------------+
+| **Filter options** | **Shorthand** | **Examples** |
+| --- | --- | --- |
+| ``--test-suite`` | ``-ts`` | ``-ts="*[GDScript]*"`` |
+| ``--test-case`` | ``-tc`` | ``-tc="*[String]*"`` |
+| ``--source-file`` | ``-sf`` | ``-sf="*test_color*"`` |
 
 For instance, to run only the ``String`` unit tests, run:
 
@@ -191,21 +187,14 @@ Subcases can be nested to an arbitrary depth, but it is advised to limit nesting
 A list of all commonly used assertions used throughout the Godot tests, sorted
 by severity.
 
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------+
-| **Assertion**     | **Description**                                                                                                                  |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------+
-| ``REQUIRE``       | Test if condition holds true. Fails the entire test immediately if the condition does not hold true.                             |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------+
-| ``REQUIRE_FALSE`` | Test if condition does not hold true. Fails the entire test immediately if the condition holds true.                             |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------+
-| ``CHECK``         | Test if condition holds true. Marks the test run as failing, but allow to run other assertions.                                  |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------+
-| ``CHECK_FALSE``   | Test if condition does not hold true. Marks the test run as failing, but allow to run other assertions.                          |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------+
-| ``WARN``          | Test if condition holds true. Does not fail the test under any circumstance, but logs a warning if something does not hold true. |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------+
-| ``WARN_FALSE``    | Test if condition does not hold true. Does not fail the test under any circumstance, but logs a warning if something holds true. |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------+
+| **Assertion** | **Description** |
+| --- | --- |
+| ``REQUIRE`` | Test if condition holds true. Fails the entire test immediately if the condition does not hold true. |
+| ``REQUIRE_FALSE`` | Test if condition does not hold true. Fails the entire test immediately if the condition holds true. |
+| ``CHECK`` | Test if condition holds true. Marks the test run as failing, but allow to run other assertions. |
+| ``CHECK_FALSE`` | Test if condition does not hold true. Marks the test run as failing, but allow to run other assertions. |
+| ``WARN`` | Test if condition holds true. Does not fail the test under any circumstance, but logs a warning if something does not hold true. |
+| ``WARN_FALSE`` | Test if condition does not hold true. Does not fail the test under any circumstance, but logs a warning if something holds true. |
 
 All of the above assertions have corresponding ``*_MESSAGE`` macros, which allow
 to print optional message with rationale of what should happen.
@@ -225,15 +214,11 @@ The test output is handled by doctest itself, and does not rely on Godot
 printing or logging functionality at all, so it's recommended to use dedicated
 macros which allow to log test output in a format written by doctest.
 
-+----------------+-----------------------------------------------------------------------------------------------------------+
-| **Macro**      | **Description**                                                                                           |
-+----------------+-----------------------------------------------------------------------------------------------------------+
-| ``MESSAGE``    | Prints a message.                                                                                         |
-+----------------+-----------------------------------------------------------------------------------------------------------+
+| **Macro** | **Description** |
+| --- | --- |
+| ``MESSAGE`` | Prints a message. |
 | ``FAIL_CHECK`` | Marks the test as failing, but continue the execution. Can be wrapped in conditionals for complex checks. |
-+----------------+-----------------------------------------------------------------------------------------------------------+
-| ``FAIL``       | Fails the test immediately. Can be wrapped in conditionals for complex checks.                            |
-+----------------+-----------------------------------------------------------------------------------------------------------+
+| ``FAIL`` | Fails the test immediately. Can be wrapped in conditionals for complex checks. |
 
 Different reporters can be chosen at runtime. For instance, here's how the
 output can be redirected to an XML file:
@@ -281,17 +266,12 @@ TEST_CASE("[Color] Constructor methods") {
 
 These tags can be added to the test case name to modify or extend the test environment:
 
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Tag**           | **Description**                                                                                                                                                      |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``[SceneTree]``   | Required for test cases that rely on a scene tree with MessageQueue to be available. It also enables a mock rendering server and [ThemeDB](class_ThemeDB).      |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``[Editor]``      | Like ``[SceneTree]``, but with additional editor-related infrastructure available, such as [EditorSettings](class_EditorSettings).                              |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``[Audio]``       | Initializes the [AudioServer](class_AudioServer) using a mock audio driver.                                                                                     |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``[Navigation]``  | Creates the default 2D/3D navigation servers and makes them available for testing.                                                                                   |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Tag** | **Description** |
+| --- | --- |
+| ``[SceneTree]`` | Required for test cases that rely on a scene tree with MessageQueue to be available. It also enables a mock rendering server and :ref:`ThemeDB&lt;class_ThemeDB&gt;`. |
+| ``[Editor]`` | Like ``[SceneTree]``, but with additional editor-related infrastructure available, such as :ref:`EditorSettings&lt;class_EditorSettings&gt;`. |
+| ``[Audio]`` | Initializes the :ref:`AudioServer&lt;class_AudioServer&gt;` using a mock audio driver. |
+| ``[Navigation]`` | Creates the default 2D/3D navigation servers and makes them available for testing. |
 
 You can use them together to combine multiple test environment extensions.
 

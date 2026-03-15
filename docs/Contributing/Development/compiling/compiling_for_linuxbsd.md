@@ -183,6 +183,12 @@ pkg_add \
 
 </TabItem>
 
+</Tabs>
+
+        .. hint::
+
+            For audio support, you can optionally install ``pulseaudio``.
+
 <TabItem value="openbsd" label="OpenBSD">
 
 pkg_add \
@@ -251,8 +257,6 @@ eopkg install -y \
 
 </TabItem>
 
-</Tabs>
-
 ## Compiling
 
 Start a terminal, go to the root dir of the engine source code and type:
@@ -300,7 +304,7 @@ For RISC-V architecture devices, use the Clang compiler instead of the GCC compi
 :::
 
 :::tip
-
+If you are compiling Godot for production use, you can
 make the final executable smaller and faster by adding the
 SCons option ``production=yes``. This enables additional compiler
 optimizations and link-time optimization.
@@ -313,7 +317,7 @@ lightweight but less effective form of LTO.
 :::
 
 :::note
-
+If you want to use separate editor settings for your own Godot builds
 and official releases, you can enable
 [doc_data_paths_self_contained_mode](doc_data_paths_self_contained_mode) by creating a file called
 ``._sc_`` or ``_sc_`` in the ``bin/`` folder.
@@ -356,7 +360,7 @@ scons platform=linuxbsd target=template_release production=yes
 ## Building export templates
 
 :::warning
-
+Linux binaries usually won't run on distributions that are
 older than the distribution they were built on. If you wish to
 distribute binaries that work on most distributions,
 you should build them on an old distribution such as Ubuntu 16.04.
@@ -469,7 +473,7 @@ make sure you see ``riscv64`` on the list of targets.
 :::
 
 :::warning
-
+The code above includes adding ``$RISCV_TOOLCHAIN_PATH/bin`` to the PATH,
 but only for the following ``scons`` command. Since riscv-gnu-toolchain uses
 its own Clang located in the ``bin`` folder, adding ``$RISCV_TOOLCHAIN_PATH/bin``
 to your user's PATH environment variable may block you from accessing another
@@ -635,9 +639,6 @@ sudo dnf install -y \
 </Tabs>
 
 After installing all required packages, use the following command to build Godot:
-
-.. NOTE: Some `builtin_` options aren't used here because they break the build as of January 2023
-   (tested on Fedora 37).
 
 ```
 scons platform=linuxbsd builtin_embree=no builtin_enet=no builtin_freetype=no builtin_graphite=no builtin_harfbuzz=no builtin_libogg=no builtin_libpng=no builtin_libtheora=no builtin_libvorbis=no builtin_libwebp=no builtin_mbedtls=no builtin_miniupnpc=no builtin_pcre2=no builtin_zlib=no builtin_zstd=no

@@ -39,7 +39,7 @@ For compiling under Windows, Linux or macOS, the following is required:
    - You can download a build from [Adoptium ](https://adoptium.net/temurin/releases/?variant=openjdk17).
 
 :::info
-
+To get the Godot source code for compiling, see
 [doc_getting_source](doc_getting_source).
 
 For a general overview of SCons usage for Godot, see
@@ -53,7 +53,7 @@ For a general overview of SCons usage for Godot, see
    SDK. If you downloaded the Android command-line tools, this would be
    the folder where you extracted the contents of the ZIP archive.
 
-    -  Windows: Press :kbd:`Windows + R`, type "control system",
+    -  Windows: Press `Windows + R`, type "control system",
        then click on **Advanced system settings** in the left pane,
        then click on **Environment variables** on the window that appears.
 
@@ -200,8 +200,6 @@ with their respective names. The templates folder can be located in:
 ``version.py`` in your Godot source repository (e.g. ``4.1.3.stable`` or ``4.2.dev``).
 You also need to write this same version string to a ``version.txt`` file located
 next to your export templates.
-
-.. TODO: Move these paths to a common reference page
 
 However, if you are writing your custom modules or custom C++ code, you
 might instead want to configure your template binaries as custom export templates

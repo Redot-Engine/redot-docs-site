@@ -37,7 +37,7 @@ A good place to start is by searching for issues tagged as
 on GitHub.
 
 :::info
-
+Technical details about the PR workflow are outlined in a
 specific section, [doc_pr_workflow](doc_pr_workflow).
 
 Details about the code style guidelines and the ``clang-format``
@@ -60,7 +60,7 @@ usage is encouraged to plan changes and discuss them with the community. Impleme
 details can also be discussed with other contributors on the [Godot Contributors Chat ](https://chat.godotengine.org/).
 
 :::note
-
+Proposals are only required when working on an enhancement or a new feature.
 Bug reports are sufficient for fixing issues.
 
 :::

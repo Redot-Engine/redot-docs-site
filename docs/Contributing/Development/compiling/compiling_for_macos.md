@@ -24,7 +24,7 @@ For compiling under macOS, the following is required:
   ``misc/scripts/install_vulkan_sdk_macos.sh`` within the Godot source repository.
 
 :::note
-
+If you have `Homebrew <https://brew.sh/>`_ installed, you can easily
 install SCons using the following command
 
 ```
@@ -46,7 +46,7 @@ sudo port install scons
 :::
 
 :::info
-
+To get the Godot source code for compiling, see
 [doc_getting_source](doc_getting_source).
 
 For a general overview of SCons usage for Godot, see
@@ -94,7 +94,7 @@ runs without any dependencies. Executing it will bring up the Project
 Manager.
 
 :::note
-
+If you want to use separate editor settings for your own Godot builds
 and official releases, you can enable
 [doc_data_paths_self_contained_mode](doc_data_paths_self_contained_mode) by creating a file called
 ``._sc_`` or ``_sc_`` in the ``bin/`` folder.

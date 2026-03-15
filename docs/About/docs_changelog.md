@@ -10,9 +10,11 @@ to the [class reference ](doc_class_reference). Below is a list of new pages
 added since version 3.0.
 
 :::note
+This document only contains new pages so not all changes are reflected,
 many pages have been substantially updated but are not reflected in this document.
 
 :::
+
 ## New pages since version 4.3
 
 ### 2D

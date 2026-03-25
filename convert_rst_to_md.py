@@ -221,7 +221,7 @@ def convert_rst_to_md(rst_content):
             continue
 
         # Handle generic code blocks (.. code-block:: and .. code::)
-        match_code = re.match(r'^\s*\.\.\s+(?:code-block|code)::\s*(\w+)?', line)
+        match_code = re.match(r'^\s*\.\.\s+(?:code-block|code)::\s*(\S+)?', line)
         if match_code:
             lang = match_code.group(1) or ""
             i += 1

@@ -38,17 +38,19 @@ whether the issue is a regression in 4.0 or not.
 - If the issue is **not present** in 3.x, then you can try older 4.0 alphas and
   betas to determine when the regression started.
 
-.. danger::
+:::danger
 
-    Project files may be incompatible between Godot versions.
-    **Make a backup of your project** before starting the bisection process.
+Project files may be incompatible between Godot versions.
+**Make a backup of your project** before starting the bisection process.
 
-    Going from the oldest to the newest build generally reduces the risk of the
-    project not being able to successfully open in the editor, thanks to
-    backwards compatibility. Try to reduce your project to the smallest
-    repeatable example too. The more minimal the project is, the more likely
-    you'll be able to open it without compatibility issues in newer engine
-    versions.
+Going from the oldest to the newest build generally reduces the risk of the
+project not being able to successfully open in the editor, thanks to
+backwards compatibility. Try to reduce your project to the smallest
+repeatable example too. The more minimal the project is, the more likely
+you'll be able to open it without compatibility issues in newer engine
+versions.
+
+:::
 
 ## The Git bisect command
 

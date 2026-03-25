@@ -72,7 +72,7 @@ register_types.cpp
 
 ```
 
-:::important
+:::info
 
 These files must be in the top-level folder of your module (next to your
 ``SCsub`` and ``config.py`` files) for the module to be registered properly.
@@ -129,7 +129,7 @@ sudo apt-get install festvox-don festvox-rablpc16k festvox-kallpc16k festvox-kdl
 
 ```
 
-:::important
+:::info
 
 The voices that Festival uses (and any other potential external/3rd-party
 resource) all have varying licenses and terms of use; some (if not most) of them may be
@@ -158,7 +158,7 @@ git submodule add https://github.com/festvox/speech_tools
 
 ```
 
-:::important
+:::info
 
 Please note that Git submodules are not used in the Godot repository. If
 you are developing a module to be merged into the main Godot repository, you should not

@@ -138,38 +138,129 @@ def convert_rst_to_md(rst_content, source_dir=None):
 
         # Handle tabs, code-tabs, and group-tabs
         if line.strip() == '.. tabs::':
+            indent = len(line) - len(line.lstrip())
             md_lines.append('')
             md_lines.append('<Tabs>')
             md_lines.append('')
             is_tabs_open = True
             i += 1
+            
+            # Collect all lines that belong to this tabs block
+            tabs_block = []
+            while i < len(lines):
+                if not lines[i].strip():
+                    tabs_block.append(lines[i])
+                    i += 1
+                elif (len(lines[i]) - len(lines[i].lstrip()) > indent):
+                    tabs_block.append(lines[i])
+                    i += 1
+                else:
+                    break
+            
+            # Process the block content
+            # Ensure we only remove the indentation that is common to all non-empty lines in the block
+            # This is safer for different RST indentation styles (some use 1 space, some 3 or 4)
+            min_tabs_indent = -1
+            for l in tabs_block:
+                if l.strip():
+                    l_indent = len(l) - len(l.lstrip())
+                    if min_tabs_indent == -1 or l_indent < min_tabs_indent:
+                        min_tabs_indent = l_indent
+            
+            if min_tabs_indent == -1: min_tabs_indent = 0
+            
+            processed_block = convert_rst_to_md("\n".join(l[min_tabs_indent:] if l.strip() else "" for l in tabs_block))
+            processed_lines = [l for l in processed_block.splitlines() if not l.startswith('import ')]
+            md_lines.extend(processed_lines)
+            
+            md_lines.append('')
+            md_lines.append('</Tabs>')
+            md_lines.append('')
+            is_tabs_open = False
             continue
         
         match_tab = re.match(r'^\s*\.\. (tab|group-tab)::\s+(.*)', line)
         if match_tab:
             label = match_tab.group(2).strip()
             value = re.sub(r'[^a-z0-9_]', '_', label.lower())
+            directive_indent = len(line) - len(line.lstrip())
             i += 1
             # Skip optional labels or other options
             while i < len(lines) and (lines[i].strip().startswith(':') or not lines[i].strip()):
                 i += 1
             
             if i < len(lines):
-                indent = len(lines[i]) - len(lines[i].lstrip())
-                block = []
-                while i < len(lines) and (not lines[i].strip() or (len(lines[i]) - len(lines[i].lstrip()) >= indent)):
-                    block.append(lines[i])
-                    i += 1
-                md_lines.append('')
-                md_lines.append(f'<TabItem value="{value}" label="{label}">')
-                md_lines.append('')
-                # Recursively process the block content
-                processed_block = convert_rst_to_md("\n".join(l[indent:] for l in block))
-                processed_lines = [l for l in processed_block.splitlines() if not l.startswith('import ')]
-                md_lines.extend(processed_lines)
-                md_lines.append('')
-                md_lines.append('</TabItem>')
-                md_lines.append('')
+                # Find first non-empty line to determine indent, but don't skip the line itself
+                first_content_i = i
+                indent = len(lines[first_content_i]) - len(lines[first_content_i].lstrip())
+                
+                # If the indent is not greater than directive_indent, then it's probably empty or next tab
+                if indent > directive_indent:
+                    block = []
+                    while i < len(lines):
+                        # Continue if line is empty OR its indentation >= indent
+                        # But also check if it's not a new tab at the same level as current tab
+                        if lines[i].strip().startswith('.. tab::') and (len(lines[i]) - len(lines[i].lstrip()) <= directive_indent):
+                             break
+                        
+                        if not lines[i].strip():
+                            block.append(lines[i])
+                            i += 1
+                        elif (len(lines[i]) - len(lines[i].lstrip()) >= indent):
+                            block.append(lines[i])
+                            i += 1
+                        elif (len(lines[i]) - len(lines[i].lstrip()) > directive_indent):
+                            # This catches cases like .. hint:: which might have less indent than first_content
+                            block.append(lines[i])
+                            # Update indent for subsequent lines?
+                            # No, let's keep indent as the baseline but allow anything > directive_indent
+                            i += 1
+                        else:
+                            break
+                    md_lines.append('')
+                    md_lines.append(f'<TabItem value="{value}" label="{label}">')
+                    md_lines.append('')
+                    # Determine minimum indentation in the block to remove it
+                    min_indent = indent
+                    for bl in block:
+                        if bl.strip():
+                            bl_indent = len(bl) - len(bl.lstrip())
+                            if bl_indent < min_indent:
+                                min_indent = bl_indent
+                    
+                    # Recursively process the block content
+                    # We should remove the minimum common indentation
+                    processed_block = convert_rst_to_md("\n".join(l[min_indent:] if l.strip() else "" for l in block))
+                    
+                    # Fix: If the block started with a literal block (::), it might have left extra indentation
+                    # because we stripped min_indent but the literal block content was further indented.
+                    # We should probably strip ALL common indentation from processed_lines too, but that's risky.
+                    # Let's just fix it by ensuring we strip leading/trailing whitespace from each line if it's not in a code block.
+                    # Actually, the best way is to ensure min_indent is correctly used.
+                    
+                    processed_lines = []
+                    for l in processed_block.splitlines():
+                        if l.startswith('import '):
+                            continue
+                        processed_lines.append(l)
+                    
+                    # Trim empty lines at start and end of processed block
+                    while processed_lines and not processed_lines[0].strip():
+                        processed_lines.pop(0)
+                    while processed_lines and not processed_lines[-1].strip():
+                        processed_lines.pop()
+                        
+                    md_lines.extend(processed_lines)
+                    md_lines.append('')
+                    md_lines.append('</TabItem>')
+                    md_lines.append('')
+                else:
+                    # Empty tab?
+                    md_lines.append('')
+                    md_lines.append(f'<TabItem value="{value}" label="{label}">')
+                    md_lines.append('')
+                    md_lines.append('</TabItem>')
+                    md_lines.append('')
             continue
 
         match_code_tab = re.match(r'^\s*\.\. code-tab::\s+(\w+)(?:\s+(.*))?', line)
@@ -178,23 +269,40 @@ def convert_rst_to_md(rst_content, source_dir=None):
             label = match_code_tab.group(2) or lang.capitalize()
             # Use label for value to ensure uniqueness if multiple tabs have same language
             value = re.sub(r'[^a-z0-9_]', '_', label.lower())
+            directive_indent = len(line) - len(line.lstrip())
             i += 1
             # Skip optional labels or other options
             while i < len(lines) and (lines[i].strip().startswith(':') or not lines[i].strip()):
                 i += 1
             
             if i < len(lines):
-                indent = len(lines[i]) - len(lines[i].lstrip())
+                # Find first non-empty line to determine indent, but don't skip the line itself
+                first_content_i = i
+                indent = len(lines[first_content_i]) - len(lines[first_content_i].lstrip())
+                
+                # If the indent is not greater than directive_indent, then it might be that 
+                # recursion stripped it, or it's empty. Let's try to capture subsequent indented lines
+                # relative to THIS line's content
                 block = []
-                while i < len(lines) and (not lines[i].strip() or (len(lines[i]) - len(lines[i].lstrip()) >= indent)):
-                    block.append(lines[i][indent:])
-                    i += 1
+                # If the first line is not indented more than directive_indent, then it's probably empty
+                if indent > directive_indent:
+                    while i < len(lines):
+                        if not lines[i].strip():
+                            block.append(lines[i][indent:])
+                            i += 1
+                        elif (len(lines[i]) - len(lines[i].lstrip()) >= indent):
+                            block.append(lines[i][indent:])
+                            i += 1
+                        else:
+                            break
+                
                 md_lines.append('')
                 md_lines.append(f'<TabItem value="{value}" label="{label}">')
                 md_lines.append('')
-                md_lines.append(f'```{lang}')
-                md_lines.extend(block)
-                md_lines.append('```')
+                if block:
+                    md_lines.append(f'```{lang}')
+                    md_lines.extend(block)
+                    md_lines.append('```')
                 md_lines.append('')
                 md_lines.append('</TabItem>')
                 md_lines.append('')
@@ -202,11 +310,15 @@ def convert_rst_to_md(rst_content, source_dir=None):
         
 
         # Admonitions
-        match_admonition = re.match(r'^\s*\.\.\s+(note|warning|seealso|important|tip)::\s*(.*)', line, re.IGNORECASE)
+        match_admonition = re.match(r'^\s*\.\.\s+(note|warning|seealso|important|tip|hint|caution|danger|error)::\s*(.*)', line, re.IGNORECASE)
         if match_admonition:
             adm_type = match_admonition.group(1).lower()
             content_on_same_line = match_admonition.group(2).strip()
             if adm_type == 'seealso': adm_type = 'info'
+            if adm_type == 'hint': adm_type = 'tip' # hint is often used as tip in Docusaurus
+            if adm_type == 'important': adm_type = 'info' # important -> info
+            if adm_type == 'caution': adm_type = 'warning' # caution -> warning
+            if adm_type == 'danger' or adm_type == 'error': adm_type = 'danger' # danger/error -> danger
             md_lines.append('')
             md_lines.append(f':::{adm_type}')
             if content_on_same_line:
@@ -221,8 +333,10 @@ def convert_rst_to_md(rst_content, source_dir=None):
                 next_i += 1
             
             if next_i < len(lines):
+                # Check if it's indented relative to the directive
+                directive_indent = len(line) - len(line.lstrip())
                 indent = len(lines[next_i]) - len(lines[next_i].lstrip())
-                if indent > 0:
+                if indent > directive_indent:
                     i = next_i
                     block = []
                     while i < len(lines) and (not lines[i].strip() or (len(lines[i]) - len(lines[i].lstrip()) >= indent)):
@@ -230,7 +344,7 @@ def convert_rst_to_md(rst_content, source_dir=None):
                         i += 1
                     
                     # Recursively process the block content
-                    processed_block = convert_rst_to_md("\n".join(l[indent:] for l in block))
+                    processed_block = convert_rst_to_md("\n".join(l[indent:] if l.strip() else "" for l in block))
                     # Skip any added Tabs import from recursion
                     processed_lines = [l for l in processed_block.splitlines() if not l.startswith('import ')]
                     md_lines.extend(processed_lines)
@@ -244,6 +358,7 @@ def convert_rst_to_md(rst_content, source_dir=None):
         match_code = re.match(r'^\s*\.\.\s+(?:code-block|code)::\s*(\S+)?', line)
         if match_code:
             lang = match_code.group(1) or ""
+            directive_indent = len(line) - len(line.lstrip())
             i += 1
             # Skip optional captions or other options
             while i < len(lines) and (lines[i].strip().startswith(':') or not lines[i].strip()):
@@ -251,15 +366,19 @@ def convert_rst_to_md(rst_content, source_dir=None):
             
             if i < len(lines):
                 indent = len(lines[i]) - len(lines[i].lstrip())
-                block = []
-                while i < len(lines) and (not lines[i].strip() or (len(lines[i]) - len(lines[i].lstrip()) >= indent)):
-                    block.append(lines[i][indent:])
-                    i += 1
-                md_lines.append('')
-                md_lines.append(f'```{lang}')
-                md_lines.extend(block)
-                md_lines.append('```')
-                md_lines.append('')
+                if indent > directive_indent:
+                    block = []
+                    while i < len(lines) and (not lines[i].strip() or (len(lines[i]) - len(lines[i].lstrip()) >= indent)):
+                        block.append(lines[i][indent:])
+                        i += 1
+                    md_lines.append('')
+                    md_lines.append(f'```{lang}')
+                    md_lines.extend(block)
+                    md_lines.append('```')
+                    md_lines.append('')
+                else:
+                    # Possibly empty code block or options only
+                    pass
             continue
 
         # Handle math blocks (.. math::)
@@ -293,23 +412,29 @@ def convert_rst_to_md(rst_content, source_dir=None):
 
         # Handle simple indented code blocks (marked by :: at end of previous line)
         if line.strip() == '::':
+            directive_indent = len(line) - len(line.lstrip())
             i += 1
             while i < len(lines) and not lines[i].strip():
                 i += 1
             if i < len(lines):
                 indent = len(lines[i]) - len(lines[i].lstrip())
-                block = []
-                while i < len(lines) and (not lines[i].strip() or (len(lines[i]) - len(lines[i].lstrip()) >= indent)):
-                    block.append(lines[i][indent:])
-                    i += 1
-                md_lines.append('')
-                md_lines.append('```')
-                md_lines.extend(block)
-                md_lines.append('```')
-                md_lines.append('')
+                if indent > directive_indent:
+                    block = []
+                    while i < len(lines) and (not lines[i].strip() or (len(lines[i]) - len(lines[i].lstrip()) >= indent)):
+                        block.append(lines[i][indent:])
+                        i += 1
+                    md_lines.append('')
+                    md_lines.append('```')
+                    md_lines.extend(block)
+                    md_lines.append('```')
+                    md_lines.append('')
+                else:
+                    # Not a code block
+                    pass
             continue
         
         if line.endswith('::') and not line.strip().startswith('..'):
+            directive_indent = len(line) - len(line.lstrip())
             md_lines.append(line[:-2].strip())
             md_lines.append('')
             i += 1
@@ -317,15 +442,16 @@ def convert_rst_to_md(rst_content, source_dir=None):
                 i += 1
             if i < len(lines):
                 indent = len(lines[i]) - len(lines[i].lstrip())
-                block = []
-                while i < len(lines) and (not lines[i].strip() or (len(lines[i]) - len(lines[i].lstrip()) >= indent)):
-                    block.append(lines[i][indent:])
-                    i += 1
-                md_lines.append('')
-                md_lines.append('```')
-                md_lines.extend(block)
-                md_lines.append('```')
-                md_lines.append('')
+                if indent > directive_indent:
+                    block = []
+                    while i < len(lines) and (not lines[i].strip() or (len(lines[i]) - len(lines[i].lstrip()) >= indent)):
+                        block.append(lines[i][indent:])
+                        i += 1
+                    md_lines.append('')
+                    md_lines.append('```')
+                    md_lines.extend(block)
+                    md_lines.append('```')
+                    md_lines.append('')
             continue
 
         # Inline replacements

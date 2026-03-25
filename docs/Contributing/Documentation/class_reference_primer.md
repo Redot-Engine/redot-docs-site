@@ -273,7 +273,6 @@ public override void _Ready()
     var sprite = GetNode("Sprite2D");
     GD.Print(sprite.GetPos());
 }
-
 ```
 
 </TabItem>

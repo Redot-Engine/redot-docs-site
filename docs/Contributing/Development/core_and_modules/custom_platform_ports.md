@@ -167,11 +167,13 @@ or OpenGL ES 3.0, you have two options:
 
 ## Distributing a custom platform port
 
-.. danger::
+:::danger
 
-    Before distributing a custom platform port, make sure you're allowed to
-    distribute all the code that is being linked against. Console SDKs are
-    typically under NDAs which prevent redistribution to the public.
+Before distributing a custom platform port, make sure you're allowed to
+distribute all the code that is being linked against. Console SDKs are
+typically under NDAs which prevent redistribution to the public.
+
+:::
 
 Platform ports are designed to be as self-contained as possible. Most of the
 code can be kept within a single folder located in ``platform/``. Like

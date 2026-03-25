@@ -152,7 +152,7 @@ run ``make`` again.
 This will drop the class references from the final HTML documentation, but will keep the
 rest intact.
 
-:::important
+:::info
 
 If you delete the ``classes/`` folder, do not use ``git add .`` when working on a pull
 request or the whole ``classes/`` folder will be removed when you commit.

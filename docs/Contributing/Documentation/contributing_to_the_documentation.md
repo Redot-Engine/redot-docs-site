@@ -194,24 +194,22 @@ border and allows centering it on the page.
 You can also include attachments as support material for a tutorial, by placing them
 into a ``files/`` folder next to the ``.rst`` file, and using this inline markup:
 
-```rst
-Consider using the `godot-docs-project-starters <https://github.com/godotengine/godot-docs-project-starters>`
+Consider using the [godot-docs-project-starters](https://github.com/godotengine/godot-docs-project-starters)
 repository for hosting support materials, such as project templates and asset packs.
 You can use a direct link to the generated archive from that repository with the regular
 link markup:
 
-.. code:: rst
+```rst
+`file_name.zip <https://github.com/godotengine/godot-docs-project-starters/releases/download/latest-4.x/file_name.zip>`_
 
-   `file_name.zip <https://github.com/godotengine/godot-docs-project-starters/releases/download/latest-4.x/file_name.zip>`_
+```
 
-License
--------
+## License
 
 This documentation and every page it contains is published under the terms of
 the `Creative Commons Attribution 3.0 license (CC BY 3.0)
-<https://creativecommons.org/licenses/by/3.0/>`_, with attribution to "Juan
+&lt;https://creativecommons.org/licenses/by/3.0/&gt;`_, with attribution to "Juan
 Linietsky, Ariel Manzur and the Godot community".
 
 By contributing to the documentation on the GitHub repository, you agree that
 your changes are distributed under this license.
-```

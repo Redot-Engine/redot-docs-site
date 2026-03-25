@@ -83,7 +83,6 @@ set SCRIPT_AES256_ENCRYPTION_KEY=your_generated_key
 
 ```bat
 $env:SCRIPT_AES256_ENCRYPTION_KEY="your_generated_key"
-
 ```
 
 </TabItem>

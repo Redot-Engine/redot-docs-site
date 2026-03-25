@@ -105,7 +105,7 @@ register_types.cpp
 
 ```
 
-:::important
+:::info
 
 These files must be in the top-level folder of your module (next to your
 ``SCsub`` and ``config.py`` files) for the module to be registered properly.
@@ -252,7 +252,6 @@ s.add(20)
 s.add(30)
 print(s.get_total())
 s.reset()
-
 ```
 
 </TabItem>

@@ -411,7 +411,6 @@ set SCONSFLAGS=-j4
 
 ```powershell
 $env:SCONSFLAGS="-j4"
-
 ```
 
 </TabItem>

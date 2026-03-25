@@ -177,17 +177,17 @@ sudo urpmi --auto \
 
 <TabItem value="netbsd" label="NetBSD">
 
-pkg_add \
-  pkg-config \
-  py37-scons
+    pkg_add \
+      pkg-config \
+      py37-scons
+
+:::tip
+
+For audio support, you can optionally install ``pulseaudio``.
+
+:::
 
 </TabItem>
-
-</Tabs>
-
-        .. hint::
-
-            For audio support, you can optionally install ``pulseaudio``.
 
 <TabItem value="openbsd" label="OpenBSD">
 
@@ -256,6 +256,8 @@ eopkg install -y \
   pulseaudio-devel
 
 </TabItem>
+
+</Tabs>
 
 ## Compiling
 

@@ -2,22 +2,22 @@
 
 ## Object
 
-![Image](/Contributing/Development/core_and_modules/img/Object.webp)
+![Image](img/Object.webp)
 
 ## Reference
 
-![Image](/Contributing/Development/core_and_modules/img/RefCounted.webp)
+![Image](img/RefCounted.webp)
 
 ## Control
 
-![Image](/Contributing/Development/core_and_modules/img/Control.webp)
+![Image](img/Control.webp)
 
 ## Node2D
 
-![Image](/Contributing/Development/core_and_modules/img/Node2D.webp)
+![Image](img/Node2D.webp)
 
 ## Node3D
 
-![Image](/Contributing/Development/core_and_modules/img/Node3D.webp)
+![Image](img/Node3D.webp)
 
 Source files: :download:[class_tree.zip](files/class_tree.zip).

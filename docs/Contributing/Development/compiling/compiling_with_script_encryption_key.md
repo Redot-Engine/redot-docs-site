@@ -94,7 +94,7 @@ $env:SCRIPT_AES256_ENCRYPTION_KEY="your_generated_key"
 
 4. Set the encryption key in the **Encryption** tab of the export preset:
 
-   .. image:: img/encryption_key.png
+![Image](img/encryption_key.png)
 
 5. Add filters for the files/folders to encrypt. **By default**, include filters
    are empty and **nothing will be encrypted**.

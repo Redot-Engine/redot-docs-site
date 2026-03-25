@@ -469,10 +469,11 @@ def convert_rst_to_md(rst_content, source_dir=None):
         # Multiline :ref:
         
         # Images and Figures
-        match_img = re.match(r'^\.\.\s+(image|figure)::\s+(.*)', line)
+        match_img = re.match(r'^\s*\.\.\s+(image|figure)::\s+(.*)', line)
         if match_img:
             directive_type = match_img.group(1)
             img_path = match_img.group(2).strip()
+            directive_indent = len(line) - len(line.lstrip())
             i += 1
             
             options = {}
@@ -482,18 +483,22 @@ def convert_rst_to_md(rst_content, source_dir=None):
                     next_i = i + 1
                     while next_i < len(lines) and not lines[next_i].strip():
                         next_i += 1
-                    if next_i < len(lines) and lines[next_i].strip().startswith(':'):
+                    if next_i < len(lines) and lines[next_i].strip().startswith(':') and (len(lines[next_i]) - len(lines[next_i].lstrip()) > directive_indent):
                         i = next_i
                         continue
                     else:
                         break
                 
-                match_opt = re.match(r'^\s+:([^:]+):\s*(.*)', lines[i])
-                if match_opt:
-                    opt_name = match_opt.group(1).strip()
-                    opt_val = match_opt.group(2).strip()
-                    options[opt_name] = opt_val
-                    i += 1
+                # Check if it's an option at a greater indentation level
+                if (len(lines[i]) - len(lines[i].lstrip()) > directive_indent):
+                    match_opt = re.match(r'^\s+:([^:]+):\s*(.*)', lines[i])
+                    if match_opt:
+                        opt_name = match_opt.group(1).strip()
+                        opt_val = match_opt.group(2).strip()
+                        options[opt_name] = opt_val
+                        i += 1
+                    else:
+                        break
                 else:
                     break
             
@@ -507,18 +512,17 @@ def convert_rst_to_md(rst_content, source_dir=None):
                 if i < len(lines):
                     # Check if the line is indented, which means it's part of the figure directive
                     first_line = lines[i]
-                    indent_match = re.match(r'^(\s+)', first_line)
-                    if indent_match:
-                        indent_str = indent_match.group(1)
-                        indent = len(indent_str)
+                    curr_indent = len(first_line) - len(first_line.lstrip())
+                    if curr_indent > directive_indent:
+                        indent = curr_indent
                         while i < len(lines):
                             if not lines[i].strip():
                                 caption_lines.append("")
                                 i += 1
                                 continue
                             
-                            curr_indent_match = re.match(r'^(\s+)', lines[i])
-                            if curr_indent_match and len(curr_indent_match.group(1)) >= indent:
+                            curr_line_indent = len(lines[i]) - len(lines[i].lstrip())
+                            if curr_line_indent >= indent:
                                 caption_lines.append(lines[i][indent:])
                                 i += 1
                             else:
@@ -574,27 +578,31 @@ def convert_rst_to_md(rst_content, source_dir=None):
                 md_lines.append('')
             else:
                 # Simple image
-                img_static_path = get_static_path(img_path)
-                md_lines.append(f'![Image]({img_static_path})')
+                md_lines.append(f'![Image]({img_path})')
             
             continue
 
         # Video directive
-        match_video = re.match(r'^\.\.\s+video::\s+(.*)', line)
+        match_video = re.match(r'^\s*\.\.\s+video::\s+(.*)', line)
         if match_video:
             video_path = match_video.group(1).strip()
+            directive_indent = len(line) - len(line.lstrip())
             i += 1
             options = {}
             while i < len(lines):
                 if not lines[i].strip():
                     i += 1
                     continue
-                match_opt = re.match(r'^\s+:([^:]+):\s*(.*)', lines[i])
-                if match_opt:
-                    opt_name = match_opt.group(1).strip()
-                    opt_val = match_opt.group(2).strip()
-                    options[opt_name] = opt_val
-                    i += 1
+                # Check indentation
+                if (len(lines[i]) - len(lines[i].lstrip()) > directive_indent):
+                    match_opt = re.match(r'^\s+:([^:]+):\s*(.*)', lines[i])
+                    if match_opt:
+                        opt_name = match_opt.group(1).strip()
+                        opt_val = match_opt.group(2).strip()
+                        options[opt_name] = opt_val
+                        i += 1
+                    else:
+                        break
                 else:
                     break
             

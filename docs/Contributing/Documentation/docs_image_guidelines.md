@@ -61,7 +61,7 @@ For a screenshot of a 2D or 3D scene in the editor, the above steps will be enou
 But for most UI images some extra work should be done, specifically cropping to
 make an image look clean. Below is an example of good cropping.
 
-![Image](/Contributing/Documentation/img/cropped_image.webp)
+![Image](img/cropped_image.webp)
 
 For cropping Krita is the recommended program. While some screenshot programs do
 have cropping built-in it's not always easy to get something precise. And while
@@ -73,17 +73,17 @@ on Linux you may also be able to download it from your distributions repository,
 flathub is also an option. Once it's installed on your computer open Krita then
 open the image you want to crop. This button on the left panel is the crop tool.
 
-![Image](/Contributing/Documentation/img/crop_tool.webp)
+![Image](img/crop_tool.webp)
 
 After selecting it, click on the image, you should now have cropping tools available.
 
-![Image](/Contributing/Documentation/img/crop_edit.webp)
+![Image](img/crop_edit.webp)
 
 Click and drag the white boxes to adjust what gets cropped, if you zoom in close
 to the image you will see the individual pixels in an image, which is useful for
 precision.
 
-![Image](/Contributing/Documentation/img/crop_pixels.webp)
+![Image](img/crop_pixels.webp)
 
 If you make a mistake and overcrop don't worry, cropping is non-destructive in
 Krita and can be adjusted. Click on the image with your cropping tool still selected

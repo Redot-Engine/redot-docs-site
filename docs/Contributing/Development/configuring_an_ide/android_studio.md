@@ -45,25 +45,25 @@ The project is organized using [Android Studio's modules](https://developer.andr
 - To build the ``editor`` module:
    - Select the [Run/Debug Configurations drop down](https://developer.android.com/studio/run/rundebugconfig#running) and select ``editor``.
 
-   .. figure:: img/android_studio_editor_configurations_drop_down.webp
-      :figclass: figure-w480
-      :align: center
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/android_studio_editor_configurations_drop_down.webp" />
+</figure>
 
    - Select **Run &gt; Run 'editor'** from the top menu or [click the Run icon](https://developer.android.com/studio/run/rundebugconfig#running).
 - To debug the ``editor`` module:
    - Open the **Build Variants** window using **View &gt; Tools Windows &gt; Build Variants** from the top menu.
    - In the **Build Variants** window, make sure that in the **Active Build Variant** column, the ``:editor`` entry is set to **dev**.
 
-   .. figure:: img/android_studio_editor_build_variant.webp
-      :figclass: figure-w480
-      :align: center
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/android_studio_editor_build_variant.webp" />
+</figure>
 
    - Open the **Run/Debug Configurations** window by clicking on **Run &gt; Edit Configurations...** on the top menu.
    - In the **Run/Debug Configurations** window, select the ``editor`` entry, and under **Debugger** make sure the **Debug Type** is set to ``Dual (Java + Native)``
 
-   .. figure:: img/android_studio_editor_debug_type_setup.webp
-      :figclass: figure-w480
-      :align: center
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/android_studio_editor_debug_type_setup.webp" />
+</figure>
 
    - Select **Run &gt; Debug 'editor'** from the top menu or [click the Debug icon](https://developer.android.com/studio/run/rundebugconfig#running).
 
@@ -77,25 +77,25 @@ Once that's done, you can follow the instructions below to run/debug the ``app``
 - To build the ``app`` module:
    - Select the [Run/Debug Configurations drop down](https://developer.android.com/studio/run/rundebugconfig#running) and select ``app``.
 
-   .. figure:: img/android_studio_app_configurations_drop_down.webp
-      :figclass: figure-w480
-      :align: center
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/android_studio_app_configurations_drop_down.webp" />
+</figure>
 
    - Select **Run &gt; Run 'app'** from the top menu or [click the Run icon](https://developer.android.com/studio/run/rundebugconfig#running).
 - To debug the ``app`` module:
    - Open the **Build Variants** window using **View &gt; Tools Windows &gt; Build Variants** from the top menu.
    - In the **Build Variants** window, make sure that in the **Active Build Variant** column, the ``:app`` entry is set to **dev**.
 
-   .. figure:: img/android_studio_app_build_variant.webp
-      :figclass: figure-w480
-      :align: center
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/android_studio_app_build_variant.webp" />
+</figure>
 
    - Open the **Run/Debug Configurations** window by clicking on **Run &gt; Edit Configurations...** on the top menu.
    - In the **Run/Debug Configurations** window, select the ``app`` entry, and under **Debugger** make sure the **Debug Type** is set to ``Dual (Java + Native)``
 
-   .. figure:: img/android_studio_app_debug_type_setup.webp
-      :figclass: figure-w480
-      :align: center
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/android_studio_app_debug_type_setup.webp" />
+</figure>
 
    - Select **Run &gt; Debug 'app'** from the top menu or [click the Debug icon](https://developer.android.com/studio/run/rundebugconfig#running).
 

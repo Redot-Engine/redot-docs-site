@@ -205,7 +205,7 @@ However, if you are writing your custom modules or custom C++ code, you
 might instead want to configure your template binaries as custom export templates
 here:
 
-![Image](/Contributing/Development/compiling/img/andtemplates.png)
+![Image](img/andtemplates.png)
 
 You don't even need to copy them, you can just reference the resulting
 file in the ``bin\`` directory of your Godot source folder, so that the

@@ -3,7 +3,7 @@
 
 This page describes the typical workflow of the bug triage team aka
 bugsquad when handling issues and pull requests on Godot's
-[GitHub repository ](https://github.com/godotengine/godot)_.
+[GitHub repository](https://github.com/godotengine/godot)_.
 It is bound to evolve together with the bugsquad, so do not
 hesitate to propose modifications to the following guidelines.
 
@@ -30,7 +30,7 @@ to both issues and pull requests.
 
 ### Labels
 
-The following [labels ](https://github.com/godotengine/godot/labels)_ are
+The following [labels](https://github.com/godotengine/godot/labels)_ are
 currently defined in the Godot repository:
 
 **Categories:**
@@ -59,17 +59,17 @@ currently defined in the Godot repository:
    class reference. Issues with this label are either for wrong documentation, or
    are user-reported "bugs" that are actually limitations to be further documented.
    Often paired with *Discussion*. Issues related to the ReadTheDocs documentation
-   should be filed on the [godot-docs ](https://github.com/godotengine/godot-docs) repository.
+   should be filed on the [godot-docs](https://github.com/godotengine/godot-docs) repository.
 -  *Enhancement*: describes a proposed enhancement to an existing
    functionality.
 -  *Feature proposal*: describes a wish for a new feature to be
    implemented. Note that the main Godot repository no longer accepts
    feature requests. Please use
-   [godot-proposals ](https://github.com/godotengine/godot-proposals)_ instead.
+   [godot-proposals](https://github.com/godotengine/godot-proposals)_ instead.
    PRs which add new features but do not have a corresponding proposal use this
    label.
 -  *For PR meeting*: the issue needs to be discussed in a pull request meeting.
-   These meetings are public and are held on the [Godot Contributors Chat ](https://chat.godotengine.org/).
+   These meetings are public and are held on the [Godot Contributors Chat](https://chat.godotengine.org/).
 -  *Good first issue*: the issue is *assumed* to be an easy one to fix, which makes
    it a great fit for new contributors who want to become familiar with
    the code base. It should be removed while an active PR is available, that
@@ -152,8 +152,8 @@ Android and Linux exclusively, select those two platforms).
 
 ### Documentation labels
 
-In the [documentation repository ](https://github.com/godotengine/godot-docs)_, we
-use the following [labels ](https://github.com/godotengine/godot-docs/labels)_:
+In the [documentation repository](https://github.com/godotengine/godot-docs)_, we
+use the following [labels](https://github.com/godotengine/godot-docs/labels)_:
 
 -  *Archived*: either a duplicate of another issue, or invalid. Such an
    issue would also be closed.
@@ -205,7 +205,7 @@ repository.
 
 ### Milestones
 
-[Milestones ](https://github.com/godotengine/godot/milestones) correspond to
+[Milestones](https://github.com/godotengine/godot/milestones) correspond to
 planned future versions of Godot for which there is an existing roadmap. Issues
 that fit in the said roadmap should be filed under the corresponding milestone;
 if they don't correspond to any current roadmap, they should be left without

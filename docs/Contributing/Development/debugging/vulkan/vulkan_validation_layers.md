@@ -23,7 +23,7 @@ don't need to reboot after installing the SDK, but you may need to close and
 reopen your current terminal.
 
 After installing the Vulkan SDK, run Godot with the ``--gpu-validation``
-[command line argument ](doc_command_line_tutorial). You can also specify
+[command line argument](doc_command_line_tutorial). You can also specify
 ``--gpu-abort`` which will make Godot quit as soon as a validation error happens.
 This can prevent your system from freezing if a validation error occurs.
 
@@ -51,7 +51,7 @@ reopen your current terminal.
 
 After installing the Vulkan SDK, run a Godot binary that was compiled with
 ``use_volk=yes`` SCons option. Specify the ``--gpu-validation``
-[command line argument ](doc_command_line_tutorial).
+[command line argument](doc_command_line_tutorial).
 You can also specify ``--gpu-abort`` which will make Godot quit as soon
 as a validation error happens. This can prevent your system from freezing
 if a validation error occurs.
@@ -128,7 +128,7 @@ You don't need to reboot after installing the validation layers, but you may
 need to close and reopen your current terminal.
 
 After installing the package, run Godot with the ``--gpu-validation``
-[command line argument ](doc_command_line_tutorial). You can also specify
+[command line argument](doc_command_line_tutorial). You can also specify
 ``--gpu-abort`` which will make Godot quit as soon as a validation error happens.
 This can prevent your system from freezing if a validation error occurs.
 
@@ -151,7 +151,7 @@ for Vulkan there.
 #### Build validation layers from official sources
 
 To build Android libraries, follow the instructions on
-[Khronos' repository  ](https://github.com/KhronosGroup/Vulkan-ValidationLayers/blob/master/BUILD.md#building-on-android)_.
+[Khronos' repository](https://github.com/KhronosGroup/Vulkan-ValidationLayers/blob/master/BUILD.md#building-on-android)_.
 After a successful build, the libraries will be located in ``Vulkan-ValidationLayers/build-android/libs``.
 
 #### Copy libraries

@@ -15,8 +15,8 @@ From a high level, the ideal life cycle of a pull request looks like the
 following:
 
   1. A contributor opens a PR that fixes a specific problem (optimally closing
-     a GitHub [issue ](https://github.com/godotengine/godot) or implementing
-     a [proposal ](https://github.com/godotengine/godot-proposals)).
+     a GitHub [issue](https://github.com/godotengine/godot) or implementing
+     a [proposal](https://github.com/godotengine/godot-proposals)).
 
   2. Other contributors provide feedback on the PR (including reviewing and/or
      approving the PR, as appropriate).
@@ -32,7 +32,8 @@ following:
      satisfied that it has been sufficiently reviewed.
 
 This document will explain steps 2, 3, 4, and 5 in more detail. For a more
-detailed explanation of the pull request workflow please see the [pull request workflow document ](doc_pr_workflow).
+detailed explanation of the pull request workflow please see the :ref:`pull
+request workflow document &lt;doc_pr_workflow&gt;`.
 
 :::note
 
@@ -47,7 +48,7 @@ assigning tags to the pull request and flagging it for review by someone
 familiar with that area of code.
 
 Engine maintainers are folks who are "members" of the Godot project repository
-on GitHub and/or are listed on the [Teams page ](https://godotengine.org/teams)
+on GitHub and/or are listed on the [Teams page](https://godotengine.org/teams)
 on the Godot website. Maintainers are responsible for a given area of the
 engine. Typically this means they are the people who are given more trust to
 approve and recommend pull requests for merging.
@@ -146,7 +147,7 @@ Maintainers should provide feedback and suggestions for improvement if they spot
 things in the code that they would like changed. Preferably, suggestions should
 come in order of importance: first, address overall code design and the approach
 to solving the problem, then make sure the code is complying with the engine's
-best practices, and lastly, do the [code style review ](doc_code_style_review).
+best practices, and lastly, do the [code style review](doc_code_style_review).
 
 :::note
 

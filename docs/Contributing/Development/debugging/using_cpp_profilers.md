@@ -6,7 +6,7 @@ To this end, profilers are useful tools.
 
 :::note
 
-There is a [built-in GDScript profiler ](doc_the_profiler) in the editor,
+There is a [built-in GDScript profiler](doc_the_profiler) in the editor,
 but using C++ profiler may be useful in cases where the GDScript profiler
 is not accurate enough or is missing information due to bugs in the profiler.
 
@@ -14,9 +14,9 @@ is not accurate enough or is missing information due to bugs in the profiler.
 
 ## Recommended profilers
 
-- [VerySleepy ](http://www.codersnotes.com/sleepy/)_ (Windows only)
-- [HotSpot ](https://github.com/KDAB/hotspot)_ (Linux only)
-- [Xcode Instruments ](https://developer.apple.com/xcode/)_ (macOS only)
+- [VerySleepy](http://www.codersnotes.com/sleepy/)_ (Windows only)
+- [HotSpot](https://github.com/KDAB/hotspot)_ (Linux only)
+- [Xcode Instruments](https://developer.apple.com/xcode/)_ (macOS only)
 
 These profilers may not be the most powerful or flexible options, but their
 standalone operation and limited feature set tends to make them easier to use.

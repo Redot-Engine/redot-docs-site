@@ -81,7 +81,8 @@ their documentation by completing or improving the text in these tags:
 - `&lt;signal&gt;` (in its `&lt;description&gt;` tag; arguments don't take separate documentation strings)
 - `&lt;constant&gt;`
 
-Write in a clear and simple language. Always follow the [writing guidelines ](doc_docs_writing_guidelines) to keep your descriptions short and easy to read.
+Write in a clear and simple language. Always follow the :ref:`writing guidelines
+&lt;doc_docs_writing_guidelines&gt;` to keep your descriptions short and easy to read.
 **Do not leave empty lines** in the descriptions: each line in the XML file will
 result in a new paragraph, even if it is empty.
 
@@ -108,7 +109,8 @@ This will convert the XML files to the online documentation's format and output
 errors if anything's wrong.
 
 Alternatively, you can build Godot and open the modified page in the built-in
-code reference. To learn how to compile the engine, read the [compilation guide ](toc-devel-compiling).
+code reference. To learn how to compile the engine, read the :ref:`compilation
+guide &lt;toc-devel-compiling&gt;`.
 
 We recommend using a code editor that supports XML files like Vim, Atom, Visual Studio Code,
 Notepad++, or another to comfortably edit the file. You can also use their
@@ -117,7 +119,7 @@ search feature to find classes and properties quickly.
 :::tip
 
 If you use Visual Studio Code, you can install the
-[vscode-xml extension ](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)_
+[vscode-xml extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)_
 to get linting for class reference XML files.
 
 :::
@@ -135,16 +137,16 @@ For links to the same class, the class name is optional and can be omitted.
 
 | Tag and Description | Example | Result |
 | --- | --- | --- |
-|  | ``[Class]`` Link to class | ``Move the [Sprite2D].`` | Move the :ref:`class_Sprite2D`. |
-|  | ``[annotation Class.name]`` Link to annotation | ``See [annotation @GDScript.@rpc].`` | See :ref:`@GDScript.@rpc &lt;class_@GDScript_annotation_@rpc&gt;`. |
-|  | ``[constant Class.name]`` Link to constant | ``See [constant Color.RED].`` | See :ref:`Color.RED &lt;class_Color_constant_RED&gt;`. |
-|  | ``[enum Class.name]`` Link to enum | ``See [enum Mesh.ArrayType].`` | See :ref:`Mesh.ArrayType &lt;enum_Mesh_ArrayType&gt;`. |
-|  | ``[member Class.name]`` Link to member | ``Get [member Node2D.scale].`` | Get :ref:`Node2D.scale &lt;class_Node2D_property_scale&gt;`. |
-|  | ``[method Class.name]`` Link to method | ``Call [method Node3D.hide].`` | Call :ref:`Node3D.hide() &lt;class_Node3D_method_hide&gt;`. |
-|  | ``[constructor Class.name]`` Link to built-in constructor | ``Use [constructor Color.Color].`` | Use  :ref:`Color.Color &lt;class_Color_constructor_Color&gt;`. |
-|  | ``[operator Class.name]`` Link to built-in operator | ``Use [operator Color.operator *].`` | Use  :ref:`Color.operator * &lt;class_Color_operator_mul_int&gt;`. |
-|  | ``[signal Class.name]`` Link to signal | ``Emit [signal Node.renamed].`` | Emit :ref:`Node.renamed &lt;class_Node_signal_renamed&gt;`. |
-|  | ``[theme_item Class.name]`` Link to theme item | ``See [theme_item Label.font].`` | See :ref:`Label.font &lt;class_Label_theme_font_font&gt;`. |
+|  | ``[Class]`` Link to class | ``Move the [Sprite2D].`` | Move the [class_Sprite2D](class_Sprite2D). |
+|  | ``[annotation Class.name]`` Link to annotation | ``See [annotation @GDScript.@rpc].`` | See [@GDScript.@rpc](class_@GDScript_annotation_@rpc). |
+|  | ``[constant Class.name]`` Link to constant | ``See [constant Color.RED].`` | See [Color.RED](class_Color_constant_RED). |
+|  | ``[enum Class.name]`` Link to enum | ``See [enum Mesh.ArrayType].`` | See [Mesh.ArrayType](enum_Mesh_ArrayType). |
+|  | ``[member Class.name]`` Link to member | ``Get [member Node2D.scale].`` | Get [Node2D.scale](class_Node2D_property_scale). |
+|  | ``[method Class.name]`` Link to method | ``Call [method Node3D.hide].`` | Call [Node3D.hide()](class_Node3D_method_hide). |
+|  | ``[constructor Class.name]`` Link to built-in constructor | ``Use [constructor Color.Color].`` | Use  [Color.Color](class_Color_constructor_Color). |
+|  | ``[operator Class.name]`` Link to built-in operator | ``Use [operator Color.operator *].`` | Use  [Color.operator *](class_Color_operator_mul_int). |
+|  | ``[signal Class.name]`` Link to signal | ``Emit [signal Node.renamed].`` | Emit [Node.renamed](class_Node_signal_renamed). |
+|  | ``[theme_item Class.name]`` Link to theme item | ``See [theme_item Label.font].`` | See [Label.font](class_Label_theme_font_font). |
 |  | ``[param name]`` Parameter name (as code) | ``Takes [param size] for the size.`` | Takes ``size`` for the size. |
 
 :::note
@@ -164,9 +166,9 @@ Formatting text
 |  | ``[i]`` ``[/i]`` Italic | ``Returns the [i]global[/i] position.`` | Returns the *global* position. |
 |  | ``[u]`` ``[/u]`` Underline | ``[u]Always[/u] use this method.`` &lt;u&gt;Always&lt;/u&gt; use this method. | .. raw:: html |
 |  | ``[s]`` ``[/s]`` Strikethrough | ``[s]Outdated information.[/s]`` &lt;s&gt;Outdated information.&lt;/s&gt; | .. raw:: html |
-|  | ``[url]`` ``[/url]`` Hyperlink |  | ``[url]https://example.com[/url]`` ``[url=https://example.com]Website[/url]`` |  | https://example.com `Website &lt;https://example.com&gt;`_ |
+|  | ``[url]`` ``[/url]`` Hyperlink |  | ``[url]https://example.com[/url]`` ``[url=https://example.com]Website[/url]`` |  | https://example.com [Website](https://example.com) |
 |  | ``[center]`` ``[/center]`` Horizontal centering | ``[center]2 + 2 = 4[/center]`` &lt;center&gt;2 + 2 = 4&lt;/center&gt; | .. raw:: html |
-|  | ``[kbd]`` ``[/kbd]`` Keyboard/mouse shortcut | ``Press [kbd]Ctrl + C[/kbd].`` | Press :kbd:`Ctrl + C`. |
+|  | ``[kbd]`` ``[/kbd]`` Keyboard/mouse shortcut | ``Press [kbd]Ctrl + C[/kbd].`` | Press `Ctrl + C`. |
 |  | ``[code]`` ``[/code]`` Inline code fragment | ``Returns [code]true[/code].`` | Returns ``true``. |
 
 :::note

@@ -5,7 +5,7 @@ import TabItem from "@theme/TabItem";
 
 .. highlight:: shell
 
-Godot is a primarily C++ project and it [uses the SCons build system. ](doc_faq_why_scons)
+Godot is a primarily C++ project and it [uses the SCons build system.](doc_faq_why_scons)
 We love SCons for how maintainable and easy to set up it makes our buildsystem. And thanks to
 that compiling Godot from source can be as simple as running
 
@@ -128,7 +128,7 @@ godot.windows.editor.64.exe
 Copy that binary to any location you like, as it contains the Project Manager,
 editor and all means to execute the game. However, it lacks the data to export
 it to the different platforms. For that the export templates are needed (which
-can be either downloaded from [godotengine.org ](https://godotengine.org/)_, or
+can be either downloaded from [godotengine.org](https://godotengine.org/)_, or
 you can build them yourself).
 
 Aside from that, there are a few standard options that can be set in all
@@ -154,7 +154,7 @@ scons platform=<platform> target=editor/template_debug/template_release
 
 ## Development and production aliases
 
-When creating builds for development (running debugging/[profiling ](doc_using_cpp_profilers)
+When creating builds for development (running debugging/[profiling](doc_using_cpp_profilers)
 tools), you often have different goals compared to production builds
 (making binaries as fast and small as possible).
 
@@ -162,7 +162,8 @@ Godot provides two aliases for this purpose:
 
 - ``dev_mode=yes`` is an alias for ``verbose=yes warnings=extra werror=yes
   tests=yes``. This enables warnings-as-errors behavior (similar to Godot's
-  continuous integration setup) and also builds [unit tests ](doc_unit_testing) so you can run them locally.
+  continuous integration setup) and also builds :ref:`unit tests
+  &lt;doc_unit_testing&gt;` so you can run them locally.
 - ``production=yes`` is an alias for ``use_static_cpp=yes debug_symbols=no
   lto=auto``. Statically linking libstdc++ allows for better binary portability
   when compiling for Linux. This alias also enables link-time optimization when
@@ -345,7 +346,7 @@ time it takes to build the engine. See [doc_optimizing_for_size](doc_optimizing_
 :::info
 
 You can use the online
-[Godot build options generator ](https://godot-build-options-generator.github.io/)_
+[Godot build options generator](https://godot-build-options-generator.github.io/)_
 to generate a ``custom.py`` file containing SCons options.
 You can then save this file and place it at the root of your Godot source directory.
 
@@ -443,7 +444,7 @@ usually be faster to catch them on a local build on your machine.
 ## Export templates
 
 Official export templates are downloaded from the Godot Engine site:
-[godotengine.org ](https://godotengine.org/)_. However, you might want
+[godotengine.org](https://godotengine.org/)_. However, you might want
 to build them yourself (in case you want newer ones, you are using custom
 modules, or simply don't trust your own shadow).
 
@@ -499,7 +500,7 @@ directory to avoid conflicts. For instance, if you are building export templates
 for Godot 3.1.1, ``version.txt`` should contain ``3.1.1.stable`` on the first
 line (and nothing else). This version identifier is based on the ``major``,
 ``minor``, ``patch`` (if present) and ``status`` lines of the
-[version.py file in the Godot Git repository ](https://github.com/godotengine/godot/blob/master/version.py)_.
+[version.py file in the Godot Git repository](https://github.com/godotengine/godot/blob/master/version.py)_.
 
 If you are developing for multiple platforms, macOS is definitely the most
 convenient host platform for cross-compilation, since you can cross-compile for

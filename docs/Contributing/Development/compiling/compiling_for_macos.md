@@ -14,11 +14,11 @@ If you're looking to export your project to macOS instead, read [doc_exporting_f
 
 For compiling under macOS, the following is required:
 
-- [Python 3.8+ ](https://www.python.org/downloads/macos/).
-- [SCons 4.0+ ](https://scons.org/pages/download.html) build system.
-- [Xcode ](https://apps.apple.com/us/app/xcode/id497799835)
+- [Python 3.8+](https://www.python.org/downloads/macos/).
+- [SCons 4.0+](https://scons.org/pages/download.html) build system.
+- [Xcode](https://apps.apple.com/us/app/xcode/id497799835)
   (or the more lightweight Command Line Tools for Xcode).
-- [Vulkan SDK ](https://sdk.lunarg.com/sdk/download/latest/mac/vulkan-sdk.dmg)
+- [Vulkan SDK](https://sdk.lunarg.com/sdk/download/latest/mac/vulkan-sdk.dmg)
   for MoltenVK (macOS doesn't support Vulkan out of the box).
   The latest Vulkan SDK version can be installed quickly by running
   ``misc/scripts/install_vulkan_sdk_macos.sh`` within the Godot source repository.
@@ -35,7 +35,7 @@ brew install scons
 Installing Homebrew will also fetch the Command Line Tools
 for Xcode automatically if you don't have them already.
 
-Similarly, if you have [MacPorts ](https://www.macports.org/)
+Similarly, if you have [MacPorts](https://www.macports.org/)
 installed, you can easily install SCons using the
 following command
 
@@ -227,10 +227,10 @@ zip -r9 macos.zip macos_template.app
 
 It is possible to compile for macOS in a Linux environment (and maybe also in
 Windows using the Windows Subsystem for Linux). For that, you'll need to install
-[OSXCross ](https://github.com/tpoechtrager/osxcross)_ to be able to use macOS
+[OSXCross](https://github.com/tpoechtrager/osxcross)_ to be able to use macOS
 as a target. First, follow the instructions to install it:
 
-Clone the [OSXCross repository ](https://github.com/tpoechtrager/osxcross)_
+Clone the [OSXCross repository](https://github.com/tpoechtrager/osxcross)_
 somewhere on your machine (or download a ZIP file and extract it somewhere),
 e.g.
 

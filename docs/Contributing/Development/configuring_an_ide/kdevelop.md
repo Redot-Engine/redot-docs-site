@@ -1,7 +1,7 @@
 
 # KDevelop
 
-[KDevelop ](https://www.kdevelop.org) is a free, open source IDE for all desktop platforms.
+[KDevelop](https://www.kdevelop.org) is a free, open source IDE for all desktop platforms.
 
 ## Importing the project
 
@@ -43,7 +43,7 @@ platform/<your_platform>/  // Replace <your_platform> with a folder
 | --- | --- |
 | Enable | **True** |
 | Executable | **scons** |
-| Arguments | See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments. |
+| Arguments | See [doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem) for a full list of arguments. |
 
 ![Image](img/kdevelop_buildconfig.png)
 
@@ -64,4 +64,4 @@ platform/<your_platform>/  // Replace <your_platform> with a folder
 ![Image](img/kdevelop_configlaunches2.png)
 
 If you run into any issues, ask for help in one of
-[Godot's community channels ](https://godotengine.org/community)_.
+[Godot's community channels](https://godotengine.org/community)_.

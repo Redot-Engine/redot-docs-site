@@ -14,7 +14,7 @@ data types. If not, refer to this guide: [doc_custom_modules_in_cpp](doc_custom_
 ### References
 
 - [ResourceLoader](class_resourceloader)
-- [core/io/resource_loader.cpp ](https://github.com/godotengine/godot/blob/master/core/io/resource_loader.cpp)
+- [core/io/resource_loader.cpp](https://github.com/godotengine/godot/blob/master/core/io/resource_loader.cpp)
 
 ## What for?
 
@@ -31,7 +31,7 @@ ImageFormatLoader should be used to load images.
 
 ### References
 
-- [core/io/image_loader.h ](https://github.com/godotengine/godot/blob/master/core/io/image_loader.h)
+- [core/io/image_loader.h](https://github.com/godotengine/godot/blob/master/core/io/image_loader.h)
 
 ## Creating a ResourceFormatLoader
 
@@ -282,9 +282,9 @@ private:
 
 ### References
 
-- [istream ](https://cplusplus.com/reference/istream/istream/)
-- [streambuf ](https://cplusplus.com/reference/streambuf/streambuf/?kw=streambuf)
-- [core/io/file_access.h ](https://github.com/godotengine/godot/blob/master/core/io/file_access.h)
+- [istream](https://cplusplus.com/reference/istream/istream/)
+- [streambuf](https://cplusplus.com/reference/streambuf/streambuf/?kw=streambuf)
+- [core/io/file_access.h](https://github.com/godotengine/godot/blob/master/core/io/file_access.h)
 
 ## Registering the new file format
 
@@ -331,7 +331,7 @@ void unregister_json_types() {
 
 ### References
 
-- [core/io/resource_loader.cpp ](https://github.com/godotengine/godot/blob/master/core/io/resource_loader.cpp)
+- [core/io/resource_loader.cpp](https://github.com/godotengine/godot/blob/master/core/io/resource_loader.cpp)
 
 ## Loading it on GDScript
 

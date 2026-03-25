@@ -6,13 +6,13 @@ is designed in a way that allows creating platform ports without modifying any
 existing source code.
 
 An example of a custom platform port distributed independently from the engine
-is [FRT ](https://github.com/efornara/frt)_, which targets single-board
+is [FRT](https://github.com/efornara/frt)_, which targets single-board
 computers. Note that this platform port currently targets Godot 3.x; therefore,
 it does not use the [class_DisplayServer](class_DisplayServer) abstraction that is new in Godot 4.
 
 Some reasons to create custom platform ports might be:
 
-- You want to [port your game to consoles ](doc_consoles), but wish to
+- You want to [port your game to consoles](doc_consoles), but wish to
   write the platform layer yourself. This is a long and arduous process, as it
   requires signing NDAs with console manufacturers, but it allows you to have
   full control over the console porting process.
@@ -20,7 +20,7 @@ Some reasons to create custom platform ports might be:
 
 If you have questions about creating a custom platform port, feel free to ask in
 the ``#platforms`` channel of the
-[Godot Contributors Chat ](https://chat.godotengine.org/channel/platforms)_.
+[Godot Contributors Chat](https://chat.godotengine.org/channel/platforms)_.
 
 :::note
 
@@ -41,17 +41,17 @@ from the [class_OS](class_OS) singleton.
 
 The official platform ports can be used as a reference when creating a custom platform port:
 
-- [Windows ](https://github.com/godotengine/godot/tree/master/platform/windows)_
-- [macOS ](https://github.com/godotengine/godot/tree/master/platform/macos)_
-- [Linux/\*BSD ](https://github.com/godotengine/godot/tree/master/platform/linuxbsd)_
-- [Android ](https://github.com/godotengine/godot/tree/master/platform/android)_
-- [iOS ](https://github.com/godotengine/godot/tree/master/platform/ios)_
-- [Web ](https://github.com/godotengine/godot/tree/master/platform/web)_
+- [Windows](https://github.com/godotengine/godot/tree/master/platform/windows)_
+- [macOS](https://github.com/godotengine/godot/tree/master/platform/macos)_
+- [Linux/\*BSD](https://github.com/godotengine/godot/tree/master/platform/linuxbsd)_
+- [Android](https://github.com/godotengine/godot/tree/master/platform/android)_
+- [iOS](https://github.com/godotengine/godot/tree/master/platform/ios)_
+- [Web](https://github.com/godotengine/godot/tree/master/platform/web)_
 
 While platform code is usually self-contained, there are exceptions to this
 rule. For instance, audio drivers that are shared across several platforms and
 rendering drivers are located in the
-[drivers/ folder ](https://github.com/godotengine/godot/tree/master/drivers)_
+[drivers/ folder](https://github.com/godotengine/godot/tree/master/drivers)_
 of the Godot source code.
 
 ## Creating a custom platform port
@@ -68,9 +68,9 @@ A ``logo.svg`` (32×32) vector image must also be present within the platform
 folder. This logo is displayed in the Export dialog for each export preset
 targeting the platform in question.
 
-See [this implementation ](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/os_linuxbsd.cpp)_
+See [this implementation](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/os_linuxbsd.cpp)_
 for the Linux/\*BSD platform as an example. See also the
-[OS singleton header ](https://github.com/godotengine/godot/blob/master/core/os/os.h)_
+[OS singleton header](https://github.com/godotengine/godot/blob/master/core/os/os.h)_
 for reference.
 
 :::note
@@ -79,7 +79,7 @@ If your target platform is UNIX-like, consider inheriting from the ``OS_Unix``
 class to get much of the work done automatically.
 
 If the platform is not UNIX-like, you might use the
-[Windows port ](https://github.com/godotengine/godot/blob/master/platform/windows/os_windows.cpp)_
+[Windows port](https://github.com/godotengine/godot/blob/master/platform/windows/os_windows.cpp)_
 as a reference.
 
 :::
@@ -89,7 +89,7 @@ as a reference.
 A ``detect.py`` file must be created within the platform's folder with all
 methods implemented. This file is required for SCons to detect the platform as a
 valid option for compiling. See the
-[detect.py file ](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/detect.py)_
+[detect.py file](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/detect.py)_
 for the Linux/\*BSD platform as an example.
 
 All methods should be implemented within ``detect.py`` as follows:
@@ -115,11 +115,11 @@ games.
 
 *Some links on this list point to the Linux/\*BSD platform implementation as a reference.*
 
-- One or more [DisplayServers ](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/x11/display_server_x11.cpp)_,
+- One or more [DisplayServers](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/x11/display_server_x11.cpp)_,
   with the windowing methods implemented. DisplayServer also covers features such
   as mouse support, touchscreen support and tablet driver (for pen input).
   See the
-  [DisplayServer singleton header ](https://github.com/godotengine/godot/blob/master/servers/display_server.h)_
+  [DisplayServer singleton header](https://github.com/godotengine/godot/blob/master/servers/display_server.h)_
   for reference.
 
   - For platforms not featuring full windowing support (or if it's not relevant
@@ -129,27 +129,27 @@ games.
     platform's screen resolution feature (if relevant). Any attempt to create
     or manipulate other window IDs can be rejected.
 - *If the target platform supports the graphics APIs in question:* Rendering
-  context for [Vulkan ](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/x11/rendering_context_driver_vulkan_x11.cpp)_,
-  [Direct3D 12 ](https://github.com/godotengine/godot/blob/master/drivers/d3d12/rendering_context_driver_d3d12.cpp)_
-  [OpenGL 3.3 or OpenGL ES 3.0 ](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/x11/gl_manager_x11.cpp)_.
-- Input handlers for [keyboard ](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/x11/key_mapping_x11.cpp)_
-  and [controller ](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/joypad_linux.cpp)_.
-- One or more [audio drivers ](https://github.com/godotengine/godot/blob/master/drivers/pulseaudio/audio_driver_pulseaudio.cpp)_.
+  context for [Vulkan](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/x11/rendering_context_driver_vulkan_x11.cpp)_,
+  [Direct3D 12](https://github.com/godotengine/godot/blob/master/drivers/d3d12/rendering_context_driver_d3d12.cpp)_
+  [OpenGL 3.3 or OpenGL ES 3.0](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/x11/gl_manager_x11.cpp)_.
+- Input handlers for [keyboard](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/x11/key_mapping_x11.cpp)_
+  and [controller](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/joypad_linux.cpp)_.
+- One or more [audio drivers](https://github.com/godotengine/godot/blob/master/drivers/pulseaudio/audio_driver_pulseaudio.cpp)_.
   The audio driver can be located in the ``platform/`` folder (this is done for
   the Android and Web platforms), or in the ``drivers/`` folder if multiple
   platforms may be using this audio driver. See the
-  [AudioServer singleton header ](https://github.com/godotengine/godot/blob/master/servers/audio_server.h)_
+  [AudioServer singleton header](https://github.com/godotengine/godot/blob/master/servers/audio_server.h)_
   for reference.
-- [Crash handler ](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/crash_handler_linuxbsd.cpp)_,
+- [Crash handler](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/crash_handler_linuxbsd.cpp)_,
   for printing crash backtraces when the game crashes. This allows for easier
   troubleshooting on platforms where logs aren't readily accessible.
-- [Text-to-speech driver ](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/tts_linux.cpp)_
+- [Text-to-speech driver](https://github.com/godotengine/godot/blob/master/platform/linuxbsd/tts_linux.cpp)_
   (for accessibility).
-- [Export handler ](https://github.com/godotengine/godot/tree/master/platform/linuxbsd/export)_
+- [Export handler](https://github.com/godotengine/godot/tree/master/platform/linuxbsd/export)_
   (for exporting from the editor, including [doc_one-click_deploy](doc_one-click_deploy)).
   Not required if you intend to export only a PCK from the editor, then run the
   export template binary directly by renaming it to match the PCK file. See the
-  [EditorExportPlatform header ](https://github.com/godotengine/godot/blob/master/editor/export/editor_export_platform.h)_
+  [EditorExportPlatform header](https://github.com/godotengine/godot/blob/master/editor/export/editor_export_platform.h)_
   for reference.
   ``run_icon.svg`` (16×16) should be present within the platform folder if
   [doc_one-click_deploy](doc_one-click_deploy) is implemented for the target platform. This icon
@@ -160,7 +160,7 @@ If the target platform doesn't support running Vulkan, Direct3D 12, OpenGL 3.3,
 or OpenGL ES 3.0, you have two options:
 
 - Use a library at runtime to translate Vulkan or OpenGL calls to another graphics API.
-  For example, [MoltenVK ](https://moltengl.com/moltenvk/)_ is used on macOS
+  For example, [MoltenVK](https://moltengl.com/moltenvk/)_ is used on macOS
   to translate Vulkan to Metal at runtime.
 - Create a new renderer from scratch. This is a large undertaking, especially if
   you want to support both 2D and 3D rendering with advanced features.

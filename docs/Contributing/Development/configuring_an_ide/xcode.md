@@ -1,7 +1,7 @@
 
 # Xcode
 
-[Xcode ](https://developer.apple.com/xcode) is a free macOS-only IDE. You can
+[Xcode](https://developer.apple.com/xcode) is a free macOS-only IDE. You can
 download it from the Mac App Store.
 
 ## Importing the project
@@ -20,7 +20,7 @@ download it from the Mac App Store.
 
 - Fill out the form with the following settings:
 
-| Arguments | See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments. |
+| Arguments | See [doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem) for a full list of arguments. |
 | --- | --- |
 | Directory | A full path to the Godot root folder |
 
@@ -88,4 +88,4 @@ To check that everything is working, put a breakpoint in ``platform/macos/godot_
 run the project.
 
 If you run into any issues, ask for help in one of
-[Godot's community channels ](https://godotengine.org/community)_.
+[Godot's community channels](https://godotengine.org/community)_.

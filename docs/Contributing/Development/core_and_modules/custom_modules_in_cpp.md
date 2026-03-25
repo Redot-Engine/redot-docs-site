@@ -31,7 +31,8 @@ instead. Adding C++ modules can be useful in the following scenarios:
 
 ## Creating a new module
 
-Before creating a module, make sure to [download the source code of Godot and compile it ](toc-devel-compiling).
+Before creating a module, make sure to :ref:`download the source code of Godot
+and compile it &lt;toc-devel-compiling&gt;`.
 
 To create a new module, the first step is creating a directory inside
 ``modules/``. If you want to maintain the module separately, you can checkout
@@ -274,7 +275,7 @@ If your module is meant to be accessed from the running project
 template you plan to use, then specify the path to the custom
 template in each export preset. Otherwise, you'll get errors when
 running the project as the module isn't compiled in the export
-template. See the [Compiling ](toc-devel-compiling) pages
+template. See the [Compiling](toc-devel-compiling) pages
 for more information.
 
 :::
@@ -331,7 +332,7 @@ specific path structure on your machine.
 
 :::info
 
-[Introduction to the buildsystem - Custom modules build option ](doc_buildsystem_custom_modules).
+[Introduction to the buildsystem - Custom modules build option](doc_buildsystem_custom_modules).
 
 :::
 

@@ -2,7 +2,7 @@
 
 # GDScript grammar
 
-This is the formal grammar of GDScript written in [EBNF ](https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form),
+This is the formal grammar of GDScript written in [EBNF](https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form),
 for reference purposes.
 
 :::note

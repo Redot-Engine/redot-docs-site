@@ -40,8 +40,8 @@ gdb godot
 ```
 
 You can learn more about these launch options and other command line arguments
-in the [command line tutorial ](doc_command_line_tutorial).
+in the [command line tutorial](doc_command_line_tutorial).
 
 If you're using a code editor or an IDE to debug Godot, check out our
-[configuration guides ](doc_configuring_an_ide), which cover the setup
+[configuration guides](doc_configuring_an_ide), which cover the setup
 process for building and debugging with your particular editor.

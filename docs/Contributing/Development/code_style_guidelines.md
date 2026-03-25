@@ -12,7 +12,7 @@ guidelines.
 ## C++ and Objective-C
 
 There are no written guidelines, but the code style agreed upon by the
-developers is enforced via the [clang-format ](https://clang.llvm.org/docs/ClangFormat.html)_
+developers is enforced via the [clang-format](https://clang.llvm.org/docs/ClangFormat.html)_
 code beautifier, which takes care for you of all our conventions.
 To name a few:
 
@@ -23,7 +23,7 @@ To name a few:
 - See further down regarding header includes
 
 The rules used by clang-format are outlined in the
-[.clang-format ](https://github.com/godotengine/godot/blob/master/.clang-format)_
+[.clang-format](https://github.com/godotengine/godot/blob/master/.clang-format)_
 file of the Godot repository.
 
 As long as you ensure that your style matches the surrounding code and that you're
@@ -63,7 +63,7 @@ some things differently, leading to style issues in pull requests.
 
 #### Pre-commit hook
 
-For ease of use, we provide hooks for Git with the [pre-commit ](https://pre-commit.com/)_
+For ease of use, we provide hooks for Git with the [pre-commit](https://pre-commit.com/)_
 Python framework that will run clang-format automatically on all your commits with the
 correct version of clang-format.
 To set up:
@@ -92,10 +92,10 @@ Here's how to install clang-format:
 - Linux: It will usually be available out-of-the-box with the clang toolchain
   packaged by your distribution. If your distro version is not the required one,
   you can download a pre-compiled version from the
-  [LLVM website ](https://releases.llvm.org/download.html)_, or if you are on
-  a Debian derivative, use the [upstream repos ](https://apt.llvm.org/)_.
+  [LLVM website](https://releases.llvm.org/download.html)_, or if you are on
+  a Debian derivative, use the [upstream repos](https://apt.llvm.org/)_.
 - macOS and Windows: You can download precompiled binaries from the
-  [LLVM website ](https://releases.llvm.org/download.html)_. You may need to add
+  [LLVM website](https://releases.llvm.org/download.html)_. You may need to add
   the path to the binary's folder to your system's ``PATH`` environment
   variable to be able to call clang-format out of the box.
 
@@ -125,12 +125,12 @@ clang-format automatically, for example, each time you save a file.
 
 Here is a non-exhaustive list of beautifier plugins for some IDEs:
 
-- Qt Creator: [Beautifier plugin ](https://doc.qt.io/qtcreator/creator-beautifier.html)_
-- Visual Studio Code: [Clang-Format ](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format)_
-- Visual Studio: [Clang Power Tools 2022 ](https://marketplace.visualstudio.com/items?itemName=caphyon.ClangPowerTools2022)_
-- vim: [vim-clang-format ](https://github.com/rhysd/vim-clang-format)_
+- Qt Creator: [Beautifier plugin](https://doc.qt.io/qtcreator/creator-beautifier.html)_
+- Visual Studio Code: [Clang-Format](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format)_
+- Visual Studio: [Clang Power Tools 2022](https://marketplace.visualstudio.com/items?itemName=caphyon.ClangPowerTools2022)_
+- vim: [vim-clang-format](https://github.com/rhysd/vim-clang-format)_
 - CLion: Starting from version ``2019.1``, no plugin is required. Instead, enable
-  [ClangFormat ](https://www.jetbrains.com/help/clion/clangformat-as-alternative-formatter.html#clion-support)_
+  [ClangFormat](https://www.jetbrains.com/help/clion/clangformat-as-alternative-formatter.html#clion-support)_
 
 (Pull requests are welcome to extend this list with tested plugins.)
 
@@ -263,7 +263,7 @@ third-party code such as the ``java/src/com/google`` subfolder.
 Godot's SCons buildsystem is written in Python, and various scripts included
 in the source tree are also using Python.
 
-For those, we use the [Ruff linter and code formatter ](https://docs.astral.sh/ruff/)_.
+For those, we use the [Ruff linter and code formatter](https://docs.astral.sh/ruff/)_.
 
 ### Using ruff locally
 
@@ -297,7 +297,7 @@ ruff -l 120 <path/to/file(s)>
 
 ### Pre-commit hook
 
-For ease of use, we provide hooks for Git with the [pre-commit ](https://pre-commit.com/)_
+For ease of use, we provide hooks for Git with the [pre-commit](https://pre-commit.com/)_
 Python framework that will run ``ruff`` automatically on all your commits with the
 correct version of ``ruff``.
 To set up:
@@ -323,7 +323,7 @@ that are no longer needed.
 
 Many IDEs or code editors have beautifier plugins that can be configured to run
 ruff automatically, for example, each time you save a file. For details, you can
-check [Ruff Integrations ](https://docs.astral.sh/ruff/integrations/)_.
+check [Ruff Integrations](https://docs.astral.sh/ruff/integrations/)_.
 
 ## Comment style guide
 
@@ -360,7 +360,7 @@ draw_load_screen();
 You can use Javadoc-style comments above function or macro definitions. It's
 recommended to use Javadoc-style comments *only* for methods which are not
 exposed to scripting. This is because exposed methods should be documented in
-the [class reference XML ](doc_updating_the_class_reference)
+the [class reference XML](doc_updating_the_class_reference)
 instead.
 
 **Example:**

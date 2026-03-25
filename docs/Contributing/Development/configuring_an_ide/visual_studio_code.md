@@ -3,14 +3,14 @@ import TabItem from "@theme/TabItem";
 
 # Visual Studio Code
 
-[Visual Studio Code ](https://code.visualstudio.com) is a free cross-platform code editor
-by [Microsoft ](https://microsoft.com) (not to be confused with [doc_configuring_an_ide_vs](doc_configuring_an_ide_vs)).
+[Visual Studio Code](https://code.visualstudio.com) is a free cross-platform code editor
+by [Microsoft](https://microsoft.com) (not to be confused with [doc_configuring_an_ide_vs](doc_configuring_an_ide_vs)).
 
 ## Importing the project
 
 - Make sure the C/C++ extension is installed. You can find instructions in
-  the [official documentation ](https://code.visualstudio.com/docs/languages/cpp).
-  Alternatively, [clangd ](https://open-vsx.org/extension/llvm-vs-code-extensions/vscode-clangd)
+  the [official documentation](https://code.visualstudio.com/docs/languages/cpp).
+  Alternatively, [clangd](https://open-vsx.org/extension/llvm-vs-code-extensions/vscode-clangd)
   can be used instead.
 - When using the clangd extension, run ``scons compiledb=yes``.
 - From the Visual Studio Code's main screen open the Godot root folder with
@@ -27,7 +27,7 @@ by [Microsoft ](https://microsoft.com) (not to be confused with [doc_configuring
 
 ![Image](img/vscode_create_tasksjson_others.png)
 
-- If there is no such option as **Create tasks.json file from template** available, either delete the file if it already exists in your folder or create a [`.vscode/tasks.json`` file manually. See `Tasks in Visual Studio Code ](https://code.visualstudio.com/docs/editor/tasks#_custom-tasks) for more details on tasks.
+- If there is no such option as **Create tasks.json file from template** available, either delete the file if it already exists in your folder or create a ``.vscode/tasks.json`` file manually. See [Tasks in Visual Studio Code](https://code.visualstudio.com/docs/editor/tasks#_custom-tasks) for more details on tasks.
 
 - Within the ``tasks.json`` file find the ``"tasks"`` array and add a new section to it:
 
@@ -178,7 +178,7 @@ To run and debug the project you need to create a new configuration in the ``lau
 :::note
 
 Due to sporadic performance issues, it is recommended to use LLDB over GDB on Unix-based systems.
-Make sure that the [CodeLLDB extension ](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
+Make sure that the [CodeLLDB extension](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
 is installed.
 
 If you encounter issues with lldb, you may consider using gdb (see the LinuxBSD_gdb configuration).
@@ -245,11 +245,11 @@ To fix include errors you may be having, you need to configure some settings in 
   - This argument can be added to your build task in ``tasks.json`` since it will need to be run whenever files are added or moved.
 
 If you run into any issues, ask for help in one of
-[Godot's community channels ](https://godotengine.org/community)_.
+[Godot's community channels](https://godotengine.org/community)_.
 
 :::tip
 
 To get linting on class reference XML files, install the
-[vscode-xml extension ](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)_.
+[vscode-xml extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)_.
 
 :::

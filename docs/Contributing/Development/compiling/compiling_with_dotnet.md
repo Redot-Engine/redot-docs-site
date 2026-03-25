@@ -5,7 +5,7 @@
 
 ## Requirements
 
-- [.NET SDK 8.0+ ](https://dotnet.microsoft.com/download)
+- [.NET SDK 8.0+](https://dotnet.microsoft.com/download)
 
   You can use ``dotnet --info`` to check which .NET SDK versions are installed.
 
@@ -13,8 +13,8 @@
 
 :::note
 C# support for Godot has historically used the
-[Mono ](https://www.mono-project.com/) runtime instead of the
-[.NET Runtime ](https://github.com/dotnet/runtime) and internally
+[Mono](https://www.mono-project.com/) runtime instead of the
+[.NET Runtime](https://github.com/dotnet/runtime) and internally
 many things are still named ``mono`` instead of ``dotnet`` or
 otherwise referred to as ``mono``.
 

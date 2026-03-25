@@ -4,13 +4,13 @@
 :::info
 
 This page describes the C++ implementation of objects in Godot.
-Looking for the Object class reference? [Have a look here. ](class_Object)
+Looking for the Object class reference? [Have a look here.](class_Object)
 
 :::
 
 ## General definition
 
-[Object ](class_object) is the base class for almost everything. Most classes in Godot
+[Object](class_object) is the base class for almost everything. Most classes in Godot
 inherit directly or indirectly from it. Objects provide reflection and
 editable properties, and declaring them is a matter of using a single
 macro like this:
@@ -35,7 +35,7 @@ obj2 = Object::cast_to<OtherClass>(obj); // converting between classes, this als
 
 ### References:
 
--  [core/object/object.h ](https://github.com/godotengine/godot/blob/master/core/object/object.h)_
+-  [core/object/object.h](https://github.com/godotengine/godot/blob/master/core/object/object.h)_
 
 ## Registering an Object
 
@@ -99,7 +99,7 @@ string passing the name can be passed for brevity.
 
 ### References:
 
--  [core/object/class_db.h ](https://github.com/godotengine/godot/blob/master/core/object/class_db.h)_
+-  [core/object/class_db.h](https://github.com/godotengine/godot/blob/master/core/object/class_db.h)_
 
 ## Constants
 
@@ -249,13 +249,13 @@ ADD_SIGNAL(MethodInfo("been_killed"))
 
 ## Notifications
 
-All objects in Godot have a [_notification ](class_Object_private_method__notification)
+All objects in Godot have a [_notification](class_Object_private_method__notification)
 method that allows it to respond to engine level callbacks that may relate to it.
 More information can be found on the [doc_godot_notifications](doc_godot_notifications) page.
 
 ## References
 
-[RefCounted ](class_RefCounted) inherits from Object and holds a
+[RefCounted](class_RefCounted) inherits from Object and holds a
 reference count. It is the base for reference counted object types.
 Declaring them must be done using Ref&lt;&gt; template. For example:
 
@@ -273,11 +273,11 @@ templates point to it.
 
 ### References:
 
--  [core/object/reference.h ](https://github.com/godotengine/godot/blob/master/core/object/ref_counted.h)_
+-  [core/object/reference.h](https://github.com/godotengine/godot/blob/master/core/object/ref_counted.h)_
 
 ## Resources
 
-[Resource ](class_resource) inherits from RefCounted, so all resources
+[Resource](class_resource) inherits from RefCounted, so all resources
 are reference counted. Resources can optionally contain a path, which
 reference a file on disk. This can be set with ``resource.set_path(path)``,
 though this is normally done by the resource loader. No two different
@@ -287,7 +287,7 @@ Resources without a path are fine too.
 
 ### References:
 
--  [core/io/resource.h ](https://github.com/godotengine/godot/blob/master/core/io/resource.h)_
+-  [core/io/resource.h](https://github.com/godotengine/godot/blob/master/core/io/resource.h)_
 
 ## Resource loading
 
@@ -307,7 +307,7 @@ the same time.
 
 ### References:
 
--  [core/io/resource_loader.h ](https://github.com/godotengine/godot/blob/master/core/io/resource_loader.h)_
+-  [core/io/resource_loader.h](https://github.com/godotengine/godot/blob/master/core/io/resource_loader.h)_
 
 ## Resource saving
 
@@ -325,4 +325,4 @@ be bundled with the saved resource and assigned sub-IDs, like
 
 ### References:
 
--  [core/io/resource_saver.h ](https://github.com/godotengine/godot/blob/master/core/io/resource_saver.h)_
+-  [core/io/resource_saver.h](https://github.com/godotengine/godot/blob/master/core/io/resource_saver.h)_

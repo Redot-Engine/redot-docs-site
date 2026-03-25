@@ -14,9 +14,9 @@ If you're looking to export your project to HTML5 instead, read [doc_exporting_f
 
 To compile export templates for the Web, the following is required:
 
-- [Emscripten 3.1.62+ ](https://emscripten.org)_.
-- [Python 3.8+ ](https://www.python.org/)_.
-- [SCons 4.0+ ](https://scons.org/pages/download.html)_ build system.
+- [Emscripten 3.1.62+](https://emscripten.org)_.
+- [Python 3.8+](https://www.python.org/)_.
+- [SCons 4.0+](https://scons.org/pages/download.html)_ build system.
 
 :::info
 To get the Godot source code for compiling, see
@@ -43,7 +43,7 @@ scons platform=web target=template_debug
 
 ```
 
-By default, the [JavaScriptBridge singleton ](doc_web_javascript_bridge) will be built
+By default, the [JavaScriptBridge singleton](doc_web_javascript_bridge) will be built
 into the engine. Official export templates also have the JavaScript singleton
 enabled. Since ``eval()`` calls can be a security concern, the
 ``javascript_eval`` option can be used to build without the singleton
@@ -87,7 +87,7 @@ mv bin/godot.web.template_debug.wasm32.zip bin/web_debug.zip
 
 The default export templates do not include GDExtension support for
 performance and compatibility reasons. See the
-[export page ](doc_javascript_export_options) for more info.
+[export page](doc_javascript_export_options) for more info.
 
 You can build the export templates using the option ``dlink_enabled=yes``
 to enable GDExtension support
@@ -125,13 +125,13 @@ Once finished, the resulting file will be placed in the ``bin`` subdirectory.
 Its name will be ``godot.web.editor.wasm32.zip``. You can upload the
 zip content to your web server and visit it with your browser to use the editor.
 
-Refer to the [export page ](doc_javascript_export_options) for the web
+Refer to the [export page](doc_javascript_export_options) for the web
 server requirements.
 
 :::tip
 
 The Godot repository includes a
-[Python script to host a local web server ](https://raw.githubusercontent.com/godotengine/godot/master/platform/web/serve.py)_.
+[Python script to host a local web server](https://raw.githubusercontent.com/godotengine/godot/master/platform/web/serve.py)_.
 This can be used to test the web editor locally.
 
 After compiling the editor, extract the ZIP archive that was created in the

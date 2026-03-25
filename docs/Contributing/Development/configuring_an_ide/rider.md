@@ -1,21 +1,21 @@
 
 # JetBrains Rider
 
-[JetBrains Rider ](https://www.jetbrains.com/rider/) is a commercial
-[JetBrains ](https://www.jetbrains.com/) IDE for C# and C++ that uses the same solution system as Visual Studio.
+[JetBrains Rider](https://www.jetbrains.com/rider/) is a commercial
+[JetBrains](https://www.jetbrains.com/) IDE for C# and C++ that uses the same solution system as Visual Studio.
 
 :::note
 
 This documentation is for contributions to the game engine, and not using
 JetBrains Rider as a C# or GDScript editor. To code C# or GDScript in an external editor, see
-[the C# guide to configure an external editor ](doc_c_sharp_setup_external_editor).
+[the C# guide to configure an external editor](doc_c_sharp_setup_external_editor).
 
 :::
 
 ## Importing the project
 
-You will need to install [Python ](https://www.python.org/) in your development environment
-along with [MinGW ](https://www.mingw-w64.org/downloads/). You will also need the Visual Studio C++ Build Tools, which
+You will need to install [Python](https://www.python.org/) in your development environment
+along with [MinGW](https://www.mingw-w64.org/downloads/). You will also need the Visual Studio C++ Build Tools, which
 you can install using the Visual Studio Installer. Ensure all dependencies are installed
 before you continue to the next steps.
 
@@ -86,4 +86,4 @@ Alternatively you can use **Run &gt; Attach to Process** to attach the debugger 
 
 ![Image](img/rider_attach_to_process_dialog.webp)
 
-Please consult the [JetBrains Rider documentation ](https://www.jetbrains.com/rider/documentation/) for any specific information about the JetBrains IDE.
+Please consult the [JetBrains Rider documentation](https://www.jetbrains.com/rider/documentation/) for any specific information about the JetBrains IDE.

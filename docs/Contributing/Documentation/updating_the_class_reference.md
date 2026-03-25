@@ -3,7 +3,7 @@
 
 .. highlight:: shell
 
-The [Class reference ](doc_class_reference) is a set of articles describing
+The [Class reference](doc_class_reference) is a set of articles describing
 the public API of the engine. This includes descriptions for various classes,
 methods, properties, and global objects, available for scripting. The class reference
 is available online, from the documentation sidebar, and in the Godot editor, from
@@ -19,13 +19,13 @@ existing and create missing reference material.
 ## The source of the class reference
 
 As the class reference is available in two places, online and in the editor, we need to
-take care to keep things in sync. To achieve this the [main Godot repository ](https://github.com/godotengine/godot/)
+take care to keep things in sync. To achieve this the [main Godot repository](https://github.com/godotengine/godot/)
 is picked as the source of truth, and the documentation for the class reference is tracked there.
 
 :::warning
 
 You should **not** edit ``.rst`` files in the ``classes/`` folder of the
-[documentation repository ](https://github.com/godotengine/godot-docs/).
+[documentation repository](https://github.com/godotengine/godot-docs/).
 These files are generated automatically and are synced manually by project
 maintainers. Read further to learn how to correctly edit the class reference.
 
@@ -50,7 +50,7 @@ also available as a `video tutorial on YouTube
 :::
 
 **Important:** If you plan to make large changes, you should create an issue on
-the [godot-docs repository ](https://github.com/godotengine/godot-docs/)
+the [godot-docs repository](https://github.com/godotengine/godot-docs/)
 or comment on an existing issue. Doing so lets others know you're already
 taking care of a given class.
 
@@ -65,7 +65,7 @@ for documentation and are hard to identify automatically.
 :::info
 
 Following this principle is important and allows us to create tools for contributors.
-Such as the class reference's [completion status tracker ](https://godotengine.github.io/doc-status/).
+Such as the class reference's [completion status tracker](https://godotengine.github.io/doc-status/).
 You can use it to quickly find documentation pages missing descriptions.
 
 :::
@@ -75,8 +75,8 @@ worry. Leave it for now, and list the methods you skipped when you open a pull r
 with your changes. Another writer will take care of it.
 
 You can still look at the methods' implementation in Godot's source code on GitHub.
-If you have doubts, feel free to ask on the [Q&A website ](https://ask.godotengine.org/)
-and [Godot Contributors Chat ](https://chat.godotengine.org/).
+If you have doubts, feel free to ask on the [Q&A website](https://ask.godotengine.org/)
+and [Godot Contributors Chat](https://chat.godotengine.org/).
 
 :::warning
 

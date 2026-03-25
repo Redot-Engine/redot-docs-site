@@ -3,11 +3,11 @@
 
 The possibility to study, use, modify and redistribute modifications of the
 engine's source code are the fundamental rights that
-Godot's [MIT ](https://tldrlegal.com/license/mit-license) license grants you,
-making it [free and open source software ](https://en.wikipedia.org/wiki/Free_and_open-source_software).
+Godot's [MIT](https://tldrlegal.com/license/mit-license) license grants you,
+making it [free and open source software](https://en.wikipedia.org/wiki/Free_and_open-source_software).
 
 As such, everyone is entitled to modify
-[Godot's source code ](https://github.com/godotengine/godot), and send those
+[Godot's source code](https://github.com/godotengine/godot), and send those
 modifications back to the upstream project in the form of a patch (a text file
 describing the changes in a ready-to-apply manner) or - in the modern workflow
 that we use - via a so-called "pull request" (PR), i.e. a proposal to directly
@@ -33,7 +33,7 @@ enforce some rules for code contributions, for example regarding the style to
 use in the C++ code (indentation, brackets, etc.) or the Git and PR workflow.
 
 A good place to start is by searching for issues tagged as
-[good first issue ](https://github.com/godotengine/godot/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+[good first issue](https://github.com/godotengine/godot/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 on GitHub.
 
 :::info
@@ -55,9 +55,9 @@ way more contributions than people validating them.
 
 To make sure that your time and efforts aren't wasted, it is recommended to vet the idea
 first before implementing it and putting it for a review as a PR. To that end, Godot
-has a [proposal system ](https://github.com/godotengine/godot-proposals). Its
+has a [proposal system](https://github.com/godotengine/godot-proposals). Its
 usage is encouraged to plan changes and discuss them with the community. Implementation
-details can also be discussed with other contributors on the [Godot Contributors Chat ](https://chat.godotengine.org/).
+details can also be discussed with other contributors on the [Godot Contributors Chat](https://chat.godotengine.org/).
 
 :::note
 Proposals are only required when working on an enhancement or a new feature.
@@ -77,7 +77,7 @@ the development branch and in future maintenance releases.
 To help with the testing, you have several possibilities:
 
 -  Compile the engine from source yourself, following the instructions of the
-   [Compiling ](toc-devel-compiling) page for your platform.
+   [Compiling](toc-devel-compiling) page for your platform.
 
 -  Test official pre-release binaries when they are announced (usually on the
    blog and other community platforms), such as alpha, beta and release candidate (RC) builds.
@@ -94,7 +94,7 @@ the developers.
 
 ### Filing an issue on GitHub
 
-Godot uses [GitHub's issue tracker ](https://github.com/godotengine/godot/issues)
+Godot uses [GitHub's issue tracker](https://github.com/godotengine/godot/issues)
 for bug reports. When you start filing a bug report, you’ll be given a form to
 fill out. Please try to follow it so that all issues are consistent and provide
 the required information.
@@ -105,7 +105,8 @@ There are two separate resources referred to as "documentation" in Godot:
 
 - **The class reference.** This is the documentation for the complete Godot API
   as exposed to GDScript and the other scripting languages. It can be consulted
-  offline, directly in Godot's code editor, or online at Godot [Class Reference ](doc_class_reference). To contribute to the class reference, you have to edit the
+  offline, directly in Godot's code editor, or online at Godot :ref:`Class Reference
+  &lt;doc_class_reference&gt;`. To contribute to the class reference, you have to edit the
   XML file corresponding to the class and make a pull request.
   See [doc_updating_the_class_reference](doc_updating_the_class_reference) and [doc_class_reference_primer](doc_class_reference_primer)
   for more details.
@@ -114,7 +115,7 @@ There are two separate resources referred to as "documentation" in Godot:
   This is the part you are reading now, which is distributed in the HTML format.
   Its contents are generated from plain text files in the reStructured Text
   (rst) format, to which you can contribute via pull requests on the
-  [godot-docs ](https://github.com/godotengine/godot-docs) GitHub repository.
+  [godot-docs](https://github.com/godotengine/godot-docs) GitHub repository.
   See [doc_contributing_to_the_documentation](doc_contributing_to_the_documentation) for more details.
 
 ## Contributing translations

@@ -2,7 +2,7 @@
 # Unit testing
 
 Godot Engine allows to write unit tests directly in C++. The engine integrates
-the [doctest ](https://github.com/onqtam/doctest) unit testing framework which
+the [doctest](https://github.com/onqtam/doctest) unit testing framework which
 gives ability to write test suites and test cases next to production code, but
 since the tests in Godot go through a different ``main`` entry point, the tests
 reside in a dedicated ``tests/`` directory instead, which is located at the root
@@ -144,7 +144,7 @@ writing test cases themselves.
 
 :::info
 
-[tests/test_macros.h ](https://github.com/godotengine/godot/blob/master/tests/test_macros.h)
+[tests/test_macros.h](https://github.com/godotengine/godot/blob/master/tests/test_macros.h)
 source code for currently implemented macros and aliases for them.
 
 :::
@@ -204,7 +204,7 @@ for more complex ones if you think that it deserves a better explanation.
 
 :::info
 
-[doctest: Assertion macros ](https://github.com/onqtam/doctest/blob/master/doc/markdown/assertions.md).
+[doctest: Assertion macros](https://github.com/onqtam/doctest/blob/master/doc/markdown/assertions.md).
 
 :::
 
@@ -230,7 +230,7 @@ output can be redirected to an XML file:
 
 :::info
 
-[doctest: Logging macros ](https://github.com/onqtam/doctest/blob/master/doc/markdown/logging.md).
+[doctest: Logging macros](https://github.com/onqtam/doctest/blob/master/doc/markdown/logging.md).
 
 :::
 
@@ -268,9 +268,9 @@ These tags can be added to the test case name to modify or extend the test envir
 
 | **Tag** | **Description** |
 | --- | --- |
-| ``[SceneTree]`` | Required for test cases that rely on a scene tree with MessageQueue to be available. It also enables a mock rendering server and :ref:`ThemeDB&lt;class_ThemeDB&gt;`. |
-| ``[Editor]`` | Like ``[SceneTree]``, but with additional editor-related infrastructure available, such as :ref:`EditorSettings&lt;class_EditorSettings&gt;`. |
-| ``[Audio]`` | Initializes the :ref:`AudioServer&lt;class_AudioServer&gt;` using a mock audio driver. |
+| ``[SceneTree]`` | Required for test cases that rely on a scene tree with MessageQueue to be available. It also enables a mock rendering server and [ThemeDB](class_ThemeDB). |
+| ``[Editor]`` | Like ``[SceneTree]``, but with additional editor-related infrastructure available, such as [EditorSettings](class_EditorSettings). |
+| ``[Audio]`` | Initializes the [AudioServer](class_AudioServer) using a mock audio driver. |
 | ``[Navigation]`` | Creates the default 2D/3D navigation servers and makes them available for testing. |
 
 You can use them together to combine multiple test environment extensions.
@@ -441,7 +441,7 @@ only commit ``*.out`` files for new tests.
 The GDScript test runner is meant for testing the GDScript implementation,
 not for testing user scripts nor testing the engine using scripts. We
 recommend writing new tests for already resolved
-[issues related to GDScript at GitHub ](https://github.com/godotengine/godot/issues?q=is%3Aissue+label%3Atopic%3Agdscript+is%3Aclosed),
+[issues related to GDScript at GitHub](https://github.com/godotengine/godot/issues?q=is%3Aissue+label%3Atopic%3Agdscript+is%3Aclosed),
 or writing tests for currently working features.
 
 :::

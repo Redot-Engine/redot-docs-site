@@ -29,7 +29,7 @@ the docs repository.
 :::warning
 The class reference's source files are in the `Godot engine
 repository &lt;https://github.com/godotengine/godot&gt;`_. We generate
-the [Class Reference ](doc_class_reference) section of this documentation
+the [Class Reference](doc_class_reference) section of this documentation
 from them. If you want to update the description of a class, its
 methods, or properties, read
 [doc_updating_the_class_reference](doc_updating_the_class_reference).
@@ -160,8 +160,8 @@ first letter capitalized.
 
 ### Sphinx and reStructuredText syntax
 
-Check Sphinx's [reST Primer ](https://www.sphinx-doc.org/en/stable/rest.html)_
-and the [official reference ](https://docutils.sourceforge.net/rst.html)_ for
+Check Sphinx's [reST Primer](https://www.sphinx-doc.org/en/stable/rest.html)_
+and the [official reference](https://docutils.sourceforge.net/rst.html)_ for
 details on the syntax.
 
 Sphinx uses specific reST comments to do specific operations, like defining the

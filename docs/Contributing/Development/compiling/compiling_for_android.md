@@ -24,9 +24,9 @@ a custom export template.
 
 For compiling under Windows, Linux or macOS, the following is required:
 
-- [Python 3.8+ ](https://www.python.org/downloads/).
-- [SCons 4.0+ ](https://scons.org/pages/download.html) build system.
-- [Android SDK ](https://developer.android.com/studio/#command-tools)
+- [Python 3.8+](https://www.python.org/downloads/).
+- [SCons 4.0+](https://scons.org/pages/download.html) build system.
+- [Android SDK](https://developer.android.com/studio/#command-tools)
   (command-line tools are sufficient).
 
    - Required SDK components will be automatically installed.
@@ -36,7 +36,7 @@ For compiling under Windows, Linux or macOS, the following is required:
 - Gradle (will be downloaded and installed automatically if missing).
 - JDK 17 (either OpenJDK or Oracle JDK).
 
-   - You can download a build from [Adoptium ](https://adoptium.net/temurin/releases/?variant=openjdk17).
+   - You can download a build from [Adoptium](https://adoptium.net/temurin/releases/?variant=openjdk17).
 
 :::info
 To get the Godot source code for compiling, see
@@ -140,7 +140,7 @@ The resulting templates will be located under the ``bin`` directory:
 :::info
 
 If you want to enable Vulkan validation layers, see
-[Vulkan validation layers on Android ](doc_vulkan_validation_layers_android).
+[Vulkan validation layers on Android](doc_vulkan_validation_layers_android).
 
 :::
 
@@ -265,7 +265,7 @@ adb install ./bin/android_editor_builds/android_editor-release.apk
 Double-check that you've set the ``ANDROID_HOME``
 environment variable. This is required for the platform to appear in SCons'
 list of detected platforms.
-See [Setting up the buildsystem ](doc_android_setting_up_the_buildsystem)
+See [Setting up the buildsystem](doc_android_setting_up_the_buildsystem)
 for more information.
 
 ### Application not installed
@@ -276,7 +276,7 @@ If so:
 -  Check that the debug keystore is properly generated.
 -  Check that the jarsigner executable is from JDK 8.
 
-If it still fails, open a command line and run [logcat ](https://developer.android.com/studio/command-line/logcat):
+If it still fails, open a command line and run [logcat](https://developer.android.com/studio/command-line/logcat):
 
 ```
 adb logcat

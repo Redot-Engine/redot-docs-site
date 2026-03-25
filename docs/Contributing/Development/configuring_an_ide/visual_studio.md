@@ -1,8 +1,8 @@
 
 # Visual Studio
 
-[Visual Studio Community ](https://visualstudio.microsoft.com)_ is a Windows-only IDE
-by [Microsoft ](https://microsoft.com) that's free for individual use or non-commercial use within organizations.
+[Visual Studio Community](https://visualstudio.microsoft.com)_ is a Windows-only IDE
+by [Microsoft](https://microsoft.com) that's free for individual use or non-commercial use within organizations.
 It has many useful features, such as memory view, performance view, source
 control and more.
 
@@ -51,7 +51,7 @@ Project Manager opens a project, the initial process is terminated and the debug
 ![Image](img/vs_3_debug_command_line.webp)
 
 To learn more about command line arguments, refer to the
-[command line tutorial ](doc_command_line_tutorial).
+[command line tutorial](doc_command_line_tutorial).
 
 Even if you start the project without a debugger attached it can still be connected to the running
 process using **Debug &gt; Attach to Process...** menu.
@@ -62,4 +62,4 @@ start debugging.
 ![Image](img/vs_4_debugging_main.png)
 
 If you run into any issues, ask for help in one of
-[Godot's community channels ](https://godotengine.org/community)_.
+[Godot's community channels](https://godotengine.org/community)_.

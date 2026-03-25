@@ -18,8 +18,8 @@ For compiling under Linux or other Unix variants, the following is
 required:
 
 - GCC 9+ or Clang 6+.
-- [Python 3.8+ ](https://www.python.org/downloads/).
-- [SCons 4.0+ ](https://scons.org/pages/download.html) build system.
+- [Python 3.8+](https://www.python.org/downloads/).
+- [SCons 4.0+](https://scons.org/pages/download.html) build system.
 - pkg-config (used to detect the development libraries listed below).
 - Development libraries:
 
@@ -270,7 +270,7 @@ scons platform=linuxbsd
 
 Prior to Godot 4.0, the Linux/\*BSD target was called ``x11`` instead of
 ``linuxbsd``. If you are looking to compile Godot 3.x, make sure to use the
-[3.x branch of this documentation ](https://docs.godotengine.org/en/3.6/development/compiling/compiling_for_x11.html)_.
+[3.x branch of this documentation](https://docs.godotengine.org/en/3.6/development/compiling/compiling_for_x11.html)_.
 
 :::
 
@@ -427,14 +427,14 @@ time you build, you automatically have the custom templates referenced.
 
 To cross-compile Godot for RISC-V devices, we need to setup the following items:
 
-- [riscv-gnu-toolchain ](https://github.com/riscv-collab/riscv-gnu-toolchain/releases)_.
+- [riscv-gnu-toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain/releases)_.
   While we are not going to use this directly, it provides us with a sysroot, as well
   as header and libraries files that we will need. There are many versions to choose
   from, however, the older the toolchain, the more compatible our final binaries will be.
-  If in doubt, [use this version ](https://github.com/riscv-collab/riscv-gnu-toolchain/releases/tag/2021.12.22)_,
+  If in doubt, [use this version](https://github.com/riscv-collab/riscv-gnu-toolchain/releases/tag/2021.12.22)_,
   and download ``riscv64-glibc-ubuntu-18.04-nightly-2021.12.22-nightly.tar.gz``. Extract
   it somewhere and remember its path.
-- [mold ](https://github.com/rui314/mold/releases)_. This fast linker,
+- [mold](https://github.com/rui314/mold/releases)_. This fast linker,
   is the only one that correctly links the resulting binary. Download it, extract it,
   and make sure to add its ``bin`` folder to your PATH. Run
   ``mold --help | grep support`` to check if your version of Mold supports RISC-V.
@@ -465,7 +465,7 @@ scons arch=rv64 use_llvm=yes linker=mold lto=none target=editor \
 
 :::note
 
-RISC-V GCC has [bugs with its atomic operations ](https://github.com/riscv-collab/riscv-gcc/issues/15)_
+RISC-V GCC has [bugs with its atomic operations](https://github.com/riscv-collab/riscv-gcc/issues/15)_
 which prevent it from compiling Godot correctly. That's why Clang is used instead. Make sure that
 it *can* compile to RISC-V. You can verify by executing this command ``clang -print-targets``,
 make sure you see ``riscv64`` on the list of targets.
@@ -540,20 +540,20 @@ If this error occurs
 There are two solutions:
 
 - In your SCons command, add the parameter ``use_static_cpp=no``.
-- Follow [these instructions ](https://github.com/ivmai/libatomic_ops#installation-and-usage)_ to configure, build, and
+- Follow [these instructions](https://github.com/ivmai/libatomic_ops#installation-and-usage)_ to configure, build, and
   install ``libatomic_ops``. Then, copy ``/usr/lib/libatomic_ops.a`` to ``/usr/lib/libatomic.a``, or create a soft link
   to ``libatomic_ops`` by command ``ln -s /usr/lib/libatomic_ops.a /usr/lib/libatomic.a``. The soft link can ensure the
   latest ``libatomic_ops`` will be used without the need to copy it every time when it is updated.
 
 ## Using mold for faster development
 
-For even faster linking compared to LLD, you can use [mold ](https://github.com/rui314/mold)_.
+For even faster linking compared to LLD, you can use [mold](https://github.com/rui314/mold)_.
 mold can be used with either GCC or Clang.
 
 As of January 2023, mold is not readily available in Linux distribution
 repositories, so you will have to install its binaries manually.
 
-- Download mold binaries from its [releases page ](https://github.com/rui314/mold/releases/latest)_.
+- Download mold binaries from its [releases page](https://github.com/rui314/mold/releases/latest)_.
 - Extract the ``.tar.gz`` file, then move the extracted folder to a location such as ``.local/share/mold``.
 - Add ``$HOME/.local/share/mold/bin`` to your user's ``PATH`` environment variable.
   For example, you can add the following line at the end of your ``$HOME/.bash_profile`` file:
@@ -573,7 +573,7 @@ scons platform=linuxbsd linker=mold
 
 ## Using system libraries for faster development
 
-[Godot bundles the source code of various third-party libraries. ](https://github.com/godotengine/godot/tree/master/thirdparty)_
+[Godot bundles the source code of various third-party libraries.](https://github.com/godotengine/godot/tree/master/thirdparty)_
 You can choose to use system versions of third-party libraries instead.
 This makes the Godot binary faster to link, as third-party libraries are
 dynamically linked. Therefore, they don't need to be statically linked

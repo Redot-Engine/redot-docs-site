@@ -13,25 +13,25 @@ While it is possible to compile for iOS on a Linux environment, Apple is
 very restrictive about the tools to be used (especially hardware-wise),
 allowing pretty much only their products to be used for development. So
 this is **not official**. However, in 2010 Apple said they relaxed some of the
-[App Store review guidelines ](https://developer.apple.com/app-store/review/guidelines/)_
+[App Store review guidelines](https://developer.apple.com/app-store/review/guidelines/)_
 to allow any tool to be used, as long as the resulting binary does not
 download any code, which means it should be OK to use the procedure
 described here and cross-compiling the binary.
 
 ## Requirements
 
-- [XCode with the iOS SDK ](https://developer.apple.com/download/all/?q=Xcode)_
+- [XCode with the iOS SDK](https://developer.apple.com/download/all/?q=Xcode)_
   (you must be logged into an Apple ID to download Xcode).
-- [Clang &gt;= 3.5 ](https://clang.llvm.org)_ for your development
+- [Clang &gt;= 3.5](https://clang.llvm.org)_ for your development
   machine installed and in the ``PATH``. It has to be version &gt;= 3.5
   to target ``arm64`` architecture.
-- [xar ](https://mackyle.github.io/xar/)_ and [pbzx ](https://github.com/NiklasRosenstein/pbzx)_
+- [xar](https://mackyle.github.io/xar/)_ and [pbzx](https://github.com/NiklasRosenstein/pbzx)_
   (required to extract the ``.xip`` archive Xcode comes in).
 
   - For building xar and pbzx, you may want to follow
-    [this guide ](https://gist.github.com/phracker/1944ce190e01963c550566b749bd2b54)_.
+    [this guide](https://gist.github.com/phracker/1944ce190e01963c550566b749bd2b54)_.
 
-- [cctools-port ](https://github.com/tpoechtrager/cctools-port)_
+- [cctools-port](https://github.com/tpoechtrager/cctools-port)_
   for the needed build tools. The procedure for building is quite
   peculiar and is described below.
 

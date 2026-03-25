@@ -9,7 +9,7 @@ debuggers usually cannot catch. This is particularly useful when combined with
 
 Sanitizers can be used on Windows, macOS and Linux by using the Clang (LLVM),
 GCC or Visual Studio compilers.
-[Certain platforms ](doc_using_sanitizers_platform_specific_sanitizers)
+[Certain platforms](doc_using_sanitizers_platform_specific_sanitizers)
 may also have their own sanitizers available.
 In situations where a single sanitizer is provided by several different compilers,
 remember that their output and behavior will differ slightly.
@@ -19,7 +19,7 @@ remember that their output and behavior will differ slightly.
 Sanitizers **require** recompiling the binary. This means you cannot use
 official Godot binaries to run sanitizers.
 
-When [compiling ](toc-devel-compiling) with any of the sanitizers enabled,
+When [compiling](toc-devel-compiling) with any of the sanitizers enabled,
 the resulting binary will have the ``.san`` suffix added to its name to
 distinguish it from a binary without sanitizers.
 
@@ -36,7 +36,7 @@ binary using environment variables.
 
 - Available in Clang and GCC.
 - **Supported platforms:** Linux, macOS, Windows (Visual Studio), Web
-- [Clang ASAN documentation ](https://clang.llvm.org/docs/AddressSanitizer.html)_
+- [Clang ASAN documentation](https://clang.llvm.org/docs/AddressSanitizer.html)_
 
 The address sanitizer is generally the most frequently used sanitizer. It can
 diagnose issues such as buffer overruns and out-of-bounds access. If the engine
@@ -70,13 +70,13 @@ you can only use one of those sanitizers in a given binary.
 
 - Available in Clang and GCC.
 - **Supported platforms:** Linux, Web
-- [Clang LSAN documentation ](https://clang.llvm.org/docs/LeakSanitizer.html)_
+- [Clang LSAN documentation](https://clang.llvm.org/docs/LeakSanitizer.html)_
 
 The leak sanitizer can detect memory leaks, which are situations where memory
 that is no longer in use is never freed by the running program. This can
 potentially lead to out-of-memory situations if the program runs for long
 enough. Since Godot may run on
-[dedicated servers ](doc_exporting_for_dedicated_servers) for months or
+[dedicated servers](doc_exporting_for_dedicated_servers) for months or
 even years without a restart, it's important to fix memory leaks when they occur.
 
 To enable the leak sanitizer in a Godot build, pass the ``use_lsan=yes`` SCons
@@ -88,7 +88,7 @@ program exits.
 
 - Available in Clang only, not GCC.
 - **Supported platforms:** Linux
-- [Clang MSAN documentation ](https://clang.llvm.org/docs/MemorySanitizer.html)_
+- [Clang MSAN documentation](https://clang.llvm.org/docs/MemorySanitizer.html)_
 
 The memory sanitizer complements the
 [doc_using_sanitizers_address_sanitizer](doc_using_sanitizers_address_sanitizer). Unlike the address sanitizer,
@@ -111,7 +111,7 @@ you can only use one of those sanitizers in a given binary.
 
 - Available in Clang and GCC.
 - **Supported platforms:** Linux, macOS
-- [Clang TSAN documentation ](https://clang.llvm.org/docs/ThreadSanitizer.html)_
+- [Clang TSAN documentation](https://clang.llvm.org/docs/ThreadSanitizer.html)_
 
 The thread sanitizer is used to track down race conditions related to
 multithreading. A race condition is when multiple threads try to modify the same
@@ -178,7 +178,7 @@ It's important to revert the changes as soon as possible because lowering the AS
 
 - Available in Clang and GCC.
 - **Supported platforms:** Linux, macOS, Web
-- [Clang UBSAN documentation ](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html)_
+- [Clang UBSAN documentation](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html)_
 
 The undefined behavior sanitizer is used to track down situations where the
 program exhibits random and unpredictable behavior. This is due to C/C++ code
@@ -194,12 +194,12 @@ performance overhead.
 
 ### Web
 
-When [compiling for the Web ](doc_compiling_for_web),
+When [compiling for the Web](doc_compiling_for_web),
 there are 2 additional sanitizer SCons options available:
 
 - ``use_assertions=yes`` enables runtime Emscripten assertions, which can catch
   various issues.
-- [`use_safe_heap=yes`` enables `Emscripten's SAFE_HEAP sanitizer ](https://emscripten.org/docs/debugging/Sanitizers.html)_.
+- ``use_safe_heap=yes`` enables [Emscripten's SAFE_HEAP sanitizer](https://emscripten.org/docs/debugging/Sanitizers.html)_.
   It provides similar functionality to ASAN, but it focuses on issues that
   are specific to WebAssembly. ``SAFE_HEAP`` is not guaranteed to be compatible
   with ASAN and UBSAN in the same binary, so you may have to build it separately.

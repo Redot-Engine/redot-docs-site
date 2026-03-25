@@ -6,7 +6,7 @@ We always need help to improve the documentation, be it the class reference or
 the manual. Below, you can find our content and writing guidelines and
 concrete guides to make changes to the documentation.
 
-Be sure to also check the [workflow guidelines ](doc_contributing_workflow),
+Be sure to also check the [workflow guidelines](doc_contributing_workflow),
 especially if you're new to using Git or GitHub.
 
 ## Guidelines
@@ -39,7 +39,7 @@ how to build the online version locally for testing.
 The pages below focus on the class reference.
 
 As the reference is included in the Godot editor, its source files are part of
-the [godot repository ](https://github.com/godotengine/godot). We use XML files
+the [godot repository](https://github.com/godotengine/godot). We use XML files
 to write it, so the process to contribute to the class reference differs from
 writing the online manual.
 

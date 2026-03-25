@@ -34,7 +34,7 @@ you work towards that goal.
 
 :::info
 
-See the [content guidelines ](doc_content_guidelines) for information
+See the [content guidelines](doc_content_guidelines) for information
 on the types of documentation you can write in the official documentation.
 
 :::
@@ -509,7 +509,7 @@ with a space on either side of the symbol.
 
 Make sure to mention shortcuts that differ on macOS compared to other platforms.
 You can find a list of all shortcuts, including what they are on macOS, on
-[this page ](doc_default_key_mapping).
+[this page](doc_default_key_mapping).
 
 Try to integrate the shortcut into sentences the best you can. Here are some
 examples with the ``:kbd:`` tag left as-is for better visibility:
@@ -710,8 +710,8 @@ parsed based on the order that they initially appear within a page. Make sure
 that if you use an ``h3`` section header (``~~~``), you include an ``h2``
 sub-section header (``---``) first.
 
-See the [Sphinx documentation ](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections)_
-and the [reStructuredText documentation ](https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#sections)_
+See the [Sphinx documentation](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections)_
+and the [reStructuredText documentation](https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#sections)_
 for more information.
 
 ## When to refer to a specific Godot version

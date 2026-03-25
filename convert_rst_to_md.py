@@ -14,9 +14,22 @@ def convert_rst_to_md(rst_content):
     i = 0
     is_tabs_open = False
 
-    # Inline replacements
+    def apply_inline_replacements(text):
+        text = re.sub(r':ref:`([^<`]+?)\s*<([^>]+)>`', r'[\1](\2)', text)
+        text = re.sub(r':ref:`([^`]+)`', r'[\1](\1)', text)
+        text = re.sub(r':kbd:`([^`]+)`', r'`\1`', text)
+        text = re.sub(r'`([^<`]+?)\s*<([^>]+)>`_', r'[\1](\2)', text)
+        text = re.sub(r'`([^`]+)`_', r'[\1](\1)', text)
+        text = re.sub(r'\*\*([^*]+)\*\*', r'**\1**', text)
+        text = re.sub(r'\*([^*]+)\*', r'*\1*', text)
+        return text
+
     # Escape angle brackets that are likely NOT part of JSX
     def escape_angle_brackets(text):
+        # First, apply inline replacements that involve angle brackets to avoid escaping them
+        text = re.sub(r':ref:`([^<`]+?)\s*<([^>]+)>`', r'[\1](\2)', text)
+        text = re.sub(r'`([^<`]+?)\s*<([^>]+)>`_', r'[\1](\2)', text)
+
         # If the line contains known JSX tags, we need to be careful
         known_tags = ['Tabs', 'TabItem', '/Tabs', '/TabItem']
         
@@ -297,23 +310,9 @@ def convert_rst_to_md(rst_content):
 
         # Inline replacements
 
-        line = re.sub(r':ref:`([^<]+)\s*<([^>]+)>`', r'[\1](\2)', line)
-        line = re.sub(r':ref:`([^`]+)`', r'[\1](\1)', line)
-        line = re.sub(r':kbd:`([^`]+)`', r'`\1`', line)
-        line = re.sub(r'`([^<]+)\s*<([^>]+)>`_', r'[\1](\2)', line)
-        line = re.sub(r'`([^`]+)`_', r'[\1](\1)', line)
+        line = apply_inline_replacements(escape_angle_brackets(line))
         
         # Multiline :ref:
-        if i + 1 < len(lines) and ':ref:`' in line and '>`' not in line:
-             next_line = lines[i+1].strip()
-             if '>`' in next_line:
-                 combined = line + ' ' + next_line
-                 combined = re.sub(r':ref:`([^<]+)\s*<([^>]+)>`', r'[\1](\2)', combined)
-                 md_lines.append(combined)
-                 i += 2
-                 continue
-        line = re.sub(r'\*\*([^*]+)\*\*', r'**\1**', line)
-        line = re.sub(r'\*([^*]+)\*', r'*\1*', line)
         
         # Images
         match_img = re.match(r'^\.\.\s+(?:image|figure)::\s+(.*)', line)
@@ -437,19 +436,19 @@ def convert_rst_to_md(rst_content):
                     md_table.append('')
                     # Header
                     header = rows[0]
-                    escaped_header = [escape_angle_brackets(cell) for cell in header]
+                    escaped_header = [apply_inline_replacements(escape_angle_brackets(cell)) for cell in header]
                     md_table.append('| ' + ' | '.join(escaped_header) + ' |')
                     # Separator
                     md_table.append('| ' + ' | '.join(['---'] * len(header)) + ' |')
                     # Data rows
                     for r in rows[1:]:
-                        escaped_r = [escape_angle_brackets(cell) for cell in r]
+                        escaped_r = [apply_inline_replacements(escape_angle_brackets(cell)) for cell in r]
                         md_table.append('| ' + ' | '.join(escaped_r) + ' |')
                     md_table.append('')
                     md_lines.extend(md_table)
             continue
 
-        md_lines.append(escape_angle_brackets(line))
+        md_lines.append(apply_inline_replacements(escape_angle_brackets(line)))
         i += 1
 
     # Add Tabs import if used

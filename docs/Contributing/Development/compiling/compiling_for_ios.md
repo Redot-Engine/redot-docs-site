@@ -12,15 +12,15 @@ If you're looking to export your project to iOS instead, read [doc_exporting_for
 
 ## Requirements
 
-- [Python 3.8+ ](https://www.python.org/downloads/macos/).
-- [SCons 4.0+ ](https://scons.org/pages/download.html) build system.
-- [Xcode ](https://apps.apple.com/us/app/xcode/id497799835).
+- [Python 3.8+](https://www.python.org/downloads/macos/).
+- [SCons 4.0+](https://scons.org/pages/download.html) build system.
+- [Xcode](https://apps.apple.com/us/app/xcode/id497799835).
     - Launch Xcode once and install iOS support. If you have already launched
       Xcode and need to install iOS support, go to *Xcode -&gt; Settings... -&gt; Platforms*.
     - Go to *Xcode -&gt; Settings... -&gt; Locations -&gt; Command Line Tools* and select
       an installed version. Even if one is already selected, re-select it.
 -  Download and follow README instructions to build a static ``.xcframework``
-   from the [MoltenVK SDK ](https://github.com/KhronosGroup/MoltenVK#fetching-moltenvk-source-code)_.
+   from the [MoltenVK SDK](https://github.com/KhronosGroup/MoltenVK#fetching-moltenvk-source-code)_.
 
 :::note
 If you have `Homebrew <https://brew.sh/>`_ installed, you can easily
@@ -34,7 +34,7 @@ brew install scons
 Installing Homebrew will also fetch the Command Line Tools
 for Xcode automatically if you don't have them already.
 
-Similarly, if you have [MacPorts ](https://www.macports.org/)
+Similarly, if you have [MacPorts](https://www.macports.org/)
 installed, you can easily install SCons using the
 following command
 

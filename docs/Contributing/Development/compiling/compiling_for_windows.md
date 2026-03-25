@@ -16,22 +16,22 @@ For compiling under Windows, the following is required:
 
 - A C++ compiler. Use one of the following:
 
-    - [Visual Studio Community ](https://www.visualstudio.com/vs/community/),
+    - [Visual Studio Community](https://www.visualstudio.com/vs/community/),
       version 2019 or later. Visual Studio 2022 is recommended.
       **Make sure to enable C++ in the list of workflows to install.**
       If you've already installed Visual Studio without C++ support, run the installer
       again; it should present you a **Modify** button.
       Supports ``x86_64``, ``x86_32``, and ``arm64``.
-    - [MinGW-w64 ](https://mingw-w64.org/) with GCC can be used as an alternative to
+    - [MinGW-w64](https://mingw-w64.org/) with GCC can be used as an alternative to
       Visual Studio. Be sure to install/configure it to use the ``posix`` thread model.
       **Important:** When using MinGW to compile the ``master`` branch, you need GCC 9 or later.
       Supports ``x86_64`` and ``x86_32`` only.
-    - [MinGW-LLVM ](https://github.com/mstorsjo/llvm-mingw/releases) with clang can be used as
+    - [MinGW-LLVM](https://github.com/mstorsjo/llvm-mingw/releases) with clang can be used as
       an alternative to Visual Studio and MinGW-w64.
       Supports ``x86_64``, ``x86_32``, and ``arm64``.
-- [Python 3.8+ ](https://www.python.org/downloads/windows/).
+- [Python 3.8+](https://www.python.org/downloads/windows/).
   **Make sure to enable the option to add Python to the** ``PATH`` **in the installer.**
-- [SCons 4.0+ ](https://scons.org/pages/download.html) build system. Using the
+- [SCons 4.0+](https://scons.org/pages/download.html) build system. Using the
   latest release is recommended, especially for proper support of recent Visual
   Studio releases.
 
@@ -141,7 +141,7 @@ to MSVC. Therefore, it's recommended to use MinGW to produce builds that you
 distribute to players.
 
 All official Godot binaries are built in
-[custom containers ](https://github.com/godotengine/build-containers)_
+[custom containers](https://github.com/godotengine/build-containers)_
 using MinGW.
 
 :::
@@ -216,7 +216,7 @@ You can find the detailed steps below if you wish to set up dependencies
 manually, but the above script handles everything for you (including the
 optional PIX and Agility SDK components).
 
-- [godot-nir-static library ](https://github.com/godotengine/godot-nir-static/releases/).
+- [godot-nir-static library](https://github.com/godotengine/godot-nir-static/releases/).
   We compile the Mesa libraries you will need into a static library. Download it
   anywhere, unzip it and remember the path to the unzipped folder, you will
   need it below.
@@ -225,9 +225,9 @@ optional PIX and Agility SDK components).
 You can optionally build the godot-nir-static libraries yourself with
 the following steps:
 
-1. Install the Python package [mako ](https://www.makotemplates.org)
+1. Install the Python package [mako](https://www.makotemplates.org)
    which is needed to generate some files.
-2. Clone the [godot-nir-static ](https://github.com/godotengine/godot-nir-static)
+2. Clone the [godot-nir-static](https://github.com/godotengine/godot-nir-static)
    directory and navigate to it.
 3. Run the following
 
@@ -255,14 +255,14 @@ scons
 
 Optionally, you can compile with the following for additional features:
 
-- [PIX ](https://devblogs.microsoft.com/pix/download) is a performance tuning
+- [PIX](https://devblogs.microsoft.com/pix/download) is a performance tuning
   and debugging application for Direct3D12 applications. If you compile-in
   support for it, you can get much more detailed information through PIX that
   will help you optimize your game and troubleshoot graphics bugs. To use it,
   download the WinPixEventRuntime package. You will be taken to a NuGet package
   page where you can click "Download package" to get it. Once downloaded, change
   the file extension to .zip and unzip the file to some path.
-- [Agility SDK ](https://devblogs.microsoft.com/directx/directx12agility) can
+- [Agility SDK](https://devblogs.microsoft.com/directx/directx12agility) can
   be used to provide access to the latest Direct3D 12 features without relying
   on driver updates. To use it, download the latest Agility SDK package. You
   will be taken to a NuGet package page where you can click "Download package"
@@ -334,7 +334,7 @@ be automatically copied during the export process.
 
 To compile Godot with statically linked ANGLE:
 
-- Download pre-built static libraries from [godot-angle-static library ](https://github.com/godotengine/godot-angle-static/releases), and unzip them.
+- Download pre-built static libraries from [godot-angle-static library](https://github.com/godotengine/godot-angle-static/releases), and unzip them.
 - When building Godot, add ``angle_libs={path}`` to tell SCons where to look for the ANGLE libraries
 
 ```
@@ -346,7 +346,7 @@ scons platform=windows angle_libs=<...>
 You can optionally build the godot-angle-static libraries yourself with
 the following steps:
 
-1. Clone the [godot-angle-static ](https://github.com/godotengine/godot-angle-static)
+1. Clone the [godot-angle-static](https://github.com/godotengine/godot-angle-static)
    directory and navigate to it.
 2. Run the following command
 
@@ -400,8 +400,8 @@ See :ref:`doc_configuring_an_ide_vs` for further details.
 ## Cross-compiling for Windows from other operating systems
 
 If you are a Linux or macOS user, you need to install
-[MinGW-w64 ](https://www.mingw-w64.org/)_, which typically comes in 32-bit
-and 64-bit variants, or [MinGW-LLVM ](https://github.com/mstorsjo/llvm-mingw/releases),
+[MinGW-w64](https://www.mingw-w64.org/)_, which typically comes in 32-bit
+and 64-bit variants, or [MinGW-LLVM](https://github.com/mstorsjo/llvm-mingw/releases),
 which comes as a single archive for all target architectures.
 The package names may differ based on your distribution, here are some known ones:
 
@@ -466,7 +466,7 @@ invoking SCons if building from a different architecture.
 ### Troubleshooting
 
 Cross-compiling from some Ubuntu versions may lead to
-[this bug ](https://github.com/godotengine/godot/issues/9258),
+[this bug](https://github.com/godotengine/godot/issues/9258),
 due to a default configuration lacking support for POSIX threading.
 
 You can change that configuration following those instructions,

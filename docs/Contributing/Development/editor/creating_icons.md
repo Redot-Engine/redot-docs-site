@@ -9,7 +9,7 @@ improve the user experience.
 ### Creating icons
 
 To create new icons, you first need a vector graphics editor installed.
-For instance, you can use the open source [Inkscape ](https://inkscape.org/) editor.
+For instance, you can use the open source [Inkscape](https://inkscape.org/) editor.
 
 Clone the ``godot`` repository containing all the editor icons:
 
@@ -35,7 +35,7 @@ CPUParticles2D, name the file ``CPUParticles2D.svg``.
 
 If the user has configured their editor to use a light theme, Godot will
 convert the icon's colors based on a
-[set of predefined color mappings ](https://github.com/godotengine/godot/blob/4.0.2-stable/editor/editor_themes.cpp#L60-L160)_.
+[set of predefined color mappings](https://github.com/godotengine/godot/blob/4.0.2-stable/editor/editor_themes.cpp#L60-L160)_.
 This is to ensure the icon always displays with a sufficient contrast rate.
 Try to restrict your icon's color palette to colors found in the list above.
 Otherwise, your icon may become difficult to read on a light background.
@@ -44,8 +44,8 @@ Otherwise, your icon may become difficult to read on a light background.
 
 Because the editor renders SVGs once at load time, they need to be small
 in size so they can be efficiently parsed. When the
-[pre-commit hook ](doc_code_style_guidelines_pre_commit_hook) runs, it automatically optimizes
-the SVG using [svgo ](https://github.com/svg/svgo).
+[pre-commit hook](doc_code_style_guidelines_pre_commit_hook) runs, it automatically optimizes
+the SVG using [svgo](https://github.com/svg/svgo).
 
 :::note
 
@@ -81,4 +81,4 @@ If icons don't appear in the editor, make sure that:
 
 ### References
 
--  [editor/icons ](https://github.com/godotengine/godot/tree/master/editor/icons)_
+-  [editor/icons](https://github.com/godotengine/godot/tree/master/editor/icons)_

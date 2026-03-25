@@ -1,12 +1,12 @@
 
 # CLion
 
-[CLion ](https://www.jetbrains.com/clion/) is a commercial
-[JetBrains ](https://www.jetbrains.com/) IDE for C++.
+[CLion](https://www.jetbrains.com/clion/) is a commercial
+[JetBrains](https://www.jetbrains.com/) IDE for C++.
 
 ## Importing the project
 
-CLion can import a project's [compilation database file ](https://clang.llvm.org/docs/JSONCompilationDatabase.html), commonly named ``compile_commands.json``. To generate the compilation database file, open the terminal, change to the Godot root directory, and run:
+CLion can import a project's [compilation database file](https://clang.llvm.org/docs/JSONCompilationDatabase.html), commonly named ``compile_commands.json``. To generate the compilation database file, open the terminal, change to the Godot root directory, and run:
 
 ```
 scons compiledb=yes
@@ -17,7 +17,7 @@ Then, open the Godot root directory with CLion. CLion will import the compilatio
 
 ## Compiling and debugging the project
 
-CLion does not support compiling and debugging Godot via SCons out of the box. This can be achieved by creating a custom build target and run configuration in CLion. Before creating a custom build target, you must [compile Godot ](toc-devel-compiling) once on the command line, to generate the Godot executable. Open the terminal, change into the Godot root directory, and execute:
+CLion does not support compiling and debugging Godot via SCons out of the box. This can be achieved by creating a custom build target and run configuration in CLion. Before creating a custom build target, you must [compile Godot](toc-devel-compiling) once on the command line, to generate the Godot executable. Open the terminal, change into the Godot root directory, and execute:
 
 ```
 scons dev_build=yes
@@ -38,7 +38,7 @@ To add a custom build target that invokes SCons for compilation:
 
 ![Image](img/clion-external-tools.png)
 
-- Give the tool a name, e.g. ``Build Godot debug``, set **Program** to ``scons``, set **Arguments** to the compilation settings you want (see [compiling Godot ](toc-devel-compiling)), and set the **Working directory** to ``$ProjectFileDir$``, which equals the Godot root directory. Click **OK** to create the tool.
+- Give the tool a name, e.g. ``Build Godot debug``, set **Program** to ``scons``, set **Arguments** to the compilation settings you want (see [compiling Godot](toc-devel-compiling)), and set the **Working directory** to ``$ProjectFileDir$``, which equals the Godot root directory. Click **OK** to create the tool.
 
 :::note
 CLion does not expand shell commands like ``scons -j$(nproc)``. Use concrete values instead, e.g. ``scons -j8``.

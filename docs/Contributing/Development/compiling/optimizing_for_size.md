@@ -37,7 +37,7 @@ On Windows, ``strip.exe`` is included in most MinGW toolchain setups.
 This will reduce the size of compiled binaries by a factor between 5× and 10×.
 The downside is that crash backtraces will no longer provide accurate information
 (which is useful for troubleshooting the cause of a crash).
-[C++ profilers ](doc_using_cpp_profilers) will also no longer be able to display
+[C++ profilers](doc_using_cpp_profilers) will also no longer be able to display
 function names (this does not affect the built-in GDScript profiler).
 
 :::note
@@ -292,7 +292,7 @@ don't need to create a ZIP archive to distribute files in the first place.
 As an aside, you can look into optimizing the distribution of your project itself.
 This can be done even without recompiling the export template.
 
-[7-Zip ](https://7-zip.org/)_ can be used to create ZIP archives that are more
+[7-Zip](https://7-zip.org/)_ can be used to create ZIP archives that are more
 efficient than usual, while remaining compatible with every ZIP extractor
 (including Windows' own built-in extractor). ZIP size reduction in a large
 project can reach dozens of megabytes compared to a typical ZIP compressor,

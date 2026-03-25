@@ -18,7 +18,7 @@ in scene/resource files. It is possible to write them manually, but they will be
 discarded when saving the file.
 
 For those looking for a complete description, the parsing is handled in the file
-[resource_format_text.cpp ](https://github.com/godotengine/godot/blob/master/scene/resources/resource_format_text.cpp)
+[resource_format_text.cpp](https://github.com/godotengine/godot/blob/master/scene/resources/resource_format_text.cpp)
 in the ``ResourceFormatLoaderText`` class.
 
 :::note
@@ -29,7 +29,7 @@ IDs.
 
 Mesh, skeleton and animation data is also stored differently compared to Godot 3.
 You can read about some of the changes in this article:
-[Animation data rework for 4.0 ](https://godotengine.org/article/animation-data-redesign-40/)_
+[Animation data rework for 4.0](https://godotengine.org/article/animation-data-redesign-40/)_
 
 Scenes and resources saved with Godot 4.x contain ``format=3`` in their
 header, whereas Godot 3.x uses ``format=2`` instead.
@@ -60,7 +60,7 @@ prefix to avoid relying on filesystem paths. This makes it possible to move
 around a file in the project, but still be able to load it in scripts without
 having to modify the script. Godot does not use external files to keep track of
 IDs, which means no central metadata storage location is required within the
-project. See [this pull request ](https://github.com/godotengine/godot/pull/50786)_
+project. See [this pull request](https://github.com/godotengine/godot/pull/50786)_
 for detailed information.
 
 These sections should appear in order, but it can be hard to distinguish them.
@@ -242,7 +242,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)
 The [class_AnimationPlayer](class_AnimationPlayer) node works with one or more animation libraries
 stored in [class_AnimationLibrary](class_AnimationLibrary) resources. An animation library is a
 collection of individual [class_Animation](class_Animation) resources, whose structure is
-documented [here ](doc_tscn_animation).
+documented [here](doc_tscn_animation).
 
 This split between animations themselves and animation libraries was done in
 Godot 4, so that animations can be imported separately from 3D meshes, which is

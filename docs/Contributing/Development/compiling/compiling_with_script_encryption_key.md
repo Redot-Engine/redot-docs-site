@@ -35,10 +35,10 @@ aren't affected by PCK encryption. To use PCK encryption on Android, enable
 ## Step by step
 
 1. Generate a 256-bit AES key in hexadecimal format. You can use the aes-256-cbc variant from
-   [this service ](https://asecuritysite.com/encryption/keygen).
+   [this service](https://asecuritysite.com/encryption/keygen).
 
    Alternatively, you can generate it yourself using
-   [OpenSSL ](https://www.openssl.org/)_ command-line tools:
+   [OpenSSL](https://www.openssl.org/)_ command-line tools:
 
 ```
 openssl rand -hex 32 > godot.gdkey

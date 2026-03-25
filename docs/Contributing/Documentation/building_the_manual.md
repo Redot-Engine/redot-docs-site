@@ -9,9 +9,9 @@ documentation as a PDF, EPUB, or LaTeX file, for example.
 
 Before you get started, make sure that you have:
 
-- [Git ](https://git-scm.com/)
-- [make ](https://www.gnu.org/software/make/) (unless you're using Windows)
-- [Python ](https://www.python.org/) 3
+- [Git](https://git-scm.com/)
+- [make](https://www.gnu.org/software/make/) (unless you're using Windows)
+- [Python](https://www.python.org/) 3
 
 :::note
 Python 3 should come with the ``pip3`` command. You may need to write
@@ -156,7 +156,7 @@ rest intact.
 
 If you delete the ``classes/`` folder, do not use ``git add .`` when working on a pull
 request or the whole ``classes/`` folder will be removed when you commit.
-See [#3157 ](https://github.com/godotengine/godot-docs/issues/3157)_ for more detail.
+See [#3157](https://github.com/godotengine/godot-docs/issues/3157)_ for more detail.
 
 :::
 

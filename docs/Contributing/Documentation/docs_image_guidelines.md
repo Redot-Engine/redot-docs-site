@@ -37,7 +37,7 @@ The current format for images in Godot's documentation is WebP (``.webp``).
 While some Linux programs will support saving screenshots in this format, macOS
 and the Snip & Sketch program on Windows do not. For images that don't need
 editing, such as precise cropping or adding outlines, Squoosh can be used.
-[Squoosh ](https://squoosh.app/) is a converter developed by Google, is open
+[Squoosh](https://squoosh.app/) is a converter developed by Google, is open
 source, and doesn't give Google any image rights by using it. When choosing
 compression if you can get an image that's under 300KB in size use lossless
 compression. If it's over 300KB, use just enough lossy compression to get it
@@ -68,7 +68,7 @@ have cropping built-in it's not always easy to get something precise. And while
 Krita is designed as a painting program the cropping tool gives you pixel precision
 by default. Of course, feel free to use a different program you are familiar with.
 
-If you've never used Krita before download it from the [official Krita website ](https://krita.org/en/download/),
+If you've never used Krita before download it from the [official Krita website](https://krita.org/en/download/),
 on Linux you may also be able to download it from your distributions repository,
 flathub is also an option. Once it's installed on your computer open Krita then
 open the image you want to crop. This button on the left panel is the crop tool.
@@ -107,7 +107,7 @@ To save an image as webp if it isn't already one, Go to **File &gt; Save As**. S
 will popup with webp options. Make sure **Lossless** is checked and **Quality** is set to 100%. This
 means the image will not lose detail and will be as small as possible.
 
-If the image is over 300KB in size try compressing it losslessly using [Squoosh ](https://squoosh.app/).
+If the image is over 300KB in size try compressing it losslessly using [Squoosh](https://squoosh.app/).
 If it's still over 300KB change to lossy compression and slowly increase the compression until it's under
 300KB. If this results in noticeable compression artifacts using less compression is fine, even if the file
 size is bigger.
@@ -117,7 +117,7 @@ size is bigger.
 Sometimes an image needs something extra to properly direct the readers
 attention, or make something clear. Outlines and arrows can be used
 for this purpose. For these types of edits Inkscape is the recommended open
-source program, it can be downloaded from the [official Inkscape website ](https://inkscape.org/).
+source program, it can be downloaded from the [official Inkscape website](https://inkscape.org/).
 Like Krita, if you're on Linux you can also check your distributions repository
 or get it from Flathub.
 
@@ -162,9 +162,9 @@ To record a video of something in Godot, a screen capture tool can be used.
 Operating systems generally don't come with tools that are flexible enough
 for this, so you'll need to install a third-party utility.
 
-[OBS Studio ](https://obsproject.com/)_ is the most popular option, but
-[SimpleScreenRecorder ](https://www.maartenbaert.be/simplescreenrecorder/)_
-can be used as an alternative on Linux. [ShareX ](https://getsharex.com/)_
+[OBS Studio](https://obsproject.com/)_ is the most popular option, but
+[SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/)_
+can be used as an alternative on Linux. [ShareX](https://getsharex.com/)_
 can be used as an alternative on Windows. All these tools can be configured
 to record the entire screen, a specific window or a predetermined rectangle.
 
@@ -174,7 +174,7 @@ use a resolution of 1280×720.
 
 :::note
 
-Godot's [Movie Maker mode ](doc_creating_movies) can be used to record
+Godot's [Movie Maker mode](doc_creating_movies) can be used to record
 the output of a running project, including its audio. This doesn't require
 installing any third-party software and avoids any frame drops (even when
 recording on a slow device), but it's less flexible.
@@ -189,7 +189,7 @@ it later to reduce its file size. This results in more efficient compression
 than directly aiming for a small file size, as real-time compression methods are
 less efficient than slower compression methods.
 
-To re-encode videos for a smaller file size, use [HandBrake ](https://handbrake.fr/)_
+To re-encode videos for a smaller file size, use [HandBrake](https://handbrake.fr/)_
 or the `FFmpeg &lt;https://ffmpeg.org/&gt;` command line below:
 
 ```

@@ -394,7 +394,7 @@ def convert_rst_to_md(rst_content):
         if line.strip().startswith('+') and i + 1 < len(lines) and lines[i+1].strip().startswith('|'):
             table_lines = []
             while i < len(lines) and (line.strip().startswith('+') or line.strip().startswith('|')):
-                table_lines.append(line.strip())
+                table_lines.append(line)  # Keep original line to maintain indentation and column positions
                 i += 1
                 if i < len(lines):
                     line = lines[i]
@@ -404,19 +404,34 @@ def convert_rst_to_md(rst_content):
             if table_lines:
                 # Process table_lines to Markdown
                 md_table = []
-                header_sep_idx = -1
-                for idx, tl in enumerate(table_lines):
-                    if tl.startswith('+') and '=' in tl:
-                        header_sep_idx = idx
-                        break
+                # Identify column positions from the first +---+ line
+                col_markers = [m.start() for m in re.finditer(r'\+', table_lines[0])]
+                if len(col_markers) < 2:
+                    # Not a valid grid table start, just skip
+                    continue
+                
+                col_ranges = []
+                for idx in range(len(col_markers) - 1):
+                    col_ranges.append((col_markers[idx] + 1, col_markers[idx+1]))
                 
                 # Extract rows
                 rows = []
                 current_row = []
-                for idx, tl in enumerate(table_lines):
-                    if tl.startswith('|'):
-                        # Extract cells, handle multiple | 
-                        cells = [c.strip() for c in tl.split('|')[1:-1]]
+                for tl in table_lines:
+                    if tl.strip().startswith('|'):
+                        # Extract cells using pre-calculated col_ranges
+                        cells = []
+                        for start, end in col_ranges:
+                            if start < len(tl):
+                                cell_content = tl[start:end].strip()
+                                # Handle RST line blocks: if it starts with | followed by space, remove it
+                                cell_content = re.sub(r'^\|\s*', '', cell_content)
+                                # Escape any remaining | to avoid extra Markdown columns
+                                cell_content = cell_content.replace('|', r'\|')
+                                cells.append(cell_content)
+                            else:
+                                cells.append("")
+                        
                         if not current_row:
                             current_row = cells
                         else:
@@ -424,10 +439,13 @@ def convert_rst_to_md(rst_content):
                             for c_idx, cell in enumerate(cells):
                                 if c_idx < len(current_row):
                                     if cell:
-                                        current_row[c_idx] += " " + cell
+                                        if current_row[c_idx]:
+                                            current_row[c_idx] += " " + cell
+                                        else:
+                                            current_row[c_idx] = cell
                                 else:
                                     current_row.append(cell)
-                    elif tl.startswith('+'):
+                    elif tl.strip().startswith('+'):
                         if current_row:
                             rows.append(current_row)
                             current_row = []

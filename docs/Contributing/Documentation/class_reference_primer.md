@@ -137,17 +137,17 @@ For links to the same class, the class name is optional and can be omitted.
 
 | Tag and Description | Example | Result |
 | --- | --- | --- |
-|  | ``[Class]`` Link to class | ``Move the [Sprite2D].`` | Move the [class_Sprite2D](class_Sprite2D). |
-|  | ``[annotation Class.name]`` Link to annotation | ``See [annotation @GDScript.@rpc].`` | See [@GDScript.@rpc](class_@GDScript_annotation_@rpc). |
-|  | ``[constant Class.name]`` Link to constant | ``See [constant Color.RED].`` | See [Color.RED](class_Color_constant_RED). |
-|  | ``[enum Class.name]`` Link to enum | ``See [enum Mesh.ArrayType].`` | See [Mesh.ArrayType](enum_Mesh_ArrayType). |
-|  | ``[member Class.name]`` Link to member | ``Get [member Node2D.scale].`` | Get [Node2D.scale](class_Node2D_property_scale). |
-|  | ``[method Class.name]`` Link to method | ``Call [method Node3D.hide].`` | Call [Node3D.hide()](class_Node3D_method_hide). |
-|  | ``[constructor Class.name]`` Link to built-in constructor | ``Use [constructor Color.Color].`` | Use  [Color.Color](class_Color_constructor_Color). |
-|  | ``[operator Class.name]`` Link to built-in operator | ``Use [operator Color.operator *].`` | Use  [Color.operator *](class_Color_operator_mul_int). |
-|  | ``[signal Class.name]`` Link to signal | ``Emit [signal Node.renamed].`` | Emit [Node.renamed](class_Node_signal_renamed). |
-|  | ``[theme_item Class.name]`` Link to theme item | ``See [theme_item Label.font].`` | See [Label.font](class_Label_theme_font_font). |
-|  | ``[param name]`` Parameter name (as code) | ``Takes [param size] for the size.`` | Takes ``size`` for the size. |
+| ``[Class]`` Link to class | ``Move the [Sprite2D].`` | Move the [class_Sprite2D](class_Sprite2D). |
+| ``[annotation Class.name]`` Link to annotation | ``See [annotation @GDScript.@rpc].`` | See [@GDScript.@rpc](class_@GDScript_annotation_@rpc). |
+| ``[constant Class.name]`` Link to constant | ``See [constant Color.RED].`` | See [Color.RED](class_Color_constant_RED). |
+| ``[enum Class.name]`` Link to enum | ``See [enum Mesh.ArrayType].`` | See [Mesh.ArrayType](enum_Mesh_ArrayType). |
+| ``[member Class.name]`` Link to member | ``Get [member Node2D.scale].`` | Get [Node2D.scale](class_Node2D_property_scale). |
+| ``[method Class.name]`` Link to method | ``Call [method Node3D.hide].`` | Call [Node3D.hide()](class_Node3D_method_hide). |
+| ``[constructor Class.name]`` Link to built-in constructor | ``Use [constructor Color.Color].`` | Use  [Color.Color](class_Color_constructor_Color). |
+| ``[operator Class.name]`` Link to built-in operator | ``Use [operator Color.operator *].`` | Use  [Color.operator *](class_Color_operator_mul_int). |
+| ``[signal Class.name]`` Link to signal | ``Emit [signal Node.renamed].`` | Emit [Node.renamed](class_Node_signal_renamed). |
+| ``[theme_item Class.name]`` Link to theme item | ``See [theme_item Label.font].`` | See [Label.font](class_Label_theme_font_font). |
+| ``[param name]`` Parameter name (as code) | ``Takes [param size] for the size.`` | Takes ``size`` for the size. |
 
 :::note
 
@@ -160,16 +160,16 @@ Formatting text
 
 | Tag and Description | Example | Result |
 | --- | --- | --- |
-|  | ``[br]`` Line break |  | ``Line 1.[br]`` ``Line 2.`` |  | Line 1. Line 2. |
-|  | ``[lb]`` ``[rb]`` ``[`` and ``]`` respectively | ``[lb]b[rb]text[lb]/b[rb]`` | [b]text[/b] |
-|  | ``[b]`` ``[/b]`` Bold | ``Do [b]not[/b] call this method.`` | Do **not** call this method. |
-|  | ``[i]`` ``[/i]`` Italic | ``Returns the [i]global[/i] position.`` | Returns the *global* position. |
-|  | ``[u]`` ``[/u]`` Underline | ``[u]Always[/u] use this method.`` &lt;u&gt;Always&lt;/u&gt; use this method. | .. raw:: html |
-|  | ``[s]`` ``[/s]`` Strikethrough | ``[s]Outdated information.[/s]`` &lt;s&gt;Outdated information.&lt;/s&gt; | .. raw:: html |
-|  | ``[url]`` ``[/url]`` Hyperlink |  | ``[url]https://example.com[/url]`` ``[url=https://example.com]Website[/url]`` |  | https://example.com [Website](https://example.com) |
-|  | ``[center]`` ``[/center]`` Horizontal centering | ``[center]2 + 2 = 4[/center]`` &lt;center&gt;2 + 2 = 4&lt;/center&gt; | .. raw:: html |
-|  | ``[kbd]`` ``[/kbd]`` Keyboard/mouse shortcut | ``Press [kbd]Ctrl + C[/kbd].`` | Press `Ctrl + C`. |
-|  | ``[code]`` ``[/code]`` Inline code fragment | ``Returns [code]true[/code].`` | Returns ``true``. |
+| ``[br]`` Line break | ``Line 1.[br]`` ``Line 2.`` | Line 1. Line 2. |
+| ``[lb]`` ``[rb]`` ``[`` and ``]`` respectively | ``[lb]b[rb]text[lb]/b[rb]`` | [b]text[/b] |
+| ``[b]`` ``[/b]`` Bold | ``Do [b]not[/b] call this method.`` | Do **not** call this method. |
+| ``[i]`` ``[/i]`` Italic | ``Returns the [i]global[/i] position.`` | Returns the *global* position. |
+| ``[u]`` ``[/u]`` Underline | ``[u]Always[/u] use this method.`` | .. raw:: html &lt;u&gt;Always&lt;/u&gt; use this method. |
+| ``[s]`` ``[/s]`` Strikethrough | ``[s]Outdated information.[/s]`` | .. raw:: html &lt;s&gt;Outdated information.&lt;/s&gt; |
+| ``[url]`` ``[/url]`` Hyperlink | ``[url]https://example.com[/url]`` ``[url=https://example.com]Website[/url]`` | https://example.com [Website](https://example.com) |
+| ``[center]`` ``[/center]`` Horizontal centering | ``[center]2 + 2 = 4[/center]`` | .. raw:: html &lt;center&gt;2 + 2 = 4&lt;/center&gt; |
+| ``[kbd]`` ``[/kbd]`` Keyboard/mouse shortcut | ``Press [kbd]Ctrl + C[/kbd].`` | Press `Ctrl + C`. |
+| ``[code]`` ``[/code]`` Inline code fragment | ``Returns [code]true[/code].`` | Returns ``true``. |
 
 :::note
 

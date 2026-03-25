@@ -129,8 +129,7 @@ to get linting for class reference XML files.
 Godot's XML class reference supports BBCode-like tags for linking as well as formatting text and code.
 In the tables below you can find the available tags, usage examples and the results after conversion to reStructuredText.
 
-Linking
-"""""""
+##### Linking
 
 Whenever you link to a member of another class, you need to specify the class name.
 For links to the same class, the class name is optional and can be omitted.
@@ -155,8 +154,7 @@ Currently only [class_@GDScript](class_@GDScript) has annotations.
 
 :::
 
-Formatting text
-"""""""""""""""
+##### Formatting text
 
 | Tag and Description | Example | Result |
 | --- | --- | --- |
@@ -179,8 +177,7 @@ Formatting text
 
 :::
 
-Formatting code blocks
-""""""""""""""""""""""
+##### Formatting code blocks
 
 There are two options for formatting code blocks:
 
@@ -283,8 +280,7 @@ public override void _Ready()
 
 </Tabs>
 
-Formatting notes and warnings
-"""""""""""""""""""""""""""""
+##### Formatting notes and warnings
 
 To denote important information, add a paragraph starting with "[b]Note:[/b]" at
 the end of the description:

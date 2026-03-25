@@ -115,6 +115,14 @@ def convert_rst_to_md(rst_content):
                 md_lines.append(f"#### {line.strip()}")
                 i += 2
                 continue
+            elif len(next_line) > 0 and all(c == '"' for c in next_line) and len(next_line) >= len(line):
+                md_lines.append(f"##### {line.strip()}")
+                i += 2
+                continue
+            elif len(next_line) > 0 and all(c == '\'' for c in next_line) and len(next_line) >= len(line):
+                md_lines.append(f"###### {line.strip()}")
+                i += 2
+                continue
 
         # Handle tabs, code-tabs, and group-tabs
         if line.strip() == '.. tabs::':

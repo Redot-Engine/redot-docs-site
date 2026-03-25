@@ -2,8 +2,9 @@ import os
 import re
 import sys
 import argparse
+import shutil
 
-def convert_rst_to_md(rst_content):
+def convert_rst_to_md(rst_content, source_dir=None):
     lines = rst_content.splitlines()
     md_lines = []
     
@@ -55,6 +56,17 @@ def convert_rst_to_md(rst_content):
         text = re.sub(r'__JSX_TABITEM_ATTRS_START__(.*)__JSX_TABITEM_ATTRS_END__', r'<TabItem \1>', text)
         
         return text
+
+    def get_static_path(path):
+        if not source_dir:
+            return f"/{path}"
+        
+        full_source_path = os.path.normpath(os.path.join(source_dir, path))
+        try:
+            rel_path = os.path.relpath(full_source_path, 'docs')
+            return f"/{rel_path}"
+        except ValueError:
+            return f"/{path}"
 
     while i < len(lines):
         line = lines[i]
@@ -322,15 +334,115 @@ def convert_rst_to_md(rst_content):
         
         # Multiline :ref:
         
-        # Images
-        match_img = re.match(r'^\.\.\s+(?:image|figure)::\s+(.*)', line)
+        # Images and Figures
+        match_img = re.match(r'^\.\.\s+(image|figure)::\s+(.*)', line)
         if match_img:
-            img_path = match_img.group(1).strip()
-            md_lines.append(f'![Image]({img_path})')
+            directive_type = match_img.group(1)
+            img_path = match_img.group(2).strip()
             i += 1
-            # Skip image options
-            while i < len(lines) and (lines[i].strip().startswith(':') or (not lines[i].strip() and i+1 < len(lines) and lines[i+1].strip().startswith(':'))):
-                i += 1
+            
+            options = {}
+            while i < len(lines):
+                if not lines[i].strip():
+                    # Check if next line is an option or end of directive
+                    next_i = i + 1
+                    while next_i < len(lines) and not lines[next_i].strip():
+                        next_i += 1
+                    if next_i < len(lines) and lines[next_i].strip().startswith(':'):
+                        i = next_i
+                        continue
+                    else:
+                        break
+                
+                match_opt = re.match(r'^\s+:([^:]+):\s*(.*)', lines[i])
+                if match_opt:
+                    opt_name = match_opt.group(1).strip()
+                    opt_val = match_opt.group(2).strip()
+                    options[opt_name] = opt_val
+                    i += 1
+                else:
+                    break
+            
+            # For figures, the caption is the content after options
+            caption_lines = []
+            if directive_type == 'figure':
+                # Skip empty lines before caption
+                while i < len(lines) and not lines[i].strip():
+                    i += 1
+                
+                if i < len(lines):
+                    # Check if the line is indented, which means it's part of the figure directive
+                    first_line = lines[i]
+                    indent_match = re.match(r'^(\s+)', first_line)
+                    if indent_match:
+                        indent_str = indent_match.group(1)
+                        indent = len(indent_str)
+                        while i < len(lines):
+                            if not lines[i].strip():
+                                caption_lines.append("")
+                                i += 1
+                                continue
+                            
+                            curr_indent_match = re.match(r'^(\s+)', lines[i])
+                            if curr_indent_match and len(curr_indent_match.group(1)) >= indent:
+                                caption_lines.append(lines[i][indent:])
+                                i += 1
+                            else:
+                                break
+            
+            # Clean up trailing and leading empty lines in caption
+            while caption_lines and not caption_lines[-1].strip():
+                caption_lines.pop()
+            while caption_lines and not caption_lines[0].strip():
+                caption_lines.pop(0)
+            
+            if (directive_type == 'figure' and (caption_lines or options)) or (directive_type == 'image' and options):
+                md_lines.append('')
+                if directive_type == 'figure':
+                    md_lines.append('<figure>')
+                
+                img_static_path = get_static_path(img_path)
+                img_tag_parts = [f'src="{img_static_path}"']
+                if 'alt' in options:
+                    img_tag_parts.append(f'alt="{options["alt"]}"')
+                elif caption_lines:
+                    # Use first line of caption as alt text if alt is missing
+                    alt_text = " ".join([l for l in caption_lines if l.strip()]).strip()
+                    # Basic escaping for quotes
+                    alt_text = alt_text.replace('"', '&quot;')
+                    img_tag_parts.append(f'alt="{alt_text}"')
+                
+                # Handle width
+                if 'width' in options:
+                    width = options['width']
+                    img_tag_parts.append(f'width="{width}"')
+                
+                # Handle align for img if it's not a figure
+                if directive_type == 'image' and 'align' in options:
+                     # This is tricky with plain HTML, might need a div or style. 
+                     # For now let's just add it as an attribute which might be ignored or handled by CSS.
+                     img_tag_parts.append(f'align="{options["align"]}"')
+                
+                indent_prefix = '  ' if directive_type == 'figure' else ''
+                img_tag = f'{indent_prefix}<img {" ".join(img_tag_parts)} />'
+                md_lines.append(img_tag)
+                
+                if directive_type == 'figure' and caption_lines:
+                    md_lines.append('  <figcaption>')
+                    # Process caption content (might have inline markup)
+                    caption_text = "\n".join(caption_lines).strip()
+                    processed_caption = apply_inline_replacements(escape_angle_brackets(caption_text))
+                    md_lines.append(f'    {processed_caption}')
+                    md_lines.append('  </figcaption>')
+                
+                if directive_type == 'figure':
+                    md_lines.append('</figure>')
+                md_lines.append('')
+            else:
+                # Simple image
+                img_static_path = get_static_path(img_path)
+                md_lines.append(f'![Image]({img_static_path})')
+            
             continue
 
         # Video directive
@@ -353,7 +465,8 @@ def convert_rst_to_md(rst_content):
                     break
             
             # Construct <video> tag
-            video_attrs = [f'src="/{video_path}"', 'controls']
+            video_static_path = get_static_path(video_path)
+            video_attrs = [f'src="{video_static_path}"', 'controls']
             if 'autoplay' in options: video_attrs.append('autoplay')
             if 'loop' in options: video_attrs.append('loop')
             if 'muted' in options: video_attrs.append('muted')
@@ -527,11 +640,45 @@ def process_file(directory, filename):
     try:
         with open(rst_path, 'r', encoding='utf-8') as f:
             content = f.read()
-        md_content = convert_rst_to_md(content)
+        
+        # Copy assets referenced in the content
+        copy_assets(content, directory)
+            
+        md_content = convert_rst_to_md(content, source_dir=directory)
         with open(md_path, 'w', encoding='utf-8') as f:
             f.write(md_content)
     except Exception as e:
         print(f"Failed to convert {rst_path}: {e}")
+
+def copy_assets(content, source_dir):
+    # Find all image/figure/video paths
+    # This is a bit redundant with the parsing in convert_rst_to_md but easier for now
+    asset_matches = re.findall(r'^\.\.\s+(?:image|figure|video)::\s+(.*)', content, re.MULTILINE)
+    
+    for asset_path in asset_matches:
+        asset_path = asset_path.strip()
+        # Resolve path relative to source_dir
+        full_source_path = os.path.normpath(os.path.join(source_dir, asset_path))
+        
+        if os.path.exists(full_source_path):
+            # Target path in static folder
+            # We want to keep the relative path structure but starting from static
+            # e.g. docs/tutorials/3d/img/test.png -> static/tutorials/3d/img/test.png
+            # Wait, the user said they are not in static content folder.
+            # If we put them in static/tutorials/3d/img/test.png, the URL should be /tutorials/3d/img/test.png
+            
+            # Let's find the relative path from project root 'docs' folder
+            try:
+                rel_path = os.path.relpath(full_source_path, 'docs')
+                target_path = os.path.join('static', rel_path)
+                
+                os.makedirs(os.path.dirname(target_path), exist_ok=True)
+                if not os.path.exists(target_path) or os.path.getmtime(full_source_path) > os.path.getmtime(target_path):
+                    shutil.copy2(full_source_path, target_path)
+                    print(f"  Copied asset: {full_source_path} -> {target_path}")
+            except ValueError:
+                # Path not under docs, skip
+                pass
 
 if __name__ == '__main__':
     main()

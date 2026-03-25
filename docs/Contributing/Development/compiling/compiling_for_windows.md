@@ -536,7 +536,7 @@ However, if you are using custom modules or custom engine code, you
 may instead want to configure your binaries as custom export templates
 here:
 
-![Image](img/wintemplates.webp)
+![Image](/Contributing/Development/compiling/img/wintemplates.webp)
 
 Select matching architecture in the export config.
 

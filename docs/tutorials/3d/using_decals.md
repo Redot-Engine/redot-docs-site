@@ -29,7 +29,7 @@ On this page, you'll learn:
 :::info
 
 The Godot demo projects repository contains a
-[3D decals demo ](https://github.com/godotengine/godot-demo-projects/tree/master/3d/decals)_.
+[3D decals demo](https://github.com/godotengine/godot-demo-projects/tree/master/3d/decals)_.
 
 If you're looking to write arbitrary 3D text on top of a surface, use
 [doc_3d_text](doc_3d_text) placed close to a surface instead of a Decal node.
@@ -51,9 +51,12 @@ Since decals can inject their own :abbr:`PBR (Physically-Based Rendering)`
 properties on top of the projected surfaces, they can also be used to create
 footprints or wet puddles.
 
-![Image](img/decals_dirt.webp)
-
-   Dirt added on top of level geometry using decals
+<figure>
+  <img src="/img/decals_dirt.webp" alt="Dirt added on top of level geometry using decals" />
+  <figcaption>
+    Dirt added on top of level geometry using decals
+  </figcaption>
+</figure>
 
 ### Dynamic gameplay elements
 
@@ -82,9 +85,12 @@ ambient occlusion for situations where SSAO is too expensive or too unstable due
 to its screen-space nature. For example, vehicles' underside shadows are
 well-represented using blob shadows.
 
-![Image](img/decals_blob_shadow.webp)
-
-   Blob shadow under object comparison
+<figure>
+  <img src="/img/decals_blob_shadow.webp" alt="Blob shadow under object comparison" />
+  <figcaption>
+    Blob shadow under object comparison
+  </figcaption>
+</figure>
 
 ## Quick start guide
 
@@ -199,9 +205,12 @@ the AABB length of the largest decal that may overlap it. To make this decal
 drawn behind other decals instead, set the **Sorting Offset** to the same
 negative value.
 
-![Image](img/decals_sorting_offset.webp)
-
-   VisualInstance3D Sorting Offset comparison on Decals
+<figure>
+  <img src="/img/decals_sorting_offset.webp" alt="VisualInstance3D Sorting Offset comparison on Decals" />
+  <figcaption>
+    VisualInstance3D Sorting Offset comparison on Decals
+  </figcaption>
+</figure>
 
 ## Tweaking performance and quality
 
@@ -243,8 +252,8 @@ When using the Forward+ renderer, Godot uses a *clustering* approach for
 decal rendering. As many decals as desired can be added (as long as
 performance allows). However, there's still a default limit of 512 *clustered
 elements* that can be present in the current camera view. A clustered element is
-an omni light, a spot light, a [decal ](doc_using_decals) or a
-[reflection probe ](doc_reflection_probes). This limit can be increased by adjusting
+an omni light, a spot light, a [decal](doc_using_decals) or a
+[reflection probe](doc_reflection_probes). This limit can be increased by adjusting
 [Max Clustered Elements](class_ProjectSettings_property_rendering/limits/cluster_builder/max_clustered_elements)
 in **Project Settings &gt; Rendering &gt; Limits &gt; Cluster Builder**.
 

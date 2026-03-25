@@ -25,7 +25,7 @@ The graphic is based on a node tree of the following form: ``Root Window (embed 
 ``CanvasItem``. There are more complex combinations possible, like deeply nested Window and
 SubViewports, however this example intends to provide an overview of the methodology in general.
 
-![Image](img/transforms_overview.webp)
+<img src="/Contributing/Development/core_and_modules/img/transforms_overview.webp" />
 
 Click graphic to enlarge.
 

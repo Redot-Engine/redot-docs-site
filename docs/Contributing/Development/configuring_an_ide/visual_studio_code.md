@@ -17,15 +17,21 @@ by [Microsoft](https://microsoft.com) (not to be confused with [doc_configuring_
   **File &gt; Open Folder...**.
 - Press `Ctrl + Shift + P` to open the command prompt window and enter *Configure Task*.
 
-![Image](img/vscode_configure_task.png)
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/vscode_configure_task.png" />
+</figure>
 
 - Select the **Create tasks.json file from template** option.
 
-![Image](img/vscode_create_tasksjson.png)
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/vscode_create_tasksjson.png" />
+</figure>
 
 - Then select **Others**.
 
-![Image](img/vscode_create_tasksjson_others.png)
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/vscode_create_tasksjson_others.png" />
+</figure>
 
 - If there is no such option as **Create tasks.json file from template** available, either delete the file if it already exists in your folder or create a ``.vscode/tasks.json`` file manually. See [Tasks in Visual Studio Code](https://code.visualstudio.com/docs/editor/tasks#_custom-tasks) for more details on tasks.
 
@@ -46,9 +52,12 @@ by [Microsoft](https://microsoft.com) (not to be confused with [doc_configuring_
 
 ```
 
-![Image](img/vscode_3_tasks.json.png)
-
-   An example of a filled out ``tasks.json``.
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/vscode_3_tasks.json.png" alt="An example of a filled out ``tasks.json``." />
+  <figcaption>
+    An example of a filled out ``tasks.json``.
+  </figcaption>
+</figure>
 
 Arguments can be different based on your own setup and needs. See
 [doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem) for a full list of arguments.
@@ -60,7 +69,9 @@ To run and debug the project you need to create a new configuration in the ``lau
 - Press `Ctrl + Shift + D` to open the Run panel.
 - If ``launch.json`` file is missing you will be prompted to create a new one.
 
-![Image](img/vscode_1_create_launch.json.png)
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/vscode_1_create_launch.json.png" />
+</figure>
 
 - Select **C++ (GDB/LLDB)**. There may be another platform-specific option here. If selected,
   adjust the configuration example provided accordingly.
@@ -171,9 +182,12 @@ To run and debug the project you need to create a new configuration in the ``lau
 
 </Tabs>
 
-![Image](img/vscode_2_launch.json.png)
-
-   An example of a filled out ``launch.json``.
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/vscode_2_launch.json.png" alt="An example of a filled out ``launch.json``." />
+  <figcaption>
+    An example of a filled out ``launch.json``.
+  </figcaption>
+</figure>
 
 :::note
 
@@ -201,7 +215,9 @@ To fix include errors you may be having, you need to configure some settings in 
 
 - Edit the C/C++ Configuration file either with the UI or with text:
 
-![Image](img/vscode_edit_configurations.webp)
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/vscode_edit_configurations.webp" />
+</figure>
 
 - Add an include path for your platform, for example, ``${workspaceFolder}/platform/windows``.
 

@@ -101,7 +101,7 @@ Comparison between alpha blending (left) and alpha scissor (right) transparency:
 :::warning
 
 Alpha-blended transparency has several
-[limitations ](doc_3d_rendering_limitations_transparency_sorting):
+[limitations](doc_3d_rendering_limitations_transparency_sorting):
 
 - Alpha-blended materials are significantly slower to render, especially if
   they overlap.
@@ -132,7 +132,8 @@ This property is only visible when the transparency mode is
 
 While alpha scissor and alpha hash materials are faster to render than
 alpha-blended materials, they exhibit hard edges between opaque and transparent
-regions. While it's possible to use post-processing-based [antialiasing techniques ](doc_3d_antialiasing) such as FXAA and TAA, this is not always
+regions. While it's possible to use post-processing-based :ref:`antialiasing
+techniques &lt;doc_3d_antialiasing&gt;` such as FXAA and TAA, this is not always
 desired as these techniques tend to make the final result look blurrier or
 exhibit ghosting artifacts.
 
@@ -242,7 +243,9 @@ and works very well with the *Render Priority* property of Material
 Materials support three shading modes: **Per-Pixel**, **Per-Vertex**, and
 **Unshaded**.
 
-![Image](img/standard_material_shading_modes.webp)
+<figure>
+  <img src="/img/standard_material_shading_modes.webp" alt="Three spheres showing the Per-Pixel, Per-Vertex, and Unshaded modes." />
+</figure>
 
 The **Per-Pixel** shading mode calculates lighting for each pixel, and is a good
 fit for most use cases. However, in some cases you may want to increase
@@ -259,9 +262,12 @@ performance, especially when the camera is close to particles.
 
 You can also use per-vertex lighting to achieve a retro look.
 
-![Image](img/standard_material_shading_modes_textured.webp)
-  
-  Texture from [AmbientCG ](https://ambientcg.com/view?id=Bricks051)_
+<figure>
+  <img src="/img/standard_material_shading_modes_textured.webp" alt="Two cubes with a brick texture, one shaded and one unshaded." />
+  <figcaption>
+    Texture from [AmbientCG](https://ambientcg.com/view?id=Bricks051)_
+  </figcaption>
+</figure>
 
 The **Unshaded** shading mode does not calculate lighting at all. Instead, the
 **Albedo** color is output directly. Lights will not affect the material at all,
@@ -367,8 +373,8 @@ the right combination of *Metallic* and *Roughness*.
 ## Emission
 
 *Emission* specifies how much light is emitted by the material (keep in mind this
-does not include light surrounding geometry unless [VoxelGI ](doc_using_voxel_gi)
-or [SDFGI ](doc_using_sdfgi) are used). This value is added to the resulting
+does not include light surrounding geometry unless [VoxelGI](doc_using_voxel_gi)
+or [SDFGI](doc_using_sdfgi) are used). This value is added to the resulting
 final image and is not affected by other lighting in the scene.
 
 ![Image](img/spatial_material15.png)
@@ -391,7 +397,7 @@ be converted so its Y axis is flipped.
 
 More information about normal maps (including a coordinate order table for
 popular engines) can be found
-[here ](http://wiki.polycount.com/wiki/Normal_Map_Technical_Details)_.
+[here](http://wiki.polycount.com/wiki/Normal_Map_Technical_Details)_.
 
 :::
 
@@ -491,7 +497,7 @@ Refraction is implemented as a screen-space effect and forces the material
 to be transparent. This makes the effect relatively fast, but this results
 in some limitations:
 
-- [Transparency sorting ](doc_3d_rendering_limitations_transparency_sorting)
+- [Transparency sorting](doc_3d_rendering_limitations_transparency_sorting)
   issues may occur.
 - The refractive material cannot refract onto itself, or onto other
   transparent materials. A refractive material behind another transparent
@@ -602,7 +608,7 @@ faces the camera:
   face the camera's viewing plane.
 * **Y-Billboard:** The object's X axis will always be aligned with the camera's viewing plane.
 * **Particle Billboard:** Most suited for particle systems, because it allows
-  specifying [flipbook animation ](doc_process_material_properties_animation).
+  specifying [flipbook animation](doc_process_material_properties_animation).
 
 ![Image](img/spatial_material9.webp)
 

@@ -14,7 +14,7 @@ default, physical light units are disabled by default.
 If you aim for photorealism in your project, using real world units as a basis
 can help make things easier to adjust. References for real world materials,
 lights and scene brightness are wildly available on websites such as
-[Physically Based ](https://physicallybased.info/)_.
+[Physically Based](https://physicallybased.info/)_.
 
 Using real world units in Godot can also be useful when porting a scene from
 other 3D software that uses physical light units (such as Blender).
@@ -153,7 +153,7 @@ After enabling physical light units, a new property becomes available to edit in
 the [class_Environment](class_Environment) resource:
 
 - **Background Intensity:** The background sky's intensity in
-  [nits ](https://en.wikipedia.org/wiki/Candela_per_square_metre)_
+  [nits](https://en.wikipedia.org/wiki/Candela_per_square_metre)_
   (candelas per square meter). This also affects ambient and reflected light if
   their respective modes are set to **Background**. If a custom **Background Energy**
   is set, this energy is multiplied by the intensity.
@@ -164,7 +164,7 @@ After enabling physical light units, 2 new properties become available in Light3
 
 - **Intensity:** The light's intensity in `lux
   &lt;https://en.wikipedia.org/wiki/Lux&gt;`__ (DirectionalLight3D) or
-  [lumens ](https://en.wikipedia.org/wiki/Lumen_(unit))_ (OmniLight3D/SpotLight3D).
+  [lumens](https://en.wikipedia.org/wiki/Lumen_(unit))_ (OmniLight3D/SpotLight3D).
   If a custom **Energy** is set, this energy is multiplied by the intensity.
 - **Temperature:** The light's *color temperature* defined in Kelvin.
   If a custom **Color** is set, this color is multiplied by the color temperature.
@@ -201,9 +201,12 @@ The sun on a cloudy day is approximately 6500 Kelvin. On a clear day, the sun is
 between 5500 to 6000 Kelvin. On a clear day at sunrise or sunset, the sun ranges
 to around 1850 Kelvin.
 
-![Image](img/physical_light_units_color_temperature_chart.webp)
-
-   Color temperature chart from 1,000 Kelvin (left) to 12,500 Kelvin (right)
+<figure>
+  <img src="/img/physical_light_units_color_temperature_chart.webp" alt="Color temperature chart from 1,000 Kelvin (left) to 12,500 Kelvin (right)" />
+  <figcaption>
+    Color temperature chart from 1,000 Kelvin (left) to 12,500 Kelvin (right)
+  </figcaption>
+</figure>
 
 Other Light3D properties such as **Energy** and **Color** remain editable for
 animation purposes, and when you occasionally need to create lights with
@@ -268,5 +271,5 @@ also be enabled in the **Auto Exposure** section, with the following properties:
   auto exposure.
 
 EV100 is an exposure value (EV) measured at an ISO sensitivity of 100. See
-[this table ](https://en.wikipedia.org/wiki/Exposure_value#Tabulated_exposure_values)_
+[this table](https://en.wikipedia.org/wiki/Exposure_value#Tabulated_exposure_values)_
 for common EV100 values found in real life.

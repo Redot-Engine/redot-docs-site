@@ -474,9 +474,12 @@ interface. They're used in the sources, in the documentation, and you
 should always use them instead of synonyms, so the users know what
 you're talking about.
 
-![Image](img/editor-vocabulary-overview.png)
-
-   Overview of the interface and common vocabulary
+<figure>
+  <img src="/Contributing/Documentation/img/editor-vocabulary-overview.png" alt="Overview of the interface and common vocabulary" />
+  <figcaption>
+    Overview of the interface and common vocabulary
+  </figcaption>
+</figure>
 
 In the top left corner of the editor lie the ``main menus``. In the
 center, the buttons change the ``workspace``. And together the buttons

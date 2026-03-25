@@ -9,10 +9,10 @@ result. Light can come from several types of sources in a scene:
 - From the material itself, in the form of the emission color (though it does
   not affect nearby objects unless baked or screen-space indirect lighting is enabled).
 - Light nodes: DirectionalLight3D, OmniLight3D and SpotLight3D.
-- Ambient light in the [Environment ](class_Environment) or
+- Ambient light in the [Environment](class_Environment) or
   [doc_reflection_probes](doc_reflection_probes).
-- Global illumination ([LightmapGI ](doc_using_lightmap_gi),
-  [VoxelGI ](doc_using_voxel_gi) or [SDFGI ](doc_using_sdfgi)).
+- Global illumination ([LightmapGI](doc_using_lightmap_gi),
+  [VoxelGI](doc_using_voxel_gi) or [SDFGI](doc_using_sdfgi)).
 
 The emission color is a material property. You can read more about it
 in the [doc_standard_material_3d](doc_standard_material_3d) tutorial.
@@ -20,7 +20,7 @@ in the [doc_standard_material_3d](doc_standard_material_3d) tutorial.
 :::info
 
 You can compare various types of lights in action using the
-[3D Lights and Shadows demo project ](https://github.com/godotengine/godot-demo-projects/tree/master/3d/lights_and_shadows)_.
+[3D Lights and Shadows demo project](https://github.com/godotengine/godot-demo-projects/tree/master/3d/lights_and_shadows)_.
 
 :::
 
@@ -59,8 +59,8 @@ When using the Forward+ renderer, Godot uses a *clustering* approach for
 real-time lighting. As many lights as desired can be added (as long as
 performance allows). However, there's still a default limit of 512 *clustered
 elements* that can be present in the current camera view. A clustered element is
-an omni light, a spot light, a [decal ](doc_using_decals) or a
-[reflection probe ](doc_reflection_probes). This limit can be increased by adjusting
+an omni light, a spot light, a [decal](doc_using_decals) or a
+[reflection probe](doc_reflection_probes). This limit can be increased by adjusting
 [Max Clustered Elements](class_ProjectSettings_property_rendering/limits/cluster_builder/max_clustered_elements)
 in **Project Settings &gt; Rendering &gt; Limits &gt; Cluster Builder**.
 
@@ -89,10 +89,10 @@ your meshes into smaller portions can also help, especially for level geometry
 (which also improves culling efficiency).
 
 If you need to render more lights than possible in a given renderer,
-consider using [baked lightmaps ](doc_using_lightmap_gi) with lights' bake
+consider using [baked lightmaps](doc_using_lightmap_gi) with lights' bake
 mode set to **Static**. This allows lights to be fully baked, which also makes
 them much faster to render. You can also use emissive materials with any
-[global illumination ](doc_introduction_to_global_illumination) technique
+[global illumination](doc_introduction_to_global_illumination) technique
 as a replacement for light nodes that emit light over a large area.
 
 ## Shadow mapping
@@ -151,7 +151,7 @@ most shadow acne issues efficiently. The downside of increasing **Shadow Normal
 Bias** is that it can make shadows appear thinner for certain objects.
 
 Any sort of bias issues can be fixed by
-[increasing the shadow map resolution ](doc_lights_and_shadows_balancing_performance_and_quality),
+[increasing the shadow map resolution](doc_lights_and_shadows_balancing_performance_and_quality),
 at the cost of decreased performance.
 
 :::note
@@ -320,7 +320,7 @@ With the projector texture below, the following result is obtained:
 :::tip
 
 If you've acquired omni projectors in the form of cubemap images, you can use
-[this web-based conversion tool ](https://danilw.github.io/GLSL-howto/cubemap_to_panorama_js/cubemap_to_panorama.html)_
+[this web-based conversion tool](https://danilw.github.io/GLSL-howto/cubemap_to_panorama_js/cubemap_to_panorama.html)_
 to convert them to a single panorama image.
 
 :::
@@ -352,7 +352,7 @@ texture is assigned; you can increase **Energy** to compensate for this.
 
 Unlike omni light projectors, a spot light projector texture doesn't need to
 follow a special format to look correct. It will be mapped in a way similar to a
-[decal ](doc_using_decals).
+[decal](doc_using_decals).
 
 With the projector texture below, the following result is obtained:
 
@@ -438,7 +438,7 @@ more realistic*. In most cases, this should be kept at its default value of
 
 If positional shadows become too blurry after decreasing the shadow map size,
 you can counteract this by adjusting the
-[shadow atlas ](doc_lights_and_shadows_shadow_atlas) quadrants to contain
+[shadow atlas](doc_lights_and_shadows_shadow_atlas) quadrants to contain
 fewer shadows. This will allow each shadow to be rendered at a higher resolution.
 
 ### Shadow filter mode

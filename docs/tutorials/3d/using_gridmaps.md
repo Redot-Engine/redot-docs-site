@@ -3,8 +3,8 @@
 
 ## Introduction
 
-[Gridmaps ](class_GridMap) are a tool for creating 3D
-game levels, similar to the way [TileMap ](doc_using_tilemaps)
+[Gridmaps](class_GridMap) are a tool for creating 3D
+game levels, similar to the way [TileMap](doc_using_tilemaps)
 works in 2D. You start with a predefined collection of 3D meshes (a
 [class_MeshLibrary](class_MeshLibrary)) that can be placed on a grid,
 as if you were building a level with an unlimited amount of Lego blocks.
@@ -15,7 +15,7 @@ would do with the tiles of a tilemap.
 ## Example project
 
 To learn how GridMaps work, start by downloading the sample project:
-[gridmap_starter.zip ](https://github.com/godotengine/godot-docs-project-starters/releases/download/latest-4.x/gridmap_starter.zip).
+[gridmap_starter.zip](https://github.com/godotengine/godot-docs-project-starters/releases/download/latest-4.x/gridmap_starter.zip).
 
 Unzip this project and add it to the Project Manager using the "Import"
 button.

@@ -16,7 +16,7 @@ On this page, you'll learn:
 :::info
 
 You can see how mesh LOD works in action using the
-[Occlusion Culling and Mesh LOD demo project ](https://github.com/godotengine/godot-demo-projects/tree/master/3d/occlusion_culling_mesh_lod)_.
+[Occlusion Culling and Mesh LOD demo project](https://github.com/godotengine/godot-demo-projects/tree/master/3d/occlusion_culling_mesh_lod)_.
 
 :::
 
@@ -34,7 +34,7 @@ decimation and LOD configuration is becoming increasingly popular.
 Godot provides a way to automatically generate less detailed meshes for LOD
 usage on import, then use those LOD meshes when needed automatically. This is
 completely transparent to the user.
-The [meshoptimizer ](https://meshoptimizer.org/)_ library is used for LOD mesh
+The [meshoptimizer](https://meshoptimizer.org/)_ library is used for LOD mesh
 generation behind the scenes.
 
 Mesh LOD works with any node that draws 3D meshes. This includes MeshInstance3D,
@@ -45,15 +45,21 @@ MultiMeshInstance3D, GPUParticles3D and CPUParticles3D.
 Here is an example of LOD meshes generated on import. Lower detailed meshes
 will be used when the camera is far away from the object:
 
-![Image](img/mesh_lod_comparison_shaded.png)
-
-   From most detailed (left) to least detailed (right), shaded view
+<figure>
+  <img src="/img/mesh_lod_comparison_shaded.png" alt="From most detailed (left) to least detailed (right), shaded view" />
+  <figcaption>
+    From most detailed (left) to least detailed (right), shaded view
+  </figcaption>
+</figure>
 
 Here's the same image with wireframe rendering to make the decimation easier to see:
 
-![Image](img/mesh_lod_comparison_wireframe.png)
-
-   From most detailed (left) to least detailed (right), wireframe view
+<figure>
+  <img src="/img/mesh_lod_comparison_wireframe.png" alt="From most detailed (left) to least detailed (right), wireframe view" />
+  <figcaption>
+    From most detailed (left) to least detailed (right), wireframe view
+  </figcaption>
+</figure>
 
 :::info
 
@@ -78,9 +84,12 @@ To make an OBJ file have mesh LOD generated for it, select it in the FileSystem
 dock, go to the Import dock, change its **Import As** option to **Scene** then
 click **Reimport**:
 
-![Image](img/mesh_lod_obj_import.png)
-
-   Changing the import type on an OBJ file in the Import dock
+<figure>
+  <img src="/img/mesh_lod_obj_import.png" alt="Changing the import type on an OBJ file in the Import dock" />
+  <figcaption>
+    Changing the import type on an OBJ file in the Import dock
+  </figcaption>
+</figure>
 
 This will require restarting the editor after clicking **Reimport**.
 
@@ -95,7 +104,7 @@ generation for it in the Import dock. This will also speed up resource
 importing. This can be done globally in the 3D scene's import options, or on
 a per-mesh basis using the Advanced Import Settings dialog.
 
-See [Importing 3D scenes ](doc_importing_3d_scenes_using_the_import_dock)
+See [Importing 3D scenes](doc_importing_3d_scenes_using_the_import_dock)
 for more information.
 
 :::
@@ -107,9 +116,12 @@ To disable mesh LOD in the editor for comparison purposes, use the
 in the top-left corner of the 3D viewport (labeled **Perspective** or
 **Orthogonal** depending on camera mode):
 
-![Image](img/mesh_lod_disable_lod.png)
-
-   Disabling mesh LOD in the 3D viewport's top-left menu
+<figure>
+  <img src="/img/mesh_lod_disable_lod.png" alt="Disabling mesh LOD in the 3D viewport's top-left menu" />
+  <figcaption>
+    Disabling mesh LOD in the 3D viewport's top-left menu
+  </figcaption>
+</figure>
 
 Enable **View Frame Time** in the same menu to view FPS in the top-right corner.
 Also enable **View Information** in the same menu to view the number of primitives

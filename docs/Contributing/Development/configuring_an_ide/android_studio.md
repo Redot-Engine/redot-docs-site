@@ -11,9 +11,12 @@ work on Godot's core engine as well as the Android platform codebase.
 
 - From the Android Studio's welcome window select **Open**.
 
-![Image](img/android_studio_setup_project_1.png)
-
-   Android Studio's welcome window.
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/android_studio_setup_project_1.png" alt="Android Studio's welcome window." />
+  <figcaption>
+    Android Studio's welcome window.
+  </figcaption>
+</figure>
 
 - Navigate to ``&lt;Godot root directory&gt;/platform/android/java`` and select the ``settings.gradle`` file.
 - Android Studio will import and index the project.

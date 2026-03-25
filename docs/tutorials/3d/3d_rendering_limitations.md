@@ -11,7 +11,7 @@ limitations, you need to understand them.
 
 On desktops and laptops, textures larger than 8192×8192 may not be supported on
 older devices. You can check your target GPU's limitations on
-[GPUinfo.org ](https://www.gpuinfo.org/)_.
+[GPUinfo.org](https://www.gpuinfo.org/)_.
 
 Mobile GPUs are typically limited to 4096×4096 textures. Also, some mobile GPUs
 don't support repeating non-power-of-two-sized textures. Therefore, if you want
@@ -50,13 +50,16 @@ There are two main ways to alleviate banding:
   rendered with low color precision, which means it will work when using the
   Mobile and Compatibility rendering methods.
 
-![Image](img/3d_rendering_limitations_banding.webp)
-
-   Color banding comparison (contrast increased for more visibility)
+<figure>
+  <img src="/img/3d_rendering_limitations_banding.webp" alt="Color banding comparison (contrast increased for more visibility)" />
+  <figcaption>
+    Color banding comparison (contrast increased for more visibility)
+  </figcaption>
+</figure>
 
 :::info
 
-See [Banding in Games: A Noisy Rant (PDF) ](https://loopit.dk/banding_in_games.pdf)_
+See [Banding in Games: A Noisy Rant (PDF)](https://loopit.dk/banding_in_games.pdf)_
 for more details about banding and ways to combat it.
 
 :::
@@ -87,9 +90,12 @@ Depending on the scene and viewing conditions, you may also be able to move the
 Z-fighting objects further apart without the difference being visible to the
 player.
 
-![Image](img/3d_rendering_limitations_z_fighting.webp)
-
-   Z-fighting comparison (before and after tweaking the scene by offsetting the Label3D away from the floor)
+<figure>
+  <img src="/img/3d_rendering_limitations_z_fighting.webp" alt="Z-fighting comparison (before and after tweaking the scene by offsetting the Label3D away from the floor)" />
+  <figcaption>
+    Z-fighting comparison (before and after tweaking the scene by offsetting the Label3D away from the floor)
+  </figcaption>
+</figure>
 
 ## Transparency sorting
 
@@ -98,9 +104,9 @@ objects are sorted back to front before being drawn based on the Node3D's
 position, not the vertex position in world space. Due to this, overlapping
 objects may often be sorted out of order. To fix improperly sorted objects,
 tweak the material's
-[Render Priority ](class_Material_property_render_priority)
+[Render Priority](class_Material_property_render_priority)
 property or the node's
-[Sorting Offset ](class_VisualInstance3D_property_sorting_offset).
+[Sorting Offset](class_VisualInstance3D_property_sorting_offset).
 Render Priority will force specific materials to appear in front of or behind
 other transparent materials, while Sorting Offset will move the object
 forward or backward for the purpose of sorting. Even then, these may not
@@ -133,6 +139,9 @@ this feature. There are still several ways to avoid this problem:
   distance fade mode **Pixel Dither** or **Object Dither** instead of
   **Pixel Alpha**. This will make the material opaque, which also speeds up rendering.
 
-![Image](img/3d_rendering_limitations_transparency_sorting.webp)
-
-   Transparency sorting comparison (alpha-blended materials on the left, alpha scissor materials on the right)
+<figure>
+  <img src="/img/3d_rendering_limitations_transparency_sorting.webp" alt="Transparency sorting comparison (alpha-blended materials on the left, alpha scissor materials on the right)" />
+  <figcaption>
+    Transparency sorting comparison (alpha-blended materials on the left, alpha scissor materials on the right)
+  </figcaption>
+</figure>

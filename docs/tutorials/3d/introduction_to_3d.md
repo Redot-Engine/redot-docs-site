@@ -9,11 +9,14 @@ are present in both 2D and 3D versions. In fact, it is worth checking
 the 3D platformer tutorial, or the 3D kinematic character tutorials,
 which are almost identical to their 2D counterparts.
 
-![Image](img/godot-tps-demo.webp)
-
-   Godot Third Person Shooter (TPS) Demo, available on the 
-   [Github repository ](https://github.com/godotengine/tps-demo)_ or the 
-   [Asset Library ](doc_project_manager_downloading_demos).
+<figure>
+  <img src="/img/godot-tps-demo.webp" alt="An example 3D game demo created using Godot" />
+  <figcaption>
+    Godot Third Person Shooter (TPS) Demo, available on the 
+[Github repository](https://github.com/godotengine/tps-demo)_ or the 
+[Asset Library](doc_project_manager_downloading_demos).
+  </figcaption>
+</figure>
 
 In 3D, math is a little more complex than in 2D. For an introduction to the
 relevant math written for game developers, not mathemeticians or engineers,
@@ -29,7 +32,7 @@ selected.
 
 Similar to 2D, the tabs below the workspace selector are used to change between
 currently opened scenes or create a new one using the plus (+) button. The left and
-right docks should be familiar from [editor introduction ](doc_editor_introduction).
+right docks should be familiar from [editor introduction](doc_editor_introduction).
 
 Below the scene selector, the main toolbar is visible, and beneath the main toolbar
 is the 3D viewport.
@@ -71,7 +74,7 @@ left to right:
   Using `Ctrl + G` ungroups them. Additionally, clicking the ungroup button in 
   the scene tree performs the same action.
 - **Use Local Space** (`T`): If enabled, gizmos of a node are drawn using the current node's 
-  rotation angle instead of the [global viewport axes ](doc_introduction_to_3d_coordinate_system).
+  rotation angle instead of the [global viewport axes](doc_introduction_to_3d_coordinate_system).
 - **Use Snap** (`Y`): If enabled, movement, and rotation snap to grid. Snapping can also 
   temporarily be activated using `Ctrl` while performing the action.
   The settings for changing snap options are explained below.
@@ -133,7 +136,7 @@ nodes within the viewport.
 
 ### Coordinate system
 
-Godot uses the [metric ](https://en.wikipedia.org/wiki/Metric_system)_
+Godot uses the [metric](https://en.wikipedia.org/wiki/Metric_system)_
 system for everything in 3D, with 1 unit being equal to 1 meter.
 Physics and other areas are tuned for this scale. Therefore, attempting to use a
 different scale is usually a bad idea (unless you know what you are doing).
@@ -156,9 +159,12 @@ towards" direction. This convention roughly means that:
 
 See this chart for comparison with other 3D software:
 
-![Image](img/introduction_to_3d_coordinate_systems.webp)
-
-   Image by [Freya Holmér ](https://twitter.com/FreyaHolmer)_
+<figure>
+  <img src="/img/introduction_to_3d_coordinate_systems.webp" alt="3D coordinate systems comparison chart" />
+  <figcaption>
+    Image by [Freya Holmér](https://twitter.com/FreyaHolmer)_
+  </figcaption>
+</figure>
 
 ### Space and manipulation gizmos
 
@@ -270,9 +276,9 @@ More shortcuts can be found on the
 
 ## Node3D node
 
-[Node2D ](class_Node2D) is the base node for 2D.
-[Control ](class_Control) is the base node for everything GUI.
-Following this reasoning, the 3D engine uses the [Node3D ](class_Node3D)
+[Node2D](class_Node2D) is the base node for 2D.
+[Control](class_Control) is the base node for everything GUI.
+Following this reasoning, the 3D engine uses the [Node3D](class_Node3D)
 node for everything 3D.
 
 ![Image](img/tuto_3d1.webp)
@@ -280,7 +286,7 @@ node for everything 3D.
 Node3Ds have a local transform, which is relative to the parent
 node (as long as the parent node is also of **or inherits from** the type
 Node3D). This transform can be accessed as a 3×4
-[Transform3D ](class_Transform3D), or as 3 [Vector3 ](class_Vector3)
+[Transform3D](class_Transform3D), or as 3 [Vector3](class_Vector3)
 members representing location, Euler rotation (X, Y and Z angles) and
 scale.
 
@@ -309,9 +315,9 @@ See :ref:`doc_importing_3d_scenes` for more on importing.
 ### Generated geometry
 
 It is possible to create custom geometry by using the
-[ArrayMesh ](class_ArrayMesh) resource directly. Simply create your arrays
-and use the [ArrayMesh.add_surface_from_arrays() ](class_ArrayMesh_method_add_surface_from_arrays)
-function. A helper class is also available, [SurfaceTool ](class_SurfaceTool),
+[ArrayMesh](class_ArrayMesh) resource directly. Simply create your arrays
+and use the [ArrayMesh.add_surface_from_arrays()](class_ArrayMesh_method_add_surface_from_arrays)
+function. A helper class is also available, [SurfaceTool](class_SurfaceTool),
 which provides a more straightforward API and helpers for indexing,
 generating normals, tangents, etc.
 
@@ -328,8 +334,8 @@ To learn about prototyping inside Godot or using external tools, see
 ### Immediate geometry
 
 If, instead, you need to generate simple geometry that will be updated often,
-Godot provides a special [ImmediateMesh ](class_ImmediateMesh) resource
-that can be used in a [MeshInstance3D ](class_MeshInstance3D) node.
+Godot provides a special [ImmediateMesh](class_ImmediateMesh) resource
+that can be used in a [MeshInstance3D](class_MeshInstance3D) node.
 This provides an OpenGL 1.x-style immediate-mode API to create points, lines,
 triangles, etc.
 
@@ -338,8 +344,8 @@ triangles, etc.
 While Godot packs a powerful 2D engine, many types of games use 2D in a
 3D environment. By using a fixed camera (either orthogonal or
 perspective) that does not rotate, nodes such as
-[Sprite3D ](class_Sprite3D) and
-[AnimatedSprite3D ](class_AnimatedSprite3D)
+[Sprite3D](class_Sprite3D) and
+[AnimatedSprite3D](class_AnimatedSprite3D)
 can be used to create 2D games that take advantage of mixing with 3D
 backgrounds, more realistic parallax, lighting/shadow effects, etc.
 
@@ -350,15 +356,15 @@ of working in pixels.
 ## Environment
 
 Besides editing a scene, it is often common to edit the environment.
-Godot provides a [WorldEnvironment ](class_WorldEnvironment)
+Godot provides a [WorldEnvironment](class_WorldEnvironment)
 node that allows changing the background color, mode (as in, put a
 skybox), and applying several types of built-in post-processing effects.
 Environments can also be overridden in the Camera.
 
 ### Preview environment and light
 
-By default, any 3D scene that doesn't have a [WorldEnvironment ](class_WorldEnvironment)
-node, or a [DirectionalLight3D ](class_DirectionalLight3D), will have
+By default, any 3D scene that doesn't have a [WorldEnvironment](class_WorldEnvironment)
+node, or a [DirectionalLight3D](class_DirectionalLight3D), will have
 a preview turned on for what it's missing to light the scene.
 
 The preview light and environment will only be visible in the scene while
@@ -383,7 +389,7 @@ light and environment for.
 ### Cameras
 
 No matter how many objects are placed in the 3D space, nothing will be
-displayed unless a [Camera3D ](class_Camera3D) is
+displayed unless a [Camera3D](class_Camera3D) is
 also added to the scene. Cameras can work in either orthogonal or
 perspective projections:
 

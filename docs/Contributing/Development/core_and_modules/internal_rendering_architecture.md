@@ -285,7 +285,7 @@ RenderingDevice presents a similar level of abstraction as WebGPU.
 
 This diagram represents the structure of rendering classes in Godot, including the RenderingDevice abstraction:
 
-![Image](img/rendering_architecture_diagram.webp)
+![Image](/Contributing/Development/core_and_modules/img/rendering_architecture_diagram.webp)
 
 [View at full size](https://raw.githubusercontent.com/godotengine/godot-docs/master/contributing/development/core_and_modules/img/rendering_architecture_diagram.webp)_
 

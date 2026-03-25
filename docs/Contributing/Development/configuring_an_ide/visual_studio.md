@@ -23,7 +23,9 @@ with the solution file, it can be generated using SCons.
 Visual Studio must be configured with the C++ package. It can be selected
 in the installer:
 
-![Image](img/vs_1_install_cpp_package.png)
+<figure>
+  <img src="/img/vs_1_install_cpp_package.png" />
+</figure>
 
 :::
 
@@ -41,14 +43,18 @@ Project Manager opens a project, the initial process is terminated and the debug
 - To configure the launch options to use with the debugger use **Project &gt; Properties**
   from the top menu:
 
-![Image](img/vs_2_project_properties.png)
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/vs_2_project_properties.png" />
+</figure>
 
 - Open the **Debugging** section and under **Command Arguments** add two new arguments:
   the ``-e`` flag opens the editor instead of the Project Manager, and the ``--path`` argument
   tells the executable to open the specified project (must be provided as an *absolute* path
   to the project root, not the ``project.godot`` file; if the path contains spaces be sure to pass it inside double quotation marks).
 
-![Image](img/vs_3_debug_command_line.webp)
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/vs_3_debug_command_line.webp" />
+</figure>
 
 To learn more about command line arguments, refer to the
 [command line tutorial](doc_command_line_tutorial).
@@ -59,7 +65,9 @@ process using **Debug &gt; Attach to Process...** menu.
 To check that everything is working, put a breakpoint in ``main.cpp`` and press `F5` to
 start debugging.
 
-![Image](img/vs_4_debugging_main.png)
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/vs_4_debugging_main.png" />
+</figure>
 
 If you run into any issues, ask for help in one of
 [Godot's community channels](https://godotengine.org/community)_.

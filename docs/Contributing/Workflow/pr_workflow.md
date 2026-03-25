@@ -78,12 +78,12 @@ repository on GitHub. To do so, you will need to have a GitHub account and to
 be logged in. In the top right corner of the repository's GitHub page, you
 should see the "Fork" button as shown below:
 
-![Image](img/github_fork_button.png)
+![Image](/Contributing/Workflow/img/github_fork_button.png)
 
 Click it, and after a while you should be redirected to your own fork of the
 Godot repo, with your GitHub username as namespace:
 
-![Image](img/github_fork_url.png)
+![Image](/Contributing/Workflow/img/github_fork_url.png)
 
 You can then *clone* your fork, i.e. create a local copy of the online
 repository (in Git speak, the *origin remote*). If you haven't already,
@@ -383,7 +383,7 @@ When you load your fork's branch on GitHub, you should see a line saying
 commits behind, if your ``master`` branch was out of sync with the upstream
 ``master`` branch).
 
-![Image](img/github_fork_make_pr.png)
+![Image](/Contributing/Workflow/img/github_fork_make_pr.png)
 
 On that line, there is a "Pull request" link. Clicking it will open a form
 that will let you issue a pull request on the ``godotengine/godot`` upstream

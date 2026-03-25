@@ -23,7 +23,7 @@ On this page, you'll learn:
 :::info
 
 You can see how volumetric fog works in action using the
-[Volumetric Fog demo project ](https://github.com/godotengine/godot-demo-projects/tree/master/3d/volumetric_fog)_.
+[Volumetric Fog demo project](https://github.com/godotengine/godot-demo-projects/tree/master/3d/volumetric_fog)_.
 
 :::
 
@@ -221,9 +221,9 @@ the following properties in FogMaterial:
 - **Density Texture:** The 3D texture that is used to scale the member density
   of the FogVolume. This can be used to vary fog density within the FogVolume
   with any kind of static pattern. For animated effects, consider using a custom
-  [fog shader ](doc_fog_shader).
+  [fog shader](doc_fog_shader).
   You can import any image as a 3D texture by
-  [changing its import type in the Import dock ](doc_importing_images_changing_import_type).
+  [changing its import type in the Import dock](doc_importing_images_changing_import_type).
 
 ### Using 3D noise density textures
 
@@ -231,10 +231,13 @@ Since Godot 4.1, there is a NoiseTexture3D resource that can be used to
 procedurally generate 3D noise. This is well-suited to FogMaterial density
 textures, which can result in more detailed fog effects:
 
-![Image](img/volumetric_fog_fog_material_density_texture.webp)
-
-   Screenshot taken with **Volume Size** project setting set to 192 to make
-   high-frequency detail more visible in the fog.
+<figure>
+  <img src="/img/volumetric_fog_fog_material_density_texture.webp" alt="FogMaterial comparison (without and with density texture)" />
+  <figcaption>
+    Screenshot taken with **Volume Size** project setting set to 192 to make
+high-frequency detail more visible in the fog.
+  </figcaption>
+</figure>
 
 To do so, select the **Density Texture** property and choose **New NoiseTexture3D**.
 Edit this NoiseTexture3D by clicking it, then click **Noise** at the bottom of the

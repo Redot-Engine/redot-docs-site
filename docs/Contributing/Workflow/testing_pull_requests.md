@@ -29,16 +29,16 @@ instead.
 
 - Open the pull request page. Click the **Checks** tab near the top of the page:
 
-![Image](img/testing_pull_requests_access_checks.webp)
+![Image](/Contributing/Workflow/img/testing_pull_requests_access_checks.webp)
 
 - Click the **Artifacts** dropdown on the right of the page:
 
-![Image](img/testing_pull_requests_checks_artifacts.webp)
+![Image](/Contributing/Workflow/img/testing_pull_requests_checks_artifacts.webp)
 
 - In the dropdown, click the artifact's name to download it. Remember to scroll
   if you cannot see the name of the platform you're looking for:
 
-![Image](img/testing_pull_requests_checks_artifacts_list.webp)
+![Image](/Contributing/Workflow/img/testing_pull_requests_checks_artifacts_list.webp)
 
 - Extract the ZIP archive then run the executable.
   Note that Windows and macOS binaries are **not** code signed.
@@ -55,7 +55,7 @@ to generate a universal download link.
 
 - Open the pull request page. Click the *fork*'s branch name near the top of the page:
 
-![Image](img/testing_pull_requests_access_fork.png)
+![Image](/Contributing/Workflow/img/testing_pull_requests_access_fork.png)
 
 - Now that you are on the fork's branch page, click the ``.github`` folder at the top of the file list.
   Then, click on the ``workflows`` folder (which is inside the ``.github`` folder).
@@ -68,7 +68,7 @@ to generate a universal download link.
   If the format of the URL you pasted is correct, you should be presented
   with a page like this:
 
-![Image](img/testing_pull_requests_nightly_link.png)
+![Image](/Contributing/Workflow/img/testing_pull_requests_nightly_link.png)
 
 - Click the URL of the artifact you wish to download.
 
@@ -88,12 +88,12 @@ by Godot's GitHub Actions setup.
 
 - Open the pull request page. Click the *fork*'s branch name near the top of the page:
 
-![Image](img/testing_pull_requests_access_fork.png)
+![Image](/Contributing/Workflow/img/testing_pull_requests_access_fork.png)
 
 - Now that you are on the fork's branch page, click the green **Code** button on the right of the page
   then choose **Download ZIP** in the dropdown:
 
-![Image](img/testing_pull_requests_fork_zip.png)
+![Image](/Contributing/Workflow/img/testing_pull_requests_fork_zip.png)
 
 - Extract the ZIP archive and follow the [compiling](toc-devel-compiling) instructions
   for your operating system.
@@ -105,7 +105,7 @@ Alternatively, you can checkout the pull request directly with git:
 - Open the pull request page. Note the pull request *number* (``PR_NUMBER``), and the *branch name*
   (``BRANCH_NAME``), but without the user name.
 
-![Image](img/testing_pull_requests_command_line_checkout.webp)
+![Image](/Contributing/Workflow/img/testing_pull_requests_command_line_checkout.webp)
 
 - Construct the command using this pattern:
 

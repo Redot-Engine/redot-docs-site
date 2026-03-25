@@ -26,25 +26,37 @@ edges.
 Here's a scene rendered with rate shading disabled then enabled, using the
 density map linked at the bottom of this page:
 
-![Image](img/variable_rate_shading_textured_disabled.webp)
+<figure>
+  <img src="/img/variable_rate_shading_textured_disabled.webp" alt="Variable rate shading disabled in textured scene" />
+  <figcaption>
+    Variable rate shading disabled in textured scene
+  </figcaption>
+</figure>
 
-   Variable rate shading disabled in textured scene
-
-![Image](img/variable_rate_shading_textured_enabled.webp)
-
-   Variable rate shading enabled in textured scene (lower quality, but higher performance)
+<figure>
+  <img src="/img/variable_rate_shading_textured_enabled.webp" alt="Variable rate shading enabled in textured scene (lower quality, but higher performance)" />
+  <figcaption>
+    Variable rate shading enabled in textured scene (lower quality, but higher performance)
+  </figcaption>
+</figure>
 
 When used in scenes with low-frequency detail (such as scenes with a
 stylized/low-poly aesthetic), it's possible to achieve similar performance gains,
 but with less reduction in visual quality:
 
-![Image](img/variable_rate_shading_untextured_disabled.webp)
+<figure>
+  <img src="/img/variable_rate_shading_untextured_disabled.webp" alt="Variable rate shading disabled in untextured scene" />
+  <figcaption>
+    Variable rate shading disabled in untextured scene
+  </figcaption>
+</figure>
 
-   Variable rate shading disabled in untextured scene
-
-![Image](img/variable_rate_shading_untextured_enabled.webp)
-
-   Variable rate shading enabled in untextured scene (lower quality, but higher performance)
+<figure>
+  <img src="/img/variable_rate_shading_untextured_enabled.webp" alt="Variable rate shading enabled in untextured scene (lower quality, but higher performance)" />
+  <figcaption>
+    Variable rate shading enabled in untextured scene (lower quality, but higher performance)
+  </figcaption>
+</figure>
 
 ## Hardware support
 
@@ -74,7 +86,7 @@ Both Forward+ and Mobile renderers support variable rate
 shading. VRS can be used in both pancake (non-XR) and XR display modes.
 
 The Compatibility renderer does **not** support variable rate shading.
-For XR, you can use [foveation level ](doc_openxr_settings_foveation_level)
+For XR, you can use [foveation level](doc_openxr_settings_foveation_level)
 as an alternative.
 
 :::
@@ -97,7 +109,7 @@ For custom viewports, the VRS mode and texture must be set manually to the
 On unsupported hardware, there is no visual difference when variable rate
 shading is enabled. You can check whether hardware supports variable rate
 shading by running the editor or project with the ``--verbose``
-[command line argument ](doc_command_line_tutorial).
+[command line argument](doc_command_line_tutorial).
 
 :::
 
@@ -136,9 +148,12 @@ The texture must follow these rules:
 For example, this VRS density texture provides the highest shading density in
 the center of the viewport, and the lowest shading density in the corners:
 
-![Image](img/variable_rate_shading_texture_example.webp)
-
-   Example VRS density map texture, simulating foveated rendering
+<figure>
+  <img src="/img/variable_rate_shading_texture_example.webp" alt="Example VRS density map texture, simulating foveated rendering" />
+  <figcaption>
+    Example VRS density map texture, simulating foveated rendering
+  </figcaption>
+</figure>
 
 There are no size or aspect ratio requirements for the VRS density texture.
 However, there is no benefit to using a VRS density map that is larger than the
@@ -156,7 +171,7 @@ aspect ratio in your project (such as 16:9).
 :::tip
 
 When using variable rate shading, you can use a negative
-[texture mipmap LOD bias ](doc_resolution_scaling_mipmap_bias)
+[texture mipmap LOD bias](doc_resolution_scaling_mipmap_bias)
 to reduce blurriness in areas with reduced shading rate.
 
 Note that the texture LOD bias is set globally, so this will also affect

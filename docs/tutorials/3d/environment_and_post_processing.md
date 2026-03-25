@@ -155,7 +155,7 @@ There are several background modes available:
   from it.
 - **Canvas** displays the 2D scene as a background to the 3D scene. This can be used
   to make environment effects visible on 2D rendering, such as
-  [glow in 2D ](doc_environment_and_post_processing_using_glow_in_2d).
+  [glow in 2D](doc_environment_and_post_processing_using_glow_in_2d).
 - **Keep** does not draw any sky, keeping what was present on previous frames
   instead. This improves performance in purely indoor scenes, but creates a
   "hall of mirrors" visual glitch if the sky is visible at any time.
@@ -185,7 +185,7 @@ There are 3 built-in sky materials to choose from:
   be up to 1 sun at a given time.
 
 Panorama sky images are sometimes called HDRIs (High Dynamic Range Images).
-You can find freely licensed HDRIs on [Poly Haven ](https://polyhaven.com/hdris)_.
+You can find freely licensed HDRIs on [Poly Haven](https://polyhaven.com/hdris)_.
 
 :::note
 
@@ -200,7 +200,7 @@ the Import dock, enable **HDR Clamp Exposure** then click **Reimport**.
 :::
 
 If you need a custom sky material (e.g. for procedural clouds), you can
-create a custom [sky shader ](doc_sky_shader).
+create a custom [sky shader](doc_sky_shader).
 
 ### Ambient light
 
@@ -245,8 +245,8 @@ working with HDR.
 In general, you should only rely on ambient light alone for simple scenes or
 large exteriors. You may also do so to boost performance. Ambient light is fast
 to render, but it doesn't provide the best lighting quality. It's better to
-generate ambient light from [ReflectionProbe ](doc_reflection_probes),
-[VoxelGI ](doc_using_voxel_gi) or [SDFGI ](doc_using_sdfgi), as these
+generate ambient light from [ReflectionProbe](doc_reflection_probes),
+[VoxelGI](doc_using_voxel_gi) or [SDFGI](doc_using_sdfgi), as these
 will simulate how indirect light propagates more accurately. Below is a comparison,
 in terms of quality, between using a flat ambient color and a VoxelGI:
 
@@ -604,7 +604,7 @@ The **Blend Mode** of the effect can also be changed:
 - **Softlight** is the default and weakest one, producing only a subtle color
   disturbance around the objects. This mode works best on dark scenes.
 - **Replace** can be used to
-  [blur the whole screen ](doc_environment_and_post_processing_using_glow_to_blur_the_screen)
+  [blur the whole screen](doc_environment_and_post_processing_using_glow_to_blur_the_screen)
   or debug the effect. It only shows the glow effect without the image below.
 - **Mix** mixes the glow effect with the main image. This can be used for
   greater artistic control. The mix factor is controlled by the **Mix** property
@@ -662,11 +662,14 @@ There are 2 ways to use glow in 2D:
     glow using the **Background &gt; Canvas Max Layer** property of the Environment
     resource.
 
-![Image](img/environment_and_post_processing_glow_in_2d.webp)
-
-   Example of using glow in a 2D scene. HDR 2D is enabled, while coins and the
-   bullet have their **Modulate** property increased to overbright values using the
-   RAW mode in the color picker.
+<figure>
+  <img src="/img/environment_and_post_processing_glow_in_2d.webp" alt="Example of using glow in a 2D scene" />
+  <figcaption>
+    Example of using glow in a 2D scene. HDR 2D is enabled, while coins and the
+bullet have their **Modulate** property increased to overbright values using the
+RAW mode in the color picker.
+  </figcaption>
+</figure>
 
 :::warning
 
@@ -701,9 +704,12 @@ To use glow as a blurring solution:
 - Set **Intensity** to ``1.0`` and **Bloom** to ``1.0``.
 - Set the blend mode to **Replace** and **HDR Luminance Cap** to ``1.0``.
 
-![Image](img/environment_and_post_processing_glow_blur.webp)
-
-   Example of using glow to blur the 2D rendering in the menu's background
+<figure>
+  <img src="/img/environment_and_post_processing_glow_blur.webp" alt="Example of using glow to blur the 2D rendering in the menu's background" />
+  <figcaption>
+    Example of using glow to blur the 2D rendering in the menu's background
+  </figcaption>
+</figure>
 
 ### Adjustments
 
@@ -812,7 +818,7 @@ the **Quality** may be needed in order to avoid artifacts.
 
 It is common to use both blurs together to focus the viewer's attention on a
 given object, or create a so-called
-["tilt shift" effect ](https://en.wikipedia.org/wiki/Miniature_faking)_.
+["tilt shift" effect](https://en.wikipedia.org/wiki/Miniature_faking)_.
 
 ![Image](img/environment_mixed_blur.webp)
 

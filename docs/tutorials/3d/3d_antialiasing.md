@@ -19,9 +19,12 @@ In the example below, you can notice how
 edges have a blocky appearance. The vegetation is also flickering in and out,
 and thin lines on top of the box have almost disappeared:
 
-![Image](img/antialiasing_none_scaled.webp)
-
-   Image is scaled by 2× with nearest-neighbor filtering to make aliasing more noticeable.
+<figure>
+  <img src="/img/antialiasing_none_scaled.webp" alt="Image is scaled by 2× with nearest-neighbor filtering to make aliasing more noticeable." />
+  <figcaption>
+    Image is scaled by 2× with nearest-neighbor filtering to make aliasing more noticeable.
+  </figcaption>
+</figure>
 
 To combat this, various antialiasing techniques can be used in Godot. These are
 detailed below.
@@ -29,7 +32,7 @@ detailed below.
 :::info
 
 You can compare antialiasing algorithms in action using the
-[3D Antialiasing demo project ](https://github.com/godotengine/godot-demo-projects/tree/master/3d/antialiasing)_.
+[3D Antialiasing demo project](https://github.com/godotengine/godot-demo-projects/tree/master/3d/antialiasing)_.
 
 :::
 
@@ -54,7 +57,7 @@ transparency aliasing for materials using the **Alpha Scissor** transparency
 mode (1-bit transparency). MSAA is also ineffective on specular aliasing.
 
 To mitigate aliasing on alpha scissor materials,
-[alpha antialiasing ](doc_standard_material_3d_alpha_antialiasing)
+[alpha antialiasing](doc_standard_material_3d_alpha_antialiasing)
 (also called *alpha to coverage*) can be enabled on specific materials in the
 StandardMaterial3D or ORMMaterial3D properties. Alpha to coverage has a
 moderate performance cost, but it's effective at reducing aliasing on
@@ -113,8 +116,8 @@ Comparison between no antialiasing (left) and TAA (right):
 renderers.*
 
 Since Godot 4.2, there is built-in support for
-[AMD FidelityFX Super Resolution ](https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html)_
-2.2. This is an [upscaling method ](doc_resolution_scaling)
+[AMD FidelityFX Super Resolution](https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html)_
+2.2. This is an [upscaling method](doc_resolution_scaling)
 compatible with all recent GPUs from any vendor. FSR2 is normally designed to
 improve performance by lowering the internal 3D rendering resolution,
 then upscaling to the output resolution.
@@ -179,7 +182,7 @@ at the same time, without introducing potential ghosting artifacts.
 
 The downside of SSAA is its *extremely* high cost. This cost generally makes
 SSAA difficult to use for game purposes, but you may still find supersampling
-useful for [offline rendering ](doc_creating_movies).
+useful for [offline rendering](doc_creating_movies).
 
 Supersample antialiasing is performed by increasing the
 [Rendering &gt; Scaling 3D &gt; Scale](class_ProjectSettings_property_rendering/scaling_3d/scale)
@@ -269,7 +272,7 @@ but higher MSAA levels are unlikely to run smoothly on mobile GPUs.
 
 Godot allows using multiple antialiasing techniques at the same time. This is
 usually unnecessary, but it can provide better visuals on high-end GPUs or for
-[non-real-time rendering ](doc_creating_movies). For example, to make
+[non-real-time rendering](doc_creating_movies). For example, to make
 moving edges look better when TAA is enabled, you can also enable MSAA at the
 same time.
 
@@ -277,13 +280,13 @@ same time.
 
 | Feature | MSAA | TAA | FSR2 | FXAA | SSAA | SSRL |
 | --- | --- | --- | --- | --- | --- | --- |
-| Edge antialiasing | 🟢 Yes | 🟢 Yes | 🟢 Yes | 🟢 Yes | 🟢 Yes | 🔴 No |
-| Specular antialiasing | 🟡 Some | 🟢 Yes | 🟢 Yes | 🟡 Some | 🟢 Yes | 🟢 Yes |
-| Transparency antialiasing | 🟡 Some [1]_ | 🟢 Yes [2]_ | 🟢 Yes [2]_ | 🟢 Yes | 🟢 Yes | 🔴 No |
-| Added blur | 🟢 None | 🟡 Some | 🟡 Some | 🟡 Some | 🟡 Some [3]_ | 🟢 None |
-| Ghosting artifacts | 🟢 None | 🔴 Yes | 🔴 Yes | 🟢 None | 🟢 None | 🟢 None |
-| Performance cost | 🟡 Medium | 🟡 Medium | 🔴 High | 🟢 Low | 🔴 Very High | 🟢 Low |
+| Edge antialiasing | 🟢 Yes                   \| | 🟢 Yes                   \| | Yes                   \| 🟢 | Yes                   \| 🟢 | es                   \| 🔴 N |  |
+| Specular antialiasing | 🟡 Some                  \| | 🟢 Yes                   \| | Yes                   \| 🟡 | Some                  \| 🟢 | es                   \| 🟢 Y | s                   \| |
+| Transparency antialiasing | 🟡 Some [1]_             \| | 🟢 Yes [2]_              \| | Yes [2]_              \| 🟢 | Yes                   \| 🟢 | es                   \| 🔴 N |  |
+| Added blur | 🟢 None                  \| | 🟡 Some                  \| | Some                  \| 🟡 | Some                  \| 🟡 | ome [3]_             \| 🟢 N | ne                  \| |
+| Ghosting artifacts | 🟢 None                  \| | 🔴 Yes                   \| | Yes                   \| 🟢 | None                  \| 🟢 | one                  \| 🟢 N | ne                  \| |
+| Performance cost | 🟡 Medium                \| | 🟡 Medium                \| | High                  \| 🟢 | Low                   \| 🔴 | ery High             \| 🟢 L | w                   \| |
 | Forward+ | ✔️ Yes | ✔️ Yes | ✔️ Yes | ✔️ Yes | ✔️ Yes | ✔️ Yes |
-| Mobile | ✔️ Yes | ❌ No | ❌ No | ✔️ Yes | ✔️ Yes | ✔️ Yes |
-| Compatibility | ✔️ Yes | ❌ No | ❌ No | ❌ No | ✔️ Yes | ❌ No |
+| Mobile | ✔️ Yes | ❌ No                    \| | ❌ No                    \| | ️ Yes                   \| | ️ Yes                   \| | ️ Yes                   \| |
+| Compatibility | ✔️ Yes | ❌ No                    \| | ❌ No                    \| | No                    \| ✔ | Yes                   \| ❌ | No                    \| |
 

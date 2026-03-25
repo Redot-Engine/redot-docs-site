@@ -15,7 +15,7 @@ On this page, you'll learn:
 :::info
 
 You can see how occlusion culling works in action using the
-[Occlusion Culling and Mesh LOD demo project ](https://github.com/godotengine/godot-demo-projects/tree/master/3d/occlusion_culling_mesh_lod)_.
+[Occlusion Culling and Mesh LOD demo project](https://github.com/godotengine/godot-demo-projects/tree/master/3d/occlusion_culling_mesh_lod)_.
 
 :::
 
@@ -25,24 +25,33 @@ In this example scene with hundreds of rooms stacked next to each other, a
 dynamic object (red sphere) is hidden behind the wall in the lit room (on the
 left of the door):
 
-![Image](img/occlusion_culling_scene_example.png)
-
-   Example scene with an occlusion culling-friendly layout
+<figure>
+  <img src="/img/occlusion_culling_scene_example.png" alt="Example scene with an occlusion culling-friendly layout" />
+  <figcaption>
+    Example scene with an occlusion culling-friendly layout
+  </figcaption>
+</figure>
 
 With occlusion culling disabled, all the rooms behind the lit room have to be
 rendered. The dynamic object also has to be rendered:
 
-![Image](img/occlusion_culling_disabled.png)
-
-   Example scene with occlusion culling **disabled** (wireframe)
+<figure>
+  <img src="/img/occlusion_culling_disabled.png" alt="Example scene with occlusion culling disabled (wireframe)" />
+  <figcaption>
+    Example scene with occlusion culling **disabled** (wireframe)
+  </figcaption>
+</figure>
 
 With occlusion culling enabled, only the rooms that are actually visible have to
 be rendered. The dynamic object is also occluded by the wall, and therefore no
 longer has to be rendered:
 
-![Image](img/occlusion_culling_enabled.png)
-
-   Example scene with occlusion culling **enabled** (wireframe)
+<figure>
+  <img src="/img/occlusion_culling_enabled.png" alt="Example scene with occlusion culling enabled (wireframe)" />
+  <figcaption>
+    Example scene with occlusion culling **enabled** (wireframe)
+  </figcaption>
+</figure>
 
 Since the engine has less work to do (fewer vertices to render and fewer draw calls),
 performance will increase as long as there are enough occlusion culling opportunities
@@ -82,7 +91,7 @@ the object being hidden.
 
 In Godot, occlusion culling works by rasterizing the scene's occluder geometry
 to a low-resolution buffer on the CPU. This is done using
-the software raytracing library [Embree ](https://github.com/embree/embree)_.
+the software raytracing library [Embree](https://github.com/embree/embree)_.
 
 The engine then uses this low-resolution buffer to test the occludee's
 :abbr:`AABB (Axis-Aligned Bounding Box)` against the occluder shapes.
@@ -120,7 +129,7 @@ those to be treated as occluders, you have to manually create occluder
 shapes that (roughly) match their geometry.
 
 Since Godot 4.4, CSG nodes can be taken into account in the baking process if they are
-[converted to a MeshInstance3D ](doc_csg_tools_converting_to_mesh_instance_3d)
+[converted to a MeshInstance3D](doc_csg_tools_converting_to_mesh_instance_3d)
 before baking occluders.
 
 This restriction does not apply to *occludees*. Any node type that inherits
@@ -306,9 +315,9 @@ this, select the OccluderInstance3D node and bake occluders again.
 
 This can also happen because dynamic objects were included in the bake, even
 though they shouldn't be. Use the
-[occlusion culling debug draw mode ](doc_occlusion_culling_preview) to look
+[occlusion culling debug draw mode](doc_occlusion_culling_preview) to look
 for occluder shapes that shouldn't be present, then
-[adjust the bake cull mask accordingly ](doc_occlusion_culling_baking).
+[adjust the bake cull mask accordingly](doc_occlusion_culling_baking).
 
 The last possible cause for this is overly aggressive mesh simplification during
 the occluder baking process. Select the OccluderInstance3D node,

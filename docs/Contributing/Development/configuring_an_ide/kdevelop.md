@@ -7,19 +7,26 @@
 
 - From the KDevelop's main screen select **Open Project**.
 
-![Image](img/kdevelop_newproject.png)
-
-   KDevelop's main screen.
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/kdevelop_newproject.png" alt="KDevelop's main screen." />
+  <figcaption>
+    KDevelop's main screen.
+  </figcaption>
+</figure>
 
 - Navigate to the Godot root folder and select it.
 - On the next screen, choose **Custom Build System** for the **Project Manager**.
 
-![Image](img/kdevelop_custombuild.png)
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/kdevelop_custombuild.png" />
+</figure>
 
 - After the project has been imported, open the project configuration by right-clicking
   on it in the **Projects** panel and selecting **Open Configuration..** option.
 
-![Image](img/kdevelop_openconfig.png)
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/kdevelop_openconfig.png" />
+</figure>
 
 - Under **Language Support** open the **Includes/Imports** tab and add the following paths:
 
@@ -34,7 +41,9 @@ platform/<your_platform>/  // Replace <your_platform> with a folder
 
 ```
 
-![Image](img/kdevelop_addincludes.png)
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/kdevelop_addincludes.png" />
+</figure>
 
 - Apply the changes.
 - Under **Custom Build System** add a new build configuration with the following settings:
@@ -45,7 +54,9 @@ platform/<your_platform>/  // Replace <your_platform> with a folder
 | Executable | **scons** |
 | Arguments | See [doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem) for a full list of arguments. |
 
-![Image](img/kdevelop_buildconfig.png)
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/kdevelop_buildconfig.png" />
+</figure>
 
 - Apply the changes and close the configuration window.
 
@@ -53,7 +64,9 @@ platform/<your_platform>/  // Replace <your_platform> with a folder
 
 - Select **Run &gt; Configure Launches...** from the top menu.
 
-![Image](img/kdevelop_configlaunches.png)
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/kdevelop_configlaunches.png" />
+</figure>
 
 - Click **Add** to create a new launch configuration.
 - Select **Executable** option and specify the path to your executable located in
@@ -61,7 +74,9 @@ platform/<your_platform>/  // Replace <your_platform> with a folder
   e.g. ``godot.linuxbsd.editor.dev.x86_64`` for 64-bit LinuxBSD platform with
   ``platform=editor`` and ``dev_build=yes``.
 
-![Image](img/kdevelop_configlaunches2.png)
+<figure>
+  <img src="/Contributing/Development/configuring_an_ide/img/kdevelop_configlaunches2.png" />
+</figure>
 
 If you run into any issues, ask for help in one of
 [Godot's community channels](https://godotengine.org/community)_.

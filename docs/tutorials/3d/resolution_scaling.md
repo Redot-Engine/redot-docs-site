@@ -20,7 +20,7 @@ settings in your in-game menus.
 :::info
 
 You can compare resolution scaling modes and factors in action using the
-[3D Antialiasing demo project ](https://github.com/godotengine/godot-demo-projects/tree/master/3d/antialiasing)_.
+[3D Antialiasing demo project](https://github.com/godotengine/godot-demo-projects/tree/master/3d/antialiasing)_.
 
 :::
 
@@ -40,7 +40,7 @@ find several options for 3D resolution scaling:
 ### Scaling mode
 
 - **Bilinear:** Standard bilinear filtering (default).
-- **FSR 1.0:** [AMD FidelityFX Super Resolution 1.0 ](https://gpuopen.com/fidelityfx-superresolution/)_.
+- **FSR 1.0:** [AMD FidelityFX Super Resolution 1.0](https://gpuopen.com/fidelityfx-superresolution/)_.
   Slower, but higher quality compared to bilinear scaling. On very slow GPUs,
   the cost of FSR1 may be too expensive to be worth using it over bilinear
   scaling.
@@ -202,7 +202,7 @@ not change depending on resolution scale.
 
 The texture LOD bias can manually be changed by adjusting the **Rendering &gt;
 Textures &gt; Default Filters &gt; Texture Mipmap Bias** advanced project setting. It
-can also be changed at runtime on [Viewports ](class_Viewport) by
+can also be changed at runtime on [Viewports](class_Viewport) by
 adjusting the ``texture_mipmap_bias`` property.
 
 :::warning

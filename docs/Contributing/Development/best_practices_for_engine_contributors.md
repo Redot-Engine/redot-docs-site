@@ -31,7 +31,7 @@ abstract data structures, creating nice user interfaces, or simply love
 programming. Whatever the case may be, they come up with cool ideas, which may
 or may not solve real problems.
 
-![Image](img/best_practices1.png)
+![Image](/Contributing/Development/img/best_practices1.png)
 
 These are usually called *solutions in search of a problem*. In an ideal world,
 they would not be harmful but, in reality, code takes time to write, takes up
@@ -43,7 +43,7 @@ unnecessary is always considered a good practice in software development.
 This is a variation of the previous practice. Adding anything unnecessary is not
 a good idea, but what constitutes what is necessary and what isn't?
 
-![Image](img/best_practices2.png)
+![Image](/Contributing/Development/img/best_practices2.png)
 
 The answer to this question is that the problem needs to *exist* before it can
 be actually solved. It must not be speculation or a belief. The user must be
@@ -70,7 +70,7 @@ problem that exists under the sun*. As a game engine, Godot will help you make
 games better and faster, but it won't make an *entire game* for you. A line must
 be drawn somewhere.
 
-![Image](img/best_practices3.png)
+![Image](/Contributing/Development/img/best_practices3.png)
 
 Whether a problem is worth solving is determined by the effort that is required
 to work around it. The required effort depends on:
@@ -98,7 +98,7 @@ perspective, thinking only about their own use case. As a result, user proposed
 solutions don't always contemplate all use cases and are often biased towards
 the user's own requirements.
 
-![Image](img/best_practices4.png)
+![Image](/Contributing/Development/img/best_practices4.png)
 
 For developers, the perspective is different. They may find the user's problem
 too unique to justify a solution (instead of a workaround), or they might
@@ -130,7 +130,7 @@ The situation will often take a turn for the worse when, in order to make this
 solution appear even more fantastic and flexible, the pure speculation-based
 problems (as described in #2) also make their appearance on stage.
 
-![Image](img/best_practices5.png)
+![Image](/Contributing/Development/img/best_practices5.png)
 
 The main problem is that, in reality, it rarely works this way. Most of the
 time, writing an individual solution to each problem results in code that
@@ -165,7 +165,7 @@ The question is then, how do we design software that both allows users to do
 *what we know they need to do* now and allows them to do *what we don't yet know
 they'll need to do* in the future?
 
-![Image](img/best_practices6.png)
+![Image](/Contributing/Development/img/best_practices6.png)
 
 The answer to this question is that, to ensure users still can do what they want
 to do, we need to give them access to a *low-level API* that they can use to
@@ -191,7 +191,7 @@ This is bad, because readability and cleanness of core APIs is always of extreme
 importance given how much code relies on it, and because it's key for new
 contributors as a starting point to learning the codebase.
 
-![Image](img/best_practices7.png)
+![Image](/Contributing/Development/img/best_practices7.png)
 
 A common reason for wanting to do this is that it's usually less code to simply
 add a hack in the core layers.
@@ -209,7 +209,7 @@ use a third-party library to solve the problem.
 As Godot requires to be shipped in a large amount of platforms, we can't
 link libraries dynamically. Instead, we bundle them in our source tree.
 
-![Image](img/best_practices8.png)
+![Image](/Contributing/Development/img/best_practices8.png)
 
 As a result, we are very picky with what goes in, and we tend to prefer smaller
 libraries (single header ones are our favorite). We will only bundle something

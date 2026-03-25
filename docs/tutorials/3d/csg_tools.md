@@ -18,8 +18,8 @@ addition CSG can't reliably create meshes made up of multiple nodes
 without holes.
 
 If you're looking for an easy to use level design tool for a project,
-you may want to use [FuncGodot ](https://github.com/func-godot/func_godot_plugin)_
-or [Cyclops Level Builder ](https://github.com/blackears/cyclopsLevelBuilder)_
+you may want to use [FuncGodot](https://github.com/func-godot/func_godot_plugin)_
+or [Cyclops Level Builder](https://github.com/blackears/cyclopsLevelBuilder)_
 instead.
 
 :::
@@ -31,7 +31,7 @@ instead.
 :::info
 
 You can check how to use CSG nodes to build various shapes (such as stairs or roads) using the
-[Constructive Solid Geometry demo project ](https://github.com/godotengine/godot-demo-projects/tree/master/3d/csg)_.
+[Constructive Solid Geometry demo project](https://github.com/godotengine/godot-demo-projects/tree/master/3d/csg)_.
 
 :::
 
@@ -40,13 +40,13 @@ You can check how to use CSG nodes to build various shapes (such as stairs or ro
 Like other features of Godot, CSG is supported in the form of nodes. These are
 the CSG nodes:
 
-- [CSGBox3D ](class_CSGBox3D)
-- [CSGCylinder3D ](class_CSGCylinder3D) (also supports cone)
-- [CSGSphere3D ](class_CSGSphere3D)
-- [CSGTorus3D ](class_CSGTorus3D)
-- [CSGPolygon3D ](class_CSGPolygon3D)
-- [CSGMesh3D ](class_CSGMesh3D)
-- [CSGCombiner3D ](class_CSGCombiner3D)
+- [CSGBox3D](class_CSGBox3D)
+- [CSGCylinder3D](class_CSGCylinder3D) (also supports cone)
+- [CSGSphere3D](class_CSGSphere3D)
+- [CSGTorus3D](class_CSGTorus3D)
+- [CSGPolygon3D](class_CSGPolygon3D)
+- [CSGMesh3D](class_CSGMesh3D)
+- [CSGCombiner3D](class_CSGCombiner3D)
 
 ![Image](img/csg_nodes.png)
 
@@ -68,7 +68,7 @@ Every CSG node supports 3 kinds of boolean operations:
 
 ### CSGPolygon
 
-The [CSGPolygon3D ](class_CSGPolygon3D) node extrude along a Polygon drawn in
+The [CSGPolygon3D](class_CSGPolygon3D) node extrude along a Polygon drawn in
 2D (in X, Y coordinates) in the following ways:
 
 - **Depth:** Extruded back a given amount.
@@ -89,7 +89,7 @@ CSGPolygon3D will extrude along the given path.
 
 ### Custom meshes
 
-Custom meshes can be used for [CSGMesh3D ](class_CSGMesh3D) as long as the
+Custom meshes can be used for [CSGMesh3D](class_CSGMesh3D) as long as the
 mesh is *manifold*. The mesh can be modeled in other software and imported into
 Godot. Multiple materials are supported. 
 
@@ -105,7 +105,7 @@ And it is recommended to avoid:
 - self-intersection
 - interior faces
 
-Godot uses the [manifold ](https://github.com/elalish/manifold)_ library to
+Godot uses the [manifold](https://github.com/elalish/manifold)_ library to
 implement CSG meshes. The technical definition of "manifold" used by Godot is
 the following, adapted from that library's `definition of "manifold"
 &lt;https://github.com/elalish/manifold/wiki/Manifold-Library#manifoldness-definition&gt;`__:
@@ -119,7 +119,7 @@ the following, adapted from that library's `definition of "manifold"
 
 ### CSGCombiner3D
 
-The [CSGCombiner3D ](class_CSGCombiner3D) node is an empty shape used for
+The [CSGCombiner3D](class_CSGCombiner3D) node is an empty shape used for
 organization. It will only combine children nodes.
 
 ### Processing order
@@ -243,7 +243,7 @@ another CSGCylinder3D and adjust the dimensions to use it as a pole.
 ![Image](img/csg_lamp_pole_stand.png)
 
 We will use a CSGPolygon3D for the lampshade. Use the **Spin** mode for the
-CSGPolygon3D and draw a [trapezoid ](https://en.wikipedia.org/wiki/Trapezoid)
+CSGPolygon3D and draw a [trapezoid](https://en.wikipedia.org/wiki/Trapezoid)
 while in **Front View** (numeric keypad 1); this shape will extrude around the
 origin and form the lampshade.
 
@@ -296,7 +296,7 @@ to quickly apply textures to CSG-based levels.
 
 :::note
 If you need some textures for prototyping, Kenney made a
-[set of CC0-licensed prototype textures ](https://kenney.nl/assets/prototype-textures)_.
+[set of CC0-licensed prototype textures](https://kenney.nl/assets/prototype-textures)_.
 
 :::
 

@@ -14,11 +14,11 @@ Additionally, Godot makes it possible to position Control nodes according to a
 :::info
 
 You can see 3D text in action using the
-[3D Labels and Texts demo project ](https://github.com/godotengine/godot-demo-projects/tree/master/3d/labels_and_texts)_.
+[3D Labels and Texts demo project](https://github.com/godotengine/godot-demo-projects/tree/master/3d/labels_and_texts)_.
 
 This page does **not** cover how to display a GUI scene within a 3D
 environment. For information on how to achieve that, see the
-[GUI in 3D ](https://github.com/godotengine/godot-demo-projects/tree/master/viewport/gui_in_3d)_
+[GUI in 3D](https://github.com/godotengine/godot-demo-projects/tree/master/viewport/gui_in_3d)_
 demo project.
 
 :::
@@ -65,12 +65,12 @@ Cut**, at the cost of less smooth text rendering. The **Opaque Pre-Pass**
 transparency mode can preserve text smoothness while allowing the Label3D to
 cast shadows, but some transparency sorting issues will remain.
 
-See [Transparency sorting ](doc_3d_rendering_limitations_transparency_sorting)
+See [Transparency sorting](doc_3d_rendering_limitations_transparency_sorting)
 section in the 3D rendering limitations page for more information.
 
 Text rendering quality can also suffer when the Label3D is viewed at a distance. To improve
-text rendering quality, [enable mipmaps on the font ](doc_using_fonts_mipmaps) or
-[switch the font to use MSDF rendering ](doc_using_fonts_msdf).
+text rendering quality, [enable mipmaps on the font](doc_using_fonts_mipmaps) or
+[switch the font to use MSDF rendering](doc_using_fonts_msdf).
 
 ## TextMesh
 
@@ -123,7 +123,7 @@ return value of [unproject_position](class_Camera3D_method_unproject_position)
 method on a Camera3D node in a script's ``_process()`` function. This return value
 should then be used to set the ``position`` property of a Control node.
 
-See the [3D waypoints ](https://github.com/godotengine/godot-demo-projects/tree/master/3d/waypoints)_
+See the [3D waypoints](https://github.com/godotengine/godot-demo-projects/tree/master/3d/waypoints)_
 demo for an example of this.
 
 ### Advantages

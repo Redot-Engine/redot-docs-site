@@ -36,7 +36,7 @@ binary using environment variables.
 
 - Available in Clang and GCC.
 - **Supported platforms:** Linux, macOS, Windows (Visual Studio), Web
-- [Clang ASAN documentation](https://clang.llvm.org/docs/AddressSanitizer.html)_
+- [Clang ASAN documentation](https://clang.llvm.org/docs/AddressSanitizer.html)
 
 The address sanitizer is generally the most frequently used sanitizer. It can
 diagnose issues such as buffer overruns and out-of-bounds access. If the engine
@@ -70,7 +70,7 @@ you can only use one of those sanitizers in a given binary.
 
 - Available in Clang and GCC.
 - **Supported platforms:** Linux, Web
-- [Clang LSAN documentation](https://clang.llvm.org/docs/LeakSanitizer.html)_
+- [Clang LSAN documentation](https://clang.llvm.org/docs/LeakSanitizer.html)
 
 The leak sanitizer can detect memory leaks, which are situations where memory
 that is no longer in use is never freed by the running program. This can
@@ -88,7 +88,7 @@ program exits.
 
 - Available in Clang only, not GCC.
 - **Supported platforms:** Linux
-- [Clang MSAN documentation](https://clang.llvm.org/docs/MemorySanitizer.html)_
+- [Clang MSAN documentation](https://clang.llvm.org/docs/MemorySanitizer.html)
 
 The memory sanitizer complements the
 [doc_using_sanitizers_address_sanitizer](doc_using_sanitizers_address_sanitizer). Unlike the address sanitizer,
@@ -111,7 +111,7 @@ you can only use one of those sanitizers in a given binary.
 
 - Available in Clang and GCC.
 - **Supported platforms:** Linux, macOS
-- [Clang TSAN documentation](https://clang.llvm.org/docs/ThreadSanitizer.html)_
+- [Clang TSAN documentation](https://clang.llvm.org/docs/ThreadSanitizer.html)
 
 The thread sanitizer is used to track down race conditions related to
 multithreading. A race condition is when multiple threads try to modify the same
@@ -178,7 +178,7 @@ It's important to revert the changes as soon as possible because lowering the AS
 
 - Available in Clang and GCC.
 - **Supported platforms:** Linux, macOS, Web
-- [Clang UBSAN documentation](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html)_
+- [Clang UBSAN documentation](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html)
 
 The undefined behavior sanitizer is used to track down situations where the
 program exhibits random and unpredictable behavior. This is due to C/C++ code
@@ -199,7 +199,7 @@ there are 2 additional sanitizer SCons options available:
 
 - ``use_assertions=yes`` enables runtime Emscripten assertions, which can catch
   various issues.
-- ``use_safe_heap=yes`` enables [Emscripten's SAFE_HEAP sanitizer](https://emscripten.org/docs/debugging/Sanitizers.html)_.
+- ``use_safe_heap=yes`` enables [Emscripten's SAFE_HEAP sanitizer](https://emscripten.org/docs/debugging/Sanitizers.html).
   It provides similar functionality to ASAN, but it focuses on issues that
   are specific to WebAssembly. ``SAFE_HEAP`` is not guaranteed to be compatible
   with ASAN and UBSAN in the same binary, so you may have to build it separately.

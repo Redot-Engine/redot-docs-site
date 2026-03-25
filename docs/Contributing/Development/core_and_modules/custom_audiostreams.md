@@ -18,8 +18,8 @@ This guide assumes the reader knows how to create C++ modules. If not, refer to 
 
 ### References:
 
--  [servers/audio/audio_stream.h](https://github.com/godotengine/godot/blob/master/servers/audio/audio_stream.h)_
--  [scene/audio/audio_stream_player.cpp](https://github.com/godotengine/godot/blob/master/scene/audio/audio_stream_player.cpp)_
+-  [servers/audio/audio_stream.h](https://github.com/godotengine/godot/blob/master/servers/audio/audio_stream.h)
+-  [scene/audio/audio_stream_player.cpp](https://github.com/godotengine/godot/blob/master/scene/audio/audio_stream_player.cpp)
 
 ## What for?
 
@@ -107,7 +107,7 @@ void AudioStreamMyTone::_bind_methods() {
 
 ### References:
 
--  [servers/audio/audio_stream.h](https://github.com/godotengine/godot/blob/master/servers/audio/audio_stream.h)_
+-  [servers/audio/audio_stream.h](https://github.com/godotengine/godot/blob/master/servers/audio/audio_stream.h)
 
 ## Create an AudioStreamPlayback
 
@@ -333,6 +333,6 @@ bool AudioStreamPlaybackResampledMyTone::is_playing() const {
 ```
 
 ### References:
--  [core/math/audio_frame.h](https://github.com/godotengine/godot/blob/master/core/math/audio_frame.h)_
--  [servers/audio/audio_stream.h](https://github.com/godotengine/godot/blob/master/servers/audio/audio_stream.h)_
--  [scene/audio/audio_stream_player.cpp](https://github.com/godotengine/godot/blob/master/scene/audio/audio_stream_player.cpp)_
+-  [core/math/audio_frame.h](https://github.com/godotengine/godot/blob/master/core/math/audio_frame.h)
+-  [servers/audio/audio_stream.h](https://github.com/godotengine/godot/blob/master/servers/audio/audio_stream.h)
+-  [scene/audio/audio_stream_player.cpp](https://github.com/godotengine/godot/blob/master/scene/audio/audio_stream_player.cpp)

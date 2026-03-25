@@ -38,7 +38,7 @@ aren't affected by PCK encryption. To use PCK encryption on Android, enable
    [this service](https://asecuritysite.com/encryption/keygen).
 
    Alternatively, you can generate it yourself using
-   [OpenSSL](https://www.openssl.org/)_ command-line tools:
+   [OpenSSL](https://www.openssl.org/) command-line tools:
 
 ```
 openssl rand -hex 32 > godot.gdkey

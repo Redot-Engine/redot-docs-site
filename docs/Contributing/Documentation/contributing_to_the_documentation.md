@@ -160,8 +160,8 @@ first letter capitalized.
 
 ### Sphinx and reStructuredText syntax
 
-Check Sphinx's [reST Primer](https://www.sphinx-doc.org/en/stable/rest.html)_
-and the [official reference](https://docutils.sourceforge.net/rst.html)_ for
+Check Sphinx's [reST Primer](https://www.sphinx-doc.org/en/stable/rest.html)
+and the [official reference](https://docutils.sourceforge.net/rst.html) for
 details on the syntax.
 
 Sphinx uses specific reST comments to do specific operations, like defining the

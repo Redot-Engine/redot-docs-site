@@ -20,7 +20,7 @@ If you're looking to export your project to iOS instead, read [doc_exporting_for
     - Go to *Xcode -&gt; Settings... -&gt; Locations -&gt; Command Line Tools* and select
       an installed version. Even if one is already selected, re-select it.
 -  Download and follow README instructions to build a static ``.xcframework``
-   from the [MoltenVK SDK](https://github.com/KhronosGroup/MoltenVK#fetching-moltenvk-source-code)_.
+   from the [MoltenVK SDK](https://github.com/KhronosGroup/MoltenVK#fetching-moltenvk-source-code).
 
 :::note
 If you have `Homebrew <https://brew.sh/>`_ installed, you can easily

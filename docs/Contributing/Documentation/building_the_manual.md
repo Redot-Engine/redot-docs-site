@@ -156,7 +156,7 @@ rest intact.
 
 If you delete the ``classes/`` folder, do not use ``git add .`` when working on a pull
 request or the whole ``classes/`` folder will be removed when you commit.
-See [#3157](https://github.com/godotengine/godot-docs/issues/3157)_ for more detail.
+See [#3157](https://github.com/godotengine/godot-docs/issues/3157) for more detail.
 
 :::
 

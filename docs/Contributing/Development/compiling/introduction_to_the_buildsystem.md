@@ -50,7 +50,7 @@ this article to reference platform-specific and universal configuration options.
 
 The build process may take a while, depending on how powerful your system is. By default, Godot's
 SCons setup is configured to use all CPU threads but one (to keep the system responsive during
-compilation). If you want to adjust how many CPU threads SCons will use, use the ``-j &lt;threads&gt;``
+compilation). If you want to adjust how many CPU threads SCons will use, use the `[-j](threads)`
 parameter to specify how many threads will be used for the build.
 
 Example for using 4 threads
@@ -128,7 +128,7 @@ godot.windows.editor.64.exe
 Copy that binary to any location you like, as it contains the Project Manager,
 editor and all means to execute the game. However, it lacks the data to export
 it to the different platforms. For that the export templates are needed (which
-can be either downloaded from [godotengine.org](https://godotengine.org/)_, or
+can be either downloaded from [godotengine.org](https://godotengine.org/), or
 you can build them yourself).
 
 Aside from that, there are a few standard options that can be set in all
@@ -227,7 +227,7 @@ written to a separate ``.pdb`` file regardless of ``separate_debug_symbols``.
 
 :::tip
 
-Use the ``strip &lt;path/to/binary&gt;`` command to remove debugging symbols from
+Use the `[strip](path/to/binary)` command to remove debugging symbols from
 a binary you've already compiled.
 
 :::
@@ -308,7 +308,7 @@ to override built-in module implementations.
 ## Cleaning generated files
 
 Sometimes, you may encounter an error due to generated files being present. You
-can remove them by using ``scons --clean &lt;options&gt;``, where ``&lt;options&gt;`` is the
+can remove them by using `[scons --clean](options)`, where ``&lt;options&gt;`` is the
 list of build options you've used to build Godot previously.
 
 Alternatively, you can use ``git clean -fixd`` which will clean build artifacts
@@ -346,7 +346,7 @@ time it takes to build the engine. See [doc_optimizing_for_size](doc_optimizing_
 :::info
 
 You can use the online
-[Godot build options generator](https://godot-build-options-generator.github.io/)_
+[Godot build options generator](https://godot-build-options-generator.github.io/)
 to generate a ``custom.py`` file containing SCons options.
 You can then save this file and place it at the root of your Godot source directory.
 
@@ -444,7 +444,7 @@ usually be faster to catch them on a local build on your machine.
 ## Export templates
 
 Official export templates are downloaded from the Godot Engine site:
-[godotengine.org](https://godotengine.org/)_. However, you might want
+[godotengine.org](https://godotengine.org/). However, you might want
 to build them yourself (in case you want newer ones, you are using custom
 modules, or simply don't trust your own shadow).
 
@@ -500,7 +500,7 @@ directory to avoid conflicts. For instance, if you are building export templates
 for Godot 3.1.1, ``version.txt`` should contain ``3.1.1.stable`` on the first
 line (and nothing else). This version identifier is based on the ``major``,
 ``minor``, ``patch`` (if present) and ``status`` lines of the
-[version.py file in the Godot Git repository](https://github.com/godotengine/godot/blob/master/version.py)_.
+[version.py file in the Godot Git repository](https://github.com/godotengine/godot/blob/master/version.py).
 
 If you are developing for multiple platforms, macOS is definitely the most
 convenient host platform for cross-compilation, since you can cross-compile for

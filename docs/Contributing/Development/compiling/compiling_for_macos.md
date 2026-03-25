@@ -227,10 +227,10 @@ zip -r9 macos.zip macos_template.app
 
 It is possible to compile for macOS in a Linux environment (and maybe also in
 Windows using the Windows Subsystem for Linux). For that, you'll need to install
-[OSXCross](https://github.com/tpoechtrager/osxcross)_ to be able to use macOS
+[OSXCross](https://github.com/tpoechtrager/osxcross) to be able to use macOS
 as a target. First, follow the instructions to install it:
 
-Clone the [OSXCross repository](https://github.com/tpoechtrager/osxcross)_
+Clone the [OSXCross repository](https://github.com/tpoechtrager/osxcross)
 somewhere on your machine (or download a ZIP file and extract it somewhere),
 e.g.
 

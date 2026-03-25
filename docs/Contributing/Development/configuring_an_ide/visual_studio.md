@@ -1,7 +1,7 @@
 
 # Visual Studio
 
-[Visual Studio Community](https://visualstudio.microsoft.com)_ is a Windows-only IDE
+[Visual Studio Community](https://visualstudio.microsoft.com) is a Windows-only IDE
 by [Microsoft](https://microsoft.com) that's free for individual use or non-commercial use within organizations.
 It has many useful features, such as memory view, performance view, source
 control and more.
@@ -70,4 +70,4 @@ start debugging.
 </figure>
 
 If you run into any issues, ask for help in one of
-[Godot's community channels](https://godotengine.org/community)_.
+[Godot's community channels](https://godotengine.org/community).

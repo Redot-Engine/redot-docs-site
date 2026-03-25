@@ -31,26 +31,26 @@ The editor is fully written in C++. It can't contain any GDScript or C# code.
 ## Directory structure
 
 The editor's code is fully self-contained in the
-[editor/](https://github.com/godotengine/godot/tree/master/editor)_ folder
+[editor/](https://github.com/godotengine/godot/tree/master/editor) folder
 of the Godot source repository.
 
 Some editor functionality is also implemented via
 [modules](doc_custom_modules_in_cpp). Some of these are only enabled in
 editor builds to decrease the binary size of export templates. See the
-[modules/](https://github.com/godotengine/godot/tree/master/modules)_ folder
+[modules/](https://github.com/godotengine/godot/tree/master/modules) folder
 in the Godot source repository.
 
 Some important files in the editor are:
 
-- [editor/editor_node.cpp](https://github.com/godotengine/godot/blob/master/editor/editor_node.cpp)_:
+- [editor/editor_node.cpp](https://github.com/godotengine/godot/blob/master/editor/editor_node.cpp):
   Main editor initialization file. Effectively the "main scene" of the editor.
-- [editor/project_manager.cpp](https://github.com/godotengine/godot/blob/master/editor/project_manager.cpp)_:
+- [editor/project_manager.cpp](https://github.com/godotengine/godot/blob/master/editor/project_manager.cpp):
   Main Project Manager initialization file. Effectively the "main scene" of the Project Manager.
-- [editor/plugins/canvas_item_editor_plugin.cpp](https://github.com/godotengine/godot/blob/master/editor/plugins/canvas_item_editor_plugin.cpp)_:
+- [editor/plugins/canvas_item_editor_plugin.cpp](https://github.com/godotengine/godot/blob/master/editor/plugins/canvas_item_editor_plugin.cpp):
   The 2D editor viewport and related functionality (toolbar at the top, editing modes, overlaid helpers/panels, …).
-- [editor/plugins/node_3d_editor_plugin.cpp](https://github.com/godotengine/godot/blob/master/editor/plugins/node_3d_editor_plugin.cpp)_:
+- [editor/plugins/node_3d_editor_plugin.cpp](https://github.com/godotengine/godot/blob/master/editor/plugins/node_3d_editor_plugin.cpp):
   The 3D editor viewport and related functionality (toolbar at the top, editing modes, overlaid panels, …).
-- [editor/plugins/node_3d_editor_gizmos.cpp](https://github.com/godotengine/godot/blob/master/editor/plugins/node_3d_editor_gizmos.cpp)_:
+- [editor/plugins/node_3d_editor_gizmos.cpp](https://github.com/godotengine/godot/blob/master/editor/plugins/node_3d_editor_gizmos.cpp):
   Where the 3D editor gizmos are defined and drawn.
   This file doesn't have a 2D counterpart as 2D gizmos are drawn by the nodes themselves.
 
@@ -74,7 +74,7 @@ from ``servers/`` and ``core/``, it cannot depend on includes from ``editor/``.
 
 Currently, there are some dependencies to ``editor/`` includes in ``scene/``
 files, but
-[they are in the process of being removed](https://github.com/godotengine/godot/issues/53295)_.
+[they are in the process of being removed](https://github.com/godotengine/godot/issues/53295).
 
 ## Development tips
 

@@ -100,4 +100,4 @@ Once that's done, you can follow the instructions below to run/debug the ``app``
    - Select **Run &gt; Debug 'app'** from the top menu or [click the Debug icon](https://developer.android.com/studio/run/rundebugconfig#running).
 
 If you run into any issues, ask for help in
-[Godot's Android dev channel](https://chat.godotengine.org/channel/android)_.
+[Godot's Android dev channel](https://chat.godotengine.org/channel/android).

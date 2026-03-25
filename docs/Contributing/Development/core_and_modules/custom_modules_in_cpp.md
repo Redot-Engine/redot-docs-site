@@ -597,7 +597,7 @@ Untracked files:
 
 3. Now we can generate the documentation:
 
-We can do this via running Godot's doctool i.e. ``godot --doctool &lt;path&gt;``,
+We can do this via running Godot's doctool i.e. `[godot --doctool](path)`,
 which will dump the engine API reference to the given ``&lt;path&gt;`` in XML format.
 
 In our case we'll point it to the root of the cloned repository. You can point it

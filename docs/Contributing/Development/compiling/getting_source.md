@@ -8,7 +8,7 @@
 Before [getting into the SCons build system](doc_introduction_to_the_buildsystem)
 and compiling Godot, you need to actually download the Godot source code.
 
-The source code is available on [GitHub](https://github.com/godotengine/godot)_
+The source code is available on [GitHub](https://github.com/godotengine/godot)
 and while you can manually download it via the website, in general you want to
 do it via the ``git`` version control system.
 
@@ -16,7 +16,7 @@ If you are compiling in order to make contributions or pull requests, you should
 follow the instructions from the [Pull Request workflow](doc_pr_workflow).
 
 If you don't know much about ``git`` yet, there are a great number of
-[tutorials](https://git-scm.com/book)_ available on various websites.
+[tutorials](https://git-scm.com/book) available on various websites.
 
 In general, you need to install ``git`` and/or one of the various GUI clients.
 
@@ -33,7 +33,7 @@ git clone https://github.com/godotengine/godot.git
 
 ```
 
-For any stable release, visit the [release page](https://github.com/godotengine/godot/releases)_
+For any stable release, visit the [release page](https://github.com/godotengine/godot/releases)
 and click on the link for the release you want.
 You can then download and extract the source from the download link on the page.
 
@@ -55,11 +55,11 @@ git checkout f4af8201bac157b9d47e336203d3e8a8ef729de2
 
 ```
 
-The [maintenance branches](https://github.com/godotengine/godot/branches/all)_
+The [maintenance branches](https://github.com/godotengine/godot/branches/all)
 are used to release further patches on each minor version.
 
 You can get the source code for each release and pre-release in ``.tar.xz`` format from
-[godotengine/godot-builds on GitHub](https://github.com/godotengine/godot-builds/releases)_.
+[godotengine/godot-builds on GitHub](https://github.com/godotengine/godot-builds/releases).
 This lacks version control information but has a slightly smaller download size.
 
 After downloading the Godot source code,

@@ -93,7 +93,7 @@ More details about this directory in
 
 ### Build Platform
 
-Provide the ``--godot-platform=&lt;platform&gt;`` argument to control for which
+Provide the `[--godot-platform=](platform)` argument to control for which
 platform specific the libraries are built. Omit this argument to build for the
 current system.
 

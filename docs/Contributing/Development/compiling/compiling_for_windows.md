@@ -141,7 +141,7 @@ to MSVC. Therefore, it's recommended to use MinGW to produce builds that you
 distribute to players.
 
 All official Godot binaries are built in
-[custom containers](https://github.com/godotengine/build-containers)_
+[custom containers](https://github.com/godotengine/build-containers)
 using MinGW.
 
 :::
@@ -400,7 +400,7 @@ See :ref:`doc_configuring_an_ide_vs` for further details.
 ## Cross-compiling for Windows from other operating systems
 
 If you are a Linux or macOS user, you need to install
-[MinGW-w64](https://www.mingw-w64.org/)_, which typically comes in 32-bit
+[MinGW-w64](https://www.mingw-w64.org/), which typically comes in 32-bit
 and 64-bit variants, or [MinGW-LLVM](https://github.com/mstorsjo/llvm-mingw/releases),
 which comes as a single archive for all target architectures.
 The package names may differ based on your distribution, here are some known ones:

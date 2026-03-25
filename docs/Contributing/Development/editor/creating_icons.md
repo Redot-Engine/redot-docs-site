@@ -35,7 +35,7 @@ CPUParticles2D, name the file ``CPUParticles2D.svg``.
 
 If the user has configured their editor to use a light theme, Godot will
 convert the icon's colors based on a
-[set of predefined color mappings](https://github.com/godotengine/godot/blob/4.0.2-stable/editor/editor_themes.cpp#L60-L160)_.
+[set of predefined color mappings](https://github.com/godotengine/godot/blob/4.0.2-stable/editor/editor_themes.cpp#L60-L160).
 This is to ensure the icon always displays with a sufficient contrast rate.
 Try to restrict your icon's color palette to colors found in the list above.
 Otherwise, your icon may become difficult to read on a light background.
@@ -81,4 +81,4 @@ If icons don't appear in the editor, make sure that:
 
 ### References
 
--  [editor/icons](https://github.com/godotengine/godot/tree/master/editor/icons)_
+-  [editor/icons](https://github.com/godotengine/godot/tree/master/editor/icons)

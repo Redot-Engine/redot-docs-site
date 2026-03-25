@@ -16,7 +16,7 @@ when you actually need the output to debug the application.
 
 ## Windows
 
-Install the Vulkan SDK [&lt;https://vulkan.lunarg.com/sdk/home&gt;](&lt;https://vulkan.lunarg.com/sdk/home&gt;)_, which contains
+Install the Vulkan SDK [&lt;https://vulkan.lunarg.com/sdk/home&gt;](&lt;https://vulkan.lunarg.com/sdk/home&gt;), which contains
 validation layers as part of its default installation. No need to enable any
 optional features in the installer; installing the core Vulkan SDK suffices. You
 don't need to reboot after installing the SDK, but you may need to close and
@@ -43,7 +43,7 @@ export template in your project's macOS export preset.
 
 :::
 
-Install the Vulkan SDK [&lt;https://vulkan.lunarg.com/sdk/home&gt;](&lt;https://vulkan.lunarg.com/sdk/home&gt;)_, which contains
+Install the Vulkan SDK [&lt;https://vulkan.lunarg.com/sdk/home&gt;](&lt;https://vulkan.lunarg.com/sdk/home&gt;), which contains
 validation layers as part of its default installation. No need to enable any
 optional features in the installer; installing the core Vulkan SDK suffices. You
 don't need to reboot after installing the SDK, but you may need to close and
@@ -151,7 +151,7 @@ for Vulkan there.
 #### Build validation layers from official sources
 
 To build Android libraries, follow the instructions on
-[Khronos' repository](https://github.com/KhronosGroup/Vulkan-ValidationLayers/blob/master/BUILD.md#building-on-android)_.
+[Khronos' repository](https://github.com/KhronosGroup/Vulkan-ValidationLayers/blob/master/BUILD.md#building-on-android).
 After a successful build, the libraries will be located in ``Vulkan-ValidationLayers/build-android/libs``.
 
 #### Copy libraries

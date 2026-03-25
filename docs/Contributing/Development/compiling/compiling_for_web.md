@@ -14,9 +14,9 @@ If you're looking to export your project to HTML5 instead, read [doc_exporting_f
 
 To compile export templates for the Web, the following is required:
 
-- [Emscripten 3.1.62+](https://emscripten.org)_.
-- [Python 3.8+](https://www.python.org/)_.
-- [SCons 4.0+](https://scons.org/pages/download.html)_ build system.
+- [Emscripten 3.1.62+](https://emscripten.org).
+- [Python 3.8+](https://www.python.org/).
+- [SCons 4.0+](https://scons.org/pages/download.html) build system.
 
 :::info
 To get the Godot source code for compiling, see
@@ -131,7 +131,7 @@ server requirements.
 :::tip
 
 The Godot repository includes a
-[Python script to host a local web server](https://raw.githubusercontent.com/godotengine/godot/master/platform/web/serve.py)_.
+[Python script to host a local web server](https://raw.githubusercontent.com/godotengine/godot/master/platform/web/serve.py).
 This can be used to test the web editor locally.
 
 After compiling the editor, extract the ZIP archive that was created in the

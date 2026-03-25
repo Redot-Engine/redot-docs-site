@@ -119,4 +119,4 @@ Under **General Settings**, on the **Editor Settings** tab, under **Tab Options*
   <img src="/Contributing/Development/configuring_an_ide/img/code_block_use_tab_character.png" />
 </figure>
 
-That's it. You're ready to start contributing to Godot using the Code::Blocks IDE. Remember to save the project file and the **Workspace**. If you run into any issues, ask for help in one of [Godot's community channels](https://godotengine.org/community)_.
+That's it. You're ready to start contributing to Godot using the Code::Blocks IDE. Remember to save the project file and the **Workspace**. If you run into any issues, ask for help in one of [Godot's community channels](https://godotengine.org/community).

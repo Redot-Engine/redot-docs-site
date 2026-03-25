@@ -162,9 +162,9 @@ To record a video of something in Godot, a screen capture tool can be used.
 Operating systems generally don't come with tools that are flexible enough
 for this, so you'll need to install a third-party utility.
 
-[OBS Studio](https://obsproject.com/)_ is the most popular option, but
-[SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/)_
-can be used as an alternative on Linux. [ShareX](https://getsharex.com/)_
+[OBS Studio](https://obsproject.com/) is the most popular option, but
+[SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/)
+can be used as an alternative on Linux. [ShareX](https://getsharex.com/)
 can be used as an alternative on Windows. All these tools can be configured
 to record the entire screen, a specific window or a predetermined rectangle.
 
@@ -189,8 +189,8 @@ it later to reduce its file size. This results in more efficient compression
 than directly aiming for a small file size, as real-time compression methods are
 less efficient than slower compression methods.
 
-To re-encode videos for a smaller file size, use [HandBrake](https://handbrake.fr/)_
-or the `FFmpeg &lt;https://ffmpeg.org/&gt;` command line below:
+To re-encode videos for a smaller file size, use [HandBrake](https://handbrake.fr/)
+or the [FFmpeg](https://ffmpeg.org/) command line below:
 
 ```
 ffmpeg -i input.mp4 -crf 23 output.webm

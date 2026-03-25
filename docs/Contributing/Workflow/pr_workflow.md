@@ -48,7 +48,7 @@ The first sections of Git's "Book" are a good introduction to
 the tool's philosophy and the various commands you need to
 master in your daily workflow. You can read them online on the
 [Git SCM](https://git-scm.com/book/en/v2) website.
-You can also try out [GitHub's interactive guide](https://try.github.io/)_.
+You can also try out [GitHub's interactive guide](https://try.github.io/).
 
 :::
 
@@ -255,7 +255,7 @@ section &lt;doc_pr_workflow_rebase&gt;` for instructions.
 
 :::tip
 If at any time you want to *reset* a local branch to a given commit or branch,
-you can do so with ``git reset --hard &lt;commit ID&gt;`` or
+you can do so with `[git reset --hard](commit ID)` or
 ``git reset --hard &lt;remote&gt;/&lt;branch&gt;`` (e.g. ``git reset --hard upstream/master``).
 
 Be warned that this will remove any changes that you might have committed in
@@ -283,12 +283,12 @@ before staging it, while it is staged, and after it has been committed.
 
 - ``git diff`` will show you the current unstaged changes, i.e. the
   differences between your working directory and the staging area.
-- ``git checkout -- &lt;files&gt;`` will undo the unstaged changes to the given
+- `[git checkout --](files)` will undo the unstaged changes to the given
   files.
-- ``git add &lt;files&gt;`` will *stage* the changes on the listed files.
+- `[git add](files)` will *stage* the changes on the listed files.
 - ``git diff --staged`` will show the current staged changes, i.e. the
   differences between the staging area and the last commit.
-- ``git reset HEAD &lt;files&gt;`` will *unstage* changes to the listed files.
+- `[git reset HEAD](files)` will *unstage* changes to the listed files.
 - ``git status`` will show you what are the currently staged and unstaged
   modifications.
 - ``git commit`` will commit the staged files. It will open a text editor

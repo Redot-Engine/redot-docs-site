@@ -119,7 +119,7 @@ search feature to find classes and properties quickly.
 :::tip
 
 If you use Visual Studio Code, you can install the
-[vscode-xml extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)_
+[vscode-xml extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)
 to get linting for class reference XML files.
 
 :::

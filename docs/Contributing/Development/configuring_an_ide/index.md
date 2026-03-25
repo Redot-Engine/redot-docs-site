@@ -25,8 +25,8 @@ Development Environment), here are setup instructions for some popular ones:
 
 It is possible to use other IDEs, but their setup is not documented yet.
 
-If your editor supports the [language server protocol](https://microsoft.github.io/language-server-protocol/)_,
-you can use [clangd](https://clangd.llvm.org)_ for completion, diagnostics, and more.
+If your editor supports the [language server protocol](https://microsoft.github.io/language-server-protocol/),
+you can use [clangd](https://clangd.llvm.org) for completion, diagnostics, and more.
 You can generate a compilation database for use with clangd one of two ways:
 
 ```shell

@@ -14,9 +14,9 @@ data types. If not, refer to [doc_custom_modules_in_cpp](doc_custom_modules_in_c
 
 ### References
 
-- [Why does Godot use servers and RIDs?](https://godotengine.org/article/why-does-godot-use-servers-and-rids)_
-- [Singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern)_
-- [Mediator pattern](https://en.wikipedia.org/wiki/Mediator_pattern)_
+- [Why does Godot use servers and RIDs?](https://godotengine.org/article/why-does-godot-use-servers-and-rids)
+- [Singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
+- [Mediator pattern](https://en.wikipedia.org/wiki/Mediator_pattern)
 
 ## What for?
 
@@ -264,7 +264,7 @@ const uint64_t PRIME[225] = {
 ## Custom managed resource data
 
 Godot servers implement a mediator pattern. All data types inherit ``RID_Data``.
-``RID_Owner&lt;MyRID_Data&gt;`` owns the object when ``make_rid`` is called. During debug mode only,
+`[RID_Owner](MyRID_Data)` owns the object when ``make_rid`` is called. During debug mode only,
 RID_Owner maintains a list of RIDs. In practice, RIDs are similar to writing
 object-oriented C code.
 
@@ -306,7 +306,7 @@ public:
 ### References
 
 - [RID](class_rid)
-- [core/templates/rid.h](https://github.com/godotengine/godot/blob/master/core/templates/rid.h)_
+- [core/templates/rid.h](https://github.com/godotengine/godot/blob/master/core/templates/rid.h)
 
 ## Registering the class in GDScript
 
@@ -360,7 +360,7 @@ void unregister_hilbert_hotel_types() {
 
 ```
 
-- [servers/register_server_types.cpp](https://github.com/godotengine/godot/blob/master/servers/register_server_types.cpp)_
+- [servers/register_server_types.cpp](https://github.com/godotengine/godot/blob/master/servers/register_server_types.cpp)
 
 ### Bind methods
 
@@ -462,7 +462,7 @@ to execute the desired behavior. The queue will be flushed whenever either
 
 ### References:
 
-- [core/object/message_queue.cpp](https://github.com/godotengine/godot/blob/master/core/object/message_queue.cpp)_
+- [core/object/message_queue.cpp](https://github.com/godotengine/godot/blob/master/core/object/message_queue.cpp)
 
 ## Summing it up
 
@@ -492,5 +492,5 @@ func _print_occupy_room(room_number, r_id):
 
 ### Notes
 
-- The actual [Hilbert Hotel](https://en.wikipedia.org/wiki/Hilbert%27s_paradox_of_the_Grand_Hotel)_ is impossible.
+- The actual [Hilbert Hotel](https://en.wikipedia.org/wiki/Hilbert%27s_paradox_of_the_Grand_Hotel) is impossible.
 - Connecting signal example code is pretty hacky.

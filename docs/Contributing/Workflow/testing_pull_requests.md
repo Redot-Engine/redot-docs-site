@@ -5,7 +5,7 @@ Many people are developing new features or fixing bugs on GitHub.
 To help with engine development, you may be asked to test those pull requests
 with a Godot build that includes code from the pull request in question.
 
-Thanks to GitHub Actions, all [pull requests](https://github.com/godotengine/godot/pulls)_
+Thanks to GitHub Actions, all [pull requests](https://github.com/godotengine/godot/pulls)
 have continuous builds available. These builds let you try out pull requests
 without having to compile anything from source.
 
@@ -50,7 +50,7 @@ instead.
 ### If you don't have a GitHub account
 
 If you don't have a GitHub account and can't sign up for one,
-you can use the third-party [nightly.link](https://nightly.link)_ service
+you can use the third-party [nightly.link](https://nightly.link) service
 to generate a universal download link.
 
 - Open the pull request page. Click the *fork*'s branch name near the top of the page:
@@ -62,7 +62,7 @@ to generate a universal download link.
   Click the workflow file for the platform you wish to download artifacts for.
   *After* clicking on the file (which opens the file view), copy the page URL from your browser's address bar.
 
-- Open the [nightly.link](https://nightly.link)_ website and paste the URL you just copied
+- Open the [nightly.link](https://nightly.link) website and paste the URL you just copied
   into the text field located below the heading **Paste a GitHub link, get a nightly.link!**.
   After pasting the URL, click **Get links** on the right.
   If the format of the URL you pasted is correct, you should be presented
@@ -76,7 +76,7 @@ to generate a universal download link.
   Note that Windows and macOS binaries are not code signed.
   This means you may have to bypass a security warning before you can run the executable.
   If you frequently test pull request builds, it may be better to disable
-  Windows SmartScreen or [disable macOS Gatekeeper](https://disable-gatekeeper.github.io/)_ permanently.
+  Windows SmartScreen or [disable macOS Gatekeeper](https://disable-gatekeeper.github.io/) permanently.
 
 ## Compiling a pull request branch from source
 

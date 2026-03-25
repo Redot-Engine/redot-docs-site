@@ -261,11 +261,11 @@ To fix include errors you may be having, you need to configure some settings in 
   - This argument can be added to your build task in ``tasks.json`` since it will need to be run whenever files are added or moved.
 
 If you run into any issues, ask for help in one of
-[Godot's community channels](https://godotengine.org/community)_.
+[Godot's community channels](https://godotengine.org/community).
 
 :::tip
 
 To get linting on class reference XML files, install the
-[vscode-xml extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)_.
+[vscode-xml extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml).
 
 :::

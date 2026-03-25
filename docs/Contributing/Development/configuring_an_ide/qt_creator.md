@@ -107,4 +107,4 @@ Click on **Edit** to change the current settings, then click on
 </figure>
 
 If you run into any issues, ask for help in one of
-[Godot's community channels](https://godotengine.org/community)_.
+[Godot's community channels](https://godotengine.org/community).

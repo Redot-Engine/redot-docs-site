@@ -256,12 +256,12 @@ CRASH_NOW_MSG("Can't predict the future! Aborting.");
 
 :::info
 
-See [core/error/error_macros.h](https://github.com/godotengine/godot/blob/master/core/error/error_macros.h)_
+See [core/error/error_macros.h](https://github.com/godotengine/godot/blob/master/core/error/error_macros.h)
 in Godot's codebase for more information about each error macro.
 
 Some functions return an error code (materialized by a return type of
 ``Error``). This value can be returned directly from an error macro.
 See the list of available error codes in
-[core/error/error_list.h](https://github.com/godotengine/godot/blob/master/core/error/error_list.h)_.
+[core/error/error_list.h](https://github.com/godotengine/godot/blob/master/core/error/error_list.h).
 
 :::

@@ -35,7 +35,7 @@ obj2 = Object::cast_to<OtherClass>(obj); // converting between classes, this als
 
 ### References:
 
--  [core/object/object.h](https://github.com/godotengine/godot/blob/master/core/object/object.h)_
+-  [core/object/object.h](https://github.com/godotengine/godot/blob/master/core/object/object.h)
 
 ## Registering an Object
 
@@ -99,7 +99,7 @@ string passing the name can be passed for brevity.
 
 ### References:
 
--  [core/object/class_db.h](https://github.com/godotengine/godot/blob/master/core/object/class_db.h)_
+-  [core/object/class_db.h](https://github.com/godotengine/godot/blob/master/core/object/class_db.h)
 
 ## Constants
 
@@ -273,7 +273,7 @@ templates point to it.
 
 ### References:
 
--  [core/object/reference.h](https://github.com/godotengine/godot/blob/master/core/object/ref_counted.h)_
+-  [core/object/reference.h](https://github.com/godotengine/godot/blob/master/core/object/ref_counted.h)
 
 ## Resources
 
@@ -287,7 +287,7 @@ Resources without a path are fine too.
 
 ### References:
 
--  [core/io/resource.h](https://github.com/godotengine/godot/blob/master/core/io/resource.h)_
+-  [core/io/resource.h](https://github.com/godotengine/godot/blob/master/core/io/resource.h)
 
 ## Resource loading
 
@@ -307,7 +307,7 @@ the same time.
 
 ### References:
 
--  [core/io/resource_loader.h](https://github.com/godotengine/godot/blob/master/core/io/resource_loader.h)_
+-  [core/io/resource_loader.h](https://github.com/godotengine/godot/blob/master/core/io/resource_loader.h)
 
 ## Resource saving
 
@@ -325,4 +325,4 @@ be bundled with the saved resource and assigned sub-IDs, like
 
 ### References:
 
--  [core/io/resource_saver.h](https://github.com/godotengine/godot/blob/master/core/io/resource_saver.h)_
+-  [core/io/resource_saver.h](https://github.com/godotengine/godot/blob/master/core/io/resource_saver.h)

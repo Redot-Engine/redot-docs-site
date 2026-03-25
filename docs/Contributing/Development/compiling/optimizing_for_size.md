@@ -292,7 +292,7 @@ don't need to create a ZIP archive to distribute files in the first place.
 As an aside, you can look into optimizing the distribution of your project itself.
 This can be done even without recompiling the export template.
 
-[7-Zip](https://7-zip.org/)_ can be used to create ZIP archives that are more
+[7-Zip](https://7-zip.org/) can be used to create ZIP archives that are more
 efficient than usual, while remaining compatible with every ZIP extractor
 (including Windows' own built-in extractor). ZIP size reduction in a large
 project can reach dozens of megabytes compared to a typical ZIP compressor,

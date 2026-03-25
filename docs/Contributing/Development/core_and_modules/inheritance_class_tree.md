@@ -20,4 +20,4 @@
 
 ![Image](/Contributing/Development/core_and_modules/img/Node3D.webp)
 
-Source files: :download:`class_tree.zip &lt;files/class_tree.zip&gt;`.
+Source files: :download:[class_tree.zip](files/class_tree.zip).

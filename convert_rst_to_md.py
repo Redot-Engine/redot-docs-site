@@ -16,11 +16,11 @@ def convert_rst_to_md(rst_content, source_dir=None):
     is_tabs_open = False
 
     def apply_inline_replacements(text):
-        text = re.sub(r':ref:`([^<`]+?)\s*<([^>]+)>`', r'[\1](\2)', text)
-        text = re.sub(r':ref:`([^`]+)`', r'[\1](\1)', text)
+        text = re.sub(r':ref:`([^<`]+?)\s*<([^>]+)>`(_*)', r'[\1](\2)', text)
+        text = re.sub(r':ref:`([^`]+)`(_*)', r'[\1](\1)', text)
         text = re.sub(r':kbd:`([^`]+)`', r'`\1`', text)
-        text = re.sub(r'`([^<`]+?)\s*<([^>]+)>`_', r'[\1](\2)', text)
-        text = re.sub(r'`([^`]+)`_', r'[\1](\1)', text)
+        text = re.sub(r'`([^<`]+?)\s*<([^>]+)>`(_*)', r'[\1](\2)', text)
+        text = re.sub(r'`([^`]+)`_+', r'[\1](\1)', text)
         text = re.sub(r'\*\*([^*]+)\*\*', r'**\1**', text)
         text = re.sub(r'\*([^*]+)\*', r'*\1*', text)
         return text
@@ -28,8 +28,8 @@ def convert_rst_to_md(rst_content, source_dir=None):
     # Escape angle brackets that are likely NOT part of JSX
     def escape_angle_brackets(text):
         # First, apply inline replacements that involve angle brackets to avoid escaping them
-        text = re.sub(r':ref:`([^<`]+?)\s*<([^>]+)>`', r'[\1](\2)', text)
-        text = re.sub(r'`([^<`]+?)\s*<([^>]+)>`_', r'[\1](\2)', text)
+        text = re.sub(r':ref:`([^<`]+?)\s*<([^>]+)>`(_*)', r'[\1](\2)', text)
+        text = re.sub(r'`([^<`]+?)\s*<([^>]+)>`(_*)', r'[\1](\2)', text)
 
         # If the line contains known JSX tags, we need to be careful
         known_tags = ['Tabs', 'TabItem', '/Tabs', '/TabItem']

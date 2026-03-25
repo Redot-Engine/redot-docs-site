@@ -713,8 +713,8 @@ parsed based on the order that they initially appear within a page. Make sure
 that if you use an ``h3`` section header (``~~~``), you include an ``h2``
 sub-section header (``---``) first.
 
-See the [Sphinx documentation](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections)_
-and the [reStructuredText documentation](https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#sections)_
+See the [Sphinx documentation](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections)
+and the [reStructuredText documentation](https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#sections)
 for more information.
 
 ## When to refer to a specific Godot version

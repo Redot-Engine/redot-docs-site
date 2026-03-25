@@ -3,7 +3,7 @@
 
 This page describes the typical workflow of the bug triage team aka
 bugsquad when handling issues and pull requests on Godot's
-[GitHub repository](https://github.com/godotengine/godot)_.
+[GitHub repository](https://github.com/godotengine/godot).
 It is bound to evolve together with the bugsquad, so do not
 hesitate to propose modifications to the following guidelines.
 
@@ -30,7 +30,7 @@ to both issues and pull requests.
 
 ### Labels
 
-The following [labels](https://github.com/godotengine/godot/labels)_ are
+The following [labels](https://github.com/godotengine/godot/labels) are
 currently defined in the Godot repository:
 
 **Categories:**
@@ -65,7 +65,7 @@ currently defined in the Godot repository:
 -  *Feature proposal*: describes a wish for a new feature to be
    implemented. Note that the main Godot repository no longer accepts
    feature requests. Please use
-   [godot-proposals](https://github.com/godotengine/godot-proposals)_ instead.
+   [godot-proposals](https://github.com/godotengine/godot-proposals) instead.
    PRs which add new features but do not have a corresponding proposal use this
    label.
 -  *For PR meeting*: the issue needs to be discussed in a pull request meeting.
@@ -152,8 +152,8 @@ Android and Linux exclusively, select those two platforms).
 
 ### Documentation labels
 
-In the [documentation repository](https://github.com/godotengine/godot-docs)_, we
-use the following [labels](https://github.com/godotengine/godot-docs/labels)_:
+In the [documentation repository](https://github.com/godotengine/godot-docs), we
+use the following [labels](https://github.com/godotengine/godot-docs/labels):
 
 -  *Archived*: either a duplicate of another issue, or invalid. Such an
    issue would also be closed.

@@ -44,7 +44,7 @@ though all Variant types excluding Nil and Object are non-nullable.
 
 ### References
 
--  [core/variant/variant.h](https://github.com/godotengine/godot/blob/master/core/variant/variant.h)_
+-  [core/variant/variant.h](https://github.com/godotengine/godot/blob/master/core/variant/variant.h)
 
 ## List of variant types
 
@@ -105,5 +105,5 @@ it. A Mutex should be created to lock it if
 
 ### References
 
--  [core/variant/dictionary.h](https://github.com/godotengine/godot/blob/master/core/variant/dictionary.h)_
--  [core/variant/array.h](https://github.com/godotengine/godot/blob/master/core/variant/array.h)_
+-  [core/variant/dictionary.h](https://github.com/godotengine/godot/blob/master/core/variant/dictionary.h)
+-  [core/variant/array.h](https://github.com/godotengine/godot/blob/master/core/variant/array.h)

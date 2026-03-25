@@ -4,7 +4,7 @@
 .. highlight:: shell
 
 Bisecting is a way to find regressions in software. After reporting a bug on the
-[Godot repository on GitHub](https://github.com/godotengine/godot)_, you may
+[Godot repository on GitHub](https://github.com/godotengine/godot), you may
 be asked by a contributor to *bisect* the issue. Bisecting makes it possible for
 contributors to fix bugs faster, as they can know in advance which commit caused
 the regression. Your effort will be widely appreciated :)
@@ -13,9 +13,9 @@ The guide below explains how to find a regression by bisecting.
 
 ## What is bisecting?
 
-Godot developers use the [Git](https://git-scm.com/)_ version control system.
+Godot developers use the [Git](https://git-scm.com/) version control system.
 In the context of Git, bisecting is the process of performing a manual
-[binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm)_
+[binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
 to determine when a regression appeared. While it's typically used for bugs,
 it can also be used to find other kinds of unexpected changes such as
 performance regressions.
@@ -26,7 +26,7 @@ Before using Git's ``bisect`` command, we strongly recommend trying to reproduce
 the bug with an older (or newer) official release. This greatly reduces the
 range of commits that potentially need to be built from source and tested.
 You can find binaries of official releases, as well as alphas, betas,
-and release candidates [here](https://downloads.tuxfamily.org/godotengine/)_.
+and release candidates [here](https://downloads.tuxfamily.org/godotengine/).
 
 If you have experience with Godot 3.x and can reproduce an issue with Godot 4.0,
 we recommend trying to reproduce the issue in the latest Godot 3.x version (if
@@ -199,6 +199,6 @@ contributing to Godot :)
 :::note
 
 You can read the full documentation on ``git bisect``
-[here](https://git-scm.com/docs/git-bisect)_.
+[here](https://git-scm.com/docs/git-bisect).
 
 :::

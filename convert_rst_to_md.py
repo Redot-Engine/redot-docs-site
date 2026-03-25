@@ -16,6 +16,14 @@ def convert_rst_to_md(rst_content, source_dir=None):
     is_tabs_open = False
 
     def apply_inline_replacements(text):
+        # Handle literal blocks within cells (often used for commands in tables)
+        if ' :: ' in text:
+            text = re.sub(r'\s+::\s+(.*)', r' `\1`', text)
+        elif text.strip().startswith(':: '):
+            text = re.sub(r'^::\s+(.*)', r'`\1`', text.strip())
+        elif text.strip().startswith('::'):
+            text = re.sub(r'^::\s*(.*)', r'`\1`', text.strip())
+
         text = re.sub(r':ref:`([^<`]+?)\s*<([^>]+)>`(_*)', r'[\1](\2)', text)
         text = re.sub(r':ref:`([^`]+)`(_*)', r'[\1](\1)', text)
         text = re.sub(r':kbd:`([^`]+)`', r'`\1`', text)
@@ -322,7 +330,7 @@ def convert_rst_to_md(rst_content, source_dir=None):
             md_lines.append('')
             md_lines.append(f':::{adm_type}')
             if content_on_same_line:
-                md_lines.append(content_on_same_line)
+                md_lines.append(apply_inline_replacements(escape_angle_brackets(content_on_same_line)))
             else:
                 md_lines.append('')
             i += 1

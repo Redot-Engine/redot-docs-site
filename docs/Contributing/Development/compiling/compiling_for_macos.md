@@ -24,7 +24,7 @@ For compiling under macOS, the following is required:
   ``misc/scripts/install_vulkan_sdk_macos.sh`` within the Godot source repository.
 
 :::note
-If you have `Homebrew <https://brew.sh/>`_ installed, you can easily
+If you have [Homebrew](https://brew.sh/) installed, you can easily
 install SCons using the following command
 
 ```

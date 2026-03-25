@@ -611,7 +611,7 @@ reader must navigate. Use ``&gt;`` as a separator. You can omit ellipses in menu
     - Select **Scene &gt; Export As &gt; MeshLibrary**.
 
 :::note
-Sometimes, ``->`` or ``→`` is used as a separator. This is nonstandard.
+Sometimes, ``-&gt;`` or ``→`` is used as a separator. This is nonstandard.
 Replace it with ``&gt;`` if you are already making changes to a section.
 
 :::

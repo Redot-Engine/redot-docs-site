@@ -36,7 +36,7 @@ For compiling under Windows, the following is required:
   Studio releases.
 
 :::note
-If you have `Scoop <https://scoop.sh/>`_ installed, you can easily
+If you have [Scoop](https://scoop.sh/) installed, you can easily
 install MinGW and other dependencies using the following command
 
 ```
@@ -46,7 +46,7 @@ scoop install gcc python scons make mingw
 :::
 
 :::note
-If you have `MSYS2 <https://www.msys2.org/>`_ installed, you can easily
+If you have [MSYS2](https://www.msys2.org/) installed, you can easily
 install MinGW and other dependencies using the following command
 
 ```
@@ -393,7 +393,7 @@ You will be able to open Godot's source in a Visual Studio solution now,
 and able to build Godot using Visual Studio's **Build** button.
 
 :::info
-See :ref:`doc_configuring_an_ide_vs` for further details.
+See [doc_configuring_an_ide_vs](doc_configuring_an_ide_vs) for further details.
 
 :::
 
@@ -405,12 +405,12 @@ and 64-bit variants, or [MinGW-LLVM](https://github.com/mstorsjo/llvm-mingw/rele
 which comes as a single archive for all target architectures.
 The package names may differ based on your distribution, here are some known ones:
 
-| **Arch Linux** | :: pacman -Sy mingw-w64 |
+| **Arch Linux** | `pacman -Sy mingw-w64` |
 | --- | --- |
-| **Debian** / **Ubuntu** | :: apt install mingw-w64 |
-| **Fedora** | :: dnf install mingw64-gcc-c++ mingw64-winpthreads-static \ mingw32-gcc-c++ mingw32-winpthreads-static |
-| **macOS** | :: brew install mingw-w64 |
-| **Mageia** | :: urpmi mingw64-gcc-c++ mingw64-winpthreads-static \ mingw32-gcc-c++ mingw32-winpthreads-static |
+| **Debian** / **Ubuntu** | `apt install mingw-w64` |
+| **Fedora** | `dnf install mingw64-gcc-c++ mingw64-winpthreads-static \ mingw32-gcc-c++ mingw32-winpthreads-static` |
+| **macOS** | `brew install mingw-w64` |
+| **Mageia** | `urpmi mingw64-gcc-c++ mingw64-winpthreads-static \ mingw32-gcc-c++ mingw32-winpthreads-static` |
 
 Before attempting the compilation, SCons will check for
 the following binaries in your ``PATH`` environment variable

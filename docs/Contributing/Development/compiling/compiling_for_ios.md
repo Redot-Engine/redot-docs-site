@@ -23,7 +23,7 @@ If you're looking to export your project to iOS instead, read [doc_exporting_for
    from the [MoltenVK SDK](https://github.com/KhronosGroup/MoltenVK#fetching-moltenvk-source-code).
 
 :::note
-If you have `Homebrew <https://brew.sh/>`_ installed, you can easily
+If you have [Homebrew](https://brew.sh/) installed, you can easily
 install SCons using the following command
 
 ```

@@ -264,7 +264,7 @@ const uint64_t PRIME[225] = {
 ## Custom managed resource data
 
 Godot servers implement a mediator pattern. All data types inherit ``RID_Data``.
-`[RID_Owner](MyRID_Data)` owns the object when ``make_rid`` is called. During debug mode only,
+`RID_Owner<MyRID_Data>` owns the object when ``make_rid`` is called. During debug mode only,
 RID_Owner maintains a list of RIDs. In practice, RIDs are similar to writing
 object-oriented C code.
 

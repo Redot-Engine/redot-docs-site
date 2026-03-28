@@ -1,5 +1,5 @@
 
-    :keywords: FAQ
+
 
 # Frequently asked questions
 
@@ -37,8 +37,6 @@ Also, see [the license page on the Redot website ](https://redotengine.org/licen
 * Windows
 * macOS
 * Linux, \*BSD
-* Android (experimental)
-* [Web ](https://editor.redotengine.org/)_ (experimental)
 
 **For exporting your games:**
 

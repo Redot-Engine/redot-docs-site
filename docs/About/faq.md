@@ -54,21 +54,9 @@ Some users also report building and using Redot successfully on ARM-based
 systems with Linux, like the Raspberry Pi.
 
 The Redot team can't provide an open source console export due to the licensing
-terms imposed by console manufacturers. Regardless of the engine you use,
-though, releasing games on consoles is always a lot of work. You can read more
-about [doc_consoles](doc_consoles).
+terms imposed by console manufacturers.
 
-For more on this, see the sections on [exporting ](toc-learn-workflow-export)
-and [compiling Redot yourself ](toc-devel-compiling).
 
-:::note
-
-Redot 3 also had support for Universal Windows Platform (UWP). This platform
-port was removed in Redot 4 due to lack of maintenance, and it being
-deprecated by Microsoft. It is still available in the current stable release
-of Redot 3 for interested users.
-
-:::
 
 ## Which programming languages are supported in Redot?
 

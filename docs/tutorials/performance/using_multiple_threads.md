@@ -18,7 +18,7 @@ threading classes they support.
 
 :::warning
 
-Before using a built-in class in a thread, read [doc_thread_safe_apis](doc_thread_safe_apis)
+Before using a built-in class in a thread, read [doc_thread_safe_apis](thread_safe_apis.md)
 first to check whether it can be safely used in a thread.
 
 :::
@@ -170,7 +170,7 @@ instead.
 
 Accessing objects or data from multiple threads is not always supported (if you
 do it, it will cause unexpected behaviors or crashes). Read the
-[doc_thread_safe_apis](doc_thread_safe_apis) documentation to understand which engine APIs
+[doc_thread_safe_apis](thread_safe_apis.md) documentation to understand which engine APIs
 support multiple thread access.
 
 When processing your own data or calling your own functions, as a rule, try to

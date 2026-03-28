@@ -46,7 +46,7 @@ repository with generated data, you should add them to your VCS ignore:
 
 - ``.Redot/``: This folder stores various project cache data.
 - ``*.translation``: These files are binary imported
-  [translations ](doc_internationalizing_games) generated from CSV files.
+  [translations ](../i18n/internationalizing_games.md) generated from CSV files.
 
 You can make the Redot project manager generate version control metadata for you
 automatically when creating a project. When choosing the **Git** option, this

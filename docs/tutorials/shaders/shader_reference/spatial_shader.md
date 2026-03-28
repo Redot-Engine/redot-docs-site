@@ -7,7 +7,7 @@ Spatial shaders are highly configurable with different render modes and differen
 write vertex, fragment, and light processor functions to affect how objects are drawn.
 
 ## Render modes
-For visual examples of these render modes, see [Standard Material 3D and ORM Material 3D](doc_standard_material_3d).
+For visual examples of these render modes, see [Standard Material 3D and ORM Material 3D](../../3d/standard_material_3d.md).
 
 | Render mode | Description |
 | --- | --- |
@@ -300,7 +300,7 @@ for more information and ways to avoid issues.
 Transparent materials also cannot cast shadows or appear in
 ``hint_screen_texture`` and ``hint_depth_texture`` uniforms. This in turn prevents those
 materials from appearing in screen-space reflections or refraction.
-[SDFGI ](doc_using_sdfgi) sharp reflections are not visible on transparent
+[SDFGI ](../../3d/global_illumination/using_sdfgi.md) sharp reflections are not visible on transparent
 materials (only rough reflections are visible on transparent materials).
 
 :::

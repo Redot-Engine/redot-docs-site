@@ -5,7 +5,7 @@
 
 This page gives an overview of Redot's renderers, focusing on the differences
 between their rendering features. For more technical details on the renderers,
-see [doc_internal_rendering_architecture](doc_internal_rendering_architecture).
+see [doc_internal_rendering_architecture](../../Contributing/Development/core_and_modules/internal_rendering_architecture.md).
 
 :::
 
@@ -136,7 +136,7 @@ Hardware with RenderingDevice support is hardware which can run Vulkan, Direct3D
 
 ### Lights and shadows
 
-See [doc_lights_and_shadows](doc_lights_and_shadows) for more information.
+See [doc_lights_and_shadows](../3d/lights_and_shadows.md) for more information.
 
 | Feature | Compatibility | Mobile | Forward+ |
 | --- | --- | --- | --- |
@@ -150,7 +150,7 @@ See [doc_lights_and_shadows](doc_lights_and_shadows) for more information.
 
 ### Global Illumination
 
-See [doc_introduction_to_global_illumination](doc_introduction_to_global_illumination) for more information.
+See [doc_introduction_to_global_illumination](../3d/global_illumination/introduction_to_global_illumination.md) for more information.
 
 | Feature | Compatibility | Mobile | Forward+ |
 | --- | --- | --- | --- |
@@ -162,7 +162,7 @@ See [doc_introduction_to_global_illumination](doc_introduction_to_global_illumin
 
 ### Environment and post-processing
 
-See [doc_environment_and_post_processing](doc_environment_and_post_processing) for more information.
+See [doc_environment_and_post_processing](../3d/environment_and_post_processing.md) for more information.
 
 | Feature | Compatibility | Mobile | Forward+ |
 | --- | --- | --- | --- |
@@ -180,7 +180,7 @@ See [doc_environment_and_post_processing](doc_environment_and_post_processing) f
 
 ### Antialiasing
 
-See [doc_3d_antialiasing](doc_3d_antialiasing) for more information.
+See [doc_3d_antialiasing](../3d/3d_antialiasing.md) for more information.
 
 | Feature | Compatibility | Mobile | Forward+ |
 | --- | --- | --- | --- |
@@ -194,7 +194,7 @@ See [doc_3d_antialiasing](doc_3d_antialiasing) for more information.
 
 ### StandardMaterial features
 
-See [doc_standard_material_3d](doc_standard_material_3d) for more information.
+See [doc_standard_material_3d](../3d/standard_material_3d.md) for more information.
 
 | Feature | Compatibility | Mobile | Forward+ |
 | --- | --- | --- | --- |
@@ -202,7 +202,7 @@ See [doc_standard_material_3d](doc_standard_material_3d) for more information.
 
 ### Shader features
 
-See [doc_shading_reference](doc_shading_reference) for more information.
+See [doc_shading_reference](../shaders/shader_reference/index.md) for more information.
 
 | Feature | Compatibility | Mobile | Forward+ |
 | --- | --- | --- | --- |

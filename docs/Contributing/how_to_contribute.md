@@ -30,13 +30,13 @@ Because contrary to popular opinion, we need more than just programmers on the p
   The engine development is mainly coordinated on our [Community Discord](https://discord.gg/redot/),
   so if you are serious about making PRs you should join us there!
 
-  Read more about the **technical submission process**: [doc_first_steps](doc_first_steps)
+  Read more about the **technical submission process**: [doc_first_steps](Workflow/first_steps.md)
 
 - **Review Code Contributions**
   All pull requests need to be thoroughly reviewed before they can be merged into the master branch.
   Help us get a headstart by participating in the code review process.
 
-  To get started, chose any [open pull request](https://github.com/redot-engine/redot-engine/pulls) and reference our **style guide**: [doc_pr_review_guidelines](doc_pr_review_guidelines)
+  To get started, chose any [open pull request](https://github.com/redot-engine/redot-engine/pulls) and reference our **style guide**: [doc_pr_review_guidelines](Workflow/pr_review_guidelines.md)
 
 - **Write Plugins (GDScript, C#, & more)**
   Community addons are not directly included in the core engine download or repository, yet they provide essential quality of life upgrades for your fellow game developers.

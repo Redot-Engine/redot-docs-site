@@ -91,4 +91,4 @@ The axis to rotate around is given by the cross product between the current forw
 The ``clamp`` is a simple method used to prevent the amount of rotation from going past the direction which is wanted to be looked in, 
 as the total amount of rotation needed is given by the arccosine of the dot product. 
 This method can be used with ``axis_lock_angular_*`` as well. If more precise control is needed, solutions such as ones relying on [class_Quaternion](class_Quaternion) may be required, 
-as discussed in [doc_using_transforms](doc_using_transforms).
+as discussed in [doc_using_transforms](../3d/using_transforms.md).

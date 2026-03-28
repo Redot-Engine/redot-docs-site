@@ -45,7 +45,7 @@ instead.
   This means you may have to bypass a security warning before you can run the executable.
   On Windows, if you frequently test pull request builds, it may be better to disable
   Windows SmartScreen permanently in the Windows security settings.
-  On macOS, see [doc_running_on_macos](doc_running_on_macos) for instructions on bypassing Gatekeeper.
+  On macOS, see [doc_running_on_macos](../../tutorials/export/running_on_macos.md) for instructions on bypassing Gatekeeper.
 
 ### If you don't have a GitHub account
 

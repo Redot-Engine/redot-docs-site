@@ -1,7 +1,7 @@
 
 # GDScript reference
 
-[GDScript](doc_gdscript) is a high-level, `object-oriented
+[GDScript](gdscript_basics.md) is a high-level, `object-oriented
 &lt;https://en.wikipedia.org/wiki/Object-oriented_programming&gt;`_, `imperative
 &lt;https://en.wikipedia.org/wiki/Imperative_programming&gt;`_, and `gradually typed
 &lt;https://en.wikipedia.org/wiki/Gradual_typing&gt;`_ programming language built for Redot.
@@ -109,7 +109,7 @@ func _init():
 
 If you have previous experience with statically typed languages such as
 C, C++, or C# but never used a dynamically typed one before, it is advised you
-read this tutorial: [doc_gdscript_more_efficiently](doc_gdscript_more_efficiently).
+read this tutorial: [doc_gdscript_more_efficiently](gdscript_advanced.md).
 
 ## Identifiers
 
@@ -305,7 +305,7 @@ or use concatenation with a regular string literal.
 
 :::
 
-GDScript also supports [format strings ](doc_gdscript_printf).
+GDScript also supports [format strings ](gdscript_format_string.md).
 
 ## Annotations
 
@@ -325,7 +325,7 @@ var ranged_var: int = 50
 
 ```
 
-For more information about exporting properties, read the [GDScript exports ](doc_gdscript_exports)
+For more information about exporting properties, read the [GDScript exports ](gdscript_exports.md)
 article.
 
 Any constant expression compatible with the required argument type can be passed as an annotation argument value
@@ -449,7 +449,7 @@ comment*, which will appear in the script documentation and in the inspector
 description of an exported variable. Documentation comments must be placed
 directly *above* a documentable item (such as a member variable), or at the top
 of a file. Dedicated formatting options are also available. See
-[doc_gdscript_documentation_comments](doc_gdscript_documentation_comments) for details.
+[doc_gdscript_documentation_comments](gdscript_documentation_comments.md) for details.
 
 ```
 ## This comment will appear in the script documentation.
@@ -575,7 +575,7 @@ be assigned any other value.
 
 Only types that inherit from Object can have a ``null`` value
 (Object is therefore called a "nullable" type).
-[Variant types ](doc_variant_class) must have a valid value at all times,
+[Variant types ](../../../Contributing/Development/core_and_modules/variant_class.md) must have a valid value at all times,
 and therefore cannot have a ``null`` value.
 
 #### :ref:`bool <class_bool>`
@@ -919,7 +919,7 @@ at all. Therefore, inference is not allowed by default for ``Variant``,
 since it's likely a mistake.
 
 You can turn off this check, or make it only a warning, by changing it in
-the project settings. See [doc_gdscript_warning_system](doc_gdscript_warning_system) for details.
+the project settings. See [doc_gdscript_warning_system](warning_system.md) for details.
 
 :::
 
@@ -2170,7 +2170,7 @@ func _init():
 
 :::note
 
-Documentation about exports has been moved to [doc_gdscript_exports](doc_gdscript_exports).
+Documentation about exports has been moved to [doc_gdscript_exports](gdscript_exports.md).
 
 :::
 
@@ -2295,7 +2295,7 @@ func _ready():
 
 ```
 
-See [doc_running_code_in_the_editor](doc_running_code_in_the_editor) for more information.
+See [doc_running_code_in_the_editor](../../plugins/running_code_in_the_editor.md) for more information.
 
 :::warning
 Be cautious when freeing nodes with ``queue_free()`` or ``free()``

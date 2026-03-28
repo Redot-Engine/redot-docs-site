@@ -56,7 +56,7 @@ and selecting the **Edit Files...** option.
 
 | Command | **scons** |
 | --- | --- |
-| Arguments | See [doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem) for a full list of arguments. |
+| Arguments | See [doc_introduction_to_the_buildsystem](../compiling/introduction_to_the_buildsystem.md) for a full list of arguments. |
 
 <figure>
   <img src="/Contributing/Development/configuring_an_ide/img/qtcreator-set-scons-command.png" />
@@ -85,11 +85,11 @@ full path to the SCons binary.
 </figure>
 
 To learn more about command line arguments, refer to the
-[command line tutorial](doc_command_line_tutorial).
+[command line tutorial](../../../tutorials/editor/command_line_tutorial.md).
 
 ## Code style configuration
 
-Developers must follow the project's [code style](doc_code_style_guidelines)
+Developers must follow the project's [code style](../code_style_guidelines.md)
 and the IDE should help them follow it. By default, Qt Creator uses spaces
 for indentation which doesn't match the Redot code style guidelines. You can
 change this behavior by changing the **Code Style** in **Tools &gt; Options &gt; C++**.

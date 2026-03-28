@@ -13,7 +13,7 @@ between several controls. Imagine that you use gray, blue, and red variants of [
 throughout your project. Setting it up every time you add a new button element to your interface
 is a tedious task.
 
-To help with the organization and to better utilize the [power of themes ](doc_gui_skinning)
+To help with the organization and to better utilize the [power of themes ](gui_skinning.md)
 you can use theme type variations. These work like normal theme types, but instead
 of being self-sufficient and standalone they extend another, base type.
 

@@ -16,7 +16,7 @@ few tools that make this process easy.
 
 ## Screen texture
 
-Redot [doc_shading_language](doc_shading_language) has a special texture to access the already
+Redot [doc_shading_language](shader_reference/shading_language.md) has a special texture to access the already
 rendered contents of the screen. It is used by specifying a hint when declaring
 a ``sampler2D`` uniform: ``hint_screen_texture``. A special built-in varying
 ``SCREEN_UV`` can be used to obtain the UV relative to the screen for the current

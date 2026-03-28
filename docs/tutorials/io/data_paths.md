@@ -89,7 +89,7 @@ On desktop platforms, the actual directory paths for ``user://`` are:
 | Custom dir and name |  | Windows: ``%APPDATA%\[custom_user_dir_name]`` macOS: ``~/Library/Application Support/[custom_user_dir_name]`` Linux: ``~/.local/share/[custom_user_dir_name]`` |
 
 ``[project_name]`` is based on the application name defined in the Project Settings, but
-you can override it on a per-platform basis using [feature tags ](doc_feature_tags).
+you can override it on a per-platform basis using [feature tags ](../export/feature_tags.md).
 
 On mobile platforms, this path is unique to the project and is not accessible
 by other applications for security reasons.

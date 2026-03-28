@@ -7,7 +7,7 @@ writing or reviewing pages.
 :::info
 
 If you want to translate pages or the class reference from English to other
-languages, read [doc_editor_and_docs_localization](doc_editor_and_docs_localization).
+languages, read [doc_editor_and_docs_localization](editor_and_docs_localization.md).
 
 :::
 
@@ -20,7 +20,7 @@ request triggers a rebuild of the online documentation upon merging.
 
 :::info
 For details on Git usage and the pull request workflow, please
-refer to the [doc_pr_workflow](doc_pr_workflow) page. Most of what it describes
+refer to the [doc_pr_workflow](../Workflow/pr_workflow.md) page. Most of what it describes
 regarding the main Redotengine/Redot repository is also valid for
 the docs repository.
 
@@ -32,7 +32,7 @@ repository &lt;https://github.com/redot-engine/redot&gt;`_. We generate
 the [Class Reference](doc_class_reference) section of this documentation
 from them. If you want to update the description of a class, its
 methods, or properties, read
-[doc_updating_the_class_reference](doc_updating_the_class_reference).
+[doc_updating_the_class_reference](updating_the_class_reference.md).
 
 :::
 
@@ -45,9 +45,9 @@ two game creation tutorials in the Getting Started section.
 We strive to write factual content in an accessible and well-written language. To
 contribute, you should also read:
 
-1. [doc_docs_writing_guidelines](doc_docs_writing_guidelines). There, you will find rules and
+1. [doc_docs_writing_guidelines](docs_writing_guidelines.md). There, you will find rules and
    recommendations to write in a way that everyone understands.
-2. [doc_content_guidelines](doc_content_guidelines). They explain the principles we follow to write the
+2. [doc_content_guidelines](content_guidelines.md). They explain the principles we follow to write the
    documentation and the kind of content we accept.
 
 ## Contributing changes
@@ -69,11 +69,11 @@ favorite text editor. You can then commit the changes, push them to your fork,
 and make a pull request. **Note that the pages in** ``classes/`` **should not be
 edited here.** They are automatically generated from Redot's `XML class
 reference &lt;https://github.com/redot-engine/redot-engine/tree/master/doc/classes&gt;`__.
-See [doc_updating_the_class_reference](doc_updating_the_class_reference) for details.
+See [doc_updating_the_class_reference](updating_the_class_reference.md) for details.
 
 :::info
 To build the manual and test changes on your computer, see
-[doc_building_the_manual](doc_building_the_manual).
+[doc_building_the_manual](building_the_manual.md).
 
 :::
 
@@ -123,7 +123,7 @@ Before adding a new page, please ensure that it fits in the documentation:
    &lt;https://github.com/redot-engine/redot-docs-site/issues&gt;`_ or open a new one to see
    if the page is necessary.
 2. Ensure there isn't a page that already covers the topic.
-3. Read our [doc_content_guidelines](doc_content_guidelines).
+3. Read our [doc_content_guidelines](content_guidelines.md).
 
 To add a new page, create a ``.rst`` file with a meaningful name in the section you
 want to add a file to, e.g. ``tutorials/3d/light_baking.rst``.

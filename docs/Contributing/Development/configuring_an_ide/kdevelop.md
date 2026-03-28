@@ -52,7 +52,7 @@ platform/<your_platform>/  // Replace <your_platform> with a folder
 | --- | --- |
 | Enable | **True** |
 | Executable | **scons** |
-| Arguments | See [doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem) for a full list of arguments. |
+| Arguments | See [doc_introduction_to_the_buildsystem](../compiling/introduction_to_the_buildsystem.md) for a full list of arguments. |
 
 <figure>
   <img src="/Contributing/Development/configuring_an_ide/img/kdevelop_buildconfig.png" />

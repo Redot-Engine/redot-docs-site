@@ -15,12 +15,12 @@ and to reload changes to your scenes or your code while the game is running.
 ## Output Panel
 
 The output panel allows you to see text printed by the project, but also by the editor (e.g. from ``@tool`` scripts).
-You can find information about in [doc_output_panel](doc_output_panel).
+You can find information about in [doc_output_panel](output_panel.md).
 
 ## Debugger Panel
 
 Many of Redot's debugging tools are part of the Debugger panel, which you can
-find information about in [doc_debugger_panel](doc_debugger_panel).
+find information about in [doc_debugger_panel](debugger_panel.md).
 
 ## Debug menu options
 
@@ -236,7 +236,7 @@ These settings allow you to log console output and error messages to files.
 
 These settings allow you to toggle specific GDScript warnings, such as for
 unused variables. You can also turn off warnings completely. See
-[doc_gdscript_warning_system](doc_gdscript_warning_system) for more information.
+[doc_gdscript_warning_system](../gdscript/warning_system.md) for more information.
 
 ### Shader Language
 

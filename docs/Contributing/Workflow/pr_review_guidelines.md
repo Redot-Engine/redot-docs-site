@@ -229,7 +229,7 @@ review. The important thing is that both the substantive code and the code style
 need to be reviewed and considered before a pull request is merged.
 
 When reviewing code style pay particular attention to ensuring that the pull
-request follows the [doc_code_style_guidelines](doc_code_style_guidelines). While ``clang-format`` and
+request follows the [doc_code_style_guidelines](../Development/code_style_guidelines.md). While ``clang-format`` and
 various CI checks can catch a lot of inconsistencies, they are far from perfect
 and are unable to detect some issues. For example, you should check that:
 

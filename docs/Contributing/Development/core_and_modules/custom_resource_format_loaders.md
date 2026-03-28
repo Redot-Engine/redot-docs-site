@@ -9,7 +9,7 @@ path again, the previous loaded Resource will be referenced. Naturally,
 loaded resources must be stateless.
 
 This guide assumes the reader knows how to create C++ modules and Redot
-data types. If not, refer to this guide: [doc_custom_modules_in_cpp](doc_custom_modules_in_cpp)
+data types. If not, refer to this guide: [doc_custom_modules_in_cpp](custom_modules_in_cpp.md)
 
 ### References
 
@@ -141,7 +141,7 @@ void ResourceFormatSaverJson::get_recognized_extensions(const RES &p_resource, L
 
 ## Creating custom data types
 
-Redot may not have a proper substitute within its [doc_core_types](doc_core_types)
+Redot may not have a proper substitute within its [doc_core_types](core_types.md)
 or managed resources. Redot needs a new registered data type to
 understand additional binary formats such as machine learning models.
 

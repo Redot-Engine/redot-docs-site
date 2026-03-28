@@ -10,7 +10,7 @@ the extra feature. This makes it easy for users to have complex PBR-correct
 shading, without writing complex shaders. Of course, Redot also allows you to
 ignore all these parameters and write a fully customized shader.
 
-For a full list of these parameters see the [spatial shader ](doc_spatial_shader) reference doc.
+For a full list of these parameters see the [spatial shader ](../shader_reference/spatial_shader.md) reference doc.
 
 A difference between the vertex function and a fragment function is that the
 vertex function runs per vertex and sets properties such as ``VERTEX``
@@ -46,7 +46,7 @@ render_mode diffuse_toon, specular_toon;
 This model of built-in functionality allows you to write complex custom shaders
 by changing only a few parameters.
 
-For a full list of render modes see the [Spatial shader reference ](doc_spatial_shader).
+For a full list of render modes see the [Spatial shader reference ](../shader_reference/spatial_shader.md).
 
 In this part of the tutorial, we will walk through how to take the bumpy terrain
 from the previous part and turn it into an ocean.
@@ -357,6 +357,6 @@ to do was add a bit of math!
 
 ![Image](img/wave3.png)
 
-For more information about Spatial shaders read the [Shading Language ](doc_shading_language) doc and the [Spatial Shaders ](doc_spatial_shader)
+For more information about Spatial shaders read the [Shading Language ](../shader_reference/shading_language.md) doc and the [Spatial Shaders ](../shader_reference/spatial_shader.md)
 doc. Also look at more advanced tutorials in the [Shading section ](toc-learn-features-shading) and the [3D ](toc-learn-features-3d)
 sections.

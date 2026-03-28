@@ -140,7 +140,7 @@ hashes, ``master`` is a perpetually moving target.
 
 ### Build the engine
 
-[Get Redot's source code using Git](doc_getting_source). Once this
+[Get Redot's source code using Git](../Development/compiling/getting_source.md). Once this
 is done, in the terminal window, use ``cd`` to reach the Redot repository
 folder and enter the following command:
 

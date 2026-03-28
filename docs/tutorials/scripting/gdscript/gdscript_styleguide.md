@@ -806,12 +806,12 @@ first line of the script.
 
 Follow with the ``class_name`` if necessary. You can turn a GDScript file into a
 global type in your project using this feature. For more information, see
-[doc_gdscript](doc_gdscript).
+[doc_gdscript](gdscript_basics.md).
 
 Then, add the ``extends`` keyword if the class extends a built-in type.
 
 Following that, you should have the class's optional
-[documentation comments ](doc_gdscript_documentation_comments).
+[documentation comments ](gdscript_documentation_comments.md).
 You can use that to explain the role of your class to your teammates, how it works,
 and how other developers should use it, for example.
 
@@ -934,7 +934,7 @@ func _on_state_changed(previous, new):
 
 ## Static typing
 
-GDScript supports [optional static typing](doc_gdscript_static_typing).
+GDScript supports [optional static typing](static_typing.md).
 
 ### Declared types
 

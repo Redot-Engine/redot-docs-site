@@ -169,7 +169,7 @@ There are 2 ways to use OBJ meshes in Redot:
   expects as mesh (such as GPUParticles3D). This is the default mode.
 - Change their import mode to **OBJ as Scene** in the Import dock then restart
   the editor. This allows you to use the same import options as glTF or Collada
-  scenes, such as unwrapping UV2 on import (for [doc_using_lightmap_gi](doc_using_lightmap_gi)).
+  scenes, such as unwrapping UV2 on import (for [doc_using_lightmap_gi](../../3d/global_illumination/using_lightmap_gi.md)).
 
 :::note
 

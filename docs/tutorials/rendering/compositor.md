@@ -86,7 +86,7 @@ void main() {
 ```
 
 For more information on how compute shaders work,
-please check [Using compute shaders ](doc_compute_shaders).
+please check [Using compute shaders ](../shaders/compute_shaders.md).
 
 The important bit here is that for every pixel on our screen,
 our ``main`` function is executed and inside of this we load

@@ -6,7 +6,7 @@
 :::note
 
 This page describes how to compile macOS editor and export template binaries from source.
-If you're looking to export your project to macOS instead, read [doc_exporting_for_macos](doc_exporting_for_macos).
+If you're looking to export your project to macOS instead, read [doc_exporting_for_macos](../../../tutorials/export/exporting_for_macos.md).
 
 :::
 
@@ -47,10 +47,10 @@ sudo port install scons
 
 :::info
 To get the Redot source code for compiling, see
-[doc_getting_source](doc_getting_source).
+[doc_getting_source](getting_source.md).
 
 For a general overview of SCons usage for Redot, see
-[doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem).
+[doc_introduction_to_the_buildsystem](introduction_to_the_buildsystem.md).
 
 :::
 

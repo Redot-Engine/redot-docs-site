@@ -43,7 +43,7 @@ skills valuable.
 ## Array vs. Dictionary vs. Object
 
 Redot stores all variables in the scripting API in the
-[Variant ](doc_variant_class) class.
+[Variant ](../../Contributing/Development/core_and_modules/variant_class.md) class.
 Variants can store Variant-compatible data structures such as
 [Array ](class_Array) and [Dictionary ](class_Dictionary) as well
 as [Objects ](class_Object).
@@ -378,4 +378,4 @@ for blending, i.e. enabling smooth transitions between these animations. There
 may also be a hierarchical structure between animations that one plans out for
 their object. These are the cases where the [AnimationTree ](class_AnimationTree)
 shines. One can find an in-depth guide on using the AnimationTree
-[here ](doc_animation_tree).
+[here ](../animation/animation_tree.md).

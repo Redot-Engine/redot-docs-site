@@ -5,7 +5,7 @@
 
 Sanitizers are static instrumentation tools that help find bugs that traditional
 debuggers usually cannot catch. This is particularly useful when combined with
-[doc_unit_testing](doc_unit_testing) in continuous integration.
+[doc_unit_testing](../core_and_modules/unit_testing.md) in continuous integration.
 
 Sanitizers can be used on Windows, macOS and Linux by using the Clang (LLVM),
 GCC or Visual Studio compilers.
@@ -76,7 +76,7 @@ The leak sanitizer can detect memory leaks, which are situations where memory
 that is no longer in use is never freed by the running program. This can
 potentially lead to out-of-memory situations if the program runs for long
 enough. Since Redot may run on
-[dedicated servers](doc_exporting_for_dedicated_servers) for months or
+[dedicated servers](../../../tutorials/export/exporting_for_dedicated_servers.md) for months or
 even years without a restart, it's important to fix memory leaks when they occur.
 
 To enable the leak sanitizer in a Redot build, pass the ``use_lsan=yes`` SCons
@@ -194,7 +194,7 @@ performance overhead.
 
 ### Web
 
-When [compiling for the Web](doc_compiling_for_web),
+When [compiling for the Web](../compiling/compiling_for_web.md),
 there are 2 additional sanitizer SCons options available:
 
 - ``use_assertions=yes`` enables runtime Emscripten assertions, which can catch

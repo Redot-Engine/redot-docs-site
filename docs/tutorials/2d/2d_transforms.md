@@ -13,11 +13,11 @@ The goal of this tutorial is to teach a way for feeding input events to the
 Input with a position in the correct coordinate system.
 
 A more extensive description of all coordinate systems and 2d transforms is
-available in [doc_2d_coordinate_systems](doc_2d_coordinate_systems).
+available in [doc_2d_coordinate_systems](../../Contributing/Development/core_and_modules/2d_coordinate_systems.md).
 
 ## Canvas transform
 
-As mentioned in the previous tutorial, [doc_canvas_layers](doc_canvas_layers), every
+As mentioned in the previous tutorial, [doc_canvas_layers](canvas_layers.md), every
 CanvasItem node (remember that Node2D and Control based nodes use
 CanvasItem as their common root) will reside in a *Canvas Layer*. Every
 canvas layer has a transform (translation, rotation, scale, etc.) that
@@ -37,7 +37,7 @@ used in Redot's CanvasItem Editor.
 
 Finally, viewports have a *Stretch Transform*, which is used when
 resizing or stretching the screen. This transform is used internally (as
-described in [doc_multiple_resolutions](doc_multiple_resolutions)), but can also be manually set
+described in [doc_multiple_resolutions](../rendering/multiple_resolutions.md)), but can also be manually set
 on each viewport.
 
 Input events are multiplied by this transform, but lack the ones above. To
@@ -48,7 +48,7 @@ function was added for convenience.
 ## Window transform
 
 The root viewport is a [Window ](class_Window). In order to scale and
-position the *Window's* content as described in [doc_multiple_resolutions](doc_multiple_resolutions),
+position the *Window's* content as described in [doc_multiple_resolutions](../rendering/multiple_resolutions.md),
 each [Window ](class_Window) contains a *window transform*. It is for
 example responsible for the black bars at the *Window's* sides so that the
 *Viewport* is displayed with a fixed aspect ratio.

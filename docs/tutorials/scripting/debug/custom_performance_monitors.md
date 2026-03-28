@@ -3,7 +3,7 @@
 
 ## Introduction
 
-As explained in the [doc_debugger_panel](doc_debugger_panel) documentation, Redot features a
+As explained in the [doc_debugger_panel](debugger_panel.md) documentation, Redot features a
 **Debugger &gt; Monitors** bottom panel that allows tracking various values with
 graphs showing their evolution over time. The data for those graphs is sourced
 from the engine's [class_Performance](class_Performance) singleton.
@@ -91,7 +91,7 @@ appearing as follows:
 
 The performance monitor handling code doesn't have to live in the same
 script as the nodes themselves. You may choose to move the performance
-monitor registration and getter function to an [autoload ](doc_singletons_autoload) instead.
+monitor registration and getter function to an [autoload ](../singletons_autoload.md) instead.
 
 :::
 
@@ -101,7 +101,7 @@ If you wish to display the value of the performance monitor in the running
 project's window (rather than the editor), use
 ``Performance.get_custom_monitor("category/name")`` to fetch the value of the
 custom monitor. You can display the value using a [class_Label](class_Label),
-[class_RichTextLabel](class_RichTextLabel), [doc_custom_drawing_in_2d](doc_custom_drawing_in_2d), [doc_3d_text](doc_3d_text),
+[class_RichTextLabel](class_RichTextLabel), [doc_custom_drawing_in_2d](../../2d/custom_drawing_in_2d.md), [doc_3d_text](../../3d/3d_text.md),
 etc.
 
 This method can be used in exported projects as well (debug and release mode),

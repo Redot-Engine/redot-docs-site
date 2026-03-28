@@ -8,7 +8,7 @@ player node on top of the default property tracks.
 
 :::info
 
-We assume you already read [doc_introduction_animation](doc_introduction_animation), which covers
+We assume you already read [doc_introduction_animation](introduction.md), which covers
 the basics, including property tracks.
 
 :::
@@ -17,7 +17,7 @@ the basics, including property tracks.
 
 ## Property Track
 
-The most basic track type. See [doc_introduction_animation](doc_introduction_animation).
+The most basic track type. See [doc_introduction_animation](introduction.md).
 
 ## Position 3D / Rotation 3D / Scale 3D Track
 

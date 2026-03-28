@@ -28,7 +28,7 @@ The following tutorial will, then, explain 2D skeletal deformations.
 :::info
 
 Before starting, we recommend you to go through the
-[doc_cutout_animation](doc_cutout_animation) tutorial to gain a general understanding of
+[doc_cutout_animation](cutout_animation.md) tutorial to gain a general understanding of
 animating within Redot.
 
 :::

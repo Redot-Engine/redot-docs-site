@@ -777,7 +777,7 @@ public partial class Game : Node3D // Or Node2D.
 
 Once you've made a multiplayer game, you may want to export it to run it on
 a dedicated server with no GPU available. See
-[doc_exporting_for_dedicated_servers](doc_exporting_for_dedicated_servers) for more information.
+[doc_exporting_for_dedicated_servers](../export/exporting_for_dedicated_servers.md) for more information.
 
 :::note
 

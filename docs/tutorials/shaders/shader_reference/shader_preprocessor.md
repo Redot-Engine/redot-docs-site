@@ -17,7 +17,7 @@ shaders. The syntax is similar to what most GLSL shader compilers support
 
 :::note
 
-The shader preprocessor is not available in [visual shaders ](doc_visual_shaders).
+The shader preprocessor is not available in [visual shaders ](../visual_shaders.md).
 If you need to introduce preprocessor statements to a visual shader, you can
 convert it to a text-based shader using the **Convert to Shader** option in
 the VisualShader inspector resource dropdown. This conversion is a one-way
@@ -196,7 +196,7 @@ out. This does not apply to runtime ``if`` statements.
 
 **#if preprocessor versus if statement: Performance caveats**
 
-The [shading language ](doc_shading_language) supports runtime ``if`` statements:
+The [shading language ](shading_language.md) supports runtime ``if`` statements:
 
 ```glsl
 uniform bool USE_LIGHT = true;

@@ -150,7 +150,7 @@ loading.
 
 ## Saving and reading data
 
-As covered in the [doc_filesystem](doc_filesystem) tutorial, we'll need to open a file
+As covered in the [doc_filesystem](../scripting/filesystem.md) tutorial, we'll need to open a file
 so we can write to it or read from it. Now that we have a way to
 call our groups and get their relevant data, let's use the class [JSON](class_json) to
 convert it into an easily stored string and store them in a file. Doing
@@ -386,7 +386,7 @@ children to parents as the [NodePath ](class_nodepath) will likely be invalid.
 For simple game state, JSON may work and it generates human-readable files that are easy to debug.
 
 But JSON has many limitations. If you need to store more complex game state or
-a lot of it, [binary serialization](doc_binary_serialization_api)
+a lot of it, [binary serialization](binary_serialization_api.md)
 may be a better approach.
 
 ### JSON limitations
@@ -406,7 +406,7 @@ Here are some important gotchas to know about when using JSON.
 
 ### Binary serialization
 
-[Binary serialization](doc_binary_serialization_api) is an alternative
+[Binary serialization](binary_serialization_api.md) is an alternative
 approach for storing game state, and you can use it with the functions
 ``get_var`` and ``store_var`` of [class_FileAccess](class_FileAccess).
 

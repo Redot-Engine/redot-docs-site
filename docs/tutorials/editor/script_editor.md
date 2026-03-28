@@ -42,7 +42,7 @@ the user interface can also be modified directly through code.
 
 :::note
 If you would like to use an external text editor or prefer to use C#
-in your project, see [doc_external_editor](doc_external_editor) and
+in your project, see [doc_external_editor](external_editor.md) and
 [doc_c_sharp_setup_external_editor](doc_c_sharp_setup_external_editor).
 
 :::
@@ -107,7 +107,7 @@ pages. Depending on the file type, this list will have an icon next
 to the file name. For example, the |script| icon means that it is a GDScript.
 the |scriptcsharp| means it is a C# script. The |documentation| means that this is a 
 built-in class reference. Finally, the |toolscript| means it is a currently running 
-script (See [tool annotation ](doc_running_code_in_the_editor) for more on this). 
+script (See [tool annotation ](../plugins/running_code_in_the_editor.md) for more on this). 
 Hovering a file will show a tooltip with its relative location in the project folder.
 
 On the status bar, clicking the left arrow hides the script panel, clicking
@@ -188,7 +188,7 @@ The **File** menu provides the following options:
 - **Save All**: Saves all unsaved open scripts in the text editor. Scripts with
   unsaved changes will have an asterisk (*) next to their names in the script list.
 - **Soft Reload Tool Script**: If the selected script is a
-  [tool ](doc_running_code_in_the_editor), reloads the script to execute it again.
+  [tool ](../plugins/running_code_in_the_editor.md), reloads the script to execute it again.
 - **Copy Script Path**: Copies the currently selected script's relative path in
   the project using the ``res://`` prefix.
 - **Show in FileSystem**: Finds and highlights the selected file in the FileSystem
@@ -361,7 +361,7 @@ The **Go To** menu lets you navigate within the code at ease with these options:
 
 :::note
 This section will only cover the basics of the coding area in terms of the user
-interface. To learn more about scripting in Redot, refer to the [doc_gdscript](doc_gdscript) or
+interface. To learn more about scripting in Redot, refer to the [doc_gdscript](../scripting/gdscript/gdscript_basics.md) or
 [Scripting ](toc-learn-scripting) documentation.
 
 :::
@@ -381,7 +381,7 @@ this value is set to 100 characters, by default. Both values can be changed, or 
 display of the line can be toggled in the "Appearance" settings of the text editor.
 
 In the script, to the left of function definitions, you might see additional icons. The |override|
-icon indicates that this function is an [override ](doc_overridable_functions) of an existing 
+icon indicates that this function is an [override ](../scripting/overridable_functions.md) of an existing 
 function. Clicking it opens the documentation of the original function. The |receiver| icon means 
 that it is a receiving method of a signal. Clicking it shows where the signal is coming 
 from. A |foldable| icon to the left of the line denotes a foldable block. You can 
@@ -392,7 +392,7 @@ The example below summarizes the paragraph above. Lines 52, 56, and 58 are folda
 line 57 is a code region with the name "New Code Region," which you can also fold, and line
 62 is a folded block.
 Line 53 is a bookmark, which can quickly be jumped to using the **Go To &gt; Bookmarks** menu.
-Line 55 is a breakpoint that can be used in [debugging ](doc_overview_of_debugging_tools).
+Line 55 is a breakpoint that can be used in [debugging ](../scripting/debug/overview_of_debugging_tools.md).
 
 ![Image](img/script_editor_icons/text_editor_coding_area_indicators.webp)
 

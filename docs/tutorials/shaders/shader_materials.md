@@ -60,7 +60,7 @@ your visual shader to a text shader.
 
 :::note
 
-To learn more about visual shaders, read [doc_visual_shaders](doc_visual_shaders).
+To learn more about visual shaders, read [doc_visual_shaders](visual_shaders.md).
 
 :::
 

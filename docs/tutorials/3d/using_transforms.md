@@ -142,7 +142,7 @@ The gizmo's arrows show the ``X``, ``Y``, and ``Z`` axes (in red, green, and blu
 
 ![Image](img/transforms_gizmo.png)
 
-For more information on the mathematics of vectors and transforms, please read the [doc_vector_math](doc_vector_math) tutorials.
+For more information on the mathematics of vectors and transforms, please read the [doc_vector_math](../math/vector_math.md) tutorials.
 
 # Manipulating transforms
 
@@ -334,7 +334,7 @@ bullet.LinearVelocity = transform.Basis.Z * BulletSpeed;
 
 </Tabs>
 
-Is the enemy looking at the player? Use the dot product for this (see the [doc_vector_math](doc_vector_math) tutorial for an explanation of the dot product):
+Is the enemy looking at the player? Use the dot product for this (see the [doc_vector_math](../math/vector_math.md) tutorial for an explanation of the dot product):
 
 <Tabs>
 

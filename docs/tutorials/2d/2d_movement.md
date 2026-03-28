@@ -19,7 +19,7 @@ children: ``Sprite2D`` and ``CollisionShape2D``. You can use the Redot icon ("ic
 for the Sprite2D's texture or use any other 2D image you have.
 
 Open ``Project -&gt; Project Settings`` and select the "Input Map" tab. Add the following
-input actions (see [InputEvent ](doc_inputevent) for details):
+input actions (see [InputEvent ](../inputs/inputevent.md) for details):
 
 ![Image](img/movement_inputs.webp)
 
@@ -92,7 +92,7 @@ length of ``1``, by our desired speed.
 
 :::tip
 If you've never used vector math before, or need a refresher,
-you can see an explanation of vector usage in Redot at [doc_vector_math](doc_vector_math).
+you can see an explanation of vector usage in Redot at [doc_vector_math](../math/vector_math.md).
 
 :::
 

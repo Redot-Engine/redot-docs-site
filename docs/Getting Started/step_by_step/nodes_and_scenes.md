@@ -1,7 +1,7 @@
 
 # Nodes and Scenes
 
-In [doc_key_concepts_overview](doc_key_concepts_overview), we saw that a Redot game is a tree of
+In [doc_key_concepts_overview](../introduction/key_concepts_overview.md), we saw that a Redot game is a tree of
 scenes and that each scene is a tree of nodes. In this lesson, we explain a bit
 more about them. You will also create your first scene.
 
@@ -114,7 +114,7 @@ You will see the text draw in the viewport as you type.
 :::info
 You can edit any property listed in the Inspector as we did with
 the Text. For a complete reference of the Inspector dock, see
-[doc_editor_inspector_dock](doc_editor_inspector_dock).
+[doc_editor_inspector_dock](../../tutorials/editor/inspector_dock.md).
 
 :::
 
@@ -145,7 +145,7 @@ The Save Scene As dialog, like other file dialogs in the editor, only
 allows you to save files inside the project. The ``res://`` path at
 the top of the window represents the project's root directory and
 stands for "resource path". For more information about file paths in
-Redot, see [doc_filesystem](doc_filesystem).
+Redot, see [doc_filesystem](../../tutorials/scripting/filesystem.md).
 
 :::
 
@@ -180,7 +180,7 @@ The editor saves the main scene's path in a project.Redot file in your
 project's directory. While you can edit this text file directly to
 change project settings, you can also use the "Project -&gt; Project
 Settings" window to do so. For more information, see
-[doc_project_settings](doc_project_settings).
+[doc_project_settings](../../tutorials/editor/project_settings.md).
 
 :::
 

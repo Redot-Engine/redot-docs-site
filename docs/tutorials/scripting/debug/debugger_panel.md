@@ -64,7 +64,7 @@ is running, the expression field won't be editable, so you will need to set a
 breakpoint first. Expressions can be persisted across runs by unchecking **Clear on Run**,
 although they will be lost when the editor quits.
 
-Expressions are evaluated using [Redot's expression language ](doc_evaluating_expressions), which allows you to perform arithmetic and call
+Expressions are evaluated using [Redot's expression language ](../evaluating_expressions.md), which allows you to perform arithmetic and call
 some functions within the expression. Expressions can refer to member variables,
 or local variables within the same scope as the line the breakpoint is on. You
 can also enter constant values, which makes it usable as a built-in calculator.
@@ -107,7 +107,7 @@ and how that effects performance.
 :::info
 
 A detailed explanation of how to use the profiler can be found in the
-dedicated [doc_the_profiler](doc_the_profiler) page.
+dedicated [doc_the_profiler](the_profiler.md) page.
 
 :::
 
@@ -166,7 +166,7 @@ FPS+ portion.
 
 Remember that Visual Profiler results can vary **heavily** based on
 viewport resolution, which is determined by the window size if using the
-``disabled`` or ``canvas_items`` [stretch modes ](doc_multiple_resolutions).
+``disabled`` or ``canvas_items`` [stretch modes ](../../rendering/multiple_resolutions.md).
 
 When comparing results across different runs, make sure to use the same
 viewport size for all runs.
@@ -205,7 +205,7 @@ the total bandwidth usage at any given moment.
 
 :::note
 
-The bandwidth meter does **not** take the [doc_high_level_multiplayer](doc_high_level_multiplayer)
+The bandwidth meter does **not** take the [doc_high_level_multiplayer](../../networking/high_level_multiplayer.md)
 API's own compression system into account. This means that changing the
 compression algorithm used will not change the metrics reported by the
 bandwidth meter.
@@ -222,7 +222,7 @@ is running, you can open it later and see how the values changed.
 :::info
 
 In addition to the default performance monitors, you can also create
-[custom performance monitors ](doc_custom_performance_monitors)
+[custom performance monitors ](custom_performance_monitors.md)
 to track arbitrary values in your project.
 
 :::

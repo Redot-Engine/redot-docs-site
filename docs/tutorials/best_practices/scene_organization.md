@@ -479,7 +479,7 @@ the various menus and widgets the project needs.
         - Control "GUI" (gui.gd)
 
 When changing levels, you can then swap out the children of the "World" node.
-[Changing scenes manually ](doc_change_scenes_manually) gives you full
+[Changing scenes manually ](../scripting/change_scenes_manually.md) gives you full
 control over how your game world transitions.
 
 The next step is to consider what gameplay systems your project requires.
@@ -489,7 +489,7 @@ If you have a system that...
 2. should be globally accessible
 3. should exist in isolation
 
-... then you should create an [autoload 'singleton' node ](doc_singletons_autoload).
+... then you should create an [autoload 'singleton' node ](../scripting/singletons_autoload.md).
 
 :::note
 
@@ -507,7 +507,7 @@ GUI nodes would also delete themselves during scene transitions.
 
 If you have systems that modify other systems' data, you should define those as
 their own scripts or scenes, rather than autoloads. For more information, see
-[Autoloads versus regular nodes ](doc_autoloads_versus_internal_nodes).
+[Autoloads versus regular nodes ](autoloads_versus_internal_nodes.md).
 
 Each subsystem within your game should have its own section within the
 SceneTree. You should use parent-child relationships only in cases where nodes

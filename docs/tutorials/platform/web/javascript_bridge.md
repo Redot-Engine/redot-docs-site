@@ -142,7 +142,7 @@ func _on_permissions(args):
 You most likely can. First, you have to
 include your library in the page. You can customize the
 [Head Include ](doc_javascript_export_options) during export (see below),
-or even [write your own template ](doc_customizing_html5_shell).
+or even [write your own template ](customizing_html5_shell.md).
 
 In the example below, we customize the ``Head Include`` to add an external library
 ([axios ](https://axios-http.com/)_) from a content delivery network, and a
@@ -256,11 +256,11 @@ private void MyFunc2()
 
 Any other JavaScript value is returned as ``null``.
 
-HTML5 export templates may be [built ](doc_compiling_for_web) without
+HTML5 export templates may be [built ](../../../Contributing/Development/compiling/compiling_for_web.md) without
 support for the singleton to improve security. With such templates, and on
 platforms other than HTML5, calling ``JavaScriptBridge.eval`` will also return
 ``null``. The availability of the singleton can be checked with the
-``web`` [feature tag ](doc_feature_tags):
+``web`` [feature tag ](../../export/feature_tags.md):
 
 <Tabs>
 

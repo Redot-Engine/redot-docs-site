@@ -98,7 +98,7 @@ new functions:
 ![image](img/assetlib_login_header.png)
 
 You can learn how to submit assets to the Library, and what the asset submission
-guidelines are, in the next part of this tutorial, [doc_submitting_to_assetlib](doc_submitting_to_assetlib).
+guidelines are, in the next part of this tutorial, [doc_submitting_to_assetlib](submitting_to_assetlib.md).
 
 ## In the editor
 

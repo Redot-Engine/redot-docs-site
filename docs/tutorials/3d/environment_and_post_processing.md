@@ -200,7 +200,7 @@ the Import dock, enable **HDR Clamp Exposure** then click **Reimport**.
 :::
 
 If you need a custom sky material (e.g. for procedural clouds), you can
-create a custom [sky shader](doc_sky_shader).
+create a custom [sky shader](../shaders/shader_reference/sky_shader.md).
 
 ### Ambient light
 
@@ -245,8 +245,8 @@ working with HDR.
 In general, you should only rely on ambient light alone for simple scenes or
 large exteriors. You may also do so to boost performance. Ambient light is fast
 to render, but it doesn't provide the best lighting quality. It's better to
-generate ambient light from [ReflectionProbe](doc_reflection_probes),
-[VoxelGI](doc_using_voxel_gi) or [SDFGI](doc_using_sdfgi), as these
+generate ambient light from [ReflectionProbe](global_illumination/reflection_probes.md),
+[VoxelGI](global_illumination/using_voxel_gi.md) or [SDFGI](global_illumination/using_sdfgi.md), as these
 will simulate how indirect light propagates more accurately. Below is a comparison,
 in terms of quality, between using a flat ambient color and a VoxelGI:
 
@@ -275,7 +275,7 @@ Reflected light can be set to one of 3 modes:
 :::note
 
 This section refers to non-volumetric fog only.
-It is possible to use both non-volumetric fog and [doc_volumetric_fog](doc_volumetric_fog)
+It is possible to use both non-volumetric fog and [doc_volumetric_fog](volumetric_fog.md)
 at the same time.
 
 :::
@@ -317,7 +317,7 @@ being affected by the lights that traverse the fog.
 
 :::info
 
-See [doc_volumetric_fog](doc_volumetric_fog) for documentation on setting up volumetric fog.
+See [doc_volumetric_fog](volumetric_fog.md) for documentation on setting up volumetric fog.
 
 :::
 
@@ -378,7 +378,7 @@ distracting changes during gameplay.
 Mobile or Compatibility.*
 
 While Redot supports several sources of reflection data such as
-[doc_reflection_probes](doc_reflection_probes), they may not provide enough detail for all
+[doc_reflection_probes](global_illumination/reflection_probes.md), they may not provide enough detail for all
 situations. Scenarios where screen-space reflections make the most sense are
 when objects are in contact with each other (object over floor, over a table,
 floating on water, etc).
@@ -540,7 +540,7 @@ illumination for off-screen elements (unlike :abbr:`SSIL (Screen-Space Indirect 
 
 :::info
 
-See [doc_using_sdfgi](doc_using_sdfgi) for instructions on setting up this global
+See [doc_using_sdfgi](global_illumination/using_sdfgi.md) for instructions on setting up this global
 illumination technique.
 
 :::
@@ -894,7 +894,7 @@ real life, daytime photography generally uses ISO values between 100 and 800.
 
 :::info
 
-See [doc_physical_light_and_camera_units](doc_physical_light_and_camera_units) if you wish to use real world
+See [doc_physical_light_and_camera_units](physical_light_and_camera_units.md) if you wish to use real world
 units to configure your camera's exposure, field of view and depth of field.
 
 :::

@@ -38,11 +38,11 @@ on GitHub.
 
 :::info
 Technical details about the PR workflow are outlined in a
-specific section, [doc_pr_workflow](doc_pr_workflow).
+specific section, [doc_pr_workflow](pr_workflow.md).
 
 Details about the code style guidelines and the ``clang-format``
 tool used to enforce them are outlined in
-[doc_code_style_guidelines](doc_code_style_guidelines).
+[doc_code_style_guidelines](../Development/code_style_guidelines.md).
 
 :::
 
@@ -108,7 +108,7 @@ There are two separate resources referred to as "documentation" in Redot:
   offline, directly in Redot's code editor, or online at Redot :ref:`Class Reference
   &lt;doc_class_reference&gt;`. To contribute to the class reference, you have to edit the
   XML file corresponding to the class and make a pull request.
-  See [doc_updating_the_class_reference](doc_updating_the_class_reference) and [doc_class_reference_primer](doc_class_reference_primer)
+  See [doc_updating_the_class_reference](../Documentation/updating_the_class_reference.md) and [doc_class_reference_primer](../Documentation/class_reference_primer.md)
   for more details.
 
 - **The tutorials and engine documentation and its translations.**
@@ -116,7 +116,7 @@ There are two separate resources referred to as "documentation" in Redot:
   Its contents are generated from plain text files in the reStructured Text
   (rst) format, to which you can contribute via pull requests on the
   [Redot-docs](https://github.com/redot-engine/redot-docs-site) GitHub repository.
-  See [doc_contributing_to_the_documentation](doc_contributing_to_the_documentation) for more details.
+  See [doc_contributing_to_the_documentation](../Documentation/contributing_to_the_documentation.md) for more details.
 
 ## Contributing translations
 
@@ -124,4 +124,4 @@ To make Redot accessible to everyone, including users who may prefer resources
 in their native language instead of English, our community helps translate both
 the Redot editor and its documentation in many languages.
 
-See [doc_editor_and_docs_localization](doc_editor_and_docs_localization) for more details.
+See [doc_editor_and_docs_localization](../Documentation/editor_and_docs_localization.md) for more details.

@@ -5,7 +5,7 @@ CanvasItem shaders are used to draw all 2D elements in Redot. These include
 all nodes that inherit from CanvasItems, and all GUI elements.
 
 CanvasItem shaders contain fewer built-in variables and functionality than 
-[Spatial shaders](doc_spatial_shader), but they maintain the same basic structure 
+[Spatial shaders](spatial_shader.md), but they maintain the same basic structure 
 with vertex, fragment, and light processor functions.
 
 ## Render modes

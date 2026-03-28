@@ -108,7 +108,7 @@ editor exposes two options:
 
 :::info
 
-See [doc_importing_3d_scenes](doc_importing_3d_scenes) for information on how to export models
+See [doc_importing_3d_scenes](../assets_pipeline/importing_3d_scenes/index.md) for information on how to export models
 for Redot and automatically generate collision shapes on import.
 
 :::

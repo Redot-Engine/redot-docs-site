@@ -7,7 +7,7 @@ import TabItem from "@theme/TabItem";
 
 [HTTPClient ](class_HTTPClient) provides low-level access to HTTP communication.
 For a higher-level interface, you may want to take a look at [HTTPRequest ](class_HTTPRequest) first,
-which has a tutorial available [here ](doc_http_request_class).
+which has a tutorial available [here ](http_request_class.md).
 
 :::warning
 

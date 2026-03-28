@@ -10,7 +10,7 @@ built-in node types.
 :::info
 
 To learn to submit your changes to the Redot project using the Git version
-control system, see [doc_updating_the_class_reference](doc_updating_the_class_reference).
+control system, see [doc_updating_the_class_reference](updating_the_class_reference.md).
 
 :::
 

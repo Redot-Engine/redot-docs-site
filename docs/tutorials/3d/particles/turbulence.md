@@ -4,8 +4,8 @@
 ![Image](img/particle_turbulence.webp)
 
 Turbulence uses a noise texture to add variation and interesting patterns to particle movement.
-It can be combined with [particle attractors ](doc_3d_particles_attractors) and
-[collision ](doc_3d_particles_collision) nodes to create even more complex looking behavior.
+It can be combined with [particle attractors ](attractors.md) and
+[collision ](collision.md) nodes to create even more complex looking behavior.
 
 ![Image](img/particle_turbulence_properties.webp)
 
@@ -81,7 +81,7 @@ The influence properties determine how much each particle is affected by turbule
 particle spawns, the influence is randomly chosen from within this range. You can
 also set up a curve with the ``Influence Over Life`` property that modifies that value
 over each particle's lifetime. These three properties together control the strength of
-the turbulence's effect on the particle system [as described before ](doc_process_material_properties).
+the turbulence's effect on the particle system [as described before ](process_material_properties.md).
 
 Since these properties affect the overall influence of the turbulence over a particle system,
 both movement direction and speed change as you set different values. A stronger influence causes

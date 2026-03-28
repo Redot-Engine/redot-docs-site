@@ -57,7 +57,7 @@ Project Manager opens a project, the initial process is terminated and the debug
 </figure>
 
 To learn more about command line arguments, refer to the
-[command line tutorial](doc_command_line_tutorial).
+[command line tutorial](../../../tutorials/editor/command_line_tutorial.md).
 
 Even if you start the project without a debugger attached it can still be connected to the running
 process using **Debug &gt; Attach to Process...** menu.

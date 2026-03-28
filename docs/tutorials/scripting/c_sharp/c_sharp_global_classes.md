@@ -8,7 +8,7 @@ using the ``class_name`` keyword at the top of a script. This page describes how
 to achieve the same effect in C#.
 
 - Global classes show up in the *Add Node* and *Create Resource* dialogs.
-- If an [exported property ](doc_c_sharp_exports) is a global class, the
+- If an [exported property ](c_sharp_exports.md) is a global class, the
   inspector restricts assignment, allowing only instances of that global class
   or any derived classes.
 
@@ -86,7 +86,7 @@ public partial class Stats : Resource
 
 ![Image](img/globalclasses_createresource.webp)
 
-The ``Stats`` class is a custom resource registered as a global class. [Exporting properties ](doc_c_sharp_exports) of the
+The ``Stats`` class is a custom resource registered as a global class. [Exporting properties ](c_sharp_exports.md) of the
 type ``Stats`` will only allow instances of this resource type to be assigned, and the inspector
 will let you create and load instances of this type easily.
 

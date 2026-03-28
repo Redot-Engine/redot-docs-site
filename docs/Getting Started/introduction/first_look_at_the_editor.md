@@ -6,7 +6,7 @@ look at the different main screens and docks to help you situate yourself.
 
 :::info
 For a comprehensive breakdown of the editor's interface and how to
-use it, see the [Editor manual](doc_editor_introduction).
+use it, see the [Editor manual](../../tutorials/editor/index.md).
 
 :::
 
@@ -37,7 +37,7 @@ scale, network mode, and also the directory naming convention.
 
 :::info
 To learn the Project Manager's ins and outs, read
-[doc_project_manager](doc_project_manager).
+[doc_project_manager](../../tutorials/editor/project_manager.md).
 
 :::
 
@@ -79,7 +79,7 @@ To learn more on workspaces, read [doc_intro_to_the_editor_interface_four_screen
 :::
 
 :::info
-To learn more on the 3D viewport and 3D in general, read [doc_introduction_to_3d](doc_introduction_to_3d).
+To learn more on the 3D viewport and 3D in general, read [doc_introduction_to_3d](../../tutorials/3d/introduction_to_3d.md).
 
 :::
 
@@ -100,7 +100,7 @@ The **Inspector** allows you to edit the properties of a selected node:
 ![Image](img/editor_intro_inspector_dock.webp)
 
 :::info
-To read more on inspector, see [doc_editor_inspector_dock](doc_editor_inspector_dock).
+To read more on inspector, see [doc_editor_inspector_dock](../../tutorials/editor/inspector_dock.md).
 
 :::
 
@@ -138,7 +138,7 @@ In the **3D screen**, you can work with meshes, lights, and design levels for
 ![Image](img/editor_intro_workspace_3d.webp)
 
 :::note
-Read [doc_introduction_to_3d](doc_introduction_to_3d) for more detail about the **3D
+Read [doc_introduction_to_3d](../../tutorials/3d/introduction_to_3d.md) for more detail about the **3D
 main screen**.
 
 :::
@@ -155,7 +155,7 @@ and assets to use in your projects.
 
 :::info
 You can learn more about the asset library in
-[doc_what_is_assetlib](doc_what_is_assetlib).
+[doc_what_is_assetlib](../../Community/asset_library/what_is_assetlib.md).
 
 :::
 

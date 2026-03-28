@@ -41,12 +41,12 @@ disabled with the [Disable Input ](class_Viewport_property_gui_disable_input) pr
 
 ![Image](img/input.webp)
 
-For more information on how Redot handles input, please read the [Input Event Tutorial ](doc_inputevent).
+For more information on how Redot handles input, please read the [Input Event Tutorial ](../inputs/inputevent.md).
 
 ## Listener
 
 Redot supports 3D sound (in both 2D and 3D nodes). More on this can be
-found in the [Audio Streams Tutorial ](doc_audio_streams). For this type of sound to be
+found in the [Audio Streams Tutorial ](../audio/audio_streams.md). For this type of sound to be
 audible, the [Viewport ](class_Viewport) needs to be enabled as a listener (for 2D or 3D).
 If you are using a [SubViewport ](class_SubViewport) to display your [World3D ](class_World3D) or
 [World2D ](class_World2D), don't forget to enable this!
@@ -130,7 +130,7 @@ subViewport.Size2DOverrideStretch = true; // Enable stretch for custom size.
 
 </Tabs>
 
-For information on scaling and stretching with the Root Viewport visit the [Multiple Resolutions Tutorial ](doc_multiple_resolutions)
+For information on scaling and stretching with the Root Viewport visit the [Multiple Resolutions Tutorial ](multiple_resolutions.md)
 
 ## Worlds
 

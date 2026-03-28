@@ -7,7 +7,7 @@ import TabItem from "@theme/TabItem";
 
 Shaders are special programs that execute on the GPU and are used for rendering
 graphics. All modern rendering is done with shaders. For a more detailed
-description of what shaders are please see [What are shaders ](doc_introduction_to_shaders).
+description of what shaders are please see [What are shaders ](../introduction_to_shaders.md).
 
 This tutorial will focus on the practical aspects of writing shader programs by
 walking you through the process of writing a shader with both vertex and
@@ -21,12 +21,12 @@ overview of how shaders work in Redot, see the [Shading Reference ](toc-shading-
 
 ## Setup
 
-[CanvasItem shaders ](doc_canvas_item_shader) are used to draw all 2D
-objects in Redot, while [Spatial ](doc_spatial_shader) shaders are used
+[CanvasItem shaders ](../shader_reference/canvas_item_shader.md) are used to draw all 2D
+objects in Redot, while [Spatial ](../shader_reference/spatial_shader.md) shaders are used
 to draw all 3D objects.
 
 In order to use a shader it must be attached inside a [Material ](class_Material) which must be attached to an object. Materials are a type of
-[Resource ](doc_resources). To draw multiple objects with the same
+[Resource ](../../scripting/resources.md). To draw multiple objects with the same
 material, the material must be attached to each object.
 
 All objects derived from a [CanvasItem ](class_CanvasItem) have a material
@@ -35,7 +35,7 @@ property. This includes all [GUI elements ](class_Control), [Sprite2Ds ](class_S
 material. This can be useful if you have a large number of nodes that you want
 to use the same material.
 
-To begin, create a Sprite2D node. [You can use any CanvasItem ](doc_custom_drawing_in_2d),
+To begin, create a Sprite2D node. [You can use any CanvasItem ](../../2d/custom_drawing_in_2d.md),
 so long as it is drawing to the canvas, so for this tutorial we will use a Sprite2D,
 as it is the easiest CanvasItem to start drawing with.
 
@@ -89,7 +89,7 @@ every pixel.
 
 We do so by writing a ``vec4`` to the built-in variable ``COLOR``. ``vec4`` is
 shorthand for constructing a vector with 4 numbers. For more information about
-vectors see the [Vector math tutorial ](doc_vector_math). ``COLOR`` is both
+vectors see the [Vector math tutorial ](../../math/vector_math.md). ``COLOR`` is both
 an input variable to the fragment function and the final output from it.
 
 ```glsl
@@ -169,7 +169,7 @@ uniform float size;
 
 ```
 
-For more information about usage see the [Shading Language doc ](doc_shading_language).
+For more information about usage see the [Shading Language doc ](../shader_reference/shading_language.md).
 
 Add a uniform to change the amount of blue in our Sprite2D.
 

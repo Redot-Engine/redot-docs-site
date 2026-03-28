@@ -5,7 +5,7 @@ This page lists common issues encountered when using Redot and possible solution
 
 :::info
 
-See [doc_using_the_web_editor](doc_using_the_web_editor) for caveats specific to the Web version
+See [doc_using_the_web_editor](editor/using_the_web_editor.md) for caveats specific to the Web version
 of the Redot editor.
 
 :::

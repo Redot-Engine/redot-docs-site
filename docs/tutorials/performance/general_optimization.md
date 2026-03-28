@@ -49,8 +49,8 @@ our attempts to speed them up.
 There are several methods of measuring performance, including:
 
 - Putting a start/stop timer around code of interest.
-- Using the [Redot profiler ](doc_the_profiler).
-- Using [external CPU profilers ](doc_using_cpp_profilers).
+- Using the [Redot profiler ](../scripting/debug/the_profiler.md).
+- Using [external CPU profilers ](../../Contributing/Development/debugging/using_cpp_profilers.md).
 - Using external GPU profilers/debuggers such as
   [NVIDIA Nsight Graphics ](https://developer.nvidia.com/nsight-graphics)_,
   [Radeon GPU Profiler ](https://gpuopen.com/rgp/)_,
@@ -123,7 +123,7 @@ of your improvements. Sometimes, attempts to improve performance can backfire
 and lead to slower performance.
 **Always use profiling and timing to guide your efforts.**
 
-For more info about using Redot's built-in profiler, see [doc_the_profiler](doc_the_profiler).
+For more info about using Redot's built-in profiler, see [doc_the_profiler](../scripting/debug/the_profiler.md).
 
 ## Principles
 

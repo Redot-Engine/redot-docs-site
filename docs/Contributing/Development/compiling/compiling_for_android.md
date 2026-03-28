@@ -6,7 +6,7 @@
 :::info
 
 This page describes how to compile Android export template binaries from source.
-If you're looking to export your project to Android instead, read [doc_exporting_for_android](doc_exporting_for_android).
+If you're looking to export your project to Android instead, read [doc_exporting_for_android](../../../tutorials/export/exporting_for_android.md).
 
 :::
 
@@ -17,7 +17,7 @@ enough. Compiling the Android APK manually is mostly useful for custom
 builds or custom packages for the deployer.
 
 Also, you still need to follow the steps mentioned in the
-[doc_exporting_for_android](doc_exporting_for_android) tutorial before attempting to build
+[doc_exporting_for_android](../../../tutorials/export/exporting_for_android.md) tutorial before attempting to build
 a custom export template.
 
 ## Requirements
@@ -40,10 +40,10 @@ For compiling under Windows, Linux or macOS, the following is required:
 
 :::info
 To get the Redot source code for compiling, see
-[doc_getting_source](doc_getting_source).
+[doc_getting_source](getting_source.md).
 
 For a general overview of SCons usage for Redot, see
-[doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem).
+[doc_introduction_to_the_buildsystem](introduction_to_the_buildsystem.md).
 
 :::
 

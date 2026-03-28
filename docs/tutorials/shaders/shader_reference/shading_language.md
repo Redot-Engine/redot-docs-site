@@ -94,7 +94,7 @@ uniform int something = 1;
 ```
 
 The asterisks on the follow-up lines are not required, but are recommended as
-per the [doc_shaders_style_guide](doc_shaders_style_guide). These asterisks are automatically
+per the [doc_shaders_style_guide](../shaders_style_guide.md). These asterisks are automatically
 stripped by the inspector, so they won't appear in the tooltip.
 
 ### Casting
@@ -990,7 +990,7 @@ with the calling thread.
 
 Therefore, it's not recommended to read global shader uniform values
 continuously in a script. If you need to read values in a script after
-setting them, consider creating an [autoload ](doc_singletons_autoload)
+setting them, consider creating an [autoload ](../../scripting/singletons_autoload.md)
 where you store the values you need to query at the same time you're setting
 them as global uniforms.
 
@@ -1158,13 +1158,13 @@ function used (``vertex``, ``fragment``, ``light``, ``start``, ``process,
 ``sky``, or ``fog``). For a list of the built-in variables that are available,
 please see the corresponding pages:
 
-- [Spatial shaders ](doc_spatial_shader)
-- [Canvas item shaders ](doc_canvas_item_shader)
-- [Particle shaders ](doc_particle_shader)
-- [Sky shaders ](doc_sky_shader)
-- [Fog shaders ](doc_fog_shader)
+- [Spatial shaders ](spatial_shader.md)
+- [Canvas item shaders ](canvas_item_shader.md)
+- [Particle shaders ](particle_shader.md)
+- [Sky shaders ](sky_shader.md)
+- [Fog shaders ](fog_shader.md)
 
 ## Built-in functions
 
 A large number of built-in functions are supported, conforming to GLSL ES 3.0.
-See the [Built-in functions ](doc_shader_functions) page for details.
+See the [Built-in functions ](shader_functions.md) page for details.

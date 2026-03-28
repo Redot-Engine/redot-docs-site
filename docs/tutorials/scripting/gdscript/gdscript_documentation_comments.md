@@ -214,7 +214,7 @@ class/member, this is not recommended as it is against common conventions.
 
 Redot's class reference supports BBCode-like tags. They add nice formatting to the text which could also
 be used in the documentation. See also [class reference bbcode ](doc_class_reference_bbcode).
-Note that this is slightly different from the ``RichTextLabel`` [BBCode ](doc_bbcode_in_richtextlabel).
+Note that this is slightly different from the ``RichTextLabel`` [BBCode ](../../ui/bbcode_in_richtextlabel.md).
 
 Whenever you link to a member of another class, you need to specify the class name.
 For links to the same class, the class name is optional and can be omitted.

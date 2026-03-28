@@ -34,17 +34,17 @@ observer pattern. You can learn more about it in
 :::
 
 We will now use a signal to make our Redot icon from the previous lesson
-([doc_scripting_player_input](doc_scripting_player_input)) move and stop by pressing a button.
+([doc_scripting_player_input](scripting_player_input.md)) move and stop by pressing a button.
 
 :::note
 For this project, we will be following the Redot naming conventions.
 - **GDScript**: Classes (nodes) use PascalCase, variables and
   functions use snake_case, and constants use ALL_CAPS (See
-  [doc_gdscript_styleguide](doc_gdscript_styleguide)).
+  [doc_gdscript_styleguide](../../tutorials/scripting/gdscript/gdscript_styleguide.md)).
 
 - **C#**: Classes, export variables and methods use PascalCase,
   private fields use _camelCase, local variables and parameters use
-  camelCase (See [doc_c_sharp_styleguide](doc_c_sharp_styleguide)). Be careful to type
+  camelCase (See [doc_c_sharp_styleguide](../../tutorials/scripting/c_sharp/c_sharp_style_guide.md)). Be careful to type
   the method names precisely when connecting signals.
 
 :::
@@ -53,7 +53,7 @@ For this project, we will be following the Redot naming conventions.
 
 To add a button to our game, we will create a new scene which will include
 both a [Button](class_button) and the ``sprite_2d.tscn`` scene we created in
-the [doc_scripting_first_script](doc_scripting_first_script) lesson.
+the [doc_scripting_first_script](scripting_first_script.md) lesson.
 
 Create a new scene by going to the menu Scene -&gt; New Scene.
 
@@ -692,5 +692,5 @@ For example, an [Area2D](class_Area2D) representing a coin emits a
 ``body_entered`` signal whenever the player's physics body enters its collision
 shape, allowing you to know when the player collected it.
 
-In the next section, [doc_your_first_2d_game](doc_your_first_2d_game), you'll create a complete 2D
+In the next section, [doc_your_first_2d_game](../first_2d_game/index.md), you'll create a complete 2D
 game and put everything you learned so far into practice.

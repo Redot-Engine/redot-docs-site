@@ -142,4 +142,4 @@ This manual aims to provide a comprehensive reference of Redot's features. Aside
 from the 2D and 3D getting started series, it does not contain tutorials to
 implement specific game genres. If you're looking for a tutorial about creating
 a role-playing game, a platformer, or other, please see
-[doc_community_tutorials](doc_community_tutorials), which lists content made by the Redot community.
+[doc_community_tutorials](../../Community/tutorials.md), which lists content made by the Redot community.

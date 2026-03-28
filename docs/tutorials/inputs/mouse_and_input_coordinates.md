@@ -18,7 +18,7 @@ not make as much sense outside of that scope.
 ## Viewport display coordinates
 
 Redot uses viewports to display content, and viewports can be scaled by
-several options (see [doc_multiple_resolutions](doc_multiple_resolutions) tutorial). Use, then, the
+several options (see [doc_multiple_resolutions](../rendering/multiple_resolutions.md) tutorial). Use, then, the
 functions in nodes to obtain the mouse coordinates and viewport size,
 for example:
 

@@ -29,7 +29,7 @@ other preset will no longer be marked as runnable.
 - **Android:** Exports the project with debugging enabled and runs it on the
   connected device.
 
-   - Make sure to follow the steps described in [doc_exporting_for_android](doc_exporting_for_android).
+   - Make sure to follow the steps described in [doc_exporting_for_android](exporting_for_android.md).
      Otherwise, the one-click deploy button won't appear.
 
    - If you have more than one device connected, Redot will ask you which device
@@ -38,7 +38,7 @@ other preset will no longer be marked as runnable.
 - **iOS:** Exports the project with debugging enabled and runs it on the
   connected device or simulator.
 
-   - Make sure to follow the steps described in [doc_exporting_for_ios](doc_exporting_for_ios).
+   - Make sure to follow the steps described in [doc_exporting_for_ios](exporting_for_ios.md).
      Otherwise, the one-click deploy button won't appear.
 
    - For each new bundle identifier, export the project, open it in the

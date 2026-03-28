@@ -28,7 +28,7 @@ precise control over how they move and react.
 
 :::note
 This document assumes you're familiar with Redot's various physics
-bodies. Please read [doc_physics_introduction](doc_physics_introduction) first, for an overview
+bodies. Please read [doc_physics_introduction](physics_introduction.md) first, for an overview
 of the physics options.
 
 :::

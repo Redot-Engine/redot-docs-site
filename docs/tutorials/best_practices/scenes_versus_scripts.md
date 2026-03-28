@@ -95,7 +95,7 @@ name.
 
 There are two systems for registering types:
 
-- [Custom Types ](doc_making_plugins)
+- [Custom Types ](../plugins/editor/making_plugins.md)
 
    - Editor-only. Typenames are not accessible at runtime.
 

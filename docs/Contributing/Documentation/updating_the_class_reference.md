@@ -35,15 +35,15 @@ In the main repository the class reference is stored in XML files, one for each 
 class or global object. The majority of these files is located in `doc/classes/
 &lt;https://github.com/redot-engine/redot-engine/tree/master/doc/classes&gt;`_, but some modules
 contain their own documentation as well. You will find it in the ``modules/&lt;module_name&gt;/doc_classes/``
-directory. To learn more about editing XML files refer to [doc_class_reference_primer](doc_class_reference_primer).
+directory. To learn more about editing XML files refer to [doc_class_reference_primer](class_reference_primer.md).
 
 :::info
 
 For details on Git usage and the pull request workflow, please
-refer to the [doc_pr_workflow](doc_pr_workflow) page.
+refer to the [doc_pr_workflow](../Workflow/pr_workflow.md) page.
 
 If you want to translate the class reference from English to another
-language, see [doc_editor_and_docs_localization](doc_editor_and_docs_localization). This guide is
+language, see [doc_editor_and_docs_localization](editor_and_docs_localization.md). This guide is
 also available as a `video tutorial on YouTube
 &lt;https://www.youtube.com/watch?v=5jeHXxeX-JY&gt;`_.
 
@@ -95,7 +95,7 @@ scripts as described in [doc_class_reference_editing_xml](doc_class_reference_ed
 When you create a new class or modify an existing engine's API, you need to re-generate
 the XML files in ``doc/classes/``.
 
-To do so, you first need to compile Redot. See the [doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem)
+To do so, you first need to compile Redot. See the [doc_introduction_to_the_buildsystem](../Development/compiling/introduction_to_the_buildsystem.md)
 page to learn how. Then, execute the compiled Redot binary from the Redot root directory
 with the ``--doctool`` option. For example, if you're on 64-bit Linux, the command might be:
 

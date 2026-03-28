@@ -11,8 +11,8 @@ process to perform arbitrary customization.
 Note that, when applicable, modifying the original data should be preferred
 to configuring the scene after import. This helps minimize the differences
 between the 3D modeling application and the imported scene. See the
-[doc_importing_3d_scenes_model_export_considerations](doc_importing_3d_scenes_model_export_considerations) and
-[doc_importing_3d_scenes_node_type_customization](doc_importing_3d_scenes_node_type_customization) articles
+[doc_importing_3d_scenes_model_export_considerations](model_export_considerations.md) and
+[doc_importing_3d_scenes_node_type_customization](node_type_customization.md) articles
 for more information.
 
 ## Import workflows
@@ -36,7 +36,7 @@ This import process is customizable using 3 separate interfaces, depending on yo
 - The **Advanced Import Settings** dialog, which can be accessed by double-clicking
   the 3D scene in the FileSystem dock or by clicking the **Advanced…** button in
   the Import dock. This allows you to customize per-object options in Redot.
-- [Import hints ](doc_importing_3d_scenes_node_type_customization), which are special
+- [Import hints ](node_type_customization.md), which are special
   suffixes added to object names in the 3D modeling software. This allows you to
   customize per-object options in the 3D modeling software.
 
@@ -76,7 +76,7 @@ scene in the FileSystem dock:
   mesh which will be displayed in the distance to improve rendering performance.
   Not all meshes benefit from LOD, especially if they are never rendered from
   far away. Disabling this can reduce output file size and speed up importing.
-  See [doc_mesh_lod](doc_mesh_lod) for more information.
+  See [doc_mesh_lod](../../3d/mesh_lod.md) for more information.
 - **Create Shadow Meshes:** If checked, enables the generation of
   shadow meshes on import. This optimizes shadow rendering without reducing
   quality by welding vertices together when possible. This in turn reduces the
@@ -86,7 +86,7 @@ scene in the FileSystem dock:
 - **Light Baking:** Configures the meshes'
   [global illumination mode ](class_GeometryInstance3D_property_gi_mode)
   in the 3D scene. If set to **Static Lightmaps**, sets the meshes' GI mode to
-  **Static** and generates UV2 on import for [lightmap baking ](doc_using_lightmap_gi).
+  **Static** and generates UV2 on import for [lightmap baking ](../../3d/global_illumination/using_lightmap_gi.md).
 - **Lightmap Texel Size:** Only visible if **Light Baking** is set to **Static
   Lightmaps**. Controls the size of each texel on the baked lightmap. A smaller
   value results in more precise lightmaps, at the cost of larger lightmap sizes
@@ -191,12 +191,12 @@ This exposes several per-node import options:
 - **Generate &gt; Physics:** If checked, generates a PhysicsBody3D *parent* node
   with collision shapes that are *siblings* to the MeshInstance3D node.
 - **Generate &gt; NavMesh:** If checked, generates a NavigationRegion3D *child*
-  node for [navigation ](doc_navigation_overview_3d). **Mesh + NavMesh**
+  node for [navigation ](../../navigation/navigation_introduction_3d.md). **Mesh + NavMesh**
   will keep the original mesh visible, while **NavMesh Only** will only import
   the navigation mesh (without a visual representation). **NavMesh Only** is
   meant to be used when you've manually authored a simplified mesh for navigation.
 - **Generate &gt; Occluder:** If checked, generates an OccluderInstance3D *sibling*
-  node for [occlusion culling ](doc_occlusion_culling) using the mesh's
+  node for [occlusion culling ](../../3d/occlusion_culling.md) using the mesh's
   geometry as a basis for the occluder's shape. **Mesh + Occluder** will keep
   the original mesh visible, while **Occluder Only** will only import the
   occluder (without a visual representation). **Occluder Only** is meant to be

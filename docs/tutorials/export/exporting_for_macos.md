@@ -5,7 +5,7 @@
 
 This page describes how to export a Redot project to macOS.
 If you're looking to compile editor or export template binaries from source instead,
-read [doc_compiling_for_macos](doc_compiling_for_macos).
+read [doc_compiling_for_macos](../../Contributing/Development/compiling/compiling_for_macos.md).
 
 :::
 
@@ -28,13 +28,13 @@ The main executable located in the ``Contents/MacOS/`` subfolder, as well as opt
 
 :::warning
 
-Projects exported without code signing and notarization will be blocked by Gatekeeper if they are downloaded from unknown sources, see the [Running Redot apps on macOS ](doc_running_on_macos) page for more information.
+Projects exported without code signing and notarization will be blocked by Gatekeeper if they are downloaded from unknown sources, see the [Running Redot apps on macOS ](running_on_macos.md) page for more information.
 
 :::
 
 ## Code signing and notarization
 
-By default, macOS will run only applications that are signed and notarized. If you use any other signing configuration, see [Running Redot apps on macOS ](doc_running_on_macos) for workarounds.
+By default, macOS will run only applications that are signed and notarized. If you use any other signing configuration, see [Running Redot apps on macOS ](running_on_macos.md) for workarounds.
 
 To notarize an app, you **must** have a valid [Apple Developer ID Certificate ](https://developer.apple.com/)_.
 
@@ -84,7 +84,7 @@ After notarization is completed, use the ``rcodesign staple`` command to staple 
 - Select ``Disabled`` in the ``Notarization &gt; Notarization`` option.
 
 In this case Redot will use an ad-hoc signature, which will make running an exported app easier for the end users,
-see the [Running Redot apps on macOS ](doc_running_on_macos) page for more information.
+see the [Running Redot apps on macOS ](running_on_macos.md) page for more information.
 
 ### Signing Options
 

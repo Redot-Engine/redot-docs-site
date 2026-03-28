@@ -6,7 +6,7 @@
 :::info
 
 This page describes how to compile Windows editor and export template binaries from source.
-If you're looking to export your project to Windows instead, read [doc_exporting_for_windows](doc_exporting_for_windows).
+If you're looking to export your project to Windows instead, read [doc_exporting_for_windows](../../../tutorials/export/exporting_for_windows.md).
 
 :::
 
@@ -62,10 +62,10 @@ For each MSYS2 MinGW subsystem, you should then run
 
 :::info
 To get the Redot source code for compiling, see
-[doc_getting_source](doc_getting_source).
+[doc_getting_source](getting_source.md).
 
 For a general overview of SCons usage for Redot, see
-[doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem).
+[doc_introduction_to_the_buildsystem](introduction_to_the_buildsystem.md).
 
 :::
 
@@ -99,7 +99,7 @@ SCons version is too old. Update it to the latest version with
 
 ## Downloading Redot's source
 
-Refer to [doc_getting_source](doc_getting_source) for detailed instructions.
+Refer to [doc_getting_source](getting_source.md) for detailed instructions.
 
 The tutorial will assume from now on that you placed the source code in
 ``C:\Redot``.
@@ -393,7 +393,7 @@ You will be able to open Redot's source in a Visual Studio solution now,
 and able to build Redot using Visual Studio's **Build** button.
 
 :::info
-See [doc_configuring_an_ide_vs](doc_configuring_an_ide_vs) for further details.
+See [doc_configuring_an_ide_vs](../configuring_an_ide/visual_studio.md) for further details.
 
 :::
 

@@ -486,7 +486,7 @@ the settings window. You should now have a custom dock:
 ## Registering autoloads/singletons in plugins
 
 It is possible for editor plugins to automatically register
-[autoloads ](doc_singletons_autoload) when the plugin is enabled.
+[autoloads ](../../scripting/singletons_autoload.md) when the plugin is enabled.
 This also includes unregistering the autoload when the plugin is disabled.
 
 This makes setting up plugins faster for users, as they no longer have to manually

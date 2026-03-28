@@ -285,7 +285,7 @@ article.
 
 :::note
 
-The default font outline color was changed from white to black ([GH-54641](GH-54641)).
+The default font outline color was changed from white to black ([GH-54641](upgrading_to_godot_4.3.md)).
 
 :::
 

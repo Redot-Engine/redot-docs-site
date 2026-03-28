@@ -366,7 +366,7 @@ information, see [Class reference BBCode ](doc_class_reference_bbcode).
 
   * - | **lang**
       | Overrides the language for ``{text}`` that is set by the **BiDi &gt; Language** property
-        in [class_RichTextLabel`. ``{code}`` must be an ISO :ref:`language code ](doc_locales).
+        in [class_RichTextLabel`. ``{code}`` must be an ISO :ref:`language code ](../i18n/locales.md).
         This can be used to enforce the use of a specific script for a language without
         starting a new paragraph. Some font files may contain script-specific substitutes,
         in which case they will be used.
@@ -837,7 +837,7 @@ type options:
 BBCode can also be used to create different text effects that can optionally be
 animated. Five customizable effects are provided out of the box, and you can
 easily create your own. By default, animated effects will pause
-[when the SceneTree is paused ](doc_pausing_games). You can change this
+[when the SceneTree is paused ](../scripting/pausing_games.md). You can change this
 behavior by adjusting the RichTextLabel's **Process &gt; Mode** property.
 
 All examples below mention the default values for options in the listed tag format.

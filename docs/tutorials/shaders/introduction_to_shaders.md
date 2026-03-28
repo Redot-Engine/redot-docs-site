@@ -3,7 +3,7 @@
 
 This page explains what shaders are and will give you an overview of how they
 work in Redot. For a detailed reference of the engine's shading language, see
-[doc_shading_language](doc_shading_language).
+[doc_shading_language](shader_reference/shading_language.md).
 
 Shaders are a special kind of program that runs on Graphics Processing Units
 (GPUs). They were initially used to shade 3D scenes but can nowadays do much
@@ -59,33 +59,33 @@ are seven different processor functions.
 
 1. The ``vertex()`` function runs over all the vertices in the mesh and sets
    their positions and some other per-vertex variables. Used in
-   [canvas_item shaders ](doc_canvas_item_shader) and
-   [spatial shaders ](doc_spatial_shader).
+   [canvas_item shaders ](shader_reference/canvas_item_shader.md) and
+   [spatial shaders ](shader_reference/spatial_shader.md).
 
 2. The ``fragment()`` function runs for every pixel covered by the mesh. It uses
    values output by the ``vertex()`` function, interpolated between the
-   vertices. Used in [canvas_item shaders ](doc_canvas_item_shader) and
-   [spatial shaders ](doc_spatial_shader).
+   vertices. Used in [canvas_item shaders ](shader_reference/canvas_item_shader.md) and
+   [spatial shaders ](shader_reference/spatial_shader.md).
 
 3. The ``light()`` function runs for every pixel and for every light. It takes
    variables from the ``fragment()`` function and from its previous runs. Used
-   in [canvas_item shaders ](doc_canvas_item_shader) and
-   [spatial shaders ](doc_spatial_shader).
+   in [canvas_item shaders ](shader_reference/canvas_item_shader.md) and
+   [spatial shaders ](shader_reference/spatial_shader.md).
 
 4. The ``start()`` function runs for every particle in a particle system once
    when the particle is first spawned. Used in
-   [particles shaders ](doc_particle_shader).
+   [particles shaders ](shader_reference/particle_shader.md).
 
 5. The ``process()`` function runs for every particle in a particle system for
-   each frame. Used in [particles shaders ](doc_particle_shader).
+   each frame. Used in [particles shaders ](shader_reference/particle_shader.md).
 
 6. The ``sky()`` function runs for every pixel in the radiance cubemap when the
    radiance cubemap needs to be updated, and for every pixel on the current
-   screen. Used in [sky shaders ](doc_sky_shader).
+   screen. Used in [sky shaders ](shader_reference/sky_shader.md).
 
 7. The ``fog()`` function runs for every froxel in the volumetric fog froxel
    buffer that intersects with the [FogVolume ](class_FogVolume). Used by
-   [fog shaders ](doc_fog_shader).
+   [fog shaders ](shader_reference/fog_shader.md).
 
 :::warning
 
@@ -99,7 +99,7 @@ platforms.
 :::note
 
 Redot also exposes an API for users to write totally custom GLSL shaders. For
-more information see [doc_compute_shaders](doc_compute_shaders).
+more information see [doc_compute_shaders](compute_shaders.md).
 
 :::
 
@@ -119,11 +119,11 @@ shader_type spatial;
 
 Here are the available types:
 
-* [spatial ](doc_spatial_shader) for 3D rendering.
-* [canvas_item ](doc_canvas_item_shader) for 2D rendering.
-* [particles ](doc_particle_shader) for particle systems.
-* [sky ](doc_sky_shader) to render [Skies ](class_Sky).
-* [fog ](doc_fog_shader) to render [FogVolumes ](class_FogVolume)
+* [spatial ](shader_reference/spatial_shader.md) for 3D rendering.
+* [canvas_item ](shader_reference/canvas_item_shader.md) for 2D rendering.
+* [particles ](shader_reference/particle_shader.md) for particle systems.
+* [sky ](shader_reference/sky_shader.md) to render [Skies ](class_Sky).
+* [fog ](shader_reference/fog_shader.md) to render [FogVolumes ](class_FogVolume)
 
 ## Render modes
 
@@ -153,7 +153,7 @@ can also use it to send extra data to the fragment function using varyings.
 
 By default, Redot transforms your vertex information for you, which is necessary
 to project geometry onto the screen. You can use render modes to transform the
-data yourself; see the [Spatial shader doc ](doc_spatial_shader) for an
+data yourself; see the [Spatial shader doc ](shader_reference/spatial_shader.md) for an
 example.
 
 ### Fragment processor
@@ -182,5 +182,5 @@ exists as a function called inside the ``fragment()`` processor and typically
 operates on the material properties setup inside the ``fragment()`` function.
 
 The ``light()`` processor works differently in 2D than it does in 3D; for a
-description of how it works in each, see their documentation, [CanvasItem shaders ](doc_canvas_item_shader) and :ref:`Spatial shaders
+description of how it works in each, see their documentation, [CanvasItem shaders ](shader_reference/canvas_item_shader.md) and :ref:`Spatial shaders
 &lt;doc_spatial_shader&gt;`, respectively.

@@ -4,14 +4,14 @@
 ## Introduction
 
 Redot provides many post-processing effects out of the box, including Bloom,
-DOF, and SSAO, which are described in [doc_environment_and_post_processing](doc_environment_and_post_processing).
+DOF, and SSAO, which are described in [doc_environment_and_post_processing](../3d/environment_and_post_processing.md).
 However, advanced use cases may require custom effects. This article explains how
 to write your own custom effects.
 
 The easiest way to implement a custom post-processing shader is to use Redot's
 built-in ability to read from the screen texture. If you're not familiar with
 this, you should read the
-[Screen Reading Shaders Tutorial ](doc_screen-reading_shaders) first.
+[Screen Reading Shaders Tutorial ](screen-reading_shaders.md) first.
 
 ## Single pass post-processing
 

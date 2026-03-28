@@ -157,7 +157,7 @@ public partial class PrintHello : Button
 </Tabs>
 
 Then connect the "pressed" signal to itself. If you need help with signals,
-see the [doc_signals](doc_signals) article.
+see the [doc_signals](../../../Getting Started/step_by_step/signals.md) article.
 
 We are done with the main screen panel. Save the scene as ``main_panel.tscn``.
 

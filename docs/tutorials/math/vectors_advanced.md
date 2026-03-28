@@ -736,7 +736,7 @@ if (overlapping)
 
 For more information on using vector math in Redot, see the following article:
 
-- [doc_matrices_and_transforms](doc_matrices_and_transforms)
+- [doc_matrices_and_transforms](matrices_and_transforms.md)
 
 If you would like additional explanation, you should check out
 3Blue1Brown's excellent video series "Essence of Linear Algebra":

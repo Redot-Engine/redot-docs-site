@@ -700,7 +700,7 @@ See [doc_what_is_gdextension_version_compatibility](doc_what_is_gdextension_vers
 
 In the ``[libraries]`` section we set up the paths to the shared library on
 different platforms. Here there's only the debug versions since that's what we
-are working on for the example. Using [feature tags ](doc_feature_tags) you
+are working on for the example. Using [feature tags ](../../export/feature_tags.md) you
 can fine tune this to also provide release versions, add more target operating systems, as
 well as providing 32-bit and 64-bit binaries.
 
@@ -1178,7 +1178,7 @@ void destruct_property(GDExtensionPropertyInfo *info)
 
 The simple version of ``make_property()`` just calls the more complete one with a
 some default arguments. What those values mean exactly is out of the scope of
-this tutorial, check the page about the [Object class ](doc_object_class)
+this tutorial, check the page about the [Object class ](../../../Contributing/Development/core_and_modules/object_class.md)
 for more details about binding methods and properties.
 
 The complete version is more involved. First, it creates ``String``'s and
@@ -2216,5 +2216,5 @@ quite straightforward and not very verbose.
 
 If you want to create actual extensions, it is preferred to use the C++ bindings
 instead, as it takes away all of the boilerplate from your code. Check the
-[GDExtension C++ example ](doc_gdextension_cpp_example) to see how you can
+[GDExtension C++ example ](gdextension_cpp_example.md) to see how you can
 do this.

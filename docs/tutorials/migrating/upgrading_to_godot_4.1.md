@@ -188,8 +188,8 @@ In 4.1 some behavior changes have been introduced, which might require you to ad
 Change                                                                                                                                                                                              Introduced
 ==================================================================================================================================================================================================  ===========
 **SubViewportContainer**
-When input events should reach SubViewports and their children, ``SubViewportContainer.mouse_filter`` now needs to be ``MOUSE_FILTER_STOP`` or ``MOUSE_FILTER_PASS``. See [GH-79271](GH-79271) for details.  [GH-57894](GH-57894)
-Multiple layered ``SubViewportContainer`` nodes, that should all receive mouse input events, now need to be replaced by ``Area2D`` nodes. See [GH-79128](GH-79128) for details.                              [GH-57894](GH-57894)
+When input events should reach SubViewports and their children, ``SubViewportContainer.mouse_filter`` now needs to be ``MOUSE_FILTER_STOP`` or ``MOUSE_FILTER_PASS``. See [GH-79271](GH-79271) for details.  [GH-57894](upgrading_to_godot_4.1.md)
+Multiple layered ``SubViewportContainer`` nodes, that should all receive mouse input events, now need to be replaced by ``Area2D`` nodes. See [GH-79128](GH-79128) for details.                              [GH-57894](upgrading_to_godot_4.1.md)
 **Viewport**
 ``Viewport`` nodes, that have Physics Picking enabled, now automatically set InputEvents as handled. See [GH-79897](GH-79897) for workarounds.                                                               [GH-77595](GH-77595)
 ==================================================================================================================================================================================================  ===========

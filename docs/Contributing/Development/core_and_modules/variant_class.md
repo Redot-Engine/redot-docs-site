@@ -101,7 +101,7 @@ Dictionary or an Array inside, making it even more flexible.
 
 Modifications to a container will modify all references to
 it. A Mutex should be created to lock it if
-[multi-threaded access](doc_using_multiple_threads) is desired.
+[multi-threaded access](../../../tutorials/performance/using_multiple_threads.md) is desired.
 
 ### References
 

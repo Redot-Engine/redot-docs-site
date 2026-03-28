@@ -50,7 +50,7 @@ clang-format to ignore a chunk of code.
 
 :::info
 
-These guidelines only cover code formatting. See [doc_cpp_usage_guidelines](doc_cpp_usage_guidelines)
+These guidelines only cover code formatting. See [doc_cpp_usage_guidelines](cpp_usage_guidelines.md)
 for a list of language features that are permitted in pull requests.
 
 :::
@@ -360,7 +360,7 @@ draw_load_screen();
 You can use Javadoc-style comments above function or macro definitions. It's
 recommended to use Javadoc-style comments *only* for methods which are not
 exposed to scripting. This is because exposed methods should be documented in
-the [class reference XML](doc_updating_the_class_reference)
+the [class reference XML](../Documentation/updating_the_class_reference.md)
 instead.
 
 **Example:**

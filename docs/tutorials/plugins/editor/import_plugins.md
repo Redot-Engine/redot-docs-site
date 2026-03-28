@@ -4,7 +4,7 @@
 
 :::note
 This tutorial assumes you already know how to make generic plugins. If
-in doubt, refer to the [doc_making_plugins](doc_making_plugins) page. This also
+in doubt, refer to the [doc_making_plugins](making_plugins.md) page. This also
 assumes you are acquainted with Redot's import system.
 
 :::
@@ -351,7 +351,7 @@ return ResourceSaver.save(material, "%s.%s" % [save_path, _get_save_extension()]
 This is the last part and quite an important one, because here we save the made
 resource to the disk. The path of the saved file is generated and informed by
 the editor via the ``save_path`` parameter. Note that this comes **without** the
-extension, so we add it using [string formatting ](doc_gdscript_printf). For
+extension, so we add it using [string formatting ](../../scripting/gdscript/gdscript_format_string.md). For
 this we call the ``_get_save_extension`` method that we defined earlier, so we
 can be sure that they won't get out of sync.
 
@@ -368,7 +368,7 @@ method. Both of them are arrays that you can fill with information.
 
 The ``r_platform_variants`` argument is used if you need to import the resource
 differently depending on the target platform. While it's called *platform*
-variants, it is based on the presence of [feature tags ](doc_feature_tags),
+variants, it is based on the presence of [feature tags ](../../export/feature_tags.md),
 so even the same platform can have multiple variants depending on the setup.
 
 To import a platform variant, you need to save it with the feature tag before

@@ -59,7 +59,7 @@ To build an iOS plugin:
 
     - Download the Redot engine source from the [Redot GitHub page ](https://github.com/redot-engine/redot).
 
-    - Run SCons to generate headers. You can learn the process by reading [doc_compiling_for_ios](doc_compiling_for_ios). You don't have to wait for compilation to complete to move forward as headers are generated before the engine starts to compile.
+    - Run SCons to generate headers. You can learn the process by reading [doc_compiling_for_ios](../../../Contributing/Development/compiling/compiling_for_ios.md). You don't have to wait for compilation to complete to move forward as headers are generated before the engine starts to compile.
 
     - You should use the same header files for iOS plugins and for the iOS export template.
 

@@ -12,12 +12,12 @@ The equivalent C# code has been included in another tab for convenience.
 
 :::info
 To learn more about GDScript, its keywords, and its syntax, head to
-the [GDScript reference](doc_gdscript).
+the [GDScript reference](../../tutorials/scripting/gdscript/gdscript_basics.md).
 
 :::
 
 :::info
-To learn more about C#, head to the [C# basics](doc_c_sharp) page.
+To learn more about C#, head to the [C# basics](../../tutorials/scripting/c_sharp/c_sharp_basics.md) page.
 
 :::
 
@@ -369,13 +369,13 @@ Run the scene to see the Redot head run in circles.
 
 :::note
 Moving a node like that does not take into account colliding with
-walls or the floor. In [doc_your_first_2d_game](doc_your_first_2d_game), you will learn
+walls or the floor. In [doc_your_first_2d_game](../first_2d_game/index.md), you will learn
 another approach to moving objects while detecting collisions.
 
 :::
 
 Our node currently moves by itself. In the next part,
-[doc_scripting_player_input](doc_scripting_player_input), we'll use player input to control it.
+[doc_scripting_player_input](scripting_player_input.md), we'll use player input to control it.
 
 ## Complete script
 

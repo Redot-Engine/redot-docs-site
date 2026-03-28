@@ -26,7 +26,7 @@ download it from the Mac App Store.
 
 - Fill out the form with the following settings:
 
-| Arguments | See [doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem) for a full list of arguments. |
+| Arguments | See [doc_introduction_to_the_buildsystem](../compiling/introduction_to_the_buildsystem.md) for a full list of arguments. |
 | --- | --- |
 | Directory | A full path to the Redot root folder |
 

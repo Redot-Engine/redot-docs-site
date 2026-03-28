@@ -75,7 +75,7 @@ On this page, *window* refers to the screen area allotted to your game
 by the system, while *viewport* refers to the root object (accessible
 from ``get_tree().root``) which the game controls to fill this screen area.
 This viewport is a [Window ](class_Window) instance. Recall from the
-[introduction ](doc_viewports) that *all* Window objects are viewports.
+[introduction ](viewports.md) that *all* Window objects are viewports.
 
 :::
 
@@ -207,7 +207,7 @@ to the region outside the blue frame you see in the 2D editor.
 
    This is usually the best option for creating GUIs or HUDs that scale,
    so some controls can be anchored to the bottom
-   ([doc_size_and_anchors](doc_size_and_anchors)).
+   ([doc_size_and_anchors](../ui/size_and_anchors.md)).
 
    .. image:: img/stretch_viewport_keep_width.gif
 
@@ -476,7 +476,7 @@ Since Redot projects are DPI-aware, they may appear at a very small window size
 when launching on an hiDPI display (proportionally to the screen resolution).
 For a game, the most common way to work around this issue is to make them
 fullscreen by default. Alternatively, you could set the window size in an
-[autoload ](doc_singletons_autoload)'s ``_ready()`` function according to
+[autoload ](../scripting/singletons_autoload.md)'s ``_ready()`` function according to
 the screen size.
 
 To ensure 2D elements don't appear too small on hiDPI displays:
@@ -485,7 +485,7 @@ To ensure 2D elements don't appear too small on hiDPI displays:
   elements are automatically resized according to the current window size.
 - For non-game applications, use the ``disabled`` stretch mode and set the
   stretch scale to a value corresponding to the display scale factor in an
-  [autoload ](doc_singletons_autoload)'s ``_ready()`` function.
+  [autoload ](../scripting/singletons_autoload.md)'s ``_ready()`` function.
   The display scale factor is set in the operating system's settings and can be queried
   using [screen_get_scale](class_DisplayServer_method_screen_get_scale). This
   method is currently only implemented on macOS. On other operating systems, you
@@ -517,7 +517,7 @@ can be an issue on low-end mobile devices.
 
 Once scaling for different resolutions is accounted for, make sure that
 your *user interface* also scales for different aspect ratios. This can be
-done using [anchors ](doc_size_and_anchors) and/or [containers ](doc_gui_containers).
+done using [anchors ](../ui/size_and_anchors.md) and/or [containers ](../ui/gui_containers.md).
 
 ## Field of view scaling
 

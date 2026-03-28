@@ -27,7 +27,7 @@ performance.
 
 One way we can potentially reduce the amount to be rendered is to **take advantage
 of occlusion**. Redot 4.0 and later offers a new approach to occlusion culling
-using occluder nodes. See [doc_occlusion_culling](doc_occlusion_culling) for instructions on
+using occluder nodes. See [doc_occlusion_culling](../3d/occlusion_culling.md) for instructions on
 setting up occlusion culling in your scene.
 
 :::note
@@ -48,7 +48,7 @@ blending with what is behind work. As a result,
 small section with transparency, try to make that section a separate surface
 with its own material.
 
-For more information, see the [GPU optimizations ](doc_gpu_optimization)
+For more information, see the [GPU optimizations ](gpu_optimization.md)
 doc.
 
 ## Level of detail (LOD)
@@ -62,9 +62,9 @@ simulate more complex geometry.
 
 Redot 4 offers several ways to control level of detail:
 
-- An automatic approach on mesh import using [doc_mesh_lod](doc_mesh_lod).
-- A manual approach configured in the 3D node using [doc_visibility_ranges](doc_visibility_ranges).
-- [Decals ](doc_using_decals) and [lights ](doc_lights_and_shadows)
+- An automatic approach on mesh import using [doc_mesh_lod](../3d/mesh_lod.md).
+- A manual approach configured in the 3D node using [doc_visibility_ranges](../3d/visibility_ranges.md).
+- [Decals ](../3d/using_decals.md) and [lights ](../3d/lights_and_shadows.md)
   can also benefit from level of detail using their respective
   **Distance Fade** properties.
 
@@ -83,7 +83,7 @@ The simplest version of using transparency to deal with LOD is billboards. For
 example, you can use a single transparent quad to represent a tree at distance.
 This can be very cheap to render, unless of course, there are many trees in
 front of each other. In this case, transparency may start eating into fill rate
-(for more information on fill rate, see [doc_gpu_optimization](doc_gpu_optimization)).
+(for more information on fill rate, see [doc_gpu_optimization](gpu_optimization.md)).
 
 An alternative is to render not just one tree, but a number of trees together as
 a group. This can be especially effective if you can see an area but cannot
@@ -104,20 +104,20 @@ of many thousands of objects at very little performance cost, making it ideal
 for flocks, grass, particles, and anything else where you have thousands of
 identical objects.
 
-See also the [Using MultiMesh ](doc_using_multimesh) documentation.
+See also the [Using MultiMesh ](using_multimesh.md) documentation.
 
 ## Bake lighting
 
 Lighting objects is one of the most costly rendering operations. Realtime
 lighting, shadows (especially multiple lights), and
-[global illumination ](doc_introduction_to_global_illumination) are especially
+[global illumination ](../3d/global_illumination/introduction_to_global_illumination.md) are especially
 expensive. They may simply be too much for lower power mobile devices to handle.
 
 **Consider using baked lighting**, especially for mobile. This can look fantastic,
 but has the downside that it will not be dynamic. Sometimes, this is a tradeoff
 worth making.
 
-See [doc_using_lightmap_gi](doc_using_lightmap_gi) for instructions on using baked lightmaps. For
+See [doc_using_lightmap_gi](../3d/global_illumination/using_lightmap_gi.md) for instructions on using baked lightmaps. For
 best performance, you should set lights' bake mode to **Static** as opposed to
 the default **Dynamic**, as this will skip real-time lighting on meshes that
 have baked lighting.
@@ -150,7 +150,7 @@ move around the world. This can prevent memory use from getting out of hand, and
 also limit the processing needed to the local area.
 
 There may also be rendering and physics glitches due to floating point error in
-large worlds. This can be resolved using [doc_large_world_coordinates](doc_large_world_coordinates).
+large worlds. This can be resolved using [doc_large_world_coordinates](../physics/large_world_coordinates.md).
 If using large world coordinates is not an option, you may be able to use techniques
 such as orienting the world around the player (rather than the other way
 around), or shifting the origin periodically to keep things centred around

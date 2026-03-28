@@ -1,7 +1,7 @@
 
 # Custom platform ports
 
-Similar to [doc_custom_modules_in_cpp](doc_custom_modules_in_cpp), Redot's multi-platform architecture
+Similar to [doc_custom_modules_in_cpp](custom_modules_in_cpp.md), Redot's multi-platform architecture
 is designed in a way that allows creating platform ports without modifying any
 existing source code.
 
@@ -12,7 +12,7 @@ it does not use the [class_DisplayServer](class_DisplayServer) abstraction that 
 
 Some reasons to create custom platform ports might be:
 
-- You want to [port your game to consoles](doc_consoles), but wish to
+- You want to [port your game to consoles](../../../tutorials/platform/consoles.md), but wish to
   write the platform layer yourself. This is a long and arduous process, as it
   requires signing NDAs with console manufacturers, but it allows you to have
   full control over the console porting process.
@@ -146,13 +146,13 @@ games.
 - [Text-to-speech driver](https://github.com/redot-engine/redot-engine/blob/master/platform/linuxbsd/tts_linux.cpp)
   (for accessibility).
 - [Export handler](https://github.com/redot-engine/redot-engine/tree/master/platform/linuxbsd/export)
-  (for exporting from the editor, including [doc_one-click_deploy](doc_one-click_deploy)).
+  (for exporting from the editor, including [doc_one-click_deploy](../../../tutorials/export/one-click_deploy.md)).
   Not required if you intend to export only a PCK from the editor, then run the
   export template binary directly by renaming it to match the PCK file. See the
   [EditorExportPlatform header](https://github.com/redot-engine/redot-engine/blob/master/editor/export/editor_export_platform.h)
   for reference.
   ``run_icon.svg`` (16×16) should be present within the platform folder if
-  [doc_one-click_deploy](doc_one-click_deploy) is implemented for the target platform. This icon
+  [doc_one-click_deploy](../../../tutorials/export/one-click_deploy.md) is implemented for the target platform. This icon
   is displayed at the top of the editor when one-click deploy is set up for the
   target platform.
 
@@ -177,7 +177,7 @@ typically under NDAs which prevent redistribution to the public.
 
 Platform ports are designed to be as self-contained as possible. Most of the
 code can be kept within a single folder located in ``platform/``. Like
-[doc_custom_modules_in_cpp](doc_custom_modules_in_cpp), this allows for streamlining the build process
+[doc_custom_modules_in_cpp](custom_modules_in_cpp.md), this allows for streamlining the build process
 by making it possible to ``git clone`` a platform folder within a Redot repository
 clone's ``platform/`` folder, then run `[scons platform=](name)`. No other steps are
 necessary for building, unless third-party platform-specific dependencies need

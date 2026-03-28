@@ -18,7 +18,7 @@ and return types.
 With static typing, GDScript can detect more errors without even running the code.
 Also type hints give you and your teammates more information as you're working,
 as the arguments' types show up when you call a method. Static typing improves
-editor autocompletion and [documentation ](doc_gdscript_documentation_comments)
+editor autocompletion and [documentation ](gdscript_documentation_comments.md)
 of your scripts.
 
 Imagine you're programming an inventory system. You code an ``Item`` class,
@@ -436,7 +436,7 @@ func _on_area_entered(area: CollisionObject2D) -> void:
 :::note
 
 Detailed documentation about the GDScript warning system has been moved to
-[doc_gdscript_warning_system](doc_gdscript_warning_system).
+[doc_gdscript_warning_system](warning_system.md).
 
 :::
 

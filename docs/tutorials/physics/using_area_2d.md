@@ -13,7 +13,7 @@ works and what their pros and cons are. In this tutorial, we'll look at the
 
 :::note
 This document assumes you're familiar with Redot's various physics
-bodies. Please read [doc_physics_introduction](doc_physics_introduction) first.
+bodies. Please read [doc_physics_introduction](physics_introduction.md) first.
 
 :::
 
@@ -111,7 +111,7 @@ Some other usage examples:
 - Use a large circular area around an enemy to define its "detect" radius. When the player is outside the area, the enemy can't "see" it.
 - "Security cameras" - In a large level with multiple cameras, attach areas to each camera and activate them when the player enters.
 
-See the [doc_your_first_2d_game](doc_your_first_2d_game) for an example of using Area2D in a game.
+See the [doc_your_first_2d_game](../../Getting Started/first_2d_game/index.md) for an example of using Area2D in a game.
 
 ## Area influence
 

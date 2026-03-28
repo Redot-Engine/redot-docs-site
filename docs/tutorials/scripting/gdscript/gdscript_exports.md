@@ -25,7 +25,7 @@ special export syntax is provided.
 :::note
 
 Exporting properties can also be done in other languages such as C#.
-The syntax varies depending on the language. See [doc_c_sharp_exports](doc_c_sharp_exports)
+The syntax varies depending on the language. See [doc_c_sharp_exports](../c_sharp/c_sharp_exports.md)
 for information on C# exports.
 
 :::

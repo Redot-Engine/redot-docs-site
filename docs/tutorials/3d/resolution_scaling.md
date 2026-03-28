@@ -27,7 +27,7 @@ You can compare resolution scaling modes and factors in action using the
 :::note
 
 Resolution scaling is currently not available for 2D rendering, but it can be
-simulated using the ``viewport`` stretch mode. See [doc_multiple_resolutions](doc_multiple_resolutions)
+simulated using the ``viewport`` stretch mode. See [doc_multiple_resolutions](../rendering/multiple_resolutions.md)
 for more information.
 
 :::
@@ -93,7 +93,7 @@ property on a [class_Viewport](class_Viewport) node.
 
 Resolution scales *above* ``1.0`` can be used for supersample antialiasing
 (SSAA). This will provide antialiasing at a *very* high performance cost, and is
-**not recommended** for most use cases. See [doc_3d_antialiasing](doc_3d_antialiasing) for more
+**not recommended** for most use cases. See [doc_3d_antialiasing](3d_antialiasing.md) for more
 information.
 
 The tables below list common screen resolutions, the resulting 3D rendering
@@ -237,4 +237,4 @@ scene. For example, your scene could have too many draw calls, causing a CPU
 bottleneck to occur. Likewise, you may have too many graphics effects enabled
 for your GPU to handle (such as SDFGI, SSAO or SSR).
 
-See the [doc_performance](doc_performance) tutorials for more information.
+See the [doc_performance](../performance/index.md) tutorials for more information.

@@ -87,7 +87,7 @@ If using Blender 2.79 or older, follow these steps instead:
 
 :::info
 
-See [doc_collision_shapes_3d](doc_collision_shapes_3d) for a comprehensive overview of collision
+See [doc_collision_shapes_3d](../../physics/collision_shapes_3d.md) for a comprehensive overview of collision
 shapes.
 
 :::

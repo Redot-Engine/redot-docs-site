@@ -279,7 +279,7 @@ parameter.
 For custom drawing methods that don't provide an ``antialiased`` parameter,
 you can enable 2D MSAA instead, which affects rendering in the entire viewport.
 This provides high-quality antialiasing, but a higher performance cost and only
-on specific elements. See [doc_2d_antialiasing](doc_2d_antialiasing) for more information.
+on specific elements. See [doc_2d_antialiasing](2d_antialiasing.md) for more information.
 
 Here is a comparison of a line of minimal width (``width=-1``) drawn with
 ``antialiased=false``, ``antialiased=true``, and ``antialiased=false`` with
@@ -296,7 +296,7 @@ behavior.
 To do this, you can use the [tool annotation](doc_gdscript_tool_mode)
 on both GDScript and C#. See
 [the example below](doc_draw_show_drawing_while_editing_example) and
-[doc_running_code_in_the_editor](doc_running_code_in_the_editor) for more information.
+[doc_running_code_in_the_editor](../plugins/running_code_in_the_editor.md) for more information.
 
 ## Example 1: drawing a custom shape
 

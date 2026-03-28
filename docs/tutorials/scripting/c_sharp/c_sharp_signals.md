@@ -1,7 +1,7 @@
 
 # C# signals
 
-For a detailed explanation of signals in general, see the [doc_signals](doc_signals) section in the step
+For a detailed explanation of signals in general, see the [doc_signals](../../../Getting Started/step_by_step/signals.md) section in the step
 by step tutorial.
 
 Signals are implemented using C# events, the idiomatic way to represent

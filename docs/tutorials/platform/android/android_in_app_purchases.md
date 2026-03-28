@@ -7,7 +7,7 @@ Redot offers a first-party [`RedotGooglePlayBilling`` Android plugin compatible 
 
 ### Getting started
 
-Make sure you have enabled and successfully set up [Android Gradle Builds ](doc_android_gradle_build).
+Make sure you have enabled and successfully set up [Android Gradle Builds ](../../export/android_gradle_build.md).
 Follow the compiling instructions on the [`RedotGooglePlayBilling`` `github page ](https://github.com/redot-engine/redot-google-play-billing)_.
 
 Then put the files `./Redot-google-play-billing/build/outputs/aar/RedotGooglePlayBilling.***.release.aar` and `./RedotGooglePlayBilling.gdap` into your project in the `res://android/plugins` folder.

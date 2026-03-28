@@ -28,13 +28,13 @@ Instead, your code must be able to be built with a C++14 compiler.
 
 The guidelines below don't apply to third-party dependencies, although we
 generally favor small libraries instead of larger solutions. See also
-[doc_best_practices_for_engine_contributors](doc_best_practices_for_engine_contributors).
+[doc_best_practices_for_engine_contributors](best_practices_for_engine_contributors.md).
 
 :::
 
 :::info
 
-See [doc_code_style_guidelines](doc_code_style_guidelines) for formatting guidelines.
+See [doc_code_style_guidelines](code_style_guidelines.md) for formatting guidelines.
 
 :::
 

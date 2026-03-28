@@ -30,7 +30,7 @@ property is the same as setting the [Transform Align ](doc_3d_particles_properti
 The [`Rotate Y`` property works with the properties in the `Angle ](#angle)_ and
 [Angular Velocity ](#angular-velocity)_ groups to control particle rotation. ``Rotate Y``
 has to be enabled if you want to apply any rotation to particles. The exception to this
-is any particle that uses the [Standard Material ](doc_standard_material_3d)
+is any particle that uses the [Standard Material ](../standard_material_3d.md)
 where the ``Billboard`` property is set to ``Particle Billboard``. In that case, particles
 rotate even without ``Rotate Y`` enabled.
 
@@ -69,7 +69,7 @@ global Z-axis.
 
 In addition to these relatively simple shapes, you can select the ``Points`` or
 ``Directed Points`` option to create highly complex emission shapes. See the
-[Complex emission shapes ](doc_3d_particles_complex_shapes) section for a detailed
+[Complex emission shapes ](complex_shapes.md) section for a detailed
 explanation of how to set these up.
 
 ### Angle
@@ -77,7 +77,7 @@ explanation of how to set these up.
 The [`Angle`` property controls a particle's starting rotation `as described above ](#process-material-properties)_.
 In order to have an actual effect on the particle, you have to enable one of two properties: [Rotate Y ](#particle-flags)_
 rotates the particle around the particle system's Y-axis. The ``Billboard`` property in
-the [Standard Material ](doc_standard_material_3d), if it is set to ``Particle Billboard``, rotates
+the [Standard Material ](../standard_material_3d.md), if it is set to ``Particle Billboard``, rotates
 the particle around the axis that points from the particle to the camera.
 
 ### Direction
@@ -144,7 +144,7 @@ no particle will ever move at all if none of the other movement properties are s
 [`Angular Velocity`` controls a particle's speed of rotation `as described above ](#process-material-properties)_.
 You can reverse the direction by using negative numbers for ``Velocity Min`` or ``Velocity Max``. Like the
 [Angle ](#angle)_ property, the rotation will only be visible if the [Rotate Y ](#particle-flags)_ flag is set
-or the ``Particle Billboard`` mode is selected in the [Standard Material ](doc_standard_material_3d).
+or the ``Particle Billboard`` mode is selected in the [Standard Material ](../standard_material_3d.md).
 
 :::note
 
@@ -218,7 +218,7 @@ time it takes to bring particles to a complete halt.
 
 ### Attractor interaction
 
-If you want the particle system to interact with [particle attractors ](doc_3d_particles_attractors),
+If you want the particle system to interact with [particle attractors ](attractors.md),
 you have to check the ``Enabled`` property. When it is disabled, the particle system
 ignores all particle attractors.
 
@@ -229,13 +229,13 @@ ignores all particle attractors.
 [`Scale`` controls a particle's size `as described above ](#process-material-properties)_. You can set
 different values for ``Scale Min`` and ``Scale Max`` to randomize each particle's size. Negative values
 are not allowed, so you won't be able to flip particles with this property. If you emit particles as
-billboards, the ``Keep Size`` property on the [Standard Material ](doc_standard_material_3d)
+billboards, the ``Keep Size`` property on the [Standard Material ](../standard_material_3d.md)
 in your draw passes has to be enabled for any scaling to have an effect.
 
 ### Color
 
 The ``Color`` property controls a particle's initial color. It will have an effect only after the
-``Use As Albedo`` property in the ``Vertex Color`` group of the [Standard Material ](doc_standard_material_3d)
+``Use As Albedo`` property in the ``Vertex Color`` group of the [Standard Material ](../standard_material_3d.md)
 is enabled. This property is multiplied with color coming from the particle material's
 own ``Color`` or ``Texture`` property.
 
@@ -279,7 +279,7 @@ limits the available colors to the closest neighbors of the original color.
 ### Animation
 
 The ``Animation`` property group controls the behavior of sprite
-sheet animations in the particle's [Standard Material ](doc_standard_material_3d).
+sheet animations in the particle's [Standard Material ](../standard_material_3d.md).
 The [`Min``, ``Max``, and ``Curve`` values work `as described above ](#process-material-properties)_.
 
 An animated sprite sheet is a texture that contains several smaller images aligned on a grid.
@@ -350,7 +350,7 @@ Turbulence adds noise to particle movement, creating interesting and lively patt
 Check the box next to the ``Enabled`` property to activate it. A number
 of new properties show up that control the movement speed, noise pattern and overall influence
 on the particle system. You can find a detailed explanation of these in the section on
-[particle turbulence ](doc_3d_particles_turbulence).
+[particle turbulence ](turbulence.md).
 
 ## Collision
 
@@ -371,7 +371,7 @@ is multiplied by the particle's [current scale ](#scale)_. You can use this to
 make sure that the rendered size and the collision size match for particles
 with random scale or scale that varies over time.
 
-You can learn more about particle collisions in the [Collisions ](doc_3d_particles_collision)
+You can learn more about particle collisions in the [Collisions ](collision.md)
 section in this manual.
 
 ## Sub-emitter
@@ -392,5 +392,5 @@ environment. The ``Amount At Collision`` property controls how many sub-emitters
 When the ``Keep Velocity`` property is enabled, the newly spawned sub-emitter starts off
 with the parent particle's velocity at the time the sub-emitter is created.
 
-See the [Sub-emitters ](doc_3d_particles_subemitters) section in this manual for a detailed explanation of how
+See the [Sub-emitters ](subemitters.md) section in this manual for a detailed explanation of how
 to add a sub-emitter to a particle system.

@@ -7,7 +7,7 @@ import TabItem from "@theme/TabItem";
 
 For large amount of instances (in the thousands), that need to be constantly processed
 (and certain amount of control needs to be retained),
-[using servers directly ](doc_using_servers) is the recommended optimization.
+[using servers directly ](using_servers.md) is the recommended optimization.
 
 When the amount of objects reach the hundreds of thousands or millions,
 none of these approaches are efficient anymore. Still, depending on the requirements, there
@@ -29,7 +29,7 @@ for different areas of the world.
 
 It is also possible to execute some logic inside the vertex shader (using the ``INSTANCE_ID`` or
 ``INSTANCE_CUSTOM`` built-in constants). For an example of animating thousands of objects in a MultiMesh,
-see the [Animating thousands of fish ](doc_animating_thousands_of_fish) tutorial. Information
+see the [Animating thousands of fish ](vertex_animation/animating_thousands_of_fish.md) tutorial. Information
 to the shader can be provided via textures (there are floating-point [Image](class_Image) formats
 which are ideal for this).
 

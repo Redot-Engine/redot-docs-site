@@ -8,7 +8,7 @@ import TabItem from "@theme/TabItem";
 :::info
 
 This page describes how to compile Linux editor and export template binaries from source.
-If you're looking to export your project to Linux instead, read [doc_exporting_for_linux](doc_exporting_for_linux).
+If you're looking to export your project to Linux instead, read [doc_exporting_for_linux](../../../tutorials/export/exporting_for_linux.md).
 
 :::
 
@@ -33,9 +33,9 @@ required:
 
 :::info
 
-To get the Redot source code for compiling, see [doc_getting_source](doc_getting_source).
+To get the Redot source code for compiling, see [doc_getting_source](getting_source.md).
 
-For a general overview of SCons usage for Redot, see [doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem).
+For a general overview of SCons usage for Redot, see [doc_introduction_to_the_buildsystem](introduction_to_the_buildsystem.md).
 
 :::
 

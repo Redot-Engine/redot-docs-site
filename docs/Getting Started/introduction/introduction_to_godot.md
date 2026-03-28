@@ -22,7 +22,7 @@ programming skills or a developer to port the game for you.
 The Redot team can't provide an open source console export due to the
 licensing terms imposed by console manufacturers. Regardless of the
 engine you use, though, releasing games on consoles is always a lot of
-work. You can read more on that here: [doc_consoles](doc_consoles).
+work. You can read more on that here: [doc_consoles](../../tutorials/platform/consoles.md).
 
 :::
 
@@ -104,6 +104,6 @@ skills you learn with one language transfer well to others.
 :::
 
 We will provide you with more Redot-specific learning resources in
-[doc_learning_new_features](doc_learning_new_features).
+[doc_learning_new_features](learning_new_features.md).
 
 In the next part, you will get an overview of the engine's essential concepts.

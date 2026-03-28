@@ -133,5 +133,5 @@ This code gives you the following behavior:
 
 Using a ParticleProcessMaterial you can make the fish behavior as simple or complex as you like. In this
 tutorial we only set Velocity, but in your own Shaders you can also set ``COLOR``, rotation, scale
-(through ``TRANSFORM``). Please refer to the [Particles Shader Reference ](doc_particle_shader)
+(through ``TRANSFORM``). Please refer to the [Particles Shader Reference ](../../shaders/shader_reference/particle_shader.md)
 for more information on particle shaders.

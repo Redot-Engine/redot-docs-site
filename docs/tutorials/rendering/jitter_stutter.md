@@ -190,7 +190,7 @@ done with caution.
 :::tip
 
 On any Redot project, you can use the ``--disable-vsync``
-[command line argument ](doc_command_line_tutorial) to forcibly disable V-Sync.
+[command line argument ](../editor/command_line_tutorial.md) to forcibly disable V-Sync.
 Since Redot 4.2, ``--max-fps &lt;fps&gt;`` can also be used to set a FPS limit
 (``0`` is unlimited). These arguments can be used at the same time.
 

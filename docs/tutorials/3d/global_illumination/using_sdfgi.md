@@ -7,8 +7,8 @@ world size and works with procedurally generated levels.
 
 SDFGI supports dynamic lights, but *not* dynamic occluders or dynamic emissive surfaces.
 Therefore, SDFGI provides better real-time ability than
-[baked lightmaps ](doc_using_lightmap_gi), but worse real-time ability than
-[VoxelGI ](doc_using_voxel_gi).
+[baked lightmaps ](using_lightmap_gi.md), but worse real-time ability than
+[VoxelGI ](using_voxel_gi.md).
 
 From a performance standpoint, SDFGI is one of the most demanding global illumination
 techniques in Redot. Like with VoxelGI, there are still many settings available to tweak

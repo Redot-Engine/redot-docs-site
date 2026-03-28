@@ -6,7 +6,7 @@ and gives practical advice on how to migrate shaders from other sources, such as
 Shadertoy and The Book of Shaders, into Redot shaders.
 
 For detailed information on Redot's shading language, please refer to the
-[Shading Language ](doc_shading_language) reference.
+[Shading Language ](shader_reference/shading_language.md) reference.
 
 ## GLSL
 
@@ -65,7 +65,7 @@ rename ``main`` to ``fragment``.
 
 ### Macros
 
-The [Redot shader preprocessor](doc_shader_preprocessor) supports the following macros:
+The [Redot shader preprocessor](shader_reference/shader_preprocessor.md) supports the following macros:
 
 * ``#define`` / ``#undef``
 * ``#if``, ``#elif``, ``#else``, ``#endif``, ``defined()``, ``#ifdef``, ``#ifndef``
@@ -98,7 +98,7 @@ In GLSL, you can define the precision of a given type (float or int) at the top
 of the shader with the ``precision`` keyword. In Redot, you can set the
 precision of individual variables as you need by placing precision qualifiers
 ``lowp``, ``mediump``, and ``highp`` before the type when defining the variable.
-For more information, see the [Shading Language ](doc_shading_language)
+For more information, see the [Shading Language ](shader_reference/shading_language.md)
 reference.
 
 ## Shadertoy

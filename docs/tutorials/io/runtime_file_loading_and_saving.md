@@ -5,11 +5,11 @@ import TabItem from "@theme/TabItem";
 
 :::info
 
-See [doc_saving_games](doc_saving_games) for information on saving and loading game progression.
+See [doc_saving_games](saving_games.md) for information on saving and loading game progression.
 
 :::
 
-Sometimes, [exporting packs, patches, and mods ](doc_exporting_pcks) is not
+Sometimes, [exporting packs, patches, and mods ](../export/exporting_pcks.md) is not
 ideal when you want players to be able to load user-generated content in your
 project. It requires users to generate a PCK or ZIP file through the Redot
 editor, which contains resources imported by Redot.
@@ -26,7 +26,7 @@ Example use cases for runtime file loading and saving include:
 - Loading files created by another game or program, or even game data files from
   another game not made with Redot.
 
-Runtime file loading can be combined with [HTTP requests ](doc_http_request_class)
+Runtime file loading can be combined with [HTTP requests ](../networking/http_request_class.md)
 to load resources from the Internet directly.
 
 :::warning
@@ -34,7 +34,7 @@ to load resources from the Internet directly.
 Do **not** use this runtime loading approach to load resources that are part
 of the project, as it's less efficient and doesn't allow benefiting from
 Redot's resource handling functionality (such as translation remaps). See
-[doc_import_process](doc_import_process) for details.
+[doc_import_process](../assets_pipeline/import_process.md) for details.
 
 :::
 
@@ -99,7 +99,7 @@ If you need more control over reading binary files or need to read binary
 streams that are not part of a file, [class_PackedByteArray](class_PackedByteArray) provides
 several helper methods to decode/encode series of bytes to integers, floats,
 strings and more. These PackedByteArray methods have names that start with
-``decode_`` and ``encode_``. See also [doc_binary_serialization_api](doc_binary_serialization_api).
+``decode_`` and ``encode_``. See also [doc_binary_serialization_api](binary_serialization_api.md).
 
 ## Images
 
@@ -462,7 +462,7 @@ imported Redot resources rather than the original project files).
 
 Use [ProjectSettings.load_resource_pack ](class_ProjectSettings_method_load_resource_pack)
 to load PCK or ZIP files exported by Redot as
-[additional data packs ](doc_exporting_pcks). That approach is preferred
+[additional data packs ](../export/exporting_pcks.md). That approach is preferred
 for DLCs, as it makes interacting with additional data packs seamless (virtual filesystem).
 
 :::

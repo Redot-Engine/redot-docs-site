@@ -49,7 +49,7 @@ Let's look at each language's features, as well as its pros and cons.
 
 ### GDScript
 
-[GDScript](doc_gdscript) is an
+[GDScript](../../tutorials/scripting/gdscript/gdscript_basics.md) is an
 [object-oriented](https://en.wikipedia.org/wiki/Object-oriented_programming) and
 [imperative](https://en.wikipedia.org/wiki/Imperative_programming)
 programming language built for Redot. It's made by and for game developers
@@ -129,10 +129,10 @@ performance.
     Projects written in C# using Redot 4 currently cannot be exported to the web
     platform. To use C# on that platform, consider Redot 3 instead.
     Android and iOS platform support is available as of Redot 4.2, but is
-    experimental and [some limitations apply](doc_c_sharp_platforms).
+    experimental and [some limitations apply](../../tutorials/scripting/c_sharp/index.md).
 
 :::info
-To learn more about C#, head to the [C# basics](doc_c_sharp) page.
+To learn more about C#, head to the [C# basics](../../tutorials/scripting/c_sharp/c_sharp_basics.md) page.
 
 :::
 

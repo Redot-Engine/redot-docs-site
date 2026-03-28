@@ -31,7 +31,7 @@ or a string with a number (it's just a unique string anyway).
 :::note
 If you need a more powerful file format, Redot also supports
 loading translations written in the gettext ``.po`` format. See
-[doc_localization_using_gettext](doc_localization_using_gettext) for details.
+[doc_localization_using_gettext](../i18n/localization_using_gettext.md) for details.
 
 :::
 
@@ -51,7 +51,7 @@ CSV files must be formatted as follows:
 | KEY2 | string | string | string |
 | KEYN | string | string | string |
 
-The "lang" tags must represent a language, which must be one of the [valid locales ](doc_locales) supported by the engine, or they must start with an underscore (`_`),
+The "lang" tags must represent a language, which must be one of the [valid locales ](../i18n/locales.md) supported by the engine, or they must start with an underscore (`_`),
 which means the related column is served as comment and won't be imported. 
 The "KEY" tags must be unique and represent a string universally (they are usually in
 uppercase, to differentiate from other strings). These keys will be replaced at

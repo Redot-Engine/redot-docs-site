@@ -74,7 +74,7 @@ It is possible to choose other types of imported resources in the Import dock:
   displayed when using the Forward+ or Mobile renderers, not the Compatibility
   renderer.
 - **Font Data (Monospace Image Font):** Import the image as a bitmap font where
-  all characters have the same width. See [doc_gui_using_fonts](doc_gui_using_fonts).
+  all characters have the same width. See [doc_gui_using_fonts](../ui/gui_using_fonts.md).
 - **Image:** Import the image as-is. This resource type cannot be displayed
   directly onto 2D or 3D nodes, but the pixel values can be queried from a
   script using [get_pixel](class_Image_method_get_pixel).
@@ -83,12 +83,12 @@ It is possible to choose other types of imported resources in the Import dock:
 - **Texture2DArray:** Import the image as a collection of 2-dimensional textures.
   Texture2DArray is similar to a 3-dimensional texture, but without
   interpolation between layers. Built-in 2D and 3D shaders cannot display
-  texture arrays, so you must create a custom shader in [2D ](doc_canvas_item_shader)
-  or [3D ](doc_spatial_shader) to display a texture from a texture array.
+  texture arrays, so you must create a custom shader in [2D ](../shaders/shader_reference/canvas_item_shader.md)
+  or [3D ](../shaders/shader_reference/spatial_shader.md) to display a texture from a texture array.
 - **Texture3D:** Import the image as a 3-dimensional texture. This is *not* a 2D
   texture applied onto a 3D surface. Texture3D is similar to a texture array, but
   with interpolation between layers. Texture3D is typically used for
-  [class_FogMaterial](class_FogMaterial) density maps in [volumetric fog ](doc_volumetric_fog), [particle attractor ](doc_3d_particles_attractors)
+  [class_FogMaterial](class_FogMaterial) density maps in [volumetric fog ](../3d/volumetric_fog.md), [particle attractor ](../3d/particles/attractors.md)
   vector fields, [class_Environment](class_Environment) 3D LUT color correction, and custom shaders.
 - **TextureAtlas:** Import the image as an *atlas* of different textures. Can be
   used to reduce memory usage for animated 2D sprites. Only supported in 2D due
@@ -135,7 +135,7 @@ Instead, texture filter and repeat modes are changed in the CanvasItem
 properties in 2D (with a project setting acting as a default), and in a
 [per-material configuration in 3D ](doc_standard_material_3d_sampling).
 In custom shaders, filter and repeat mode is changed on the ``sampler2D``
-uniform using hints described in the [doc_shading_language](doc_shading_language)
+uniform using hints described in the [doc_shading_language](../shaders/shader_reference/shading_language.md)
 documentation.
 
 :::
@@ -470,7 +470,7 @@ should be left disabled otherwise.
 
 If checked, converts the imported image's colors to match the editor's icon and
 font color palette. This assumes the image uses the exact same colors as
-[Redot's own color palette for editor icons ](doc_editor_icons), with the
+[Redot's own color palette for editor icons ](../../Contributing/Development/editor/creating_icons.md), with the
 source file designed for a dark editor theme. This should be enabled for editor
 plugin icons and custom class icons, but should be left disabled otherwise.
 
@@ -498,7 +498,7 @@ inkscape --export-text-to-path --export-filename svg_with_text_converted_to_path
 
 ### Supporting high-resolution texture sizes in 2D without artifacts
 
-To support [multiple resolutions ](doc_multiple_resolutions) with crisp
+To support [multiple resolutions ](../rendering/multiple_resolutions.md) with crisp
 visuals at high resolutions, you will need to use high-resolution source images
 (suited for the highest resolution you wish to support without blurriness, which
 is typically 4K in modern desktop games).

@@ -8,7 +8,7 @@ This kind of recording is also called *offline rendering*.
 There are many scenarios where this is useful:
 
 - Recording game trailers for promotional use.
-- Recording cutscenes that will be [displayed as pre-recorded videos ](doc_playing_videos)
+- Recording cutscenes that will be [displayed as pre-recorded videos ](playing_videos.md)
   in the final game. This allows for using higher quality settings
   (at the cost of file size), regardless of the player's hardware.
 - Recording procedurally generated animations or motion design. User interaction
@@ -106,7 +106,7 @@ when running the project from the editor.
 
 ### Command line usage
 
-Movie Maker can also be enabled from the [command line ](doc_command_line_tutorial):
+Movie Maker can also be enabled from the [command line ](../editor/command_line_tutorial.md):
 
 ```
 Redot --path /path/to/your_project --write-movie output.avi
@@ -120,7 +120,7 @@ written to ``/path/to/your_project/output.avi``. This behavior is similar to the
 
 Since Movie Maker's output resolution is set by the viewport size, you can
 adjust the window size on startup to override it if the project uses the
-``disabled`` or ``canvas_items`` [stretch mode ](doc_multiple_resolutions):
+``disabled`` or ``canvas_items`` [stretch mode ](../rendering/multiple_resolutions.md):
 
 ```
 Redot --path /path/to/your_project --write-movie output.avi --resolution 1280x720
@@ -228,7 +228,7 @@ the **Advanced** toggle in the top-right corner of the Project Settings dialog.
 
 :::note
 
-When using the ``disabled`` or ``2d`` [stretch modes ](doc_multiple_resolutions),
+When using the ``disabled`` or ``2d`` [stretch modes ](../rendering/multiple_resolutions.md),
 the output file's resolution is set by the window size. Make sure to resize
 the window *before* the splash screen has ended. For this purpose, it's
 recommended to adjust the
@@ -267,7 +267,7 @@ Therefore, you need to make sure that the animation is set as non-looping.
 
 ## Using high-quality graphics settings
 
-The ``movie`` [feature tag ](doc_feature_tags) can be used to override
+The ``movie`` [feature tag ](../export/feature_tags.md) can be used to override
 specific project settings. This is useful to enable high-quality graphics settings
 that wouldn't be fast enough to run in real-time speeds on your hardware.
 Remember that putting every setting to its maximum value can still slow down
@@ -345,7 +345,7 @@ If you wish to render 2D at a higher resolution, or if you actually need the
 higher raw pixel output for 3D rendering, you can increase the resolution above
 what the screen allows.
 
-By default, Redot uses the ``disabled`` [stretch modes ](doc_multiple_resolutions)
+By default, Redot uses the ``disabled`` [stretch modes ](../rendering/multiple_resolutions.md)
 in projects. If using ``disabled`` or ``canvas_items`` stretch mode,
 the window size dictates the output video resolution.
 
@@ -361,7 +361,7 @@ and **Window Height Override** advanced project settings to values greater than
 ``0``.
 
 To apply a resolution override only when recording a movie, you can override
-those settings with the ``movie`` [feature tag ](doc_feature_tags).
+those settings with the ``movie`` [feature tag ](../export/feature_tags.md).
 
 ## Post-processing steps
 

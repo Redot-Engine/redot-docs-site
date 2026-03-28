@@ -60,7 +60,7 @@ Several methods are available to print messages:
   tab instead.
 
 To get more advanced formatting capabilities, consider using
-[doc_gdscript_printf](doc_gdscript_printf) along with the above printing functions.
+[doc_gdscript_printf](../gdscript/gdscript_format_string.md) along with the above printing functions.
 
 ### Printing rich text
 

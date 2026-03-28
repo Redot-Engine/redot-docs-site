@@ -4,7 +4,7 @@
 
 ## Introduction
 
-As you might have already read in [doc_audio_buses](doc_audio_buses), sound is sent to
+As you might have already read in [doc_audio_buses](audio_buses.md), sound is sent to
 each bus via an AudioStreamPlayer node. There are different kinds
 of AudioStreamPlayers. Each one loads an AudioStream and plays it back.
 
@@ -13,7 +13,7 @@ of AudioStreamPlayers. Each one loads an AudioStream and plays it back.
 An audio stream is an abstract object that emits sound. The sound can come from
 many places, but is most commonly loaded from the filesystem. Audio files can be
 loaded as AudioStreams and placed inside an AudioStreamPlayer. You can find
-information on supported formats and differences in [doc_importing_audio_samples](doc_importing_audio_samples).
+information on supported formats and differences in [doc_importing_audio_samples](../assets_pipeline/importing_audio_samples.md).
 
 There are other types of AudioStreams, such as [AudioStreamRandomizer](class_AudioStreamRandomizer).
 This one picks a different audio stream from a list of streams each time it's played

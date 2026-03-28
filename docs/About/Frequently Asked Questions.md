@@ -59,7 +59,7 @@ systems with Linux, like the Raspberry Pi.
 The Redot team can't provide an open source console export due to the licensing
 terms imposed by console manufacturers. Regardless of the engine you use,
 though, releasing games on consoles is always a lot of work. You can read more
-about [doc_consoles](doc_consoles).
+about [doc_consoles](../tutorials/platform/consoles.md).
 
 For more on this, see the sections on [exporting ](toc-learn-workflow-export)
 and [compiling Redot yourself ](toc-devel-compiling).
@@ -103,7 +103,7 @@ up to maximize Redot's potential in the least amount of code, affording both nov
 and expert developers alike to capitalize on Redot's strengths as fast as possible.
 If you've ever written anything in a language like Python before, then you'll feel
 right at home. For examples and a complete overview of the power GDScript offers
-you, check out the [GDScript scripting guide ](doc_gdscript).
+you, check out the [GDScript scripting guide ](../tutorials/scripting/gdscript/gdscript_basics.md).
 
 There are several reasons to use GDScript, but the most salient reason is the overall
 **reduction of complexity**.
@@ -126,7 +126,7 @@ once you see how powerful it is and how rapid your development becomes, we think
 will grow on you.
 
 More information about getting comfortable with GDScript or dynamically typed
-languages can be found in the [doc_gdscript_more_efficiently](doc_gdscript_more_efficiently) tutorial.
+languages can be found in the [doc_gdscript_more_efficiently](../tutorials/scripting/gdscript/gdscript_advanced.md) tutorial.
 
 ## What were the motivations behind creating GDScript?
 
@@ -176,12 +176,12 @@ to the cost of *marshalling*. C#'s performance can also be brought down by garba
 collection which occurs at random and unpredictable moments. This can result in
 stuttering issues in complex projects, and is not exclusive to Redot.
 
-C++, using [GDExtension ](doc_what_is_gdextension), will almost always be
+C++, using [GDExtension ](../tutorials/scripting/gdextension/what_is_gdextension.md), will almost always be
 faster than either C# or GDScript. However, C++ is less easy to use than C# or
 GDScript, and is slower to develop with.
 
 You can also use multiple languages within a single project, with
-[cross-language scripting ](doc_cross_language_scripting), or by using
+[cross-language scripting ](../tutorials/scripting/cross_language_scripting.md), or by using
 GDExtension and scripting languages together. Be aware that doing so comes with
 its own complications.
 
@@ -189,7 +189,7 @@ its own complications.
 
 You can find detailed information on supported formats, how to export them from
 your 3D modeling software, and how to import them for Redot in the
-[doc_importing_3d_scenes](doc_importing_3d_scenes) documentation.
+[doc_importing_3d_scenes](../tutorials/assets_pipeline/importing_3d_scenes/index.md) documentation.
 
 ## Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Redot?
 
@@ -213,7 +213,7 @@ with ambitious community contributors like you.
 ## How can I extend Redot?
 
 For extending Redot, like creating Redot Editor plugins or adding support
-for additional languages, take a look at [EditorPlugins ](doc_making_plugins)
+for additional languages, take a look at [EditorPlugins ](../tutorials/plugins/editor/making_plugins.md)
 and tool scripts.
 
 Also, see the official blog post on GDExtension, a way to develop native extensions for Redot:
@@ -261,7 +261,7 @@ to the Dock if desired. Spotlight will be able to find Redot as long as it's in
   This is typically ``/usr/local/bin/Redot`` or ``/usr/bin/Redot``.
   Doing this requires administrator privileges,
   but this also allows you to
-  [run the Redot editor from a terminal ](doc_command_line_tutorial) by entering ``Redot``.
+  [run the Redot editor from a terminal ](../tutorials/editor/command_line_tutorial.md) by entering ``Redot``.
 
   - If you cannot move the Redot editor binary to a protected location, you can
     keep the binary somewhere in your home directory, and modify the ``Path=``
@@ -282,7 +282,7 @@ administrator privileges.
 However, configuration files will be written to the user-wide configuration or
 data directory. This is usually a good approach, but this means configuration files
 will not carry across machines if you copy the folder containing the Redot executable.
-See [doc_data_paths](doc_data_paths) for more information.
+See [doc_data_paths](../tutorials/io/data_paths.md) for more information.
 
 If *true* portable operation is desired (e.g. for use on a USB stick),
 follow the steps in [doc_data_paths_self_contained_mode](doc_data_paths_self_contained_mode).
@@ -339,7 +339,7 @@ functionality in Redot. This is why we are aiming to move some core
 functionality to officially supported add-ons in future versions of Redot.
 In terms of binary size, this also has the advantage of making you pay only for
 what you actually use in your project. (In the meantime, you can
-[compile custom export templates with unused features disabled ](doc_optimizing_for_size)
+[compile custom export templates with unused features disabled ](../Contributing/Development/compiling/optimizing_for_size.md)
 to optimize the distribution size of your project.)
 
 ## How should assets be created to handle multiple resolutions and aspect ratios?
@@ -366,15 +366,15 @@ horizontal FOV.
    and the longer the time it will take for loading.
 
 2. Use the stretch options in Redot; canvas items stretching while keeping
-   aspect ratios works best. Check the [doc_multiple_resolutions](doc_multiple_resolutions) tutorial
+   aspect ratios works best. Check the [doc_multiple_resolutions](../tutorials/rendering/multiple_resolutions.md) tutorial
    on how to achieve this.
 
 3. Determine a minimum resolution and then decide if you want your game
    to stretch vertically or horizontally for different aspect ratios, or
    if there is one aspect ratio and you want black bars to appear
-   instead. This is also explained in [doc_multiple_resolutions](doc_multiple_resolutions).
+   instead. This is also explained in [doc_multiple_resolutions](../tutorials/rendering/multiple_resolutions.md).
 
-4. For user interfaces, use the [anchoring ](doc_size_and_anchors)
+4. For user interfaces, use the [anchoring ](../tutorials/ui/size_and_anchors.md)
    to determine where controls should stay and move. If UIs are more
    complex, consider learning about Containers.
 
@@ -399,7 +399,7 @@ should upgrade depends on your project's circumstances. See
 
 ## Should I use the Forward+, Mobile, or Compatibility renderer?
 
-You can find a detailed comparison of the renderers in [doc_renderers](doc_renderers).
+You can find a detailed comparison of the renderers in [doc_renderers](../tutorials/rendering/renderers.md).
 
 ## I would like to contribute! How can I get started?
 
@@ -507,7 +507,7 @@ reasons why we have chosen SCons over other alternatives. For example:
    configurations, additions, removals etc.
 -  Redot's build process is not simple. Several files are generated by
    code (binders), others are parsed (shaders), and others need to offer
-   customization ([modules ](doc_custom_modules_in_cpp)). This requires
+   customization ([modules ](../Contributing/Development/core_and_modules/custom_modules_in_cpp.md)). This requires
    complex logic which is easier to write in an actual programming language (like Python)
    rather than using a mostly macro-based language only meant for building.
 -  Redot's build process makes heavy use of cross-compiling tools. Each

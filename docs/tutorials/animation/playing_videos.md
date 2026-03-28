@@ -76,7 +76,7 @@ to fit the whole screen while avoiding distortion.
 
 :::info
 
-See [doc_multiple_resolutions](doc_multiple_resolutions) for more tips on supporting multiple
+See [doc_multiple_resolutions](../rendering/multiple_resolutions.md) for more tips on supporting multiple
 aspect ratios in your project.
 
 :::
@@ -108,7 +108,7 @@ This can be done with the following steps:
 8. If the billboard is supposed to emit its own light,
    set **Shading Mode** to **Unshaded** to improve rendering performance.
 
-See [doc_viewports](doc_viewports) and the
+See [doc_viewports](../rendering/viewports.md) and the
 [GUI in 3D demo ](https://github.com/redot-engine/redot-demo-projects/tree/master/viewport/gui_in_3d)_
 for more information on setting this up.
 

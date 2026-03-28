@@ -4,7 +4,7 @@ import TabItem from "@theme/TabItem";
 # Visual Studio Code
 
 [Visual Studio Code](https://code.visualstudio.com) is a free cross-platform code editor
-by [Microsoft](https://microsoft.com) (not to be confused with [doc_configuring_an_ide_vs](doc_configuring_an_ide_vs)).
+by [Microsoft](https://microsoft.com) (not to be confused with [doc_configuring_an_ide_vs](visual_studio.md)).
 
 ## Importing the project
 
@@ -60,7 +60,7 @@ by [Microsoft](https://microsoft.com) (not to be confused with [doc_configuring_
 </figure>
 
 Arguments can be different based on your own setup and needs. See
-[doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem) for a full list of arguments.
+[doc_introduction_to_the_buildsystem](../compiling/introduction_to_the_buildsystem.md) for a full list of arguments.
 
 ## Debugging the project
 
@@ -196,7 +196,7 @@ is installed.
 
 If you encounter issues with lldb, you may consider using gdb (see the LinuxBSD_gdb configuration).
 
-Do note that lldb may work better with LLVM-based builds. See [doc_compiling_for_linuxbsd](doc_compiling_for_linuxbsd) for further information.
+Do note that lldb may work better with LLVM-based builds. See [doc_compiling_for_linuxbsd](../compiling/compiling_for_linuxbsd.md) for further information.
 
 :::
 
@@ -222,7 +222,7 @@ To fix include errors you may be having, you need to configure some settings in 
 
 - Add defines for the editor ``TOOLS_ENABLED``, debug builds ``DEBUG_ENABLED``, and tests ``TESTS_ENABLED``.
 
-- Make sure the compiler path is configured correctly to the compiler you are using. See [doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem) for further information on your platform.
+- Make sure the compiler path is configured correctly to the compiler you are using. See [doc_introduction_to_the_buildsystem](../compiling/introduction_to_the_buildsystem.md) for further information on your platform.
 
 - The ``c_cpp_properties.json`` file should look similar to this for Windows:
 

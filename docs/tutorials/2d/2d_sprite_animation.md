@@ -45,7 +45,7 @@ The root node could also be :ref:`Area2D <class_Area2D>` or
 [RigidBody2D ](class_RigidBody2D). The animation will still be
 made in the same way. Once the animation is completed, you can
 assign a shape to the CollisionShape2D. See
-[Physics Introduction ](doc_physics_introduction) for more
+[Physics Introduction ](../physics/physics_introduction.md) for more
 information.
 
 :::
@@ -196,7 +196,7 @@ The root node could also be :ref:`Area2D <class_Area2D>` or
 [RigidBody2D ](class_RigidBody2D). The animation will still be
 made in the same way. Once the animation is completed, you can
 assign a shape to the CollisionShape2D. See
-[Physics Introduction ](doc_physics_introduction) for more
+[Physics Introduction ](../physics/physics_introduction.md) for more
 information.
 
 :::

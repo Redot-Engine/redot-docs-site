@@ -37,7 +37,7 @@ An obstacle does not add geometry in the baking process, it only removes geometr
 It does so by nullifying all the (voxel) cells with rasterized source geometry that are within the obstacle shape.
 As such its effect and shape detail is limited to the cell resolution used by the baking process.
 
-For more details on the navigation mesh baking see [doc_navigation_using_navigationmeshes](doc_navigation_using_navigationmeshes).
+For more details on the navigation mesh baking see [doc_navigation_using_navigationmeshes](navigation_using_navigationmeshes.md).
 
 ![Image](img/nav_mesh_obstacles_properties.webp)
 

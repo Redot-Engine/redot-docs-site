@@ -4,7 +4,7 @@
 :::info
 
 This page assumes you have created or downloaded a TileSet already. If not,
-please read [doc_using_tilesets](doc_using_tilesets) first as you will need a TileSet
+please read [doc_using_tilesets](using_tilesets.md) first as you will need a TileSet
 to create a TileMap.
 
 :::
@@ -22,7 +22,7 @@ the TileMap.
 
 ## Specifying the TileSet in the TileMapLayer
 
-If you've followed the previous page on [doc_using_tilesets](doc_using_tilesets), you should
+If you've followed the previous page on [doc_using_tilesets](using_tilesets.md), you should
 have a TileSet resource that is built into the TileMapLayer node. This is good for
 prototyping, but in a real world project, you will generally have multiple
 levels reusing the same tileset.
@@ -77,7 +77,7 @@ Each TileMapLayer node has several properties you can adjust:
 
 TileMap built-in navigation has many practical limitations that result in inferior pathfinding performance and pathfollowing quality.
 
-After designing the TileMap consider baking it to a more optimized navigation mesh (and disabling the TileMap NavigationLayer) using a [NavigationRegion2D ](class_NavigationRegion2D) or the [NavigationServer2D ](class_NavigationServer2D). See [doc_navigation_using_navigationmeshes](doc_navigation_using_navigationmeshes) for additional information.
+After designing the TileMap consider baking it to a more optimized navigation mesh (and disabling the TileMap NavigationLayer) using a [NavigationRegion2D ](class_NavigationRegion2D) or the [NavigationServer2D ](class_NavigationServer2D). See [doc_navigation_using_navigationmeshes](../navigation/navigation_using_navigationmeshes.md) for additional information.
 
 :::
 

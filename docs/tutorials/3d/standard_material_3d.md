@@ -373,8 +373,8 @@ the right combination of *Metallic* and *Roughness*.
 ## Emission
 
 *Emission* specifies how much light is emitted by the material (keep in mind this
-does not include light surrounding geometry unless [VoxelGI](doc_using_voxel_gi)
-or [SDFGI](doc_using_sdfgi) are used). This value is added to the resulting
+does not include light surrounding geometry unless [VoxelGI](global_illumination/using_voxel_gi.md)
+or [SDFGI](global_illumination/using_sdfgi.md) are used). This value is added to the resulting
 final image and is not affected by other lighting in the scene.
 
 ![Image](img/spatial_material15.png)

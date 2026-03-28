@@ -113,8 +113,8 @@ Property ``tree_root`` changes type from ``AnimationNode`` to ``AnimationRootNod
 Change                                                                                                                    GDScript Compatible  C# Binary Compatible  C# Source Compatible  Introduced
 ========================================================================================================================  ===================  ====================  ====================  ===========
 **PopupMenu**
-Method ``add_icon_shortcut`` adds a new ``allow_echo`` optional parameter                                                 |✔️|                 |✔️ with compat|      |✔️ with compat|      [GH-36493](GH-36493)
-Method ``add_shortcut`` adds a new ``allow_echo`` optional parameter                                                      |✔️|                 |✔️ with compat|      |✔️ with compat|      [GH-36493](GH-36493)
+Method ``add_icon_shortcut`` adds a new ``allow_echo`` optional parameter                                                 |✔️|                 |✔️ with compat|      |✔️ with compat|      [GH-36493](upgrading_to_godot_4.2.md)
+Method ``add_shortcut`` adds a new ``allow_echo`` optional parameter                                                      |✔️|                 |✔️ with compat|      |✔️ with compat|      [GH-36493](upgrading_to_godot_4.2.md)
 Method ``clear`` adds a new ``free_submenus`` optional parameter                                                          |✔️|                 |✔️ with compat|      |✔️ with compat|      [GH-79965](GH-79965)
 **RichTextLabel**
 Method ``add_image`` adds new ``key``, ``pad``, ``tooltip``, and ``size_in_percent`` optional parameters                   |✔️|                 |✔️ with compat|      |✔️|                  [GH-80410](GH-80410)

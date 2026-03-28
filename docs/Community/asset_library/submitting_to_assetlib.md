@@ -15,7 +15,7 @@ This tutorial aims to serve as a guide on how you can submit your own assets
 to the [Redot Asset Library](https://godotengine.org/asset-library/asset)
 and share them with the Redot community.
 
-As mentioned in the [doc_using_assetlib](doc_using_assetlib) document, in order to be able to
+As mentioned in the [doc_using_assetlib](using_assetlib.md) document, in order to be able to
 submit assets to the AssetLib, you need to have a registered account, and be
 logged in.
 
@@ -73,7 +73,7 @@ library a better place for all users.
 * Make your code conform to the official **style guides**. Having a
   consistent style helps other people read your code, and it also helps
   if other people wish to contribute to your asset. See: the
-  [doc_gdscript_styleguide](doc_gdscript_styleguide) or the [doc_c_sharp_styleguide](doc_c_sharp_styleguide).
+  [doc_gdscript_styleguide](../../tutorials/scripting/gdscript/gdscript_styleguide.md) or the [doc_c_sharp_styleguide](../../tutorials/scripting/c_sharp/c_sharp_style_guide.md).
 
 * If you have screenshots in your repo, place them in their own subfolder
   and add an empty **.gdignore** file in the same folder (note: **gd**, not **git**).

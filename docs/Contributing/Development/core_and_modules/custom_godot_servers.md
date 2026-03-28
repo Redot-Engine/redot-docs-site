@@ -10,7 +10,7 @@ engine and other modules. In addition, the server claims ownership for
 its RID allocations.
 
 This guide assumes the reader knows how to create C++ modules and Redot
-data types. If not, refer to [doc_custom_modules_in_cpp](doc_custom_modules_in_cpp).
+data types. If not, refer to [doc_custom_modules_in_cpp](custom_modules_in_cpp.md).
 
 ### References
 

@@ -40,7 +40,7 @@ textures, they can work in Redot. This includes the [Substance suite ](https://w
 
 :::info
 
-For more information on Redot's materials, see [doc_standard_material_3d](doc_standard_material_3d).
+For more information on Redot's materials, see [doc_standard_material_3d](../../3d/standard_material_3d.md).
 
 :::
 

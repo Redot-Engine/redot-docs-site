@@ -21,14 +21,14 @@ Instead, Redot 4.2 introduces a new **Version 2 (v2)** architecture for Android 
 
 :::note
 
-Redot Android plugin leverages the [Gradle build system ](doc_android_gradle_build).
+Redot Android plugin leverages the [Gradle build system ](../../export/android_gradle_build.md).
 
 :::
 
 Building on the previous v1 architecture, Android plugins continue to be derived from the
 [Android archive library ](https://developer.android.com/studio/projects/android-library#aar-contents).
 
-At its core, a Redot Android plugin v2 is an Android library with a dependency on the [Redot Android library ](doc_android_library),
+At its core, a Redot Android plugin v2 is an Android library with a dependency on the [Redot Android library ](android_library.md),
 and a custom Android library manifest.
 
 This architecture allows Android plugins to extend the functionality of the engine with:
@@ -40,7 +40,7 @@ This architecture allows Android plugins to extend the functionality of the engi
 - GDExtension libraries
 
 Each plugin has an init class extending from the [GodotPlugin ](https://github.com/redot-engine/redot-engine/blob/0a7f75ec7b465604b6496c8f5f1d638aed250d6d/platform/android/java/lib/src/org/Redotengine/Redot/plugin/GodotPlugin.java#L80) class
-which is provided by the [Redot Android library ](doc_android_library).
+which is provided by the [Redot Android library ](android_library.md).
 
 The ``GodotPlugin`` class provides APIs to access the running Redot instance and hook into its lifecycle. It is loaded at runtime by the Redot engine.
 
@@ -313,7 +313,7 @@ if Engine.has_singleton("MyPlugin"):
 
 ### Using a v2 Android plugin as an Android library
 
-Since they are also Android libraries, Redot v2 Android plugins can be stripped from their ``EditorExportPlugin`` packaging and provided as raw ``AAR`` binaries for use as libraries alongside the [Redot Android library ](doc_android_library) by Android apps.
+Since they are also Android libraries, Redot v2 Android plugins can be stripped from their ``EditorExportPlugin`` packaging and provided as raw ``AAR`` binaries for use as libraries alongside the [Redot Android library ](android_library.md) by Android apps.
 
 If targeting this use-case, make sure to include additional instructions for how the ``AAR`` binaries should be included (e.g: custom additions to the Android app's manifest).
 

@@ -41,7 +41,7 @@ To create a new project:
 :::note
 You can optionally choose a version control system. Currently, only
 [git ](https://git-scm.com)_ is supported and it needs the Redot Git Plugin to be installed, 
-either manually or using the [Asset Library ](doc_using_assetlib). To learn more about the Redot Git Plugin, see its [wiki ](https://github.com/redot-engine/redot-git-plugin/wiki)_.
+either manually or using the [Asset Library ](../../Community/asset_library/using_assetlib.md). To learn more about the Redot Git Plugin, see its [wiki ](https://github.com/redot-engine/redot-git-plugin/wiki)_.
 
 :::
 

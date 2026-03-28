@@ -5,7 +5,7 @@
 
 This page describes how to export a Redot project to iOS.
 If you're looking to compile export template binaries from source instead,
-read [doc_compiling_for_ios](doc_compiling_for_ios).
+read [doc_compiling_for_ios](../../Contributing/Development/compiling/compiling_for_ios.md).
 
 :::
 
@@ -16,7 +16,7 @@ do everything else you can normally do with Xcode.
 .. attention::
 
     Projects written in C# can be exported to iOS as of Redot 4.2, but support
-    is experimental and [some limitations apply ](doc_c_sharp_platforms).
+    is experimental and [some limitations apply ](../scripting/c_sharp/index.md).
 
 ## Requirements
 
@@ -115,7 +115,7 @@ in Xcode when you want to run it on a device.
 ## Plugins for iOS
 
 Special iOS plugins can be used in Redot. Check out the
-[doc_plugins_for_ios](doc_plugins_for_ios) page.
+[doc_plugins_for_ios](../platform/ios/plugins_for_ios.md) page.
 
 ## Environment variables
 

@@ -9,7 +9,7 @@
 
 Redot provides several types of trails you can add to a particle system. Before you can
 work with trails, you need to set up a couple of parameters first. Create a new particle
-system and assign a process material [as described before ](doc_creating_3d_particle_system).
+system and assign a process material [as described before ](creating_a_3d_particle_system.md).
 In the ``Trails`` group of the particle system, check the box next to ``Enabled`` and
 increase the emission duration by setting ``Lifetime`` to something like ``0.8``. On
 the process material, set ``Direction`` to ``(X=0,Y=1.0,Z=0)`` and ``Initial Velocity`` to
@@ -29,7 +29,7 @@ section and select ``New RibbonTrailMesh`` from the options for ``Pass 1``. A
 [RibbonTrailMesh ](class_RibbonTrailMesh) is a simple quad that is divided into
 sections and then stretched and repeated along those sections.
 
-Assign a new [Standard Material ](doc_standard_material_3d) to the ``Material``
+Assign a new [Standard Material ](../standard_material_3d.md) to the ``Material``
 property and enable ``Use Particle Trails`` in the ``Transform`` property group. The
 particles should now be emitting in trails.
 
@@ -84,7 +84,7 @@ is that tube trails emit cylindrical meshes instead of quads.
 To create a tube trail, navigate to the ``Draw Passes`` section and select ``New TubeTrailMesh``
 from the options for ``Pass 1``. A [TubeTrailMesh ](class_TubeTrailMesh) is a cylinder
 that is divided into sections and then stretched and repeated along those sections. Assign a
-new [Standard Material ](doc_standard_material_3d) to the ``Material`` property and enable
+new [Standard Material ](../standard_material_3d.md) to the ``Material`` property and enable
 ``Use Particle Trails`` in the ``Transform`` property group. The particles should now be emitting
 in long, cylindrical trails.
 

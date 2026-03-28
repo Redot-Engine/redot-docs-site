@@ -34,7 +34,7 @@ the built-in control nodes. This is what gives the controls their distinct look
 out of the box. A theme only describes the configuration, however, and it is still
 the job of each individual control to use that configuration in the way it requires
 to display itself. This is important to remember when implementing
-[your own custom controls ](doc_custom_gui_controls).
+[your own custom controls ](custom_gui_controls.md).
 
 :::note
 
@@ -172,7 +172,7 @@ two places, but it is recommended to keep all variations to the project theme.
 :::
 
 You can learn more about creating and using theme type variations in a
-[dedicated article ](doc_gui_theme_type_variations).
+[dedicated article ](gui_theme_type_variations.md).
 
 ## Customizing a control
 

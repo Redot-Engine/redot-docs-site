@@ -15,7 +15,7 @@ XML files (one per class) to document the exposed constructors, properties, meth
 
 :::note
 
-We are assuming you are using the project files explained in the [GDExtension C++ Example ](doc_gdextension_cpp_example)
+We are assuming you are using the project files explained in the [GDExtension C++ Example ](gdextension_cpp_example.md)
 with the following structure:
 
 :::
@@ -82,7 +82,7 @@ either by `Ctrl + Click` in the script editor or the Editor help dialog you will
 
 ## Documentation styling
 
-To style specific parts of text you can use BBCode tags similarly to how they can be used in [RichTextLabels ](doc_bbcode_in_richtextlabel).
+To style specific parts of text you can use BBCode tags similarly to how they can be used in [RichTextLabels ](../../ui/bbcode_in_richtextlabel.md).
 You can set text as bold, italic, underlined, colored, codeblocks etc. by embedding them in tags like this:
 
 ```none

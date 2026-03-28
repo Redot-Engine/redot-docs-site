@@ -28,14 +28,14 @@ interpolation = A + (B - A) * t
 
 The name of this type of interpolation, which transforms a value into another at *constant speed* is *"linear"*. So, when you hear about *Linear Interpolation*, you know they are referring to this formula.
 
-There are other types of interpolations, which will not be covered here. A recommended read afterwards is the [Bezier ](doc_beziers_and_curves) page.
+There are other types of interpolations, which will not be covered here. A recommended read afterwards is the [Bezier ](beziers_and_curves.md) page.
 
 ## Vector interpolation
 
 Vector types ([Vector2 ](class_Vector2) and [Vector3 ](class_Vector3)) can also be interpolated, they come with handy functions to do it
 [Vector2.lerp() ](class_Vector2_method_lerp) and [Vector3.lerp() ](class_Vector3_method_lerp).
 
-For cubic interpolation, there are also [Vector2.cubic_interpolate() ](class_Vector2_method_cubic_interpolate) and [Vector3.cubic_interpolate() ](class_Vector3_method_cubic_interpolate), which do a [Bezier ](doc_beziers_and_curves) style interpolation.
+For cubic interpolation, there are also [Vector2.cubic_interpolate() ](class_Vector2_method_cubic_interpolate) and [Vector3.cubic_interpolate() ](class_Vector3_method_cubic_interpolate), which do a [Bezier ](beziers_and_curves.md) style interpolation.
 
 Here is example pseudo-code for going from point A to B using interpolation:
 

@@ -40,10 +40,10 @@ Redot 3.x for the following reasons:
   implementation of some core optimizations.
 - Since Redot 4 includes more features than Redot 3, Redot 4's binary size for
   exported projects is larger. While this can be mitigated by
-  [optimizing a build for size ](doc_optimizing_for_size), a 4.0 build with
+  [optimizing a build for size ](../../Contributing/Development/compiling/optimizing_for_size.md), a 4.0 build with
   a given set of enabled modules will remain larger compared to a 3.x build with
   the same modules. This can be an issue for
-  [exporting to the Web ](doc_exporting_for_web), as binary size directly
+  [exporting to the Web ](../export/exporting_for_web.md), as binary size directly
   influences how fast the engine can initialize (regardless of download speed).
 - Redot 4 does not and will not have support for GLES2 rendering.
   (There is still support for GLES3 rendering using the new Compatibility renderer,
@@ -131,7 +131,7 @@ you to override the converter's size limits.
 
 ### Using the command line
 
-To use the project upgrade tool from the [command line ](doc_command_line_tutorial),
+To use the project upgrade tool from the [command line ](../editor/command_line_tutorial.md),
 it's recommended to validate the project conversion by running the Redot editor binary with the following arguments:
 
 ```
@@ -437,7 +437,7 @@ Some notable changes you will need to perform in shaders are:
   than the texture files themselves.
 - ``hint_albedo`` is now ``source_color``.
 - ``hint_color`` is now ``source_color``.
-- [Built in matrix variables were renamed. ](doc_spatial_shader)
+- [Built in matrix variables were renamed. ](../shaders/shader_reference/spatial_shader.md)
 - Particles shaders no longer use the ``vertex()`` processor function. Instead
   they use ``start()`` and ``process()``.
 - In the Forward+ and Mobile renderers, normalized device coordinates now have a Z-range of ``[0.0,1.0]``
@@ -451,7 +451,7 @@ Some notable changes you will need to perform in shaders are:
   may break advanced shaders. See 
   [Introducing Reverse Z (AKA I'm sorry for breaking your shader) ](https://godotengine.org/article/introducing-reverse-z/)_.
 
-See [doc_shading_language](doc_shading_language) for more information.
+See [doc_shading_language](../shaders/shader_reference/shading_language.md) for more information.
 
 This list is not exhaustive. If you made all the changes mentioned here and your 
 shader still doesn't work, try asking for help in one of the [community channels ](https://redotengine.org/community/)_.
@@ -482,7 +482,7 @@ The most notable examples of this are:
   Redot 4, but it's recommended to switch to the [class_Signal](class_Signal)-based syntax
   described on the linked page. This way, strings are no longer involved,
   which avoids issues with signal name errors that can only be discovered at runtime.
-- Built-in scripts that are [tool scripts ](doc_running_code_in_the_editor)
+- Built-in scripts that are [tool scripts ](../plugins/running_code_in_the_editor.md)
   do not get the ``tool`` keyword converted to the ``@tool`` annotation.
 - The Tween node was removed in favor of Tweeners, which are also available in
   Redot 3.5 and later. See the
@@ -578,7 +578,7 @@ If loading an old project, the node will be replaced with its
 
 **Threading changes**
 
-[Threading ](doc_using_multiple_threads) APIs have changed in 4.0. For
+[Threading ](../performance/using_multiple_threads.md) APIs have changed in 4.0. For
 example, the following code snippet in Redot 3.x must be modified to work in 4.0:
 
 ```

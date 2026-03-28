@@ -15,7 +15,7 @@ Localization is usually done by specific studios hired for the job. Despite the
 huge amount of software and file formats available for this, the most common way
 to do localization to this day is still with spreadsheets. The process of
 creating the spreadsheets and importing them is already covered in the
-[doc_importing_translations](doc_importing_translations) tutorial. If you haven't read the Importing
+[doc_importing_translations](../assets_pipeline/importing_translations.md) tutorial. If you haven't read the Importing
 translations page before, we recommend you give it a read before reading this
 page.
 
@@ -120,7 +120,7 @@ define the DynamicFont as the Default Font in the theme.
 ### Placeholders
 
 To feature placeholders in your translated strings, use
-[doc_gdscript_printf](doc_gdscript_printf) or the equivalent feature in C#. This lets
+[doc_gdscript_printf](../scripting/gdscript/gdscript_format_string.md) or the equivalent feature in C#. This lets
 translators move the location of the placeholder in the string freely, which
 allows translations to sound more natural. Named placeholders with the
 ``String.format()`` function should be used whenever possible, as they also
@@ -251,14 +251,14 @@ GetNode<Label>("Label").Text = string.Format(TrN("{0} job", "{0} jobs", numJobs,
 :::note
 
 Providing pluralized translations is only supported with
-[doc_localization_using_gettext](doc_localization_using_gettext), not CSV.
+[doc_localization_using_gettext](localization_using_gettext.md), not CSV.
 
 :::
 
 ## Making controls resizable
 
 The same text in different languages can vary greatly in length. For
-this, make sure to read the tutorial on [doc_size_and_anchors](doc_size_and_anchors), as
+this, make sure to read the tutorial on [doc_size_and_anchors](../ui/size_and_anchors.md), as
 dynamically adjusting control sizes may help.
 [Container ](class_Container) can be useful, as well as the text wrapping
 options available in [Label ](class_Label).
@@ -383,7 +383,7 @@ Keep in mind that since this is a project setting, it will show up in version co
 it is set to a non-empty value. Therefore, it should be set back to an empty value before
 committing changes to version control.
 
-Translations can also be tested when [running Redot from the command line ](doc_command_line_tutorial).
+Translations can also be tested when [running Redot from the command line ](../editor/command_line_tutorial.md).
 For example, to test a game in French, the following argument can be
 supplied:
 
@@ -406,4 +406,4 @@ translation. After doing that you can now type in the localized name.
 ![Image](img/localized_name.webp)
 
 If you are unsure about the language code to use, refer to the
-[list of locale codes ](doc_locales).
+[list of locale codes ](locales.md).

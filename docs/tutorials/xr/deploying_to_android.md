@@ -11,7 +11,7 @@ Before following the OpenXR-specific instructions here, you'll need to first set
 - Creating a debug.keystore
 - Configuring the location of the Android SDK and debug.keystore in Redot
 
-See [doc_exporting_for_android](doc_exporting_for_android) for the full details, and return here when you've finished these steps.
+See [doc_exporting_for_android](../export/exporting_for_android.md) for the full details, and return here when you've finished these steps.
 
 ## Gradle Android build
 
@@ -30,7 +30,7 @@ Select **Install Android Build Template...** from the **Project** menu:
 
 This will create a folder called **android** inside of your project that contains all the runtime files needed on Android. You can now customize this installation. Redot won't show this in the editor but you can find it with a file browser.
 
-You can read more about gradle builds here: [doc_android_gradle_build](doc_android_gradle_build).
+You can read more about gradle builds here: [doc_android_gradle_build](../export/android_gradle_build.md).
 
 ## Installing the vendors plugin
 
@@ -110,7 +110,7 @@ It is highly advisable to use the compatibility renderer (OpenGL) for the time b
 :::
 
 ## Running on your device from the Redot editor
-If you've setup your export settings as described above, and your headset is connected to your computer and correctly recognized, you can launch it directly from the Redot editor using [doc_one-click_deploy](doc_one-click_deploy):
+If you've setup your export settings as described above, and your headset is connected to your computer and correctly recognized, you can launch it directly from the Redot editor using [doc_one-click_deploy](../export/one-click_deploy.md):
 
 ![Image](img/android_one_click_deploy.webp)
 

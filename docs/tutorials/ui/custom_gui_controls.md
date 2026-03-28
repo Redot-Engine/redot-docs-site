@@ -16,7 +16,7 @@ create these controls easily from script.
 
 ## Drawing
 
-For drawing, it is recommended to check the [doc_custom_drawing_in_2d](doc_custom_drawing_in_2d) tutorial.
+For drawing, it is recommended to check the [doc_custom_drawing_in_2d](../2d/custom_drawing_in_2d.md) tutorial.
 The same applies. Some functions are worth mentioning due to their
 usefulness when drawing, so they will be detailed next:
 
@@ -197,7 +197,7 @@ public override void _GuiInput(InputEvent @event)
 
 </Tabs>
 
-For more information about events themselves, check the [doc_inputevent](doc_inputevent)
+For more information about events themselves, check the [doc_inputevent](../inputs/inputevent.md)
 tutorial.
 
 ### Notifications

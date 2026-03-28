@@ -6,7 +6,7 @@ import TabItem from "@theme/TabItem";
 # Optimization using Servers
 
 Engines like Redot provide increased ease of use thanks to their high-level constructs and features.
-Most of them are accessed and used via the [Scene System](doc_scene_tree). Using nodes and
+Most of them are accessed and used via the [Scene System](../scripting/scene_tree.md). Using nodes and
 resources simplifies project organization and asset management in complex games.
 
 There are, of course, always drawbacks:

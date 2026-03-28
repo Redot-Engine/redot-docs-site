@@ -4,7 +4,7 @@
 :::info
 
 Redot also supports antialiasing in 3D rendering. This is covered on the
-[doc_3d_antialiasing](doc_3d_antialiasing) page.
+[doc_3d_antialiasing](../3d/3d_antialiasing.md) page.
 
 :::
 
@@ -13,7 +13,7 @@ Redot also supports antialiasing in 3D rendering. This is covered on the
 Due to their limited resolution, scenes rendered in 2D can exhibit aliasing
 artifacts. These artifacts usually manifest in the form of a "staircase" effect on
 geometry edges, and are most noticeable when using nodes such as [class_Line2D](class_Line2D),
-[class_Polygon2D](class_Polygon2D) or [class_TextureProgressBar](class_TextureProgressBar). [doc_custom_drawing_in_2d](doc_custom_drawing_in_2d)
+[class_Polygon2D](class_Polygon2D) or [class_TextureProgressBar](class_TextureProgressBar). [doc_custom_drawing_in_2d](custom_drawing_in_2d.md)
 can also have aliasing artifacts for methods that don't support antialiasing.
 
 In the example below, you can notice how
@@ -30,7 +30,7 @@ To combat this, Redot supports several methods of enabling antialiasing on 2D re
 This is the recommended method, as it has a lower performance impact in most cases.
 
 Line2D has an **Antialiased** property which you can enable in the inspector.
-Also, several methods for [doc_custom_drawing_in_2d](doc_custom_drawing_in_2d) support an optional
+Also, several methods for [doc_custom_drawing_in_2d](custom_drawing_in_2d.md) support an optional
 ``antialiased`` parameter, which can be set to ``true`` when calling the
 function.
 

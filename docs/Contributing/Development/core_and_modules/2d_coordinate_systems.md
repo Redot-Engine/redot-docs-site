@@ -4,11 +4,11 @@
 ## Introduction
 
 This is a detailed overview of the available 2D coordinate systems and 2D transforms that are
-built in. The basic concepts are covered in [doc_viewport_and_canvas_transforms](doc_viewport_and_canvas_transforms).
+built in. The basic concepts are covered in [doc_viewport_and_canvas_transforms](../../../tutorials/2d/2d_transforms.md).
 
 [Transform2D](class_Transform2D) are matrices that convert coordinates from one coordinate
 system to an other. In order to use them, it is beneficial to know which coordinate systems are
-available in Redot. For a deeper understanding, the [doc_matrices_and_transforms](doc_matrices_and_transforms) tutorial
+available in Redot. For a deeper understanding, the [doc_matrices_and_transforms](../../../tutorials/math/matrices_and_transforms.md) tutorial
 offers insights to the underlying functionality.
 
 ## Redot 2D coordinate systems
@@ -39,7 +39,7 @@ Click graphic to enlarge.
     [CanvasItems.top_level](class_CanvasItem_property_top_level).
 
 - **Canvas Coordinates**
-    As mentioned in the previous tutorial [doc_canvas_layers](doc_canvas_layers), there are two types of canvases
+    As mentioned in the previous tutorial [doc_canvas_layers](../../../tutorials/2d/canvas_layers.md), there are two types of canvases
     (*Viewport* canvas and *CanvasLayer* canvas) and both have a canvas coordinate system. These
     are also called world coordinates. A *Viewport* can contain multiple *Canvases* with different
     coordinate systems.
@@ -113,7 +113,7 @@ effects of each of them.
 - **Viewport stretch transform**
     Finally, *Viewports* have a *stretch transform*, which is used when resizing or stretching the
     viewport. This transform is used for [Windows](class_Window) as described in
-    [doc_multiple_resolutions](doc_multiple_resolutions), but can also be manually set on *SubViewports* by means of
+    [doc_multiple_resolutions](../../../tutorials/rendering/multiple_resolutions.md), but can also be manually set on *SubViewports* by means of
     [size](class_SubViewport_property_size) and
     [size_2d_override](class_SubViewport_property_size_2d_override). It's
     [translation](class_Transform2D_method_get_origin),
@@ -123,7 +123,7 @@ effects of each of them.
 
 - **Window transform**
     In order to scale and position the *Window's* content as described in
-    [doc_multiple_resolutions](doc_multiple_resolutions), each [Window](class_Window) contains a
+    [doc_multiple_resolutions](../../../tutorials/rendering/multiple_resolutions.md), each [Window](class_Window) contains a
     *window transform*. It is for example responsible for the black bars at the *Window's* sides so
     that the *Viewport* is displayed with a fixed aspect ratio.
 

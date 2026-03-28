@@ -115,7 +115,7 @@ field in the *export preset* used to generate it:
 :::note
 
 Custom feature tags are only used when running the exported project
-(including with [doc_one-click_deploy](doc_one-click_deploy)). They are **not used** when
+(including with [doc_one-click_deploy](one-click_deploy.md)). They are **not used** when
 running the project from the editor, even if the export preset marked as
 **Runnable** for your current platform has custom feature tags defined.
 

@@ -9,7 +9,7 @@ import TabItem from "@theme/TabItem";
 to communicate with web servers and other non-Redot programs.
 
 Compared to Redot's other networking features (like
-[High-level multiplayer ](doc_high_level_multiplayer)),
+[High-level multiplayer ](high_level_multiplayer.md)),
 HTTP requests have more overhead and take more time to get going,
 so they aren't suited for real-time communication, and aren't great to send
 lots of small updates as is common for multiplayer gameplay.
@@ -18,7 +18,7 @@ HTTP, however, offers interoperability with external
 web resources and is great at sending and receiving large amounts
 of data, for example to transfer files like game assets. These assets can then
 be loaded using
-[runtime file loading and saving ](doc_runtime_loading_and_saving).
+[runtime file loading and saving ](../io/runtime_file_loading_and_saving.md).
 
 So HTTP may be useful for your game's login system, lobby browser,
 to retrieve some information from the web or to download game assets.
@@ -26,14 +26,14 @@ to retrieve some information from the web or to download game assets.
 This tutorial assumes some familiarity with Redot and the Redot Editor.
 Refer to the [Introduction ](toc-learn-introduction) and the
 [Step by step ](toc-learn-step_by_step) tutorial, especially its
-[Nodes and Scenes ](doc_nodes_and_scenes) and
-[Creating your first script ](doc_scripting_first_script) pages if needed.
+[Nodes and Scenes ](../../Getting Started/step_by_step/nodes_and_scenes.md) and
+[Creating your first script ](../../Getting Started/step_by_step/scripting_first_script.md) pages if needed.
 
 ## HTTP requests in Redot
 
 The [HTTPRequest ](class_HTTPRequest) node is the easiest way to make HTTP requests in Redot.
 It is backed by the more low-level [HTTPClient ](class_HTTPClient),
-for which a tutorial is available [here ](doc_http_client_class).
+for which a tutorial is available [here ](http_client_class.md).
 
 For this example, we will make an HTTP request to GitHub to retrieve the name
 of the latest Redot release.

@@ -30,7 +30,7 @@ Exporting can only be done with [c_sharp_variant_compatible_types](c_sharp_varia
 :::note
 
 Exporting properties can also be done in GDScript, for information on that
-see [doc_gdscript_exports](doc_gdscript_exports).
+see [doc_gdscript_exports](../gdscript/gdscript_exports.md).
 
 :::
 
@@ -343,7 +343,7 @@ public Sprite2D Sprite2D { get; set; }
 
 Custom node classes can also be exported directly. The filtering behavior
 depends on whether the custom class is a
-[global class ](doc_c_sharp_global_classes).
+[global class ](c_sharp_global_classes.md).
 
 Exporting NodePaths like in Redot 3.x is still possible, in case you need it:
 
@@ -381,7 +381,7 @@ public AnimationNode AnimationNode { get; set; }
 
 The drop-down menu will be limited to AnimationNode and all
 its derived classes. Custom resource classes can also be used,
-see [doc_c_sharp_global_classes](doc_c_sharp_global_classes).
+see [doc_c_sharp_global_classes](c_sharp_global_classes.md).
 
 It must be noted that even if the script is not being run while in the
 editor, the exported properties are still editable. This can be used
@@ -521,7 +521,7 @@ public string CharacterName { get; set; } = "Rebecca";
 
 ## Exporting collections
 
-As explained in the [C# Variant ](doc_c_sharp_variant) documentation, only
+As explained in the [C# Variant ](c_sharp_variant.md) documentation, only
 certain C# arrays and the collection types defined in the ``Godot.Collections``
 namespace are Variant-compatible, therefore, only those types can be exported.
 

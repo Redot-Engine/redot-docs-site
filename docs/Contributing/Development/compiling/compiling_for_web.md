@@ -4,7 +4,7 @@
 :::info
 
 This page describes how to compile HTML5 editor and export template binaries from source.
-If you're looking to export your project to HTML5 instead, read [doc_exporting_for_web](doc_exporting_for_web).
+If you're looking to export your project to HTML5 instead, read [doc_exporting_for_web](../../../tutorials/export/exporting_for_web.md).
 
 :::
 
@@ -20,10 +20,10 @@ To compile export templates for the Web, the following is required:
 
 :::info
 To get the Redot source code for compiling, see
-[doc_getting_source](doc_getting_source).
+[doc_getting_source](getting_source.md).
 
 For a general overview of SCons usage for Redot, see
-[doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem).
+[doc_introduction_to_the_buildsystem](introduction_to_the_buildsystem.md).
 
 :::
 
@@ -43,7 +43,7 @@ scons platform=web target=template_debug
 
 ```
 
-By default, the [JavaScriptBridge singleton](doc_web_javascript_bridge) will be built
+By default, the [JavaScriptBridge singleton](../../../tutorials/platform/web/javascript_bridge.md) will be built
 into the engine. Official export templates also have the JavaScript singleton
 enabled. Since ``eval()`` calls can be a security concern, the
 ``javascript_eval`` option can be used to build without the singleton

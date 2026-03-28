@@ -6,7 +6,7 @@ To this end, profilers are useful tools.
 
 :::note
 
-There is a [built-in GDScript profiler](doc_the_profiler) in the editor,
+There is a [built-in GDScript profiler](../../../tutorials/scripting/debug/the_profiler.md) in the editor,
 but using C++ profiler may be useful in cases where the GDScript profiler
 is not accurate enough or is missing information due to bugs in the profiler.
 
@@ -51,7 +51,7 @@ The ``--quit`` option works with ``--editor``, ``--project-manager`` or
 
 :::info
 
-See [doc_command_line_tutorial](doc_command_line_tutorial) for more command line arguments
+See [doc_command_line_tutorial](../../../tutorials/editor/command_line_tutorial.md) for more command line arguments
 supported by Redot.
 
 :::

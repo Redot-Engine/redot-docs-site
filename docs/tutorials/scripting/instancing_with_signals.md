@@ -18,7 +18,7 @@ Below we'll consider an example of such a situation: firing bullets.
 
 Consider a player character that can rotate and shoot towards the mouse. Every
 time the mouse button is clicked, we create an instance of the bullet at the
-player's location. See [doc_instancing](doc_instancing) for details.
+player's location. See [doc_instancing](../../Getting Started/step_by_step/instancing.md) for details.
 
 We'll use an ``Area2D`` for the bullet, which moves in a straight line at a
 given velocity:

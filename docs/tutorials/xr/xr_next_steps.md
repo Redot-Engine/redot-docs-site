@@ -5,7 +5,7 @@ Now that we have the basics covered there are several options to look at for you
 
 * You can take a look at the [Advanced topics ](openxr-advanced-topics) section.
 * You can look at a number of [XR demos here ](https://github.com/redot-engine/redot-demo-projects/tree/master/xr).
-* You can find 3rd party tutorials on our [Tutorials and resources ](doc_community_tutorials) page.
+* You can find 3rd party tutorials on our [Tutorials and resources ](../../Community/tutorials.md) page.
 
 ## XR Toolkits
 

@@ -19,7 +19,7 @@ cause the particle system to restart. It's useful for making effects where the n
 varies over time.
 
 You can set another particle node as a ``Sub Emitter``, which will be spawned as a child of each
-particle. See the [Sub-emitters ](doc_3d_particles_subemitters) section in this manual for a detailed explanation of how
+particle. See the [Sub-emitters ](subemitters.md) section in this manual for a detailed explanation of how
 to add a sub-emitter to a particle system.
 
 ### Time properties
@@ -106,7 +106,7 @@ running at ``60``.
 
 :::note
 
-When using [particle collision ](doc_3d_particles_collision), tunneling can occur
+When using [particle collision ](collision.md), tunneling can occur
 if the particles move fast and colliders are thin. This can be remedied by increasing
 ``Fixed FPS`` (at a performance cost).
 
@@ -117,7 +117,7 @@ if the particles move fast and colliders are thin. This can be remedied by incre
 :::info
 
 Setting up particle collision requires following further steps described in
-[doc_3d_particles_collision](doc_3d_particles_collision).
+[doc_3d_particles_collision](collision.md).
 
 :::
 
@@ -163,7 +163,7 @@ The ``Transform Align`` property controls the particle's default rotation. ``Dis
 means they don't align in any
 particular way. Instead, their rotation is determined by the values set in the process
 material. ``Z-Billboard`` means that the particles will always face the camera. This is
-similar to the ``Billboard`` property in the [Standard Material ](doc_standard_material_3d).
+similar to the ``Billboard`` property in the [Standard Material ](../standard_material_3d.md).
 ``Y to Velocity`` means that each particle's Y-axis aligns with its movement
 direction. This can be useful for things like bullets or arrows, where you want particles
 to always point "forward". ``Z-Billboard + Y to Velocity`` combines the previous two modes.
@@ -182,5 +182,5 @@ to be checked if you want to make use of particle trails.
 The ``Length Secs`` property controls for how long a trail should be emitted. The longer
 this duration is, the longer the trail will be.
 
-See the [Particle trails ](doc_3d_particles_trails) section in this manual for a detailed
+See the [Particle trails ](trails.md) section in this manual for a detailed
 explanation of how particle trails work and how to set them up.

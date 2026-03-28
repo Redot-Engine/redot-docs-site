@@ -7,7 +7,7 @@ On this page, you will learn:
 - How to work efficiently on the Redot editor's C++ code.
 
 This guide is aimed at current or future engine contributors.
-To create editor plugins in GDScript, see [doc_making_plugins](doc_making_plugins) instead.
+To create editor plugins in GDScript, see [doc_making_plugins](../../../tutorials/plugins/editor/making_plugins.md) instead.
 
 :::info
 
@@ -21,7 +21,7 @@ to the editor.
 ## Technical choices
 
 The Redot editor is drawn using Redot's renderer and
-[UI system](doc_user_interface). It does *not* rely on a toolkit
+[UI system](../../../tutorials/ui/index.md). It does *not* rely on a toolkit
 such as GTK or Qt. This is similar in spirit to software like Blender.
 While using toolkits makes it easier to achieve a "native" appearance, they are
 also quite heavy and their licensing is not compatible with Redot's.
@@ -35,7 +35,7 @@ The editor's code is fully self-contained in the
 of the Redot source repository.
 
 Some editor functionality is also implemented via
-[modules](doc_custom_modules_in_cpp). Some of these are only enabled in
+[modules](../core_and_modules/custom_modules_in_cpp.md). Some of these are only enabled in
 editor builds to decrease the binary size of export templates. See the
 [modules/](https://github.com/redot-engine/redot-engine/tree/master/modules) folder
 in the Redot source repository.
@@ -79,6 +79,6 @@ files, but
 ## Development tips
 
 To iterate quickly on the editor, we recommend to set up a test project and
-[open it from the command line](doc_command_line_tutorial) after compiling
+[open it from the command line](../../../tutorials/editor/command_line_tutorial.md) after compiling
 the editor. This way, you don't have to go through the Project Manager every
 time you start Redot.

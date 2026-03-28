@@ -29,7 +29,7 @@ binary, which is smaller in size, more optimized and does not include
 tools like the editor and debugger.
 
 Finally, Redot has a simple but efficient system for
-[creating DLCs as extra package files ](doc_exporting_pcks).
+[creating DLCs as extra package files ](exporting_pcks.md).
 
 ### On mobile
 
@@ -201,7 +201,7 @@ Redot --path /path/to/project --export-release "Windows Desktop" some_name.exe
 
 :::info
 
-See [doc_command_line_tutorial](doc_command_line_tutorial) for more information about using Redot
+See [doc_command_line_tutorial](../editor/command_line_tutorial.md) for more information about using Redot
 from the command line.
 
 :::
@@ -224,7 +224,7 @@ depending on your needs.
 
 - Compressed format. Smaller file size, but slower to read/write.
 - Readable and writable using tools normally present on the user's operating system.
-  This can be useful to make modding easier (see also [doc_exporting_pcks](doc_exporting_pcks)).
+  This can be useful to make modding easier (see also [doc_exporting_pcks](exporting_pcks.md)).
 
 :::warning
 

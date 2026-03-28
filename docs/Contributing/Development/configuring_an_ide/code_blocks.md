@@ -57,7 +57,7 @@ The next step is to change the build options. Right-click on the new project and
   <img src="/Contributing/Development/configuring_an_ide/img/code_blocks_open_build_options.png" />
 </figure>
 
-Select the **"Make" commands** tab and remove all the existing commands for all the build targets. For each build target enter the **SCons** command for creating the desired build in the **Build project/target** field. The minimum is ``scons``. For details on the **SCons** build options, see [doc_introduction_to_the_buildsystem](doc_introduction_to_the_buildsystem). It's also useful to add the ``scons --clean`` command in the **Clean project/target** field to the project's default commands.
+Select the **"Make" commands** tab and remove all the existing commands for all the build targets. For each build target enter the **SCons** command for creating the desired build in the **Build project/target** field. The minimum is ``scons``. For details on the **SCons** build options, see [doc_introduction_to_the_buildsystem](../compiling/introduction_to_the_buildsystem.md). It's also useful to add the ``scons --clean`` command in the **Clean project/target** field to the project's default commands.
 
 If you're using Windows, all the commands need to be preceded with ``cmd /c`` to initialize the command interpreter.
 
@@ -107,7 +107,7 @@ It should automatically select the project folder; so simply click **Open**. By 
 
 ## Code style configuration
 
-Before editing any files, remember that all code needs to comply with the [doc_code_style_guidelines](doc_code_style_guidelines). One important difference with Redot is the use of tabs for indents. Therefore, the key default editor setting that needs to be changed in Code::Blocks is to enable tabs for indents. This setting can be found by selecting **Settings &gt; Editor**.
+Before editing any files, remember that all code needs to comply with the [doc_code_style_guidelines](../code_style_guidelines.md). One important difference with Redot is the use of tabs for indents. Therefore, the key default editor setting that needs to be changed in Code::Blocks is to enable tabs for indents. This setting can be found by selecting **Settings &gt; Editor**.
 
 <figure>
   <img src="/Contributing/Development/configuring_an_ide/img/code_blocks_update_editor_settings.png" />

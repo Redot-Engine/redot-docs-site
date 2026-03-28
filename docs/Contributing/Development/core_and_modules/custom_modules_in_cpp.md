@@ -263,7 +263,7 @@ The output will be ``60``.
 :::info
 The previous Summator example is great for small, custom modules,
 but what if you want to use a larger, external library? Refer to
-[doc_binding_to_external_libraries](doc_binding_to_external_libraries) for details about binding to
+[doc_binding_to_external_libraries](binding_to_external_libraries.md) for details about binding to
 external libraries.
 
 :::
@@ -613,7 +613,7 @@ Now if you go to the ``Redot/modules/summator/doc_classes`` folder, you will see
 that it contains a ``Summator.xml`` file, or any other classes, that you referenced
 in your ``get_doc_classes`` function.
 
-Edit the file(s) following [doc_class_reference_primer](doc_class_reference_primer) and recompile the engine.
+Edit the file(s) following [doc_class_reference_primer](../../Documentation/class_reference_primer.md) and recompile the engine.
 
 Once the compilation process is finished, the docs will become accessible within
 the engine's built-in documentation system.
@@ -639,7 +639,7 @@ ERROR: Can't write doc file: docs/doc/classes/@GDScript.xml
 
 It's possible to write self-contained unit tests as part of a C++ module. If you
 are not familiar with the unit testing process in Redot yet, please refer to
-[doc_unit_testing](doc_unit_testing).
+[doc_unit_testing](unit_testing.md).
 
 The procedure is the following:
 
@@ -707,7 +707,7 @@ Similarly to how you can write self-contained documentation within a module,
 you can also create your own custom icons for classes to appear in the editor.
 
 For the actual process of creating editor icons to be integrated within the engine,
-please refer to [doc_editor_icons](doc_editor_icons) first.
+please refer to [doc_editor_icons](../editor/creating_icons.md) first.
 
 Once you've created your icon(s), proceed with the following steps:
 

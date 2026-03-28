@@ -154,7 +154,7 @@ runtime, or the engine will crash.
 This tutorial will demonstrate building a scene switcher using autoloads.
 For basic scene switching, you can use the
 [SceneTree.change_scene_to_file() ](class_SceneTree_method_change_scene_to_file)
-method (see [doc_scene_tree](doc_scene_tree) for details). However, if you need more
+method (see [doc_scene_tree](scene_tree.md) for details). However, if you need more
 complex behavior when changing scenes, this method provides more functionality.
 
 To begin, download the template from here:
@@ -393,7 +393,7 @@ the button.
 
 When scenes are small, the transition is instantaneous. However, if your
 scenes are more complex, they may take a noticeable amount of time to appear.
-To learn how to handle this, see the next tutorial: [doc_background_loading](doc_background_loading).
+To learn how to handle this, see the next tutorial: [doc_background_loading](../io/background_loading.md).
 
 Alternatively, if the loading time is relatively short (less than 3 seconds or so),
 you can display a "loading plaque" by showing some kind of 2D element just before

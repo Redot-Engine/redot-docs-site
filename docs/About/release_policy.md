@@ -217,6 +217,6 @@ When modifying a method's signature in any fashion (including adding an
 optional parameter), a GDExtension compatibility method must be created.
 This ensures that existing GDExtensions continue to work across patch and
 minor releases, so that users don't have to recompile them.
-See [doc_handling_compatibility_breakages](doc_handling_compatibility_breakages) for more information.
+See [doc_handling_compatibility_breakages](../Contributing/Development/handling_compatibility_breakages.md) for more information.
 
 :::

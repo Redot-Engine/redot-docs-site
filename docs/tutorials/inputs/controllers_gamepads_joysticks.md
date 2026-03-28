@@ -29,7 +29,7 @@ Instead of hardcoding keys or controller buttons in your scripts, you should
 create *input actions* in the Project Settings which will then refer to
 specified key and controller inputs.
 
-Input actions are explained in detail on the [doc_inputevent](doc_inputevent) page.
+Input actions are explained in detail on the [doc_inputevent](inputevent.md) page.
 
 :::note
 
@@ -271,7 +271,7 @@ it can also have adverse effects. Players may accidentally send controller input
 to the running project while interacting with another window.
 
 If you wish to ignore events when the project window isn't focused, you will
-need to create an [autoload ](doc_singletons_autoload) called ``Focus``
+need to create an [autoload ](../scripting/singletons_autoload.md) called ``Focus``
 with the following script and use it to check all your inputs:
 
 ```

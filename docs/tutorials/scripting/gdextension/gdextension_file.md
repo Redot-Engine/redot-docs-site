@@ -6,7 +6,7 @@
 The ``.gdextension`` file in your project contains the instructions for how to load
 the GDExtension. The instructions are separated into specific sections. This page
 should give you a quick overview of the different options available to you. For an introduction
-how to get started with GDExtensions take a look at the [GDExtension C++ Example ](doc_gdextension_cpp_example).
+how to get started with GDExtensions take a look at the [GDExtension C++ Example ](gdextension_cpp_example.md).
 
 ## Configuration section
 
@@ -47,7 +47,7 @@ linux.release.rv64 = "res://bin/libgdexample.linux.template_release.rv64.so"
 
 ```
 
-Here are lists of some of the available built-in options (for more look at the [feature tags ](doc_feature_tags)):
+Here are lists of some of the available built-in options (for more look at the [feature tags ](../../export/feature_tags.md)):
 
 ### Running system
 
@@ -96,7 +96,7 @@ GDExample = "res://icons/gd_example.svg"
 
 ```
 
-The path should point to a 16 by 16 pixel SVG image. Read the guide for [creating icons ](doc_editor_icons)
+The path should point to a 16 by 16 pixel SVG image. Read the guide for [creating icons ](../../../Contributing/Development/editor/creating_icons.md)
 for more information.
 
 ## Dependencies section

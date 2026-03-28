@@ -43,9 +43,9 @@ where to look if you need information on a specific feature.
 
 ## Before you start
 
-The [Tutorials and resources ](doc_community_tutorials) page lists
+The [Tutorials and resources ](../Community/tutorials.md) page lists
 video tutorials contributed by the community. If you prefer video to text,
-consider checking them out. Otherwise, [Getting Started ](doc_getting_started_intro)
+consider checking them out. Otherwise, [Getting Started ](../Getting Started/introduction/index.md)
 is a great starting point.
 
 In case you have trouble with one of the tutorials or your project,
@@ -105,7 +105,7 @@ Members of the Redot Engine community continuously write, correct, edit, and
 improve this documentation. We are always looking for more help. You can also
 contribute by opening Github issues or translating the documentation into your language.
 If you are interested in helping, see [Ways to contribute ](doc_ways_to_contribute)
-and [Writing documentation ](doc_contributing_writing_documentation),
+and [Writing documentation ](../Contributing/Documentation/index.md),
 or get in touch with the [Documentation team ](https://redotengine.org/teams/#documentation)
 on [Redot Contributors Chat ](https://chat.redotengine.org/).
 

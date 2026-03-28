@@ -6,7 +6,7 @@ import TabItem from "@theme/TabItem";
 Different NavigationMeshes are automatically merged by the NavigationServer
 when at least two vertex positions of one edge exactly overlap.
 
-To connect over arbitrary distances see [doc_navigation_using_navigationlinks](doc_navigation_using_navigationlinks).
+To connect over arbitrary distances see [doc_navigation_using_navigationlinks](navigation_using_navigationlinks.md).
 
 ![Image](img/navigation_vertex_merge.png)
 
@@ -37,7 +37,7 @@ Better avoid any navigation mesh overlap at all time for a consistent merge beha
 ![Image](img/navigation_edge_connection.png)
 
 If navigation debug is enabled and the NavigationServer active the established navigation mesh connections will be visualized.
-See [doc_navigation_debug_tools](doc_navigation_debug_tools) for more info about navigation debug options.
+See [doc_navigation_debug_tools](navigation_debug_tools.md) for more info about navigation debug options.
 
 The default 2D ``edge_connection_margin`` can be changed in the ProjectSettings under ``navigation/2d/default_edge_connection_margin``.
 

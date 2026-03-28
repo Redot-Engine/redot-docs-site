@@ -3,7 +3,7 @@
 
 Redot offers a feature to automatically load nodes at the root of your project,
 allowing you to access them globally, that can fulfill the role of a Singleton:
-[doc_singletons_autoload](doc_singletons_autoload). These autoloaded nodes are not freed when you
+[doc_singletons_autoload](../scripting/singletons_autoload.md). These autoloaded nodes are not freed when you
 change the scene from code with [SceneTree.change_scene_to_file ](class_SceneTree_method_change_scene_to_file).
 
 In this guide, you will learn when to use the Autoload feature, and techniques

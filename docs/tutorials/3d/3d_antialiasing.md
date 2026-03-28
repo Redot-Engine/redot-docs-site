@@ -4,7 +4,7 @@
 :::info
 
 Redot also supports antialiasing in 2D rendering. This is covered on the
-[doc_2d_antialiasing](doc_2d_antialiasing) page.
+[doc_2d_antialiasing](../2d/2d_antialiasing.md) page.
 
 :::
 
@@ -117,7 +117,7 @@ renderers.*
 
 Since Redot 4.2, there is built-in support for
 [AMD FidelityFX Super Resolution](https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html)_
-2.2. This is an [upscaling method](doc_resolution_scaling)
+2.2. This is an [upscaling method](resolution_scaling.md)
 compatible with all recent GPUs from any vendor. FSR2 is normally designed to
 improve performance by lowering the internal 3D rendering resolution,
 then upscaling to the output resolution.
@@ -182,7 +182,7 @@ at the same time, without introducing potential ghosting artifacts.
 
 The downside of SSAA is its *extremely* high cost. This cost generally makes
 SSAA difficult to use for game purposes, but you may still find supersampling
-useful for [offline rendering](doc_creating_movies).
+useful for [offline rendering](../animation/creating_movies.md).
 
 Supersample antialiasing is performed by increasing the
 [Rendering &gt; Scaling 3D &gt; Scale](class_ProjectSettings_property_rendering/scaling_3d/scale)
@@ -272,7 +272,7 @@ but higher MSAA levels are unlikely to run smoothly on mobile GPUs.
 
 Redot allows using multiple antialiasing techniques at the same time. This is
 usually unnecessary, but it can provide better visuals on high-end GPUs or for
-[non-real-time rendering](doc_creating_movies). For example, to make
+[non-real-time rendering](../animation/creating_movies.md). For example, to make
 moving edges look better when TAA is enabled, you can also enable MSAA at the
 same time.
 

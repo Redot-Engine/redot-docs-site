@@ -351,7 +351,7 @@ const float GOLDEN_RATIO = 1.618;
 
 ### Preprocessor directives
 
-[doc_shader_preprocessor](doc_shader_preprocessor) directives should be written in CONSTANT__CASE.
+[doc_shader_preprocessor](shader_reference/shader_preprocessor.md) directives should be written in CONSTANT__CASE.
 Directives should be written without any indentation before them, even if
 nested within a function.
 

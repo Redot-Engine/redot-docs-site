@@ -4,7 +4,7 @@ import TabItem from "@theme/TabItem";
 # Mesh level of detail (LOD)
 
 Level of detail (LOD) is one of the most important ways to optimize rendering
-performance in a 3D project, along with [doc_occlusion_culling](doc_occlusion_culling).
+performance in a 3D project, along with [doc_occlusion_culling](occlusion_culling.md).
 
 On this page, you'll learn:
 
@@ -64,7 +64,7 @@ Here's the same image with wireframe rendering to make the decimation easier to 
 :::info
 
 If you need to manually configure level of detail with artist-created meshes,
-use [doc_visibility_ranges](doc_visibility_ranges) instead of automatic mesh LOD.
+use [doc_visibility_ranges](visibility_ranges.md) instead of automatic mesh LOD.
 
 :::
 
@@ -193,7 +193,7 @@ resolution into account. Higher camera FOV and lower viewport resolutions
 will make LOD selection more aggressive; the engine will display heavily
 decimated models earlier when the camera moves away.
 
-As a result, unlike [doc_visibility_ranges](doc_visibility_ranges), you don't need to do
+As a result, unlike [doc_visibility_ranges](visibility_ranges.md), you don't need to do
 anything specific in your project to take camera FOV and viewport resolution
 into account.
 

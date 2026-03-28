@@ -5,7 +5,7 @@
 
 This page describes how to export a Redot project to Android.
 If you're looking to compile export template binaries from source instead,
-read [doc_compiling_for_android](doc_compiling_for_android).
+read [doc_compiling_for_android](../../Contributing/Development/compiling/compiling_for_android.md).
 
 :::
 
@@ -15,7 +15,7 @@ The following steps detail what is needed to set up the Android SDK and the engi
 .. attention::
 
     Projects written in C# can be exported to Android as of Redot 4.2, but support
-    is experimental and [some limitations apply ](doc_c_sharp_platforms).
+    is experimental and [some limitations apply ](../scripting/c_sharp/index.md).
 
 ## Install OpenJDK 17
 
@@ -158,7 +158,7 @@ this to save space with AABs is that Google automatically splits up the AAB on t
 backend, so the user only downloads what they need.
 
 You can optimize the size further by compiling an Android export template with
-only the features you need. See [doc_optimizing_for_size](doc_optimizing_for_size) for more
+only the features you need. See [doc_optimizing_for_size](../../Contributing/Development/compiling/optimizing_for_size.md) for more
 information.
 
 ## Environment variables

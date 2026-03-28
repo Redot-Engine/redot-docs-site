@@ -15,7 +15,7 @@ Variable rate shading (VRS) is a method of decreasing this shading cost by
 reducing the resolution of *per-pixel* shading (also called *fragment* shading),
 while keeping the original resolution for rendering geometry. This means geometry
 edges remain as sharp as they would without VRS. VRS can be combined with any
-[doc_3d_antialiasing](doc_3d_antialiasing) technique (MSAA, FXAA, TAA, SSAA).
+[doc_3d_antialiasing](3d_antialiasing.md) technique (MSAA, FXAA, TAA, SSAA).
 
 VRS allows specifying the shading quality in a local manner, which makes it
 possible to have certain parts of the viewport receive more detailed shading
@@ -109,7 +109,7 @@ For custom viewports, the VRS mode and texture must be set manually to the
 On unsupported hardware, there is no visual difference when variable rate
 shading is enabled. You can check whether hardware supports variable rate
 shading by running the editor or project with the ``--verbose``
-[command line argument](doc_command_line_tutorial).
+[command line argument](../editor/command_line_tutorial.md).
 
 :::
 

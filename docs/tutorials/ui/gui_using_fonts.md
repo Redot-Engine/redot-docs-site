@@ -199,7 +199,7 @@ The result should look like this:
 
 You can create local overrides to font display in Label nodes by creating a
 [class_LabelSettings](class_LabelSettings) resource that you reuse across Label nodes. This
-resource takes priority over [theme properties ](doc_gui_skinning).
+resource takes priority over [theme properties ](gui_skinning.md).
 
 :::
 
@@ -291,7 +291,7 @@ relevant for dynamic fonts (which are usually made of vector elements).
 
 By default, fonts do not have mipmaps generated to reduce memory usage and speed
 up rasterization. However, this can cause downscaled fonts to become grainy. This
-can be especially noticeable with [doc_3d_text](doc_3d_text) that doesn't have **Fixed
+can be especially noticeable with [doc_3d_text](../3d/3d_text.md) that doesn't have **Fixed
 Size** enabled. This can also occur when displaying text with a traditional rasterized
 (non-[MSDF ](doc_using_fonts_msdf)) font in a Control node that has its scale
 lower than ``(1, 1)``.
@@ -394,7 +394,7 @@ It's possible to use a system font as a fallback font too.
 Tools like [Fontello ](https://fontello.com/)_ can be used to generate font
 files containing vectors imported from SVG files. This can be used to render
 custom vector elements as part of your text, or to create extruded 3D icons
-with [doc_3d_text](doc_3d_text) and TextMesh.
+with [doc_3d_text](../3d/3d_text.md) and TextMesh.
 
 :::note
 
@@ -405,7 +405,7 @@ font generation tools remains scarce.
 :::
 
 Depending on your use cases, this may lead to better results compared to using
-the ``img`` tag in [RichTextLabel ](doc_bbcode_in_richtextlabel). Unlike
+the ``img`` tag in [RichTextLabel ](bbcode_in_richtextlabel.md). Unlike
 bitmap images (including SVGs which are rasterized on import by Redot),
 true vector data can be resized to any size without losing quality.
 
@@ -805,7 +805,7 @@ possible to use both approaches in a cumulative manner:
 For most projects, this approach is the most convenient to use, as it
 automatically sources text from your language translations. The downside is that
 it can only be used if your project supports
-[internationalization ](doc_internationalizing_games). Otherwise, stick to
+[internationalization ](../i18n/internationalizing_games.md). Otherwise, stick to
 the "Using custom text" approach described below.
 
 After adding translations to the Project Settings, use the
@@ -842,7 +842,7 @@ dialog:
 
 :::tip
 
-If your project supports [internationalization ](doc_internationalizing_games),
+If your project supports [internationalization ](../i18n/internationalizing_games.md),
 you can paste the contents of your CSV or PO files in the above box to quickly
 prerender all possible characters that may be rendered during gameplay
 (excluding user-provided or non-translatable strings).

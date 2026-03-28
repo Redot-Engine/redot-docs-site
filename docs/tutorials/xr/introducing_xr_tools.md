@@ -24,7 +24,7 @@ We will update the documentation once Redot XR Tools becomes available for Redot
 
 ## Installing XR Tools
 
-Continuing on from our project we started in [doc_setting_up_xr](doc_setting_up_xr) we want to add in the Redot XR Tools library.
+Continuing on from our project we started in [doc_setting_up_xr](setting_up_xr.md) we want to add in the Redot XR Tools library.
 This can be downloaded from the [Redot XR Tools releases page ](https://github.com/GodotVR/godot-xr-tools/releases).
 Find the latest release for Redot 4, and under **Assets**, download the
 ``Redot-xr-tools.zip`` file.

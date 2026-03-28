@@ -527,7 +527,7 @@ and decide whether to rely on the modifiers or implement some form of fallback m
 If you are targeting multiple runtimes that have support for the same controllers,
 you may need to create separate action maps for each runtime.
 You can control which action map Redot uses by using different export templates
-for each runtime and using a custom [feature tag ](doc_feature_tags)
+for each runtime and using a custom [feature tag ](../export/feature_tags.md)
 to set the action map.
 
 In Redot, binding modifiers are divided into two groups:

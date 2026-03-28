@@ -220,7 +220,7 @@ public partial class MyNode3D : Node3D
 If RVO avoidance agents are registered for avoidance callbacks the NavigationServer dispatches
 their ``velocity_computed`` signals just before the PhysicsServer synchronization.
 
-To learn more about NavigationAgents see [doc_navigation_using_navigationagents](doc_navigation_using_navigationagents).
+To learn more about NavigationAgents see [doc_navigation_using_navigationagents](navigation_using_navigationagents.md).
 
 The simplified order of execution for NavigationAgents that use avoidance:
 

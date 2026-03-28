@@ -1,7 +1,7 @@
 
 # Visibility ranges (HLOD)
 
-Along with [doc_mesh_lod](doc_mesh_lod) and [doc_occlusion_culling](doc_occlusion_culling),
+Along with [doc_mesh_lod](mesh_lod.md) and [doc_occlusion_culling](occlusion_culling.md),
 visibility ranges are another tool to improve performance in large,
 complex 3D scenes.
 
@@ -15,7 +15,7 @@ On this page, you'll learn:
 
 If you only need meshes to become less detailed over distance, but don't have
 manually authored LOD meshes, consider relying on automatic
-[doc_mesh_lod](doc_mesh_lod) instead.
+[doc_mesh_lod](mesh_lod.md) instead.
 
 Note that automatic mesh LOD and visibility ranges can be used at the same
 time, even on the same mesh.

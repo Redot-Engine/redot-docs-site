@@ -3,7 +3,7 @@
 
 This article explains how to create and manage UI themes using the Redot
 editor and its theme editor tool. We recommend getting familiar with the
-basics behind GUI skinning/theming by reading [doc_gui_skinning](doc_gui_skinning) before starting.
+basics behind GUI skinning/theming by reading [doc_gui_skinning](gui_skinning.md) before starting.
 
 The theme editor is a bottom panel tool that activates automatically, when
 a [Theme ](class_Theme) resource is selected for editing. It contains

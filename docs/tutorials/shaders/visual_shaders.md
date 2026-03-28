@@ -12,7 +12,7 @@ necessary for specific effects.
 :::note
 
 If you are not familiar with shaders, start by reading
-[doc_introduction_to_shaders](doc_introduction_to_shaders).
+[doc_introduction_to_shaders](introduction_to_shaders.md).
 
 :::
 

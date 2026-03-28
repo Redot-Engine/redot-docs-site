@@ -12,7 +12,7 @@ There are some reasons why you may want to do this:
 * Add external SDKs that build with your project.
 
 Configuring the gradle build is a fairly straightforward process. But first
-you need to follow the steps in [exporting for android](doc_exporting_for_android)
+you need to follow the steps in [exporting for android](exporting_for_android.md)
 up to **Setting it up in Redot**. After doing that, follow the steps below.
 
 ## Set up the gradle build environment

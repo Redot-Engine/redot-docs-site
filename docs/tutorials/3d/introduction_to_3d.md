@@ -20,7 +20,7 @@ which are almost identical to their 2D counterparts.
 
 In 3D, math is a little more complex than in 2D. For an introduction to the
 relevant math written for game developers, not mathemeticians or engineers,
-check out [doc_vector_math](doc_vector_math) and [doc_using_transforms](doc_using_transforms).
+check out [doc_vector_math](../math/vector_math.md) and [doc_using_transforms](using_transforms.md).
 
 ## 3D workspace
 
@@ -32,7 +32,7 @@ selected.
 
 Similar to 2D, the tabs below the workspace selector are used to change between
 currently opened scenes or create a new one using the plus (+) button. The left and
-right docks should be familiar from [editor introduction](doc_editor_introduction).
+right docks should be familiar from [editor introduction](../editor/index.md).
 
 Below the scene selector, the main toolbar is visible, and beneath the main toolbar
 is the 3D viewport.
@@ -327,7 +327,7 @@ submitting them to the 3D API has a significant performance cost.
 
 :::note
 To learn about prototyping inside Redot or using external tools, see
-[doc_csg_tools](doc_csg_tools).
+[doc_csg_tools](csg_tools.md).
 
 :::
 
@@ -423,4 +423,4 @@ quite dark unless the background environment is very bright.
 
 Most outdoor scenes have a directional light (the sun or moon), while indoor
 scenes typically have several positional lights (lamps, torches, …).
-See [doc_lights_and_shadows](doc_lights_and_shadows) for more information on setting up lights in Redot.
+See [doc_lights_and_shadows](lights_and_shadows.md) for more information on setting up lights in Redot.

@@ -14,7 +14,7 @@ a 2D game.
 :::note
 This project is an introduction to the Redot engine. It assumes that
 you have some programming experience already. If you're new to
-programming entirely, you should start here: [doc_scripting](doc_scripting).
+programming entirely, you should start here: [doc_scripting](../step_by_step/scripting_languages.md).
 
 :::
 

@@ -8,10 +8,10 @@ Compatibility renderers.
 
 :::
 
-As described in [doc_environment_and_post_processing](doc_environment_and_post_processing), Redot supports
+As described in [doc_environment_and_post_processing](environment_and_post_processing.md), Redot supports
 various visual effects including two types of fog: traditional (non-volumetric)
 fog and volumetric fog. Traditional fog affects the entire scene at once and
-cannot be customized with [doc_fog_shader](doc_fog_shader).
+cannot be customized with [doc_fog_shader](../shaders/shader_reference/fog_shader.md).
 
 Volumetric fog can be used at the same time as non-volumetric fog if desired.
 
@@ -196,7 +196,7 @@ density in the **Material**.
 - **Shape:** The shape of the FogVolume. This can be set to **Ellipsoid**,
   **Cone**, **Cylinder**, **Box** or **World** (acts as global volumetric fog).
 - **Material:** The material used by the FogVolume. Can be either a
-  built-in FogMaterial or a custom ShaderMaterial ([doc_fog_shader](doc_fog_shader)).
+  built-in FogMaterial or a custom ShaderMaterial ([doc_fog_shader](../shaders/shader_reference/fog_shader.md)).
 
 After choosing **New FogMaterial** in the **Material** property, you can adjust
 the following properties in FogMaterial:
@@ -221,7 +221,7 @@ the following properties in FogMaterial:
 - **Density Texture:** The 3D texture that is used to scale the member density
   of the FogVolume. This can be used to vary fog density within the FogVolume
   with any kind of static pattern. For animated effects, consider using a custom
-  [fog shader](doc_fog_shader).
+  [fog shader](../shaders/shader_reference/fog_shader.md).
   You can import any image as a 3D texture by
   [changing its import type in the Import dock](doc_importing_images_changing_import_type).
 
@@ -266,7 +266,7 @@ achieve this.
 
 This page only covers the built-in settings offered by FogMaterial. If you need
 to customize fog behavior within a FogVolume node (such as creating animated fog),
-FogVolume nodes' appearance can be customized using [doc_fog_shader](doc_fog_shader).
+FogVolume nodes' appearance can be customized using [doc_fog_shader](../shaders/shader_reference/fog_shader.md).
 
 ## Faking volumetric fog using quads
 

@@ -71,7 +71,7 @@ The set of options available after selecting an Ogg Vorbis or MP3 file is differ
    FileSystem dock. Options are identical for Ogg Vorbis files.
 
 After importing a sound, you can play it back using the AudioStreamPlayer,
-AudioStreamPlayer2D or AudioStreamPlayer3D nodes. See [doc_audio_streams](doc_audio_streams)
+AudioStreamPlayer2D or AudioStreamPlayer3D nodes. See [doc_audio_streams](../audio/audio_streams.md)
 for more information.
 
 ## Import options (WAV)
@@ -271,7 +271,7 @@ sample rate and number of channels for your audio:
 
 ### Use real-time audio effects to reduce file size
 
-Redot has an [extensive bus system ](doc_audio_buses) with built-in effects.
+Redot has an [extensive bus system ](../audio/audio_buses.md) with built-in effects.
 This saves SFX artists the need to add reverb to the sound effects,
 reducing their size greatly and ensuring correct trimming.
 

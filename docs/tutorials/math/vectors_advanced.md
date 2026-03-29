@@ -80,7 +80,7 @@ by N and D. For example:
 
 ![Image](img/tutovec12.png)
 
-For 3D math, Redot provides a [Plane ](class_Plane)
+For 3D math, Redot provides a [Plane ](/docs/Classes/Plane)
 built-in type that handles this.
 
 Basically, N and D can represent any plane in space, be it for 2D or 3D
@@ -192,7 +192,7 @@ D = -D;
 
 </Tabs>
 
-Redot also implements this operator in [Plane ](class_Plane).
+Redot also implements this operator in [Plane ](/docs/Classes/Plane).
 So, using the format below will work as expected:
 
 <Tabs>

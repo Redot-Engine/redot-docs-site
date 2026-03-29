@@ -84,7 +84,7 @@ are seven different processor functions.
    screen. Used in [sky shaders ](shader_reference/sky_shader.md).
 
 7. The ``fog()`` function runs for every froxel in the volumetric fog froxel
-   buffer that intersects with the [FogVolume ](class_FogVolume). Used by
+   buffer that intersects with the [FogVolume ](/docs/Classes/FogVolume). Used by
    [fog shaders ](shader_reference/fog_shader.md).
 
 :::warning
@@ -122,8 +122,8 @@ Here are the available types:
 * [spatial ](shader_reference/spatial_shader.md) for 3D rendering.
 * [canvas_item ](shader_reference/canvas_item_shader.md) for 2D rendering.
 * [particles ](shader_reference/particle_shader.md) for particle systems.
-* [sky ](shader_reference/sky_shader.md) to render [Skies ](class_Sky).
-* [fog ](shader_reference/fog_shader.md) to render [FogVolumes ](class_FogVolume)
+* [sky ](shader_reference/sky_shader.md) to render [Skies ](/docs/Classes/Sky).
+* [fog ](shader_reference/fog_shader.md) to render [FogVolumes ](/docs/Classes/FogVolume)
 
 ## Render modes
 

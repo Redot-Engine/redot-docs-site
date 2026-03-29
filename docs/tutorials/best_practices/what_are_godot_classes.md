@@ -13,13 +13,13 @@ how they work under the hood.
 
 ## How scripts work in the engine
 
-The engine provides built-in classes like [Node ](class_Node). You can extend those to create
+The engine provides built-in classes like [Node ](/docs/Classes/Node). You can extend those to create
 derived types using a script.
 
 These scripts are not technically classes. Instead, they are resources that tell the engine a
 sequence of initializations to perform on one of the engine's built-in classes.
 
-Redot's internal classes have methods that register a class's data with a [ClassDB ](class_ClassDB). This database provides runtime access to class information. ``ClassDB`` contains
+Redot's internal classes have methods that register a class's data with a [ClassDB ](/docs/Classes/ClassDB). This database provides runtime access to class information. ``ClassDB`` contains
 information about classes like:
 
 - Properties.
@@ -31,15 +31,15 @@ This ``ClassDB`` is what objects check against when performing an operation like
 property or calling a method. It checks the database's records and the object's base types' records
 to see if the object supports the operation.
 
-Attaching a [Script ](class_Script) to your object extends the methods, properties, and signals
+Attaching a [Script ](/docs/Classes/Script) to your object extends the methods, properties, and signals
 available from the ``ClassDB``.
 
 :::note
 
 Even scripts that don't use the ``extends`` keyword implicitly inherit from the engine's base
-[RefCounted ](class_RefCounted) class. As a result, you can instantiate scripts without the
+[RefCounted ](/docs/Classes/RefCounted) class. As a result, you can instantiate scripts without the
 ``extends`` keyword from code. Since they extend ``RefCounted`` though, you cannot attach them to
-a [Node ](class_Node).
+a [Node ](/docs/Classes/Node).
 
 :::
 

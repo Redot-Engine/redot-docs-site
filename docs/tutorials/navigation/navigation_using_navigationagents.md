@@ -9,10 +9,10 @@ They facilitate common calls to the NavigationServer API on
 behalf of the parent actor node in a more convenient manner for beginners.
 
 2D and 3D version of NavigationAgents are available as
-[NavigationAgent2D](class_NavigationAgent2D) and
-[NavigationAgent3D](class_NavigationAgent3D) respectively.
+[NavigationAgent2D](/docs/Classes/NavigationAgent2D) and
+[NavigationAgent3D](/docs/Classes/NavigationAgent3D) respectively.
 
-New NavigationAgent nodes will automatically join the default navigation map on the [World2D](class_World2D)/[World3D](class_World3D).
+New NavigationAgent nodes will automatically join the default navigation map on the [World2D](/docs/Classes/World2D)/[World3D](/docs/Classes/World3D).
 
 NavigationsAgent nodes are optional and not a hard requirement to use the navigation system.
 Their entire functionality can be replaced with scripts and direct calls to the NavigationServer API.

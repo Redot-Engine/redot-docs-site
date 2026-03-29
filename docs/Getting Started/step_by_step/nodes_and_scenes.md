@@ -24,9 +24,9 @@ All nodes have the following characteristics:
 The last characteristic is important. **Together, nodes form a tree**, which is a powerful
 feature to organize projects. Since different nodes have different functions,
 combining them produces more complex behavior. As we saw before, you can build a
-playable character the camera follows using a [CharacterBody2D](class_CharacterBody2D)
-node, a [Sprite2D](class_Sprite2D) node,
-a [Camera2D](class_Camera2D) node, and a [CollisionShape2D](class_CollisionShape2D) node.
+playable character the camera follows using a [CharacterBody2D](/docs/Classes/CharacterBody2D)
+node, a [Sprite2D](/docs/Classes/Sprite2D) node,
+a [Camera2D](/docs/Classes/Camera2D) node, and a [CollisionShape2D](/docs/Classes/CollisionShape2D) node.
 
 ![Image](img/nodes_and_scenes_character_nodes.webp)
 
@@ -65,16 +65,16 @@ opening the project, you should see an empty editor.
 ![Image](img/nodes_and_scenes_01_empty_editor.webp)
 
 In an empty scene, the Scene dock on the left shows several options to add a
-root node quickly. "2D Scene" adds a [Node2D](class_Node2D) node,
-"3D Scene" adds a [Node3D](class_Node3D) node,
-and "User Interface" adds a [Control](class_Control) node.
+root node quickly. "2D Scene" adds a [Node2D](/docs/Classes/Node2D) node,
+"3D Scene" adds a [Node3D](/docs/Classes/Node3D) node,
+and "User Interface" adds a [Control](/docs/Classes/Control) node.
 These presets are here for convenience; they are not mandatory.
 "Other Node" lets you select any node to be the root node.
 In an empty scene, "Other Node" is equivalent to pressing the "Add Child Node"
 button at the top-left of the Scene dock, which usually adds
 a new node as a child of the currently selected node.
 
-We're going to add a single [Label](class_Label) node to our scene. Its function is to draw
+We're going to add a single [Label](/docs/Classes/Label) node to our scene. Its function is to draw
 text on the screen.
 
 Press the "Add Child Node" button or "Other Node" to create a root node.

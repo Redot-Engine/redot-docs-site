@@ -25,7 +25,7 @@ script editor's status bar. The example below has 2 warnings:
 ![Image](img/typed_gdscript_warning_example.webp)
 
 To ignore single warnings within a file, use the
-[@warning_ignore ](class_@GDScript_annotation_@warning_ignore) annotation.
+[@warning_ignore ](/docs/Classes/@GDScript_annotation_@warning_ignore) annotation.
 You can click on the ignore link to the left of the warning's description.
 Redot will add an annotation above the corresponding line and the code
 won't trigger the corresponding warning anymore:
@@ -33,8 +33,8 @@ won't trigger the corresponding warning anymore:
 ![Image](img/typed_gdscript_warning_system_ignore.webp)
 
 To ignore multiple warnings in a region within a file, use the
-[@warning_ignore_start ](class_@GDScript_annotation_@warning_ignore_start)
-and [@warning_ignore_restore ](class_@GDScript_annotation_@warning_ignore_restore)
+[@warning_ignore_start ](/docs/Classes/@GDScript_annotation_@warning_ignore_start)
+and [@warning_ignore_restore ](/docs/Classes/@GDScript_annotation_@warning_ignore_restore)
 annotations. You can omit ``@warning_ignore_restore`` if you want to ignore
 the specified warning types until the end of the file.
 

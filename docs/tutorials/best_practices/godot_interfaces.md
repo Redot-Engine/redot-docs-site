@@ -14,7 +14,7 @@ The rest of this tutorial outlines the various ways of doing all this.
 
 ## Acquiring object references
 
-For all [Object ](class_Object)\s, the most basic way of referencing them
+For all [Object ](/docs/Classes/Object)\s, the most basic way of referencing them
 is to get a reference to an existing object from another acquired instance.
 
 <Tabs>
@@ -41,9 +41,9 @@ RedotObject obj = node.GetObject(); // Method access.
 
 </Tabs>
 
-The same principle applies for [RefCounted ](class_RefCounted) objects.
-While users often access [Node ](class_Node) and
-[Resource ](class_Resource) this way, alternative measures are available.
+The same principle applies for [RefCounted ](/docs/Classes/RefCounted) objects.
+While users often access [Node ](/docs/Classes/Node) and
+[Resource ](/docs/Classes/Resource) this way, alternative measures are available.
 
 Instead of property or method access, one can get Resources by load
 access.
@@ -152,7 +152,7 @@ Note the following:
 
 3. Keep in mind that loading a resource fetches the cached resource
    instance maintained by the engine. To get a new object, one must
-   [duplicate ](class_Resource_method_duplicate) an existing reference
+   [duplicate ](/docs/Classes/Resource_method_duplicate) an existing reference
    or instantiate one from scratch with ``new()``.
 
 Nodes likewise have an alternative access point: the SceneTree.
@@ -305,10 +305,10 @@ Redot's scripting API is duck-typed. This means that if a script executes an
 operation, Redot doesn't validate that it supports the operation by **type**.
 It instead checks that the object **implements** the individual method.
 
-For example, the [CanvasItem ](class_CanvasItem) class has a ``visible``
+For example, the [CanvasItem ](/docs/Classes/CanvasItem) class has a ``visible``
 property. All properties exposed to the scripting API are in fact a setter and
 getter pair bound to a name. If one tried to access
-[CanvasItem.visible ](class_CanvasItem_property_visible), then Redot would do the
+[CanvasItem.visible ](/docs/Classes/CanvasItem_property_visible), then Redot would do the
 following checks, in order:
 
 - If the object has a script attached, it will attempt to set the property
@@ -382,7 +382,7 @@ GetParent().Set("visible", false);
 </Tabs>
 
 - A method check. In the case of
-  [CanvasItem.visible ](class_CanvasItem_property_visible), one can
+  [CanvasItem.visible ](/docs/Classes/CanvasItem_property_visible), one can
   access the methods, ``set_visible`` and ``is_visible`` like any other method.
 
 <Tabs>
@@ -532,7 +532,7 @@ foreach (Node AChild in GetChildren())
 
 </Tabs>
 
-- Outsource the access to a [Callable ](class_Callable). These may be useful
+- Outsource the access to a [Callable ](/docs/Classes/Callable). These may be useful
   in cases where one needs the max level of freedom from dependencies. In
   this case, one relies on an external context to setup the method.
 

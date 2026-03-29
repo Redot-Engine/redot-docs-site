@@ -5,8 +5,8 @@ import TabItem from "@theme/TabItem";
 
 # HTTP client class
 
-[HTTPClient ](class_HTTPClient) provides low-level access to HTTP communication.
-For a higher-level interface, you may want to take a look at [HTTPRequest ](class_HTTPRequest) first,
+[HTTPClient ](/docs/Classes/HTTPClient) provides low-level access to HTTP communication.
+For a higher-level interface, you may want to take a look at [HTTPRequest ](/docs/Classes/HTTPRequest) first,
 which has a tutorial available [here ](http_request_class.md).
 
 :::warning
@@ -18,7 +18,7 @@ blocked by Android.
 
 :::
 
-Here's an example of using the [HTTPClient ](class_HTTPClient)
+Here's an example of using the [HTTPClient ](/docs/Classes/HTTPClient)
 class. It's just a script, so it can be run by executing:
 
 <Tabs>

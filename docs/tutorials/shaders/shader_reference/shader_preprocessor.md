@@ -388,7 +388,7 @@ saved to ``.gdshader`` or ``.gdshaderinc`` files, while absolute paths can be
 used in shaders that are built into a scene/resource file.
 
 You can create new shader includes by using the **File &gt; Create Shader Include**
-menu option of the shader editor, or by creating a new [ShaderInclude](class_ShaderInclude) resource
+menu option of the shader editor, or by creating a new [ShaderInclude](/docs/Classes/ShaderInclude) resource
 in the FileSystem dock.
 
 Shader includes can be included from within any shader, or other shader include, at

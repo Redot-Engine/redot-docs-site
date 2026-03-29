@@ -14,7 +14,7 @@ This is often the case of games, such as RPGs, online chats, tycoons or simulati
 common case where more advanced layout features may be required is in-game tools (or simply just tools).
 
 All these situations require a more capable OS-like user interface, with advanced layout and formatting.
-For that, [Containers ](class_container) are more useful.
+For that, [Containers ](/docs/Classes/container) are more useful.
 
 ## Container layout
 
@@ -22,7 +22,7 @@ Containers provide a huge amount of layout power (as an example, the Redot edito
 
    .. image:: img/Redot_containers.png
 
-When a [Container ](class_Container)-derived node is used, all children [Control ](class_Control) nodes give up their
+When a [Container ](/docs/Classes/Container)-derived node is used, all children [Control ](/docs/Classes/Control) nodes give up their
 own positioning ability. This means the *Container* will control their positioning and any attempt to manually alter these
 nodes will be either ignored or invalidated the next time their parent is resized.
 
@@ -68,8 +68,8 @@ Redot provides several container types out of the box as they serve different pu
 
 ### Box Containers
 
-Arranges child controls vertically or horizontally (via [HBoxContainer ](class_HBoxContainer) and
-[VBoxContainer ](class_VBoxContainer)). In the opposite of the designated direction
+Arranges child controls vertically or horizontally (via [HBoxContainer ](/docs/Classes/HBoxContainer) and
+[VBoxContainer ](/docs/Classes/VBoxContainer)). In the opposite of the designated direction
 (as in, vertical for a horizontal container), it just expands the children.
 
    .. image:: img/containers_box.png
@@ -78,7 +78,7 @@ These containers make use of the *Stretch Ratio* property for children with the 
 
 ### Grid Container
 
-Arranges child controls in a grid layout (via [GridContainer ](class_GridContainer), amount
+Arranges child controls in a grid layout (via [GridContainer ](/docs/Classes/GridContainer), amount
 of columns must be specified). Uses both the vertical and horizontal expand flags.
 
    .. image:: img/containers_grid.png
@@ -86,7 +86,7 @@ of columns must be specified). Uses both the vertical and horizontal expand flag
 ### Margin Container
 
 Child controls are expanded towards the bounds of this control (via
-[MarginContainer ](class_MarginContainer)). Padding will be added on the margins
+[MarginContainer ](/docs/Classes/MarginContainer)). Padding will be added on the margins
 depending on the theme configuration.
 
    .. image:: img/containers_margin.png
@@ -99,7 +99,7 @@ constants overrides section of each control:
 ### Tab Container
 
 Allows you to place several child controls stacked on top of each other (via
-[TabContainer ](class_TabContainer)), with only the *current* one visible.
+[TabContainer ](/docs/Classes/TabContainer)), with only the *current* one visible.
 
    .. image:: img/containers_tab.png
 
@@ -114,7 +114,7 @@ Settings such as tab placement and *StyleBox* can be modified in the *TabContain
 ### Split Container
 
 Accepts only one or two children controls, then places them side to side with a divisor
-(via [HSplitContainer ](class_HSplitContainer) and [VSplitContainer ](class_VSplitContainer)).
+(via [HSplitContainer ](/docs/Classes/HSplitContainer) and [VSplitContainer ](/docs/Classes/VSplitContainer)).
 Respects both horizontal and vertical flags, as well as *Ratio*.
 
    .. image:: img/containers_split.png
@@ -126,7 +126,7 @@ The divisor can be dragged around to change the size relation between both child
 ### PanelContainer
 
 A container that draws a *StyleBox*, then expands children to cover its whole area
-(via [PanelContainer ](class_PanelContainer), respecting the *StyleBox* margins).
+(via [PanelContainer ](/docs/Classes/PanelContainer), respecting the *StyleBox* margins).
 It respects both the horizontal and vertical sizing options.
 
    .. image:: img/containers_panel.png
@@ -136,7 +136,7 @@ This container is useful as top-level, or just to add custom backgrounds to sect
 ### ScrollContainer
 
 Accepts a single child node. If this node is bigger than the container, scrollbars will be added
-to allow panning the node around (via [ScrollContainer ](class_ScrollContainer)). Both
+to allow panning the node around (via [ScrollContainer ](/docs/Classes/ScrollContainer)). Both
 vertical and horizontal size options are respected, and the behavior can be turned on or off
 per axis in the properties.
 
@@ -152,7 +152,7 @@ As in the example above, one of the most common ways to use this container is to
 
 A container type that arranges its child controls in a way that preserves their proportions
 automatically when the container is resized.
-(via [AspectRatioContainer ](class_AspectRatioContainer)).
+(via [AspectRatioContainer ](/docs/Classes/AspectRatioContainer)).
 It has multiple stretch modes, providing options for adjusting the child controls' sizes concerning the container:
 "fill," "width control height," "height control width," and "cover."
 
@@ -166,7 +166,7 @@ and you want the child elements to scale proportionally without losing their int
 ### FlowContainer
 
 FlowContainer is a container that arranges its child controls either horizontally or vertically,
-(via [HFlowContainer ](class_HFlowContainer) and via [VFlowContainer ](class_VFlowContainer)).
+(via [HFlowContainer ](/docs/Classes/HFlowContainer) and via [VFlowContainer ](/docs/Classes/VFlowContainer)).
 and when the available space runs out, it wraps the children to the next line or column, similar to how text wraps in a book.
 
    .. image:: img/containers_hflow.webp
@@ -179,7 +179,7 @@ useful for creating flexible layouts where the child controls adjust automatical
 
 CenterContainer is a container that automatically keeps all of its child controls centered within it at their minimum size.
 It ensures that the child controls are always aligned to the center, making it easier to create centered layouts without manual positioning.
-(via [CenterContainer ](class_CenterContainer)).
+(via [CenterContainer ](/docs/Classes/CenterContainer)).
 
    .. image:: img/containers_center.webp
 
@@ -188,7 +188,7 @@ It ensures that the child controls are always aligned to the center, making it e
 ### SubViewportContainer
 
 This is a special control that will only accept a single *Viewport* node as child, and it will display
-it as if it was an image (via [SubViewportContainer ](class_SubViewportContainer)).
+it as if it was an image (via [SubViewportContainer ](/docs/Classes/SubViewportContainer)).
 
 ## Creating custom Containers
 

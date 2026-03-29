@@ -41,7 +41,7 @@ will open a folder in your file browser, inside that folder is the
 
 The default path to search for templates is the
 ``res://script_templates/`` directory. The path can be changed by configuring the project setting
-[Editor &gt; Script &gt; Templates Search Path](class_ProjectSettings_property_editor/script/templates_search_path),
+[Editor &gt; Script &gt; Templates Search Path](/docs/Classes/ProjectSettings_property_editor/script/templates_search_path),
 both via code and the editor.
 
 If no ``script_templates`` directory is found within a project, it is simply
@@ -60,7 +60,7 @@ where:
 
 * ``template_path`` is one of the 2 locations discussed in the previous two sections.
 
-* ``node_type`` is the node it will apply to (for example, [Node ](class_Node), or [CharacterBody3D ](class_CharacterBody3D)),
+* ``node_type`` is the node it will apply to (for example, [Node ](/docs/Classes/Node), or [CharacterBody3D ](/docs/Classes/CharacterBody3D)),
   This is **case-sensitive**. If a script isn't in the proper ``node_type`` folder, it won't be detected.
 
 * ``file`` is the custom name you can chose for the template (for example, ``platformer_movement`` or ``smooth_camera``).
@@ -204,9 +204,9 @@ public partial class _CLASS_ : _BASE_
 </Tabs>
 
 The Redot editor provides a set of useful built-in node-specific templates, such as
-``basic_movement`` for both [CharacterBody2D ](class_CharacterBody2D) and
-[CharacterBody3D ](class_CharacterBody3D) and ``plugin`` for
-[EditorPlugin ](class_EditorPlugin).
+``basic_movement`` for both [CharacterBody2D ](/docs/Classes/CharacterBody2D) and
+[CharacterBody3D ](/docs/Classes/CharacterBody3D) and ``plugin`` for
+[EditorPlugin ](/docs/Classes/EditorPlugin).
 
 ## List of template placeholders
 
@@ -230,7 +230,7 @@ would get replaced whenever a template was used to create a new script, such as:
 
 The placeholders no longer work for Redot 4.x, but if the setting
 ``text_editor/completion/add_type_hints`` from
-[EditorSettings ](class_EditorSettings) is disabled, type hints
+[EditorSettings ](/docs/Classes/EditorSettings) is disabled, type hints
 for parameters and return types will be automatically removed for a few
 base types:
 

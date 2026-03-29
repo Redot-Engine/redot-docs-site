@@ -16,14 +16,14 @@ parameters and then adding randomness to them.
 
 ### Particle nodes
 
-Redot provides two different nodes for 2D particles, [class_GPUParticles2D](class_GPUParticles2D)
-and [class_CPUParticles2D](class_CPUParticles2D). GPUParticles2D is more advanced and uses the
+Redot provides two different nodes for 2D particles, [class_GPUParticles2D](/docs/Classes/GPUParticles2D)
+and [class_CPUParticles2D](/docs/Classes/CPUParticles2D). GPUParticles2D is more advanced and uses the
 GPU to process particle effects. CPUParticles2D is a CPU-driven option with
 near-feature parity with GPUParticles2D, but lower performance when using large
 amounts of particles. On the other hand, CPUParticles2D may perform better on
 low-end systems or in GPU-bottlenecked situations.
 
-While GPUParticles2D is configured via a [class_ParticleProcessMaterial](class_ParticleProcessMaterial)
+While GPUParticles2D is configured via a [class_ParticleProcessMaterial](/docs/Classes/ParticleProcessMaterial)
 (and optionally with a custom shader), the matching options are provided via
 node properties in CPUParticles2D (with the exception of the trail settings).
 

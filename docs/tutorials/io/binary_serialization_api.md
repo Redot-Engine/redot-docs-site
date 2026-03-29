@@ -6,10 +6,10 @@
 
 Redot has a serialization API based on Variant. It's used for
 converting data types to an array of bytes efficiently. This API is exposed
-via the global [bytes_to_var() ](class_@GlobalScope_method_bytes_to_var)
-and [var_to_bytes() ](class_@GlobalScope_method_var_to_bytes) functions,
+via the global [bytes_to_var() ](/docs/Classes/@GlobalScope_method_bytes_to_var)
+and [var_to_bytes() ](/docs/Classes/@GlobalScope_method_var_to_bytes) functions,
 but it is also used in the ``get_var`` and ``store_var`` methods of
-[class_FileAccess](class_FileAccess) as well as the packet APIs for [class_PacketPeer](class_PacketPeer).
+[class_FileAccess](/docs/Classes/FileAccess) as well as the packet APIs for [class_PacketPeer](/docs/Classes/PacketPeer).
 This format is *not* used for binary scenes and resources.
 
 ## Full Objects vs Object instance IDs
@@ -295,9 +295,9 @@ For each property:
 :::note
 
 Not all properties are included. Only properties that are configured with the
-[PROPERTY_USAGE_STORAGE](class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE)
+[PROPERTY_USAGE_STORAGE](/docs/Classes/@GlobalScope_constant_PROPERTY_USAGE_STORAGE)
 flag set will be serialized. You can add a new usage flag to a property by overriding the
-[_get_property_list](class_Object_private_method__get_property_list)
+[_get_property_list](/docs/Classes/Object_private_method__get_property_list)
 method in your class. You can also check how property usage is configured by
 calling ``Object._get_property_list`` See
 [PropertyUsageFlags](enum_@GlobalScope_PropertyUsageFlags) for the

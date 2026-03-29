@@ -14,7 +14,7 @@ Redot.
 ## How pausing works
 
 To pause the game the pause state must be set. This is done by assigning
-``true`` to the [SceneTree.paused ](class_SceneTree_property_paused) property:
+``true`` to the [SceneTree.paused ](/docs/Classes/SceneTree_property_paused) property:
 
 <Tabs>
 
@@ -51,7 +51,7 @@ paused by using their ``set_active`` methods.
 ## Process Modes
 
 Each node in Redot has a "Process Mode" that defines when it processes. It can
-be found and changed under a node's [Node ](class_Node) properties in the inspector.
+be found and changed under a node's [Node ](/docs/Classes/Node) properties in the inspector.
 
 ![Image](img/pausemode.webp)
 

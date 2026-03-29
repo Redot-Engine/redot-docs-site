@@ -125,7 +125,7 @@ Note that these arguments are space-separated.
 :::tip
 
 These arguments can be accessed in your script by using
-[get_cmdline_args](class_OS_method_get_cmdline_args).
+[get_cmdline_args](/docs/Classes/OS_method_get_cmdline_args).
 
 :::
 
@@ -167,7 +167,7 @@ Tags" unless you select "Enabled" under "Override Main Tags".
 :::warning
 
 If you want to pass "User" arguments, that can be accessed with
-[get_cmdline_user_args](class_OS_method_get_cmdline_user_args) then you
+[get_cmdline_user_args](/docs/Classes/OS_method_get_cmdline_user_args) then you
 must prefix them with two dashes **and a space** like `-- one two three`.
 
 Be aware that these dashes will apply to arguments added later in the

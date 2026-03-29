@@ -647,7 +647,7 @@ Note that you can only call ``my_method`` if you've previously registered it in
 your ``_bind_methods`` method. Otherwise Redot will not know about the existence
 of ``my_method``.
 
-To learn more about ``Callable``, check out the class reference here: [Callable ](class_Callable).
+To learn more about ``Callable``, check out the class reference here: [Callable ](/docs/Classes/Callable).
 
 Having your object sending out signals is more common. For our wobbling
 Redot icon, we'll do something silly just to show how it works. We're going to

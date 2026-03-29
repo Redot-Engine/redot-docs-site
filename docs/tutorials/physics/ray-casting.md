@@ -13,7 +13,7 @@ do this in 2D and 3D.
 Redot stores all the low-level game information in servers, while the
 scene is only a frontend. As such, ray casting is generally a
 lower-level task. For simple raycasts, nodes like
-[RayCast3D ](class_RayCast3D) and [RayCast2D ](class_RayCast2D)
+[RayCast3D ](/docs/Classes/RayCast3D) and [RayCast2D ](/docs/Classes/RayCast2D)
 will work, as they return every frame what the result of a raycast
 is.
 
@@ -25,25 +25,25 @@ so a way to do this by code must exist.
 In the physics world, Redot stores all the low-level collision and
 physics information in a *space*. The current 2d space (for 2D Physics)
 can be obtained by accessing
-[CanvasItem.get_world_2d().space ](class_CanvasItem_method_get_world_2d).
-For 3D, it's [Node3D.get_world_3d().space ](class_Node3D_method_get_world_3d).
+[CanvasItem.get_world_2d().space ](/docs/Classes/CanvasItem_method_get_world_2d).
+For 3D, it's [Node3D.get_world_3d().space ](/docs/Classes/Node3D_method_get_world_3d).
 
-The resulting space [RID ](class_RID) can be used in
-[PhysicsServer3D ](class_PhysicsServer3D) and
-[PhysicsServer2D ](class_PhysicsServer2D) respectively for 3D and 2D.
+The resulting space [RID ](/docs/Classes/RID) can be used in
+[PhysicsServer3D ](/docs/Classes/PhysicsServer3D) and
+[PhysicsServer2D ](/docs/Classes/PhysicsServer2D) respectively for 3D and 2D.
 
 ## Accessing space
 
 Redot physics runs by default in the same thread as game logic, but may
 be set to run on a separate thread to work more efficiently. Due to
 this, the only time accessing space is safe is during the
-[Node._physics_process() ](class_Node_private_method__physics_process)
+[Node._physics_process() ](/docs/Classes/Node_private_method__physics_process)
 callback. Accessing it from outside this function may result in an error
 due to space being *locked*.
 
 To perform queries into physics space, the
-[PhysicsDirectSpaceState2D ](class_PhysicsDirectSpaceState2D)
-and [PhysicsDirectSpaceState3D ](class_PhysicsDirectSpaceState3D)
+[PhysicsDirectSpaceState2D ](/docs/Classes/PhysicsDirectSpaceState2D)
+and [PhysicsDirectSpaceState3D ](/docs/Classes/PhysicsDirectSpaceState3D)
 must be used.
 
 Use the following code in 2D:
@@ -135,7 +135,7 @@ public override void _PhysicsProcess(double delta)
 ## Raycast query
 
 For performing a 2D raycast query, the method
-[PhysicsDirectSpaceState2D.intersect_ray() ](class_PhysicsDirectSpaceState2D_method_intersect_ray)
+[PhysicsDirectSpaceState2D.intersect_ray() ](/docs/Classes/PhysicsDirectSpaceState2D_method_intersect_ray)
 may be used. For example:
 
 <Tabs>
@@ -373,11 +373,11 @@ See [doc_physics_introduction_collision_layer_code_example](doc_physics_introduc
 
 Casting a ray from screen to 3D physics space is useful for object
 picking. There is not much need to do this because
-[CollisionObject3D ](class_CollisionObject3D)
+[CollisionObject3D ](/docs/Classes/CollisionObject3D)
 has an "input_event" signal that will let you know when it was clicked,
 but in case there is any desire to do it manually, here's how.
 
-To cast a ray from the screen, you need a [Camera3D ](class_Camera3D)
+To cast a ray from the screen, you need a [Camera3D ](/docs/Classes/Camera3D)
 node. A ``Camera3D`` can be in two projection modes: perspective and
 orthogonal. Because of this, both the ray origin and direction must be
 obtained. This is because ``origin`` changes in orthogonal mode, while

@@ -60,7 +60,7 @@ The following optional placeholders will enable some extra features in your cust
 
 - ``$Redot_PROJECT_NAME``:
   The project name as defined in the
-  [Name ](class_ProjectSettings_property_application/config/name) setting
+  [Name ](/docs/Classes/ProjectSettings_property_application/config/name) setting
   in **Project Settings &gt; Application &gt; Config**.
   It is a good idea to use it as a ``&lt;title&gt;`` in your template.
 
@@ -72,12 +72,12 @@ The following optional placeholders will enable some extra features in your cust
 
 - ``$Redot_SPLASH``:
   The path to the image used as the boot splash as defined in the
-  [Image ](class_ProjectSettings_property_application/boot_splash/image) setting
+  [Image ](/docs/Classes/ProjectSettings_property_application/boot_splash/image) setting
   in **Project Settings &gt; Application &gt; Boot Splash**.
 
 - ``$Redot_SPLASH_COLOR``
   The splash screen background color as defined in the
-  [BG Color ](class_ProjectSettings_property_application/boot_splash/bg_color) setting
+  [BG Color ](/docs/Classes/ProjectSettings_property_application/boot_splash/bg_color) setting
   in **Project Settings &gt; Application &gt; Boot Splash**, converted to a hex color code.
 
 When the custom page is ready, it can be selected in the export options under the *Html / Custom Html Shell*
@@ -162,7 +162,7 @@ allows to test for a specific major version of WebGL.
 
 As the real executable file does not exist in the Web environment, the engine only stores a virtual
 filename formed from the base name of loaded engine files. This value affects the output of the
-[OS.get_executable_path() ](class_OS_method_get_executable_path) method and defines the name of
+[OS.get_executable_path() ](/docs/Classes/OS_method_get_executable_path) method and defines the name of
 the automatically started main pack. The :js:attr:`executable` override option can be
 used to override this value.
 

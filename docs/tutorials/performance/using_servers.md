@@ -41,22 +41,22 @@ At the core, Redot uses the concept of Servers. They are very low-level APIs to 
 rendering, physics, sound, etc. The scene system is built on top of them and uses them directly.
 The most common servers are:
 
-* [RenderingServer ](class_RenderingServer): handles everything related to graphics.
-* [PhysicsServer3D ](class_PhysicsServer3D): handles everything related to 3D physics.
-* [PhysicsServer2D ](class_PhysicsServer2D): handles everything related to 2D physics.
-* [AudioServer ](class_AudioServer): handles everything related to audio.
+* [RenderingServer ](/docs/Classes/RenderingServer): handles everything related to graphics.
+* [PhysicsServer3D ](/docs/Classes/PhysicsServer3D): handles everything related to 3D physics.
+* [PhysicsServer2D ](/docs/Classes/PhysicsServer2D): handles everything related to 2D physics.
+* [AudioServer ](/docs/Classes/AudioServer): handles everything related to audio.
 
 Explore their APIs and you will realize that all the functions provided are low-level
 implementations of everything Redot allows you to do.
 
 ## RIDs
 
-The key to using servers is understanding Resource ID ([RID ](class_RID)) objects. These are opaque
+The key to using servers is understanding Resource ID ([RID ](/docs/Classes/RID)) objects. These are opaque
 handles to the server implementation. They are allocated and freed manually. Almost every
 function in the servers requires RIDs to access the actual resource.
 
 Most Redot nodes and resources contain these RIDs from the servers internally, and they can
-be obtained with different functions. In fact, anything that inherits [Resource ](class_Resource)
+be obtained with different functions. In fact, anything that inherits [Resource ](/docs/Classes/Resource)
 can be directly casted to an RID. Not all resources contain an RID, though: in such cases, the RID will be empty. The resource can then be passed to server APIs as an RID.
 
 :::warning
@@ -69,23 +69,23 @@ outside the server, or else both it and its RID will be erased.
 
 For nodes, there are many functions available:
 
-* For CanvasItem, the [CanvasItem.get_canvas_item() ](class_CanvasItem_method_get_canvas_item)
+* For CanvasItem, the [CanvasItem.get_canvas_item() ](/docs/Classes/CanvasItem_method_get_canvas_item)
   method will return the canvas item RID in the server.
-* For CanvasLayer, the [CanvasLayer.get_canvas() ](class_CanvasLayer_method_get_canvas)
+* For CanvasLayer, the [CanvasLayer.get_canvas() ](/docs/Classes/CanvasLayer_method_get_canvas)
   method will return the canvas RID in the server.
-* For Viewport, the [Viewport.get_viewport_rid() ](class_Viewport_method_get_viewport_rid)
+* For Viewport, the [Viewport.get_viewport_rid() ](/docs/Classes/Viewport_method_get_viewport_rid)
   method will return the viewport RID in the server.
-* For 3D, the [World3D ](class_World3D) resource (obtainable in the [Viewport ](class_Viewport)
-  and [Node3D ](class_Node3D) nodes)
+* For 3D, the [World3D ](/docs/Classes/World3D) resource (obtainable in the [Viewport ](/docs/Classes/Viewport)
+  and [Node3D ](/docs/Classes/Node3D) nodes)
   contains functions to get the *RenderingServer Scenario*, and the *PhysicsServer Space*. This
   allows creating 3D objects directly with the server API and using them.
-* For 2D, the [World2D ](class_World2D) resource (obtainable in the [Viewport ](class_Viewport)
-  and [CanvasItem ](class_CanvasItem) nodes)
+* For 2D, the [World2D ](/docs/Classes/World2D) resource (obtainable in the [Viewport ](/docs/Classes/Viewport)
+  and [CanvasItem ](/docs/Classes/CanvasItem) nodes)
   contains functions to get the *RenderingServer Canvas*, and the *Physics2DServer Space*. This
   allows creating 2D objects directly with the server API and using them.
-* The [VisualInstance3D](class_VisualInstance3D) class, allows getting the scenario *instance* and
-  *instance base* via the [VisualInstance3D.get_instance() ](class_VisualInstance3D_method_get_instance)
-  and [VisualInstance3D.get_base() ](class_VisualInstance3D_method_get_base) respectively.
+* The [VisualInstance3D](/docs/Classes/VisualInstance3D) class, allows getting the scenario *instance* and
+  *instance base* via the [VisualInstance3D.get_instance() ](/docs/Classes/VisualInstance3D_method_get_instance)
+  and [VisualInstance3D.get_base() ](/docs/Classes/VisualInstance3D_method_get_base) respectively.
 
 Try exploring the nodes and resources you are familiar with and find the functions to obtain the server *RIDs*.
 
@@ -95,7 +95,7 @@ functions should always be used for creating and controlling new ones and intera
 ## Creating a sprite
 
 This is an example of how to create a sprite from code and move it using the low-level
-[CanvasItem ](class_CanvasItem) API.
+[CanvasItem ](/docs/Classes/CanvasItem) API.
 
 <Tabs>
 
@@ -251,8 +251,8 @@ public partial class MyNode3D : Node3D
 
 ## Creating a 2D RigidBody and moving a sprite with it
 
-This creates a [RigidBody2D ](class_RigidBody2D) using the [PhysicsServer2D ](class_PhysicsServer2D) API,
-and moves a [CanvasItem ](class_CanvasItem) when the body moves.
+This creates a [RigidBody2D ](/docs/Classes/RigidBody2D) using the [PhysicsServer2D ](/docs/Classes/PhysicsServer2D) API,
+and moves a [CanvasItem ](/docs/Classes/CanvasItem) when the body moves.
 
 <Tabs>
 
@@ -333,7 +333,7 @@ public partial class MyNode2D : Node2D
 </Tabs>
 
 The 3D version should be very similar, as 2D and 3D physics servers are identical (using
-[RigidBody3D ](class_RigidBody3D) and [PhysicsServer3D ](class_PhysicsServer3D) respectively).
+[RigidBody3D ](/docs/Classes/RigidBody3D) and [PhysicsServer3D ](/docs/Classes/PhysicsServer3D) respectively).
 
 ## Getting data from the servers
 

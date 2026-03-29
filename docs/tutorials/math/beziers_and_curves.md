@@ -281,9 +281,9 @@ work and look in Redot.
 
 ## Curve2D, Curve3D, Path and Path2D
 
-There are two objects that contain curves: [Curve3D ](class_Curve3D) and [Curve2D ](class_Curve2D) (for 3D and 2D respectively).
+There are two objects that contain curves: [Curve3D ](/docs/Classes/Curve3D) and [Curve2D ](/docs/Classes/Curve2D) (for 3D and 2D respectively).
 
-They can contain several points, allowing for longer paths. It is also possible to set them to nodes: [Path3D ](class_Path3D) and [Path2D ](class_Path2D) (also for 3D and 2D respectively):
+They can contain several points, allowing for longer paths. It is also possible to set them to nodes: [Path3D ](/docs/Classes/Path3D) and [Path2D ](/docs/Classes/Path2D) (also for 3D and 2D respectively):
 
 ![Image](img/bezier_path_2d.png)
 
@@ -344,14 +344,14 @@ Additionally, if both control points were ``0, 0`` (remember they are relative v
 Before drawing Bezier curves, *tessellation* is required. This is often done with a recursive or divide and conquer function that splits the curve until the curvature amount becomes less than a certain threshold.
 
 The *Curve* classes provide this via the
-[Curve2D.tessellate() ](class_Curve2D_method_tessellate) function (which receives optional ``stages`` of recursion and angle ``tolerance`` arguments). This way, drawing something based on a curve is easier.
+[Curve2D.tessellate() ](/docs/Classes/Curve2D_method_tessellate) function (which receives optional ``stages`` of recursion and angle ``tolerance`` arguments). This way, drawing something based on a curve is easier.
 
 ## Traversal
 
 The last common use case for the curves is to traverse them. Because of what was mentioned before regarding constant speed, this is also difficult.
 
-To make this easier, the curves need to be *baked* into equidistant points. This way, they can be approximated with regular interpolation (which can be improved further with a cubic option). To do this, just use the [Curve3D.sample_baked()](class_Curve3D_method_sample_baked) method together with
-[Curve2D.get_baked_length()](class_Curve2D_method_get_baked_length). The first call to either of them will bake the curve internally.
+To make this easier, the curves need to be *baked* into equidistant points. This way, they can be approximated with regular interpolation (which can be improved further with a cubic option). To do this, just use the [Curve3D.sample_baked()](/docs/Classes/Curve3D_method_sample_baked) method together with
+[Curve2D.get_baked_length()](/docs/Classes/Curve2D_method_get_baked_length). The first call to either of them will bake the curve internally.
 
 Traversal at constant speed, then, can be done with the following pseudo-code:
 

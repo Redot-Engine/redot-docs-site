@@ -18,17 +18,17 @@ If you are not familiar with shaders, start by reading
 
 ## Creating a VisualShader
 
-VisualShaders can be created in any [class_ShaderMaterial](class_ShaderMaterial). To begin using
+VisualShaders can be created in any [class_ShaderMaterial](/docs/Classes/ShaderMaterial). To begin using
 VisualShaders, create a new ``ShaderMaterial`` in an object of your choice.
 
 ![Image](img/shader_material_create_mesh.webp)
 
-Then assign a [class_Shader](class_Shader) resource to the ``Shader`` property.
+Then assign a [class_Shader](/docs/Classes/Shader) resource to the ``Shader`` property.
 
 ![Image](img/visual_shader_create.webp)
 
 Click on the new ``Shader`` resource and the Create Shader dialog will
-open automatically. Change the Type option to [class_VisualShader](class_VisualShader)
+open automatically. Change the Type option to [class_VisualShader](/docs/Classes/VisualShader)
 in the dropdown, then give it a name.
 
 ![Image](img/visual_shader_create2.webp)

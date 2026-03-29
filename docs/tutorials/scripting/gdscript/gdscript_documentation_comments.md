@@ -251,7 +251,7 @@ Here's the list of available tags:
 
 :::note
 
-1. Currently only [class_@GDScript](class_@GDScript) has annotations.
+1. Currently only [class_@GDScript](/docs/Classes/@GDScript) has annotations.
 2. ``[kbd]`` disables BBCode until the parser encounters ``[/kbd]``.
 3. ``[code]`` disables BBCode until the parser encounters ``[/code]``.
 4. ``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``.

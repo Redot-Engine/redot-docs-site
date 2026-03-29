@@ -874,7 +874,7 @@ roughness, metallic, and height textures typically do not need a ``source_color`
 hint.
 
 Using ``source_color`` hint is required in the Forward+ and Mobile renderers,
-and in ``canvas_item`` shaders when [HDR 2D](class_ProjectSettings_property_rendering/viewport/hdr_2d)
+and in ``canvas_item`` shaders when [HDR 2D](/docs/Classes/ProjectSettings_property_rendering/viewport/hdr_2d)
 is enabled. The ``source_color`` hint is optional for the Compatibility renderer,
 and for ``canvas_item`` shaders if ``HDR 2D`` is disabled. However, it is
 recommended to always use the ``source_color`` hint, because it works even
@@ -957,7 +957,7 @@ be ignored as the global uniform must always be defined in the Project Settings
 anyway.
 
 To change the value of a global uniform at runtime, use the
-[RenderingServer.global_shader_parameter_set ](class_RenderingServer_method_global_shader_parameter_set)
+[RenderingServer.global_shader_parameter_set ](/docs/Classes/RenderingServer_method_global_shader_parameter_set)
 method in a script:
 
 ```gdscript
@@ -1038,8 +1038,8 @@ the inspector:
    Setting a per-instance uniform's value in the GeometryInstance3D section of the inspector
 
 Per-instance uniform values can also be set at runtime using
-[set_instance_shader_parameter ](class_GeometryInstance3D_method_set_instance_shader_parameter)
-method on a node that inherits from [class_GeometryInstance3D](class_GeometryInstance3D):
+[set_instance_shader_parameter ](/docs/Classes/GeometryInstance3D_method_set_instance_shader_parameter)
+method on a node that inherits from [class_GeometryInstance3D](/docs/Classes/GeometryInstance3D):
 
 ```gdscript
 $MeshInstance3D.set_instance_shader_parameter("my_color", Color(0.3, 0.6, 1.0))

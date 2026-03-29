@@ -26,15 +26,15 @@ position.
 ## Loading vs. preloading
 
 In GDScript, there exists the global
-[preload ](class_@GDScript_method_preload) method. It loads resources as
+[preload ](/docs/Classes/@GDScript_method_preload) method. It loads resources as
 early as possible to front-load the "loading" operations and avoid loading
 resources while in the middle of performance-sensitive code.
 
-Its counterpart, the [load ](class_@GDScript_method_load) method, loads a
+Its counterpart, the [load ](/docs/Classes/@GDScript_method_load) method, loads a
 resource only when it reaches the load statement. That is, it will load a
 resource in-place which can cause slowdowns when it occurs in the middle of
 sensitive processes. The ``load()`` function is also an alias for
-[ResourceLoader.load(path) ](class_ResourceLoader_method_load) which is
+[ResourceLoader.load(path) ](/docs/Classes/ResourceLoader_method_load) which is
 accessible to *all* scripting languages.
 
 So, when exactly does preloading occur versus loading, and when should one use
@@ -164,7 +164,7 @@ consider:
       would be to unload the entire script. If they are instead loaded
       properties, then one can set them to ``null`` and remove all references
       to the resource entirely (which, as a
-      [RefCounted ](class_RefCounted)-extending type, will cause the
+      [RefCounted ](/docs/Classes/RefCounted)-extending type, will cause the
       resources to delete themselves from memory).
 
 ## Large levels: static vs. dynamic

@@ -76,7 +76,7 @@ from left to right:
   there is more than one node in the clicked area.
 - **Rotation pivot**: Sets the rotation pivot to rotate node(s) around.
   An added node has its rotation pivot at ``x: 0``, ``y: 0``, by default, with
-  exceptions. For example, the default pivot for a [Sprite2D ](class_Sprite2D) is its 
+  exceptions. For example, the default pivot for a [Sprite2D ](/docs/Classes/Sprite2D) is its 
   center if the ``centered`` property is set to ``true``. If you would like to change the 
   rotation pivot of a node, click this button and choose a new location by left clicking. 
   The node rotates considering this point. If you have multiple nodes selected, this icon 
@@ -296,14 +296,14 @@ Viewport has a **View** menu which provides several options to change the look o
 
 ## Node2D and Control node
 
-[CanvasItem ](class_CanvasItem) is the base node for 2D. [Node2D ](class_Node2D) is the base node
-for 2D game objects, and [Control ](class_Control) is the base node 
-for everything GUI. For 3D, Redot uses the [Node3D ](class_Node3D) node.
+[CanvasItem ](/docs/Classes/CanvasItem) is the base node for 2D. [Node2D ](/docs/Classes/Node2D) is the base node
+for 2D game objects, and [Control ](/docs/Classes/Control) is the base node 
+for everything GUI. For 3D, Redot uses the [Node3D ](/docs/Classes/Node3D) node.
 
 ## 3D in 2D
 
 It is possible to display 3D scenes in 2D screen. This is achieved by adding a 
-[SubViewport ](class_SubViewport) as a child.
+[SubViewport ](/docs/Classes/SubViewport) as a child.
 Then, you can drag a 3D scene as a child of the SubViewport:
 
 ![Image](img/3d_in_2d_demo_editor.webp)

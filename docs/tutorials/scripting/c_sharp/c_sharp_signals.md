@@ -9,8 +9,8 @@ Signals are implemented using C# events, the idiomatic way to represent
 recommended way to use signals in C# and the focus of this page.
 
 In some cases it's necessary to use the older
-[Connect()](class_object_method_connect) and
-[Disconnect()](class_object_method_disconnect) APIs.
+[Connect()](/docs/Classes/object_method_connect) and
+[Disconnect()](/docs/Classes/object_method_disconnect) APIs.
 See [using_connect_and_disconnect](using_connect_and_disconnect) for more details.
 
 If you encounter a ``System.ObjectDisposedException`` while handling a signal,
@@ -115,7 +115,7 @@ Sometimes you'll want to bind values to a signal when the connection is establis
 (or in addition to) when the signal is emitted. To do so, you can use an anonymous function like in
 the following example.
 
-Here, the [Button.Pressed ](class_BaseButton_signal_pressed) signal does not take any argument. But we
+Here, the [Button.Pressed ](/docs/Classes/BaseButton_signal_pressed) signal does not take any argument. But we
 want to use the same ``ModifyValue`` for both the "plus" and "minus" buttons. So we bind the
 modifier value at the time we're connecting the signals.
 
@@ -157,8 +157,8 @@ public override void _Ready()
 ## Using Connect and Disconnect
 
 In general, it isn't recommended to use
-[Connect()](class_object_method_connect) and
-[Disconnect()](class_object_method_disconnect). These APIs don't provide as
+[Connect()](/docs/Classes/object_method_connect) and
+[Disconnect()](/docs/Classes/object_method_disconnect). These APIs don't provide as
 much type safety as the events. However, they're necessary for
 [connecting to signals defined by GDScript ](connecting_to_signals_cross_language)
 and passing [ConnectFlags](enum_Object_ConnectFlags).

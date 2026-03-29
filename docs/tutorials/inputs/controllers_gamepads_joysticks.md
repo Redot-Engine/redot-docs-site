@@ -197,13 +197,13 @@ game. For instance, in a racing game, you can convey the surface the car is
 currently driving on through vibration, or create a sudden vibration on a crash.
 
 Use the Input singleton's
-[start_joy_vibration](class_Input_method_start_joy_vibration) method to
+[start_joy_vibration](/docs/Classes/Input_method_start_joy_vibration) method to
 start vibrating a gamepad. Use
-[stop_joy_vibration](class_Input_method_stop_joy_vibration) to stop
+[stop_joy_vibration](/docs/Classes/Input_method_stop_joy_vibration) to stop
 vibration early (useful if no duration was specified when starting).
 
 On mobile devices, you can also use
-[vibrate_handheld](class_Input_method_vibrate_handheld) to vibrate the
+[vibrate_handheld](/docs/Classes/Input_method_vibrate_handheld) to vibrate the
 device itself (independently from the gamepad). On Android, this requires the
 ``VIBRATE`` permission to be enabled in the Android export preset before
 exporting the project.
@@ -255,10 +255,10 @@ known as "echo" events). This is because the operating system never sends "echo"
 events for controller input in the first place.
 
 If you want controller buttons to send echo events, you will have to generate
-[class_InputEvent](class_InputEvent) objects by code and parse them using
-[Input.parse_input_event() ](class_Input_method_parse_input_event)
+[class_InputEvent](/docs/Classes/InputEvent) objects by code and parse them using
+[Input.parse_input_event() ](/docs/Classes/Input_method_parse_input_event)
 at regular intervals. This can be accomplished
-with the help of a [class_Timer](class_Timer) node.
+with the help of a [class_Timer](/docs/Classes/Timer) node.
 
 ### Window focus
 
@@ -399,7 +399,7 @@ path\to\Redot.exe
 
 To test mappings on non-desktop platforms or to distribute your project with
 additional controller mappings, you can add them by calling
-[Input.add_joy_mapping() ](class_Input_method_add_joy_mapping)
+[Input.add_joy_mapping() ](/docs/Classes/Input_method_add_joy_mapping)
 as early as possible in a script's ``_ready()`` function.
 
 ### My controller works on a given platform, but not on another platform.

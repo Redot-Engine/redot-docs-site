@@ -10,15 +10,15 @@ Redot provides more lightweight objects for creating APIs which nodes use.
 Be sure to keep these in mind as options when designing how you wish to build
 your project's features.
 
-1. [Object ](class_Object): The ultimate lightweight object, the original
+1. [Object ](/docs/Classes/Object): The ultimate lightweight object, the original
    Object must use manual memory management. With that said, it isn't too
    difficult to create one's own custom data structures, even node structures,
-   that are also lighter than the [Node ](class_Node) class.
+   that are also lighter than the [Node ](/docs/Classes/Node) class.
 
-   - **Example:** See the [Tree ](class_Tree) node. It supports a high level
+   - **Example:** See the [Tree ](/docs/Classes/Tree) node. It supports a high level
      of customization for a table of content with an arbitrary number of
      rows and columns. The data that it uses to generate its visualization
-     though is actually a tree of [TreeItem ](class_TreeItem) Objects.
+     though is actually a tree of [TreeItem ](/docs/Classes/TreeItem) Objects.
 
    - **Advantages:** Simplifying one's API to smaller scoped objects helps improve
      its accessibility and improve iteration time. Rather than working with the
@@ -34,27 +34,27 @@ this would trigger an error state when one next accesses it.
 
 :::
 
-2. [RefCounted ](class_RefCounted): Only a little more complex than Object.
+2. [RefCounted ](/docs/Classes/RefCounted): Only a little more complex than Object.
    They track references to themselves, only deleting loaded memory when no
    further references to themselves exist. These are useful in the majority of
    cases where one needs data in a custom class.
 
-   - **Example:** See the [FileAccess ](class_FileAccess) object. It functions
+   - **Example:** See the [FileAccess ](/docs/Classes/FileAccess) object. It functions
      just like a regular Object except that one need not delete it themselves.
 
    - **Advantages:** same as the Object.
 
-3. [Resource ](class_Resource): Only slightly more complex than RefCounted.
+3. [Resource ](/docs/Classes/Resource): Only slightly more complex than RefCounted.
    They have the innate ability to serialize/deserialize (i.e. save and load)
    their object properties to/from Redot resource files.
 
    - **Example:** Scripts, PackedScene (for scene files), and other types like
-     each of the [AudioEffect ](class_AudioEffect) classes. Each of these
+     each of the [AudioEffect ](/docs/Classes/AudioEffect) classes. Each of these
      can be saved and loaded, therefore they extend from Resource.
 
    - **Advantages:** Much has
      [already been said ](../scripting/resources.md)
-     on [Resource ](class_Resource)'s advantages over traditional data
+     on [Resource ](/docs/Classes/Resource)'s advantages over traditional data
      storage methods. In the context of using Resources over Nodes though,
      their main advantage is in Inspector-compatibility. While nearly as
      lightweight as Object/RefCounted, they can still display and export

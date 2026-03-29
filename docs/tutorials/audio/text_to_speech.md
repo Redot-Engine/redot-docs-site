@@ -77,7 +77,7 @@ DisplayServer.TtsSpeak("Goodbye!", voiceId);
 
 ## Requirements for functionality
 
-Redot includes text-to-speech functionality. You can find these under the [DisplayServer class ](class_DisplayServer).
+Redot includes text-to-speech functionality. You can find these under the [DisplayServer class ](/docs/Classes/DisplayServer).
 
 Redot depends on system libraries for text-to-speech functionality. These libraries are installed by default on Windows and macOS, but not on all Linux distributions. If they are not present, text-to-speech functionality will not work. Specifically, the ``tts_get_voices()`` method will return an empty list, indicating that there are no usable voices.
 

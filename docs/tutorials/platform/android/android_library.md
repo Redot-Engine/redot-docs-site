@@ -96,7 +96,7 @@ implementation("org.godotengine:godot:<version>")
 
   - If your build system does not support including hidden directories, you can
     configure the Redot project to not use hidden directories by deselecting 
-    [Application &gt; Config &gt; Use Hidden Project Data Directory](class_ProjectSettings_property_application/config/use_hidden_project_data_directory)
+    [Application &gt; Config &gt; Use Hidden Project Data Directory](/docs/Classes/ProjectSettings_property_application/config/use_hidden_project_data_directory)
     in the Project Settings.
 
 ```groovy

@@ -45,8 +45,8 @@ skills valuable.
 Redot stores all variables in the scripting API in the
 [Variant ](../../Contributing/Development/core_and_modules/variant_class.md) class.
 Variants can store Variant-compatible data structures such as
-[Array ](class_Array) and [Dictionary ](class_Dictionary) as well
-as [Objects ](class_Object).
+[Array ](/docs/Classes/Array) and [Dictionary ](/docs/Classes/Dictionary) as well
+as [Objects ](/docs/Classes/Object).
 
 Redot implements Array as a ``Vector&lt;Variant&gt;``. The engine stores the Array
 contents in a contiguous section of memory, i.e. they are in a row adjacent
@@ -58,7 +58,7 @@ For those unfamiliar with C++, a Vector is the name of the
 array object in traditional C++ libraries. It is a "templated"
 type, meaning that its records can only contain a particular type (denoted
 by angled brackets). So, for example, a
-[PackedStringArray ](class_PackedStringArray) would be something like
+[PackedStringArray ](/docs/Classes/PackedStringArray) would be something like
 a ``Vector&lt;String&gt;``.
 
 :::
@@ -173,7 +173,7 @@ do not. An overview of their operational details is as follows:
 Redot implements Objects as stupid, but dynamic containers of data content.
 Objects query data sources when posed questions. For example, to answer
 the question, "do you have a property called, 'position'?", it might ask
-its [script ](class_Script) or the [ClassDB ](class_ClassDB).
+its [script ](/docs/Classes/Script) or the [ClassDB ](/docs/Classes/ClassDB).
 One can find more information about what objects are and how they work in
 the [doc_what_are_Redot_classes](doc_what_are_Redot_classes) article.
 
@@ -327,7 +327,7 @@ unnecessary.
 Under what circumstances should one use each of Redot's animation classes?
 The answer may not be immediately clear to new Redot users.
 
-[AnimatedTexture ](class_AnimatedTexture) is a texture that
+[AnimatedTexture ](/docs/Classes/AnimatedTexture) is a texture that
 the engine draws as an animated loop rather than a static image.
 Users can manipulate...
 
@@ -335,21 +335,21 @@ Users can manipulate...
 
 2. the number of regions contained within the texture (frames).
 
-Redot's [RenderingServer ](class_RenderingServer) then draws
+Redot's [RenderingServer ](/docs/Classes/RenderingServer) then draws
 the regions in sequence at the prescribed rate. The good news is that this
 involves no extra logic on the part of the engine. The bad news is
 that users have very little control.
 
-Also note that AnimatedTexture is a [Resource ](class_Resource) unlike
-the other [Node ](class_Node) objects discussed here. One might create
-a [Sprite2D ](class_Sprite2D) node that uses AnimatedTexture as its texture.
+Also note that AnimatedTexture is a [Resource ](/docs/Classes/Resource) unlike
+the other [Node ](/docs/Classes/Node) objects discussed here. One might create
+a [Sprite2D ](/docs/Classes/Sprite2D) node that uses AnimatedTexture as its texture.
 Or (something the others can't do) one could add AnimatedTextures as tiles
-in a [TileSet ](class_TileSet) and integrate it with a
-[TileMapLayer ](class_TileMapLayer) for many auto-animating backgrounds that
+in a [TileSet ](/docs/Classes/TileSet) and integrate it with a
+[TileMapLayer ](/docs/Classes/TileMapLayer) for many auto-animating backgrounds that
 all render in a single batched draw call.
 
-The [AnimatedSprite2D ](class_AnimatedSprite2D) node, in combination with the
-[SpriteFrames ](class_SpriteFrames) resource, allows one to create a
+The [AnimatedSprite2D ](/docs/Classes/AnimatedSprite2D) node, in combination with the
+[SpriteFrames ](/docs/Classes/SpriteFrames) resource, allows one to create a
 variety of animation sequences through spritesheets, flip between animations,
 and control their speed, regional offset, and orientation. This makes them
 well-suited to controlling 2D frame-based animations.
@@ -357,7 +357,7 @@ well-suited to controlling 2D frame-based animations.
 If one needs to trigger other effects in relation to animation changes (for
 example, create particle effects, call functions, or manipulate other
 peripheral elements besides the frame-based animation), then one will need to use
-an [AnimationPlayer ](class_AnimationPlayer) node in conjunction with
+an [AnimationPlayer ](/docs/Classes/AnimationPlayer) node in conjunction with
 the AnimatedSprite2D.
 
 AnimationPlayers are also the tool one will need to use if they wish to design
@@ -376,6 +376,6 @@ While one needs an AnimationPlayer to design each of the individual
 animation sequences for a game, it can also be useful to combine animations
 for blending, i.e. enabling smooth transitions between these animations. There
 may also be a hierarchical structure between animations that one plans out for
-their object. These are the cases where the [AnimationTree ](class_AnimationTree)
+their object. These are the cases where the [AnimationTree ](/docs/Classes/AnimationTree)
 shines. One can find an in-depth guide on using the AnimationTree
 [here ](../animation/animation_tree.md).

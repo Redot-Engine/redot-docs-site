@@ -26,7 +26,7 @@ set here controls what kind of particle trail you will end up with.
 
 The simplest type of particle trail is the ribbon trail. Navigate to the ``Draw Passes``
 section and select ``New RibbonTrailMesh`` from the options for ``Pass 1``. A
-[RibbonTrailMesh ](class_RibbonTrailMesh) is a simple quad that is divided into
+[RibbonTrailMesh ](/docs/Classes/RibbonTrailMesh) is a simple quad that is divided into
 sections and then stretched and repeated along those sections.
 
 Assign a new [Standard Material ](../standard_material_3d.md) to the ``Material``
@@ -82,7 +82,7 @@ is that tube trails emit cylindrical meshes instead of quads.
    Tube trails emit cylindrical particles
 
 To create a tube trail, navigate to the ``Draw Passes`` section and select ``New TubeTrailMesh``
-from the options for ``Pass 1``. A [TubeTrailMesh ](class_TubeTrailMesh) is a cylinder
+from the options for ``Pass 1``. A [TubeTrailMesh ](/docs/Classes/TubeTrailMesh) is a cylinder
 that is divided into sections and then stretched and repeated along those sections. Assign a
 new [Standard Material ](../standard_material_3d.md) to the ``Material`` property and enable
 ``Use Particle Trails`` in the ``Transform`` property group. The particles should now be emitting

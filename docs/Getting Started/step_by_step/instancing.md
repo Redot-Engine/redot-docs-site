@@ -13,8 +13,8 @@ pack information about your scene's content.
 
 Here's an example of a ball. It's composed of a :ref:`RigidBody2D
 &lt;class_RigidBody2D&gt;` node as its root named Ball, which allows the ball to fall
-and bounce on walls, a [Sprite2D](class_Sprite2D) node, and a
-[CollisionShape2D](class_CollisionShape2D).
+and bounce on walls, a [Sprite2D](/docs/Classes/Sprite2D) node, and a
+[CollisionShape2D](/docs/Classes/CollisionShape2D).
 
 ![Image](img/instancing_ball_scene.webp)
 

@@ -7,7 +7,7 @@ This can for example be used to simulate cloth or to create more realistic chara
 
 ### Basic set-up
 
-A [SoftBody3D ](class_SoftBody3D) node is used for soft body simulations.
+A [SoftBody3D ](/docs/Classes/SoftBody3D) node is used for soft body simulations.
 
 We will create a bouncy cube to demonstrate the setup of a soft body.
 
@@ -51,7 +51,7 @@ Subdivision generates a more tessellated mesh for better simulations.
 
 :::
 
-Add a [BoneAttachment3D ](class_BoneAttachment3D) node under the skeleton node and select the Neck bone to attach the cloak to the character skeleton.
+Add a [BoneAttachment3D ](/docs/Classes/BoneAttachment3D) node under the skeleton node and select the Neck bone to attach the cloak to the character skeleton.
 
 :::note
 ``BoneAttachment3D`` node is to attach objects to a bone of an armature. The attached object will follow the bone's movement, weapon of a character can be attached this way.

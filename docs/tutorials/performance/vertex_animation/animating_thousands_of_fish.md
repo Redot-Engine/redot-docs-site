@@ -6,8 +6,8 @@ This tutorial explores a technique used in the game [ABZU ](https://www.gdcvault
 for rendering and animating thousands of fish using vertex animation and
 static mesh instancing.
 
-In Redot, this can be accomplished with a custom [Shader ](class_Shader) and
-a [MultiMeshInstance3D ](class_MultiMeshInstance3D). Using the following technique you
+In Redot, this can be accomplished with a custom [Shader ](/docs/Classes/Shader) and
+a [MultiMeshInstance3D ](/docs/Classes/MultiMeshInstance3D). Using the following technique you
 can render thousands of animated objects, even on low-end hardware.
 
 We will start by animating one fish. Then, we will see how to extend that animation to
@@ -15,8 +15,8 @@ thousands of fish.
 
 ## Animating one Fish
 
-We will start with a single fish. Load your fish model into a [MeshInstance3D ](class_MeshInstance3D)
-and add a new [ShaderMaterial ](class_ShaderMaterial).
+We will start with a single fish. Load your fish model into a [MeshInstance3D ](/docs/Classes/MeshInstance3D)
+and add a new [ShaderMaterial ](/docs/Classes/ShaderMaterial).
 
 Here is the fish we will be using for the example images, you can use any fish model you like.
 
@@ -29,7 +29,7 @@ Dedication https://creativecommons.org/publicdomain/zero/1.0/
 
 :::
 
-Typically, you would use bones and a [Skeleton3D ](class_Skeleton3D) to animate objects. However,
+Typically, you would use bones and a [Skeleton3D ](/docs/Classes/Skeleton3D) to animate objects. However,
 bones are animated on the CPU and so you end having to calculate thousands of operations every
 frame and it becomes impossible to have thousands of objects. Using vertex animation in a vertex
 shader, you avoid using bones and can instead calculate the full animation in a few lines of code
@@ -198,12 +198,12 @@ A MultiMeshInstance3D node is created and used the same way you would make a Mes
 For this tutorial, we will name the MultiMeshInstance3D node ``School``, because it will contain
 a school of fish.
 
-Once you have a MultiMeshInstance3D add a [MultiMesh ](class_MultiMesh), and to that
-MultiMesh add your [Mesh ](class_Mesh) with the shader from above.
+Once you have a MultiMeshInstance3D add a [MultiMesh ](/docs/Classes/MultiMesh), and to that
+MultiMesh add your [Mesh ](/docs/Classes/Mesh) with the shader from above.
 
 MultiMeshes draw your Mesh with three additional per-instance properties: Transform (rotation,
 translation, scale), Color, and Custom. Custom is used to pass in 4 multi-use variables using
-a [Color ](class_Color).
+a [Color ](/docs/Classes/Color).
 
 ``instance_count`` specifies how many instances of the mesh you want to draw. For now, leave
 ``instance_count`` at ``0`` because you cannot change any of the other parameters while
@@ -288,5 +288,5 @@ moving. You can move them by updating the per-instance transform for each fish e
 doing so will be faster than moving thousands of MeshInstance3Ds per frame, it'll still likely be
 slow.
 
-In the next tutorial we will cover how to use [GPUParticles3D ](class_GPUParticles3D) to take advantage
+In the next tutorial we will cover how to use [GPUParticles3D ](/docs/Classes/GPUParticles3D) to take advantage
 of the GPU and move each fish around individually while still receiving the benefits of instancing.

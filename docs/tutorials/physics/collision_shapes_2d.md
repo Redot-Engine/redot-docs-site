@@ -10,11 +10,11 @@ This guide explains:
 Redot provides many kinds of collision shapes, with different performance and
 accuracy tradeoffs.
 
-You can define the shape of a [class_PhysicsBody2D](class_PhysicsBody2D) by adding one or more
-[CollisionShape2Ds ](class_CollisionShape2D) or
-[CollisionPolygon2Ds ](class_CollisionPolygon2D) as *direct* child nodes.
+You can define the shape of a [class_PhysicsBody2D](/docs/Classes/PhysicsBody2D) by adding one or more
+[CollisionShape2Ds ](/docs/Classes/CollisionShape2D) or
+[CollisionPolygon2Ds ](/docs/Classes/CollisionPolygon2D) as *direct* child nodes.
 Indirect child nodes (i.e. children of child nodes) will be ignored and won't be
-used as collision shapes. Also, note that you must add a [class_Shape2D](class_Shape2D)
+used as collision shapes. Also, note that you must add a [class_Shape2D](/docs/Classes/Shape2D)
 *resource* to collision shape nodes in the Inspector dock.
 
 :::note
@@ -28,12 +28,12 @@ have to worry about them overlapping. They won't "collide" with each other.
 
 Redot provides the following primitive collision shape types:
 
-- [class_RectangleShape2D](class_RectangleShape2D)
-- [class_CircleShape2D](class_CircleShape2D)
-- [class_CapsuleShape2D](class_CapsuleShape2D)
-- [class_SegmentShape2D](class_SegmentShape2D)
-- [class_SeparationRayShape2D](class_SeparationRayShape2D) (designed for characters)
-- [class_WorldBoundaryShape2D](class_WorldBoundaryShape2D) (infinite plane)
+- [class_RectangleShape2D](/docs/Classes/RectangleShape2D)
+- [class_CircleShape2D](/docs/Classes/CircleShape2D)
+- [class_CapsuleShape2D](/docs/Classes/CapsuleShape2D)
+- [class_SegmentShape2D](/docs/Classes/SegmentShape2D)
+- [class_SeparationRayShape2D](/docs/Classes/SeparationRayShape2D) (designed for characters)
+- [class_WorldBoundaryShape2D](/docs/Classes/WorldBoundaryShape2D) (infinite plane)
 
 You can represent the collision of most smaller objects using one or more
 primitive shapes. However, for more complex objects, such as a large ship or a
@@ -52,7 +52,7 @@ shapes. This section is mainly here for reference purposes.
 
 :::
 
-[Convex collision shapes ](class_ConvexPolygonShape2D) are a compromise
+[Convex collision shapes ](/docs/Classes/ConvexPolygonShape2D) are a compromise
 between primitive collision shapes and concave collision shapes. They can
 represent shapes of any complexity, but with an important caveat. As their name
 implies, an individual shape can only represent a *convex* shape. For instance,
@@ -68,7 +68,7 @@ recommend using concave shapes instead.
 
 ## Concave or trimesh collision shapes
 
-[Concave collision shapes ](class_ConcavePolygonShape2D), also called trimesh
+[Concave collision shapes ](/docs/Classes/ConcavePolygonShape2D), also called trimesh
 collision shapes, can take any form, from a few triangles to thousands of
 triangles. Concave shapes are the slowest option but are also the most accurate
 in Redot. **You can only use concave shapes within StaticBodies.** They will not

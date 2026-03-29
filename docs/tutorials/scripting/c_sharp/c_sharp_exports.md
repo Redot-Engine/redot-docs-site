@@ -2,7 +2,7 @@
 # C# exported properties
 
 In Redot, class members can be exported. This means their value gets saved along
-with the resource (such as the [scene ](class_PackedScene)) they're
+with the resource (such as the [scene ](/docs/Classes/PackedScene)) they're
 attached to. They will also be available for editing in the property editor.
 Exporting is done by using the ``[Export]`` attribute.
 
@@ -114,8 +114,8 @@ node with an attached tool script, ``_number`` will be ``2``, and
 ``NumberWithBackingField`` will return ``5``. This difference may cause
 confusing behavior. To avoid this, don't use complex properties. Alternatively,
 if the default value can be explicitly specified, it can be overridden with the
-[_PropertyCanRevert() ](class_Object_private_method__property_can_revert) and
-[_PropertyGetRevert() ](class_Object_private_method__property_get_revert) methods.
+[_PropertyCanRevert() ](/docs/Classes/Object_private_method__property_can_revert) and
+[_PropertyGetRevert() ](/docs/Classes/Object_private_method__property_get_revert) methods.
 
 :::
 
@@ -278,7 +278,7 @@ public int Number { get; set; }
 
 ## Floats with easing hint
 
-Display a visual representation of the [ease](class_@GlobalScope_method_ease)
+Display a visual representation of the [ease](/docs/Classes/@GlobalScope_method_ease)
 function when editing.
 
 ```csharp
@@ -636,7 +636,7 @@ public Vector3[] Vectors { get; set; } =
 When changing an exported variable's value from a script in
 [doc_gdscript_tool_mode](doc_gdscript_tool_mode), the value in the inspector won't be updated
 automatically. To update it, call
-[NotifyPropertyListChanged() ](class_Object_method_notify_property_list_changed)
+[NotifyPropertyListChanged() ](/docs/Classes/Object_method_notify_property_list_changed)
 after setting the exported variable's value.
 
 ## Advanced exports
@@ -647,9 +647,9 @@ common exporting features which can be implemented with a low-level API.
 
 Before reading further, you should get familiar with the way properties are
 handled and how they can be customized with
-[_Set() ](class_Object_private_method__set),
-[_Get() ](class_Object_private_method__get), and
-[_GetPropertyList() ](class_Object_private_method__get_property_list) methods as
+[_Set() ](/docs/Classes/Object_private_method__set),
+[_Get() ](/docs/Classes/Object_private_method__get), and
+[_GetPropertyList() ](/docs/Classes/Object_private_method__get_property_list) methods as
 described in [doc_accessing_data_or_logic_from_object](doc_accessing_data_or_logic_from_object).
 
 :::info

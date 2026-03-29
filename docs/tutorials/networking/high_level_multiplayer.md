@@ -22,7 +22,7 @@ This is due to the inherent limitations of the low-level protocols:
 In general, TCP can be thought of as reliable, ordered, and slow; UDP as unreliable, unordered and fast.
 Because of the large difference in performance, it often makes sense to re-build the parts of TCP wanted for games (optional reliability and packet order), while avoiding the unwanted parts (congestion/traffic control features, Nagle's algorithm, etc). Due to this, most game engines come with such an implementation, and Redot is no exception.
 
-In summary, you can use the low-level networking API for maximum control and implement everything on top of bare network protocols or use the high-level API based on [SceneTree ](class_SceneTree) that does most of the heavy lifting behind the scenes in a generally optimized way.
+In summary, you can use the low-level networking API for maximum control and implement everything on top of bare network protocols or use the high-level API based on [SceneTree ](/docs/Classes/SceneTree) that does most of the heavy lifting behind the scenes in a generally optimized way.
 
 :::note
 Most of Redot's supported platforms offer all or most of the mentioned high- and low-level networking
@@ -59,15 +59,15 @@ always take care of any possible security concerns.
 
 Before going into how we would like to synchronize a game across the network, it can be helpful to understand how the base network API for synchronization works.
 
-Redot uses a mid-level object [MultiplayerPeer ](class_MultiplayerPeer).
+Redot uses a mid-level object [MultiplayerPeer ](/docs/Classes/MultiplayerPeer).
 This object is not meant to be created directly, but is designed so that several C++ implementations can provide it.
 
-This object extends from [PacketPeer ](class_PacketPeer), so it inherits all the useful methods for serializing, sending and receiving data. On top of that, it adds methods to set a peer, transfer mode, etc. It also includes signals that will let you know when peers connect or disconnect.
+This object extends from [PacketPeer ](/docs/Classes/PacketPeer), so it inherits all the useful methods for serializing, sending and receiving data. On top of that, it adds methods to set a peer, transfer mode, etc. It also includes signals that will let you know when peers connect or disconnect.
 
 This class interface can abstract most types of network layers, topologies and libraries. By default, Redot
-provides an implementation based on ENet ([ENetMultiplayerPeer ](class_ENetMultiplayerPeer)),
-one based on WebRTC ([WebRTCMultiplayerPeer ](class_WebRTCMultiplayerPeer)), and one based on WebSocket
-([WebSocketPeer ](class_WebSocketPeer)), but this could be used to implement
+provides an implementation based on ENet ([ENetMultiplayerPeer ](/docs/Classes/ENetMultiplayerPeer)),
+one based on WebRTC ([WebRTCMultiplayerPeer ](/docs/Classes/WebRTCMultiplayerPeer)), and one based on WebSocket
+([WebSocketPeer ](/docs/Classes/WebSocketPeer)), but this could be used to implement
 mobile APIs (for ad hoc WiFi, Bluetooth) or custom device/console-specific networking APIs.
 
 For most common cases, using this object directly is discouraged, as Redot provides even higher level networking facilities.
@@ -102,7 +102,7 @@ for full IPv6 support.
 
 ## Initializing the network
 
-High-level networking in Redot is managed by the [SceneTree ](class_SceneTree).
+High-level networking in Redot is managed by the [SceneTree ](/docs/Classes/SceneTree).
 
 Each node has a ``multiplayer`` property, which is a reference to the ``MultiplayerAPI`` instance configured for it
 by the scene tree. Initially, every node is configured with the same default ``MultiplayerAPI`` object.
@@ -380,7 +380,7 @@ The parameters and their functions are as follows:
 
 - ``"authority"``: Only the multiplayer authority can call remotely.
   The authority is the server by default, but can be changed per-node using
-  [Node.set_multiplayer_authority ](class_Node_method_set_multiplayer_authority).
+  [Node.set_multiplayer_authority ](/docs/Classes/Node_method_set_multiplayer_authority).
 - ``"any_peer"``: Clients are allowed to call remotely. Useful for transferring user input.
 
 ``sync``:

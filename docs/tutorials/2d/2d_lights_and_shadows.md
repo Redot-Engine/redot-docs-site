@@ -24,31 +24,31 @@ sense of depth in your project.
 
 There are several nodes involved in a complete 2D lighting setup:
 
-- [CanvasModulate ](class_CanvasModulate) (to darken the rest of the scene)
-- [PointLight2D ](class_PointLight2D) (for omnidirectional or spot lights)
-- [DirectionalLight2D ](class_DirectionalLight2D) (for sunlight or moonlight)
-- [LightOccluder2D ](class_LightOccluder2D) (for light shadow casters)
+- [CanvasModulate ](/docs/Classes/CanvasModulate) (to darken the rest of the scene)
+- [PointLight2D ](/docs/Classes/PointLight2D) (for omnidirectional or spot lights)
+- [DirectionalLight2D ](/docs/Classes/DirectionalLight2D) (for sunlight or moonlight)
+- [LightOccluder2D ](/docs/Classes/LightOccluder2D) (for light shadow casters)
 - Other 2D nodes that receive lighting, such as Sprite2D or TileMapLayer.
 
-[CanvasModulate ](class_CanvasModulate) is used to darken the scene by
+[CanvasModulate ](/docs/Classes/CanvasModulate) is used to darken the scene by
 specifying a color that will act as the base "ambient" color. This is the final
 lighting color in areas that are *not* reached by any 2D light. Without a
 CanvasModulate node, the final scene would look too bright as 2D lights would
 only brighten the existing unshaded appearance (which appears fully lit).
 
-[Sprite2Ds ](class_Sprite2D) are used to display the textures for the light
+[Sprite2Ds ](/docs/Classes/Sprite2D) are used to display the textures for the light
 blobs, the background, and for the shadow casters.
 
-[PointLight2Ds ](class_PointLight2D) are used to light the scene. The way a
+[PointLight2Ds ](/docs/Classes/PointLight2D) are used to light the scene. The way a
 light typically works is by adding a selected texture over the rest of the scene
 to simulate lighting.
 
-[LightOccluder2Ds ](class_LightOccluder2D) are used to tell the shader
+[LightOccluder2Ds ](/docs/Classes/LightOccluder2D) are used to tell the shader
 which parts of the scene cast shadows. These occluders can be placed as
 independent nodes or can be part of a TileMapLayer node.
 
-The shadows appear only on areas covered by the [PointLight2D ](class_PointLight2D) and their direction is based on the center of the
-[Light ](class_PointLight2D).
+The shadows appear only on areas covered by the [PointLight2D ](/docs/Classes/PointLight2D) and their direction is based on the center of the
+[Light ](/docs/Classes/PointLight2D).
 
 :::note
 

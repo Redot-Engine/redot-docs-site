@@ -10,8 +10,8 @@ that progress is being made, or you may want to load additional resources
 during gameplay.
 
 The standard load method
-([ResourceLoader.load ](class_ResourceLoader_method_load) or GDScript's simpler
-[load ](class_@GDScript_method_load)) blocks your
+([ResourceLoader.load ](/docs/Classes/ResourceLoader_method_load) or GDScript's simpler
+[load ](/docs/Classes/@GDScript_method_load)) blocks your
 thread, making your game appear unresponsive while the resource is being loaded.
 
 One way around this is using ``ResourceLoader`` to load resources asynchronously
@@ -20,16 +20,16 @@ in background threads.
 ## Using ResourceLoader
 
 Generally, you queue requests to load resources for a path using
-[ResourceLoader.load_threaded_request ](class_ResourceLoader_method_load_threaded_request),
+[ResourceLoader.load_threaded_request ](/docs/Classes/ResourceLoader_method_load_threaded_request),
 which will then be loaded in threads in the background.
 
 You can check the status with
-[ResourceLoader.load_threaded_get_status ](class_ResourceLoader_method_load_threaded_get_status).
+[ResourceLoader.load_threaded_get_status ](/docs/Classes/ResourceLoader_method_load_threaded_get_status).
 Progress can be obtained by passing an array variable via progress which will return
 a one element array containing the percentage.
 
 Finally, you retrieve loaded resources by calling
-[ResourceLoader.load_threaded_get ](class_ResourceLoader_method_load_threaded_get).
+[ResourceLoader.load_threaded_get ](/docs/Classes/ResourceLoader_method_load_threaded_get).
 
 Once you call ``load_threaded_get()``, either the resource finished loading in
 the background and will be returned instantly or the load will block at this point like

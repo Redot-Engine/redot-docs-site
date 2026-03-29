@@ -209,7 +209,7 @@ The **File** menu provides the following options:
 - **Close Other Tabs**: Closes all open scripts except the selected one.
 - **Close Docs**: Closes the class reference documentation pages, leaving only the
   scripts.
-- **Run**: If the script extends [EditorScript ](class_EditorScript) and
+- **Run**: If the script extends [EditorScript ](/docs/Classes/EditorScript) and
   intended to be executed without running the project, this option runs the script.
   See [doc_running_code_in_the_editor_editorscript](doc_running_code_in_the_editor_editorscript) for more.
 - **Toggle Scripts Panel**: Shows or hides the script panel located on the left side

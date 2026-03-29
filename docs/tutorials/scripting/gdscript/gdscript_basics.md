@@ -208,16 +208,16 @@ example ``2 ** (2 ** 3)``. The ternary ``if/else`` operator is right-associative
 
 The behavior of some operators may differ from what you expect:
 
-1. If both operands of the ``/`` operator are [int ](class_int), then integer division is performed instead of fractional. For example ``5 / 2 == 2``, not ``2.5``.
-   If this is not desired, use at least one [float ](class_float) literal (``x / 2.0``), cast (``float(x) / y``), or multiply by ``1.0`` (``x * 1.0 / y``).
-2. The ``%`` operator is only available for ints, for floats use the [fmod() ](class_@GlobalScope_method_fmod) function.
+1. If both operands of the ``/`` operator are [int ](/docs/Classes/int), then integer division is performed instead of fractional. For example ``5 / 2 == 2``, not ``2.5``.
+   If this is not desired, use at least one [float ](/docs/Classes/float) literal (``x / 2.0``), cast (``float(x) / y``), or multiply by ``1.0`` (``x * 1.0 / y``).
+2. The ``%`` operator is only available for ints, for floats use the [fmod() ](/docs/Classes/@GlobalScope_method_fmod) function.
 3. For negative values, the [`%`` operator and ``fmod()`` use `truncation ](https://en.wikipedia.org/wiki/Truncation) instead of rounding towards negative infinity.
-   This means that the remainder has a sign. If you need the remainder in a mathematical sense, use the [posmod() ](class_@GlobalScope_method_posmod) and
-   [fposmod() ](class_@GlobalScope_method_fposmod) functions instead.
+   This means that the remainder has a sign. If you need the remainder in a mathematical sense, use the [posmod() ](/docs/Classes/@GlobalScope_method_posmod) and
+   [fposmod() ](/docs/Classes/@GlobalScope_method_fposmod) functions instead.
 4. The ``==`` and ``!=`` operators sometimes allow you to compare values of different types (for example, ``1 == 1.0`` is true), but in other cases it can cause
-   a runtime error. If you're not sure about the types of the operands, you can safely use the [is_same() ](class_@GlobalScope_method_is_same) function
-   (but note that it is more strict about types and references). To compare floats, use the [is_equal_approx() ](class_@GlobalScope_method_is_equal_approx)
-   and [is_zero_approx() ](class_@GlobalScope_method_is_zero_approx) functions instead.
+   a runtime error. If you're not sure about the types of the operands, you can safely use the [is_same() ](/docs/Classes/@GlobalScope_method_is_same) function
+   (but note that it is more strict about types and references). To compare floats, use the [is_equal_approx() ](/docs/Classes/@GlobalScope_method_is_equal_approx)
+   and [is_zero_approx() ](/docs/Classes/@GlobalScope_method_is_zero_approx) functions instead.
 
 :::
 
@@ -315,7 +315,7 @@ editor.
 
 Every annotation starts with the ``@`` character and is specified by a name. A
 detailed description and example for each annotation can be found inside the
-[GDScript class reference ](class_@GDScript).
+[GDScript class reference ](/docs/Classes/@GDScript).
 
 For instance, you can use it to export a value to the editor
 
@@ -608,7 +608,7 @@ very fast to compare, which makes them good candidates for dictionary keys.
 
 A pre-parsed path to a node or a node property.  It can be
 easily assigned to, and from, a String. They are useful to interact with
-the tree to get a node, or affecting properties like with [Tweens ](class_Tween).
+the tree to get a node, or affecting properties like with [Tweens ](/docs/Classes/Tween).
 
 ### Vector built-in types
 
@@ -759,8 +759,8 @@ PackedArrays are generally faster to iterate on and modify compared to a typed
 Array of the same type (e.g. PackedInt64Array versus Array[int]) and consume
 less memory. In the worst case, they are expected to be as fast as an untyped
 Array. Conversely, non-Packed Arrays (typed or not) have extra convenience
-methods such as [Array.map ](class_Array_method_map) that PackedArrays
-lack. Consult the [class reference ](class_PackedFloat32Array) for details
+methods such as [Array.map ](/docs/Classes/Array_method_map) that PackedArrays
+lack. Consult the [class reference ](/docs/Classes/PackedFloat32Array) for details
 on the methods available. Typed Arrays are generally faster to iterate on and
 modify than untyped Arrays.
 
@@ -776,16 +776,16 @@ operations a lot). If the data you will store is of a known type (including
 your own defined classes), prefer to use a typed Array as it may yield better
 performance in iteration and modification compared to an untyped Array.
 
-- [PackedByteArray ](class_PackedByteArray): An array of bytes (integers from 0 to 255).
-- [PackedInt32Array ](class_PackedInt32Array): An array of 32-bit integers.
-- [PackedInt64Array ](class_PackedInt64Array): An array of 64-bit integers.
-- [PackedFloat32Array ](class_PackedFloat32Array): An array of 32-bit floats.
-- [PackedFloat64Array ](class_PackedFloat64Array): An array of 64-bit floats.
-- [PackedStringArray ](class_PackedStringArray): An array of strings.
-- [PackedVector2Array ](class_PackedVector2Array): An array of [Vector2 ](class_Vector2) values.
-- [PackedVector3Array ](class_PackedVector3Array): An array of [Vector3 ](class_Vector3) values.
-- [PackedVector4Array ](class_PackedVector4Array): An array of [Vector4 ](class_Vector4) values.
-- [PackedColorArray ](class_PackedColorArray): An array of [Color ](class_Color) values.
+- [PackedByteArray ](/docs/Classes/PackedByteArray): An array of bytes (integers from 0 to 255).
+- [PackedInt32Array ](/docs/Classes/PackedInt32Array): An array of 32-bit integers.
+- [PackedInt64Array ](/docs/Classes/PackedInt64Array): An array of 64-bit integers.
+- [PackedFloat32Array ](/docs/Classes/PackedFloat32Array): An array of 32-bit floats.
+- [PackedFloat64Array ](/docs/Classes/PackedFloat64Array): An array of 64-bit floats.
+- [PackedStringArray ](/docs/Classes/PackedStringArray): An array of strings.
+- [PackedVector2Array ](/docs/Classes/PackedVector2Array): An array of [Vector2 ](/docs/Classes/Vector2) values.
+- [PackedVector3Array ](/docs/Classes/PackedVector3Array): An array of [Vector3 ](/docs/Classes/Vector3) values.
+- [PackedVector4Array ](/docs/Classes/PackedVector4Array): An array of [Vector4 ](/docs/Classes/Vector4) values.
+- [PackedColorArray ](/docs/Classes/PackedColorArray): An array of [Color ](/docs/Classes/Color) values.
 
 #### :ref:`Dictionary <class_Dictionary>`
 
@@ -838,10 +838,10 @@ print(d[test])
 :::note
 
 The bracket syntax can be used to access properties of any
-[class_Object](class_Object), not just Dictionaries. Keep in mind it will cause a
+[class_Object](/docs/Classes/Object), not just Dictionaries. Keep in mind it will cause a
 script error when attempting to index a non-existing property. To avoid
-this, use the [Object.get() ](class_Object_method_get) and
-[Object.set() ](class_Object_method_set) methods instead.
+this, use the [Object.get() ](/docs/Classes/Object_method_get) and
+[Object.set() ](/docs/Classes/Object_method_set) methods instead.
 
 :::
 
@@ -1075,7 +1075,7 @@ func _ready():
 Since GDScript classes are resources, having static variables in a script prevents it from being unloaded
 even if there are no more instances of that class and no other references left. This can be important
 if static variables store large amounts of data or hold references to other project resources, such as scenes.
-You should clean up this data manually, or use the [@static_unload ](class_@GDScript_annotation_@static_unload)
+You should clean up this data manually, or use the [@static_unload ](/docs/Classes/@GDScript_annotation_@static_unload)
 annotation if static variables don't store important data and can be reset.
 
 :::warning
@@ -1193,7 +1193,7 @@ const TILE_TELEPORT = 3
 ```
 
 If you pass a name to the enum, it will put all the keys inside a constant
-[Dictionary ](class_Dictionary) of that name. This means all constant methods of
+[Dictionary ](/docs/Classes/Dictionary) of that name. This means all constant methods of
 a dictionary can also be used with a named enum.
 
 :::important
@@ -1303,7 +1303,7 @@ valid value to return.
 
 ### Referencing functions
 
-Functions are first-class values in terms of the [Callable ](class_Callable) object.
+Functions are first-class values in terms of the [Callable ](/docs/Classes/Callable) object.
 Referencing a function by name without calling it will automatically generate the proper
 callable. This can be used to pass functions as arguments.
 
@@ -1326,7 +1326,7 @@ func _ready() -> void:
 
 :::note
 
-Callables **must** be called with the [call() ](class_Callable_method_call) method.
+Callables **must** be called with the [call() ](/docs/Classes/Callable_method_call) method.
 You cannot use the ``()`` operator directly. This behavior is implemented to avoid
 performance issues on direct function calls.
 
@@ -1335,7 +1335,7 @@ performance issues on direct function calls.
 ### Lambda functions
 
 Lambda functions allow you to declare functions that do not belong to a class. Instead, a
-[Callable ](class_Callable) object is created and assigned to a variable directly.
+[Callable ](/docs/Classes/Callable) object is created and assigned to a variable directly.
 This can be useful to create callables to pass around without polluting the class scope.
 
 ```
@@ -1487,8 +1487,8 @@ an assignment.
 directly referring to symbols available in the current script. However, ``self``
 also allows you to access properties, methods, and other names that are defined
 dynamically (i.e. are expected to exist in subtypes of the current class, or are
-provided using [_set() ](class_Object_private_method__set) and/or
-[_get() ](class_Object_private_method__get)).
+provided using [_set() ](/docs/Classes/Object_private_method__set) and/or
+[_get() ](/docs/Classes/Object_private_method__get)).
 
 ```
 extends Node
@@ -1983,7 +1983,7 @@ extends "somefile.gd".SomeInnerClass
 :::note
 
 If inheritance is not explicitly defined, the class will default to inheriting
-[class_RefCounted](class_RefCounted).
+[class_RefCounted](/docs/Classes/RefCounted).
 
 :::
 
@@ -2148,7 +2148,7 @@ func _init():
 
 ### Classes as resources
 
-Classes stored as files are treated as [GDScripts ](class_GDScript). They
+Classes stored as files are treated as [GDScripts ](/docs/Classes/GDScript). They
 must be loaded from disk to access them in other classes. This is done using
 either the ``load`` or ``preload`` functions (see below). Instancing of a loaded
 class resource is done by calling the ``new`` function on the class object
@@ -2309,23 +2309,23 @@ crashing the editor.
 
 Redot implements reference counting to free certain instances that are no longer
 used, instead of a garbage collector, or requiring purely manual management.
-Any instance of the [class_RefCounted](class_RefCounted) class (or any class that inherits
-it, such as [class_Resource](class_Resource)) will be freed automatically when no longer
-in use. For an instance of any class that is not a [class_RefCounted](class_RefCounted)
-(such as [class_Node](class_Node) or the base [class_Object](class_Object) type), it will
+Any instance of the [class_RefCounted](/docs/Classes/RefCounted) class (or any class that inherits
+it, such as [class_Resource](/docs/Classes/Resource)) will be freed automatically when no longer
+in use. For an instance of any class that is not a [class_RefCounted](/docs/Classes/RefCounted)
+(such as [class_Node](/docs/Classes/Node) or the base [class_Object](/docs/Classes/Object) type), it will
 remain in memory until it is deleted with ``free()`` (or ``queue_free()``
 for Nodes).
 
 :::note
 
-If a [class_Node](class_Node) is deleted via ``free()`` or ``queue_free()``,
+If a [class_Node](/docs/Classes/Node) is deleted via ``free()`` or ``queue_free()``,
 all of its children will also recursively be deleted.
 
 :::
 
-To avoid reference cycles that can't be freed, a [class_WeakRef](class_WeakRef)
+To avoid reference cycles that can't be freed, a [class_WeakRef](/docs/Classes/WeakRef)
 function is provided for creating weak references, which allow access
-to the object without preventing a [class_RefCounted](class_RefCounted) from freeing.
+to the object without preventing a [class_RefCounted](/docs/Classes/RefCounted) from freeing.
 Here is an example:
 
 ```
@@ -2377,7 +2377,7 @@ Game Programming Patterns ebook.
 :::
 
 You can connect these signals to methods the same way you connect built-in
-signals of nodes like [class_Button](class_Button) or [class_RigidBody3D](class_RigidBody3D).
+signals of nodes like [class_Button](/docs/Classes/Button) or [class_RigidBody3D](/docs/Classes/RigidBody3D).
 
 In the example below, we connect the ``health_depleted`` signal from a
 ``Character`` node to a ``Game`` node. When the ``Character`` node emits the
@@ -2402,7 +2402,7 @@ to react to health changes with an animation, but we want to keep the user
 interface separate from the player in our scene tree.
 
 In our ``character.gd`` script, we define a ``health_changed`` signal and emit
-it with [Signal.emit() ](class_Signal_method_emit), and from
+it with [Signal.emit() ](/docs/Classes/Signal_method_emit), and from
 a ``Game`` node higher up our scene tree, we connect it to the ``Lifebar`` using
 the :ref:`Signal.connect() <class_Signal_method_connect>` method
 

@@ -153,7 +153,7 @@ Currently they supported tags for the GDExtension documentation system are:
       | ``[url={link}]{text}[/url]``
 
   * - | **img**
-      | Inserts an image from the ``{path}`` (can be any valid [class_Texture2D](class_Texture2D) resource).
+      | Inserts an image from the ``{path}`` (can be any valid [class_Texture2D](/docs/Classes/Texture2D) resource).
       | If ``{width}`` is provided, the image will try to fit that width maintaining
         the aspect ratio.
       | If both ``{width}`` and ``{height}`` are provided, the image will be scaled

@@ -27,7 +27,7 @@ of pseudorandom number generators.
 ## Global scope versus RandomNumberGenerator class
 
 Redot exposes two ways to generate random numbers: via *global scope* methods or
-using the [class_RandomNumberGenerator](class_RandomNumberGenerator) class.
+using the [class_RandomNumberGenerator](/docs/Classes/RandomNumberGenerator) class.
 
 Global scope methods are easier to set up, but they don't offer as much control.
 
@@ -49,7 +49,7 @@ seed number, or generate it using a different method.
 
 :::
 
-In global scope, you can find a [randomize() ](class_@GlobalScope_method_randomize) method. **This method should be called only
+In global scope, you can find a [randomize() ](/docs/Classes/@GlobalScope_method_randomize) method. **This method should be called only
 once when your project starts to initialize the random seed.** Calling it
 multiple times is unnecessary and may impact performance negatively.
 
@@ -81,7 +81,7 @@ public override void _Ready()
 
 </Tabs>
 
-You can also set a fixed random seed instead using [seed() ](class_@GlobalScope_method_seed). Doing so will give you *deterministic* results
+You can also set a fixed random seed instead using [seed() ](/docs/Classes/@GlobalScope_method_seed). Doing so will give you *deterministic* results
 across runs:
 
 <Tabs>
@@ -146,7 +146,7 @@ random.Randomize();
 Let's look at some of the most commonly used functions and methods to generate
 random numbers in Redot.
 
-The function [randi() ](class_@GlobalScope_method_randi) returns a random
+The function [randi() ](/docs/Classes/@GlobalScope_method_randi) returns a random
 number between ``0`` and ``2^32 - 1``. Since the maximum value is huge, you most
 likely want to use the modulo operator (``%``) to bound the result between 0 and
 the denominator:
@@ -181,12 +181,12 @@ GD.Print(GD.Randi() % 51 + 10);
 
 </Tabs>
 
-[randf() ](class_@GlobalScope_method_randf) returns a random floating-point
+[randf() ](/docs/Classes/@GlobalScope_method_randf) returns a random floating-point
 number between 0 and 1. This is useful to implement a
 [doc_random_number_generation_weighted_random_probability](doc_random_number_generation_weighted_random_probability) system, among
 other things.
 
-[randfn() ](class_@GlobalScope_method_randfn) returns a random
+[randfn() ](/docs/Classes/@GlobalScope_method_randfn) returns a random
 floating-point number following a `normal distribution
 &lt;https://en.wikipedia.org/wiki/Normal_distribution&gt;`__. This means the returned
 value is more likely to be around the mean (0.0 by default),
@@ -216,7 +216,7 @@ GD.Print(GD.Randfn(0.0, 1.0));
 
 </Tabs>
 
-[randf_range() ](class_@GlobalScope_method_randf_range) takes two arguments
+[randf_range() ](/docs/Classes/@GlobalScope_method_randf_range) takes two arguments
 ``from`` and ``to``, and returns a random floating-point number between ``from``
 and ``to``:
 
@@ -244,7 +244,7 @@ GD.Print(GD.RandRange(-4.0, 6.5));
 
 </Tabs>
 
-[randi_range() ](class_@GlobalScope_method_randi_range) takes two arguments ``from``
+[randi_range() ](/docs/Classes/@GlobalScope_method_randi_range) takes two arguments ``from``
 and ``to``, and returns a random integer between ``from`` and ``to``:
 
 <Tabs>
@@ -274,7 +274,7 @@ GD.Print(GD.RandRange(-10, 10));
 ## Get a random array element
 
 We can use random integer generation to get a random element from an array,
-or use the [Array.pick_random](class_Array_method_pick_random) method
+or use the [Array.pick_random](/docs/Classes/Array_method_pick_random) method
 to do it for us:
 
 <Tabs>
@@ -342,7 +342,7 @@ public string GetFruit()
 
 To prevent the same fruit from being picked more than once in a row, we can add
 more logic to the above method. In this case, we can't use
-[Array.pick_random](class_Array_method_pick_random) since it lacks a way to
+[Array.pick_random](/docs/Classes/Array_method_pick_random) since it lacks a way to
 prevent repetition:
 
 <Tabs>
@@ -481,7 +481,7 @@ public Godot.Collections.Dictionary<string, int> GetMetal()
 
 ## Weighted random probability
 
-The [randf() ](class_@GlobalScope_method_randf) method returns a
+The [randf() ](/docs/Classes/@GlobalScope_method_randf) method returns a
 floating-point number between 0.0 and 1.0. We can use this to create a
 "weighted" probability where different outcomes have different likelihoods:
 
@@ -550,7 +550,7 @@ public string GetItemRarity()
 </Tabs>
 
 You can also get a weighted random *index* using the
-[rand_weighted() ](class_RandomNumberGenerator_method_rand_weighted) method
+[rand_weighted() ](/docs/Classes/RandomNumberGenerator_method_rand_weighted) method
 on a RandomNumberGenerator instance. This returns a random integer
 between 0 and the size of the array that is passed as a parameter. Each value in the
 array is a floating-point number that represents the *relative* likelihood that it
@@ -699,7 +699,7 @@ time, or anything else.
 
 To achieve this, you can use random *noise* functions. Noise functions are
 especially popular in procedural generation to generate realistic-looking
-terrain. Redot provides [class_fastnoiselite](class_fastnoiselite) for this, which supports
+terrain. Redot provides [class_fastnoiselite](/docs/Classes/fastnoiselite) for this, which supports
 1D, 2D and 3D noise. Here's an example with 1D noise:
 
 <Tabs>
@@ -757,10 +757,10 @@ So far, the approaches mentioned above are **not** suitable for
 for games, but this is not sufficient for scenarios where encryption,
 authentication or signing is involved.
 
-Redot offers a [class_Crypto](class_Crypto) class for this. This class can perform
+Redot offers a [class_Crypto](/docs/Classes/Crypto) class for this. This class can perform
 asymmetric key encryption/decryption, signing/verification, while also
 generating cryptographically secure random bytes, RSA keys, HMAC digests, and
-self-signed [class_X509Certificate](class_X509Certificate)\ s.
+self-signed [class_X509Certificate](/docs/Classes/X509Certificate)\ s.
 
 The downside of :abbr:`CSPRNG (Cryptographically secure pseudorandom number generation)`
 is that it's much slower than standard pseudorandom number generation. Its API
@@ -791,7 +791,7 @@ prints("Random integers:", random_int_1, random_int_2)
 
 :::info
 
-See [class_PackedByteArray](class_PackedByteArray)'s documentation for other methods you can
+See [class_PackedByteArray](/docs/Classes/PackedByteArray)'s documentation for other methods you can
 use to decode the generated bytes into various types of data, such as
 integers or floats.
 

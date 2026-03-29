@@ -144,7 +144,7 @@ and/or links to relevant parts of the Redot API.
 
 :::note
 Knowing the setter and getter names is useful when one must bind a
-method name or [Callable](class_Callable) to something.
+method name or [Callable](/docs/Classes/Callable) to something.
 
 :::
 

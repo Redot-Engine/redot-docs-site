@@ -77,7 +77,7 @@ For more information on 3D specific optimizations, see
 ### Reuse shaders and materials
 
 The Redot renderer is a little different to what is out there. It's designed to
-minimize GPU state changes as much as possible. [StandardMaterial3D ](class_StandardMaterial3D) does a good job at reusing materials that need similar
+minimize GPU state changes as much as possible. [StandardMaterial3D ](/docs/Classes/StandardMaterial3D) does a good job at reusing materials that need similar
 shaders. If custom shaders are used, make sure to reuse them as much as
 possible. Redot's priorities are:
 
@@ -170,7 +170,7 @@ elsewhere.
 
 You can increase performance in a fill rate-limited project by reducing the
 amount of work the GPU has to do. You can do this by simplifying the shader
-(perhaps turn off expensive options if you are using a [StandardMaterial3D ](class_StandardMaterial3D)), or reducing the number and size of textures used.
+(perhaps turn off expensive options if you are using a [StandardMaterial3D ](/docs/Classes/StandardMaterial3D)), or reducing the number and size of textures used.
 Also, when using non-unshaded particles, consider forcing vertex shading in
 their material to decrease the shading cost.
 

@@ -7,7 +7,7 @@ There are dozens of settings you can change to control a project's execution,
 including physics, rendering, and windowing settings. These settings can be
 changed from the **Project Settings** window, from code, or by manually editing
 the ``project.Redot`` file. You can see a full list of settings in the 
-[ProjectSettings ](class_ProjectSettings) class.
+[ProjectSettings ](/docs/Classes/ProjectSettings) class.
 
 Internally, Redot stores the settings for a project in a ``project.Redot`` file,
 a plain text file in INI format. While this is human-readable and version control
@@ -40,7 +40,7 @@ by clicking the circular arrow **Reset** button next to each property.
 
 ### Changing project settings from code
 
-You can use [set_setting() ](class_ProjectSettings_method_set_setting) to
+You can use [set_setting() ](/docs/Classes/ProjectSettings_method_set_setting) to
 change a setting's value from code:
 
 <Tabs>
@@ -70,7 +70,7 @@ ProjectSettings.SetSetting("display/window/size/mode", (int)DisplayServer.Window
 However, many project settings are only read once when the game starts. After
 that, changing the setting with ``set_setting()`` will have no effect. Instead, 
 most settings have a corresponding property or method on a runtime class like
-[Engine ](class_Engine) or [DisplayServer ](class_DisplayServer):
+[Engine ](/docs/Classes/Engine) or [DisplayServer ](/docs/Classes/DisplayServer):
 
 <Tabs>
 
@@ -97,18 +97,18 @@ DisplayServer.WindowSetMode(DisplayServer.WindowMode.Windowed);
 </Tabs>
 
 In general, project settings are duplicated at runtime in the
-[Engine ](class_Engine), [PhysicsServer2D ](class_PhysicsServer2D),
-[PhysicsServer3D ](class_PhysicsServer3D),
-[RenderingServer ](class_RenderingServer), 
-[Viewport ](class_Viewport), or [Window ](class_Window) classes. In the
-[ProjectSettings ](class_ProjectSettings) class reference, settings
+[Engine ](/docs/Classes/Engine), [PhysicsServer2D ](/docs/Classes/PhysicsServer2D),
+[PhysicsServer3D ](/docs/Classes/PhysicsServer3D),
+[RenderingServer ](/docs/Classes/RenderingServer), 
+[Viewport ](/docs/Classes/Viewport), or [Window ](/docs/Classes/Window) classes. In the
+[ProjectSettings ](/docs/Classes/ProjectSettings) class reference, settings
 links to their equivalent runtime property or method.
 
 ## Reading project settings
 
 You can read project settings with
-[get_setting() ](class_ProjectSettings_method_get_setting) or
-[get_setting_with_override() ](class_ProjectSettings_method_get_setting_with_override):
+[get_setting() ](/docs/Classes/ProjectSettings_method_get_setting) or
+[get_setting_with_override() ](/docs/Classes/ProjectSettings_method_get_setting_with_override):
 
 <Tabs>
 

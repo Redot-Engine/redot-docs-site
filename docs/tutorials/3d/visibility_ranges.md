@@ -134,7 +134,7 @@ child nodes if its parent is visible given its current visibility range properti
 :::note
 
 The target of **Visibility Parent** *must* inherit from
-[class_GeometryInstance3D](class_GeometryInstance3D).
+[class_GeometryInstance3D](/docs/Classes/GeometryInstance3D).
 
 Despite its name, the **Visibility Parent** property *can* point to a node
 that is not a parent of the node in the scene tree. However, it is

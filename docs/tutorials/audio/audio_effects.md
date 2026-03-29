@@ -185,7 +185,7 @@ The Record effect allows the user to record sound from a microphone.
 
 Reverb simulates rooms of different sizes. It has adjustable parameters that can
 be tweaked to obtain the sound of a specific room. Reverb is commonly outputted
-from [Area3Ds ](class_Area3D)
+from [Area3Ds ](/docs/Classes/Area3D)
 (see [Reverb buses ](doc_audio_streams_reverb_buses)), or to apply
 a "chamber" feel to all sounds.
 

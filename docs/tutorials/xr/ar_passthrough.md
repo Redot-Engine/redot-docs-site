@@ -16,7 +16,7 @@ result is used.
 Passthrough is implemented very differently across platforms.
 
 In Redot 4.3 we have implemented a unified approach that is explained on this help page
-so you don't need to worry about these differences, the [XRInterface ](class_xrinterface)
+so you don't need to worry about these differences, the [XRInterface ](/docs/Classes/xrinterface)
 implementation is now responsible for applying the correct platform-dependent method [#]_.
 
 For headsets such as the Meta Quest and HTC Elite you will need to use the
@@ -55,7 +55,7 @@ This mode determines how the (real world) environment is blended with the virtua
       passthrough will also be enabled if applicable. 
         
 You can set the environment blend mode for your application through the ``environment_blend_mode``
-property of the [XRInterface ](class_xrinterface) instance.
+property of the [XRInterface ](/docs/Classes/xrinterface) instance.
 
 You can query the supported blend modes on the hardware using the
 ``get_supported_environment_blend_modes`` property on the same instance.
@@ -63,7 +63,7 @@ You can query the supported blend modes on the hardware using the
 ## Configuring your background
 
 When setting the blend mode to ``XR_ENV_BLEND_MODE_ALPHA_BLEND`` you must set
-the ``transparent_bg`` property on [Viewport ](class_viewport) to true.
+the ``transparent_bg`` property on [Viewport ](/docs/Classes/viewport) to true.
 When using the ``XR_ENV_BLEND_MODE_ADDITIVE`` blend mode you should set your
 background color to black.
 

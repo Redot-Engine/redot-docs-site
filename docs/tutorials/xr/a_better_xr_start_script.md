@@ -70,7 +70,7 @@ public partial class MyNode3D : Node3D
 We introduce a few new variables to our script as well:
 
 - ``maximum_refresh_rate`` will control the headsets refresh rate if this is supported by the headset.
-- ``xr_interface`` holds a reference to our XR interface, this already existed but we now type it to get full access to our [XRInterface ](class_xrinterface) API.
+- ``xr_interface`` holds a reference to our XR interface, this already existed but we now type it to get full access to our [XRInterface ](/docs/Classes/xrinterface) API.
 - ``xr_is_focussed`` will be set to true whenever our game has focus.
 
 <Tabs>
@@ -122,7 +122,7 @@ If we're using the compatibility renderer, we check if the OpenXR foveated rende
 are configured and if not, we output a warning.
 See [OpenXR Settings ](openxr_settings.md) for further details.
 
-We hook up a number of signals that will be emitted by the [XRInterface ](class_xrinterface).
+We hook up a number of signals that will be emitted by the [XRInterface ](/docs/Classes/xrinterface).
 We'll provide more detail about these signals as we implement them.
 
 We also quit our application if we couldn't successfully initialise OpenXR.
@@ -554,7 +554,7 @@ As doing so is dependent on your game, your game needs to react accordingly.
 
 All we do here is emit the ``pose_recentered`` signal.
 You can connect to this signal and implement the actual recenter code.
-Often it is enough to call [center_on_hmd() ](class_XRServer_method_center_on_hmd).
+Often it is enough to call [center_on_hmd() ](/docs/Classes/XRServer_method_center_on_hmd).
 
 <Tabs>
 

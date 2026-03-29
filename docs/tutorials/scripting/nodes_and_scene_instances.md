@@ -8,7 +8,7 @@ instantiate scenes from code.
 
 ## Getting nodes
 
-You can get a reference to a node by calling the [Node.get_node() ](class_Node_method_get_node) method. For this to work, the child node must be
+You can get a reference to a node by calling the [Node.get_node() ](/docs/Classes/Node_method_get_node) method. For this to work, the child node must be
 present in the scene tree. Getting it in the parent node's ``_ready()`` function
 guarantees that.
 
@@ -233,7 +233,7 @@ like. This operation is called instancing, and doing it from code happens in two
 steps:
 
 1. Loading the scene from the local drive.
-2. Creating an instance of the loaded [PackedScene ](class_PackedScene)
+2. Creating an instance of the loaded [PackedScene ](/docs/Classes/PackedScene)
    resource.
 
 <Tabs>
@@ -276,7 +276,7 @@ var scene = preload("res://my_scene.tscn")
 </Tabs>
 
 At that point, ``scene`` is a packed scene resource, not a node. To create the
-actual node, you need to call [PackedScene.instantiate() ](class_PackedScene_method_instantiate). It returns a tree of nodes that you can use
+actual node, you need to call [PackedScene.instantiate() ](/docs/Classes/PackedScene_method_instantiate). It returns a tree of nodes that you can use
 as a child of your current node.
 
 <Tabs>

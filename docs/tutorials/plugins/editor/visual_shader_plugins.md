@@ -1,7 +1,7 @@
 
 # Visual Shader plugins
 
-Visual Shader plugins are used to create custom [class_VisualShader](class_VisualShader) nodes
+Visual Shader plugins are used to create custom [class_VisualShader](/docs/Classes/VisualShader) nodes
 in GDScript.
 
 The creation process is different from usual editor plugins. You do not need to
@@ -13,11 +13,11 @@ This short tutorial will explain how to make a Perlin-3D noise node (original
 code from this `GPU noise shaders plugin
 &lt;https://github.com/curly-brace/godot-3.0-Noise-Shaders/blob/master/assets/gpu_noise_shaders/classic_perlin3d.tres&gt;`_.
 
-Create a Sprite2D and assign a [class_ShaderMaterial](class_ShaderMaterial) to its material slot:
+Create a Sprite2D and assign a [class_ShaderMaterial](/docs/Classes/ShaderMaterial) to its material slot:
 
 ![Image](img/visual_shader_plugins_start.png)
 
-Assign [class_VisualShader](class_VisualShader) to the shader slot of the material:
+Assign [class_VisualShader](/docs/Classes/VisualShader) to the shader slot of the material:
 
 ![Image](img/visual_shader_plugins_start2.png)
 
@@ -25,7 +25,7 @@ Don't forget to change its mode to "CanvasItem" (if you are using a Sprite2D):
 
 ![Image](img/visual_shader_plugins_start3.png)
 
-Create a script which derives from [class_VisualShaderNodeCustom](class_VisualShaderNodeCustom). This is
+Create a script which derives from [class_VisualShaderNodeCustom](/docs/Classes/VisualShaderNodeCustom). This is
 all you need to initialize your plugin.
 
 ```

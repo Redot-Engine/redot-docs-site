@@ -106,7 +106,7 @@ instantiate nodes directly from the code.
 
 Using C# from GDScript doesn't need much work. Once loaded
 (see [doc_gdscript_classes_as_resources](doc_gdscript_classes_as_resources)), the script can be instantiated
-with [new() ](class_CSharpScript_method_new).
+with [new() ](/docs/Classes/CSharpScript_method_new).
 
 ```gdscript
 var MyCSharpScript = load("res://Path/To/MyCSharpNode.cs")
@@ -134,7 +134,7 @@ You also need to check your ``.cs`` file is referenced in the project's
 ### Instantiating GDScript nodes from C#
 
 From the C# side, everything work the same way. Once loaded, the GDScript can
-be instantiated with [GDScript.New() ](class_GDScript_method_new).
+be instantiated with [GDScript.New() ](/docs/Classes/GDScript_method_new).
 
 ```csharp
 var myGDScript = GD.Load<GDScript>("res://path/to/my_gd_script.gd");
@@ -142,7 +142,7 @@ var myGDScriptNode = (RedotObject)myGDScript.New(); // This is a RedotObject.
 
 ```
 
-Here we are using an [class_Object](class_Object), but you can use type conversion like
+Here we are using an [class_Object](/docs/Classes/Object), but you can use type conversion like
 explained in [doc_c_sharp_features_type_conversion_and_casting](doc_c_sharp_features_type_conversion_and_casting).
 
 ## Accessing fields
@@ -164,8 +164,8 @@ print(my_csharp_node.MyProperty)
 ### Accessing GDScript fields from C#
 
 As C# is statically typed, accessing GDScript from C# is a bit more
-convoluted. You will have to use [RedotObject.Get() ](class_Object_method_get)
-and [RedotObject.Set() ](class_Object_method_set). The first argument is the name of the field you want to access.
+convoluted. You will have to use [RedotObject.Get() ](/docs/Classes/Object_method_get)
+and [RedotObject.Set() ](/docs/Classes/Object_method_set). The first argument is the name of the field you want to access.
 
 ```csharp
 // Output: "my gdscript value".
@@ -178,7 +178,7 @@ GD.Print(myGDScriptNode.Get("my_property"));
 
 Keep in mind that when setting a field value you should only use types the
 GDScript side knows about.
-Essentially, you want to work with built-in types as described in [doc_gdscript](gdscript/gdscript_basics.md) or classes extending [class_Object](class_Object).
+Essentially, you want to work with built-in types as described in [doc_gdscript](gdscript/gdscript_basics.md) or classes extending [class_Object](/docs/Classes/Object).
 
 ## Calling methods
 
@@ -208,7 +208,7 @@ my_csharp_node.PrintArray([1, 2, 3])
 ### Calling GDScript methods from C#
 
 To call GDScript methods from C# you'll need to use
-[RedotObject.Call() ](class_Object_method_call). The first argument is the
+[RedotObject.Call() ](/docs/Classes/Object_method_call). The first argument is the
 name of the method you want to call. The following arguments will be passed
 to said method.
 

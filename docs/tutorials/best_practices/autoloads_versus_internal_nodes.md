@@ -4,7 +4,7 @@
 Redot offers a feature to automatically load nodes at the root of your project,
 allowing you to access them globally, that can fulfill the role of a Singleton:
 [doc_singletons_autoload](../scripting/singletons_autoload.md). These autoloaded nodes are not freed when you
-change the scene from code with [SceneTree.change_scene_to_file ](class_SceneTree_method_change_scene_to_file).
+change the scene from code with [SceneTree.change_scene_to_file ](/docs/Classes/SceneTree_method_change_scene_to_file).
 
 In this guide, you will learn when to use the Autoload feature, and techniques
 you can use to avoid it.
@@ -16,7 +16,7 @@ organize a lot of functionality into a globally accessible object. Redot offers
 many ways to avoid global state thanks to the node tree and signals.
 
 For example, let's say we are building a platformer and want to collect coins
-that play a sound effect. There's a node for that: the [AudioStreamPlayer ](class_AudioStreamPlayer). But if we call the ``AudioStreamPlayer`` while it is
+that play a sound effect. There's a node for that: the [AudioStreamPlayer ](/docs/Classes/AudioStreamPlayer). But if we call the ``AudioStreamPlayer`` while it is
 already playing a sound, the new sound interrupts the first.
 
 A solution is to code a global, autoloaded sound manager class. It generates a
@@ -68,7 +68,7 @@ that feature for an individual scene using the [class_name ](doc_gdscript_basics
 
 When it comes to data, you can either:
 
-1. Create a new type of [Resource ](class_Resource) to share the data.
+1. Create a new type of [Resource ](/docs/Classes/Resource) to share the data.
 
 2. Store the data in an object to which each node has access, for example using
    the ``owner`` property to access the scene's root node.

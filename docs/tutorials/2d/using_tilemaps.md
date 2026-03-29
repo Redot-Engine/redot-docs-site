@@ -12,9 +12,9 @@ to create a TileMap.
 ## Introduction
 
 A tilemap is a grid of tiles used to create a game's layout. There are several
-benefits to using [TileMapLayer ](class_TileMapLayer) nodes to design your levels.
+benefits to using [TileMapLayer ](/docs/Classes/TileMapLayer) nodes to design your levels.
 First, they make it possible to draw the layout by "painting" the tiles onto a
-grid, which is much faster than placing individual [Sprite2D ](class_Sprite2D)
+grid, which is much faster than placing individual [Sprite2D ](/docs/Classes/Sprite2D)
 nodes one by one. Second, they allow for much larger levels because they are
 optimized for drawing large numbers of tiles. Finally, you can add collision,
 occlusion, and navigation shapes to tiles, adding greater functionality to
@@ -77,7 +77,7 @@ Each TileMapLayer node has several properties you can adjust:
 
 TileMap built-in navigation has many practical limitations that result in inferior pathfinding performance and pathfollowing quality.
 
-After designing the TileMap consider baking it to a more optimized navigation mesh (and disabling the TileMap NavigationLayer) using a [NavigationRegion2D ](class_NavigationRegion2D) or the [NavigationServer2D ](class_NavigationServer2D). See [doc_navigation_using_navigationmeshes](../navigation/navigation_using_navigationmeshes.md) for additional information.
+After designing the TileMap consider baking it to a more optimized navigation mesh (and disabling the TileMap NavigationLayer) using a [NavigationRegion2D ](/docs/Classes/NavigationRegion2D) or the [NavigationServer2D ](/docs/Classes/NavigationServer2D). See [doc_navigation_using_navigationmeshes](../navigation/navigation_using_navigationmeshes.md) for additional information.
 
 :::
 

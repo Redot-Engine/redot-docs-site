@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This tutorial will introduce you to using the [SubViewport ](class_SubViewport) as a
+This tutorial will introduce you to using the [SubViewport ](/docs/Classes/SubViewport) as a
 texture that can be applied to 3D objects. In order to do so, it will walk you through the process
 of making a procedural planet like the one below:
 
@@ -15,17 +15,17 @@ This tutorial does not cover how to code a dynamic atmosphere like the one this 
 :::
 
 This tutorial assumes you are familiar with how to set up a basic scene including:
-a [Camera3D ](class_Camera3D), a [light source ](class_OmniLight3D), a
-[MeshInstance3D ](class_MeshInstance3D) with a [Primitive Mesh ](class_PrimitiveMesh),
-and applying a [StandardMaterial3D ](class_StandardMaterial3D) to the mesh. The focus will be on using
-the [SubViewport ](class_SubViewport) to dynamically create textures that can be applied to the mesh.
+a [Camera3D ](/docs/Classes/Camera3D), a [light source ](/docs/Classes/OmniLight3D), a
+[MeshInstance3D ](/docs/Classes/MeshInstance3D) with a [Primitive Mesh ](/docs/Classes/PrimitiveMesh),
+and applying a [StandardMaterial3D ](/docs/Classes/StandardMaterial3D) to the mesh. The focus will be on using
+the [SubViewport ](/docs/Classes/SubViewport) to dynamically create textures that can be applied to the mesh.
 
 In this tutorial, we'll cover the following topics:
 
-- How to use a [SubViewport ](class_SubViewport) as a render texture
+- How to use a [SubViewport ](/docs/Classes/SubViewport) as a render texture
 - Mapping a texture to a sphere with equirectangular mapping
 - Fragment shader techniques for procedural planets
-- Setting a Roughness map from a [Viewport Texture ](class_ViewportTexture)
+- Setting a Roughness map from a [Viewport Texture ](/docs/Classes/ViewportTexture)
 
 ## Setting up the scene
 
@@ -37,22 +37,22 @@ Go into the the MeshInstance3D and make the mesh a SphereMesh
 
 ## Setting up the SubViewport
 
-Click on the [SubViewport ](class_SubViewport) node and set its size to ``(1024, 512)``. The
-[SubViewport ](class_SubViewport) can actually be any size so long as the width is double the
+Click on the [SubViewport ](/docs/Classes/SubViewport) node and set its size to ``(1024, 512)``. The
+[SubViewport ](/docs/Classes/SubViewport) can actually be any size so long as the width is double the
 height. The width needs to be double the height so that the image will accurately map onto the
 sphere, as we will be using equirectangular projection, but more on that later.
 
-Next disable 3D. We will be using a [ColorRect ](class_ColorRect) to render the surface, so
+Next disable 3D. We will be using a [ColorRect ](/docs/Classes/ColorRect) to render the surface, so
 we don't need 3D either.
 
 ![Image](img/planet_new_viewport.webp)
 
-Select the [ColorRect ](class_ColorRect) and in the inspector set the anchors preset to ``Full Rect``.
-This will ensure that the [ColorRect ](class_ColorRect) takes up the entire [SubViewport ](class_SubViewport).
+Select the [ColorRect ](/docs/Classes/ColorRect) and in the inspector set the anchors preset to ``Full Rect``.
+This will ensure that the [ColorRect ](/docs/Classes/ColorRect) takes up the entire [SubViewport ](/docs/Classes/SubViewport).
 
 ![Image](img/planet_new_colorrect.webp)
 
-Next, we add a [Shader Material ](class_ShaderMaterial) to the [ColorRect ](class_ColorRect) (ColorRect &gt; CanvasItem &gt; Material &gt; Material &gt; ``New ShaderMaterial``).
+Next, we add a [Shader Material ](/docs/Classes/ShaderMaterial) to the [ColorRect ](/docs/Classes/ColorRect) (ColorRect &gt; CanvasItem &gt; Material &gt; Material &gt; ``New ShaderMaterial``).
 
 :::note
 Basic familiarity with shading is recommended for this tutorial. However, even if you are new
@@ -77,13 +77,13 @@ save the shader code, you'll see in the inspector that the above code renders a 
 
 ![Image](img/planet_gradient.png)
 
-Now we have the basics of a [SubViewport ](class_SubViewport) that we render to and we have a unique image that we can
+Now we have the basics of a [SubViewport ](/docs/Classes/SubViewport) that we render to and we have a unique image that we can
 apply to the sphere.
 
 ## Applying the texture
 
-Now go into the [MeshInstance3D ](class_MeshInstance3D) and add a [StandardMaterial3D ](class_StandardMaterial3D)
-to it. No need for a special [Shader Material ](class_ShaderMaterial) (although that would be a good idea
+Now go into the [MeshInstance3D ](/docs/Classes/MeshInstance3D) and add a [StandardMaterial3D ](/docs/Classes/StandardMaterial3D)
+to it. No need for a special [Shader Material ](/docs/Classes/ShaderMaterial) (although that would be a good idea
 for more advanced effects, like the atmosphere in the example above).
 
 MeshInstance3D &gt; GeometryInstance &gt; Geometry &gt; Material Override &gt; ``New StandardMaterial3D``
@@ -113,7 +113,7 @@ problem that we will illustrate in the next section.
 
 ## Making the planet texture
 
-So now, when we render to our [SubViewport ](class_SubViewport), it appears magically on the sphere. But there is an ugly
+So now, when we render to our [SubViewport ](/docs/Classes/SubViewport), it appears magically on the sphere. But there is an ugly
 seam created by our texture coordinates. So how do we get a range of coordinates that wrap around
 the sphere in a nice way? One solution is to use a function that repeats on the domain of our texture.
 ``sin`` and ``cos`` are two such functions. Let's apply them to the texture and see what happens. Replace the
@@ -128,7 +128,7 @@ COLOR.xyz = vec3(sin(UV.x * 3.14159 * 4.0) * cos(UV.y * 3.14159 * 4.0) * 0.5 + 0
 
 Not too bad. If you look around, you can see that the seam has now disappeared, but in its place, we
 have pinching at the poles. This pinching is due to the way Redot maps textures to spheres in its
-[StandardMaterial3D ](class_StandardMaterial3D). It uses a projection technique called equirectangular
+[StandardMaterial3D ](/docs/Classes/StandardMaterial3D). It uses a projection technique called equirectangular
 projection, which translates a spherical map onto a 2D plane.
 
 :::note
@@ -292,7 +292,7 @@ And then, in the material, under the "Metallic" section, make sure ``Metallic`` 
 isn't metallic. These values are not physically accurate, but they are good enough for this demo.
 
 Next, under the "Roughness" section set the roughness texture to a
-[Viewport Texture ](class_ViewportTexture) pointing to our planet texture [SubViewport ](class_SubViewport).
+[Viewport Texture ](/docs/Classes/ViewportTexture) pointing to our planet texture [SubViewport ](/docs/Classes/SubViewport).
 Finally, set the ``Texture Channel`` to ``Alpha``. This instructs the renderer to use the ``alpha``
 channel of our output ``COLOR`` as the ``Roughness`` value.
 
@@ -301,10 +301,10 @@ channel of our output ``COLOR`` as the ``Roughness`` value.
 You'll notice that very little changes except that the planet is no longer reflecting the sky.
 This is happening because, by default, when something is rendered with an
 alpha value, it gets drawn as a transparent object over the background. And since the default background
-of the [SubViewport ](class_SubViewport) is opaque, the ``alpha`` channel of the
-[Viewport Texture ](class_ViewportTexture) is ``1``, resulting in the planet texture being
+of the [SubViewport ](/docs/Classes/SubViewport) is opaque, the ``alpha`` channel of the
+[Viewport Texture ](/docs/Classes/ViewportTexture) is ``1``, resulting in the planet texture being
 drawn with slightly fainter colors and a ``Roughness`` value of ``1`` everywhere. To correct this, we
-go into the [SubViewport ](class_SubViewport) and enable the "Transparent Bg" property. Since we are now
+go into the [SubViewport ](/docs/Classes/SubViewport) and enable the "Transparent Bg" property. Since we are now
 rendering one transparent object on top of another, we want to enable ``blend_premul_alpha``:
 
 ```glsl
@@ -316,9 +316,9 @@ This pre-multiplies the colors by the ``alpha`` value and then blends them corre
 when blending one transparent color on top of another, even if the background has an ``alpha`` of ``0`` (as it
 does in this case), you end up with weird color bleed issues. Setting ``blend_premul_alpha`` fixes that.
 
-Now the planet should look like it is reflecting light on the ocean but not the land. move around the [OmniLight3D ](class_OmniLight3D)
+Now the planet should look like it is reflecting light on the ocean but not the land. move around the [OmniLight3D ](/docs/Classes/OmniLight3D)
 in the scene so you can see the effect of the reflections on the ocean.
 
 ![Image](img/planet_ocean_reflect.webp)
 
-And there you have it. A procedural planet generated using a [SubViewport ](class_SubViewport).
+And there you have it. A procedural planet generated using a [SubViewport ](/docs/Classes/SubViewport).

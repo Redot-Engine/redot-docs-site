@@ -52,11 +52,11 @@ when the plugin is enabled.
 ## Autoload
 
 You can create an Autoload to load a scene or a script that inherits from
-[class_Node](class_Node).
+[class_Node](/docs/Classes/Node).
 
 :::note
 
-When autoloading a script, a [class_Node](class_Node) will be created and the script will be
+When autoloading a script, a [class_Node](/docs/Classes/Node) will be created and the script will be
 attached to it. This node will be added to the root viewport before any
 other scenes are loaded.
 
@@ -153,7 +153,7 @@ runtime, or the engine will crash.
 
 This tutorial will demonstrate building a scene switcher using autoloads.
 For basic scene switching, you can use the
-[SceneTree.change_scene_to_file() ](class_SceneTree_method_change_scene_to_file)
+[SceneTree.change_scene_to_file() ](/docs/Classes/SceneTree_method_change_scene_to_file)
 method (see [doc_scene_tree](scene_tree.md) for details). However, if you need more
 complex behavior when changing scenes, this method provides more functionality.
 
@@ -315,7 +315,7 @@ public void DeferredGotoScene(string path)
 
 </Tabs>
 
-Using [Object.call_deferred() ](class_Object_method_call_deferred),
+Using [Object.call_deferred() ](/docs/Classes/Object_method_call_deferred),
 the second function will only run once all code from the current scene has
 completed. Thus, the current scene will not be removed while it is
 still being used (i.e. its code is still running).

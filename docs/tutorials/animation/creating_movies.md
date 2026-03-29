@@ -143,15 +143,15 @@ Redot --path /path/to/your_project --write-movie output.avi --fixed-fps 30
 
 The ``--write-movie`` and ``--fixed-fps`` command line arguments are both available
 in exported projects. Movie Maker mode cannot be toggled while the project is running,
-but you can use the [OS.execute() ](class_OS_method_execute) method to
+but you can use the [OS.execute() ](/docs/Classes/OS_method_execute) method to
 run a second instance of the exported project that will record a video file.
 
 :::
 
 ## Choosing an output format
 
-Output formats are provided by the [MovieWriter ](class_MovieWriter) class.
-Redot has 2 built-in [MovieWriters ](class_MovieWriter), and more can be
+Output formats are provided by the [MovieWriter ](/docs/Classes/MovieWriter) class.
+Redot has 2 built-in [MovieWriters ](/docs/Classes/MovieWriter), and more can be
 implemented by extensions:
 
 ### AVI (recommended)

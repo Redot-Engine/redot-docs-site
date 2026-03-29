@@ -20,7 +20,7 @@ in doubt, refer to the [doc_making_plugins](making_plugins.md) page.
 ## The EditorNode3DGizmoPlugin
 
 Regardless of the approach we choose, we will need to create a new
-[EditorNode3DGizmoPlugin ](class_EditorNode3DGizmoPlugin). This will allow
+[EditorNode3DGizmoPlugin ](/docs/Classes/EditorNode3DGizmoPlugin). This will allow
 us to set a name for the new gizmo type and define other behaviors such as whether
 the gizmo can be hidden or not.
 
@@ -52,13 +52,13 @@ func _exit_tree():
 
 ```
 
-For simple gizmos, inheriting [EditorNode3DGizmoPlugin ](class_EditorNode3DGizmoPlugin)
+For simple gizmos, inheriting [EditorNode3DGizmoPlugin ](/docs/Classes/EditorNode3DGizmoPlugin)
 is enough. If you want to store some per-gizmo data or you are porting a Redot 3.0 gizmo
 to 3.1+, you should go with the second approach.
 
 ## Simple approach
 
-The first step is to, in our custom gizmo plugin, override the [_has_gizmo()](class_EditorNode3DGizmoPlugin_private_method__has_gizmo)
+The first step is to, in our custom gizmo plugin, override the [_has_gizmo()](/docs/Classes/EditorNode3DGizmoPlugin_private_method__has_gizmo)
 method so that it returns ``true`` when the node parameter is of our target type.
 
 ```
@@ -71,7 +71,7 @@ func _has_gizmo(node):
 
 ```
 
-Then we can override methods like [_redraw()](class_EditorNode3DGizmoPlugin_private_method__redraw)
+Then we can override methods like [_redraw()](/docs/Classes/EditorNode3DGizmoPlugin_private_method__redraw)
 or all the handle related ones.
 
 ```
@@ -104,7 +104,7 @@ func _redraw(gizmo):
 ```
 
 Note that we created a material in the `_init[ method, and retrieved it in the ]( method, and retrieved it in the )redraw`
-method using [get_material()](class_EditorNode3DGizmoPlugin_method_get_material). This
+method using [get_material()](/docs/Classes/EditorNode3DGizmoPlugin_method_get_material). This
 method retrieves one of the material's variants depending on the state of the gizmo
 (selected and/or editable).
 
@@ -146,17 +146,17 @@ func _redraw(gizmo):
 ```
 
 Note that we just added some handles in the `_redraw` method, but we still need to implement
-the rest of handle-related callbacks in [EditorNode3DGizmoPlugin ](class_EditorNode3DGizmoPlugin)
+the rest of handle-related callbacks in [EditorNode3DGizmoPlugin ](/docs/Classes/EditorNode3DGizmoPlugin)
 to get properly working handles.
 
 ## Alternative approach
 
-In some cases we want to provide our own implementation of [EditorNode3DGizmo](class_EditorNode3DGizmo),
+In some cases we want to provide our own implementation of [EditorNode3DGizmo](/docs/Classes/EditorNode3DGizmo),
 maybe because we want to have some state stored in each gizmo or because we are porting
 an old gizmo plugin and we don't want to go through the rewriting process.
 
 In these cases all we need to do is, in our new gizmo plugin, override
-[_create_gizmo()](class_EditorNode3DGizmoPlugin_private_method__create_gizmo), so it returns our custom gizmo implementation
+[_create_gizmo()](/docs/Classes/EditorNode3DGizmoPlugin_private_method__create_gizmo), so it returns our custom gizmo implementation
 for the Node3D nodes we want to target.
 
 ```
@@ -179,7 +179,7 @@ func _create_gizmo(node):
 ```
 
 This way all the gizmo logic and drawing methods can be implemented in a new class extending
-[EditorNode3DGizmo](class_EditorNode3DGizmo), like so:
+[EditorNode3DGizmo](/docs/Classes/EditorNode3DGizmo), like so:
 
 ```
 # my_custom_gizmo.gd
@@ -215,5 +215,5 @@ func _redraw():
 ```
 
 Note that we just added some handles in the `_redraw` method, but we still need to implement
-the rest of handle-related callbacks in [EditorNode3DGizmo](class_EditorNode3DGizmo)
+the rest of handle-related callbacks in [EditorNode3DGizmo](/docs/Classes/EditorNode3DGizmo)
 to get properly working handles.

@@ -3,10 +3,10 @@
 
 ## Introduction
 
-[Gridmaps](class_GridMap) are a tool for creating 3D
+[Gridmaps](/docs/Classes/GridMap) are a tool for creating 3D
 game levels, similar to the way [TileMap](../2d/using_tilemaps.md)
 works in 2D. You start with a predefined collection of 3D meshes (a
-[class_MeshLibrary](class_MeshLibrary)) that can be placed on a grid,
+[class_MeshLibrary](/docs/Classes/MeshLibrary)) that can be placed on a grid,
 as if you were building a level with an unlimited amount of Lego blocks.
 
 Collisions and navigation can also be added to the meshes, just like you
@@ -22,22 +22,22 @@ button.
 
 ## Creating a MeshLibrary
 
-To begin, you need a [class_MeshLibrary](class_MeshLibrary), which is a collection
+To begin, you need a [class_MeshLibrary](/docs/Classes/MeshLibrary), which is a collection
 of individual meshes that can be used in the gridmap. Open the "mesh_library_source.tscn"
 scene to see an example of how to set up the mesh library.
 
 ![Image](img/gridmap_meshlibrary1.png)
 
-As you can see, this scene has a [class_Node3D](class_Node3D) node as its root, and
-a number of [class_MeshInstance3D](class_MeshInstance3D) node children.
+As you can see, this scene has a [class_Node3D](/docs/Classes/Node3D) node as its root, and
+a number of [class_MeshInstance3D](/docs/Classes/MeshInstance3D) node children.
 
 If you don't need any physics in your scene, then you're done. However, in most
 cases you'll want to assign collision bodies to the meshes.
 
 ## Collisions
 
-You can manually assign a [class_StaticBody3D](class_StaticBody3D) and
-[class_CollisionShape3D](class_CollisionShape3D) to each mesh. Alternatively, you can use the "Mesh" menu
+You can manually assign a [class_StaticBody3D](/docs/Classes/StaticBody3D) and
+[class_CollisionShape3D](/docs/Classes/CollisionShape3D) to each mesh. Alternatively, you can use the "Mesh" menu
 to automatically create the collision body based on the mesh data.
 
 ![Image](img/gridmap_create_body.png)
@@ -56,11 +56,11 @@ library. Materials set on the node will be ignored.
 
 ## NavigationMeshes
 
-Like all mesh instances, MeshLibrary items can be assigned a [class_NavigationMesh](class_NavigationMesh)
+Like all mesh instances, MeshLibrary items can be assigned a [class_NavigationMesh](/docs/Classes/NavigationMesh)
 resource, which can be created manually, or baked as described below.
 
 To create the NavigationMesh from a MeshLibrary scene export, place a
-[class_NavigationRegion3D](class_NavigationRegion3D) child node below the main MeshInstance3D for the GridMap
+[class_NavigationRegion3D](/docs/Classes/NavigationRegion3D) child node below the main MeshInstance3D for the GridMap
 item. Add a valid NavigationMesh resource to the NavigationRegion3D and some source
 geometry nodes below and bake the NavigationMesh.
 
@@ -89,14 +89,14 @@ To summarize the specific constraints of the MeshLibrary format, a MeshLibrary
 scene has a Node3D as the root node, and several child nodes which will become
 MeshLibrary items. Each child of the root node should:
 
-- Be a [class_MeshInstance3D](class_MeshInstance3D), which will become the MeshLibrary item. Only
+- Be a [class_MeshInstance3D](/docs/Classes/MeshInstance3D), which will become the MeshLibrary item. Only
   this visual mesh will be exported.
 - Have a material, in the mesh's material slot, *not* the MeshInstance3D's
   material slots.
-- Have up to one [class_StaticBody3D](class_StaticBody3D) child, for collision. The
-  StaticBody3D should have one or more [class_CollisionShape3D](class_CollisionShape3D) children.
-- Have up to one [class_NavigationRegion3D](class_NavigationRegion3D) child, for navigation. The
-  NavigationRegion3D can have one or more additional [class_MeshInstance3D](class_MeshInstance3D)
+- Have up to one [class_StaticBody3D](/docs/Classes/StaticBody3D) child, for collision. The
+  StaticBody3D should have one or more [class_CollisionShape3D](/docs/Classes/CollisionShape3D) children.
+- Have up to one [class_NavigationRegion3D](/docs/Classes/NavigationRegion3D) child, for navigation. The
+  NavigationRegion3D can have one or more additional [class_MeshInstance3D](/docs/Classes/MeshInstance3D)
   children, which can be baked for navigation, but won't be exported as a visual
   mesh.
 
@@ -148,4 +148,4 @@ the drawing plane higher or lower on its axis.
 
 ## Using GridMap in code
 
-See [class_GridMap](class_GridMap) for details on the node's methods and member variables.
+See [class_GridMap](/docs/Classes/GridMap) for details on the node's methods and member variables.

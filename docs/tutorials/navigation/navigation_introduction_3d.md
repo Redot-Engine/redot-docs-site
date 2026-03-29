@@ -8,12 +8,12 @@ The following section provides a quick overview over all available navigation re
 
 Redot provides the following objects and classes for 3D navigation:
 
-- [Astar3D](class_Astar3D)
+- [Astar3D](/docs/Classes/Astar3D)
     ``Astar3D`` objects provide an option to find the shortest path in a graph of weighted **points**.
 
     The AStar3D class is best suited for cell-based 3D gameplay that does not require actors to reach any possible position within an area but only predefined, distinct positions.
 
-- [NavigationServer3D](class_NavigationServer3D)
+- [NavigationServer3D](/docs/Classes/NavigationServer3D)
     ``NavigationServer3D`` provides a powerful server API to find the shortest path between two positions on an area defined by a navigation mesh.
 
     The NavigationServer is best suited for 3D realtime gameplay that does require actors to reach any possible position within a navigation mesh defined area.
@@ -41,14 +41,14 @@ Redot provides the following objects and classes for 3D navigation:
 
 The following scene tree nodes are available as helpers to work with the NavigationServer3D API.
 
-- [NavigationRegion3D](class_NavigationRegion3D) Node
+- [NavigationRegion3D](/docs/Classes/NavigationRegion3D) Node
     A Node that holds a Navigation Mesh resource that defines a navigation mesh for the NavigationServer3D.
 
     - The region can be enabled / disabled.
     - The use in pathfinding can be further restricted through the ``navigation_layers`` bitmask.
     - The NavigationServer3D will join the navigation meshes of regions by proximity for a combined navigation mesh.
 
-- [NavigationLink3D](class_NavigationLink3D) Node
+- [NavigationLink3D](/docs/Classes/NavigationLink3D) Node
     A Node that connects two positions on navigation meshes over arbitrary distances for pathfinding.
 
     - The link can be enabled / disabled.
@@ -57,17 +57,17 @@ The following scene tree nodes are available as helpers to work with the Navigat
 
     Links tell the pathfinding that a connection exists and at what cost. The actual agent handling and movement needs to happen in custom scripts.
 
--  [NavigationAgent3D](class_NavigationAgent3D) Node
+-  [NavigationAgent3D](/docs/Classes/NavigationAgent3D) Node
     A helper Node used to facilitate common NavigationServer3D API calls for pathfinding and avoidance.
     Use this Node with a Node3D inheriting parent Node.
 
--  [NavigationObstacle3D](class_NavigationObstacle3D) Node
+-  [NavigationObstacle3D](/docs/Classes/NavigationObstacle3D) Node
     A Node that can be used to affect and constrain the avoidance velocity of avoidance enabled agents.
     This Node does NOT affect the pathfinding of agents. You need to change the navigation meshes for that instead.
 
 The 3D navigation meshes are defined with the following resources:
 
-- [NavigationMesh](class_NavigationMesh) Resource
+- [NavigationMesh](/docs/Classes/NavigationMesh) Resource
     A resource that holds 3D navigation mesh data.
     It provides 3D geometry baking options to define navigation areas inside the Editor as well as at runtime.
 
@@ -89,7 +89,7 @@ It uses the NavigationServer3D and a NavigationAgent3D for path movement.
 
 #. Add a NavigationRegion3D Node to the scene.
 
-#. Click on the region node and add a new [NavigationMesh](class_NavigationMesh) Resource to
+#. Click on the region node and add a new [NavigationMesh](/docs/Classes/NavigationMesh) Resource to
    the region node.
 
    .. image:: img/nav_3d_min_setup_step1.png

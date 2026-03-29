@@ -305,7 +305,7 @@ public:
 
 ### References
 
-- [RID](class_rid)
+- [RID](/docs/Classes/rid)
 - [core/templates/rid.h](https://github.com/redot-engine/redot-engine/blob/master/core/templates/rid.h)
 
 ## Registering the class in GDScript

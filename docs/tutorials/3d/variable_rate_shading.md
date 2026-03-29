@@ -102,7 +102,7 @@ to control variable rate shading on the root viewport:
   viewport. Only used if **Mode** is **Texture**.
 
 For custom viewports, the VRS mode and texture must be set manually to the
-[class_Viewport](class_Viewport) node.
+[class_Viewport](/docs/Classes/Viewport) node.
 
 :::note
 

@@ -47,7 +47,7 @@ some formats may not be available.
 
 The default action in Redot is to import images as textures. Textures are stored
 in video memory. Their pixel data can't be accessed directly from the CPU
-without converting them back to an [class_Image](class_Image) in a script. This is what
+without converting them back to an [class_Image](/docs/Classes/Image) in a script. This is what
 makes drawing them efficient.
 
 There are over a dozen import options that can be adjusted after selecting an
@@ -63,9 +63,9 @@ image in the FileSystem dock:
 It is possible to choose other types of imported resources in the Import dock:
 
 - **BitMap:** 1-bit monochrome texture (intended to be used as a click mask in
-  [class_TextureButton](class_TextureButton) and [class_TouchScreenButton](class_TouchScreenButton)). This resource
+  [class_TextureButton](/docs/Classes/TextureButton) and [class_TouchScreenButton](/docs/Classes/TouchScreenButton)). This resource
   type cannot be displayed directly onto 2D or 3D nodes, but the pixel values
-  can be queried from a script using [get_bit ](class_BitMap_method_get_bit).
+  can be queried from a script using [get_bit ](/docs/Classes/BitMap_method_get_bit).
 - **Cubemap:** Import the texture as a 6-sided cubemap, with interpolation
   between the cubemap's sides (seamless cubemaps), which can be sampled in
   custom shaders.
@@ -77,7 +77,7 @@ It is possible to choose other types of imported resources in the Import dock:
   all characters have the same width. See [doc_gui_using_fonts](../ui/gui_using_fonts.md).
 - **Image:** Import the image as-is. This resource type cannot be displayed
   directly onto 2D or 3D nodes, but the pixel values can be queried from a
-  script using [get_pixel](class_Image_method_get_pixel).
+  script using [get_pixel](/docs/Classes/Image_method_get_pixel).
 - **Texture2D:** Import the image as a 2-dimensional texture, suited for display
   on 2D and 3D surfaces. This is the default import mode.
 - **Texture2DArray:** Import the image as a collection of 2-dimensional textures.
@@ -88,8 +88,8 @@ It is possible to choose other types of imported resources in the Import dock:
 - **Texture3D:** Import the image as a 3-dimensional texture. This is *not* a 2D
   texture applied onto a 3D surface. Texture3D is similar to a texture array, but
   with interpolation between layers. Texture3D is typically used for
-  [class_FogMaterial](class_FogMaterial) density maps in [volumetric fog ](../3d/volumetric_fog.md), [particle attractor ](../3d/particles/attractors.md)
-  vector fields, [class_Environment](class_Environment) 3D LUT color correction, and custom shaders.
+  [class_FogMaterial](/docs/Classes/FogMaterial) density maps in [volumetric fog ](../3d/volumetric_fog.md), [particle attractor ](../3d/particles/attractors.md)
+  vector fields, [class_Environment](/docs/Classes/Environment) 3D LUT color correction, and custom shaders.
 - **TextureAtlas:** Import the image as an *atlas* of different textures. Can be
   used to reduce memory usage for animated 2D sprites. Only supported in 2D due
   to missing support in built-in 3D shaders.
@@ -108,7 +108,7 @@ Here are templates you can use for cubemap images (right-click &gt; **Save Link 
 The default import options (no mipmaps and **Lossless** compression) are suited
 for 2D, but are not ideal for most 3D projects. **Detect 3D** makes Redot aware
 of when a texture is used in a 3D scene (such as a texture in a
-[class_BaseMaterial3D](class_BaseMaterial3D)). If this happens, several import options are
+[class_BaseMaterial3D](/docs/Classes/BaseMaterial3D)). If this happens, several import options are
 changed so the texture flags are friendlier to 3D. Mipmaps are enabled and the
 compression mode is changed to **VRAM Compressed** unless
 [doc_importing_images_detect_3d_compress_to](doc_importing_images_detect_3d_compress_to) is changed. The texture is
@@ -316,8 +316,8 @@ If set to **Optimized**, allows the RG color format to be used if the texture
 does not use the blue channel.
 
 A third option **Normal Map (RG Channels)** is *only* available in layered
-textures ([class_Cubemap](class_Cubemap), [class_CubemapArray](class_CubemapArray), [class_Texture2DArray](class_Texture2DArray)
-and [class_Texture3D](class_Texture3D)). This forces all layers from the texture to be imported
+textures ([class_Cubemap](/docs/Classes/Cubemap), [class_CubemapArray](/docs/Classes/CubemapArray), [class_Texture2DArray](/docs/Classes/Texture2DArray)
+and [class_Texture3D](/docs/Classes/Texture3D)). This forces all layers from the texture to be imported
 with the RG color format to reduce memory usage, with only the red and green
 channels preserved. This only has an effect on textures with the **VRAM Compressed**
 or **Basis Universal** compression modes.
@@ -383,7 +383,7 @@ premultiplied alpha. By enabling this option, the texture will be converted to
 this format. A premultiplied alpha texture requires specific materials to be
 displayed correctly:
 
-- In 2D, a [class_CanvasItemMaterial](class_CanvasItemMaterial) will need to be created and
+- In 2D, a [class_CanvasItemMaterial](/docs/Classes/CanvasItemMaterial) will need to be created and
   configured to use the **Premul Alpha** blend mode on CanvasItems that use this
   texture.
 - In 3D, there is no support for premultiplied alpha blend mode yet, so this

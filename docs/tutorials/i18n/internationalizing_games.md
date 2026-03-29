@@ -62,7 +62,7 @@ the text language may not match the client's language.
 
 ## Converting keys to text
 
-Some controls, such as [Button ](class_Button) and [Label ](class_Label),
+Some controls, such as [Button ](/docs/Classes/Button) and [Label ](/docs/Classes/Label),
 will automatically fetch a translation if their text matches a translation key.
 For example, if a label's text is "MAIN_SCREEN_GREETING1" and that key exists
 in the current translation, then the text will automatically be translated.
@@ -73,7 +73,7 @@ want the player's name to be translated if it matches a translation key. To
 disable automatic translation on a specific node, disable **Localization &gt; Auto
 Translate** in the inspector.
 
-In code, the [Object.tr() ](class_Object_method_tr) function can be used.
+In code, the [Object.tr() ](/docs/Classes/Object_method_tr) function can be used.
 This will just look up the text in the translations and convert it if found:
 
 <Tabs>
@@ -260,8 +260,8 @@ Providing pluralized translations is only supported with
 The same text in different languages can vary greatly in length. For
 this, make sure to read the tutorial on [doc_size_and_anchors](../ui/size_and_anchors.md), as
 dynamically adjusting control sizes may help.
-[Container ](class_Container) can be useful, as well as the text wrapping
-options available in [Label ](class_Label).
+[Container ](/docs/Classes/Container) can be useful, as well as the text wrapping
+options available in [Label ](/docs/Classes/Label).
 
 To check whether your UI can accommodate translations with longer strings than
 the original, you can enable *pseudolocalization* in the advanced Project
@@ -292,7 +292,7 @@ can disable parts of it if desired.
 ## TranslationServer
 
 Redot has a server handling low-level translation management
-called the [TranslationServer ](class_TranslationServer).
+called the [TranslationServer ](/docs/Classes/TranslationServer).
 Translations can be added or removed during runtime;
 the current language can also be changed at runtime.
 
@@ -356,9 +356,9 @@ Custom callbacks provide a way to override BiDi for the other types of structure
 
 Controls specifically designed for number input or output (e.g. ProgressBar, SpinBox)
 will use localized numbering system automatically, for the other control
-[TextServer.format_number(string, language) ](class_TextServer_method_format_number)
+[TextServer.format_number(string, language) ](/docs/Classes/TextServer_method_format_number)
 can be used to convert Western Arabic numbers (0..9) to the localized numbering system
-and [TextServer.parse_number(string, language) ](class_TextServer_method_parse_number)
+and [TextServer.parse_number(string, language) ](/docs/Classes/TextServer_method_parse_number)
 to convert it back.
 
 ## Localizing icons and images

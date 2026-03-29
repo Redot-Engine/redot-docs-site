@@ -5,7 +5,7 @@
 
 One key concept to understand in Redot is the distinction between physics ticks
 (sometimes referred to as iterations or physics frames), and rendered frames. The
-physics proceeds at a fixed tick rate (set in [Project Settings &gt; Physics &gt; Common &gt; Physics Tick per Second](class_ProjectSettings_property_physics/common/physics_ticks_per_second)),
+physics proceeds at a fixed tick rate (set in [Project Settings &gt; Physics &gt; Common &gt; Physics Tick per Second](/docs/Classes/ProjectSettings_property_physics/common/physics_ticks_per_second)),
 which defaults to 60 ticks per second.
 
 However, the engine does not necessarily **render** at the same rate. Although many
@@ -132,7 +132,7 @@ fraction = 0.2
 ```
 
 This is called the **physics interpolation fraction**, and is handily calculated
-for you by Redot. It can be retrieved on any frame by calling [Engine.get_physics_interpolation_fraction](class_Engine_method_get_physics_interpolation_fraction).
+for you by Redot. It can be retrieved on any frame by calling [Engine.get_physics_interpolation_fraction](/docs/Classes/Engine_method_get_physics_interpolation_fraction).
 
 ### Calculating the interpolated position
 

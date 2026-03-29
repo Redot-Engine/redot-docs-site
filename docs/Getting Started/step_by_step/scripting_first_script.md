@@ -118,7 +118,7 @@ node, including classes it extends, like ``Node2D``, ``CanvasItem``, and
 
 :::note
 In GDScript, if you omit the line with the ``extends`` keyword, your
-class will implicitly extend [RefCounted](class_RefCounted), which
+class will implicitly extend [RefCounted](/docs/Classes/RefCounted), which
 Redot uses to manage your application's memory.
 
 :::
@@ -360,7 +360,7 @@ is a vector pointing forward relative to our icon. Multiplied by our ``speed``
 property, it gives us a velocity we can use to move the node forward.
 
 We add ``velocity * delta`` to the node's ``position`` to move it. The position
-itself is of type [Vector2](class_Vector2), a built-in type in Redot
+itself is of type [Vector2](/docs/Classes/Vector2), a built-in type in Redot
 representing a 2D vector.
 
 Run the scene to see the Redot head run in circles.

@@ -736,7 +736,7 @@ See also [Dictionary in C# ](doc_c_sharp_collections_dictionary).
 
 ## Variant
 
-``Redot.Variant`` is used to represent Redot's native [Variant ](class_Variant) type.
+``Redot.Variant`` is used to represent Redot's native [Variant ](/docs/Classes/Variant) type.
 Any [Variant-compatible type ](c_sharp_variant_compatible_types) can be converted from/to it.
 
 See also: [doc_c_sharp_variant](c_sharp_variant.md).

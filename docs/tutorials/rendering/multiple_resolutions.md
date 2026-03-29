@@ -74,14 +74,14 @@ screen sizes.
 On this page, *window* refers to the screen area allotted to your game
 by the system, while *viewport* refers to the root object (accessible
 from ``get_tree().root``) which the game controls to fill this screen area.
-This viewport is a [Window ](class_Window) instance. Recall from the
+This viewport is a [Window ](/docs/Classes/Window) instance. Recall from the
 [introduction ](viewports.md) that *all* Window objects are viewports.
 
 :::
 
 To configure the stretch base size at runtime from a script, use the
 ``get_tree().root.content_scale_size`` property (see
-[Window.content_scale_size ](class_Window_property_content_scale_size)).
+[Window.content_scale_size ](/docs/Classes/Window_property_content_scale_size)).
 Changing this value can indirectly change the size of 2D elements. However, to
 provide a user-accessible scaling option, using
 [doc_multiple_resolutions_stretch_scale](doc_multiple_resolutions_stretch_scale) is recommended as it's easier to
@@ -111,7 +111,7 @@ time this is done.
 There are several types of devices, with several types of screens, which
 in turn have different pixel density and resolutions. Handling all of
 them can be a lot of work, so Redot tries to make the developer's life a
-little easier. The [Viewport ](class_Viewport)
+little easier. The [Viewport ](/docs/Classes/Viewport)
 node has several functions to handle resizing, and the root node of the
 scene tree is always a viewport (scenes loaded are instanced as a child
 of it, and it can always be accessed by calling
@@ -134,7 +134,7 @@ The **Stretch Mode** setting defines how the base size is stretched to fit
 the resolution of the window or screen. The animations below use a "base
 size" of just 16×9 pixels to demonstrate the effect of different stretch
 modes. A single sprite, also 16×9 pixels in size, covers the entire viewport,
-and a diagonal [Line2D ](class_Line2D) is added on top of it:
+and a diagonal [Line2D ](/docs/Classes/Line2D) is added on top of it:
 
 ![Image](img/stretch_demo_scene.png)
 
@@ -155,7 +155,7 @@ and a diagonal [Line2D ](class_Line2D) is added on top of it:
    .. image:: img/stretch_2d_expand.gif
 
 -  **Stretch Mode = Viewport**: Viewport scaling means that the size of
-   the root [Viewport ](class_Viewport) is set precisely to the
+   the root [Viewport ](/docs/Classes/Viewport) is set precisely to the
    base size specified in the Project Settings' **Display** section.
    The scene is rendered to this viewport first. Finally, this viewport
    is scaled to fit the screen (taking the **Stretch Aspect** setting into
@@ -165,7 +165,7 @@ and a diagonal [Line2D ](class_Line2D) is added on top of it:
 
 To configure the stretch mode at runtime from a script, use the
 ``get_tree().root.content_scale_mode`` property (see
-[Window.content_scale_mode ](class_Window_property_content_scale_mode)
+[Window.content_scale_mode ](/docs/Classes/Window_property_content_scale_mode)
 and the [ContentScaleMode ](enum_Window_ContentScaleMode) enum).
 
 ### Stretch Aspect
@@ -248,7 +248,7 @@ remember to set **Display &gt; Window &gt; Handheld &gt; Orientation** to ``sens
 
 To configure the stretch aspect at runtime from a script, use the
 ``get_tree().root.content_scale_aspect`` property (see
-[Window.content_scale_aspect ](class_Window_property_content_scale_aspect)
+[Window.content_scale_aspect ](/docs/Classes/Window_property_content_scale_aspect)
 and the [ContentScaleAspect ](enum_Window_ContentScaleAspect) enum).
 
 ### Stretch Scale
@@ -272,7 +272,7 @@ by **Scale**. This makes pixels look larger and reduces rendering resolution
 
 To configure the stretch scale at runtime from a script, use the
 ``get_tree().root.content_scale_factor`` property (see
-[Window.content_scale_factor ](class_Window_property_content_scale_factor)).
+[Window.content_scale_factor ](/docs/Classes/Window_property_content_scale_factor)).
 
 ### Stretch Scale Mode
 
@@ -487,7 +487,7 @@ To ensure 2D elements don't appear too small on hiDPI displays:
   stretch scale to a value corresponding to the display scale factor in an
   [autoload ](../scripting/singletons_autoload.md)'s ``_ready()`` function.
   The display scale factor is set in the operating system's settings and can be queried
-  using [screen_get_scale](class_DisplayServer_method_screen_get_scale). This
+  using [screen_get_scale](/docs/Classes/DisplayServer_method_screen_get_scale). This
   method is currently only implemented on macOS. On other operating systems, you
   will need to implement a method to guess the display scale factor based on the
   screen resolution (with a setting to let the user override this if needed). This

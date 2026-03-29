@@ -11,8 +11,8 @@ These are currently supported through SteamVR and on HTC Elite XR headsets.
 They are exposed through the action map system.
 
 These trackers are identified by their roles which are assigned to them when configured.
-Simply add [XRController3D ](class_xrcontroller3d) nodes as children to
-the [XROrigin3D ](class_xrorigin3d) node and assign one of the following trackers:
+Simply add [XRController3D ](/docs/Classes/xrcontroller3d) nodes as children to
+the [XROrigin3D ](/docs/Classes/xrorigin3d) node and assign one of the following trackers:
 
 .. list-table:: HTC trackers
   :widths: 100

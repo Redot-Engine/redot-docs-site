@@ -52,7 +52,7 @@ OpenXR supports full hand tracking however there currently are significant diffe
 As a reliable alternative Redot XR Tools comes with a number of rigged hand scenes that react on trigger and grip inputs of your controller.
 These hands come in low and high poly versions, come in a few configurations, a number of animation files to control finger positions and a number of different textures.
 
-In your scene tree select your left hand [XRController3D ](class_xrcontroller3d) node.
+In your scene tree select your left hand [XRController3D ](/docs/Classes/xrcontroller3d) node.
 Now click on the ``instantiate Child Scene`` button to add a child scene.
 And select ``addons/Redot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn``.
 

@@ -3,15 +3,15 @@ import TabItem from "@theme/TabItem";
 
 # Using ImmediateMesh
 
-The [ImmediateMesh ](class_ImmediateMesh) is a convenient tool to create
+The [ImmediateMesh ](/docs/Classes/ImmediateMesh) is a convenient tool to create
 dynamic geometry using an OpenGL 1.x-style API. Which makes it both approachable
 to use and efficient for meshes which need to be updated every frame.
 
 Generating complex geometry (several thousand vertices) with this tool is inefficient, even if it's
 done only once. Instead, it is designed to generate simple geometry that changes every frame.
 
-First, you need to create a [MeshInstance3D ](class_meshinstance3d) and add
-an [ImmediateMesh ](class_ImmediateMesh) to it in the Inspector.
+First, you need to create a [MeshInstance3D ](/docs/Classes/meshinstance3d) and add
+an [ImmediateMesh ](/docs/Classes/ImmediateMesh) to it in the Inspector.
 
 Next, add a script to the MeshInstance3D. The code for the ImmediateMesh should
 go in the ``_process()`` function if you want it to update each frame, or in the
@@ -23,7 +23,7 @@ To begin generating geometry you must call ``surface_begin()``.
 ``surface_begin()`` takes a ``PrimitiveType`` as an argument. ``PrimitiveType``
 instructs the GPU how to arrange the primitive based on the vertices given
 whether it is triangles, lines, points, etc. A complete list can be found under
-the [Mesh ](class_mesh) class reference page.
+the [Mesh ](/docs/Classes/mesh) class reference page.
 
 Once you have called ``surface_begin()`` you are ready to start adding vertices.
 You add vertices one at a time. First you add vertex specific attributes such as

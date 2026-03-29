@@ -3,7 +3,7 @@ import TabItem from "@theme/TabItem";
 
 # The JavaScriptBridge singleton
 
-In web builds, the [JavaScriptBridge ](class_JavaScriptBridge) singleton
+In web builds, the [JavaScriptBridge ](/docs/Classes/JavaScriptBridge) singleton
 allows interaction with JavaScript and web browsers, and can be used to implement some
 functionalities unique to the web platform.
 
@@ -14,10 +14,10 @@ with external JavaScript code like third-party SDKs, libraries, or
 simply to access browser features that are not directly exposed by Redot.
 
 The ``JavaScriptBridge`` singleton provides methods to wrap a native JavaScript object into
-a Redot [JavaScriptObject ](class_JavaScriptObject) that tries to feel
+a Redot [JavaScriptObject ](/docs/Classes/JavaScriptObject) that tries to feel
 natural in the context of Redot scripting (e.g. GDScript and C#).
 
-The [JavaScriptBridge.get_interface() ](class_JavaScriptBridge_method_get_interface)
+The [JavaScriptBridge.get_interface() ](/docs/Classes/JavaScriptBridge_method_get_interface)
 method retrieves an object in the global scope.
 
 ```gdscript
@@ -31,7 +31,7 @@ func _ready():
 
 ```
 
-The [JavaScriptBridge.create_object() ](class_JavaScriptBridge_method_create_object)
+The [JavaScriptBridge.create_object() ](/docs/Classes/JavaScriptBridge_method_create_object)
 creates a new object via the JavaScript ``new`` constructor.
 
 ```gdscript
@@ -96,8 +96,8 @@ func _my_callback(args):
 
 :::warning
 
-Callback methods created via [JavaScriptBridge.get_interface() ](class_JavaScriptBridge_method_get_interface)
-(``_my_callback`` in the above example) **must** take exactly one [Array](class_Array)
+Callback methods created via [JavaScriptBridge.get_interface() ](/docs/Classes/JavaScriptBridge_method_get_interface)
+(``_my_callback`` in the above example) **must** take exactly one [Array](/docs/Classes/Array)
 argument, which is going to be the JavaScript [arguments object ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)_
 converted to an array. Otherwise, the callback method will not be called.
 
@@ -221,10 +221,10 @@ private void MyFunc()
 The value of the last JavaScript statement is converted to a GDScript value and
 returned by ``eval()`` under certain circumstances:
 
- * JavaScript ``number`` is returned as [class_float](class_float)
- * JavaScript ``boolean`` is returned as [class_bool](class_bool)
- * JavaScript ``string`` is returned as [class_String](class_String)
- * JavaScript ``ArrayBuffer``, ``TypedArray``, and ``DataView`` are returned as [PackedByteArray](class_PackedByteArray)
+ * JavaScript ``number`` is returned as [class_float](/docs/Classes/float)
+ * JavaScript ``boolean`` is returned as [class_bool](/docs/Classes/bool)
+ * JavaScript ``string`` is returned as [class_String](/docs/Classes/String)
+ * JavaScript ``ArrayBuffer``, ``TypedArray``, and ``DataView`` are returned as [PackedByteArray](/docs/Classes/PackedByteArray)
 
 <Tabs>
 
@@ -344,7 +344,7 @@ private void MyFunc4()
 
 Downloading files (e.g. a save game) from the Redot Web export to the user's computer can be done by directly interacting with JavaScript, but given it is a
 very common use case, Redot exposes this functionality to scripting via
-a dedicated [JavaScriptBridge.download_buffer() ](class_JavaScriptBridge_method_download_buffer)
+a dedicated [JavaScriptBridge.download_buffer() ](/docs/Classes/JavaScriptBridge_method_download_buffer)
 function which lets you download any generated buffer.
 
 Here is a minimal example on how to use it:

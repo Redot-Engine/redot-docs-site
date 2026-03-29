@@ -104,7 +104,7 @@ To retrieve a user's purchases, call the ``queryPurchases()`` function passing
 a string with the type of SKU to query. The SKU type string should be
 ``"inapp"`` for normal in-app purchases or ``"subs"`` for subscriptions.
 The ``query_purchases_response`` signal is sent with the result.
-The signal has a single parameter: a [Dictionary ](class_Dictionary) with
+The signal has a single parameter: a [Dictionary ](/docs/Classes/Dictionary) with
 a status code and either an array of purchases or an error message.
 Only active subscriptions and non-consumed one-time purchases are
 included in the purchase array.
@@ -173,7 +173,7 @@ func _on_purchase_error(response_id, error_message):
 ### Processing a purchase item
 
 The ``query_purchases_response`` and ``purchases_updated`` signals provide an array
-of purchases in [Dictionary ](class_Dictionary) format. The purchase Dictionary
+of purchases in [Dictionary ](/docs/Classes/Dictionary) format. The purchase Dictionary
 includes keys that map to values of the Google Play Billing
 [Purchase ](https://developer.android.com/reference/com/android/billingclient/api/Purchase) class.
 

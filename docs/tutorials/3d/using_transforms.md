@@ -73,17 +73,17 @@ There are a few reasons this may happen:
 
 # Say no to Euler angles
 
-The result of all this is that you should **not use** the ``rotation`` property of [class_Node3D](class_Node3D) nodes in Redot for games. It's there to be used mainly in the editor, for coherence with the 2D engine, and for simple rotations (generally just one axis, or even two in limited cases). As much as you may be tempted, don't use it.
+The result of all this is that you should **not use** the ``rotation`` property of [class_Node3D](/docs/Classes/Node3D) nodes in Redot for games. It's there to be used mainly in the editor, for coherence with the 2D engine, and for simple rotations (generally just one axis, or even two in limited cases). As much as you may be tempted, don't use it.
 
 Instead, there is a better way to solve your rotation problems.
 
 ## Introducing transforms
 
-Redot uses the [class_Transform3D](class_Transform3D) datatype for orientations. Each [class_Node3D](class_Node3D) node contains a ``transform`` property which is relative to the parent's transform, if the parent is a Node3D-derived type.
+Redot uses the [class_Transform3D](/docs/Classes/Transform3D) datatype for orientations. Each [class_Node3D](/docs/Classes/Node3D) node contains a ``transform`` property which is relative to the parent's transform, if the parent is a Node3D-derived type.
 
 It is also possible to access the world coordinate transform via the ``global_transform`` property.
 
-A transform has a [class_Basis](class_Basis) (transform.basis sub-property), which consists of three [class_Vector3](class_Vector3) vectors. These are accessed via the ``transform.basis`` property and can be accessed directly by ``transform.basis.x``, ``transform.basis.y``, and ``transform.basis.z``. Each vector points in the direction its axis has been rotated, so they effectively describe the node's total rotation. The scale (as long as it's uniform) can also be inferred from the length of the axes. A *basis* can also be interpreted as a 3x3 matrix and used as ``transform.basis[x][y]``.
+A transform has a [class_Basis](/docs/Classes/Basis) (transform.basis sub-property), which consists of three [class_Vector3](/docs/Classes/Vector3) vectors. These are accessed via the ``transform.basis`` property and can be accessed directly by ``transform.basis.x``, ``transform.basis.y``, and ``transform.basis.z``. Each vector points in the direction its axis has been rotated, so they effectively describe the node's total rotation. The scale (as long as it's uniform) can also be inferred from the length of the axes. A *basis* can also be interpreted as a 3x3 matrix and used as ``transform.basis[x][y]``.
 
 A default basis (unmodified) is akin to:
 
@@ -533,7 +533,7 @@ transform.Basis = new Basis(c);
 
 </Tabs>
 
-The [class_Quaternion](class_Quaternion) type reference has more information on the datatype (it
+The [class_Quaternion](/docs/Classes/Quaternion) type reference has more information on the datatype (it
 can also do transform accumulation, transform points, etc., though this is used
 less often). If you interpolate or apply operations to quaternions many times,
 keep in mind they need to be eventually normalized. Otherwise, they will also

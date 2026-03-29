@@ -47,7 +47,7 @@ You can see how saving and loading works in action using the
 
 ## Plain text and binary files
 
-Redot's [class_FileAccess](class_FileAccess) class provides methods to access files on the
+Redot's [class_FileAccess](/docs/Classes/FileAccess) class provides methods to access files on the
 filesystem for reading and writing:
 
 <Tabs>
@@ -91,44 +91,44 @@ private string LoadFile()
 </Tabs>
 
 To handle custom binary formats (such as loading file formats not supported by
-Redot), [class_FileAccess](class_FileAccess) provides several methods to read/write integers,
+Redot), [class_FileAccess](/docs/Classes/FileAccess) provides several methods to read/write integers,
 floats, strings and more. These FileAccess methods have names that start with
 ``get_`` and ``store_``.
 
 If you need more control over reading binary files or need to read binary
-streams that are not part of a file, [class_PackedByteArray](class_PackedByteArray) provides
+streams that are not part of a file, [class_PackedByteArray](/docs/Classes/PackedByteArray) provides
 several helper methods to decode/encode series of bytes to integers, floats,
 strings and more. These PackedByteArray methods have names that start with
 ``decode_`` and ``encode_``. See also [doc_binary_serialization_api](binary_serialization_api.md).
 
 ## Images
 
-Image's [Image.load_from_file ](class_Image_method_load_from_file) static method
+Image's [Image.load_from_file ](/docs/Classes/Image_method_load_from_file) static method
 handles everything, from format detection based on file extension to reading the
 file from disk.
 
 If you need error handling or more control (such as changing the scale an SVG is
 loaded at), use one of the following methods depending on the file format:
 
-- [Image.load_jpg_from_buffer ](class_Image_method_load_jpg_from_buffer)
-- [Image.load_ktx_from_buffer ](class_Image_method_load_ktx_from_buffer)
-- [Image.load_png_from_buffer ](class_Image_method_load_png_from_buffer)
-- [Image.load_svg_from_buffer ](class_Image_method_load_svg_from_buffer)
-  or [Image.load_svg_from_string ](class_Image_method_load_svg_from_string)
-- [Image.load_tga_from_buffer ](class_Image_method_load_tga_from_buffer)
-- [Image.load_webp_from_buffer ](class_Image_method_load_webp_from_buffer)
+- [Image.load_jpg_from_buffer ](/docs/Classes/Image_method_load_jpg_from_buffer)
+- [Image.load_ktx_from_buffer ](/docs/Classes/Image_method_load_ktx_from_buffer)
+- [Image.load_png_from_buffer ](/docs/Classes/Image_method_load_png_from_buffer)
+- [Image.load_svg_from_buffer ](/docs/Classes/Image_method_load_svg_from_buffer)
+  or [Image.load_svg_from_string ](/docs/Classes/Image_method_load_svg_from_string)
+- [Image.load_tga_from_buffer ](/docs/Classes/Image_method_load_tga_from_buffer)
+- [Image.load_webp_from_buffer ](/docs/Classes/Image_method_load_webp_from_buffer)
 
 Several image formats can also be saved by Redot at runtime using the following
 methods:
 
-- [Image.save_png ](class_Image_method_save_png)
-  or [Image.save_png_to_buffer ](class_Image_method_save_png_to_buffer)
-- [Image.save_webp ](class_Image_method_save_webp)
-  or [Image.save_webp_to_buffer ](class_Image_method_save_webp_to_buffer)
-- [Image.save_jpg ](class_Image_method_save_jpg)
-  or [Image.save_jpg_to_buffer ](class_Image_method_save_jpg_to_buffer)
-- [Image.save_exr ](class_Image_method_save_exr)
-  or [Image.save_exr_to_buffer ](class_Image_method_save_exr_to_buffer)
+- [Image.save_png ](/docs/Classes/Image_method_save_png)
+  or [Image.save_png_to_buffer ](/docs/Classes/Image_method_save_png_to_buffer)
+- [Image.save_webp ](/docs/Classes/Image_method_save_webp)
+  or [Image.save_webp_to_buffer ](/docs/Classes/Image_method_save_webp_to_buffer)
+- [Image.save_jpg ](/docs/Classes/Image_method_save_jpg)
+  or [Image.save_jpg_to_buffer ](/docs/Classes/Image_method_save_jpg_to_buffer)
+- [Image.save_exr ](/docs/Classes/Image_method_save_exr)
+  or [Image.save_exr_to_buffer ](/docs/Classes/Image_method_save_exr_to_buffer)
   *(only available in editor builds, cannot be used in exported projects)*
 
 The methods with the ``to_buffer`` suffix save the image to a PackedByteArray
@@ -139,15 +139,15 @@ increase performance by reducing I/O utilization.
 :::note
 
 If displaying the loaded image on a 3D surface, make sure to call
-[Image.generate_mipmaps ](class_Image_method_generate_mipmaps)
+[Image.generate_mipmaps ](/docs/Classes/Image_method_generate_mipmaps)
 so that the texture doesn't look grainy when viewed at a distance.
 This is also useful in 2D when following instructions on
 [reducing aliasing when downsampling ](doc_multiple_resolutions_reducing_aliasing_on_downsampling).
 
 :::
 
-Example of loading an image and displaying it in a [class_TextureRect](class_TextureRect) node
-(which requires conversion to [class_ImageTexture](class_ImageTexture)):
+Example of loading an image and displaying it in a [class_TextureRect](/docs/Classes/TextureRect) node
+(which requires conversion to [class_ImageTexture](/docs/Classes/ImageTexture)):
 
 <Tabs>
 
@@ -200,7 +200,7 @@ with an ``.ogg`` extension may be Ogg Vorbis files. Some may be Ogg Theora
 videos, or contain Opus audio within an Ogg container. These files will **not**
 load correctly as audio files in Redot.
 
-Example of loading an Ogg Vorbis audio file in an [class_AudioStreamPlayer](class_AudioStreamPlayer) node:
+Example of loading an Ogg Vorbis audio file in an [class_AudioStreamPlayer](/docs/Classes/AudioStreamPlayer) node:
 
 <Tabs>
 
@@ -224,7 +224,7 @@ GetNode<AudioStreamPlayer>("AudioStreamPlayer").Stream = AudioStreamOggVorbis.Lo
 
 </Tabs>
 
-Example of loading an Ogg Theora video file in a [class_VideoStreamPlayer](class_VideoStreamPlayer) node:
+Example of loading an Ogg Theora video file in a [class_VideoStreamPlayer](/docs/Classes/VideoStreamPlayer) node:
 
 <Tabs>
 
@@ -268,11 +268,11 @@ GetNode<VideoStreamPlayer>("VideoStreamPlayer").Play();
 
 Redot doesn't support runtime loading of MP3 or WAV files yet. Until this is
 implemented, it's feasible to implement runtime WAV loading using a script
-since [class_AudioStreamWAV](class_AudioStreamWAV)'s ``data`` property is exposed to
+since [class_AudioStreamWAV](/docs/Classes/AudioStreamWAV)'s ``data`` property is exposed to
 scripting.
 
 It's still possible to *save* WAV files using
-[AudioStreamWAV.save_to_wav ](class_AudioStreamWAV_method_save_to_wav), which is useful
+[AudioStreamWAV.save_to_wav ](/docs/Classes/AudioStreamWAV_method_save_to_wav), which is useful
 for procedurally generated audio or microphone recordings.
 
 :::
@@ -280,7 +280,7 @@ for procedurally generated audio or microphone recordings.
 ## 3D scenes
 
 Redot has first-class support for glTF 2.0, both in the editor and exported
-projects. Using [class_gltfdocument](class_gltfdocument) and [class_gltfstate](class_gltfstate) together,
+projects. Using [class_gltfdocument](/docs/Classes/gltfdocument) and [class_gltfstate](/docs/Classes/gltfstate) together,
 Redot can load and save glTF files in exported projects, in both text
 (``.gltf``) and binary (``.glb``) formats. The binary format should be preferred
 as it's faster to write and smaller, but the text format is easier to debug.
@@ -362,26 +362,26 @@ loading from a buffer, this base path must be manually set as there is no
 way for Redot to infer this path.
 
 To set the base path, set
-[GLTFState.base_path ](class_GLTFState_property_base_path) on your
+[GLTFState.base_path ](/docs/Classes/GLTFState_property_base_path) on your
 GLTFState instance *before* calling
-[GLTFDocument.append_from_buffer ](class_GLTFDocument_method_append_from_buffer)
-or [GLTFDocument.append_from_file ](class_GLTFDocument_method_append_from_file).
+[GLTFDocument.append_from_buffer ](/docs/Classes/GLTFDocument_method_append_from_buffer)
+or [GLTFDocument.append_from_file ](/docs/Classes/GLTFDocument_method_append_from_file).
 
 :::
 
 ## Fonts
 
-[FontFile.load_dynamic_font ](class_FontFile_method_load_bitmap_font) supports the following
+[FontFile.load_dynamic_font ](/docs/Classes/FontFile_method_load_bitmap_font) supports the following
 font file formats: TTF, OTF, WOFF, WOFF2, PFB, PFM
 
-On the other hand, [FontFile.load_bitmap_font ](class_FontFile_method_load_bitmap_font) supports
+On the other hand, [FontFile.load_bitmap_font ](/docs/Classes/FontFile_method_load_bitmap_font) supports
 the [BMFont ](https://www.angelcode.com/products/bmfont/)_ format (``.fnt`` or ``.font``).
 
 Additionally, it is possible to load any font that is installed on the system using
 Redot's support for [doc_using_fonts_system_fonts](doc_using_fonts_system_fonts).
 
 Example of loading a font file automatically according to its file extension,
-then adding it as a theme override to a [class_Label](class_Label) node:
+then adding it as a theme override to a [class_Label](/docs/Classes/Label) node:
 
 <Tabs>
 
@@ -453,14 +453,14 @@ if (!fontFile.Data.IsEmpty())
 
 ## ZIP archives
 
-Redot supports reading and writing ZIP archives using the [class_zipreader](class_zipreader)
-and [class_zippacker](class_zippacker) classes. This supports any ZIP file, including files
+Redot supports reading and writing ZIP archives using the [class_zipreader](/docs/Classes/zipreader)
+and [class_zippacker](/docs/Classes/zippacker) classes. This supports any ZIP file, including files
 generated by Redot's "Export PCK/ZIP" functionality (although these will contain
 imported Redot resources rather than the original project files).
 
 :::note
 
-Use [ProjectSettings.load_resource_pack ](class_ProjectSettings_method_load_resource_pack)
+Use [ProjectSettings.load_resource_pack ](/docs/Classes/ProjectSettings_method_load_resource_pack)
 to load PCK or ZIP files exported by Redot as
 [additional data packs ](../export/exporting_pcks.md). That approach is preferred
 for DLCs, as it makes interacting with additional data packs seamless (virtual filesystem).
@@ -471,7 +471,7 @@ This ZIP archive support can be combined with runtime image, 3D scene and audio
 loading to provide a seamless modding experience without requiring users to go
 through the Redot editor to generate PCK/ZIP files.
 
-Example that lists files in a ZIP archive in an [class_ItemList](class_ItemList) node,
+Example that lists files in a ZIP archive in an [class_ItemList](/docs/Classes/ItemList) node,
 then writes contents read from it to a new ZIP archive (essentially duplicating the archive):
 
 <Tabs>

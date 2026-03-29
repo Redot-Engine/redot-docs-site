@@ -110,7 +110,7 @@ There are two systems for registering types:
 
    - Works for all scripting languages because it deals with Script resources in abstract.
 
-   - Set up using [EditorPlugin.add_custom_type ](class_EditorPlugin_method_add_custom_type).
+   - Set up using [EditorPlugin.add_custom_type ](/docs/Classes/EditorPlugin_method_add_custom_type).
 
 - [Script Classes ](doc_gdscript_basics_class_name)
 
@@ -209,7 +209,7 @@ Script code like this is much slower than engine-side C++ code. Each instruction
 makes a call to the scripting API which leads to many "lookups" on the back-end
 to find the logic to execute.
 
-Scenes help to avoid this performance issue. [PackedScene ](class_PackedScene), the base type that scenes inherit from, defines resources
+Scenes help to avoid this performance issue. [PackedScene ](/docs/Classes/PackedScene), the base type that scenes inherit from, defines resources
 that use serialized data to create objects. The engine can process scenes in
 batches on the back-end and provide much better performance than scripts.
 

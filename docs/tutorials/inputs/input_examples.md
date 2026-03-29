@@ -5,7 +5,7 @@ import TabItem from "@theme/TabItem";
 
 ## Introduction
 
-In this tutorial, you'll learn how to use Redot's [InputEvent ](class_InputEvent)
+In this tutorial, you'll learn how to use Redot's [InputEvent ](/docs/Classes/InputEvent)
 system to capture player input. There are many different types of input your
 game may use - keyboard, gamepad, mouse, etc. - and many different ways to
 turn those inputs into actions in your game. This document will show you some
@@ -24,7 +24,7 @@ Sometimes you want your game to respond to a certain input event - pressing
 the "jump" button, for example. For other situations, you might want something
 to happen as long as a key is pressed, such as movement. In the first case,
 you can use the ``_input()`` function, which will be called whenever an input
-event occurs. In the second case, Redot provides the [Input ](class_Input)
+event occurs. In the second case, Redot provides the [Input ](/docs/Classes/Input)
 singleton, which you can use to query the state of an input.
 
 Examples:
@@ -81,7 +81,7 @@ events in ``_input()``.
 
 ## Input events
 
-Input events are objects that inherit from [InputEvent ](class_InputEvent).
+Input events are objects that inherit from [InputEvent ](/docs/Classes/InputEvent).
 Depending on the event type, the object will contain specific properties
 related to that event. To see what events actually look like, add a Node and
 attach the following script:
@@ -141,13 +141,13 @@ Mouse motion at position ((868, 242)) with velocity ((-2.134768, 2.134768))
 
 As you can see, the results are very different for the different types of
 input. Key events are even printed as their key symbols. For example, let's
-consider [InputEventMouseButton ](class_InputEventMouseButton).
+consider [InputEventMouseButton ](/docs/Classes/InputEventMouseButton).
 It inherits from the following classes:
 
-- [InputEvent ](class_InputEvent) - the base class for all input events
-- [InputEventWithModifiers ](class_InputEventWithModifiers) - adds the ability to check if modifiers are pressed, such as `Shift` or `Alt`.
-- [InputEventMouse ](class_InputEventMouse) - adds mouse event properties, such as ``position``
-- [InputEventMouseButton ](class_InputEventMouseButton) - contains the index of the button that was pressed, whether it was a double-click, etc.
+- [InputEvent ](/docs/Classes/InputEvent) - the base class for all input events
+- [InputEventWithModifiers ](/docs/Classes/InputEventWithModifiers) - adds the ability to check if modifiers are pressed, such as `Shift` or `Alt`.
+- [InputEventMouse ](/docs/Classes/InputEventMouse) - adds mouse event properties, such as ``position``
+- [InputEventMouseButton ](/docs/Classes/InputEventMouseButton) - contains the index of the button that was pressed, whether it was a double-click, etc.
 
 :::tip
 It's a good idea to keep the class reference open while you're working
@@ -192,7 +192,7 @@ public override void _Input(InputEvent @event)
 
 ## InputMap
 
-The [InputMap ](class_InputMap) is the most flexible way to handle a
+The [InputMap ](/docs/Classes/InputMap) is the most flexible way to handle a
 variety of inputs. You use this by creating named input *actions*, to which
 you can assign any number of input events, such as keypresses or mouse clicks.
 To see them, and to add your own, open Project -&gt; Project Settings and select
@@ -245,7 +245,7 @@ public override void _Input(InputEvent @event)
 
 ## Keyboard events
 
-Keyboard events are captured in [InputEventKey ](class_InputEventKey).
+Keyboard events are captured in [InputEventKey ](/docs/Classes/InputEventKey).
 While it's recommended to use input actions instead, there may be cases where
 you want to specifically look at key events. For this example, let's check for
 the `T`:
@@ -308,7 +308,7 @@ for more information.
 ### Keyboard modifiers
 
 Modifier properties are inherited from
-[InputEventWithModifiers ](class_InputEventWithModifiers). This allows
+[InputEventWithModifiers ](/docs/Classes/InputEventWithModifiers). This allows
 you to check for modifier combinations using boolean properties. Let's imagine
 you want one thing to happen when the `T` is pressed, but something
 different when it's `Shift + T`:
@@ -360,9 +360,9 @@ constants.
 
 ## Mouse events
 
-Mouse events stem from the [InputEventMouse ](class_InputEventMouse) class, and
-are separated into two types: [InputEventMouseButton ](class_InputEventMouseButton)
-and [InputEventMouseMotion ](class_InputEventMouseMotion). Note that this
+Mouse events stem from the [InputEventMouse ](/docs/Classes/InputEventMouse) class, and
+are separated into two types: [InputEventMouseButton ](/docs/Classes/InputEventMouseButton)
+and [InputEventMouseMotion ](/docs/Classes/InputEventMouseMotion). Note that this
 means that all mouse events will contain a ``position`` property.
 
 ### Mouse buttons
@@ -416,11 +416,11 @@ public override void _Input(InputEvent @event)
 
 ### Mouse motion
 
-[InputEventMouseMotion ](class_InputEventMouseMotion) events occur whenever
+[InputEventMouseMotion ](/docs/Classes/InputEventMouseMotion) events occur whenever
 the mouse moves. You can find the move's distance with the ``relative``
 property.
 
-Here's an example using mouse events to drag-and-drop a [Sprite2D ](class_Sprite2D)
+Here's an example using mouse events to drag-and-drop a [Sprite2D ](/docs/Classes/Sprite2D)
 node:
 
 <Tabs>
@@ -505,8 +505,8 @@ public partial class MyNode2D : Node2D
 ## Touch events
 
 If you are using a touchscreen device, you can generate touch events.
-[InputEventScreenTouch ](class_InputEventScreenTouch) is equivalent to
-a mouse click event, and [InputEventScreenDrag ](class_InputEventScreenDrag)
+[InputEventScreenTouch ](/docs/Classes/InputEventScreenTouch) is equivalent to
+a mouse click event, and [InputEventScreenDrag ](/docs/Classes/InputEventScreenDrag)
 works much the same as mouse motion.
 
 :::tip

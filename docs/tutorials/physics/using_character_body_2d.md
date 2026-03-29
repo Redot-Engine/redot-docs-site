@@ -9,7 +9,7 @@ Redot offers several collision objects to provide both collision detection
 and response. Trying to decide which one to use for your project can be confusing.
 You can avoid problems and simplify development if you understand how each of them
 works and what their pros and cons are. In this tutorial, we'll look at the
-[CharacterBody2D ](class_CharacterBody2D) node and show some examples
+[CharacterBody2D ](/docs/Classes/CharacterBody2D) node and show some examples
 of how to use it.
 
 :::note
@@ -56,11 +56,11 @@ see examples of how they work.
 
 ### move_and_collide
 
-This method takes one required parameter: a [Vector2 ](class_Vector2) indicating
+This method takes one required parameter: a [Vector2 ](/docs/Classes/Vector2) indicating
 the body's relative movement. Typically, this is your velocity vector multiplied by the
 frame timestep (``delta``). If the engine detects a collision anywhere along
 this vector, the body will immediately stop moving. If this happens, the
-method will return a [KinematicCollision2D ](class_KinematicCollision2D) object.
+method will return a [KinematicCollision2D ](/docs/Classes/KinematicCollision2D) object.
 
 ``KinematicCollision2D`` is an object containing data about the collision
 and the colliding object. Using this data, you can calculate your collision
@@ -116,7 +116,7 @@ or set in code.
     This parameter is the maximum angle before a surface is no longer considered a "floor."
 
 There are many other properties that can be used to modify the body's behavior under
-specific circumstances. See the [CharacterBody2D ](class_CharacterBody2D) docs
+specific circumstances. See the [CharacterBody2D ](/docs/Classes/CharacterBody2D) docs
 for full details.
 
 ## Detecting collisions
@@ -177,7 +177,7 @@ for (int i = 0; i < GetSlideCollisionCount(); i++)
 
 :::
 
-See [KinematicCollision2D ](class_KinematicCollision2D) for details on what
+See [KinematicCollision2D ](/docs/Classes/KinematicCollision2D) for details on what
 collision data is returned.
 
 ## Which movement method to use?
@@ -318,7 +318,7 @@ public partial class MyCharacterBody2D : CharacterBody2D
 
 Run this scene and you'll see that ``move_and_collide()`` works as expected, moving
 the body along the velocity vector. Now let's see what happens when you add
-some obstacles. Add a [StaticBody2D ](class_StaticBody2D) with a
+some obstacles. Add a [StaticBody2D ](/docs/Classes/StaticBody2D) with a
 rectangular collision shape. For visibility, you can use a Sprite2D, a
 Polygon2D, or turn on "Visible Collision Shapes" from the "Debug" menu.
 
@@ -525,7 +525,7 @@ If you've downloaded the sample project, you can find this in "platformer.tscn".
 
 For this example, we'll assume you have a level made of one or more ``StaticBody2D``
 objects. They can be any shape and size. In the sample project, we're using
-[Polygon2D ](class_Polygon2D) to create the platform shapes.
+[Polygon2D ](/docs/Classes/Polygon2D) to create the platform shapes.
 
 Here's the code for the player body:
 

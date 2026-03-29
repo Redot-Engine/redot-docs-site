@@ -164,11 +164,11 @@ The columns in our table are as follows:
 In the XR action map, actions are the entities that your game/application will
 interact with.
 For instance, we can define an action ``Shoot`` and the input bound to that action will
-trigger the ``button_pressed`` signal on the relevant [XRController3D ](class_xrcontroller3d)
+trigger the ``button_pressed`` signal on the relevant [XRController3D ](/docs/Classes/xrcontroller3d)
 node in your scene with ``Shoot`` as the ``name`` parameter of the signal.
 
 You can also poll the current state of an action.
-[XRController3D ](class_xrcontroller3d) for instance has
+[XRController3D ](/docs/Classes/xrcontroller3d) for instance has
 an ``is_button_pressed`` method.
 
 Actions can be used for both input and output and each action has a type that defines
@@ -180,7 +180,7 @@ its behavior.
 These two are special as they are the only ones that are interchangeable.
 OpenXR will handle conversions between ``Bool`` and ``Float`` inputs and actions.
 You can get the value of a ``Float`` type action by calling the method ``get_float`` on
-your [XRController3D ](class_xrcontroller3d) node.
+your [XRController3D ](/docs/Classes/xrcontroller3d) node.
 It emits the ``input_float_changed`` signal when changed.
 
 :::note
@@ -195,12 +195,12 @@ in the future.
 The ``Vector2`` type defines the input as an axis input.
 Touchpads, thumbsticks and similar inputs are exposed as vectors.
 You can get the value of a ``Vector2`` type action by calling the method ``get_vector2``
-on your [XRController3D ](class_xrcontroller3d) node.
+on your [XRController3D ](/docs/Classes/xrcontroller3d) node.
 It emits the ``input_vector2_changed`` signal when changed.
 
 The ``Pose`` type defines a spatially tracked input.
 Multiple "pose" inputs are available in OpenXR: ``aim``, ``grip`` and ``palm``.
-Your [XRController3D ](class_xrcontroller3d) node is automatically positioned based
+Your [XRController3D ](/docs/Classes/xrcontroller3d) node is automatically positioned based
 on the pose action assigned to ``pose`` property of this node.
 More about poses later.
 
@@ -291,7 +291,7 @@ Now note that we don't distinguish between the left and right hand.
 This is something that is determined at the next stage.
 We've implemented the action system in such a way that you can bind the same action
 to both hands.
-The appropriate [XRController3D ](class_xrcontroller3d) node will emit the signal.
+The appropriate [XRController3D ](/docs/Classes/xrcontroller3d) node will emit the signal.
 
 :::warning
 

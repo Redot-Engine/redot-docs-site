@@ -97,7 +97,7 @@ A [Singleton (Autoload) ](singletons_autoload.md) is an always loaded node
 that can be accessed directly by any node regardless of the scene. These are useful
 when some data or functionality is shared globally.
 
-[Node.find_child() ](class_Node_method_find_child) finds a node by name
+[Node.find_child() ](/docs/Classes/Node_method_find_child) finds a node by name
 without knowing its full path. This seems similar to a scene unique node, but
 this method is able to find nodes in nested scenes, and doesn't require marking
 the node in the scene editor in any way. However, this method is slow. Scene

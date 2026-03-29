@@ -12,7 +12,7 @@ to the background.
 
 ## Handling the notification
 
-On desktop and web platforms, [Node ](class_Node) receives a special
+On desktop and web platforms, [Node ](/docs/Classes/Node) receives a special
 ``NOTIFICATION_WM_CLOSE_REQUEST`` notification when quitting is requested from
 the window manager.
 
@@ -95,9 +95,9 @@ On Android, pressing the Back button will exit the application if
 ## Sending your own quit notification
 
 While forcing the application to close can be done by calling
-[SceneTree.quit ](class_SceneTree_method_quit), doing so will not send
+[SceneTree.quit ](/docs/Classes/SceneTree_method_quit), doing so will not send
 the ``NOTIFICATION_WM_CLOSE_REQUEST`` to the nodes in the scene tree.
-Quitting by calling [SceneTree.quit ](class_SceneTree_method_quit) will
+Quitting by calling [SceneTree.quit ](/docs/Classes/SceneTree_method_quit) will
 not allow custom actions to complete (such as saving, confirming the quit,
 or debugging), even if you try to delay the line that forces the quit.
 
@@ -128,5 +128,5 @@ GetTree().Root.PropagateNotification((int)NotificationWMCloseRequest);
 
 Sending this notification will inform all nodes about the program termination,
 but will not terminate the program itself *unlike in 3.X*. In order to achieve
-the previous behavior, [SceneTree.quit ](class_SceneTree_method_quit) should
+the previous behavior, [SceneTree.quit ](/docs/Classes/SceneTree_method_quit) should
 be called after the notification.

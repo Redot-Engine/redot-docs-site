@@ -89,7 +89,7 @@ matching the 2D rendering resolution. Resolution scales *below* ``1.0`` can be
 used to speed up rendering, at the cost of a blurrier final image and more aliasing.
 
 The rendering scale can be adjusted at runtime by changing the ``scaling_3d_scale``
-property on a [class_Viewport](class_Viewport) node.
+property on a [class_Viewport](/docs/Classes/Viewport) node.
 
 Resolution scales *above* ``1.0`` can be used for supersample antialiasing
 (SSAA). This will provide antialiasing at a *very* high performance cost, and is
@@ -202,7 +202,7 @@ not change depending on resolution scale.
 
 The texture LOD bias can manually be changed by adjusting the **Rendering &gt;
 Textures &gt; Default Filters &gt; Texture Mipmap Bias** advanced project setting. It
-can also be changed at runtime on [Viewports](class_Viewport) by
+can also be changed at runtime on [Viewports](/docs/Classes/Viewport) by
 adjusting the ``texture_mipmap_bias`` property.
 
 :::warning

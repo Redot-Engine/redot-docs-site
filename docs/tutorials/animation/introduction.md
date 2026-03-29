@@ -1,7 +1,7 @@
 
 # Introduction to the animation features
 
-The [class_AnimationPlayer](class_AnimationPlayer) node allows you to create anything
+The [class_AnimationPlayer](/docs/Classes/AnimationPlayer) node allows you to create anything
 from simple to complex animations.
 
 In this guide you learn to:
@@ -18,7 +18,7 @@ and even call functions.
 ## Create an AnimationPlayer node
 
 To use the animation tools we first have to create an
-[class_AnimationPlayer](class_AnimationPlayer) node.
+[class_AnimationPlayer](/docs/Classes/AnimationPlayer) node.
 
 The AnimationPlayer node type is the data container for your animations.
 One AnimationPlayer node can hold multiple animations, which can

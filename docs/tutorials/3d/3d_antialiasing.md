@@ -67,7 +67,7 @@ To make specular aliasing less noticeable, use the [Screen-space roughness limit
 which is enabled by default.
 
 MSAA can be enabled in the Project Settings by changing the value of the
-[Rendering &gt; Anti Aliasing &gt; Quality &gt; MSAA 3D](class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d)
+[Rendering &gt; Anti Aliasing &gt; Quality &gt; MSAA 3D](/docs/Classes/ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d)
 setting. It's important to change the value of the **MSAA 3D** setting and not **MSAA 2D**, as these are entirely
 separate settings.
 
@@ -103,7 +103,7 @@ objects. Rendering at a higher framerate will allow TAA to converge faster,
 therefore making those ghosting artifacts less visible.
 
 Temporal antialiasing can be enabled in the Project Settings by changing the value of the
-[Rendering &gt; Anti Aliasing &gt; Quality &gt; TAA](class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa)
+[Rendering &gt; Anti Aliasing &gt; Quality &gt; TAA](/docs/Classes/ProjectSettings_property_rendering/anti_aliasing/quality/use_taa)
 setting.
 
 Comparison between no antialiasing (left) and TAA (right):
@@ -164,7 +164,7 @@ FXAA introduces a moderate amount of blur when enabled (more than TAA when
 still, but less than TAA when the camera is moving).
 
 FXAA can be enabled in the Project Settings by changing the value of the
-[Rendering &gt; Anti Aliasing &gt; Quality &gt; Screen Space AA](class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa)
+[Rendering &gt; Anti Aliasing &gt; Quality &gt; Screen Space AA](/docs/Classes/ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa)
 setting to ``FXAA``.
 
 Comparison between no antialiasing (left) and FXAA (right):
@@ -185,9 +185,9 @@ SSAA difficult to use for game purposes, but you may still find supersampling
 useful for [offline rendering](../animation/creating_movies.md).
 
 Supersample antialiasing is performed by increasing the
-[Rendering &gt; Scaling 3D &gt; Scale](class_ProjectSettings_property_rendering/scaling_3d/scale)
+[Rendering &gt; Scaling 3D &gt; Scale](/docs/Classes/ProjectSettings_property_rendering/scaling_3d/scale)
 advanced project setting above ``1.0`` while ensuring
-[Rendering &gt; Scaling 3D &gt; Mode](class_ProjectSettings_property_rendering/scaling_3d/mode)
+[Rendering &gt; Scaling 3D &gt; Mode](/docs/Classes/ProjectSettings_property_rendering/scaling_3d/mode)
 is set to ``Bilinear`` (the default).
 Since the scale factor is defined per-axis, a scale factor of ``1.5`` will result
 in 2.25× SSAA while a scale factor of ``2.0`` will result in 4× SSAA. Since Redot

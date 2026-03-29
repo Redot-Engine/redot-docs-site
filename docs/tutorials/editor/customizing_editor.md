@@ -156,6 +156,6 @@ Some commonly changed settings are:
   orbit modifiers in the 3D editor even when not holding down any mouse button.
   It's recommended to enable this option if you're using a trackpad.
 
-See the [class_EditorSettings](class_EditorSettings) class reference for a complete description
+See the [class_EditorSettings](/docs/Classes/EditorSettings) class reference for a complete description
 of most editor settings. You can also hover an editor setting's name with the
 mouse in the Editor Settings to show its description.

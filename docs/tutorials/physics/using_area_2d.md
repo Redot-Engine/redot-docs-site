@@ -9,7 +9,7 @@ Redot offers a number of collision objects to provide both collision detection
 and response. Trying to decide which one to use for your project can be confusing.
 You can avoid problems and simplify development if you understand how each of them
 works and what their pros and cons are. In this tutorial, we'll look at the
-[Area2D ](class_Area2D) node and show some examples of how it can be used.
+[Area2D ](/docs/Classes/Area2D) node and show some examples of how it can be used.
 
 :::note
 This document assumes you're familiar with Redot's various physics
@@ -20,7 +20,7 @@ bodies. Please read [doc_physics_introduction](physics_introduction.md) first.
 ## What is an area?
 
 An Area2D defines a region of 2D space. In this space you can detect other
-[CollisionObject2D ](class_CollisionObject2D) nodes overlapping, entering,
+[CollisionObject2D ](/docs/Classes/CollisionObject2D) nodes overlapping, entering,
 and exiting. Areas also allow for overriding local physics properties. We'll
 explore each of these functions below.
 
@@ -39,7 +39,7 @@ We'll look at how to use those in the *Area influence* section below.
 The ``Audio Bus`` section allows you to override audio in the area, for example to
 apply an audio effect when the player moves through.
 
-Note that Area2D extends [CollisionObject2D ](class_CollisionObject2D), so it
+Note that Area2D extends [CollisionObject2D ](/docs/Classes/CollisionObject2D), so it
 also provides properties inherited from that class.
 The ``Collision`` section of ``CollisionObject2D`` is where you configure the
 area's collision layer(s) and mask(s).

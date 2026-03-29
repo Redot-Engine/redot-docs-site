@@ -100,7 +100,7 @@ driver is not supported either, the engine will then fall back to Compatibility
 when the RenderingDevice backend is not supported. This allows the project to run
 anyway, but it may look different than the intended appearance due to the more
 limited renderer. This behavior can be disabled in the project settings by unchecking
-[Rendering &gt; Rendering Device &gt; Fallback to OpenGL 3](class_ProjectSettings_property_rendering/rendering_device/fallback_to_opengl3).
+[Rendering &gt; Rendering Device &gt; Fallback to OpenGL 3](/docs/Classes/ProjectSettings_property_rendering/rendering_device/fallback_to_opengl3).
 
 ## Feature comparison
 

@@ -12,7 +12,7 @@ affect you. Changes are grouped by areas/systems.
 
 :::warning
 
-The [class_Mesh](class_Mesh) resource format has changed in 4.2 to allow for
+The [class_Mesh](/docs/Classes/Mesh) resource format has changed in 4.2 to allow for
 [vertex and attribute compression ](https://github.com/redot-engine/redot-engine/pull/81138)_.
 This allows for improved rendering performance, especially on platforms
 constrained by memory bandwidth such as mobile.

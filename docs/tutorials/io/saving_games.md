@@ -14,7 +14,7 @@ scale as the game grows more complex.
 :::note
 
 If you're looking to save user configuration, you can use the
-[class_ConfigFile](class_ConfigFile) class for this purpose.
+[class_ConfigFile](/docs/Classes/ConfigFile) class for this purpose.
 
 :::
 
@@ -74,7 +74,7 @@ foreach (Node saveNode in saveNodes)
 The next step is to serialize the data. This makes it much easier to
 read from and store to disk. In this case, we're assuming each member of
 group Persist is an instanced node and thus has a path. GDScript
-has the helper class [JSON](class_json) to convert between dictionary and string.
+has the helper class [JSON](/docs/Classes/json) to convert between dictionary and string.
 Our node needs to contain a save function that returns this data.
 The save function will look like this:
 
@@ -152,7 +152,7 @@ loading.
 
 As covered in the [doc_filesystem](../scripting/filesystem.md) tutorial, we'll need to open a file
 so we can write to it or read from it. Now that we have a way to
-call our groups and get their relevant data, let's use the class [JSON](class_json) to
+call our groups and get their relevant data, let's use the class [JSON](/docs/Classes/json) to
 convert it into an easily stored string and store them in a file. Doing
 it this way ensures that each line is its own object, so we have an easy
 way to pull the data out of the file as well.
@@ -239,7 +239,7 @@ public void SaveGame()
 </Tabs>
 
 Game saved! Now, to load, we'll read each
-line. Use the [parse](class_JSON_method_parse) method to read the
+line. Use the [parse](/docs/Classes/JSON_method_parse) method to read the
 JSON string back to a dictionary, and then iterate over
 the dict to read our values. But we'll need to first create the object
 and we can use the filename and parent values to achieve that. Here is our
@@ -377,9 +377,9 @@ customized based on the needs of the individual project.
 Additionally, our implementation assumes no Persist objects are children of other
 Persist objects. Otherwise, invalid paths would be created. To
 accommodate nested Persist objects, consider saving objects in stages.
-Load parent objects first so they are available for the [add_child() ](class_node_method_add_child)
+Load parent objects first so they are available for the [add_child() ](/docs/Classes/node_method_add_child)
 call when child objects are loaded. You will also need a way to link
-children to parents as the [NodePath ](class_nodepath) will likely be invalid.
+children to parents as the [NodePath ](/docs/Classes/nodepath) will likely be invalid.
 
 ## JSON vs binary serialization
 
@@ -408,7 +408,7 @@ Here are some important gotchas to know about when using JSON.
 
 [Binary serialization](binary_serialization_api.md) is an alternative
 approach for storing game state, and you can use it with the functions
-``get_var`` and ``store_var`` of [class_FileAccess](class_FileAccess).
+``get_var`` and ``store_var`` of [class_FileAccess](/docs/Classes/FileAccess).
 
 * Binary serialization should produce smaller files than JSON.
 * Binary serialization can handle most common data types.
@@ -416,9 +416,9 @@ approach for storing game state, and you can use it with the functions
   custom classes.
 
 Note that not all properties are included. Only properties that are configured
-with the [PROPERTY_USAGE_STORAGE](class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE)
+with the [PROPERTY_USAGE_STORAGE](/docs/Classes/@GlobalScope_constant_PROPERTY_USAGE_STORAGE)
 flag set will be serialized. You can add a new usage flag to a property by overriding the
-[_get_property_list](class_Object_private_method__get_property_list)
+[_get_property_list](/docs/Classes/Object_private_method__get_property_list)
 method in your class. You can also check how property usage is configured by
 calling ``Object._get_property_list``.
 See [PropertyUsageFlags](enum_@GlobalScope_PropertyUsageFlags) for the

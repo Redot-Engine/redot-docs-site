@@ -16,8 +16,8 @@ this, you should read the
 ## Single pass post-processing
 
 Post-processing effects are shaders applied to a frame after Redot has rendered
-it. To apply a shader to a frame, create a [CanvasLayer ](class_CanvasLayer), and give it a [ColorRect ](class_ColorRect). Assign a
-new [ShaderMaterial ](class_ShaderMaterial) to the newly created
+it. To apply a shader to a frame, create a [CanvasLayer ](/docs/Classes/CanvasLayer), and give it a [ColorRect ](/docs/Classes/ColorRect). Assign a
+new [ShaderMaterial ](/docs/Classes/ShaderMaterial) to the newly created
 ``ColorRect``, and set the ``ColorRect``'s layout to "Full Rect".
 
 Your scene tree will look something like this:
@@ -26,7 +26,7 @@ Your scene tree will look something like this:
 
 :::note
 
-Another more efficient method is to use a [BackBufferCopy ](class_BackBufferCopy) to copy a region of the screen to a buffer and to
+Another more efficient method is to use a [BackBufferCopy ](/docs/Classes/BackBufferCopy) to copy a region of the screen to a buffer and to
 access it in a shader script through a ``sampler2D`` using
 ``hint_screen_texture``.
 
@@ -42,11 +42,11 @@ exposed by Redot as samplers.
 
 :::
 
-For this demo, we will use this [Sprite ](class_Sprite2D) of a sheep.
+For this demo, we will use this [Sprite ](/docs/Classes/Sprite2D) of a sheep.
 
 ![Image](img/post_example1.png)
 
-Assign a new [Shader ](class_Shader) to the ``ColorRect``'s
+Assign a new [Shader ](/docs/Classes/Shader) to the ``ColorRect``'s
 ``ShaderMaterial``. You can access the frame's texture and UV with a
 ``sampler2D`` using ``hint_screen_texture`` and the built-in ``SCREEN_UV``
 uniforms.

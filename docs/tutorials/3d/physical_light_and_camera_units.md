@@ -74,16 +74,16 @@ Open the Project Settings, enable the **Advanced** toggle then enable
 
 When physical light units are enabled and if you have a WorldEnvironment
 node in your scene (i.e. the editor Environment is disabled), you **must**
-have a [class_CameraAttributes](class_CameraAttributes) resource assigned to the
+have a [class_CameraAttributes](/docs/Classes/CameraAttributes) resource assigned to the
 WorldEnvironment node. Otherwise, the 3D editor viewport will appear
 extremely bright if you have a visible DirectionalLight3D node.
 
 :::
 
-On the Camera3D node, you can add a [class_CameraAttributes](class_CameraAttributes)
+On the Camera3D node, you can add a [class_CameraAttributes](/docs/Classes/CameraAttributes)
 resource to its **Attributes** property. This resource is used to control the
 camera's depth of field and exposure. When using
-[class_CameraAttributesPhysical](class_CameraAttributesPhysical), its focal length property is also used to
+[class_CameraAttributesPhysical](/docs/Classes/CameraAttributesPhysical), its focal length property is also used to
 adjust the camera's field of view.
 
 When physical light units are enabled, the following additional properties
@@ -144,13 +144,13 @@ lights will be barely visible at their default intensity.
 
 :::
 
-If you haven't added a [class_WorldEnvironment](class_WorldEnvironment) and [class_Camera3D](class_Camera3D)
+If you haven't added a [class_WorldEnvironment](/docs/Classes/WorldEnvironment) and [class_Camera3D](/docs/Classes/Camera3D)
 node to the current scene yet, do so now by clicking the 3 vertical dots at the
 top of the 3D editor viewport. Click **Add Sun to Scene**, open the dialog again
 then click **Add Environment to Scene**.
 
 After enabling physical light units, a new property becomes available to edit in
-the [class_Environment](class_Environment) resource:
+the [class_Environment](/docs/Classes/Environment) resource:
 
 - **Background Intensity:** The background sky's intensity in
   [nits](https://en.wikipedia.org/wiki/Candela_per_square_metre)_
@@ -216,7 +216,7 @@ non-realistic properties.
 
 Physical camera units can be enabled separately from physical light units.
 
-After adding a [class_CameraAttributesPhysical](class_CameraAttributesPhysical) resource to the **Camera
+After adding a [class_CameraAttributesPhysical](/docs/Classes/CameraAttributesPhysical) resource to the **Camera
 Attributes** property of a Camera3D nodes, some properties such as **FOV** will
 no longer be editable. Instead, these properties are now governed by the
 CameraAttributesPhysical's properties, such as focal length and aperture.

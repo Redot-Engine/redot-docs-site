@@ -6,8 +6,8 @@ import TabItem from "@theme/TabItem";
 ![Image](img/nav_meshes.webp)
 
 2D and 3D versions of the navigation mesh are available as
-[NavigationPolygon](class_NavigationPolygon) and
-[NavigationMesh](class_NavigationMesh)  respectively.
+[NavigationPolygon](/docs/Classes/NavigationPolygon) and
+[NavigationMesh](/docs/Classes/NavigationMesh)  respectively.
 
 :::note
 
@@ -28,8 +28,8 @@ The process of factoring in navigation restrictions in navigation meshes is comm
 If you experience clipping or collision problems while following navigation paths, always remember that you need to tell the navigation system what your intentions are through an appropriate navigation mesh.
 By itself the navigation system will never know "this is a tree / rock / wall collision shape or visual mesh" because it only knows that "here I was told I can path safely because it is on a navigation mesh".
 
-Navigation mesh baking can be done either by using a [NavigationRegion2D](class_NavigationRegion2D) or [NavigationRegion3D](class_NavigationRegion3D), or by using the
-[NavigationServer2D](class_NavigationServer2D) and [NavigationServer3D](class_NavigationServer3D) API directly.
+Navigation mesh baking can be done either by using a [NavigationRegion2D](/docs/Classes/NavigationRegion2D) or [NavigationRegion3D](/docs/Classes/NavigationRegion3D), or by using the
+[NavigationServer2D](/docs/Classes/NavigationServer2D) and [NavigationServer3D](/docs/Classes/NavigationServer3D) API directly.
 
 ## Baking a navigation mesh with a NavigationRegion
 
@@ -40,7 +40,7 @@ Navigation mesh baking can be done either by using a [NavigationRegion2D](class_
 The navigation mesh baking is made more accessible with the NavigationRegion node. When baking with a NavigationRegion
 node, the individual parsing, baking, and region update steps are all combined into one function.
 
-The nodes are available in 2D and 3D as [NavigationRegion2D](class_NavigationRegion2D) and [NavigationRegion3D](class_NavigationRegion3D) respectively.
+The nodes are available in 2D and 3D as [NavigationRegion2D](/docs/Classes/NavigationRegion2D) and [NavigationRegion3D](/docs/Classes/NavigationRegion3D) respectively.
 
 :::tip
 
@@ -56,7 +56,7 @@ When a NavigationRegion2D node is selected in the Editor, bake options as well a
 
 ![Image](img/nav_region_baking_01.webp)
 
-In order for the region to work a [NavigationPolygon](class_NavigationPolygon) resource needs to be added.
+In order for the region to work a [NavigationPolygon](/docs/Classes/NavigationPolygon) resource needs to be added.
 
 The properties to parse and bake a navigation mesh are then part of the used resource and can be found in the resource Inspector.
 
@@ -64,10 +64,10 @@ The properties to parse and bake a navigation mesh are then part of the used res
 
 The result of the source geometry parsing can be influenced with the following properties.
 
-- The ``parsed_geometry_type`` that filters if visual objects or physics objects or both should be parsed from the [SceneTree](class_SceneTree).
+- The ``parsed_geometry_type`` that filters if visual objects or physics objects or both should be parsed from the [SceneTree](/docs/Classes/SceneTree).
   For more details on what objects are parsed and how, see the section about parsing source geometry below.
 - The ``collision_mask`` filters which physics collision objects are included when the ``parsed_geometry_type`` includes static colliders.
-- The ``source_geometry_mode`` that defines on which node(s) to start the parsing, and how to traverse the [SceneTree](class_SceneTree).
+- The ``source_geometry_mode`` that defines on which node(s) to start the parsing, and how to traverse the [SceneTree](/docs/Classes/SceneTree).
 - The ``source_geometry_group_name`` is used when only a certain node group should be parsed. Depends on the selected ``source_geometry_mode``.
 
 With the source geometry added, the result of the baking can be controlled with the following properties.
@@ -103,9 +103,9 @@ BakeNavigationPolygon(onThread);
 
 To quickly test the 2D baking with default settings:
 
-- Add a [NavigationRegion2D](class_NavigationRegion2D).
-- Add a [NavigationPolygon](class_NavigationPolygon) resource to the NavigationRegion2D.
-- Add a [Polygon2D](class_Polygon2D) below the NavigationRegion2D.
+- Add a [NavigationRegion2D](/docs/Classes/NavigationRegion2D).
+- Add a [NavigationPolygon](/docs/Classes/NavigationPolygon) resource to the NavigationRegion2D.
+- Add a [Polygon2D](/docs/Classes/Polygon2D) below the NavigationRegion2D.
 - Draw 1 NavigationPolygon outline with the selected NavigationRegion2D draw tool.
 - Draw 1 Polygon2D outline inside the NavigationPolygon outline with the selected Polygon2D draw tool.
 - Hit the Editor bake button and a navigation mesh should appear.
@@ -122,7 +122,7 @@ When a NavigationRegion3D node is selected in the Editor, bake options appear in
 
 ![Image](img/nav_mesh_bake_toolbar.webp)
 
-In order for the region to work a [NavigationMesh](class_NavigationMesh) resource needs to be added.
+In order for the region to work a [NavigationMesh](/docs/Classes/NavigationMesh) resource needs to be added.
 
 The properties to parse and bake a navigation mesh are then part of the used resource and can be found in the resource Inspector.
 
@@ -130,10 +130,10 @@ The properties to parse and bake a navigation mesh are then part of the used res
 
 The result of the source geometry parsing can be influenced with the following properties.
 
-- The ``parsed_geometry_type`` that filters if visual objects or physics objects or both should be parsed from the [SceneTree](class_SceneTree).
+- The ``parsed_geometry_type`` that filters if visual objects or physics objects or both should be parsed from the [SceneTree](/docs/Classes/SceneTree).
   For more details on what objects are parsed and how, see the section about parsing source geometry below.
 - The ``collision_mask`` filters which physics collision objects are included when the ``parsed_geometry_type`` includes static colliders.
-- The ``source_geometry_mode`` that defines on which node(s) to start the parsing, and how to traverse the [SceneTree](class_SceneTree).
+- The ``source_geometry_mode`` that defines on which node(s) to start the parsing, and how to traverse the [SceneTree](/docs/Classes/SceneTree).
 - The ``source_geometry_group_name`` is used when only a certain node group should be parsed. Depends on the selected ``source_geometry_mode``.
 
 With the source geometry added, the result of the baking can be controlled with the following properties.
@@ -177,10 +177,10 @@ BakeNavigationMesh(onThread);
 
 To quickly test the 3D baking with default settings:
 
-- Add a [NavigationRegion3D](class_NavigationRegion3D).
-- Add a [NavigationMesh](class_NavigationMesh) resource to the NavigationRegion3D.
-- Add a [MeshInstance3D](class_MeshInstance3D) below the NavigationRegion3D.
-- Add a [PlaneMesh](class_PlaneMesh) to the MeshInstance3D.
+- Add a [NavigationRegion3D](/docs/Classes/NavigationRegion3D).
+- Add a [NavigationMesh](/docs/Classes/NavigationMesh) resource to the NavigationRegion3D.
+- Add a [MeshInstance3D](/docs/Classes/MeshInstance3D) below the NavigationRegion3D.
+- Add a [PlaneMesh](/docs/Classes/PlaneMesh) to the MeshInstance3D.
 - Hit the Editor bake button and a navigation mesh should appear.
 
 ![Image](img/nav_mesh_bake_toolbar.webp)
@@ -193,7 +193,7 @@ To quickly test the 3D baking with default settings:
 
 ## Baking a navigation mesh with the NavigationServer
 
-The [NavigationServer2D](class_NavigationServer2D) and [NavigationServer3D](class_NavigationServer3D) have API functions to call each step of the navigation mesh baking process individually.
+The [NavigationServer2D](/docs/Classes/NavigationServer2D) and [NavigationServer3D](/docs/Classes/NavigationServer3D) have API functions to call each step of the navigation mesh baking process individually.
 
 - ``parse_source_geometry_data()`` can be used to parse source geometry to a reusable and serializable resource.
 - ``bake_from_source_geometry_data()`` can be used to bake a navigation mesh from already parsed data e.g. to avoid runtime performance issues with (redundant) parsing.
@@ -214,8 +214,8 @@ Source geometry is geometry data that should be considered in a navigation mesh 
 Both navigation meshes for 2D and 3D are created by baking them from source geometry.
 
 2D and 3D versions of the source geometry resources are available as
-[NavigationMeshSourceGeometryData2D](class_NavigationMeshSourceGeometryData2D) and
-[NavigationMeshSourceGeometryData3D](class_NavigationMeshSourceGeometryData3D)  respectively.
+[NavigationMeshSourceGeometryData2D](/docs/Classes/NavigationMeshSourceGeometryData2D) and
+[NavigationMeshSourceGeometryData3D](/docs/Classes/NavigationMeshSourceGeometryData3D)  respectively.
 
 Source geometry can be geometry parsed from visual meshes, from physics collision,
 or procedural created arrays of data, like outlines (2D) and triangle faces (3D).
@@ -266,13 +266,13 @@ Together they can be used to ensure perfectly aligned edges between region chunk
 
    Navigation mesh chunk baked with bake bound or baked with additional border size.
 
-The baking bound, which is an axis-aligned [Rect2](class_Rect2) for 2D and [AABB](class_AABB) for 3D,
+The baking bound, which is an axis-aligned [Rect2](/docs/Classes/Rect2) for 2D and [AABB](/docs/Classes/AABB) for 3D,
 limits the used source geometry by discarding all the geometry that is outside of the bounds.
 
-The [NavigationPolygon](class_NavigationPolygon) properties ``baking_rect`` and ``baking_rect_offset``
+The [NavigationPolygon](/docs/Classes/NavigationPolygon) properties ``baking_rect`` and ``baking_rect_offset``
 can be used to create and place the 2D baking bound.
 
-The [NavigationMesh](class_NavigationMesh) properties ``filter_baking_aabb`` and ``filter_baking_aabb_offset``
+The [NavigationMesh](/docs/Classes/NavigationMesh) properties ``filter_baking_aabb`` and ``filter_baking_aabb_offset``
 can be used to create and place the 3D baking bound.
 
 With only the baking bound set another problem still exists. The resulting navigation mesh will
@@ -334,7 +334,7 @@ There are some common user problems and important caveats to consider when creat
     Remove the geometry that is on the ground inside the other geometry. If that is not possible, add smaller "dummy" geometry inside with as few triangles as possible so the cells
     are occupied with something.
 
-    A [NavigationObstacle3D](class_NavigationObstacle3D) shape set to bake with navigation mesh can be used to discard geometry as well.
+    A [NavigationObstacle3D](/docs/Classes/NavigationObstacle3D) shape set to bake with navigation mesh can be used to discard geometry as well.
 
 ![Image](img/nav_mesh_obstacles_discard.webp)
 

@@ -24,7 +24,7 @@ other solutions you can try:
   speed. The faster the object moves, the larger the collision shape should
   extend outside of the object to ensure it can collide with thin walls more
   reliably.
-- Increase [Physics Ticks per Second](class_ProjectSettings_property_physics/common/physics_ticks_per_second)
+- Increase [Physics Ticks per Second](/docs/Classes/ProjectSettings_property_physics/common/physics_ticks_per_second)
   in the advanced Project Settings. While
   this has other benefits (such as more stable simulation and reduced input
   lag), this increases CPU utilization and may not be viable for mobile/web
@@ -41,7 +41,7 @@ causes the simulation to become wobbly, making the objects unable to rest on top
 of each other without moving.
 
 Increasing the physics simulation rate can help alleviate this issue. To do so,
-increase [Physics Ticks per Second](class_ProjectSettings_property_physics/common/physics_ticks_per_second)
+increase [Physics Ticks per Second](/docs/Classes/ProjectSettings_property_physics/common/physics_ticks_per_second)
 in the advanced Project Settings. Note
 that increases CPU utilization and may not be viable for mobile/web platforms.
 Multipliers of the default value of ``60`` (such as ``120``, ``180`` or ``240``)
@@ -80,7 +80,7 @@ the RigidBody's visual representation and its collision).
 
 In both cases, increasing the physics simulation rate can also help alleviate
 this issue. To do so, increase
-[Physics Ticks per Second](class_ProjectSettings_property_physics/common/physics_ticks_per_second)
+[Physics Ticks per Second](/docs/Classes/ProjectSettings_property_physics/common/physics_ticks_per_second)
 in the advanced
 Project Settings. Note that this increases CPU utilization and may not be viable
 for mobile/web platforms. Multipliers of the default value of ``60`` (such as
@@ -112,7 +112,7 @@ with in general at such a high speed.
 
 Fast-moving vehicles can benefit a lot from an increased physics simulation
 rate. To do so, increase
-[Physics Ticks per Second](class_ProjectSettings_property_physics/common/physics_ticks_per_second)
+[Physics Ticks per Second](/docs/Classes/ProjectSettings_property_physics/common/physics_ticks_per_second)
 in the advanced Project
 Settings. Note that this increases CPU utilization and may not be viable for
 mobile/web platforms. Multipliers of the default value of ``60`` (such as

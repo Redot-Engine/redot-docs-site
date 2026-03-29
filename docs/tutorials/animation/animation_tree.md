@@ -5,7 +5,7 @@ import TabItem from "@theme/TabItem";
 
 ## Introduction
 
-With [AnimationPlayer ](class_AnimationPlayer), Redot has one of the most flexible animation systems that you can find in any game engine.
+With [AnimationPlayer ](/docs/Classes/AnimationPlayer), Redot has one of the most flexible animation systems that you can find in any game engine.
 The ability to animate almost any property in any node or resource, as well as having dedicated transform, bezier,
 function calling, audio and sub-animation tracks, is pretty much unique.
 
@@ -328,7 +328,7 @@ transformation visually (the animation will stay in place).
 
 ![Image](img/animtree14.png)
 
-Afterwards, the actual motion can be retrieved via the [AnimationTree ](class_AnimationTree) API as a transform:
+Afterwards, the actual motion can be retrieved via the [AnimationTree ](/docs/Classes/AnimationTree) API as a transform:
 
 <Tabs>
 
@@ -368,7 +368,7 @@ animationTree.GetRootMotionScaleAccumulator();
 
 </Tabs>
 
-This can be fed to functions such as [CharacterBody3D.move_and_slide ](class_CharacterBody3D_method_move_and_slide) to control the character movement.
+This can be fed to functions such as [CharacterBody3D.move_and_slide ](/docs/Classes/CharacterBody3D_method_move_and_slide) to control the character movement.
 
 There is also a tool node, ``RootMotionView``, that can be placed in a scene and will act as a custom floor for your
 character and animations (this node is disabled by default during the game).
@@ -428,7 +428,7 @@ One of the nice features in Redot's ``StateMachine`` implementation is the abili
 current state to another one, while visiting all the intermediate ones. This is done via the A\* algorithm.
 If there is no path of transitions starting at the current state and finishing at the destination state, the graph teleports to the destination state.
 
-To use the travel ability, you should first retrieve the [AnimationNodeStateMachinePlayback ](class_AnimationNodeStateMachinePlayback)
+To use the travel ability, you should first retrieve the [AnimationNodeStateMachinePlayback ](/docs/Classes/AnimationNodeStateMachinePlayback)
 object from the ``AnimationTree`` node (it is exported as a property).
 
 <Tabs>

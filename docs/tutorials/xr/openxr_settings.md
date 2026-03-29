@@ -11,7 +11,7 @@ we will only discuss the settings in the core of Redot here.
 
 This setting enables the OpenXR module when Redot starts.
 This is required when the Vulkan backend is used.
-For other backends you can enable OpenXR at any time by calling ``initialize`` on the [OpenXRInterface ](class_openxrinterface).
+For other backends you can enable OpenXR at any time by calling ``initialize`` on the [OpenXRInterface ](/docs/Classes/openxrinterface).
 
 This also needs to be enabled to get access to the action map editor.
 
@@ -64,11 +64,11 @@ This reference space however does not prevent the user from walking away so you 
 if you wish to prevent the user from leaving the vehicle they are controlling, which could potentially be game breaking.
 
 This reference space is the best option for games like flight simulators or racing simulators
-where we want to place the [XROrigin3D ](class_xrorigin3d) node where the player's head should be.
+where we want to place the [XROrigin3D ](/docs/Classes/xrorigin3d) node where the player's head should be.
 
 When the user enacts the recenter option on their headset, the method of which is different per XR runtime,
-the XR runtime will move the [XRCamera3D ](class_xrcamera3d) to the [XROrigin3D ](class_xrorigin3d) node.
-The [OpenXRInterface ](class_openxrinterface) will also emit the ``pose_recentered`` signal
+the XR runtime will move the [XRCamera3D ](/docs/Classes/xrcamera3d) to the [XROrigin3D ](/docs/Classes/xrorigin3d) node.
+The [OpenXRInterface ](/docs/Classes/openxrinterface) will also emit the ``pose_recentered`` signal
 so your game can react accordingly.
 
 :::note
@@ -96,16 +96,16 @@ See [Room Scale ](xr_room_scale.md) for more information.
 
 When the user enacts the recenter option on their headset, the method of which is different per XR runtime,
 the XR runtime will not change the origin point.
-The [OpenXRInterface ](class_openxrinterface) will emit the ``pose_recentered`` signal
+The [OpenXRInterface ](/docs/Classes/openxrinterface) will emit the ``pose_recentered`` signal
 and it is up to the game to react appropriately.
 Not doing so will prevent your game from being accepted on various stores.
 
-In Redot you can do this by calling the ``center_on_hmd`` function on the [XRServer ](class_xrserver):
+In Redot you can do this by calling the ``center_on_hmd`` function on the [XRServer ](/docs/Classes/xrserver):
 
-- Calling ``XRServer.center_on_hmd(XRServer.RESET_BUT_KEEP_TILT, true)`` will move the [XRCamera3D ](class_xrcamera3d) node
-  to the [XROrigin3D ](class_xrorigin3d) node similar to the ``Local`` reference space.
-- Calling ``XRServer.center_on_hmd(XRServer.RESET_BUT_KEEP_TILT, true)`` will move the [XRCamera3D ](class_xrcamera3d) node
-  above the [XROrigin3D ](class_xrorigin3d) node keeping the player's height, similar to the ``Local Floor`` reference space.
+- Calling ``XRServer.center_on_hmd(XRServer.RESET_BUT_KEEP_TILT, true)`` will move the [XRCamera3D ](/docs/Classes/xrcamera3d) node
+  to the [XROrigin3D ](/docs/Classes/xrorigin3d) node similar to the ``Local`` reference space.
+- Calling ``XRServer.center_on_hmd(XRServer.RESET_BUT_KEEP_TILT, true)`` will move the [XRCamera3D ](/docs/Classes/xrcamera3d) node
+  above the [XROrigin3D ](/docs/Classes/xrorigin3d) node keeping the player's height, similar to the ``Local Floor`` reference space.
 
 :::note
 
@@ -128,9 +128,9 @@ or for AR type games where the user's interface elements are bound to the origin
 and are quickly placed at the player's location on recenter.
 
 When the user enacts the recenter option on their headset, the method of which is different per XR runtime,
-the XR runtime will move the [XRCamera3D ](class_xrcamera3d) above the [XROrigin3D ](class_xrorigin3d) node
+the XR runtime will move the [XRCamera3D ](/docs/Classes/xrcamera3d) above the [XROrigin3D ](/docs/Classes/xrorigin3d) node
 but keeping the player's height.
-The [OpenXRInterface ](class_openxrinterface) will also emit the ``pose_recentered`` signal
+The [OpenXRInterface ](/docs/Classes/openxrinterface) will also emit the ``pose_recentered`` signal
 so your game can react accordingly.
 
 :::warning
@@ -187,7 +187,7 @@ The higher the level, the better the performance gains, but also the more reduct
 :::note
 
 **Compatibility renderer only**,
-for Mobile and Forward+ renderer, set the ``vrs_mode`` property on [Viewport ](class_viewport) to ``VRS_XR``.
+for Mobile and Forward+ renderer, set the ``vrs_mode`` property on [Viewport ](/docs/Classes/viewport) to ``VRS_XR``.
 
 :::
 
@@ -264,7 +264,7 @@ Now add a new interaction profile for the eye gaze interaction and map the ``eye
 
 Don't forget to save!
 
-Next add a new [XRController3D ](class_xrcontroller3d) node to your origin node
+Next add a new [XRController3D ](/docs/Classes/xrcontroller3d) node to your origin node
 and set its ``tracker`` property to ``/user/eyes_ext``
 and set its ``pose`` property to ``eye_pose``.
 

@@ -5,12 +5,12 @@ For basic locomotion we're going to continue using our Redot XR Tools library. T
 
 ## Adding our player body
 
-The first step we need to do is to add a helper node to our [XROrigin3D ](class_xrorigin3d) node.
-Because XR supports roomscale tracking you can't simply add your XR setup to a [CharacterBody3D ](class_characterbody3d) node and expect things to work.
+The first step we need to do is to add a helper node to our [XROrigin3D ](/docs/Classes/xrorigin3d) node.
+Because XR supports roomscale tracking you can't simply add your XR setup to a [CharacterBody3D ](/docs/Classes/characterbody3d) node and expect things to work.
 You will run into trouble when the user moves around their physical space and is no longer standing in the center of their room.
 Redot XR Tools embeds the needed logic into a helper node called ``PlayerBody``.
 
-Select your [XROrigin3D ](class_xrorigin3d) node and click on the ``instantiate Child Scene`` button to add a child scene.
+Select your [XROrigin3D ](/docs/Classes/xrorigin3d) node and click on the ``instantiate Child Scene`` button to add a child scene.
 Select ``addons/Redot-xr-tools/player/player_body.tscn`` and add this node.
 
 ## Adding a floor
@@ -18,11 +18,11 @@ Select ``addons/Redot-xr-tools/player/player_body.tscn`` and add this node.
 This node governs the in game movement of your character and will immediately react to gravity.
 So to prevent our player from infinitely falling down we'll quickly add a floor to our scene.
 
-We start by adding a [StaticBody3D ](class_staticbody3d) node to our root node and we rename this to ``Floor``.
-We add a [MeshInstance3D ](class_meshinstance3d) node as a child node for our ``Floor``. 
-Then create a new [PlaneMesh ](class_planemesh) as it's mesh.
+We start by adding a [StaticBody3D ](/docs/Classes/staticbody3d) node to our root node and we rename this to ``Floor``.
+We add a [MeshInstance3D ](/docs/Classes/meshinstance3d) node as a child node for our ``Floor``. 
+Then create a new [PlaneMesh ](/docs/Classes/planemesh) as it's mesh.
 For now we set the size of the mesh to 100 x 100 meters.
-Next we add a [CollisionShape3D ](class_collisionshape3d) node as a child node for our ``Floor``.
+Next we add a [CollisionShape3D ](/docs/Classes/collisionshape3d) node as a child node for our ``Floor``.
 Then create a ``BoxShape`` as our shape.
 We set the size of this box shape to 100 x 1 x 100 meters.
 We also need to move our collision shape down by 0.5 meters so the top of our box is flush with the floor.
@@ -46,7 +46,7 @@ We advise you to stick to these defaults but offer features in game to enable le
 :::
 
 We want to enable this on the right hand controller.
-We do this by adding a subscene to the right hand [XRController3D ](class_xrcontroller3d) node.
+We do this by adding a subscene to the right hand [XRController3D ](/docs/Classes/xrcontroller3d) node.
 Select ``addons/Redot-xr-tools/functions/movement_direct.tscn`` as the scene to add.
 
 This function adds forward and backwards movement to the player by using the joystick on the right hand controller.
@@ -67,7 +67,7 @@ If you run your game at this point in time you will find that you can move throu
 An alternative to direct movement that some users find more pleasant is the ability to teleport to another location within your game world.
 Redot XR Tools supports this through the teleport function and we will be adding this to our left hand controller.
 
-Add a new child scene to your left hand [XRController3D ](class_xrcontroller3d) node by selecting the ``addons/Redot-xr-tools/functions/function_teleport.tscn`` scene.
+Add a new child scene to your left hand [XRController3D ](/docs/Classes/xrcontroller3d) node by selecting the ``addons/Redot-xr-tools/functions/function_teleport.tscn`` scene.
 
 With this scene added the player will be able to teleport around the world by pressing the trigger on the left hand controller, pointing where they want to go, and then releasing the trigger.
 The player can also adjust the orientation by using the left hand controllers joystick.

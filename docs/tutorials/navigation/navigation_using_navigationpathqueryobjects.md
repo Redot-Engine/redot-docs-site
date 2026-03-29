@@ -13,12 +13,12 @@ NavigationPathQueryObjects consist of a pair of objects, a ``NavigationPathQuery
 for the query and a ``NavigationPathQueryResult`` that receives (regular) updates with the resulting path and meta data from the query.
 
 2D and 3D versions of ``NavigationPathQueryParameters`` are available as
-[NavigationPathQueryParameters2D](class_NavigationPathQueryParameters2D) and
-[NavigationPathQueryParameters3D](class_NavigationPathQueryParameters3D) respectively.
+[NavigationPathQueryParameters2D](/docs/Classes/NavigationPathQueryParameters2D) and
+[NavigationPathQueryParameters3D](/docs/Classes/NavigationPathQueryParameters3D) respectively.
 
 2D and 3D versions of ``NavigationPathQueryResult`` are available as
-[NavigationPathQueryResult2D](class_NavigationPathQueryResult2D) and
-[NavigationPathQueryResult3D](class_NavigationPathQueryResult3D) respectively.
+[NavigationPathQueryResult2D](/docs/Classes/NavigationPathQueryResult2D) and
+[NavigationPathQueryResult3D](/docs/Classes/NavigationPathQueryResult3D) respectively.
 
 Both parameters and result are used as a pair with the ``NavigationServer.query_path()`` function.
 

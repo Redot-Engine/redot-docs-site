@@ -4,8 +4,8 @@ import TabItem from "@theme/TabItem";
 # Using NavigationObstacles
 
 2D and 3D versions of NavigationObstacles nodes are available as
-[NavigationObstacle2D](class_NavigationObstacle2D) and
-[NavigationObstacle3D](class_NavigationObstacle3D)  respectively.
+[NavigationObstacle2D](/docs/Classes/NavigationObstacle2D) and
+[NavigationObstacle3D](/docs/Classes/NavigationObstacle3D)  respectively.
 
 Navigation obstacles are dual purpose in that they can affect both the navigation mesh baking, and the agent avoidance.
 

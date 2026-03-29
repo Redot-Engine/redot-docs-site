@@ -93,14 +93,14 @@ The built-in variable ``COLOR`` is used for a few things:
 
   - In the ``vertex()`` function, ``COLOR`` contains the color from the vertex
     primitive multiplied by the CanvasItem's
-    [modulate](class_CanvasItem_property_modulate) multiplied by the
-    CanvasItem's [self_modulate](class_CanvasItem_property_self_modulate).
+    [modulate](/docs/Classes/CanvasItem_property_modulate) multiplied by the
+    CanvasItem's [self_modulate](/docs/Classes/CanvasItem_property_self_modulate).
   - In the ``fragment()`` function, the input value ``COLOR`` is that same value
     multiplied by the color from the default ``TEXTURE`` (if present).
   - In the ``fragment()`` function, ``COLOR`` is also the final output.
 
-Certain nodes (for example, [Sprite2D ](class_Sprite2D)) display a texture
-by default, for example [texture ](class_Sprite2D_property_texture). When
+Certain nodes (for example, [Sprite2D ](/docs/Classes/Sprite2D)) display a texture
+by default, for example [texture ](/docs/Classes/Sprite2D_property_texture). When
 using a custom ``fragment()`` function, you have a few options on how to sample
 this texture.
 
@@ -139,7 +139,7 @@ void fragment() {
 
 ### NORMAL
 
-Similarly, if a normal map is used in the [CanvasTexture ](class_CanvasTexture), Redot uses
+Similarly, if a normal map is used in the [CanvasTexture ](/docs/Classes/CanvasTexture), Redot uses
 it by default and assigns its value to the built-in ``NORMAL`` variable. If you are using a normal
 map meant for use in 3D, it will appear inverted. In order to use it in your shader, you must assign
 it to the ``NORMAL_MAP`` property. Redot will handle converting it for use in 2D and overwriting ``NORMAL``.
@@ -222,7 +222,7 @@ generated Signed Distance Field texture. These functions available for the ``fra
 and ``light()`` functions of CanvasItem shaders. Custom functions may also use them as long
 as they called from supported functions.
 
-The signed distance field is generated from [class_LightOccluder2D](class_LightOccluder2D) nodes
+The signed distance field is generated from [class_LightOccluder2D](/docs/Classes/LightOccluder2D) nodes
 present in the scene with the **SDF Collision** property enabled (which is the
 default). See the [2D lights and shadows ](doc_2d_lights_and_shadows_setting_up_shadows)
 documentation for more information.

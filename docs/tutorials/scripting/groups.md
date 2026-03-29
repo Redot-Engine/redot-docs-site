@@ -20,8 +20,8 @@ removed by removing all nodes from a given group.
 There are two ways to add/remove nodes to groups:
 
 - During design, by using the Node dock in the editor, or the Global Groups in project settings.
-- During execution, by calling [Node.add_to_group() ](class_Node_method_add_to_group)
-  or [Node.remove_from_group() ](class_Node_method_remove_from_group).
+- During execution, by calling [Node.add_to_group() ](/docs/Classes/Node_method_add_to_group)
+  or [Node.remove_from_group() ](/docs/Classes/Node_method_remove_from_group).
 
 ### Using the Node dock
 
@@ -137,7 +137,7 @@ The above code calls the function ``enter_alert_mode`` on every member of the
 group ``guards``.
 
 To get the full list of nodes in the ``guards`` group as an array, you can call
-[SceneTree.get_nodes_in_group() ](class_SceneTree_method_get_nodes_in_group):
+[SceneTree.get_nodes_in_group() ](/docs/Classes/SceneTree_method_get_nodes_in_group):
 
 <Tabs>
 
@@ -161,7 +161,7 @@ var guards = GetTree().GetNodesInGroup("guards");
 
 </Tabs>
 
-The [SceneTree ](class_SceneTree) class provides many more useful methods
+The [SceneTree ](/docs/Classes/SceneTree) class provides many more useful methods
 to interact with scenes, their node hierarchy, and groups. It allows you to
 switch scenes easily or reload them, quit the game or pause and unpause it. It
 also provides useful signals.

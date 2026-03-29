@@ -131,8 +131,8 @@ If your game makes use of these features, **make sure to have an scene that uses
 them as early as possible** before loading the majority of the assets. This
 scene can be very simple and will do the job as long as it uses the features the
 game plans to use. It can even be rendered off-screen for at least one frame if
-necessary, e.g. by covering it with a [class_ColorRect](class_ColorRect) node or
-using a [class_SubViewport](class_SubViewport) located outside the window bounds.
+necessary, e.g. by covering it with a [class_ColorRect](/docs/Classes/ColorRect) node or
+using a [class_SubViewport](/docs/Classes/SubViewport) located outside the window bounds.
 
 You should also keep in mind that changing any of these features during gameplay
 will result in immediate stutters. Make sure to only change these features from
@@ -152,7 +152,7 @@ the changes are applied.
   compositor effect that requires motion vectors (such as motion blur).
 - **Normal and Roughness**: Enabled when using SDFGI, VoxelGI, screen-space
   reflections, SSAO, SSIL, or using the ``normal_roughness_buffer`` in a custom
-  shader or [class_CompositorEffect](class_CompositorEffect).
+  shader or [class_CompositorEffect](/docs/Classes/CompositorEffect).
 - **Lightmaps**: Enabled when a LightmapGI node is placed on the scene and a
   node uses a baked lightmap.
 - **VoxelGI**: Enabled when a VoxelGI node is placed on the scene.

@@ -14,7 +14,7 @@ are a few differences, which will be described here.
 This has some implications:
 
 - In 3D, it is easy to turn interpolation on and off at the level of each ``Node``,
-  via the [physics_interpolation_mode](class_Node_property_physics_interpolation_mode)
+  via the [physics_interpolation_mode](/docs/Classes/Node_property_physics_interpolation_mode)
   property in the Inspector, which can be set to ``On``, ``Off``, or ``Inherited``.
 
 ![Image](img/physics_interpolation_mode.webp)

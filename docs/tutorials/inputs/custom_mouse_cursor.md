@@ -26,9 +26,9 @@ to better display the actual mouse input.
 ## Using project settings
 
 Open the **Project Settings** and go to **Display &gt; Mouse Cursor**. You will see the settings
-[Custom Image ](class_ProjectSettings_property_display/mouse_cursor/custom_image),
-[Custom Image Hotspot ](class_ProjectSettings_property_display/mouse_cursor/custom_image_hotspot),
-and [Tooltip Position Offset ](class_ProjectSettings_property_display/mouse_cursor/tooltip_position_offset).
+[Custom Image ](/docs/Classes/ProjectSettings_property_display/mouse_cursor/custom_image),
+[Custom Image Hotspot ](/docs/Classes/ProjectSettings_property_display/mouse_cursor/custom_image_hotspot),
+and [Tooltip Position Offset ](/docs/Classes/ProjectSettings_property_display/mouse_cursor/tooltip_position_offset).
 
 ![Image](img/cursor_project_settings.webp)
 
@@ -101,7 +101,7 @@ public partial class MyNode : Node
 
 :::info
 
-Check [Input.set_custom_mouse_cursor() ](class_Input_method_set_custom_mouse_cursor)'s
+Check [Input.set_custom_mouse_cursor() ](/docs/Classes/Input_method_set_custom_mouse_cursor)'s
 documentation for more information on usage and platform-specific caveats.
 
 :::

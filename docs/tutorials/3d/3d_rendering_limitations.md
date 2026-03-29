@@ -40,7 +40,7 @@ rendering, where banding may be visible when using smooth gradient textures.
 There are two main ways to alleviate banding:
 
 - If using the Forward+ or Forward Mobile rendering methods, enable 
-  [Use Debanding](class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding)
+  [Use Debanding](/docs/Classes/ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding)
   in **Project Settings &gt; Rendering &gt; Anti Aliasing**. This applies a fullscreen debanding
   shader as a post-processing effect and is very cheap.
 - Alternatively, bake some noise into your textures. This is mainly effective in
@@ -104,9 +104,9 @@ objects are sorted back to front before being drawn based on the Node3D's
 position, not the vertex position in world space. Due to this, overlapping
 objects may often be sorted out of order. To fix improperly sorted objects,
 tweak the material's
-[Render Priority](class_Material_property_render_priority)
+[Render Priority](/docs/Classes/Material_property_render_priority)
 property or the node's
-[Sorting Offset](class_VisualInstance3D_property_sorting_offset).
+[Sorting Offset](/docs/Classes/VisualInstance3D_property_sorting_offset).
 Render Priority will force specific materials to appear in front of or behind
 other transparent materials, while Sorting Offset will move the object
 forward or backward for the purpose of sorting. Even then, these may not

@@ -68,7 +68,7 @@ in future Redot releases:
   GDExtension.
 - By default, rendering in 2D is no longer performed in HDR, which means
   "overbright" modulate values have no visible effect. Since Redot 4.2, you can
-  enable the project setting [HDR 2D](class_ProjectSettings_property_rendering/viewport/hdr_2d)
+  enable the project setting [HDR 2D](/docs/Classes/ProjectSettings_property_rendering/viewport/hdr_2d)
   to perform 2D rendering in HDR. See also [doc_environment_and_post_processing_using_glow_in_2d](doc_environment_and_post_processing_using_glow_in_2d).
 - While rendering still happens in HDR in 3D when using the Forward+ or Mobile
   renderers, Viewports cannot return HDR data anymore. This is planned to be 
@@ -86,7 +86,7 @@ You can find a more complete list of functional regressions by searching for
 ## Preparing before the upgrade (optional)
 
 If you want to be ready to upgrade to Redot 4 in the future, consider using
-[class_Tweener](class_Tweener) and the [class_Time](class_Time) singleton in your project. These
+[class_Tweener](/docs/Classes/Tweener) and the [class_Time](/docs/Classes/Time) singleton in your project. These
 classes are both available in Redot 3.5 and later.
 
 This way, you won't be relying on the deprecated Tween node and OS time
@@ -305,17 +305,17 @@ notation).
 
 **Methods**
 
-- File and Directory classes were replaced by [class_FileAccess](class_FileAccess) and
-  [class_DirAccess](class_DirAccess), which have an entirely different API. Several methods
+- File and Directory classes were replaced by [class_FileAccess](/docs/Classes/FileAccess) and
+  [class_DirAccess](/docs/Classes/DirAccess), which have an entirely different API. Several methods
   are now static, which means you can call them directly on FileAccess or
   DirAccess without having to create an instance of that class.
-- Screen and window-related methods from the [class_OS](class_OS) singleton (such as
-  ``OS.get_screen_size()``) were moved to the [class_DisplayServer](class_DisplayServer) singleton.
+- Screen and window-related methods from the [class_OS](/docs/Classes/OS) singleton (such as
+  ``OS.get_screen_size()``) were moved to the [class_DisplayServer](/docs/Classes/DisplayServer) singleton.
   Method naming was also changed to use the
   ``DisplayServer.&lt;object&gt;_&lt;get/set&gt;_property()`` form instead. For example,
   ``OS.get_screen_size()`` becomes ``DisplayServer.screen_get_size()``.
-- Time and date methods from the [class_OS](class_OS) singleton were moved to the
-  [class_Time](class_Time) singleton.
+- Time and date methods from the [class_OS](/docs/Classes/OS) singleton were moved to the
+  [class_Time](/docs/Classes/Time) singleton.
   (The Time singleton is also available in Redot 3.5 and later.)
 - You may have to replace some ``instance()`` calls with ``instantiate()``. The
   converter *should* handle this automatically, but this relies on custom code that
@@ -417,7 +417,7 @@ project settings as old Environment quality settings aren't converted
 automatically to project settings.
 
 If you have a graphics settings menu that changed environment properties in
-Redot 3.x, you will have to change its code to call [class_RenderingServer](class_RenderingServer)
+Redot 3.x, you will have to change its code to call [class_RenderingServer](/docs/Classes/RenderingServer)
 methods that affect environment effects' quality. Only the "base" toggle of each
 environment effect and its visual knobs remain within the Environment resource.
 
@@ -467,7 +467,7 @@ The most notable examples of this are:
   implicitly call parent classes' functions that have the same name. Instead,
   you must use ``super()`` at the top of a lifecycle function in the child class
   so that the parent class function is called first.
-- Both [class_String](class_String) and [class_StringName](class_StringName) are now exposed to
+- Both [class_String](/docs/Classes/String) and [class_StringName](/docs/Classes/StringName) are now exposed to
   GDScript. This allows for greater optimization, as StringName is specifically
   designed to be used for "constant" strings that are created once and reused
   many times. These types are not strictly equivalent to each other, which means
@@ -479,7 +479,7 @@ The most notable examples of this are:
   cases, manual changes are required to make setters and getters working again.
 - [GDScript signal connection syntax ](doc_gdscript_signals) was changed.
   The conversion tool will use the string-based syntax which is still present in
-  Redot 4, but it's recommended to switch to the [class_Signal](class_Signal)-based syntax
+  Redot 4, but it's recommended to switch to the [class_Signal](/docs/Classes/Signal)-based syntax
   described on the linked page. This way, strings are no longer involved,
   which avoids issues with signal name errors that can only be discovered at runtime.
 - Built-in scripts that are [tool scripts ](../plugins/running_code_in_the_editor.md)
@@ -501,36 +501,36 @@ The most notable examples of this are:
   editor, which is automatically displayed as degrees in the Inspector
   dock. This may break animations, as the conversion is not handled automatically by the
   conversion tool.
-- [class_AABB](class_AABB)'s ``has_no_surface()`` was inverted and renamed to ``has_surface()``.
-- [class_AABB](class_AABB) and [class_Rect2](class_Rect2)'s ``has_no_area()`` was inverted and
+- [class_AABB](/docs/Classes/AABB)'s ``has_no_surface()`` was inverted and renamed to ``has_surface()``.
+- [class_AABB](/docs/Classes/AABB) and [class_Rect2](/docs/Classes/Rect2)'s ``has_no_area()`` was inverted and
   renamed to ``has_area()``.
-- [class_AnimatedTexture](class_AnimatedTexture)'s ``fps`` property was replaced by ``speed_scale``,
+- [class_AnimatedTexture](/docs/Classes/AnimatedTexture)'s ``fps`` property was replaced by ``speed_scale``,
   which works the same as AnimationPlayer's ``playback_speed`` property.
-- [class_AnimatedSprite2D](class_AnimatedSprite2D) and [class_AnimatedSprite3D](class_AnimatedSprite3D) now allow
+- [class_AnimatedSprite2D](/docs/Classes/AnimatedSprite2D) and [class_AnimatedSprite3D](/docs/Classes/AnimatedSprite3D) now allow
   negative ``speed_scale`` values. This may break animations if you relied on
   ``speed_scale`` being internally clamped to ``0.0``.
-- [class_AnimatedSprite2D](class_AnimatedSprite2D) and [class_AnimatedSprite3D](class_AnimatedSprite3D)'s ``playing``
+- [class_AnimatedSprite2D](/docs/Classes/AnimatedSprite2D) and [class_AnimatedSprite3D](/docs/Classes/AnimatedSprite3D)'s ``playing``
   property was removed. Use ``play()``/``stop()`` method instead OR configure
   ``autoplay`` animation via the SpriteFrames bottom panel (but not both at once).
-- [class_Array](class_Array)'s ``slice()`` second parameter (``end``) is now *exclusive*,
+- [class_Array](/docs/Classes/Array)'s ``slice()`` second parameter (``end``) is now *exclusive*,
   instead of being inclusive. For example, this means that
   ``[1, 2, 3].slice(0, 1)`` now returns ``[1]`` instead of ``[1, 2]``.
-- [class_BaseButton](class_BaseButton)'s signals are now ``button_up`` and ``button_down``.
+- [class_BaseButton](/docs/Classes/BaseButton)'s signals are now ``button_up`` and ``button_down``.
   The ``pressed`` property is now ``button_pressed``.
-- [class_Camera2D](class_Camera2D)'s ``rotating`` property was replaced by
+- [class_Camera2D](/docs/Classes/Camera2D)'s ``rotating`` property was replaced by
   ``ignore_rotation``, which has inverted behavior.
 - Camera2D's ``zoom`` property was inverted: higher values are now more zoomed
   in, instead of less.
-- [class_Node](class_Node)'s ``remove_and_skip()`` method was removed.
+- [class_Node](/docs/Classes/Node)'s ``remove_and_skip()`` method was removed.
   If you need to reimplement it in a script, you can use the
   [old C++ implementation ](https://github.com/redot-engine/redot-engine/blob/7936b3cc4c657e4b273b376068f095e1e0e4d82a/scene/main/node.cpp#L1910-L1945)_
   as a reference.
 - ``OS.get_system_time_secs()`` should be converted to
   ``Time.get_time_dict_from_system()["second"]``.
-- [class_ResourceSaver](class_ResourceSaver)'s ``save()`` method now has its arguments swapped around
+- [class_ResourceSaver](/docs/Classes/ResourceSaver)'s ``save()`` method now has its arguments swapped around
   (``resource: Resource, path: String``). This also applies to
-  [class_ResourceFormatSaver](class_ResourceFormatSaver)'s ``_save()`` method.
-- A [class_StreamPeerTCP](class_StreamPeerTCP) must have ``poll()`` called on it to update its
+  [class_ResourceFormatSaver](/docs/Classes/ResourceFormatSaver)'s ``_save()`` method.
+- A [class_StreamPeerTCP](/docs/Classes/StreamPeerTCP) must have ``poll()`` called on it to update its
   state, instead of relying on ``get_status()`` automatically polling:
   [GH-59582 ](https://github.com/redot-engine/redot-engine/pull/59582)_
 - [class_String`'s ``right()`` method `has changed behavior ](https://github.com/redot-engine/redot-engine/pull/36180)__:
@@ -540,11 +540,11 @@ The most notable examples of this are:
 - ``is_connected_to_host()`` was removed from StreamPeerTCP and PacketPeerUDP as
   per [GH-59582 ](https://github.com/redot-engine/redot-engine/pull/59582)_.
   ``get_status()`` can be used in StreamPeerTCP instead.
-  ``is_socket_connected()`` can be used in [class_PacketPeerUDP](class_PacketPeerUDP) instead.
+  ``is_socket_connected()`` can be used in [class_PacketPeerUDP](/docs/Classes/PacketPeerUDP) instead.
 - In ``_get_property_list()``, the ``or_lesser`` property hint string is now ``or_less``.
 - In ``_get_property_list()``, the ``noslider`` property hint string is now ``no_slider``.
-- VisualShaderNodeVec4Parameter now takes a [class_Vector4](class_Vector4) as parameter
-  instead of a [class_Quaternion](class_Quaternion).
+- VisualShaderNodeVec4Parameter now takes a [class_Vector4](/docs/Classes/Vector4) as parameter
+  instead of a [class_Quaternion](/docs/Classes/Quaternion).
 
 **Removed or replaced nodes/resources**
 

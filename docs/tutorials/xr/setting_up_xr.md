@@ -6,9 +6,9 @@ import TabItem from "@theme/TabItem";
 ## Introduction to the XR system in Redot
 
 Redot provides a modular XR system that abstracts many of the different XR platform specifics away from the user.
-At the core sits the [XRServer ](class_xrserver) which acts as a central interface to the XR system that allows users to discover interfaces and interact with the components of the XR system.
+At the core sits the [XRServer ](/docs/Classes/xrserver) which acts as a central interface to the XR system that allows users to discover interfaces and interact with the components of the XR system.
 
-Each supported XR platform is implemented as an [XRInterface ](class_xrinterface). Supported interfaces register themselves with the [XRServer ](class_xrserver) and can be queried with the ``find_interface`` method on the [XRServer ](class_xrserver). When the desired interface is found it can be initialized by calling ``initialize`` on the interface.
+Each supported XR platform is implemented as an [XRInterface ](/docs/Classes/xrinterface). Supported interfaces register themselves with the [XRServer ](/docs/Classes/xrserver) and can be queried with the ``find_interface`` method on the [XRServer ](/docs/Classes/xrserver). When the desired interface is found it can be initialized by calling ``initialize`` on the interface.
 
 :::warning
 
@@ -16,7 +16,7 @@ A registered interface means nothing more than that the interface is available, 
 
 :::
 
-Due to the special requirements for output in XR, especially for head mounted devices that supply different images to each eye, the [XRServer ](class_xrserver) in Redot will override various features in the rendering system. For stand-alone devices this means the final output is handled by the [XRInterface ](class_xrinterface) and Redot's usual output system is disabled. For desktop XR devices that work as a second screen it is possible to dedicate a separate [Viewport ](class_viewport) to handle the XR output, leaving the main Redot window available for displaying alternative content.
+Due to the special requirements for output in XR, especially for head mounted devices that supply different images to each eye, the [XRServer ](/docs/Classes/xrserver) in Redot will override various features in the rendering system. For stand-alone devices this means the final output is handled by the [XRInterface ](/docs/Classes/xrinterface) and Redot's usual output system is disabled. For desktop XR devices that work as a second screen it is possible to dedicate a separate [Viewport ](/docs/Classes/viewport) to handle the XR output, leaving the main Redot window available for displaying alternative content.
 
 :::note
 
@@ -27,9 +27,9 @@ It is possible, but increasingly uncommon, to have a secondary interface, for ex
 
 There are three XR specific node types that you will find in nearly all XR applications:
 
-- [XROrigin3D ](class_xrorigin3d) represents, for all intents and purposes, the center point of your play space. That is an oversimplified statement but we'll go into more detail later. All objects tracked in physical space by the XR platform are positioned in relation to this point.
-- [XRCamera3D ](class_xrcamera3d) represents the (stereo) camera that is used when rendering output for the XR device. The positioning of this node is controlled by the XR system and updated automatically using the tracking information provided by the XR platform.
-- [XRController3D ](class_xrcontroller3d) represents a controller used by the player, commonly there are two, one held in each hand. These nodes give access to various states on these controllers and send out signals when the player presses buttons on them. The positioning of this node is controlled by the XR system and updated automatically using the tracking information provided by the XR platform.
+- [XROrigin3D ](/docs/Classes/xrorigin3d) represents, for all intents and purposes, the center point of your play space. That is an oversimplified statement but we'll go into more detail later. All objects tracked in physical space by the XR platform are positioned in relation to this point.
+- [XRCamera3D ](/docs/Classes/xrcamera3d) represents the (stereo) camera that is used when rendering output for the XR device. The positioning of this node is controlled by the XR system and updated automatically using the tracking information provided by the XR platform.
+- [XRController3D ](/docs/Classes/xrcontroller3d) represents a controller used by the player, commonly there are two, one held in each hand. These nodes give access to various states on these controllers and send out signals when the player presses buttons on them. The positioning of this node is controlled by the XR system and updated automatically using the tracking information provided by the XR platform.
 
 There are other XR related nodes and there is much more to say about these three nodes, but we'll get into that later on.
 
@@ -39,7 +39,7 @@ While in Redot 3 most things worked out of the box, Redot 4 needs a little more
 setup. This is mainly due to the more advanced nature of the Vulkan renderer.
 There are many rendering features in Vulkan the XR system uses that aren't
 enabled by default. To turn them on, open up your project settings and tick
-[XR &gt; Shaders &gt; Enabled ](class_ProjectSettings_property_xr/shaders/enabled):
+[XR &gt; Shaders &gt; Enabled ](/docs/Classes/ProjectSettings_property_xr/shaders/enabled):
 
 ![Image](img/xr_shaders.png)
 
@@ -72,7 +72,7 @@ The default settings will get us started and we will go into detail in another s
 
 ## Setting up the XR scene
 
-Every XR application needs at least an [XROrigin3D ](class_xrorigin3d) and an [XRCamera3D ](class_xrcamera3d) node. Most will have two [XRController3D ](class_xrcontroller3d), one for the left hand and one for the right. Keep in mind that the camera and controller nodes should be children of the origin node. Add these nodes to a new scene and rename the controller nodes to ``LeftHand`` and ``RightHand``, your scene should look something like this:
+Every XR application needs at least an [XROrigin3D ](/docs/Classes/xrorigin3d) and an [XRCamera3D ](/docs/Classes/xrcamera3d) node. Most will have two [XRController3D ](/docs/Classes/xrcontroller3d), one for the left hand and one for the right. Keep in mind that the camera and controller nodes should be children of the origin node. Add these nodes to a new scene and rename the controller nodes to ``LeftHand`` and ``RightHand``, your scene should look something like this:
 
 ![Image](img/xr_basic_scene.png)
 
@@ -164,7 +164,7 @@ You should set ``Engine.physics_ticks_per_second`` to a higher value.
 
 :::
 
-If you run your project at this point in time, everything will work but you will be in a dark world. So to finish off our starting point add a [DirectionalLight3D ](class_directionallight3d) and a [WorldEnvironment ](class_worldenvironment) node to your scene.
+If you run your project at this point in time, everything will work but you will be in a dark world. So to finish off our starting point add a [DirectionalLight3D ](/docs/Classes/directionallight3d) and a [WorldEnvironment ](/docs/Classes/worldenvironment) node to your scene.
 You may wish to also add a mesh instance as a child to each controller node just to temporarily visualise them.
 Make sure you configure a sky in your world environment.
 

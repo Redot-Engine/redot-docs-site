@@ -15,7 +15,7 @@ many places, but is most commonly loaded from the filesystem. Audio files can be
 loaded as AudioStreams and placed inside an AudioStreamPlayer. You can find
 information on supported formats and differences in [doc_importing_audio_samples](../assets_pipeline/importing_audio_samples.md).
 
-There are other types of AudioStreams, such as [AudioStreamRandomizer](class_AudioStreamRandomizer).
+There are other types of AudioStreams, such as [AudioStreamRandomizer](/docs/Classes/AudioStreamRandomizer).
 This one picks a different audio stream from a list of streams each time it's played
 back, and applies random pitch and volume shifting. This can be helpful for adding
 variation to sounds that are played back often.

@@ -9,10 +9,10 @@ and the smoothest possible experience.
 
 Even with physics interpolation active, there may be some local situations where
 you would benefit from disabling automatic interpolation for a
-[Node](class_Node) (or branch of the [SceneTree](class_SceneTree)), and
+[Node](/docs/Classes/Node) (or branch of the [SceneTree](/docs/Classes/SceneTree)), and
 have the finer control of performing interpolation manually.
 
-This is possible using the [Node.physics_interpolation_mode](class_Node_property_physics_interpolation_mode)
+This is possible using the [Node.physics_interpolation_mode](/docs/Classes/Node_property_physics_interpolation_mode)
 property which is present in all Nodes. If you for example, turn off interpolation
 for a Node, the children will recursively also be affected (as they default to
 inheriting the parent setting). This means you can easily disable interpolation for
@@ -23,7 +23,7 @@ Cameras.
 
 ### Cameras
 
-In many cases, a [Camera3D](class_Camera3D) can use automatic interpolation
+In many cases, a [Camera3D](/docs/Classes/Camera3D) can use automatic interpolation
 just like any other node. However, for best results, especially at low physics tick
 rates, it is recommended that you take a manual approach to camera interpolation.
 
@@ -48,7 +48,7 @@ There are two ways of doing this:
 
 ![Image](img/fti_camera_worldspace.webp)
 
-2) Call [Node3D.top_level](class_Node3D_property_top_level) and set this to ``true``, which will make the Camera ignore the transform of its parent.
+2) Call [Node3D.top_level](/docs/Classes/Node3D_property_top_level) and set this to ``true``, which will make the Camera ignore the transform of its parent.
 
 #### Typical example
 
@@ -68,8 +68,8 @@ What we really want to focus the camera on, is not the position of the target on
 the physics tick, but the *interpolated* position, i.e. the position at which the
 target will be rendered.
 
-We can do this using the [Node3D.get_global_transform_interpolated](class_Node3D_method_get_global_transform_interpolated)
-function. This acts exactly like getting [Node3D.global_transform](class_Node3D_property_global_transform)
+We can do this using the [Node3D.get_global_transform_interpolated](/docs/Classes/Node3D_method_get_global_transform_interpolated)
+function. This acts exactly like getting [Node3D.global_transform](/docs/Classes/Node3D_property_global_transform)
 but it gives you the *interpolated* transform (during a ``_process()`` call).
 
 :::important
@@ -132,7 +132,7 @@ follow these mouse movements on the next frame, rather than waiting until the ne
 physics tick.
 
 In this situation, it can be better to disable physics interpolation for the camera
-node (using [Node.physics_interpolation_mode](class_Node_property_physics_interpolation_mode))
+node (using [Node.physics_interpolation_mode](/docs/Classes/Node_property_physics_interpolation_mode))
 and directly apply the mouse input to the camera rotation, rather than apply it in
 ``_physics_process``.
 
@@ -140,10 +140,10 @@ Sometimes, especially with cameras, you will want to use a combination of
 interpolation and non-interpolation:
 
 - A first person camera may position the camera at a player location (perhaps using
-  [Node3D.get_global_transform_interpolated](class_Node3D_method_get_global_transform_interpolated)),
+  [Node3D.get_global_transform_interpolated](/docs/Classes/Node3D_method_get_global_transform_interpolated)),
   but control the Camera rotation from mouse look *without* interpolation.
 - A third person camera may similarly determine the look at (target location) of the camera using
-  [Node3D.get_global_transform_interpolated](class_Node3D_method_get_global_transform_interpolated),
+  [Node3D.get_global_transform_interpolated](/docs/Classes/Node3D_method_get_global_transform_interpolated),
   but position the camera using mouse look *without* interpolation.
 
 There are many permutations and variations of camera types, but it should be clear
@@ -166,7 +166,7 @@ some extra functions for controlling interpolation functionality on a
 *per-instance* basis. You should explore these functions if you are using
 interpolated MultiMeshes.
 
-- [MultiMesh.reset_instance_physics_interpolation](class_MultiMesh_method_reset_instance_physics_interpolation)
-- [MultiMesh.set_buffer_interpolated](class_MultiMesh_method_set_buffer_interpolated)
+- [MultiMesh.reset_instance_physics_interpolation](/docs/Classes/MultiMesh_method_reset_instance_physics_interpolation)
+- [MultiMesh.set_buffer_interpolated](/docs/Classes/MultiMesh_method_set_buffer_interpolated)
 
-Full details are in the [MultiMesh](class_MultiMesh) documentation.
+Full details are in the [MultiMesh](/docs/Classes/MultiMesh) documentation.

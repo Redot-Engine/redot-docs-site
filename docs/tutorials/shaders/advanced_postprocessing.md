@@ -16,8 +16,8 @@ there are two main drawbacks of using a Viewport:
 1. The depth buffer cannot be accessed
 2. The effect of the post-processing shader is not visible in the editor
 
-To get around the limitation on using the depth buffer, use a [MeshInstance3D ](class_MeshInstance3D)
-with a [QuadMesh ](class_QuadMesh) primitive. This allows us to use a
+To get around the limitation on using the depth buffer, use a [MeshInstance3D ](/docs/Classes/MeshInstance3D)
+with a [QuadMesh ](/docs/Classes/QuadMesh) primitive. This allows us to use a
 shader and to access the depth texture of the scene. Next, use a vertex shader
 to make the quad cover the screen at all times so that the post-processing
 effect will be applied at all times, including in the editor.
@@ -217,7 +217,7 @@ screen quad. The reason for this is explained [here ](https://michaldrobot.com/2
 However, the benefit is quite small and only beneficial when running especially
 complex fragment shaders.
 
-Set the Mesh in the MeshInstance3D to an [ArrayMesh ](class_ArrayMesh). An
+Set the Mesh in the MeshInstance3D to an [ArrayMesh ](/docs/Classes/ArrayMesh). An
 ArrayMesh is a tool that allows you to easily construct a Mesh from Arrays for
 vertices, normals, colors, etc.
 

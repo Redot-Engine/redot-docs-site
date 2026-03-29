@@ -180,8 +180,8 @@ better unwrapping.
 
 :::note
 
-This option is only available for primitive meshes such as [class_BoxMesh](class_BoxMesh),
-[class_CylinderMesh](class_CylinderMesh), [class_PlaneMesh](class_PlaneMesh), etc.
+This option is only available for primitive meshes such as [class_BoxMesh](/docs/Classes/BoxMesh),
+[class_CylinderMesh](/docs/Classes/CylinderMesh), [class_PlaneMesh](/docs/Classes/PlaneMesh), etc.
 
 :::
 
@@ -583,7 +583,7 @@ There are 2 ways to add light probes to a scene:
   to improve precision at the cost of longer bake times and larger output file
   size.
 - **Manual:** In addition or as an alternative to generating probes
-  automatically, you can add light probes manually by adding [class_LightmapProbe](class_LightmapProbe)
+  automatically, you can add light probes manually by adding [class_LightmapProbe](/docs/Classes/LightmapProbe)
   nodes to the scene. This can be used to improve lighting detail in areas frequently
   travelled by dynamic objects. After placing LightmapProbe nodes in the scene,
   you must bake lightmaps again for them to be effective.

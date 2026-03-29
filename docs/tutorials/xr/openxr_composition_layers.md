@@ -13,9 +13,9 @@ a comfortable place for the user.
 Even with depth information there are headsets with slanted displays that make it impossible 
 for the standard 2D pipeline to correctly render the 2D elements.
 
-The solution then is to render the UI to a [SubViewport ](class_subviewport)
-and display the result of this using a [ViewportTexture ](class_viewporttexture) on a 3D mesh.
-The [QuadMesh ](class_quadmesh) is a suitable option for this.
+The solution then is to render the UI to a [SubViewport ](/docs/Classes/subviewport)
+and display the result of this using a [ViewportTexture ](/docs/Classes/viewporttexture) on a 3D mesh.
+The [QuadMesh ](/docs/Classes/quadmesh) is a suitable option for this.
 
 :::note
 
@@ -53,9 +53,9 @@ not be shown when you have a spectator view on the desktop.
 
 There are currently 3 nodes that expose this functionality:
 
-- [OpenXRCompositionLayerCylinder ](class_OpenXRCompositionLayerCylinder) shows the contents of the SubViewport on the inside of a cylinder (or "slice" of a cylinder).
-- [OpenXRCompositionLayerEquirect ](class_OpenXRCompositionLayerEquirect) shows the contents of the SubViewport on the interior of a sphere (or "slice" of a sphere).
-- [OpenXRCompositionLayerQuad ](class_OpenXRCompositionLayerQuad) shows the contents of the SubViewport on a flat rectangle. 
+- [OpenXRCompositionLayerCylinder ](/docs/Classes/OpenXRCompositionLayerCylinder) shows the contents of the SubViewport on the inside of a cylinder (or "slice" of a cylinder).
+- [OpenXRCompositionLayerEquirect ](/docs/Classes/OpenXRCompositionLayerEquirect) shows the contents of the SubViewport on the interior of a sphere (or "slice" of a sphere).
+- [OpenXRCompositionLayerQuad ](/docs/Classes/OpenXRCompositionLayerQuad) shows the contents of the SubViewport on a flat rectangle. 
 
 ## Setting up the SubViewport
 
@@ -80,7 +80,7 @@ When assigning our viewport to a composition layer Redot will automatically adju
 
 The second step is adding our composition layer.
 We can add the correct composition layer node as a child node of
-our [XROrigin3D ](class_xrorigin3d) node.
+our [XROrigin3D ](/docs/Classes/xrorigin3d) node.
 This is very important as the XR runtime positions everything in relation to our origin.
 
 We want to position the composition layer so it is at eye height and roughly 1 to 1.5 meters
@@ -204,7 +204,7 @@ If so, we check if our button is pressed and place our pointer at our intersecti
     ...
 
 If we were intersecting in our previous process call and our pointer has moved,
-we prepare a [InputEventMouseMotion ](class_InputEventMouseMotion) object
+we prepare a [InputEventMouseMotion ](/docs/Classes/InputEventMouseMotion) object
 to simulate our mouse moving and send that to our viewport for further processing.
 
 .. code:: gdscript
@@ -225,7 +225,7 @@ to simulate our mouse moving and send that to our viewport for further processin
     ...
 
 If we've just released our button we also prepare
-a [InputEventMouseButton ](class_InputEventMouseButton) object
+a [InputEventMouseButton ](/docs/Classes/InputEventMouseButton) object
 to simulate a button release and send that to our viewport for further processing.
 
 .. code:: gdscript
@@ -243,7 +243,7 @@ to simulate a button release and send that to our viewport for further processin
     ...
 
 Or if we've just pressed our button we prepare
-a [InputEventMouseButton ](class_InputEventMouseButton) object
+a [InputEventMouseButton ](/docs/Classes/InputEventMouseButton) object
 to simulate a button press and send that to our viewport for further processing.
 
 .. code:: gdscript

@@ -64,13 +64,13 @@ All of these properties can be toggled as needed according to the project's use 
 ## Configuring pseudolocalization at runtime
 
 Pseudolocalization can be toggled at runtime using the
-[pseudolocalization_enabled](class_TranslationServer_property_pseudolocalization_enabled) property
+[pseudolocalization_enabled](/docs/Classes/TranslationServer_property_pseudolocalization_enabled) property
 in TranslationServer.
 However, if runtime configuration of pseudolocalization properties is required,
 they can be directly configured using
-[ProjectSettings.set_setting(property, value) ](class_ProjectSettings_method_set_setting)
+[ProjectSettings.set_setting(property, value) ](/docs/Classes/ProjectSettings_method_set_setting)
 and then calling
-[TranslationServer.reload_pseudolocalization() ](class_TranslationServer_method_reload_pseudolocalization)
+[TranslationServer.reload_pseudolocalization() ](/docs/Classes/TranslationServer_method_reload_pseudolocalization)
 which reparses the pseudolocalization properties and reloads the pseudolocalization.
 The following code snippet shall turn on ``replace_with_accents`` and ``double_vowels`` properties
 and then call ``reload_pseudolocalization()`` for the changes to get reflected

@@ -10,10 +10,10 @@ This guide explains:
 Redot provides many kinds of collision shapes, with different performance and
 accuracy tradeoffs.
 
-You can define the shape of a [class_PhysicsBody3D](class_PhysicsBody3D) by adding one or more
-[CollisionShape3Ds ](class_CollisionShape3D) as *direct* child nodes.
+You can define the shape of a [class_PhysicsBody3D](/docs/Classes/PhysicsBody3D) by adding one or more
+[CollisionShape3Ds ](/docs/Classes/CollisionShape3D) as *direct* child nodes.
 Indirect child nodes (i.e. children of child nodes) will be ignored and won't be
-used as collision shapes. Also, note that you must add a [class_Shape3D](class_Shape3D)
+used as collision shapes. Also, note that you must add a [class_Shape3D](/docs/Classes/Shape3D)
 *resource* to collision shape nodes in the Inspector dock.
 
 :::note
@@ -27,10 +27,10 @@ have to worry about them overlapping. They won't "collide" with each other.
 
 Redot provides the following primitive collision shape types:
 
-- [class_BoxShape3D](class_BoxShape3D)
-- [class_SphereShape3D](class_SphereShape3D)
-- [class_CapsuleShape3D](class_CapsuleShape3D)
-- [class_CylinderShape3D](class_CylinderShape3D)
+- [class_BoxShape3D](/docs/Classes/BoxShape3D)
+- [class_SphereShape3D](/docs/Classes/SphereShape3D)
+- [class_CapsuleShape3D](/docs/Classes/CapsuleShape3D)
+- [class_CylinderShape3D](/docs/Classes/CylinderShape3D)
 
 You can represent the collision of most smaller objects using one or more
 primitive shapes. However, for more complex objects, such as a large ship or a
@@ -42,7 +42,7 @@ better performance as well.
 
 ## Convex collision shapes
 
-[Convex collision shapes ](class_ConvexPolygonShape3D) are a compromise
+[Convex collision shapes ](/docs/Classes/ConvexPolygonShape3D) are a compromise
 between primitive collision shapes and concave collision shapes. They can
 represent shapes of any complexity, but with an important caveat. As their name
 implies, an individual shape can only represent a *convex* shape. For instance,
@@ -73,7 +73,7 @@ viewport. The editor exposes two generation modes:
 
 ## Concave or trimesh collision shapes
 
-[Concave collision shapes ](class_ConcavePolygonShape3D), also called trimesh
+[Concave collision shapes ](/docs/Classes/ConcavePolygonShape3D), also called trimesh
 collision shapes, can take any form, from a few triangles to thousands of
 triangles. Concave shapes are the slowest option but are also the most accurate
 in Redot. **You can only use concave shapes within StaticBodies.** They will not

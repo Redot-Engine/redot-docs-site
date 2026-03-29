@@ -19,10 +19,10 @@ For example, you might have a life bar on the screen that represents the
 player's health. When the player takes damage or uses a healing potion, you want
 the bar to reflect the change. To do so, in Redot, you would use signals.
 
-Like methods ([class_callable](class_callable)), signals are a first-class type since Redot
+Like methods ([class_callable](/docs/Classes/callable)), signals are a first-class type since Redot
 4.0. This means you can pass them around as method arguments directly without
 having to pass them as strings, which allows for better autocompletion and is
-less error-prone. See the [class_signal](class_signal) class reference for a list of
+less error-prone. See the [class_signal](/docs/Classes/signal) class reference for a list of
 what you can do with the Signal type directly.
 
 :::info
@@ -52,7 +52,7 @@ For this project, we will be following the Redot naming conventions.
 ## Scene setup
 
 To add a button to our game, we will create a new scene which will include
-both a [Button](class_button) and the ``sprite_2d.tscn`` scene we created in
+both a [Button](/docs/Classes/button) and the ``sprite_2d.tscn`` scene we created in
 the [doc_scripting_first_script](scripting_first_script.md) lesson.
 
 Create a new scene by going to the menu Scene -&gt; New Scene.
@@ -60,7 +60,7 @@ Create a new scene by going to the menu Scene -&gt; New Scene.
 ![Image](img/signals_01_new_scene.webp)
 
 In the Scene dock, click the 2D Scene button. This will add
-a [Node2D](class_Node2D) as our root.
+a [Node2D](/docs/Classes/Node2D) as our root.
 
 ![Image](img/signals_02_2d_scene.webp)
 
@@ -74,7 +74,7 @@ on Node2D and select Add Child Node.
 
 ![Image](img/signals_04_add_child_node.webp)
 
-Search for the [Button](class_button) node and add it.
+Search for the [Button](/docs/Classes/button) node and add it.
 
 ![Image](img/signals_05_add_button.webp)
 
@@ -293,7 +293,7 @@ Run the scene now and click the button to see the sprite start and stop.
 You can connect signals via code instead of using the editor. This is necessary
 when you create nodes or instantiate scenes inside of a script.
 
-Let's use a different node here. Redot has a [Timer](class_Timer) node
+Let's use a different node here. Redot has a [Timer](/docs/Classes/Timer) node
 that's useful to implement skill cooldown times, weapon reloading, and more.
 
 Head back to the 2D workspace. You can either click the "2D" text at the top of
@@ -327,11 +327,11 @@ listen to the Timer's "timeout" signal.
 :::
 
 We want to connect the signal when the scene is instantiated, and we can do that
-using the [Node._ready()](class_Node_private_method__ready) built-in function,
+using the [Node._ready()](/docs/Classes/Node_private_method__ready) built-in function,
 which is called automatically by the engine when a node is fully instantiated.
 
 To get a reference to a node relative to the current one, we use the method
-[Node.get_node()](class_Node_method_get_node). We can store the reference
+[Node.get_node()](/docs/Classes/Node_method_get_node). We can store the reference
 in a variable.
 
 <Tabs>
@@ -688,7 +688,7 @@ Signals have many uses. With them, you can react to a node entering or exiting
 the game world, to a collision, to a character entering or leaving an area, to
 an element of the interface changing size, and much more.
 
-For example, an [Area2D](class_Area2D) representing a coin emits a
+For example, an [Area2D](/docs/Classes/Area2D) representing a coin emits a
 ``body_entered`` signal whenever the player's physics body enters its collision
 shape, allowing you to know when the player collected it.
 

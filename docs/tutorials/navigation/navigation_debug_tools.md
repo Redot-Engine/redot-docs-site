@@ -43,7 +43,7 @@ NavigationServer3D.SetDebugEnabled(true);
 
 </Tabs>
 
-Debug visualizations are currently based on Nodes in the SceneTree. If the [NavigationServer2D](class_NavigationServer2D) or [NavigationServer3D](class_NavigationServer3D)
+Debug visualizations are currently based on Nodes in the SceneTree. If the [NavigationServer2D](/docs/Classes/NavigationServer2D) or [NavigationServer3D](/docs/Classes/NavigationServer3D)
 APIs are used exclusively then changes will not be reflected by the debug navigation tools.
 
 ## Navigation debug settings

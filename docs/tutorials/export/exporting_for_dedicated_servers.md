@@ -5,7 +5,7 @@ import TabItem from "@theme/TabItem";
 
 If you want to run a dedicated server for your project on a machine that doesn't
 have a GPU or display server available, you'll need to run Redot with the ``headless``
-display server and ``Dummy`` [audio driver ](class_ProjectSettings_property_audio/driver/driver).
+display server and ``Dummy`` [audio driver ](/docs/Classes/ProjectSettings_property_audio/driver/driver).
 
 Since Redot 4.0, this can be done by running a Redot binary on any platform with
 the ``--headless`` command line argument, or running a project exported as

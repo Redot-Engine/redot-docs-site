@@ -12,7 +12,7 @@ A simple demo is included in the official demo projects and will be used as
 support for this tutorial:
 [&lt;https://github.com/redot-engine/redot-demo-projects/tree/master/audio/mic_record&gt;](&lt;https://github.com/redot-engine/redot-demo-projects/tree/master/audio/mic_record&gt;).
 
-You will need to enable audio input in the [Audio &gt; Driver &gt; Enable Input](class_ProjectSettings_property_audio/driver/enable_input) project setting, or you'll just get empty audio files.
+You will need to enable audio input in the [Audio &gt; Driver &gt; Enable Input](/docs/Classes/ProjectSettings_property_audio/driver/enable_input) project setting, or you'll just get empty audio files.
 
 ## The structure of the demo
 
@@ -67,11 +67,11 @@ public override void _Ready()
 
 </Tabs>
 
-The audio recording is handled by the [class_AudioEffectRecord](class_AudioEffectRecord) resource
+The audio recording is handled by the [class_AudioEffectRecord](/docs/Classes/AudioEffectRecord) resource
 which has three methods:
-[get_recording() ](class_AudioEffectRecord_method_get_recording),
-[is_recording_active() ](class_AudioEffectRecord_method_is_recording_active),
-and [set_recording_active() ](class_AudioEffectRecord_method_set_recording_active).
+[get_recording() ](/docs/Classes/AudioEffectRecord_method_get_recording),
+[is_recording_active() ](/docs/Classes/AudioEffectRecord_method_is_recording_active),
+and [set_recording_active() ](/docs/Classes/AudioEffectRecord_method_set_recording_active).
 
 <Tabs>
 

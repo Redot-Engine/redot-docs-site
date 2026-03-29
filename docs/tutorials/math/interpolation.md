@@ -32,10 +32,10 @@ There are other types of interpolations, which will not be covered here. A recom
 
 ## Vector interpolation
 
-Vector types ([Vector2 ](class_Vector2) and [Vector3 ](class_Vector3)) can also be interpolated, they come with handy functions to do it
-[Vector2.lerp() ](class_Vector2_method_lerp) and [Vector3.lerp() ](class_Vector3_method_lerp).
+Vector types ([Vector2 ](/docs/Classes/Vector2) and [Vector3 ](/docs/Classes/Vector3)) can also be interpolated, they come with handy functions to do it
+[Vector2.lerp() ](/docs/Classes/Vector2_method_lerp) and [Vector3.lerp() ](/docs/Classes/Vector3_method_lerp).
 
-For cubic interpolation, there are also [Vector2.cubic_interpolate() ](class_Vector2_method_cubic_interpolate) and [Vector3.cubic_interpolate() ](class_Vector3_method_cubic_interpolate), which do a [Bezier ](beziers_and_curves.md) style interpolation.
+For cubic interpolation, there are also [Vector2.cubic_interpolate() ](/docs/Classes/Vector2_method_cubic_interpolate) and [Vector3.cubic_interpolate() ](/docs/Classes/Vector3_method_cubic_interpolate), which do a [Bezier ](beziers_and_curves.md) style interpolation.
 
 Here is example pseudo-code for going from point A to B using interpolation:
 
@@ -84,7 +84,7 @@ It will produce the following motion:
 ## Transform interpolation
 
 It is also possible to interpolate whole transforms (make sure they have either uniform scale or, at least, the same non-uniform scale).
-For this, the function [Transform3D.interpolate_with() ](class_Transform3D_method_interpolate_with) can be used.
+For this, the function [Transform3D.interpolate_with() ](/docs/Classes/Transform3D_method_interpolate_with) can be used.
 
 Here is an example of transforming a monkey from Position1 to Position2:
 

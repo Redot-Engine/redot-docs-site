@@ -34,7 +34,7 @@ To learn more about getting node references, read
 :::
 
 Another related callback is ``_exit_tree()``, which the engine calls every time
-a node is about to exit the scene tree. This can be when you call [Node.remove_child() ](class_Node_method_remove_child) or when you free a node.
+a node is about to exit the scene tree. This can be when you call [Node.remove_child() ](/docs/Classes/Node_method_remove_child) or when you free a node.
 
 <Tabs>
 
@@ -130,8 +130,8 @@ public override void _PhysicsProcess(double delta)
 </Tabs>
 
 Two more essential built-in node callback functions are
-[Node._unhandled_input() ](class_Node_private_method__unhandled_input) and
-[Node._input() ](class_Node_private_method__input), which you use to both receive
+[Node._unhandled_input() ](/docs/Classes/Node_private_method__unhandled_input) and
+[Node._input() ](/docs/Classes/Node_private_method__input), which you use to both receive
 and process individual input events. The ``_unhandled_input()`` method receives
 every key press, mouse click, etc. that have not been handled already in an
 ``_input()`` callback or in a user interface component. You want to use it for
@@ -181,6 +181,6 @@ public override void _Input(InputEvent @event)
 </Tabs>
 
 There are some more overridable functions like
-[Node._get_configuration_warnings() ](class_Node_private_method__get_configuration_warnings). Specialized node types provide
-more callbacks like [CanvasItem._draw() ](class_CanvasItem_private_method__draw) to
-draw programmatically or [Control._gui_input() ](class_Control_private_method__gui_input) to handle clicks and input on UI elements.
+[Node._get_configuration_warnings() ](/docs/Classes/Node_private_method__get_configuration_warnings). Specialized node types provide
+more callbacks like [CanvasItem._draw() ](/docs/Classes/CanvasItem_private_method__draw) to
+draw programmatically or [Control._gui_input() ](/docs/Classes/Control_private_method__gui_input) to handle clicks and input on UI elements.

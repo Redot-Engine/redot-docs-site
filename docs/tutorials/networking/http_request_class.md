@@ -31,8 +31,8 @@ Refer to the [Introduction ](toc-learn-introduction) and the
 
 ## HTTP requests in Redot
 
-The [HTTPRequest ](class_HTTPRequest) node is the easiest way to make HTTP requests in Redot.
-It is backed by the more low-level [HTTPClient ](class_HTTPClient),
+The [HTTPRequest ](/docs/Classes/HTTPRequest) node is the easiest way to make HTTP requests in Redot.
+It is backed by the more low-level [HTTPClient ](/docs/Classes/HTTPClient),
 for which a tutorial is available [here ](http_client_class.md).
 
 For this example, we will make an HTTP request to GitHub to retrieve the name
@@ -49,15 +49,15 @@ blocked by the Android OS.
 
 ## Preparing the scene
 
-Create a new empty scene, add a root [Node ](class_Node) and add a script to it.
-Then add an [HTTPRequest ](class_HTTPRequest) node as a child.
+Create a new empty scene, add a root [Node ](/docs/Classes/Node) and add a script to it.
+Then add an [HTTPRequest ](/docs/Classes/HTTPRequest) node as a child.
 
 ![Image](img/rest_api_scene.webp)
 
 ## Scripting the request
 
 When the project is started (so in ``_ready()``), we're going to send an HTTP request
-to Github using our [HTTPRequest ](class_HTTPRequest) node,
+to Github using our [HTTPRequest ](/docs/Classes/HTTPRequest) node,
 and once the request completes, we're going to parse the returned JSON data,
 look for the ``name`` field and print that to console.
 
@@ -110,11 +110,11 @@ public partial class MyNode : Node
 
 Save the script and the scene, and run the project.
 The name of the most recent Redot release on Github should be printed to the output log.
-For more information on parsing JSON, see the class references for [JSON ](class_JSON).
+For more information on parsing JSON, see the class references for [JSON ](/docs/Classes/JSON).
 
 Note that you may want to check whether the ``result`` equals ``RESULT_SUCCESS``
 and whether a JSON parsing error occurred, see the JSON class reference and
-[HTTPRequest ](class_HTTPRequest) for more.
+[HTTPRequest ](/docs/Classes/HTTPRequest) for more.
 
 You have to wait for a request to finish before sending another one.
 Making multiple request at once requires you to have one node per request.

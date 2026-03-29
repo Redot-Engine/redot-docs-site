@@ -84,7 +84,7 @@ scene in the FileSystem dock:
   doesn't support using a lower detail level than the source mesh (but shadow
   rendering will make use of LODs when relevant).
 - **Light Baking:** Configures the meshes'
-  [global illumination mode ](class_GeometryInstance3D_property_gi_mode)
+  [global illumination mode ](/docs/Classes/GeometryInstance3D_property_gi_mode)
   in the 3D scene. If set to **Static Lightmaps**, sets the meshes' GI mode to
   **Static** and generates UV2 on import for [lightmap baking ](../../3d/global_illumination/using_lightmap_gi.md).
 - **Lightmap Texel Size:** Only visible if **Light Baking** is set to **Static
@@ -94,11 +94,11 @@ scene in the FileSystem dock:
 
 **Skins**
 
-- **Use Named Skins:** If checked, use named [Skins ](class_Skin) for animation.
-  The [class_MeshInstance3D](class_MeshInstance3D) node contains 3 properties of relevance here: a skeleton
+- **Use Named Skins:** If checked, use named [Skins ](/docs/Classes/Skin) for animation.
+  The [class_MeshInstance3D](/docs/Classes/MeshInstance3D) node contains 3 properties of relevance here: a skeleton
   NodePath pointing to the Skeleton3D node (usually ``..``), a mesh, and a skin:
 
-  - The [class_Skeleton3D](class_Skeleton3D) node contains a list of bones with names, their pose and rest,
+  - The [class_Skeleton3D](/docs/Classes/Skeleton3D) node contains a list of bones with names, their pose and rest,
     a name and a parent bone.
   - The mesh is all of the raw vertex data needed to display a mesh. In terms of the mesh,
     it knows how vertices are weight-painted and uses some internal numbering
@@ -249,12 +249,12 @@ If you select a mesh, different options will appear in the panel on the right:
 
 The options are as follows:
 
-- **Save to File:** Saves the [class_Mesh](class_Mesh) *resource* to an external file
+- **Save to File:** Saves the [class_Mesh](/docs/Classes/Mesh) *resource* to an external file
   (this isn't a scene file). You generally don't need to use this for placing
   the mesh in a 3D scene – instead, you should instance the 3D scene directly.
   However, having direct access to the Mesh resource is useful for specific
-  nodes, such as [class_MeshInstance3D](class_MeshInstance3D), [class_MultiMeshInstance3D](class_MultiMeshInstance3D),
-  [class_GPUParticles3D](class_GPUParticles3D) or [class_CPUParticles3D](class_CPUParticles3D).
+  nodes, such as [class_MeshInstance3D](/docs/Classes/MeshInstance3D), [class_MultiMeshInstance3D](/docs/Classes/MultiMeshInstance3D),
+  [class_GPUParticles3D](/docs/Classes/GPUParticles3D) or [class_CPUParticles3D](/docs/Classes/CPUParticles3D).
   - You will also need to specify an output file path using the option that
   appears after enabling **Save to File**. It's recommended to use the ``.res``
   output file extension for smaller file sizes and faster loading speeds, as
@@ -404,9 +404,9 @@ mode to Animation Library in the Import dock:
    Changing the import type to Animation Library in the Import dock
 
 Click **Reimport** and restart the editor when prompted. After restarting, the
-glTF file will be imported as an [class_AnimationLibrary](class_AnimationLibrary) instead of a
-[class_PackedScene](class_PackedScene). This animation library can then be referenced in an
-[class_AnimationPlayer](class_AnimationPlayer) node.
+glTF file will be imported as an [class_AnimationLibrary](/docs/Classes/AnimationLibrary) instead of a
+[class_PackedScene](/docs/Classes/PackedScene). This animation library can then be referenced in an
+[class_AnimationPlayer](/docs/Classes/AnimationPlayer) node.
 
 The import options that are visible after changing the import mode to Animation
 Library act the same as when using the Scene import mode. See
@@ -422,7 +422,7 @@ consists of two types of statements, the first for choosing which animations to
 filter, and the second for filtering individual tracks within the matched
 animation. All name patterns are performed using a case-insensitive expression
 match, with support for ``?`` and ``*`` wildcards (using
-[String.matchn() ](class_String_method_matchn) under the hood).
+[String.matchn() ](/docs/Classes/String_method_matchn) under the hood).
 
 The script must start with an animation filter statement (as denoted by the line
 beginning with an ``@``). For example, if we would like to apply filters to all

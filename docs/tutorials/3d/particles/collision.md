@@ -5,8 +5,8 @@
 
 Since GPU particles are processed entirely on the GPU, they don't have access to the game's physical
 world. If you need particles to collide with the environment, you have to set up particle collision nodes.
-There are four of them: [class_GPUParticlesCollisionBox3D](class_GPUParticlesCollisionBox3D), [class_GPUParticlesCollisionSphere3D](class_GPUParticlesCollisionSphere3D),
-[class_GPUParticlesCollisionSDF3D](class_GPUParticlesCollisionSDF3D), and [class_GPUParticlesCollisionHeightField3D](class_GPUParticlesCollisionHeightField3D).
+There are four of them: [class_GPUParticlesCollisionBox3D](/docs/Classes/GPUParticlesCollisionBox3D), [class_GPUParticlesCollisionSphere3D](/docs/Classes/GPUParticlesCollisionSphere3D),
+[class_GPUParticlesCollisionSDF3D](/docs/Classes/GPUParticlesCollisionSDF3D), and [class_GPUParticlesCollisionHeightField3D](/docs/Classes/GPUParticlesCollisionHeightField3D).
 
 ### Common properties
 
@@ -18,7 +18,7 @@ There are some properties that you can find on all collision nodes. They're loca
 ``GPUParticlesCollision3D`` section in the inspector.
 
 The ``Cull Mask`` property controls which particle systems are affected by a collision node based
-on each system's [visibility layers ](class_VisualInstance3D). A particle system collides with a
+on each system's [visibility layers ](/docs/Classes/VisualInstance3D). A particle system collides with a
 collision node only if at least one of the system's visibility layers is enabled in the
 collider's cull mask.
 

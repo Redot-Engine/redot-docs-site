@@ -165,9 +165,9 @@ func do_something():
 In GDScript, only base types (int, float, string and the vector types)
 are passed by value to functions (value is copied). Everything else
 (instances, arrays, dictionaries, etc) is passed as reference. Classes
-that inherit [class_RefCounted](class_RefCounted) (the default if nothing is specified)
+that inherit [class_RefCounted](/docs/Classes/RefCounted) (the default if nothing is specified)
 will be freed when not used, but manual memory management is allowed too
-if inheriting manually from [class_Object](class_Object).
+if inheriting manually from [class_Object](/docs/Classes/Object).
 
 ## Arrays
 

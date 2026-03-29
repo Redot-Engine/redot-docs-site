@@ -41,7 +41,7 @@ opportunities for occlusion culling.
 
 ## Transparent objects
 
-Redot sorts objects by [Material ](class_Material) and [Shader ](class_Shader) to improve performance. This, however, can not be done with
+Redot sorts objects by [Material ](/docs/Classes/Material) and [Shader ](/docs/Classes/Shader) to improve performance. This, however, can not be done with
 transparent objects. Transparent objects are rendered from back to front to make
 blending with what is behind work. As a result,
 **try to use as few transparent objects as possible**. If an object has a
@@ -99,7 +99,7 @@ on the type of project you are making.
 ### Use instancing (MultiMesh)
 
 If several identical objects have to be drawn in the same place or nearby, try
-using [MultiMesh ](class_MultiMesh) instead. MultiMesh allows the drawing
+using [MultiMesh ](/docs/Classes/MultiMesh) instead. MultiMesh allows the drawing
 of many thousands of objects at very little performance cost, making it ideal
 for flocks, grass, particles, and anything else where you have thousands of
 identical objects.
@@ -125,7 +125,7 @@ have baked lighting.
 The downside of lights with the **Static** bake mode is that they can't cast
 shadows onto meshes with baked lighting. This can make scenes with outdoor
 environments and dynamic objects look flat. A good balance between performance
-and quality is to keep **Dynamic** for the [class_DirectionalLight3D](class_DirectionalLight3D) node,
+and quality is to keep **Dynamic** for the [class_DirectionalLight3D](/docs/Classes/DirectionalLight3D) node,
 and use **Static** for most (if not all) omni and spot lights.
 
 ## Animation and skinning
@@ -137,7 +137,7 @@ You can also reduce the animation rate for distant or occluded meshes, or pause
 the animation entirely if the player is unlikely to notice the animation being
 stopped.
 
-The [class_VisibleOnScreenEnabler3D](class_VisibleOnScreenEnabler3D) and [class_VisibleOnScreenNotifier3D](class_VisibleOnScreenNotifier3D)
+The [class_VisibleOnScreenEnabler3D](/docs/Classes/VisibleOnScreenEnabler3D) and [class_VisibleOnScreenNotifier3D](/docs/Classes/VisibleOnScreenNotifier3D)
 nodes can be useful for this purpose.
 
 ## Large worlds

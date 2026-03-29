@@ -246,7 +246,7 @@ As you can see, functions normally in global scope in GDScript like Redot's
 ``print`` function are available in the ``GD`` static class which is part of
 the ``Redot`` namespace. For a full list of methods in the ``GD`` class, see the
 class reference pages for
-[@GDScript ](class_@gdscript) and [@GlobalScope ](class_@globalscope).
+[@GDScript ](/docs/Classes/@gdscript) and [@GlobalScope ](/docs/Classes/@globalscope).
 
 :::note
 

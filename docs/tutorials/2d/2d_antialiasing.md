@@ -12,8 +12,8 @@ Redot also supports antialiasing in 3D rendering. This is covered on the
 
 Due to their limited resolution, scenes rendered in 2D can exhibit aliasing
 artifacts. These artifacts usually manifest in the form of a "staircase" effect on
-geometry edges, and are most noticeable when using nodes such as [class_Line2D](class_Line2D),
-[class_Polygon2D](class_Polygon2D) or [class_TextureProgressBar](class_TextureProgressBar). [doc_custom_drawing_in_2d](custom_drawing_in_2d.md)
+geometry edges, and are most noticeable when using nodes such as [class_Line2D](/docs/Classes/Line2D),
+[class_Polygon2D](/docs/Classes/Polygon2D) or [class_TextureProgressBar](/docs/Classes/TextureProgressBar). [doc_custom_drawing_in_2d](custom_drawing_in_2d.md)
 can also have aliasing artifacts for methods that don't support antialiasing.
 
 In the example below, you can notice how
@@ -71,7 +71,7 @@ affect** the following kinds of aliasing in any way:
 - Aliasing in font rendering.
 
 MSAA can be enabled in the Project Settings by changing the value of the
-[Rendering &gt; Anti Aliasing &gt; Quality &gt; MSAA 2D](class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_2d)
+[Rendering &gt; Anti Aliasing &gt; Quality &gt; MSAA 2D](/docs/Classes/ProjectSettings_property_rendering/anti_aliasing/quality/msaa_2d)
 setting. It's important to change the value of the **MSAA 2D** setting and not **MSAA 3D**, as these are entirely
 separate settings.
 

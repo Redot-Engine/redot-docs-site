@@ -21,15 +21,15 @@ As mentioned in the previous tutorial, [doc_canvas_layers](canvas_layers.md), ev
 CanvasItem node (remember that Node2D and Control based nodes use
 CanvasItem as their common root) will reside in a *Canvas Layer*. Every
 canvas layer has a transform (translation, rotation, scale, etc.) that
-can be accessed as a [Transform2D ](class_Transform2D).
+can be accessed as a [Transform2D ](/docs/Classes/Transform2D).
 
 Also covered in the previous tutorial, nodes are drawn by default in Layer 0,
-in the built-in canvas. To put nodes in a different layer, a [CanvasLayer ](class_CanvasLayer) node can be used.
+in the built-in canvas. To put nodes in a different layer, a [CanvasLayer ](/docs/Classes/CanvasLayer) node can be used.
 
 ## Global canvas transform
 
 Viewports also have a Global Canvas transform (also a
-[Transform2D ](class_Transform2D)). This is the master transform and
+[Transform2D ](/docs/Classes/Transform2D)). This is the master transform and
 affects all individual *Canvas Layer* transforms. Generally, this is primarily
 used in Redot's CanvasItem Editor.
 
@@ -42,14 +42,14 @@ on each viewport.
 
 Input events are multiplied by this transform, but lack the ones above. To
 convert InputEvent coordinates to local CanvasItem coordinates, the
-[CanvasItem.make_input_local() ](class_CanvasItem_method_make_input_local)
+[CanvasItem.make_input_local() ](/docs/Classes/CanvasItem_method_make_input_local)
 function was added for convenience.
 
 ## Window transform
 
-The root viewport is a [Window ](class_Window). In order to scale and
+The root viewport is a [Window ](/docs/Classes/Window). In order to scale and
 position the *Window's* content as described in [doc_multiple_resolutions](../rendering/multiple_resolutions.md),
-each [Window ](class_Window) contains a *window transform*. It is for
+each [Window ](/docs/Classes/Window) contains a *window transform*. It is for
 example responsible for the black bars at the *Window's* sides so that the
 *Viewport* is displayed with a fixed aspect ratio.
 
@@ -64,7 +64,7 @@ the following chain of transforms must be applied:
 
 The above graphic shows some available transform functions. All transforms are directed from right
 to left, this means multiplying a transform with a coordinate results in a coordinate system
-further to the left, multiplying the [affine inverse ](class_Transform2D_method_affine_inverse)
+further to the left, multiplying the [affine inverse ](/docs/Classes/Transform2D_method_affine_inverse)
 of a transform results in a coordinate system further to the right:
 
 <Tabs>

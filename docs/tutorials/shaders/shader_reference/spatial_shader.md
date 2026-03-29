@@ -258,7 +258,7 @@ If you want the lights to add together, add the light contribution to ``DIFFUSE_
 :::warning
 
 The ``light()`` function won't be run if the ``vertex_lighting`` render mode is enabled, or if 
-[Rendering &gt; Quality &gt; Shading &gt; Force Vertex Shading](class_ProjectSettings_property_rendering/shading/overrides/force_vertex_shading)
+[Rendering &gt; Quality &gt; Shading &gt; Force Vertex Shading](/docs/Classes/ProjectSettings_property_rendering/shading/overrides/force_vertex_shading)
 is enabled in the Project Settings. (It's enabled by default on mobile platforms.)
 
 :::

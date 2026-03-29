@@ -742,10 +742,10 @@ Remember to:
 But this is not all, depending what you do, you will be greeted with
 some (hopefully positive) surprises.
 
--  If you inherit from [class_Node](class_Node) (or any derived node type, such as
+-  If you inherit from [class_Node](/docs/Classes/Node) (or any derived node type, such as
    Sprite2D), your new class will appear in the editor, in the inheritance
    tree in the "Add Node" dialog.
--  If you inherit from [class_Resource](class_Resource), it will appear in the resource
+-  If you inherit from [class_Resource](/docs/Classes/Resource), it will appear in the resource
    list, and all the exposed properties can be serialized when
    saved/loaded.
 -  By this same logic, you can extend the Editor and almost any area of

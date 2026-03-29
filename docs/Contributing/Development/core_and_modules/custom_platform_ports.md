@@ -8,7 +8,7 @@ existing source code.
 An example of a custom platform port distributed independently from the engine
 is [FRT](https://github.com/efornara/frt), which targets single-board
 computers. Note that this platform port currently targets Redot 3.x; therefore,
-it does not use the [class_DisplayServer](class_DisplayServer) abstraction that is new in Redot 4.
+it does not use the [class_DisplayServer](/docs/Classes/DisplayServer) abstraction that is new in Redot 4.
 
 Some reasons to create custom platform ports might be:
 
@@ -32,8 +32,8 @@ about 100 MB of RAM to run on Linux (50 MB in headless mode).
 
 If you want to run Redot on heavily memory-constrained platforms, older
 Redot versions have lower memory requirements. The porting process is
-similar, with the exception of [class_DisplayServer](class_DisplayServer) not being split
-from the [class_OS](class_OS) singleton.
+similar, with the exception of [class_DisplayServer](/docs/Classes/DisplayServer) not being split
+from the [class_OS](/docs/Classes/OS) singleton.
 
 :::
 
@@ -62,7 +62,7 @@ amount of work needed varies:
 
 ### Required features of a platform port
 
-At the very least, a platform port must have methods from the [class_OS](class_OS)
+At the very least, a platform port must have methods from the [class_OS](/docs/Classes/OS)
 singleton implemented to be buildable and usable for headless operation.
 A ``logo.svg`` (32×32) vector image must also be present within the platform
 folder. This logo is displayed in the Export dialog for each export preset

@@ -5,15 +5,15 @@ import TabItem from "@theme/TabItem";
 
 ![Image](img/nav_navmesh_links.png)
 
-NavigationLinks are used to connect navigation mesh polygons from [NavigationRegion2D](class_NavigationRegion2D)
-and [NavigationRegion3D](class_NavigationRegion3D) over arbitrary distances for pathfinding.
+NavigationLinks are used to connect navigation mesh polygons from [NavigationRegion2D](/docs/Classes/NavigationRegion2D)
+and [NavigationRegion3D](/docs/Classes/NavigationRegion3D) over arbitrary distances for pathfinding.
 
 NavigationLinks are also used to consider movement shortcuts in pathfinding available through
 interacting with gameplay objects e.g. ladders, jump pads or teleports.
 
 2D and 3D versions of NavigationJumplinks nodes are available as
-[NavigationLink2D](class_NavigationLink2D) and
-[NavigationLink3D](class_NavigationLink3D) respectively.
+[NavigationLink2D](/docs/Classes/NavigationLink2D) and
+[NavigationLink3D](/docs/Classes/NavigationLink3D) respectively.
 
 Different NavigationRegions can connect their navigation meshes without the need for a NavigationLink
 as long as they have overlapping edges or edges that are within navigation map ``edge_connection_margin``.
@@ -41,7 +41,7 @@ If no valid polygon is found within the search radius the navigation link gets d
 
 ![Image](img/nav_link_debug_visuals.png)
 
-The link debug visuals can be changed in the Editor [ProjectSettings](class_ProjectSettings) under ``debug/shapes/navigation``.
+The link debug visuals can be changed in the Editor [ProjectSettings](/docs/Classes/ProjectSettings) under ``debug/shapes/navigation``.
 The visibility of the debug can also be controlled in the Editor 3D Viewport gizmo menu.
 
 A navigation link does not provide any specialized movement through the link. Instead, when

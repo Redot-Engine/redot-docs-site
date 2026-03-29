@@ -68,7 +68,7 @@ small details.
 
 ## Setting up a ReflectionProbe
 
-- Add a [class_ReflectionProbe](class_ReflectionProbe) node.
+- Add a [class_ReflectionProbe](/docs/Classes/ReflectionProbe) node.
 - Configure the ReflectionProbe's extents in the inspector to fit your scene. To
   get reasonably accurate reflections, you should generally have one
   ReflectionProbe node per room (sometimes more for large rooms).
@@ -173,7 +173,7 @@ performance allows). However, there's still a default limit of 512 *clustered
 elements* that can be present in the current camera view. A clustered element is
 an omni light, a spot light, a [decal ](../using_decals.md) or a
 [reflection probe ](reflection_probes.md). This limit can be increased by adjusting
-[Max Clustered Elements](class_ProjectSettings_property_rendering/limits/cluster_builder/max_clustered_elements)
+[Max Clustered Elements](/docs/Classes/ProjectSettings_property_rendering/limits/cluster_builder/max_clustered_elements)
 in **Project Settings &gt; Rendering &gt; Limits &gt; Cluster Builder**.
 
 When using the Mobile renderer, only 8 reflection probes can be applied on each

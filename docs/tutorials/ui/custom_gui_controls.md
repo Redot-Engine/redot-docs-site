@@ -24,7 +24,7 @@ usefulness when drawing, so they will be detailed next:
 
 Unlike 2D nodes, "size" is important with controls, as it helps to
 organize them in proper layouts. For this, the
-[Control.size ](class_Control_property_size)
+[Control.size ](/docs/Classes/Control_property_size)
 property is provided. Checking it during ``_draw()`` is vital to ensure
 everything is kept in-bounds.
 
@@ -33,11 +33,11 @@ everything is kept in-bounds.
 Some controls (such as buttons or text editors) might provide input
 focus for keyboard or joypad input. Examples of this are entering text
 or pressing a button. This is controlled with the
-[Control.focus_mode ](class_Control_property_focus_mode)
+[Control.focus_mode ](/docs/Classes/Control_property_focus_mode)
 property. When drawing, and if the control supports input focus, it is
 always desired to show some sort of indicator (highlight, box, etc.) to
 indicate that this is the currently focused control. To check for this
-status, the [Control.has_focus() ](class_Control_method_has_focus) method
+status, the [Control.has_focus() ](/docs/Classes/Control_method_has_focus) method
 exists. Example
 
 <Tabs>
@@ -82,12 +82,12 @@ As mentioned before, size is important to controls. This allows
 them to lay out properly, when set into grids, containers, or anchored.
 Controls, most of the time, provide a *minimum size* to help properly
 lay them out. For example, if controls are placed vertically on top of
-each other using a [VBoxContainer ](class_VBoxContainer),
+each other using a [VBoxContainer ](/docs/Classes/VBoxContainer),
 the minimum size will make sure your custom control is not squished by
 the other controls in the container.
 
 To provide this callback, just override
-[Control._get_minimum_size() ](class_Control_private_method__get_minimum_size),
+[Control._get_minimum_size() ](/docs/Classes/Control_private_method__get_minimum_size),
 for example:
 
 <Tabs>
@@ -159,10 +159,10 @@ when:
 -  The button was pressed over this control (control always
    captures input until button is released)
 -  Control provides keyboard/joypad focus via
-   [Control.focus_mode ](class_Control_property_focus_mode).
+   [Control.focus_mode ](/docs/Classes/Control_property_focus_mode).
 
 This function is
-[Control._gui_input() ](class_Control_private_method__gui_input).
+[Control._gui_input() ](/docs/Classes/Control_private_method__gui_input).
 To use it, override it in your control. No processing needs to be set.
 
 <Tabs>

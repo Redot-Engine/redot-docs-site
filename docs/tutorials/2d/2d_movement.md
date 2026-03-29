@@ -9,7 +9,7 @@ Every beginner has been there: "How do I move my character?" Depending on the
 style of game you're making, you may have special requirements, but in general
 the movement in most 2D games is based on a small number of designs.
 
-We'll use [CharacterBody2D ](class_CharacterBody2D) for these examples,
+We'll use [CharacterBody2D ](/docs/Classes/CharacterBody2D) for these examples,
 but the principles will apply to other node types (Area2D, RigidBody2D) as well.
 
 ## Setup
@@ -84,7 +84,7 @@ public partial class Movement : CharacterBody2D
 
 </Tabs>
 
-In the ``get_input()`` function, we use [Input ](class_Input) ``get_vector()`` to check for the
+In the ``get_input()`` function, we use [Input ](/docs/Classes/Input) ``get_vector()`` to check for the
 four key events and sum return a direction vector.
 
 We can then set our velocity by multiplying this direction vector, which has a
@@ -236,7 +236,7 @@ public partial class Movement : CharacterBody2D
 
 </Tabs>
 
-Here we're using the [Node2D ](class_Node2D) ``look_at()`` method to
+Here we're using the [Node2D ](/docs/Classes/Node2D) ``look_at()`` method to
 point the player towards the mouse's position. Without this function, you
 could get the same effect by setting the angle like this:
 

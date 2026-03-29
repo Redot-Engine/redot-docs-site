@@ -119,7 +119,7 @@ map scene the main one, so it runs when pressing play.
 Go back to the character scene, and open the script, the magic begins
 now! Kinematic body will do nothing by default, but it has a
 useful function called ``CharacterBody2D.move_and_collide()``.
-This function takes a [Vector2 ](class_Vector2) as
+This function takes a [Vector2 ](/docs/Classes/Vector2) as
 an argument, and tries to apply that motion to the kinematic body. If a
 collision happens, it stops right at the moment of the collision.
 

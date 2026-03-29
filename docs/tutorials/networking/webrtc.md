@@ -28,7 +28,7 @@ Peers connect to a signaling server (for example a WebSocket server) and send th
 
 ## Using WebRTC in Redot
 
-WebRTC is implemented in Redot via two main classes [WebRTCPeerConnection ](class_WebRTCPeerConnection) and [WebRTCDataChannel ](class_WebRTCDataChannel), plus the multiplayer API implementation [WebRTCMultiplayerPeer ](class_WebRTCMultiplayerPeer). See section on [high-level multiplayer ](high_level_multiplayer.md) for more details.
+WebRTC is implemented in Redot via two main classes [WebRTCPeerConnection ](/docs/Classes/WebRTCPeerConnection) and [WebRTCDataChannel ](/docs/Classes/WebRTCDataChannel), plus the multiplayer API implementation [WebRTCMultiplayerPeer ](/docs/Classes/WebRTCMultiplayerPeer). See section on [high-level multiplayer ](high_level_multiplayer.md) for more details.
 
 :::note
 These classes are available automatically in HTML5, but **require an external GDExtension plugin on native (non-HTML5) platforms**. Check out the `webrtc-native plugin repository <https://github.com/redot-engine/webrtc-native>`__ for instructions and to get the latest `release <https://github.com/redot-engine/webrtc-native/releases>`__.
@@ -219,4 +219,4 @@ This will print something similar to this:
 
 ### Remote signaling with WebSocket
 
-A more advanced demo using WebSocket for signaling peers and [WebRTCMultiplayerPeer ](class_WebRTCMultiplayerPeer) is available in the [Redot demo projects ](https://github.com/redot-engine/redot-demo-projects) under `networking/webrtc_signaling`.
+A more advanced demo using WebSocket for signaling peers and [WebRTCMultiplayerPeer ](/docs/Classes/WebRTCMultiplayerPeer) is available in the [Redot demo projects ](https://github.com/redot-engine/redot-demo-projects) under `networking/webrtc_signaling`.

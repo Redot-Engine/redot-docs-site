@@ -8,17 +8,17 @@ The following section provides a quick overview over all available navigation re
 
 Redot provides the following objects and classes for 2D navigation:
 
-- [Astar2D](class_Astar2D)
+- [Astar2D](/docs/Classes/Astar2D)
     ``Astar2D`` objects provide an option to find the shortest path in a graph of weighted **points**.
 
     The AStar2D class is best suited for cell-based 2D gameplay that does not require actors to reach any possible position within an area but only predefined, distinct positions.
 
-- [AstarGrid2D](class_AstarGrid2D)
+- [AstarGrid2D](/docs/Classes/AstarGrid2D)
     ``AstarGrid2D``  is a variant of AStar2D that is specialized for partial 2D grids. 
 
     AstarGrid2D is simpler to use when applicable because it doesn't require you to manually create points and connect them together.
 
-- [NavigationServer2D](class_NavigationServer2D)
+- [NavigationServer2D](/docs/Classes/NavigationServer2D)
     ``NavigationServer2D`` provides a powerful server API to find the shortest path between two positions on an area defined by a navigation mesh.
 
     The NavigationServer is best suited for 2D realtime gameplay that does require actors to reach any possible position within a navigation mesh defined area.
@@ -46,14 +46,14 @@ Redot provides the following objects and classes for 2D navigation:
 
 The following scene tree nodes are available as helpers to work with the NavigationServer2D API.
 
-- [NavigationRegion2D](class_NavigationRegion2D) Node
+- [NavigationRegion2D](/docs/Classes/NavigationRegion2D) Node
     A Node that holds a NavigationPolygon resource that defines a navigation mesh for the NavigationServer2D.
 
     - The region can be enabled / disabled.
     - The use in pathfinding can be further restricted through the ``navigation_layers`` bitmask.
     - The NavigationServer2D will join the navigation meshes of regions by proximity for a combined navigation mesh.
 
-- [NavigationLink2D](class_NavigationLink2D) Node
+- [NavigationLink2D](/docs/Classes/NavigationLink2D) Node
     A Node that connects two positions on navigation meshes over arbitrary distances for pathfinding.
 
     - The link can be enabled / disabled.
@@ -62,17 +62,17 @@ The following scene tree nodes are available as helpers to work with the Navigat
 
     Links tell the pathfinding that a connection exists and at what cost. The actual agent handling and movement needs to happen in custom scripts.
 
--  [NavigationAgent2D](class_NavigationAgent2D) Node
+-  [NavigationAgent2D](/docs/Classes/NavigationAgent2D) Node
     A helper Node used to facilitate common NavigationServer2D API calls for pathfinding and avoidance.
     Use this Node with a Node2D inheriting parent Node.
 
--  [NavigationObstacle2D](class_NavigationObstacle2D) Node
+-  [NavigationObstacle2D](/docs/Classes/NavigationObstacle2D) Node
     A Node that can be used to affect and constrain the avoidance velocity of avoidance enabled agents.
     This Node does NOT affect the pathfinding of agents. You need to change the navigation meshes for that instead.
 
 The 2D navigation meshes are defined with the following resources:
 
-- [NavigationPolygon](class_NavigationPolygon) Resource
+- [NavigationPolygon](/docs/Classes/NavigationPolygon) Resource
     A resource that holds 2D navigation mesh data.
     It provides polygon drawing tools to allow defining navigation areas inside the Editor as well as at runtime.
 

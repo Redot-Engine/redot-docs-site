@@ -219,7 +219,7 @@ We will fill the ``initialize_gdexample_module()`` function later to register ou
 
 In order to make an actual node, first we'll create a C struct to hold data and
 functions that will act as methods. The plan is to make this a custom node that
-inherits from [Sprite2D ](class_Sprite2D).
+inherits from [Sprite2D ](/docs/Classes/Sprite2D).
 
 Create a file called ``gdexample.h`` in the ``src`` folder with the following
 contents:
@@ -290,7 +290,7 @@ As we don't have anything to do with those functions yet, they'll stay empty
 for a while.
 
 The next step is registering our class. However, in order to do so we need to
-create a [StringName ](class_StringName) and for that we have to get a
+create a [StringName ](/docs/Classes/StringName) and for that we have to get a
 function from the GDExtension API. Since we'll need this a few times and we'll
 also need other things, let's create a wrapper API to facilitate this kind of
 chore.
@@ -1464,7 +1464,7 @@ not only on the documentation page for the custom class but also in the Inspecto
 
 Our custom node now has properties to influence how it operates, but it still
 doesn't do anything. In this section, we will bind the virtual method
-[_process() ](class_Node_private_method__process) and make our custom sprite
+[_process() ](/docs/Classes/Node_private_method__process) and make our custom sprite
 move a little bit.
 
 In the ``gdexample.h`` file, let's add a function that represents the custom
@@ -1677,7 +1677,7 @@ In order to make our node do stuff, we'll need to call Redot methods. Not only
 the GDExtension API functions as we've being doing so far, but actual engine
 methods, as we would do with scripting. This naturally requires some extra setup.
 
-First, let's add [class_Vector2](class_Vector2) to our ``defs.h`` file, so we
+First, let's add [class_Vector2](/docs/Classes/Vector2) to our ``defs.h`` file, so we
 can use it in our method:
 
 ```c
@@ -1940,7 +1940,7 @@ void gdexample_class_bind_methods()
 ```
 
 In order to emit a signal, we need to call the
-[emit_signal() ](class_Object_method_emit_signal) method on our custom node.
+[emit_signal() ](/docs/Classes/Object_method_emit_signal) method on our custom node.
 Since this is a ``vararg`` function (meaning it takes any amount of arguments),
 we cannot use ``ptrcall``. To do a regular call, we have to create Variants,
 which require a few more steps of plumbing to get done.

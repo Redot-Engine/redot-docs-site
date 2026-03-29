@@ -5,26 +5,26 @@ import TabItem from "@theme/TabItem";
 
 ## Nodes and resources
 
-Up to this tutorial, we focused on the [Node ](class_Node)
+Up to this tutorial, we focused on the [Node ](/docs/Classes/Node)
 class in Redot as that's the one you use to code behavior and
 most of the engine's features rely on it. There is
 another datatype that is just as important:
-[Resource ](class_Resource).
+[Resource ](/docs/Classes/Resource).
 
 *Nodes* give you functionality: they draw sprites, 3D models, simulate physics,
 arrange user interfaces, etc. **Resources** are **data containers**. They don't
 do anything on their own: instead, nodes use the data contained in resources.
 
 Anything Redot saves or loads from disk is a resource. Be it a scene (a ``.tscn``
-or an ``.scn`` file), an image, a script... Here are some [Resource ](class_Resource) examples:
+or an ``.scn`` file), an image, a script... Here are some [Resource ](/docs/Classes/Resource) examples:
 
-- [Texture ](class_Texture)
-- [Script ](class_Script)
-- [Mesh ](class_Mesh)
-- [Animation ](class_Animation)
-- [AudioStream ](class_AudioStream)
-- [Font ](class_Font)
-- [Translation ](class_Translation)
+- [Texture ](/docs/Classes/Texture)
+- [Script ](/docs/Classes/Script)
+- [Mesh ](/docs/Classes/Mesh)
+- [Animation ](/docs/Classes/Animation)
+- [AudioStream ](/docs/Classes/AudioStream)
+- [Font ](/docs/Classes/Font)
+- [Translation ](/docs/Classes/Translation)
 
 When the engine loads a resource from disk, **it only loads it once**. If a copy
 of that resource is already in memory, trying to load the resource again will
@@ -45,8 +45,8 @@ There are two ways to save resources. They can be:
 1. **External** to a scene, saved on the disk as individual files.
 2. **Built-in**, saved inside the ``.tscn`` or the ``.scn`` file they're attached to.
 
-To be more specific, here's a [Texture2D ](class_Texture2D)
-in a [Sprite2D ](class_Sprite2D) node:
+To be more specific, here's a [Texture2D ](/docs/Classes/Texture2D)
+in a [Sprite2D ](/docs/Classes/Sprite2D) node:
 
 ![Image](img/spriteprop.webp)
 
@@ -137,11 +137,11 @@ func _ready():
 ## Loading scenes
 
 Scenes are also resources, but there is a catch. Scenes saved to disk are
-resources of type [PackedScene ](class_PackedScene). The
-scene is packed inside a [Resource ](class_Resource).
+resources of type [PackedScene ](/docs/Classes/PackedScene). The
+scene is packed inside a [Resource ](/docs/Classes/Resource).
 
 To get an instance of the scene, you have to use the
-[PackedScene.instantiate() ](class_PackedScene_method_instantiate) method.
+[PackedScene.instantiate() ](/docs/Classes/PackedScene_method_instantiate) method.
 
 <Tabs>
 
@@ -177,14 +177,14 @@ This method creates the nodes in the scene's hierarchy, configures them, and
 returns the root node of the scene. You can then add it as a child of any other
 node.
 
-The approach has several advantages. As the [PackedScene.instantiate() ](class_PackedScene_method_instantiate) function is fast, you can create new
+The approach has several advantages. As the [PackedScene.instantiate() ](/docs/Classes/PackedScene_method_instantiate) function is fast, you can create new
 enemies, bullets, effects, etc. without having to load them again from disk each
 time. Remember that, as always, images, meshes, etc. are all shared between the
 scene instances.
 
 ## Freeing resources
 
-When a [Resource ](class_Resource) is no longer in use, it will automatically free itself.
+When a [Resource ](/docs/Classes/Resource) is no longer in use, it will automatically free itself.
 Since, in most cases, Resources are contained in Nodes, when you free a node,
 the engine frees all the resources it owns as well if no other node uses them.
 
@@ -197,10 +197,10 @@ memory management from the RefCounted type.
 
 This comes with many distinct advantages over alternative data
 structures, such as JSON, CSV, or custom TXT files. Users can only import these
-assets as a [Dictionary ](class_Dictionary) (JSON) or as a
-[FileAccess ](class_FileAccess) to parse. What sets Resources apart is their
-inheritance of [Object ](class_Object), [RefCounted ](class_RefCounted),
-and [Resource ](class_Resource) features:
+assets as a [Dictionary ](/docs/Classes/Dictionary) (JSON) or as a
+[FileAccess ](/docs/Classes/FileAccess) to parse. What sets Resources apart is their
+inheritance of [Object ](/docs/Classes/Object), [RefCounted ](/docs/Classes/RefCounted),
+and [Resource ](/docs/Classes/Resource) features:
 
 - They can define constants, so constants from other data fields or objects are not needed.
 
@@ -236,7 +236,7 @@ the Inspector's creation dialog. This will auto-add your script to the Resource
 object you create.
 
 Let's see some examples.
-Create a [Resource ](class_Resource) and name it ``bot_stats``.
+Create a [Resource ](/docs/Classes/Resource) and name it ``bot_stats``.
 It should appear in your file tab with the full name ``bot_stats.tres``.
 Without a script, it's useless, so let's add some data and logic!
 Attach a script to it named ``bot_stats.gd`` (or just create a new script, and then drag it to it).
@@ -312,7 +312,7 @@ namespace ExampleProject
 
 </Tabs>
 
-Now, create a [CharacterBody3D ](class_CharacterBody3D), name it ``Bot``, and add the following script to it:
+Now, create a [CharacterBody3D ](/docs/Classes/CharacterBody3D), name it ``Bot``, and add the following script to it:
 
 <Tabs>
 
@@ -363,14 +363,14 @@ namespace ExampleProject
 
 </Tabs>
 
-Now, select the [CharacterBody3D ](class_CharacterBody3D) node which we named ``bot``, and drag&drop the ``bot_stats.tres`` resource onto the Inspector. It should print 10! Obviously, this setup can be used for more advanced features than this, but as long you really understand *how* it all worked, you should figure out everything else related to Resources.
+Now, select the [CharacterBody3D ](/docs/Classes/CharacterBody3D) node which we named ``bot``, and drag&drop the ``bot_stats.tres`` resource onto the Inspector. It should print 10! Obviously, this setup can be used for more advanced features than this, but as long you really understand *how* it all worked, you should figure out everything else related to Resources.
 
 :::note
 
 Resource scripts are similar to Unity's ScriptableObjects. The Inspector
 provides built-in support for custom resources. If desired though, users
 can even design their own Control-based tool scripts and combine them
-with an [EditorPlugin ](class_EditorPlugin) to create custom
+with an [EditorPlugin ](/docs/Classes/EditorPlugin) to create custom
 visualizations and editors for their data.
 
 Unreal Engine's DataTables and CurveTables are also easy to recreate with
@@ -430,7 +430,7 @@ Instead of inlining the Dictionary values, one could also, alternatively:
    to the Inspector when you open these types of Resources.
 
 CurveTables are the same thing, except mapped to an Array of float values
-or a [Curve ](class_Curve)/[Curve2D ](class_Curve2D) resource object.
+or a [Curve ](/docs/Classes/Curve)/[Curve2D ](/docs/Classes/Curve2D) resource object.
 
 :::
 

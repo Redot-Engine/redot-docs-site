@@ -446,7 +446,7 @@ AO map. It is recommended to bake ambient occlusion whenever possible.
 Setting a height map on a material produces a ray-marched search to emulate the
 proper displacement of cavities along the view direction. This only creates an
 illusion of depth, and does not add real geometry — for a height map shape used
-for physics collision (such as terrain), see [class_HeightMapShape3D](class_HeightMapShape3D). It
+for physics collision (such as terrain), see [class_HeightMapShape3D](/docs/Classes/HeightMapShape3D). It
 may not work for complex objects, but it produces a realistic depth effect for
 textures. For best results, *Height* should be used together with normal
 mapping.
@@ -576,12 +576,12 @@ option makes it use world space instead.
 
 ### Filter
 
-The filtering method for the textures used by the material. See [this page](class_BaseMaterial3D_property_texture_filter)
+The filtering method for the textures used by the material. See [this page](/docs/Classes/BaseMaterial3D_property_texture_filter)
 for a full list of options and their description.
 
 ### Repeat
 
-if the textures used by the material repeat, and how they repeat. See [this page](class_BaseMaterial3D_property_texture_repeat)
+if the textures used by the material repeat, and how they repeat. See [this page](/docs/Classes/BaseMaterial3D_property_texture_repeat)
 for a full list of options and their description.
 
 ## Shadows
@@ -711,20 +711,20 @@ The rendering order of objects can be changed, although this is mostly
 useful for transparent objects (or opaque objects that perform depth draw
 but no color draw, such as cracks on the floor).
 
-Objects are sorted by an opaque/transparent queue, then [render_priority](class_Material_property_render_priority),
+Objects are sorted by an opaque/transparent queue, then [render_priority](/docs/Classes/Material_property_render_priority),
 with higher priority being drawn later. Transparent objects are also sorted by depth.
 
 Depth testing overrules priority. Priority alone cannot force opaque objects to be drawn over each other.
 
 ## Next Pass
 
-Setting [next_pass](class_Material_property_next_pass) on a material
+Setting [next_pass](/docs/Classes/Material_property_next_pass) on a material
 will cause an object to be rendered again with that next material.
 
-Materials are sorted by an opaque/transparent queue, then [render_priority](class_Material_property_render_priority),
+Materials are sorted by an opaque/transparent queue, then [render_priority](/docs/Classes/Material_property_render_priority),
 with higher priority being drawn later.
 
 ![Image](img/next_pass.webp)
 
 Depth will test equal between both materials unless the grow setting or other vertex transformations are used.
-Multiple transparent passes should use [render_priority](class_Material_property_render_priority) to ensure correct ordering.
+Multiple transparent passes should use [render_priority](/docs/Classes/Material_property_render_priority) to ensure correct ordering.

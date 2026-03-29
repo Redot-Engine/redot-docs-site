@@ -4,10 +4,10 @@ import TabItem from "@theme/TabItem";
 # Redot notifications
 
 Every Object in Redot implements a
-[_notification ](class_Object_private_method__notification) method. Its purpose is to
+[_notification ](/docs/Classes/Object_private_method__notification) method. Its purpose is to
 allow the Object to respond to a variety of engine-level callbacks that may
 relate to it. For example, if the engine tells a
-[CanvasItem ](class_CanvasItem) to "draw", it will call
+[CanvasItem ](/docs/Classes/CanvasItem) to "draw", it will call
 ``_notification(NOTIFICATION_DRAW)``.
 
 Some of these notifications, like draw, are useful to override in scripts. So
@@ -28,20 +28,20 @@ much so that Redot exposes many of them with dedicated functions:
 What users might *not* realize is that notifications exist for types other
 than Node alone, for example:
 
-- [Object::NOTIFICATION_POSTINITIALIZE ](class_Object_constant_NOTIFICATION_POSTINITIALIZE):
+- [Object::NOTIFICATION_POSTINITIALIZE ](/docs/Classes/Object_constant_NOTIFICATION_POSTINITIALIZE):
   a callback that triggers during object initialization. Not accessible to scripts.
 
-- [Object::NOTIFICATION_PREDELETE ](class_Object_constant_NOTIFICATION_PREDELETE):
+- [Object::NOTIFICATION_PREDELETE ](/docs/Classes/Object_constant_NOTIFICATION_PREDELETE):
   a callback that triggers before the engine deletes an Object, i.e. a
   "destructor".
 
 And many of the callbacks that *do* exist in Nodes don't have any dedicated
 methods, but are still quite useful.
 
-- [Node::NOTIFICATION_PARENTED ](class_Node_constant_NOTIFICATION_PARENTED):
+- [Node::NOTIFICATION_PARENTED ](/docs/Classes/Node_constant_NOTIFICATION_PARENTED):
   a callback that triggers anytime one adds a child node to another node.
 
-- [Node::NOTIFICATION_UNPARENTED ](class_Node_constant_NOTIFICATION_UNPARENTED):
+- [Node::NOTIFICATION_UNPARENTED ](/docs/Classes/Node_constant_NOTIFICATION_UNPARENTED):
   a callback that triggers anytime one removes a child node from another
   node.
 
@@ -54,7 +54,7 @@ Methods in the documentation labeled as "virtual" are also intended to be
 overridden by scripts.
 
 A classic example is the
-[_init ](class_Object_private_method__init) method in Object. While it has no
+[_init ](/docs/Classes/Object_private_method__init) method in Object. While it has no
 ``NOTIFICATION_*`` equivalent, the engine still calls the method. Most languages
 (except C#) rely on it as a constructor.
 
@@ -376,7 +376,7 @@ to the SceneTree, the ``_enter_tree()`` and ``_ready()`` calls occur.
 
 If one needs to trigger behavior that occurs as nodes parent to another,
 regardless of whether it occurs as part of the main/active scene or not, one
-can use the [PARENTED ](class_Node_constant_NOTIFICATION_PARENTED) notification.
+can use the [PARENTED ](/docs/Classes/Node_constant_NOTIFICATION_PARENTED) notification.
 For example, here is a snippet that connects a node's method to
 a custom signal on the parent node without failing. Useful on data-centric
 nodes that one might create at runtime.

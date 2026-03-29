@@ -90,8 +90,8 @@ article for more information.
 Large world coordinates (also known as **double-precision physics**) increase
 the precision level of all floating-point computations within the engine.
 
-By default, [class_float](class_float) is 64-bit in GDScript, but [class_Vector2](class_Vector2),
-[class_Vector3](class_Vector3) and [class_Vector4](class_Vector4) are 32-bit. This means that the
+By default, [class_float](/docs/Classes/float) is 64-bit in GDScript, but [class_Vector2](/docs/Classes/Vector2),
+[class_Vector3](/docs/Classes/Vector3) and [class_Vector4](/docs/Classes/Vector4) are 32-bit. This means that the
 precision of vector types is much more limited. To resolve this, we can increase
 the number of bits used to represent a floating-point number in a Vector type.
 This results in an *exponential* increase in precision, which means the final
@@ -168,13 +168,13 @@ presets in the Export dialog.
 
 ## Compatibility between single-precision and double-precision builds
 
-When saving a *binary* resource using the [class_ResourceSaver](class_ResourceSaver) singleton,
+When saving a *binary* resource using the [class_ResourceSaver](/docs/Classes/ResourceSaver) singleton,
 a special flag is stored in the file if the resource was saved using a build
 that uses double-precision numbers. As a result, all binary resources will
 change on disk when you switch to a double-precision build and save over them.
 
 Both single-precision and double-precision builds support using the
-[class_ResourceLoader](class_ResourceLoader) singleton on resources that use this special flag.
+[class_ResourceLoader](/docs/Classes/ResourceLoader) singleton on resources that use this special flag.
 This means single-precision builds can load resources saved using
 double-precision builds and vice versa. Text-based resources don't store a
 double-precision flag, as they don't require such a flag for correct reading.

@@ -11,7 +11,7 @@ special treatment, and these will be described.
 ## Turn on the physics interpolation setting
 
 The first step is to turn on physics interpolation in
-[Project Settings &gt; Physics &gt; Common &gt; Physics Interpolation](class_ProjectSettings_property_physics/common/physics_interpolation)
+[Project Settings &gt; Physics &gt; Common &gt; Physics Interpolation](/docs/Classes/ProjectSettings_property_physics/common/physics_interpolation)
 You can now run your game.
 
 It is likely that nothing looks hugely different, particularly if you are running
@@ -22,7 +22,7 @@ behind the scenes.
 
 To convert an existing game to use interpolation, it is highly recommended that
 you temporarily set
-[Project Settings &gt; Physics &gt; Common &gt; Physics Tick per Second](class_ProjectSettings_property_physics/common/physics_ticks_per_second)
+[Project Settings &gt; Physics &gt; Common &gt; Physics Tick per Second](/docs/Classes/ProjectSettings_property_physics/common/physics_ticks_per_second)
 to a low value such as ``10``, which will make interpolation problems more obvious.
 
 :::
@@ -71,7 +71,7 @@ methods can also be used to control properties that are not interpolated*).
 
 :::note
 Also consider that nodes can be moved not just by moving themselves, but
-also by moving parent nodes in the [SceneTree](class_SceneTree). The
+also by moving parent nodes in the [SceneTree](/docs/Classes/SceneTree). The
 movement of parents should therefore also only occur during physics ticks.
 
 :::
@@ -107,7 +107,7 @@ when you are initially placing objects, or moving them to a new location. Here, 
 don't want a smooth motion between where the object was (e.g. the origin) and the
 initial position - you want an instantaneous move.
 
-The solution to this is to call the [Node.reset_physics_interpolation](class_Node_method_reset_physics_interpolation)
+The solution to this is to call the [Node.reset_physics_interpolation](/docs/Classes/Node_method_reset_physics_interpolation)
 function. What this function does under the hood is set the internally stored
 *previous transform* of the object to be equal to the *current transform*. This
 ensures that when interpolating between these two equal transforms, there will be
@@ -153,9 +153,9 @@ interpolation and get the smoothest gameplay, it is highly recommended to
 temporarily set the physics tick rate to a low value such as 10 TPS.
 
 The gameplay may not work perfectly, but it should enable you to more easily see
-cases where you should be calling [Node.reset_physics_interpolation](class_Node_method_reset_physics_interpolation),
+cases where you should be calling [Node.reset_physics_interpolation](/docs/Classes/Node_method_reset_physics_interpolation),
 or where you should be using your own custom interpolation on e.g. a
-[Camera3D](class_Camera3D). Once you have these cases fixed, you can set the
+[Camera3D](/docs/Classes/Camera3D). Once you have these cases fixed, you can set the
 physics tick rate back to the desired setting.
 
 The other great advantage to testing at a low tick rate is you can often notice

@@ -18,7 +18,7 @@ Click on the box next to ``Process Material`` and from the dropdown menu select 
 
    Creating a process material
 
-[class_ParticleProcessMaterial](class_ParticleProcessMaterial) is a special kind of material. We don't use it to draw any objects.
+[class_ParticleProcessMaterial](/docs/Classes/ParticleProcessMaterial) is a special kind of material. We don't use it to draw any objects.
 We use it to update particle data and behavior on the GPU instead of the CPU, which comes with a massive performance
 boost. A click on the newly added material displays a long list of properties that you can set to
 control each particle's behavior.

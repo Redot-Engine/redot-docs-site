@@ -25,12 +25,12 @@ overview of how shaders work in Redot, see the [Shading Reference ](toc-shading-
 objects in Redot, while [Spatial ](../shader_reference/spatial_shader.md) shaders are used
 to draw all 3D objects.
 
-In order to use a shader it must be attached inside a [Material ](class_Material) which must be attached to an object. Materials are a type of
+In order to use a shader it must be attached inside a [Material ](/docs/Classes/Material) which must be attached to an object. Materials are a type of
 [Resource ](../../scripting/resources.md). To draw multiple objects with the same
 material, the material must be attached to each object.
 
-All objects derived from a [CanvasItem ](class_CanvasItem) have a material
-property. This includes all [GUI elements ](class_Control), [Sprite2Ds ](class_Sprite2D), [TileMapLayers ](class_TileMapLayer), :ref:`MeshInstance2Ds
+All objects derived from a [CanvasItem ](/docs/Classes/CanvasItem) have a material
+property. This includes all [GUI elements ](/docs/Classes/Control), [Sprite2Ds ](/docs/Classes/Sprite2D), [TileMapLayers ](/docs/Classes/TileMapLayer), :ref:`MeshInstance2Ds
 &lt;class_MeshInstance2D&gt;` etc. They also have an option to inherit their parent's
 material. This can be useful if you have a large number of nodes that you want
 to use the same material.

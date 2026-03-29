@@ -15,7 +15,7 @@ Redot supports WebSocket in both native and HTML5 exports.
 
 ## Using WebSocket in Redot
 
-WebSocket is implemented in Redot via [WebSocketPeer ](class_WebSocketPeer).
+WebSocket is implemented in Redot via [WebSocketPeer ](/docs/Classes/WebSocketPeer).
 The WebSocket implementation is compatible with the High-Level Multiplayer. See
 section on [high-level multiplayer ](high_level_multiplayer.md) for more
 details.

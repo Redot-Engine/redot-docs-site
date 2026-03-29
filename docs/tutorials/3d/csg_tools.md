@@ -40,13 +40,13 @@ You can check how to use CSG nodes to build various shapes (such as stairs or ro
 Like other features of Redot, CSG is supported in the form of nodes. These are
 the CSG nodes:
 
-- [CSGBox3D](class_CSGBox3D)
-- [CSGCylinder3D](class_CSGCylinder3D) (also supports cone)
-- [CSGSphere3D](class_CSGSphere3D)
-- [CSGTorus3D](class_CSGTorus3D)
-- [CSGPolygon3D](class_CSGPolygon3D)
-- [CSGMesh3D](class_CSGMesh3D)
-- [CSGCombiner3D](class_CSGCombiner3D)
+- [CSGBox3D](/docs/Classes/CSGBox3D)
+- [CSGCylinder3D](/docs/Classes/CSGCylinder3D) (also supports cone)
+- [CSGSphere3D](/docs/Classes/CSGSphere3D)
+- [CSGTorus3D](/docs/Classes/CSGTorus3D)
+- [CSGPolygon3D](/docs/Classes/CSGPolygon3D)
+- [CSGMesh3D](/docs/Classes/CSGMesh3D)
+- [CSGCombiner3D](/docs/Classes/CSGCombiner3D)
 
 ![Image](img/csg_nodes.png)
 
@@ -68,7 +68,7 @@ Every CSG node supports 3 kinds of boolean operations:
 
 ### CSGPolygon
 
-The [CSGPolygon3D](class_CSGPolygon3D) node extrude along a Polygon drawn in
+The [CSGPolygon3D](/docs/Classes/CSGPolygon3D) node extrude along a Polygon drawn in
 2D (in X, Y coordinates) in the following ways:
 
 - **Depth:** Extruded back a given amount.
@@ -89,7 +89,7 @@ CSGPolygon3D will extrude along the given path.
 
 ### Custom meshes
 
-Custom meshes can be used for [CSGMesh3D](class_CSGMesh3D) as long as the
+Custom meshes can be used for [CSGMesh3D](/docs/Classes/CSGMesh3D) as long as the
 mesh is *manifold*. The mesh can be modeled in other software and imported into
 Redot. Multiple materials are supported. 
 
@@ -119,7 +119,7 @@ the following, adapted from that library's `definition of "manifold"
 
 ### CSGCombiner3D
 
-The [CSGCombiner3D](class_CSGCombiner3D) node is an empty shape used for
+The [CSGCombiner3D](/docs/Classes/CSGCombiner3D) node is an empty shape used for
 organization. It will only combine children nodes.
 
 ### Processing order
@@ -330,7 +330,7 @@ property then choose **Paste**.
 
 ## Converting to MeshInstance3D
 
-Since Redot 4.4, you can convert a CSG node and its children to a [class_MeshInstance3D](class_MeshInstance3D) node.
+Since Redot 4.4, you can convert a CSG node and its children to a [class_MeshInstance3D](/docs/Classes/MeshInstance3D) node.
 
 This has several benefits:
 
@@ -346,8 +346,8 @@ automatically, so remember to hide it to prevent its geometry from overlapping w
 MeshInstance3D.
 
 You can also create a trimesh collision shape using **CSG &gt; Bake Collision Shape**.
-The generated [class_CollisionShape3D](class_CollisionShape3D) node must be a child of a [class_StaticBody3D](class_StaticBody3D)
-or [class_AnimatableBody3D](class_AnimatableBody3D) node to be effective.
+The generated [class_CollisionShape3D](/docs/Classes/CollisionShape3D) node must be a child of a [class_StaticBody3D](/docs/Classes/StaticBody3D)
+or [class_AnimatableBody3D](/docs/Classes/AnimatableBody3D) node to be effective.
 
 :::tip
 

@@ -5,8 +5,8 @@
 
 Particle attractors are nodes that apply a force to all particles within their reach. They pull
 particles closer or push them away based on the direction of that force. There are three types
-of attractors: [class_GPUParticlesAttractorBox3D](class_GPUParticlesAttractorBox3D), [class_GPUParticlesAttractorSphere3D](class_GPUParticlesAttractorSphere3D),
-and [class_GPUParticlesAttractorVectorField3D](class_GPUParticlesAttractorVectorField3D). You can instantiate them at runtime and
+of attractors: [class_GPUParticlesAttractorBox3D](/docs/Classes/GPUParticlesAttractorBox3D), [class_GPUParticlesAttractorSphere3D](/docs/Classes/GPUParticlesAttractorSphere3D),
+and [class_GPUParticlesAttractorVectorField3D](/docs/Classes/GPUParticlesAttractorVectorField3D). You can instantiate them at runtime and
 change their properties from gameplay code; you can even animate and combine them for complex
 attraction effects.
 
@@ -60,7 +60,7 @@ the ``+Z``-axis.
    the attractor's local Z-axis.
 
 The ``Cull Mask`` property controls which particle systems are affected by an attractor based
-on each system's [visibility layers ](class_VisualInstance3D). A particle system is only
+on each system's [visibility layers ](/docs/Classes/VisualInstance3D). A particle system is only
 affected by an attractor if at least one of the system's visibility layers is enabled in the
 attractor's cull mask.
 
@@ -126,7 +126,7 @@ direction to match that vector's direction. The particle's speed depends on the 
 
 Like box attractors, vector field attractors have a box-shaped influence region. You control their size with the ``Extents``
 property, where a value of ``(X=1.0,Y=1.0,Z=1.0)`` creates a box with an influence region that is
-2 meters wide on each side. The ``Texture`` property takes a [3D texture ](class_Texture3D)
+2 meters wide on each side. The ``Texture`` property takes a [3D texture ](/docs/Classes/Texture3D)
 where every pixel represents a vector with the pixel's color interpreted as the vector's direction and size.
 
 :::note

@@ -96,7 +96,7 @@ or they don't support it on compressed texture formats (iOS for example).
 
 After all the rendering is done, the scene linear render requires transforming
 to a suitable output such as an sRGB display. To do this, enable sRGB conversion
-in the current [Environment](class_Environment) (more on that below).
+in the current [Environment](/docs/Classes/Environment) (more on that below).
 
 Keep in mind that the **sRGB -&gt; Display Linear** and **Display Linear -&gt; sRGB**
 conversions must always be **both** enabled. Failing to enable one of them will
@@ -105,8 +105,8 @@ indie games.
 
 ## Parameters of HDR
 
-HDR settings can be found in the [Environment](class_Environment)
+HDR settings can be found in the [Environment](/docs/Classes/Environment)
 resource. Most of the time, these are found inside a
-[WorldEnvironment](class_WorldEnvironment)
+[WorldEnvironment](/docs/Classes/WorldEnvironment)
 node or set in a Camera node. For more information, see
 [doc_environment_and_post_processing](environment_and_post_processing.md).

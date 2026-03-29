@@ -3,7 +3,7 @@ import TabItem from "@theme/TabItem";
 
 # Playing videos
 
-Redot supports video playback with the [class_VideoStreamPlayer](class_VideoStreamPlayer) node.
+Redot supports video playback with the [class_VideoStreamPlayer](/docs/Classes/VideoStreamPlayer) node.
 
 ## Supported playback formats
 
@@ -47,7 +47,7 @@ extensions are videos - some of them may only contain audio.
 ### Handling resizing and different aspect ratios
 
 By default in Redot 4.0, the VideoStreamPlayer will automatically be resized to match
-the video's resolution. You can make it follow usual [class_Control](class_Control) sizing
+the video's resolution. You can make it follow usual [class_Control](/docs/Classes/Control) sizing
 by enabling **Expand** on the VideoStreamPlayer node.
 
 To adjust how the VideoStreamPlayer node resizes depending on window size,
@@ -55,7 +55,7 @@ adjust the anchors using the **Layout** menu at the top of the 2D editor
 viewport. However, this setup may not be powerful enough to handle all use
 cases, such as playing fullscreen videos without distorting the video (but with
 empty space on the edges instead). For more control, you can use an
-[class_AspectRatioContainer](class_AspectRatioContainer) node, which is designed to handle this kind of
+[class_AspectRatioContainer](/docs/Classes/AspectRatioContainer) node, which is designed to handle this kind of
 use case:
 
 Add an AspectRatioContainer node. Make sure it is not a child of any other
@@ -83,14 +83,14 @@ aspect ratios in your project.
 
 ### Displaying a video on a 3D surface
 
-Using a VideoStreamPlayer node as a child of a [class_SubViewport](class_SubViewport) node,
+Using a VideoStreamPlayer node as a child of a [class_SubViewport](/docs/Classes/SubViewport) node,
 it's possible to display any 2D node on a 3D surface. For example, this can be
 used to display animated billboards when frame-by-frame animation would require
 too much memory.
 
 This can be done with the following steps:
 
-1. Create a [class_SubViewport](class_SubViewport) node. Set its size to match your video's size
+1. Create a [class_SubViewport](/docs/Classes/SubViewport) node. Set its size to match your video's size
    in pixels.
 2. Create a VideoStreamPlayer node *as a child of the SubViewport node* and specify
    a video path in it. Make sure **Expand** is disabled, and enable **Autoplay** if needed.
@@ -147,7 +147,7 @@ There are several limitations with the current implementation of video playback 
 
 - Seeking a video to a certain point is not supported.
 - Changing playback speed is not supported. VideoStreamPlayer also won't follow
-  [Engine.time_scale](class_Engine_property_time_scale).
+  [Engine.time_scale](/docs/Classes/Engine_property_time_scale).
 - Streaming a video from a URL is not supported.
 
 ## Recommended Theora encoding settings

@@ -3,18 +3,18 @@
 
 Fog shaders are used to define how fog is added (or subtracted) from a scene in
 a given area. Fog shaders are always used together with
-[FogVolumes ](class_FogVolume) and volumetric fog. Fog shaders only have
+[FogVolumes ](/docs/Classes/FogVolume) and volumetric fog. Fog shaders only have
 one processing function, the ``fog()`` function.
 
 The resolution of the fog shaders depends on the resolution of the
 volumetric fog froxel grid. Accordingly, the level of detail that a fog shader
-can add depends on how close the [FogVolume ](class_FogVolume) is to the
+can add depends on how close the [FogVolume ](/docs/Classes/FogVolume) is to the
 camera.
 
 Fog shaders are a special form of compute shader that is called once for
 every froxel that is touched by an axis aligned bounding box of the associated
-[FogVolume ](class_FogVolume). This means that froxels that just barely
-touch a given [FogVolume ](class_FogVolume) will still be used.
+[FogVolume ](/docs/Classes/FogVolume). This means that froxels that just barely
+touch a given [FogVolume ](/docs/Classes/FogVolume) will still be used.
 
 ## Built-ins
 
@@ -36,7 +36,7 @@ Global built-ins are available everywhere, including in custom functions.
 ## Fog built-ins
 
 All of the output values of fog volumes overlap one another. This allows
-[FogVolumes ](class_FogVolume) to be rendered efficiently as they can all
+[FogVolumes ](/docs/Classes/FogVolume) to be rendered efficiently as they can all
 be drawn at once.
 
 | Built-in | Description |

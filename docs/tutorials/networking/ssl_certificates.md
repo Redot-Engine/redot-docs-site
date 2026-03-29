@@ -6,9 +6,9 @@
 It is often desired to use :abbr:`TLS (Transport Layer Security)` connections (also
 known as :abbr:`SSL (Secure Sockets Layer)` connections) for communications
 to avoid "man in the middle" attacks. Redot has a connection wrapper,
-[StreamPeerTLS ](class_StreamPeerTLS), which can take a regular connection
-and add security around it. The [HTTPClient ](class_HTTPClient) and
-[HTTPRequest ](class_HTTPRequest) classes also support HTTPS using
+[StreamPeerTLS ](/docs/Classes/StreamPeerTLS), which can take a regular connection
+and add security around it. The [HTTPClient ](/docs/Classes/HTTPClient) and
+[HTTPRequest ](/docs/Classes/HTTPRequest) classes also support HTTPS using
 this same wrapper.
 
 Redot will try to use the TLS certificate bundle provided by the operating system,
@@ -67,12 +67,12 @@ compromised.
 When specifying a self-signed certificate as TLS bundle in the project
 settings, normal domain name validation is enforced via the certificate
 :abbr:`CN (common name)` and alternative names. See
-[TLSOptions ](class_TLSOptions) to customize domain name validation.
+[TLSOptions ](/docs/Classes/TLSOptions) to customize domain name validation.
 
 :::
 
 For development purposes Redot can generate self-signed certificates via
-[Crypto.generate_self_signed_certificate ](class_Crypto_method_generate_self_signed_certificate).
+[Crypto.generate_self_signed_certificate ](/docs/Classes/Crypto_method_generate_self_signed_certificate).
 
 Alternatively, OpenSSL has some documentation about `generating keys
 &lt;https://raw.githubusercontent.com/openssl/openssl/master/doc/HOWTO/keys.txt&gt;`__

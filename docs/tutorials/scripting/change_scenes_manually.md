@@ -4,7 +4,7 @@ import TabItem from "@theme/TabItem";
 # Change scenes manually
 
 Sometimes it helps to have more control over how you swap scenes around.
-A [Viewport ](class_Viewport)'s child nodes will render to the image
+A [Viewport ](/docs/Classes/Viewport)'s child nodes will render to the image
 it generates. This holds true even for nodes outside of the "current"
 scene. Autoloads fall into this category, and also scenes which you
 instantiate and add to the tree at runtime:
@@ -50,13 +50,13 @@ public void _AddASceneManually()
 
 To complete the cycle and swap out the new scene with the old one,
 you have a choice to make. Many strategies exist for removing a scene
-from view of the [Viewport ](class_Viewport). The tradeoffs involve
+from view of the [Viewport ](/docs/Classes/Viewport). The tradeoffs involve
 balancing operation speed and memory consumption, as well as balancing data
 access and integrity.
 
 1. **Delete the existing scene.**
-   [SceneTree.change_scene_to_file() ](class_SceneTree_method_change_scene_to_file) and
-   [SceneTree.change_scene_to_packed() ](class_SceneTree_method_change_scene_to_packed)
+   [SceneTree.change_scene_to_file() ](/docs/Classes/SceneTree_method_change_scene_to_file) and
+   [SceneTree.change_scene_to_packed() ](/docs/Classes/SceneTree_method_change_scene_to_packed)
    will delete the current scene immediately. You can also delete the
    main scene. Assuming the root node's name is "Main", you could do
    ``get_node("/root/Main").free()`` to delete the whole scene.
@@ -74,7 +74,7 @@ access and integrity.
 
         - Note: It can be useful to preserve the data in a soon-to-be-deleted
           scene by re-attaching one or more of its nodes to a different scene,
-          or even directly to the [SceneTree ](class_SceneTree).
+          or even directly to the [SceneTree ](/docs/Classes/SceneTree).
 
     - Processing stops.
 
@@ -104,7 +104,7 @@ access and integrity.
           updated.
 
         - Pro: Nodes are still members of groups (since groups belong to the
-          [SceneTree ](class_SceneTree)).
+          [SceneTree ](/docs/Classes/SceneTree)).
 
         - Con: The CPU's attention is now divided between both scenes. Too much
           load could result in low frame rates. You should be sure to test
@@ -113,7 +113,7 @@ access and integrity.
 
 3. **Remove the existing scene from the tree.** Assign a variable
    to the existing scene's root node. Then use
-   [Node.remove_child(Node) ](class_Node_method_remove_child) to detach the entire
+   [Node.remove_child(Node) ](/docs/Classes/Node_method_remove_child) to detach the entire
    scene from the tree.
 
     - Memory still exists (similar pros/cons as hiding it from view).
@@ -127,7 +127,7 @@ access and integrity.
 
     - Con: Unlike with hiding it from view only, the data contained within
       the scene will become stale if it relies on delta time, input, groups,
-      or other data that is derived from [SceneTree ](class_SceneTree)
+      or other data that is derived from [SceneTree ](/docs/Classes/SceneTree)
       access.
 
 There are also cases where you may wish to have many scenes present at the same
@@ -157,7 +157,7 @@ GetTree().Root.AddChild(scene);
 </Tabs>
 
 Another case may be displaying multiple scenes at the same time using
-[SubViewportContainers ](class_SubViewportContainer). This is optimal for
+[SubViewportContainers ](/docs/Classes/SubViewportContainer). This is optimal for
 rendering different content in different parts of the screen (e.g. minimaps, 
 split-screen multiplayer).
 

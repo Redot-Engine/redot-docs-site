@@ -4,7 +4,7 @@ import TabItem from "@theme/TabItem";
 # Introduction to GUI skinning
 
 It is essential for a game to provide clear, informative, and yet visually
-pleasing user interface to its players. While [Control ](class_Control)
+pleasing user interface to its players. While [Control ](/docs/Classes/Control)
 nodes come with a decently functional look out of the box, there is always
 room for uniqueness and case-specific tuning. For this purpose Redot engine
 includes a system for GUI skinning (or theming), which allows you to customize
@@ -28,7 +28,7 @@ flavors to the sides in your team-based project.
 
 ## Basics of themes
 
-The skinning system is driven by the [Theme ](class_Theme) resource. Every
+The skinning system is driven by the [Theme ](/docs/Classes/Theme) resource. Every
 Redot project has an inherent default theme that contains the settings used by
 the built-in control nodes. This is what gives the controls their distinct look
 out of the box. A theme only describes the configuration, however, and it is still
@@ -52,19 +52,19 @@ a unique name and must be one of the following data types:
 
 -  **Color**
 
-   A [color ](class_Color) value, which is often used for fonts
+   A [color ](/docs/Classes/Color) value, which is often used for fonts
    and backgrounds. Colors can also be used for modulation of controls
    and icons.
 
 -  **Constant**
 
    An integer value, which can be used either for numeric properties of
-   controls (such as the item separation in a [BoxContainer ](class_BoxContainer)),
-   or for boolean flags (such as the drawing of relationship lines in a [Tree ](class_Tree)).
+   controls (such as the item separation in a [BoxContainer ](/docs/Classes/BoxContainer)),
+   or for boolean flags (such as the drawing of relationship lines in a [Tree ](/docs/Classes/Tree)).
 
 -  **Font**
 
-   A [font ](class_Font) resource, which is used by controls that
+   A [font ](/docs/Classes/Font) resource, which is used by controls that
    display text. Fonts contain most text rendering settings, except for
    its size and color. On top of that, alignment and text direction are
    controlled by individual controls.
@@ -76,14 +76,14 @@ a unique name and must be one of the following data types:
 
 -  **Icon**
 
-   A [texture ](class_Texture2D) resource, which is normally used
-   to display an icon (on a [Button ](class_Button), for example).
+   A [texture ](/docs/Classes/Texture2D) resource, which is normally used
+   to display an icon (on a [Button ](/docs/Classes/Button), for example).
 
 -  **StyleBox**
 
-   A [StyleBox ](class_StyleBox) resource, a collection of configuration
+   A [StyleBox ](/docs/Classes/StyleBox) resource, a collection of configuration
    options which define the way a UI panel should be displayed. This is
-   not limited to the [Panel ](class_Panel) control, as styleboxes
+   not limited to the [Panel ](/docs/Classes/Panel) control, as styleboxes
    are used by many controls for their backgrounds and overlays.
 
    Different controls will apply StyleBoxes in a different manner. Most notably,
@@ -187,9 +187,9 @@ including this control's children.
 
 Local overrides are less useful for the visual flair of your user interface,
 especially if you aim for consistency. However, for layout nodes these are
-essential. Nodes such as [BoxContainer ](class_BoxContainer) and
-[GridContainer ](class_GridContainer) use theme constants for defining
-separation between their children, and [MarginContainer ](class_MarginContainer)
+essential. Nodes such as [BoxContainer ](/docs/Classes/BoxContainer) and
+[GridContainer ](/docs/Classes/GridContainer) use theme constants for defining
+separation between their children, and [MarginContainer ](/docs/Classes/MarginContainer)
 stores its customizable margins in its theme items.
 
 Whenever a control has a local theme item override, this is the value that
@@ -203,15 +203,15 @@ with a custom theme. Custom themes can be applied in two ways: as a project sett
 and as a node property throughout the tree of control nodes.
 
 There are two project settings that can be adjusted to affect your entire project:
-[GUI &gt; Theme &gt; Custom](class_ProjectSettings_property_gui/theme/custom) allows you to
-set a custom project-wide theme, and [GUI &gt; Theme &gt; Custom Font](class_ProjectSettings_property_gui/theme/custom_font)
+[GUI &gt; Theme &gt; Custom](/docs/Classes/ProjectSettings_property_gui/theme/custom) allows you to
+set a custom project-wide theme, and [GUI &gt; Theme &gt; Custom Font](/docs/Classes/ProjectSettings_property_gui/theme/custom_font)
 does the same to the default fallback font. When a theme item is requested by a control
 node the custom project theme, if present, is checked first. Only if it doesn't have
 the item the default theme is checked.
 
 This allows you to configure the default look of every Redot control with a single
 theme resource, but you can go more granular than that. Every control node also has
-a [theme ](class_Control_property_theme) property, which allows you to set a
+a [theme ](/docs/Classes/Control_property_theme) property, which allows you to set a
 custom theme for the branch of nodes starting with that control. This means that the
 control and all of its children, and their children in turn, would first check that
 custom theme resource before falling back on the project and the default themes.

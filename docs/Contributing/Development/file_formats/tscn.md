@@ -194,7 +194,7 @@ skeleton = NodePath("..")
 
 ### Skeleton3D
 
-The [class_Skeleton3D](class_Skeleton3D) node inherits the Node3D node, but may also have a
+The [class_Skeleton3D](/docs/Classes/Skeleton3D) node inherits the Node3D node, but may also have a
 list of bones described in key-value pairs in the format
 ``bones/&lt;id&gt;/&lt;attribute&gt; = value``. The bone attributes consist of:
 
@@ -219,12 +219,12 @@ bones/2/scale = Vector3(0.9276, 0.9276, 0.9276)
 
 ### BoneAttachment3D
 
-The [class_BoneAttachment3D](class_BoneAttachment3D) node is an intermediate node to describe some
+The [class_BoneAttachment3D](/docs/Classes/BoneAttachment3D) node is an intermediate node to describe some
 node being parented to a single bone in a Skeleton node. The BoneAttachment has
 a ``bone_name = "name of bone"`` property, as well as a property for the matching
 bone index.
 
-An example of a [class_Marker3D](class_Marker3D) node parented to a bone in Skeleton:
+An example of a [class_Marker3D](/docs/Classes/Marker3D) node parented to a bone in Skeleton:
 
 ```
 [node name="GunBone" type="BoneAttachment3D" parent="PlayerModel/Robot_Skeleton/Skeleton3D" index="5"]
@@ -239,9 +239,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)
 
 ### AnimationPlayer
 
-The [class_AnimationPlayer](class_AnimationPlayer) node works with one or more animation libraries
-stored in [class_AnimationLibrary](class_AnimationLibrary) resources. An animation library is a
-collection of individual [class_Animation](class_Animation) resources, whose structure is
+The [class_AnimationPlayer](/docs/Classes/AnimationPlayer) node works with one or more animation libraries
+stored in [class_AnimationLibrary](/docs/Classes/AnimationLibrary) resources. An animation library is a
+collection of individual [class_Animation](/docs/Classes/Animation) resources, whose structure is
 documented [here](doc_tscn_animation).
 
 This split between animations themselves and animation libraries was done in

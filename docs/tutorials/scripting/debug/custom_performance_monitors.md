@@ -6,7 +6,7 @@
 As explained in the [doc_debugger_panel](debugger_panel.md) documentation, Redot features a
 **Debugger &gt; Monitors** bottom panel that allows tracking various values with
 graphs showing their evolution over time. The data for those graphs is sourced
-from the engine's [class_Performance](class_Performance) singleton.
+from the engine's [class_Performance](/docs/Classes/Performance) singleton.
 
 Since Redot 4.0, you can declare custom values to be displayed in the Monitors
 tab. Example use cases for custom performance monitors include:
@@ -24,7 +24,7 @@ tab. Example use cases for custom performance monitors include:
 In this example, we'll create a custom performance monitor to track how many
 enemies are present in the currently running project.
 
-The main scene features a [class_Timer](class_Timer) node with the following script attached:
+The main scene features a [class_Timer](/docs/Classes/Timer) node with the following script attached:
 
 ```
 extends Timer
@@ -52,8 +52,8 @@ func get_enemy_count():
 ```
 
 The second parameter of
-[Performance.add_custom_monitor](class_Performance_method_add_custom_monitor)
-is a [class_Callable](class_Callable).
+[Performance.add_custom_monitor](/docs/Classes/Performance_method_add_custom_monitor)
+is a [class_Callable](/docs/Classes/Callable).
 
 ``enemy.tscn`` is a scene with a Node2D root node and Timer child node. The
 Node2D has the following script attached:
@@ -100,8 +100,8 @@ monitor registration and getter function to an [autoload ](../singletons_autoloa
 If you wish to display the value of the performance monitor in the running
 project's window (rather than the editor), use
 ``Performance.get_custom_monitor("category/name")`` to fetch the value of the
-custom monitor. You can display the value using a [class_Label](class_Label),
-[class_RichTextLabel](class_RichTextLabel), [doc_custom_drawing_in_2d](../../2d/custom_drawing_in_2d.md), [doc_3d_text](../../3d/3d_text.md),
+custom monitor. You can display the value using a [class_Label](/docs/Classes/Label),
+[class_RichTextLabel](/docs/Classes/RichTextLabel), [doc_custom_drawing_in_2d](../../2d/custom_drawing_in_2d.md), [doc_3d_text](../../3d/3d_text.md),
 etc.
 
 This method can be used in exported projects as well (debug and release mode),

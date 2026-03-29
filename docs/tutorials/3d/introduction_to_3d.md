@@ -276,9 +276,9 @@ More shortcuts can be found on the
 
 ## Node3D node
 
-[Node2D](class_Node2D) is the base node for 2D.
-[Control](class_Control) is the base node for everything GUI.
-Following this reasoning, the 3D engine uses the [Node3D](class_Node3D)
+[Node2D](/docs/Classes/Node2D) is the base node for 2D.
+[Control](/docs/Classes/Control) is the base node for everything GUI.
+Following this reasoning, the 3D engine uses the [Node3D](/docs/Classes/Node3D)
 node for everything 3D.
 
 ![Image](img/tuto_3d1.webp)
@@ -286,7 +286,7 @@ node for everything 3D.
 Node3Ds have a local transform, which is relative to the parent
 node (as long as the parent node is also of **or inherits from** the type
 Node3D). This transform can be accessed as a 3×4
-[Transform3D](class_Transform3D), or as 3 [Vector3](class_Vector3)
+[Transform3D](/docs/Classes/Transform3D), or as 3 [Vector3](/docs/Classes/Vector3)
 members representing location, Euler rotation (X, Y and Z angles) and
 scale.
 
@@ -315,9 +315,9 @@ See :ref:`doc_importing_3d_scenes` for more on importing.
 ### Generated geometry
 
 It is possible to create custom geometry by using the
-[ArrayMesh](class_ArrayMesh) resource directly. Simply create your arrays
-and use the [ArrayMesh.add_surface_from_arrays()](class_ArrayMesh_method_add_surface_from_arrays)
-function. A helper class is also available, [SurfaceTool](class_SurfaceTool),
+[ArrayMesh](/docs/Classes/ArrayMesh) resource directly. Simply create your arrays
+and use the [ArrayMesh.add_surface_from_arrays()](/docs/Classes/ArrayMesh_method_add_surface_from_arrays)
+function. A helper class is also available, [SurfaceTool](/docs/Classes/SurfaceTool),
 which provides a more straightforward API and helpers for indexing,
 generating normals, tangents, etc.
 
@@ -334,8 +334,8 @@ To learn about prototyping inside Redot or using external tools, see
 ### Immediate geometry
 
 If, instead, you need to generate simple geometry that will be updated often,
-Redot provides a special [ImmediateMesh](class_ImmediateMesh) resource
-that can be used in a [MeshInstance3D](class_MeshInstance3D) node.
+Redot provides a special [ImmediateMesh](/docs/Classes/ImmediateMesh) resource
+that can be used in a [MeshInstance3D](/docs/Classes/MeshInstance3D) node.
 This provides an OpenGL 1.x-style immediate-mode API to create points, lines,
 triangles, etc.
 
@@ -344,8 +344,8 @@ triangles, etc.
 While Redot packs a powerful 2D engine, many types of games use 2D in a
 3D environment. By using a fixed camera (either orthogonal or
 perspective) that does not rotate, nodes such as
-[Sprite3D](class_Sprite3D) and
-[AnimatedSprite3D](class_AnimatedSprite3D)
+[Sprite3D](/docs/Classes/Sprite3D) and
+[AnimatedSprite3D](/docs/Classes/AnimatedSprite3D)
 can be used to create 2D games that take advantage of mixing with 3D
 backgrounds, more realistic parallax, lighting/shadow effects, etc.
 
@@ -356,15 +356,15 @@ of working in pixels.
 ## Environment
 
 Besides editing a scene, it is often common to edit the environment.
-Redot provides a [WorldEnvironment](class_WorldEnvironment)
+Redot provides a [WorldEnvironment](/docs/Classes/WorldEnvironment)
 node that allows changing the background color, mode (as in, put a
 skybox), and applying several types of built-in post-processing effects.
 Environments can also be overridden in the Camera.
 
 ### Preview environment and light
 
-By default, any 3D scene that doesn't have a [WorldEnvironment](class_WorldEnvironment)
-node, or a [DirectionalLight3D](class_DirectionalLight3D), will have
+By default, any 3D scene that doesn't have a [WorldEnvironment](/docs/Classes/WorldEnvironment)
+node, or a [DirectionalLight3D](/docs/Classes/DirectionalLight3D), will have
 a preview turned on for what it's missing to light the scene.
 
 The preview light and environment will only be visible in the scene while
@@ -389,7 +389,7 @@ light and environment for.
 ### Cameras
 
 No matter how many objects are placed in the 3D space, nothing will be
-displayed unless a [Camera3D](class_Camera3D) is
+displayed unless a [Camera3D](/docs/Classes/Camera3D) is
 also added to the scene. Cameras can work in either orthogonal or
 perspective projections:
 

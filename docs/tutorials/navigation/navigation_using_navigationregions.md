@@ -6,8 +6,8 @@ import TabItem from "@theme/TabItem";
 NavigationRegions are the visual Node representation of a **region** of the navigation **map** on the NavigationServer.
 Each NavigationRegion node holds a resource for the navigation mesh data.
 
-Both 2D and 3D version are available as [NavigationRegion2D](class_NavigationRegion2D)
-and [NavigationRegion3D](class_NavigationRegion3D) respectively.
+Both 2D and 3D version are available as [NavigationRegion2D](/docs/Classes/NavigationRegion2D)
+and [NavigationRegion3D](/docs/Classes/NavigationRegion3D) respectively.
 
 Individual NavigationRegions upload their 2D NavigationPolygon or 3D NavigationMesh resource data to the NavigationServer.
 The NavigationServer map turns this information into a combined navigation map for pathfinding.

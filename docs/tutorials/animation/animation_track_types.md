@@ -29,7 +29,7 @@ It is designed for animations imported from external 3D models and can reduce re
 
 ## Blend Shape Track
 
-A blend shape track is optimized for animating blend shape in [MeshInstance3D ](class_MeshInstance3D).
+A blend shape track is optimized for animating blend shape in [MeshInstance3D ](/docs/Classes/MeshInstance3D).
 
 It is designed for animations imported from external 3D models and can reduce resource capacity through compression.
 
@@ -198,7 +198,7 @@ file in the track.
 To remove a sound from the animation, you can right-click it and select "Delete
 Key(s)" or click on it and press the `Del` key.
 
-The blend mode allows you to choose whether or not to adjust the audio volume when blending in the [AnimationTree ](class_AnimationTree).
+The blend mode allows you to choose whether or not to adjust the audio volume when blending in the [AnimationTree ](/docs/Classes/AnimationTree).
 
 ![Image](img/blend_mode.webp)
 

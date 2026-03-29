@@ -36,8 +36,8 @@ will create a triangle mesh collision shape, which is a slow, but accurate
 option for collision detection. This option is usually what you want for level
 geometry (but see also ``-colonly`` below).
 
-The option ``-convcol`` will create a [class_ConvexPolygonShape3D](class_ConvexPolygonShape3D) instead of
-a [class_ConcavePolygonShape3D](class_ConcavePolygonShape3D). Unlike triangle meshes which can be concave,
+The option ``-convcol`` will create a [class_ConvexPolygonShape3D](/docs/Classes/ConvexPolygonShape3D) instead of
+a [class_ConcavePolygonShape3D](/docs/Classes/ConcavePolygonShape3D). Unlike triangle meshes which can be concave,
 a convex shape can only accurately represent a shape that doesn't have any
 concave angles (a pyramid is convex, but a hollow box is concave). Due to this,
 convex collision shapes are generally not suited for level geometry. When
@@ -50,14 +50,14 @@ enough for collisions. This can create physics glitches and slow down the engine
 unnecessarily.
 
 To solve this, the ``-colonly`` modifier exists. It will remove the mesh upon
-importing and will create a [class_StaticBody3D](class_StaticBody3D) collision instead.
+importing and will create a [class_StaticBody3D](/docs/Classes/StaticBody3D) collision instead.
 This helps the visual mesh and actual collision to be separated.
 
 The option ``-convcolonly`` works in a similar way, but will create a
-[class_ConvexPolygonShape3D](class_ConvexPolygonShape3D) instead using convex decomposition.
+[class_ConvexPolygonShape3D](/docs/Classes/ConvexPolygonShape3D) instead using convex decomposition.
 
 With Collada files, the option ``-colonly`` can also be used with Blender's
-empty objects. On import, it will create a [class_StaticBody3D](class_StaticBody3D) with a
+empty objects. On import, it will create a [class_StaticBody3D](/docs/Classes/StaticBody3D) with a
 collision node as a child. The collision node will have one of a number of
 predefined shapes, depending on Blender's empty draw type:
 
@@ -65,10 +65,10 @@ predefined shapes, depending on Blender's empty draw type:
 
    Choosing a draw type for an Empty on creation in Blender
 
-- Single arrow will create a [class_SeparationRayShape3D](class_SeparationRayShape3D).
-- Cube will create a [class_BoxShape3D](class_BoxShape3D).
-- Image will create a [class_WorldBoundaryShape3D](class_WorldBoundaryShape3D).
-- Sphere (and the others not listed) will create a [class_SphereShape3D](class_SphereShape3D).
+- Single arrow will create a [class_SeparationRayShape3D](/docs/Classes/SeparationRayShape3D).
+- Cube will create a [class_BoxShape3D](/docs/Classes/BoxShape3D).
+- Image will create a [class_WorldBoundaryShape3D](/docs/Classes/WorldBoundaryShape3D).
+- Sphere (and the others not listed) will create a [class_SphereShape3D](/docs/Classes/SphereShape3D).
 
 When possible, **try to use a few primitive collision shapes** instead of triangle
 mesh or convex shapes. Primitive shapes often have the best performance and
@@ -94,10 +94,10 @@ shapes.
 
 ## Create Occluder (-occ, -occonly)
 
-If a mesh is imported with the ``-occ`` suffix an [class_occluder3D](class_occluder3D) node
+If a mesh is imported with the ``-occ`` suffix an [class_occluder3D](/docs/Classes/occluder3D) node
 will be created based on the geometry of the mesh, it does not replace the mesh.
 A mesh node with the ``-occonly`` suffix will be converted to an
-[class_occluder3D](class_occluder3D) on import.
+[class_occluder3D](/docs/Classes/occluder3D) on import.
 
 ## Create navigation (-navmesh)
 
@@ -107,21 +107,21 @@ The original Mesh object will be removed at import-time.
 ## Create a VehicleBody (-vehicle)
 
 A mesh node with the ``-vehicle`` suffix will be imported as a child to a
-[class_VehicleBody3D](class_VehicleBody3D) node.
+[class_VehicleBody3D](/docs/Classes/VehicleBody3D) node.
 
 ## Create a VehicleWheel (-wheel)
 
 A mesh node with the ``-wheel`` suffix will be imported as a child to a
-[class_VehicleWheel3D](class_VehicleWheel3D) node.
+[class_VehicleWheel3D](/docs/Classes/VehicleWheel3D) node.
 
 ## Rigid Body (-rigid)
 
-A mesh node with the ``-rigid`` suffix will be imported as a [class_RigidBody3D](class_RigidBody3D).
+A mesh node with the ``-rigid`` suffix will be imported as a [class_RigidBody3D](/docs/Classes/RigidBody3D).
 
 ## Animation loop (-loop, -cycle)
 
 Animation clips in the source 3D file that start or end with the token ``loop`` or ``cycle``
-will be imported as a Redot [class_Animation](class_Animation) with the loop flag set.
+will be imported as a Redot [class_Animation](/docs/Classes/Animation) with the loop flag set.
 **Unlike the other suffixes described above, this does not require a hyphen.**
 
 In Blender, this requires using the NLA Editor and naming the Action with the ``loop`` or

@@ -14,7 +14,7 @@ Below is a list of ways multithreading can be used in different areas of Redot.
 
 ## Global scope
 
-[Global Scope](class_@GlobalScope) singletons are all thread-safe. Accessing servers from threads is supported (for RenderingServer and Physics servers, ensure threaded or thread-safe operation is enabled in the project settings!).
+[Global Scope](/docs/Classes/@GlobalScope) singletons are all thread-safe. Accessing servers from threads is supported (for RenderingServer and Physics servers, ensure threaded or thread-safe operation is enabled in the project settings!).
 
 This makes them ideal for code that creates dozens of thousands of instances in servers and controls them from threads. Of course, it requires a bit more code, as this is used directly and not within the scene tree.
 
@@ -94,7 +94,7 @@ set in multiple ones. Otherwise, you are safer just using the servers API
 
 Instancing nodes that render anything in 2D or 3D (such as Sprite) is *not* thread-safe by default.
 To make rendering thread-safe, set the
-[Rendering &gt; Driver &gt; Thread Model](class_ProjectSettings_property_rendering/driver/threads/thread_model)
+[Rendering &gt; Driver &gt; Thread Model](/docs/Classes/ProjectSettings_property_rendering/driver/threads/thread_model)
 project setting to **Multi-Threaded**.
 
 Note that the Multi-Threaded thread model has several known bugs, so it may not be usable
@@ -102,7 +102,7 @@ in all scenarios.
 
 You should avoid calling functions involving direct interaction with the GPU on other threads, such as creating new textures
 or modifying and retrieving image data, these operations can lead to performance stalls because they require synchronization
-with the [RenderingServer](class_RenderingServer), as data needs to be transmitted to or updated on the GPU.
+with the [RenderingServer](/docs/Classes/RenderingServer), as data needs to be transmitted to or updated on the GPU.
 
 ## GDScript arrays, dictionaries
 

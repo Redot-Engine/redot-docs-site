@@ -5,7 +5,7 @@ import TabItem from "@theme/TabItem";
 
 ![Image](img/nav_maps.png)
 
-A NavigationMap is an abstract navigation world on the NavigationServer identified by a NavigationServer [RID](class_RID).
+A NavigationMap is an abstract navigation world on the NavigationServer identified by a NavigationServer [RID](/docs/Classes/RID).
 
 A map can hold and connect a near infinite number of navigation regions with navigation meshes to build the traversable areas of a game world for pathfinding.
 
@@ -20,11 +20,11 @@ and avoidance agents can switch between different maps. Switches will become eff
 
 ### Default navigation maps
 
-By default Redot creates a navigation map for each [World2D](class_World2D) and [World3D](class_World3D) of the root viewport.
+By default Redot creates a navigation map for each [World2D](/docs/Classes/World2D) and [World3D](/docs/Classes/World3D) of the root viewport.
 
-The 2D default navigation map RID can be obtained with ``get_world_2d().get_navigation_map()`` from any [Node2D](class_Node2D) inheriting Node.
+The 2D default navigation map RID can be obtained with ``get_world_2d().get_navigation_map()`` from any [Node2D](/docs/Classes/Node2D) inheriting Node.
 
-The 3D default navigation map RID can be obtained with ``get_world_3d().get_navigation_map()`` from any [Node3D](class_Node3D) inheriting Node.
+The 3D default navigation map RID can be obtained with ``get_world_3d().get_navigation_map()`` from any [Node3D](/docs/Classes/Node3D) inheriting Node.
 
 <Tabs>
 

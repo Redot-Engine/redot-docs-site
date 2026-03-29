@@ -18,7 +18,7 @@ after enabling the **Advanced** toggle in the Project Settings.
 
 ## Environment
 
-The [class_Environment](class_Environment) resource stores all the information required for
+The [class_Environment](/docs/Classes/Environment) resource stores all the information required for
 controlling the 2D and 3D rendering environment. This includes the sky, ambient
 lighting, tone mapping, effects, and adjustments. By itself, it does nothing,
 but you can enable it by using it in one of the following locations, in order
@@ -89,7 +89,7 @@ easily.
 
 :::
 
-The [class_CameraAttributes](class_CameraAttributes) resource stores exposure and depth of field
+The [class_CameraAttributes](/docs/Classes/CameraAttributes) resource stores exposure and depth of field
 information. It also allows enabling automatic exposure adjustments depending on
 scene brightness.
 
@@ -108,7 +108,7 @@ are configured differently. If you don't know which one to choose, use
 
 :::note
 
-Using a [class_CameraAttributesPhysical](class_CameraAttributesPhysical) on a Camera3D node will lock
+Using a [class_CameraAttributesPhysical](/docs/Classes/CameraAttributesPhysical) on a Camera3D node will lock
 out FOV and aspect adjustments in that Camera3D, as field of view is
 adjusted in the CameraAttributesPhysical resource instead. If used in a
 WorldEnvironment, the CameraAttributesPhysical will not override any
@@ -649,7 +649,7 @@ There are 2 ways to use glow in 2D:
   rendering output.
 
   - To enable HDR in 2D, open the Project Settings, enable
-    [Rendering &gt; Viewport &gt; HDR 2D](class_ProjectSettings_property_rendering/viewport/hdr_2d)
+    [Rendering &gt; Viewport &gt; HDR 2D](/docs/Classes/ProjectSettings_property_rendering/viewport/hdr_2d)
     then restart the editor.
 
 - If you want to maximize performance, you can leave HDR disabled for 2D
@@ -658,7 +658,7 @@ There are 2 ways to use glow in 2D:
   - Enable glow, set the environment background mode to **Canvas** then decrease
     **Glow HDR Threshold** so that pixels that are not overbright will still
     glow. To prevent UI elements from glowing, make them children of a
-    [class_CanvasLayer](class_CanvasLayer) node. You can control which layers are affected by
+    [class_CanvasLayer](/docs/Classes/CanvasLayer) node. You can control which layers are affected by
     glow using the **Background &gt; Canvas Max Layer** property of the Environment
     resource.
 
@@ -674,7 +674,7 @@ RAW mode in the color picker.
 :::warning
 
 The 2D renderer renders in linear color space if the
-[Rendering &gt; Viewport &gt; HDR 2D](class_ProjectSettings_property_rendering/viewport/hdr_2d)
+[Rendering &gt; Viewport &gt; HDR 2D](/docs/Classes/ProjectSettings_property_rendering/viewport/hdr_2d)
 project setting is enabled, so the ``source_color`` hint must also be used
 for uniform samplers that are used as color input in ``canvas_item`` shaders.
 If this is not done, the texture will appear washed out.
@@ -690,7 +690,7 @@ way.
 Glow can be used to blur the whole viewport, which is useful for background blur
 when a menu is open. Only 3D rendering will be affected unless the environment's
 background mode is set to **Canvas**. To prevent UI elements from being blurred
-when using the Canvas background mode, make them children of a [class_CanvasLayer](class_CanvasLayer)
+when using the Canvas background mode, make them children of a [class_CanvasLayer](/docs/Classes/CanvasLayer)
 node. You can control which layers are affected by this blurring effect using the
 **Background &gt; Canvas Max Layer** property of the Environment resource.
 

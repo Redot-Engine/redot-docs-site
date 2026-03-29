@@ -15,13 +15,13 @@ Redot will automatically import these files internally and keep the imported
 resources hidden in a ``res://.Redot/imported/`` folder.
 
 This means that when trying to access imported assets through code, you
-need to use the [Resource Loader](class_ResourceLoader) as it will
+need to use the [Resource Loader](/docs/Classes/ResourceLoader) as it will
 automatically take into account where the internal files are saved. If you
-try and access an imported asset using the [FileAccess ](class_FileAccess) class,
+try and access an imported asset using the [FileAccess ](/docs/Classes/FileAccess) class,
 it will work in the editor, but **it will break in the exported project**.
 
-However, the [Resource Loader](class_ResourceLoader) cannot access
-non-imported files. Only the [FileAccess ](class_FileAccess) class can.
+However, the [Resource Loader](/docs/Classes/ResourceLoader) cannot access
+non-imported files. Only the [FileAccess ](/docs/Classes/FileAccess) class can.
 
 ## Changing import parameters
 

@@ -147,7 +147,7 @@ call(method_name); // Call parent-defined method (which child must own).
 
 </Tabs>
 
-3. Initialize a [Callable ](class_Callable) property. Safer than a method
+3. Initialize a [Callable ](/docs/Classes/Callable) property. Safer than a method
    as ownership of the method is unnecessary. Used to start behavior.
 
 <Tabs>
@@ -422,8 +422,8 @@ dependent node ("child" above) into a tool script that implements
 Returning a non-empty PackedStringArray from it will make the Scene dock generate a
 warning icon with the string(s) as a tooltip by the node. This is the same icon
 that appears for nodes such as the
-[Area2D ](class_Area2D) node when it has no child
-[CollisionShape2D ](class_CollisionShape2D) nodes defined. The editor
+[Area2D ](/docs/Classes/Area2D) node when it has no child
+[CollisionShape2D ](/docs/Classes/CollisionShape2D) nodes defined. The editor
 then self-documents the scene through the script code. No content duplication
 via documentation is necessary.
 
@@ -495,7 +495,7 @@ If you have a system that...
 
 For smaller games, a simpler alternative with less control would be to have
 a "Game" singleton that simply calls the
-[SceneTree.change_scene_to_file() ](class_SceneTree_method_change_scene_to_file) method
+[SceneTree.change_scene_to_file() ](/docs/Classes/SceneTree_method_change_scene_to_file) method
 to swap out the main scene's content. This structure more or less keeps
 the "World" as the main game node.
 
@@ -519,11 +519,11 @@ own place in the hierarchy as a sibling or some other relation.
 
 In some cases, you need these separated nodes to *also* position themselves
 relative to each other. You can use the
-[RemoteTransform ](class_RemoteTransform3D) /
-[RemoteTransform2D ](class_RemoteTransform2D) nodes for this purpose.
+[RemoteTransform ](/docs/Classes/RemoteTransform3D) /
+[RemoteTransform2D ](/docs/Classes/RemoteTransform2D) nodes for this purpose.
 They will allow a target node to conditionally inherit selected transform
 elements from the Remote\* node. To assign the ``target``
-[NodePath ](class_NodePath), use one of the following:
+[NodePath ](/docs/Classes/NodePath), use one of the following:
 
 1. A reliable third party, likely a parent node, to mediate the assignment.
 2. A group, to pull a reference to the desired node (assuming there
@@ -568,12 +568,12 @@ the player somewhere else in the SceneTree entirely. This results in:
 In contrast, if you ever need a child node that does *not* inherit
 the transform of its parent, you have the following options:
 
-1. The **declarative** solution: place a [Node ](class_Node) in between
+1. The **declarative** solution: place a [Node ](/docs/Classes/Node) in between
    them. Since it doesn't have a transform, they won't pass this information
    to its children.
 2. The **imperative** solution: Use the ``top_level`` property for the
-   [CanvasItem ](class_CanvasItem_property_top_level) or
-   [Node3D ](class_Node3D_property_top_level) node. This will make
+   [CanvasItem ](/docs/Classes/CanvasItem_property_top_level) or
+   [Node3D ](/docs/Classes/Node3D_property_top_level) node. This will make
    the node ignore its inherited transform.
 
 :::

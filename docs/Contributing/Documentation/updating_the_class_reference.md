@@ -35,7 +35,7 @@ In the main repository the class reference is stored in XML files, one for each 
 class or global object. The majority of these files is located in `doc/classes/
 &lt;https://github.com/redot-engine/redot-engine/tree/master/doc/classes&gt;`_, but some modules
 contain their own documentation as well. You will find it in the ``modules/&lt;module_name&gt;/doc_classes/``
-directory. To learn more about editing XML files refer to [doc_class_reference_primer](class_reference_primer.md).
+directory. To learn more about editing XML files refer to [doc_class_reference_primer](/docs/Classes/reference_primer.md).
 
 :::info
 

@@ -1,15 +1,15 @@
 
 # Theme type variations
 
-When designing a user interface there may be times when a [Control ](class_Control) node
-needs to have a different look than what is normally defined by a [Theme ](class_Theme).
+When designing a user interface there may be times when a [Control ](/docs/Classes/Control) node
+needs to have a different look than what is normally defined by a [Theme ](/docs/Classes/Theme).
 Every control node has theme property overrides, which allow you to redefine the styling for
 each individual UI element.
 
 ![Image](img/themecheck.webp)
 
 This approach quickly becomes hard to manage, if you need to share the same custom look
-between several controls. Imagine that you use gray, blue, and red variants of [Button ](class_Button)
+between several controls. Imagine that you use gray, blue, and red variants of [Button ](/docs/Classes/Button)
 throughout your project. Setting it up every time you add a new button element to your interface
 is a tedious task.
 

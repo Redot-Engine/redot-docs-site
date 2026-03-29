@@ -163,8 +163,8 @@ To interact with and execute a compute shader, we need a script.
 Create a new script in the language of your choice and attach it to any Node
 in your scene.
 
-Now to execute our shader we need a local [class_RenderingDevice](class_RenderingDevice)
-which can be created using the [class_RenderingServer](class_RenderingServer):
+Now to execute our shader we need a local [class_RenderingDevice](/docs/Classes/RenderingDevice)
+which can be created using the [class_RenderingServer](/docs/Classes/RenderingServer):
 
 <Tabs>
 

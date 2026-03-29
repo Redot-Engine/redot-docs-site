@@ -164,7 +164,7 @@ public void UseCoolFeature()
   ``Redot_ANDROID``, ``Redot_IOS``, ``Redot_WEB``
   depending on the OS. These names may change in the future.
   These are created from the ``get_name()`` method of the
-  [OS ](class_OS) singleton, but not every possible OS
+  [OS ](/docs/Classes/OS) singleton, but not every possible OS
   the method returns is an OS that Redot with .NET runs on.
 
 * ``RedotX``, ``RedotX_Y``, ``RedotX_Y_Z``, ``Redotx_OR_GREATER``,

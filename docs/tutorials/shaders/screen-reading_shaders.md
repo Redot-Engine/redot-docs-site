@@ -96,7 +96,7 @@ In the above image, the second sphere (top right) is using the same source for
 the screen texture as the first one below, so the first one "disappears", or is
 not visible.
 
-In 2D, this can be corrected via the [BackBufferCopy ](class_BackBufferCopy)
+In 2D, this can be corrected via the [BackBufferCopy ](/docs/Classes/BackBufferCopy)
 node, which can be instantiated between both spheres. BackBufferCopy can work by
 either specifying a screen region or the whole screen:
 
@@ -120,9 +120,9 @@ screen texture is only captured once. Be careful when using the screen texture
 in 3D as it won't capture transparent objects and may capture some opaque
 objects that are in front of the object using the screen texture.
 
-You can reproduce the back-buffer logic in 3D by creating a [Viewport ](class_Viewport)
+You can reproduce the back-buffer logic in 3D by creating a [Viewport ](/docs/Classes/Viewport)
 with a camera in the same position as your object, and then use the
-[Viewport's ](class_Viewport) texture instead of the screen texture.
+[Viewport's ](/docs/Classes/Viewport) texture instead of the screen texture.
 
 ## Back-buffer logic
 

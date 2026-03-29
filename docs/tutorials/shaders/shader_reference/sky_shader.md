@@ -53,16 +53,16 @@ the radiance cubemap:
 * ``TIME`` is used.
 * ``POSITION`` is used and the camera position changes.
 * If any ``LIGHTX_*`` properties are used and any
-  [DirectionalLight3D ](class_DirectionalLight3D) changes.
+  [DirectionalLight3D ](/docs/Classes/DirectionalLight3D) changes.
 * If any uniform is changed in the shader.
 * If the screen is resized and either of the subpasses are used.
 
 Try to avoid updating the radiance cubemap needlessly. If you do need to
 update the radiance cubemap each frame, make sure your
-[Sky process mode ](class_Sky_property_process_mode) is set to
-[PROCESS_MODE_REALTIME ](class_Sky_constant_PROCESS_MODE_REALTIME).
+[Sky process mode ](/docs/Classes/Sky_property_process_mode) is set to
+[PROCESS_MODE_REALTIME ](/docs/Classes/Sky_constant_PROCESS_MODE_REALTIME).
 
-Note that the [process mode ](class_Sky_property_process_mode) only
+Note that the [process mode ](/docs/Classes/Sky_property_process_mode) only
 affects the rendering of the radiance cubemap. The visible sky is always
 rendered by calling the fragment shader for every pixel. With complex fragment
 shaders, this can result in a high rendering overhead. If the sky is static
@@ -96,8 +96,8 @@ void sky() {
 ```
 
 This way, the complex calculations happen only in the cubemap pass, which can
-be optimized by setting the sky's [process mode ](class_Sky_property_process_mode)
-and the [radiance size ](class_Sky_property_radiance_size) to get the
+be optimized by setting the sky's [process mode ](/docs/Classes/Sky_property_process_mode)
+and the [radiance size ](/docs/Classes/Sky_property_radiance_size) to get the
 desired balance between performance and visual fidelity.
 
 ## Render modes

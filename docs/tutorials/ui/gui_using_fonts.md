@@ -148,7 +148,7 @@ Font sizes in Redot are specified in pixels (px), not points (pt). Keep this
 in mind when comparing font sizes across different software.
 
 The texture filter mode can also be set on individual nodes that inherit from CanvasItem
-by setting [CanvasItem.texture_filter ](class_CanvasItem_property_texture_filter).
+by setting [CanvasItem.texture_filter ](/docs/Classes/CanvasItem_property_texture_filter).
 
 :::
 
@@ -159,7 +159,7 @@ color isn't known in advance. For instance, this is the case for HUD elements
 that are drawn over a 2D/3D scene.
 
 Font outlines are available in most nodes that derive from Control, in addition
-to [class_Label3D](class_Label3D).
+to [class_Label3D](/docs/Classes/Label3D).
 
 To enable outline for a font on a given node, configure the theme overrides
 **Font Outline Color** and **Outline Size** in the inspector. The result should
@@ -179,7 +179,7 @@ earlier than intended.
 :::
 
 Support for font shadows is more limited: they are only available in
-[class_Label](class_Label) and [class_RichTextLabel](class_RichTextLabel). Additionally, font shadows
+[class_Label](/docs/Classes/Label) and [class_RichTextLabel](/docs/Classes/RichTextLabel). Additionally, font shadows
 always have a hard edge (but you can reduce their opacity to make them look more
 subtle). To enable font shadows on a given node, configure the **Font Shadow
 Color**, **Shadow Offset X**, and **Shadow Offset Y** theme overrides in a Label
@@ -198,7 +198,7 @@ The result should look like this:
 :::tip
 
 You can create local overrides to font display in Label nodes by creating a
-[class_LabelSettings](class_LabelSettings) resource that you reuse across Label nodes. This
+[class_LabelSettings](/docs/Classes/LabelSettings) resource that you reuse across Label nodes. This
 resource takes priority over [theme properties ](gui_skinning.md).
 
 :::
@@ -484,7 +484,7 @@ Redot has full support for [variable fonts ](https://variablefonts.io/)_, which
 allow you to use a single font file to represent various font weights and styles
 (regular, bold, italic, …). This must be supported by the font file you're using.
 
-To use a variable font, create a [class_FontVariation](class_FontVariation) resource in the
+To use a variable font, create a [class_FontVariation](/docs/Classes/FontVariation) resource in the
 location where you intend to use the font, then load a font file within the
 FontVariation resource:
 
@@ -563,7 +563,7 @@ bold and italic.
 
    Faux bold/italic (top), real bold/italic (bottom). Normal font used: Open Sans SemiBold
 
-Faux bold and italic is automatically used in [class_RichTextLabel](class_RichTextLabel)'s bold
+Faux bold and italic is automatically used in [class_RichTextLabel](/docs/Classes/RichTextLabel)'s bold
 and italic tags if no custom fonts are provided for bold and/or italic.
 
 To use faux bold, create a FontVariation resource in a property where a Font
@@ -589,11 +589,11 @@ which accept positive and negative values:
 - **Glyph:** Additional spacing between every glyph.
 - **Space:** Additional spacing between words.
 - **Top:** Additional spacing above glyphs. This is used for multiline text,
-  but also to calculate the minimum size of controls such as [class_Label](class_Label)
-  and [class_Button](class_Button).
+  but also to calculate the minimum size of controls such as [class_Label](/docs/Classes/Label)
+  and [class_Button](/docs/Classes/Button).
 - **Bottom:** Additional spacing below glyphs. This is used for multiline text,
-  but also to calculate the minimum size of controls such as [class_Label](class_Label)
-  and [class_Button](class_Button).
+  but also to calculate the minimum size of controls such as [class_Label](/docs/Classes/Label)
+  and [class_Button](/docs/Classes/Button).
 
 The **Variation &gt; Transform** property can also be adjusted to stretch
 characters horizontally or vertically. This is specifically done by adjusting
@@ -700,7 +700,7 @@ possible to display CJK characters and emoji without having to load a custom
 font. There are some restrictions that apply though, as mentioned in the
 [Using emoji ](doc_using_fonts_emoji) section.
 
-Create a [class_SystemFont](class_SystemFont) resource in the location where you desire to
+Create a [class_SystemFont](/docs/Classes/SystemFont) resource in the location where you desire to
 use the system font:
 
 ![Image](img/using_fonts_system_font_create.webp)

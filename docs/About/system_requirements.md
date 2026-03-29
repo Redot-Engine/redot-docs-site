@@ -26,7 +26,7 @@ on a simple 2D or 3D project:
 
 Windows 7/8/8.1 are supported on a best-effort basis. These versions are not
 regularly tested and some features may be missing (such as colored
-[print_rich ](class_@GlobalScope_method_print_rich) console output).
+[print_rich ](/docs/Classes/@GlobalScope_method_print_rich) console output).
 Support for Windows 7/8/8.1 may be removed in a
 [future Redot 4.x release ](doc_release_policy).
 
@@ -101,7 +101,7 @@ project exported with Redot:
 
 Windows 7/8/8.1 are supported on a best-effort basis. These versions are not
 regularly tested and some features may be missing (such as colored
-[print_rich ](class_@GlobalScope_method_print_rich) console output).
+[print_rich ](/docs/Classes/@GlobalScope_method_print_rich) console output).
 Support for Windows 7/8/8.1 may be removed in a
 [future Redot 4.x release ](doc_release_policy).
 

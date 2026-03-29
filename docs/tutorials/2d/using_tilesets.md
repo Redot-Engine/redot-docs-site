@@ -4,9 +4,9 @@
 ## Introduction
 
 A tilemap is a grid of tiles used to create a game's layout. There are several
-benefits to using [TileMapLayer ](class_TileMapLayer) nodes to design your
+benefits to using [TileMapLayer ](/docs/Classes/TileMapLayer) nodes to design your
 levels. First, they let you draw a layout by "painting" tiles onto a grid,
-which is much faster than placing individual [Sprite2D ](class_Sprite2D) nodes one by one. Second, they allow for larger levels
+which is much faster than placing individual [Sprite2D ](/docs/Classes/Sprite2D) nodes one by one. Second, they allow for larger levels
 because they are optimized for drawing large numbers of tiles.
 Finally, they allow you to add greater functionality to your tiles with
 collision, occlusion, and navigation shapes.

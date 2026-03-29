@@ -6,19 +6,19 @@ import TabItem from "@theme/TabItem";
 ## What is a rigid body?
 
 A rigid body is one that is directly controlled by the physics engine in order to simulate the behavior of physical objects.
-In order to define the shape of the body, it must have one or more [Shape3D ](class_Shape3D) objects assigned. Note that setting the position of these shapes will affect the body's center of mass.
+In order to define the shape of the body, it must have one or more [Shape3D ](/docs/Classes/Shape3D) objects assigned. Note that setting the position of these shapes will affect the body's center of mass.
 
 ## How to control a rigid body
 
 A rigid body's behavior can be altered by setting its properties, such as mass and weight.
 A physics material needs to be added to the rigid body to adjust its friction and bounce,
 and set if it's absorbent and/or rough. These properties can be set in the Inspector or via code.
-See [RigidBody3D ](class_RigidBody3D) and [PhysicsMaterial ](class_PhysicsMaterial) for
+See [RigidBody3D ](/docs/Classes/RigidBody3D) and [PhysicsMaterial ](/docs/Classes/PhysicsMaterial) for
 the full list of properties and their effects.
 
 There are several ways to control a rigid body's movement, depending on your desired application.
 
-If you only need to place a rigid body once, for example to set its initial location, you can use the methods provided by the [Node3D ](class_Node3D) node, such as ``set_global_transform()`` or ``look_at()``. However, these methods cannot be called every frame or the physics engine will not be able to correctly simulate the body's state.
+If you only need to place a rigid body once, for example to set its initial location, you can use the methods provided by the [Node3D ](/docs/Classes/Node3D) node, such as ``set_global_transform()`` or ``look_at()``. However, these methods cannot be called every frame or the physics engine will not be able to correctly simulate the body's state.
 As an example, consider a rigid body that you want to rotate so that it points towards another object. A common mistake when implementing this kind of behavior is to use ``look_at()`` every frame, which breaks the physics simulation. Below, we'll demonstrate how to implement this correctly.
 
 The fact that you can't use ``set_global_transform()`` or ``look_at()`` methods doesn't mean that you can't have full control of a rigid body. Instead, you can control it by using the ``_integrate_forces()`` callback. In this method, you can add *forces*, apply *impulses*, or set the *velocity* in order to achieve any movement you desire.
@@ -90,5 +90,5 @@ This method uses the rigid body's ``angular_velocity`` property to rotate the bo
 The axis to rotate around is given by the cross product between the current forward direction and the direction one wants to look in. 
 The ``clamp`` is a simple method used to prevent the amount of rotation from going past the direction which is wanted to be looked in, 
 as the total amount of rotation needed is given by the arccosine of the dot product. 
-This method can be used with ``axis_lock_angular_*`` as well. If more precise control is needed, solutions such as ones relying on [class_Quaternion](class_Quaternion) may be required, 
+This method can be used with ``axis_lock_angular_*`` as well. If more precise control is needed, solutions such as ones relying on [class_Quaternion](/docs/Classes/Quaternion) may be required, 
 as discussed in [doc_using_transforms](../3d/using_transforms.md).

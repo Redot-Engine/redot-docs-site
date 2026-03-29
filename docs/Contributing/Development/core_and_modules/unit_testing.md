@@ -268,9 +268,9 @@ These tags can be added to the test case name to modify or extend the test envir
 
 | **Tag** | **Description** |
 | --- | --- |
-| ``[SceneTree]`` | Required for test cases that rely on a scene tree with MessageQueue to be available. It also enables a mock rendering server and [ThemeDB](class_ThemeDB). |
-| ``[Editor]`` | Like ``[SceneTree]``, but with additional editor-related infrastructure available, such as [EditorSettings](class_EditorSettings). |
-| ``[Audio]`` | Initializes the [AudioServer](class_AudioServer) using a mock audio driver. |
+| ``[SceneTree]`` | Required for test cases that rely on a scene tree with MessageQueue to be available. It also enables a mock rendering server and [ThemeDB](/docs/Classes/ThemeDB). |
+| ``[Editor]`` | Like ``[SceneTree]``, but with additional editor-related infrastructure available, such as [EditorSettings](/docs/Classes/EditorSettings). |
+| ``[Audio]`` | Initializes the [AudioServer](/docs/Classes/AudioServer) using a mock audio driver. |
 | ``[Navigation]`` | Creates the default 2D/3D navigation servers and makes them available for testing. |
 
 You can use them together to combine multiple test environment extensions.
@@ -365,7 +365,7 @@ REGISTER_TEST_COMMAND("gdscript-compiler", &test_compiler);
 ```
 
 The custom command-line parsing can be performed by a test tool itself with the
-help of OS [get_cmdline_args](class_OS_method_get_cmdline_args) method.
+help of OS [get_cmdline_args](/docs/Classes/OS_method_get_cmdline_args) method.
 
 ## Integration tests for GDScript
 

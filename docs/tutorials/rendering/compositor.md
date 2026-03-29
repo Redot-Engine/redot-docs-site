@@ -2,14 +2,14 @@
 # The Compositor
 
 The compositor is a new feature in Redot 4 that allows control over
-the rendering pipeline when rendering the contents of a [Viewport ](class_Viewport).
+the rendering pipeline when rendering the contents of a [Viewport ](/docs/Classes/Viewport).
 
-It can be configured on a [WorldEnvironment ](class_WorldEnvironment)
+It can be configured on a [WorldEnvironment ](/docs/Classes/WorldEnvironment)
 node where it applies to all Viewports, or it can be configured on
-a [Camera3D ](class_Camera3D) and apply only to
+a [Camera3D ](/docs/Classes/Camera3D) and apply only to
 the Viewport using that camera.
 
-The [Compositor ](class_Compositor) resource is used to configure
+The [Compositor ](/docs/Classes/Compositor) resource is used to configure
 the compositor. To get started, create a new compositor on the appropriate node:
 
 ![Image](img/new_compositor.webp)
@@ -40,7 +40,7 @@ You can find the finished demo project [here ](https://github.com/redot-engine/r
 
 We start by creating a new script called ``post_process_shader.gd``.
 We'll make this a tool script so we can see the compositor effect work in the editor.
-We need to extend our node from [CompositorEffect ](class_CompositorEffect).
+We need to extend our node from [CompositorEffect ](/docs/Classes/CompositorEffect).
 We must also give our script a class name.
 
 ```gdscript
@@ -115,7 +115,7 @@ var shader_is_dirty : bool = true
 
 ```
 
-Note the use of a [Mutex ](class_Mutex) in our code.
+Note the use of a [Mutex ](/docs/Classes/Mutex) in our code.
 Most of our implementation gets called from the rendering engine
 and thus runs within our rendering thread.
 
@@ -311,7 +311,7 @@ Our ``p_render_data`` parameter gives us access to an object that holds
 data specific to the frame we're currently rendering. We're currently only
 interested in our render scene buffers, which provide us access to all the
 internal buffers used by the rendering engine.
-Note that we cast this to [RenderSceneBuffersRD ](class_RenderSceneBuffersRD)
+Note that we cast this to [RenderSceneBuffersRD ](/docs/Classes/RenderSceneBuffersRD)
 to expose the full API to this data.
 
 Next we obtain our ``internal size`` which is the resolution of our 3D render
@@ -345,7 +345,7 @@ our 3D scene has been rendered.
 We then prepare a uniform set so we can communicate the color buffer to our
 shader.
 
-Note the use of our [UniformSetCacheRD ](class_UniformSetCacheRD) cache
+Note the use of our [UniformSetCacheRD ](/docs/Classes/UniformSetCacheRD) cache
 which ensures we can check for our uniform set each frame.
 As our color buffer can change from frame to frame and our uniform cache
 will automatically clean up uniform sets when buffers are freed, this is

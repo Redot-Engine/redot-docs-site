@@ -48,14 +48,14 @@ in the top-right corner of the Output panel.
 
 Several methods are available to print messages:
 
-- [print() ](class_@GlobalScope_method_print): Prints a message.
+- [print() ](/docs/Classes/@GlobalScope_method_print): Prints a message.
   This method accepts multiple arguments which are concatenated together upon printing.
-- [print_rich() ](class_@GlobalScope_method_print_rich): Same as ``print()``,
+- [print_rich() ](/docs/Classes/@GlobalScope_method_print_rich): Same as ``print()``,
   but BBCode can be used to format the text that is printed (see below).
-- [push_error() ](class_@GlobalScope_method_push_error): Prints an error message.
+- [push_error() ](/docs/Classes/@GlobalScope_method_push_error): Prints an error message.
   When an error is printed in a running project, it's displayed in the **Debugger &gt; Errors**
   tab instead.
-- [push_warning() ](class_@GlobalScope_method_push_warning): Prints a warning message.
+- [push_warning() ](/docs/Classes/@GlobalScope_method_push_warning): Prints a warning message.
   When a warning is printed in a running project, it's displayed in the **Debugger &gt; Errors**
   tab instead.
 
@@ -64,7 +64,7 @@ To get more advanced formatting capabilities, consider using
 
 ### Printing rich text
 
-Using [print_rich() ](class_@GlobalScope_method_print_rich), you can print
+Using [print_rich() ](/docs/Classes/@GlobalScope_method_print_rich), you can print
 rich text to the editor Output panel and standard output (visible when the user
 runs the project from a terminal). This works by converting the BBCode to
 [ANSI escape codes ](https://en.wikipedia.org/wiki/ANSI_escape_code)_ that the

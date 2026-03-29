@@ -269,7 +269,7 @@ quadrant, use [atan(vec_type y, vec_type x)](shader_func_atan2).
     ``y`` and ``x`` are used to determine the quadrant that the angle lies in.
     The result is undefined if ``x == 0``.
 
-    Equivalent to [atan2() ](class_@GlobalScope_method_atan2) in GDScript.
+    Equivalent to [atan2() ](/docs/Classes/@GlobalScope_method_atan2) in GDScript.
 
     :param y:
         The numerator of the fraction whose arc tangent to return.
@@ -967,7 +967,7 @@ This includes the possibility that ``round(x)`` returns the same value as
 
     Computed as ``a * (1 - c) + b * c``.
 
-    Equivalent to [lerp() ](class_@GlobalScope_method_lerp) in GDScript.
+    Equivalent to [lerp() ](/docs/Classes/@GlobalScope_method_lerp) in GDScript.
 
     :param a:
         The start of the range in which to interpolate.

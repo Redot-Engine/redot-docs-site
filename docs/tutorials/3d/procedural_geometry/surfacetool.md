@@ -3,8 +3,8 @@ import TabItem from "@theme/TabItem";
 
 # Using the SurfaceTool
 
-The [SurfaceTool ](class_surfacetool) provides a useful interface for constructing geometry.
-The interface is similar to the [ImmediateMesh ](class_ImmediateMesh) class. You
+The [SurfaceTool ](/docs/Classes/surfacetool) provides a useful interface for constructing geometry.
+The interface is similar to the [ImmediateMesh ](/docs/Classes/ImmediateMesh) class. You
 set each per-vertex attribute (e.g. normal, uv, color) and then when you add a vertex it
 captures the attributes.
 
@@ -42,8 +42,8 @@ st.SetNormal(); // Normal never added to a vertex.
 
 </Tabs>
 
-When finished generating your geometry with the [SurfaceTool ](class_surfacetool)
-call ``commit()`` to finish generating the mesh. If an [ArrayMesh ](class_ArrayMesh) is passed
+When finished generating your geometry with the [SurfaceTool ](/docs/Classes/surfacetool)
+call ``commit()`` to finish generating the mesh. If an [ArrayMesh ](/docs/Classes/ArrayMesh) is passed
 to ``commit()`` then it appends a new surface to the end of the ArrayMesh. While if nothing is passed
 in, ``commit()`` returns an ArrayMesh.
 

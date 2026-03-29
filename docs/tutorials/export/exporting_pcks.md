@@ -79,7 +79,7 @@ its scripts, then either...
    build of the engine or have access to one (distributed alongside or
    perhaps in the original game's files). The tool can then use the Redot
    executable to export a PCK file from the command line with
-   [OS.execute() ](class_OS_method_execute). The game itself shouldn't
+   [OS.execute() ](/docs/Classes/OS_method_execute). The game itself shouldn't
    use a tool-build of the engine (for security), so it's best to keep
    the modding tool and game separate.
 
@@ -138,7 +138,7 @@ However, it is also a way of creating patches for one's own game. A
 PCK file of this kind can fix the content of a previously loaded PCK.
 
 To opt out of this behavior, pass ``false`` as the second argument to
-[ProjectSettings.load_resource_pack() ](class_ProjectSettings_method_load_resource_pack).
+[ProjectSettings.load_resource_pack() ](/docs/Classes/ProjectSettings_method_load_resource_pack).
 
 :::
 

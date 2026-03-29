@@ -3,12 +3,12 @@
 
 ## Introduction
 
-[class_Label](class_Label) nodes are great for displaying basic text, but they have limitations.
+[class_Label](/docs/Classes/Label) nodes are great for displaying basic text, but they have limitations.
 If you want to change the color of the text, or its alignment, you can only do that to
 the entire label. You can't make a part of the text have another color, or have a part
-of the text centered. To get around these limitations, you would use a [class_RichTextLabel](class_RichTextLabel).
+of the text centered. To get around these limitations, you would use a [class_RichTextLabel](/docs/Classes/RichTextLabel).
 
-[class_RichTextLabel](class_RichTextLabel) allows for complex formatting of text using a markup syntax or
+[class_RichTextLabel](/docs/Classes/RichTextLabel) allows for complex formatting of text using a markup syntax or
 the built-in API. It uses BBCodes for the markup syntax, a system of tags that designate
 formatting rules for a part of the text. You may be familiar with them if you ever used
 forums (also known as `bulletin boards`, hence the "BB" in "BBCode").
@@ -33,11 +33,11 @@ You can see how BBCode in RichTextLabel works in action using the
 
 ## Using BBCode
 
-By default, [class_RichTextLabel](class_RichTextLabel) functions like a normal [class_Label](class_Label).
-It has the [property_text ](class_RichTextLabel_property_text) property, which you can
+By default, [class_RichTextLabel](/docs/Classes/RichTextLabel) functions like a normal [class_Label](/docs/Classes/Label).
+It has the [property_text ](/docs/Classes/RichTextLabel_property_text) property, which you can
 edit to have uniformly formatted text. To be able to use BBCode for rich text formatting,
-you need to turn on the BBCode mode by setting [bbcode_enabled ](class_RichTextLabel_property_bbcode_enabled).
-After that, you can edit the [text ](class_RichTextLabel_property_text)
+you need to turn on the BBCode mode by setting [bbcode_enabled ](/docs/Classes/RichTextLabel_property_bbcode_enabled).
+After that, you can edit the [text ](/docs/Classes/RichTextLabel_property_text)
 property using available tags. Both properties are located at the top of the inspector
 after selecting a RichTextLabel node.
 
@@ -186,7 +186,7 @@ Every BBCode tag (including effects) has a ``push_[tag]()`` function (where
 ``[tag]`` is the tag's name). There are also a few convenience functions
 available, such as ``push_bold_italics()`` that combines both ``push_bold()``
 and ``push_italics()`` into a single tag. See the
-[RichTextLabel class reference ](class_RichTextLabel) for a complete list of
+[RichTextLabel class reference ](/docs/Classes/RichTextLabel) for a complete list of
 ``push_[tag]()`` functions.
 
 The ``pop()`` function is used to end *any* tag. Since BBCode is a tag *stack*,
@@ -317,7 +317,7 @@ information, see [Class reference BBCode ](doc_class_reference_bbcode).
     - | ``[hint={tooltip text displayed on hover}]{text}[/hint]``
 
   * - | **img**
-      | Inserts an image from the ``{path}`` (can be any valid [class_Texture2D](class_Texture2D) resource).
+      | Inserts an image from the ``{path}`` (can be any valid [class_Texture2D](/docs/Classes/Texture2D) resource).
       | If ``{width}`` is provided, the image will try to fit that width maintaining
         the aspect ratio.
       | If both ``{width}`` and ``{height}`` are provided, the image will be scaled
@@ -501,7 +501,7 @@ Options can be skipped for all tags.
 | --- | --- |
 | `Default` | ``word,kashida,skip_last,do_not_skip_single`` |
 
-  Justification (fill alignment) option. See [class_TextServer](class_TextServer) for more details.
+  Justification (fill alignment) option. See [class_TextServer](/docs/Classes/TextServer) for more details.
 
 - **direction**, **dir**
 
@@ -537,7 +537,7 @@ By default, ``[url]`` tags do nothing when clicked. This is to allow flexible us
 of ``[url]`` tags rather than limiting them to opening URLs in a web browser.
 
 To handle clicked ``[url]`` tags, connect the ``RichTextLabel`` node's
-[meta_clicked ](class_RichTextLabel_signal_meta_clicked) signal to a script function.
+[meta_clicked ](/docs/Classes/RichTextLabel_signal_meta_clicked) signal to a script function.
 
 For example, the following method can be connected to ``meta_clicked`` to open
 clicked URLs using the user's default web browser
@@ -753,7 +753,7 @@ and ``b`` (``bottom``).
 ### Named colors
 
 For tags that allow specifying a color by name, you can use names of the constants from
-the built-in [class_Color](class_Color) class. Named classes can be specified in a number of
+the built-in [class_Color](/docs/Classes/Color) class. Named classes can be specified in a number of
 styles using different casings: ``DARK_RED``, ``DarkRed``, and ``darkred`` will give
 the same exact result.
 
@@ -941,14 +941,14 @@ looks, as modulation multiplies its final colors.
 
 ## Custom BBCode tags and text effects
 
-You can extend the [class_RichTextEffect](class_RichTextEffect) resource type to create your own custom
-BBCode tags. Create a new script file that extends the [class_RichTextEffect](class_RichTextEffect) resource type
+You can extend the [class_RichTextEffect](/docs/Classes/RichTextEffect) resource type to create your own custom
+BBCode tags. Create a new script file that extends the [class_RichTextEffect](/docs/Classes/RichTextEffect) resource type
 and give the script a ``class_name`` so that the effect can be selected in the inspector.
 Add the ``@tool`` annotation to your GDScript file if you wish to have these custom effects
 run within the editor itself. The RichTextLabel does not need to have a script attached,
 nor does it need to be running in ``tool`` mode. The new effect can be registered in
 the Inspector by adding it to the **Markup &gt; Custom Effects** array, or in code with the
-[install_effect() ](class_RichTextLabel_method_install_effect) method:
+[install_effect() ](/docs/Classes/RichTextLabel_method_install_effect) method:
 
 ![Image](img/bbcode_in_richtextlabel_selecting_custom_richtexteffect.webp)
 
@@ -970,7 +970,7 @@ use the name of the file to determine what the BBCode tag should be.
 ### ``_process_custom_fx``
 
 This is where the logic of each effect takes place and is called once per glyph
-during the draw phase of text rendering. This passes in a [class_CharFXTransform](class_CharFXTransform)
+during the draw phase of text rendering. This passes in a [class_CharFXTransform](/docs/Classes/CharFXTransform)
 object, which holds a few variables to control how the associated glyph is rendered:
 
 - ``identity`` specifies which custom effect is being processed. You should use that for
@@ -985,8 +985,8 @@ object, which holds a few variables to control how the associated glyph is rende
   normal circumstances.
 - ``color`` is the color of a given glyph.
 - ``glyph_index`` and ``font`` is glyph being drawn and font data resource used to draw it.
-- Finally, ``env`` is a [class_Dictionary](class_Dictionary) of parameters assigned to a given custom
-  effect. You can use [get() ](class_Dictionary_method_get) with an optional default value
+- Finally, ``env`` is a [class_Dictionary](/docs/Classes/Dictionary) of parameters assigned to a given custom
+  effect. You can use [get() ](/docs/Classes/Dictionary_method_get) with an optional default value
   to retrieve each parameter, if specified by the user. For example ``[custom_fx spread=0.5
   color=#FFFF00]test[/custom_fx]`` would have a float ``spread`` and Color ``color``
   parameters in its ``env`` Dictionary. See below for more usage examples.

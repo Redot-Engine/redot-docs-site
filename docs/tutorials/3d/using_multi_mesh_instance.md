@@ -4,13 +4,13 @@
 
 ## Introduction
 
-In a normal scenario, you would use a [MeshInstance3D](class_MeshInstance3D)
+In a normal scenario, you would use a [MeshInstance3D](/docs/Classes/MeshInstance3D)
 node to display a 3D mesh like a human model for the main character, but in some
 cases, you would like to create multiple instances of the same mesh in a scene.
 You *could* duplicate the same node multiple times and adjust the transforms
 manually. This may be a tedious process and the result may look mechanical.
 Also, this method is not conducive to rapid iterations.
-[MultiMeshInstance3D](class_MultiMeshInstance3D) is one of the possible
+[MultiMeshInstance3D](/docs/Classes/MultiMeshInstance3D) is one of the possible
 solutions to this problem.
 
 MultiMeshInstance3D, as the name suggests, creates multiple copies of a
@@ -28,7 +28,7 @@ on. In the tree example, this would be the landscape.
 The other node is used as the source, the mesh that you want to have duplicated.
 In the tree case, this would be the tree itself.
 
-In our example, we would use a [Node3D](class_Node3D) node as the root node of
+In our example, we would use a [Node3D](/docs/Classes/Node3D) node as the root node of
 the scene. Your scene tree would look like this:
 
 ![Image](img/multimesh_scene_tree.png)

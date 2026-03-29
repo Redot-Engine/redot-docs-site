@@ -13,7 +13,7 @@ data types. If not, refer to this guide: [doc_custom_modules_in_cpp](custom_modu
 
 ### References
 
-- [ResourceLoader](class_resourceloader)
+- [ResourceLoader](/docs/Classes/resourceloader)
 - [core/io/resource_loader.cpp](https://github.com/redot-engine/redot-engine/blob/master/core/io/resource_loader.cpp)
 
 ## What for?

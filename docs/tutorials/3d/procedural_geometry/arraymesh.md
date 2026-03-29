@@ -3,9 +3,9 @@ import TabItem from "@theme/TabItem";
 
 # Using the ArrayMesh
 
-This tutorial will present the basics of using an [ArrayMesh ](class_arraymesh).
+This tutorial will present the basics of using an [ArrayMesh ](/docs/Classes/arraymesh).
 
-To do so, we will use the function [add_surface_from_arrays() ](class_ArrayMesh_method_add_surface_from_arrays),
+To do so, we will use the function [add_surface_from_arrays() ](/docs/Classes/ArrayMesh_method_add_surface_from_arrays),
 which takes up to five parameters. The first two are required, while the last three are optional.
 
 The first parameter is the ``PrimitiveType``, an OpenGL concept that instructs the GPU
@@ -31,40 +31,40 @@ See [Mesh.ArrayType ](enum_Mesh_ArrayType) for a full list.
     
     * - 0
       - ``ARRAY_VERTEX``
-      - [PackedVector3Array ](class_PackedVector3Array) or [PackedVector2Array ](class_PackedVector2Array)
+      - [PackedVector3Array ](/docs/Classes/PackedVector3Array) or [PackedVector2Array ](/docs/Classes/PackedVector2Array)
     
     * - 1
       - ``ARRAY_NORMAL``
-      - [PackedVector3Array ](class_PackedVector3Array)
+      - [PackedVector3Array ](/docs/Classes/PackedVector3Array)
     
     * - 2
       - ``ARRAY_TANGENT``
-      - [PackedFloat32Array ](class_PackedFloat32Array) or [PackedFloat64Array ](class_PackedFloat64Array) of groups of 4 floats. The first 3 floats determine the tangent, and the last float the binormal 
+      - [PackedFloat32Array ](/docs/Classes/PackedFloat32Array) or [PackedFloat64Array ](/docs/Classes/PackedFloat64Array) of groups of 4 floats. The first 3 floats determine the tangent, and the last float the binormal 
         direction as -1 or 1.
     
     * - 3
       - ``ARRAY_COLOR``
-      - [PackedColorArray ](class_PackedColorArray)
+      - [PackedColorArray ](/docs/Classes/PackedColorArray)
     
     * - 4
       - ``ARRAY_TEX_UV``
-      - [PackedVector2Array ](class_PackedVector2Array) or [PackedVector3Array ](class_PackedVector3Array)
+      - [PackedVector2Array ](/docs/Classes/PackedVector2Array) or [PackedVector3Array ](/docs/Classes/PackedVector3Array)
     
     * - 5
       - ``ARRAY_TEX_UV2``
-      - [PackedVector2Array ](class_PackedVector2Array) or [PackedVector3Array ](class_PackedVector3Array)
+      - [PackedVector2Array ](/docs/Classes/PackedVector2Array) or [PackedVector3Array ](/docs/Classes/PackedVector3Array)
     
     * - 10
       - ``ARRAY_BONES``
-      - [PackedFloat32Array ](class_PackedFloat32Array) of groups of 4 floats or [PackedInt32Array ](class_PackedInt32Array) of groups of 4 ints. Each group lists indexes of 4 bones that affects a given vertex.
+      - [PackedFloat32Array ](/docs/Classes/PackedFloat32Array) of groups of 4 floats or [PackedInt32Array ](/docs/Classes/PackedInt32Array) of groups of 4 ints. Each group lists indexes of 4 bones that affects a given vertex.
     
     * - 11
       - ``ARRAY_WEIGHTS``
-      - [PackedFloat32Array ](class_PackedFloat32Array) or [PackedFloat64Array ](class_PackedFloat64Array) of groups of 4 floats. Each float lists the amount of weight the corresponding bone in ``ARRAY_BONES`` has on a given vertex.
+      - [PackedFloat32Array ](/docs/Classes/PackedFloat32Array) or [PackedFloat64Array ](/docs/Classes/PackedFloat64Array) of groups of 4 floats. Each float lists the amount of weight the corresponding bone in ``ARRAY_BONES`` has on a given vertex.
     
     * - 12
       - ``ARRAY_INDEX``
-      - [PackedInt32Array ](class_PackedInt32Array)
+      - [PackedInt32Array ](/docs/Classes/PackedInt32Array)
 
 In most cases when creating a mesh, we define it by its vertex positions. So usually, the array of vertices (at index 0) is required, while the index array (at index 12) is optional and
 will only be used if included. It is also possible to create a mesh with only the index array and no vertex array, but that's beyond the scope of this tutorial.
@@ -73,11 +73,11 @@ All the other arrays carry information about the vertices. They are optional and
 use one entry per vertex to provide extra information about vertices. They must have the same size as the vertex array. Other arrays (e.g. ``ARRAY_TANGENT``) use
 four entries to describe a single vertex. These must be exactly four times larger than the vertex array.
 
-For normal usage, the last three parameters in [add_surface_from_arrays() ](class_arraymesh_method_add_surface_from_arrays) are typically left empty.
+For normal usage, the last three parameters in [add_surface_from_arrays() ](/docs/Classes/arraymesh_method_add_surface_from_arrays) are typically left empty.
 
 ## Setting up the ArrayMesh
 
-In the editor, create a [MeshInstance3D ](class_meshinstance3d) and add an [ArrayMesh ](class_arraymesh) to it in the Inspector.
+In the editor, create a [MeshInstance3D ](/docs/Classes/meshinstance3d) and add an [ArrayMesh ](/docs/Classes/arraymesh) to it in the Inspector.
 Normally, adding an ArrayMesh in the editor is not useful, but in this case it allows us to access the ArrayMesh
 from code without creating one.
 
@@ -425,7 +425,7 @@ public partial class MyMeshInstance3D : MeshInstance3D
 
 ## Saving
 
-Finally, we can use the [ResourceSaver ](class_resourcesaver) class to save the ArrayMesh.
+Finally, we can use the [ResourceSaver ](/docs/Classes/resourcesaver) class to save the ArrayMesh.
 This is useful when you want to generate a mesh and then use it later without having to re-generate it.
 
 <Tabs>

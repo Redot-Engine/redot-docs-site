@@ -74,8 +74,8 @@ project is exported without thread support, but it has several limitations:
 To use Redot's own audio playback system on the web platform, you can change the
 default playback mode using the **Audio &gt; General &gt; Default Playback Type.web**
 project setting, or change the **Playback Type** property to **Stream** on an
-[class_AudioStreamPlayer](class_AudioStreamPlayer), [class_AudioStreamPlayer2D](class_AudioStreamPlayer2D) or
-[class_AudioStreamPlayer3D](class_AudioStreamPlayer3D) node. This leads to increased latency
+[class_AudioStreamPlayer](/docs/Classes/AudioStreamPlayer), [class_AudioStreamPlayer2D](/docs/Classes/AudioStreamPlayer2D) or
+[class_AudioStreamPlayer3D](/docs/Classes/AudioStreamPlayer3D) node. This leads to increased latency
 (especially when thread support is disabled), but it allows the full suite
 of Redot's audio features to work.
 
@@ -202,7 +202,7 @@ Browsers do not allow arbitrarily **entering full screen**. The same goes for
 **capturing the cursor**. Instead, these actions have to occur as a response to
 a JavaScript input event. In Redot, this means entering full screen from within
 a pressed input event callback such as ``_input`` or ``_unhandled_input``.
-Querying the [class_Input](class_Input) singleton is not sufficient, the relevant
+Querying the [class_Input](/docs/Classes/Input) singleton is not sufficient, the relevant
 input event must currently be active.
 
 For the same reason, the full screen project setting doesn't work unless the

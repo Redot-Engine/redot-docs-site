@@ -226,7 +226,7 @@ rendering). Using node groups, you can also prevent non-essential decorative
 decals from spawning based on user configuration.
 
 The way decals are rendered also has an impact on performance. The
-[Rendering &gt; Textures &gt; Decals &gt; Filter](class_ProjectSettings_property_rendering/textures/decals/filter)
+[Rendering &gt; Textures &gt; Decals &gt; Filter](/docs/Classes/ProjectSettings_property_rendering/textures/decals/filter)
 advanced project setting lets you control how decal
 textures should be filtered. **Nearest/Linear** does not use mipmaps. However,
 decals will look grainy at a distance. **Nearest/Linear Mipmaps** will look
@@ -254,7 +254,7 @@ performance allows). However, there's still a default limit of 512 *clustered
 elements* that can be present in the current camera view. A clustered element is
 an omni light, a spot light, a [decal](using_decals.md) or a
 [reflection probe](global_illumination/reflection_probes.md). This limit can be increased by adjusting
-[Max Clustered Elements](class_ProjectSettings_property_rendering/limits/cluster_builder/max_clustered_elements)
+[Max Clustered Elements](/docs/Classes/ProjectSettings_property_rendering/limits/cluster_builder/max_clustered_elements)
 in **Project Settings &gt; Rendering &gt; Limits &gt; Cluster Builder**.
 
 When using the Mobile renderer, only 8 decals can be applied on each

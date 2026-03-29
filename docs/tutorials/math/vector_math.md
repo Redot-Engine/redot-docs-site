@@ -89,7 +89,7 @@ node2D.Position = new Vector2(400, 300);
 
 </Tabs>
 
-Redot supports both [Vector2 ](class_Vector2) and [Vector3 ](class_Vector3) for 2D and 3D usage, respectively. The same mathematical rules
+Redot supports both [Vector2 ](/docs/Classes/Vector2) and [Vector3 ](/docs/Classes/Vector3) for 2D and 3D usage, respectively. The same mathematical rules
 discussed in this article apply to both types, and wherever we link to
 ``Vector2`` methods in the class reference, you can also check out their
 ``Vector3`` counterparts.
@@ -168,7 +168,7 @@ Note that adding ``a + b`` gives the same result as ``b + a``.
 :::note
 Vectors represent both direction and magnitude. A value representing
 only magnitude is called a **scalar**. Scalars use the
-[class_float](class_float) type in Redot.
+[class_float](/docs/Classes/float) type in Redot.
 
 :::
 
@@ -230,8 +230,8 @@ position is found by adding the velocity multiplied by the elapsed time
 
 In a typical 2D game scenario, you would have a velocity in pixels per
 second, and multiply it by the ``delta`` parameter (time elapsed since
-the previous frame) from the [_process() ](class_Node_private_method__process)
-or [_physics_process() ](class_Node_private_method__physics_process)
+the previous frame) from the [_process() ](/docs/Classes/Node_private_method__process)
+or [_physics_process() ](/docs/Classes/Node_private_method__physics_process)
 callbacks.
 
 :::
@@ -260,7 +260,7 @@ helpful when you need to keep track of a direction.
 **Normalizing** a vector means reducing its length to ``1`` while preserving its
 direction. This is done by dividing each of its components by its magnitude.
 Because this is such a common operation, Redot provides a dedicated
-[normalized() ](class_Vector2_method_normalized) method for this:
+[normalized() ](/docs/Classes/Vector2_method_normalized) method for this:
 
 <Tabs>
 
@@ -307,8 +307,8 @@ other object:
 The surface normal has a value of ``(0, -1)`` because this is a horizontal
 surface. When the ball collides, we take its remaining motion (the amount left
 over when it hits the surface) and reflect it using the normal. In Redot, there
-is a [bounce() ](class_Vector2_method_bounce) method to handle this.
-Here is a code example of the above diagram using a [CharacterBody2D ](class_CharacterBody2D):
+is a [bounce() ](/docs/Classes/Vector2_method_bounce) method to handle this.
+Here is a code example of the above diagram using a [CharacterBody2D ](/docs/Classes/CharacterBody2D):
 
 <Tabs>
 
@@ -360,7 +360,7 @@ and
 The mathematical notation *||A||* represents the magnitude of vector ``A``, and
 *A*\ :sub:`x` means the ``x`` component of vector ``A``.
 
-However, in most cases it is easiest to use the built-in [dot() ](class_Vector2_method_dot) method. Note that the order of the two vectors does not matter:
+However, in most cases it is easiest to use the built-in [dot() ](/docs/Classes/Vector2_method_dot) method. Note that the order of the two vectors does not matter:
 
 <Tabs>
 
@@ -408,7 +408,7 @@ The green arrows ``fA`` and ``fB`` are **unit vectors** representing the
 zombie's facing direction and the blue semicircle represents its field of view.
 For zombie ``A``, we find the direction vector ``AP`` pointing to the player
 using ``P - A`` and normalize it, however, Redot has a helper method to do this
-called [direction_to() ](class_Vector2_method_direction_to). If the angle
+called [direction_to() ](/docs/Classes/Vector2_method_direction_to). If the angle
 between this vector and the facing vector is less than 90°, then the zombie can
 see the player.
 
@@ -483,7 +483,7 @@ c.Z = (a.X * b.Y) - (a.Y * b.X);
 
 </Tabs>
 
-With Redot, you can use the built-in [Vector3.cross() ](class_Vector3_method_cross)
+With Redot, you can use the built-in [Vector3.cross() ](/docs/Classes/Vector3_method_cross)
 method:
 
 <Tabs>
@@ -508,7 +508,7 @@ var c = a.Cross(b);
 
 </Tabs>
 
-The cross product is not mathematically defined in 2D. The [Vector2.cross() ](class_Vector2_method_cross) method is a commonly used analog of the 3D cross
+The cross product is not mathematically defined in 2D. The [Vector2.cross() ](/docs/Classes/Vector2_method_cross) method is a commonly used analog of the 3D cross
 product for 2D vectors.
 
 :::note

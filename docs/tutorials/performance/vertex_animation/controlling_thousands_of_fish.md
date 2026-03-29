@@ -2,17 +2,17 @@
 
 # Controlling thousands of fish with Particles
 
-The problem with [MeshInstance3D ](class_MeshInstance3D) is that it is expensive to
+The problem with [MeshInstance3D ](/docs/Classes/MeshInstance3D) is that it is expensive to
 update their transform array. It is great for placing many static objects around the
 scene. But it is still difficult to move the objects around the scene.
 
 To make each instance move in an interesting way, we will use a
-[GPUParticles3D ](class_GPUParticles3D) node. Particles take advantage of GPU acceleration
-by computing and setting the per-instance information in a [Shader ](class_Shader).
+[GPUParticles3D ](/docs/Classes/GPUParticles3D) node. Particles take advantage of GPU acceleration
+by computing and setting the per-instance information in a [Shader ](/docs/Classes/Shader).
 
 First create a Particles node. Then, under "Draw Passes" set the Particle's "Draw Pass 1" to your
-[Mesh ](class_Mesh). Then under "Process Material" create a new
-[ShaderMaterial ](class_ShaderMaterial).
+[Mesh ](/docs/Classes/Mesh). Then under "Process Material" create a new
+[ShaderMaterial ](/docs/Classes/ShaderMaterial).
 
 Set the ``shader_type`` to ``particles``.
 
@@ -46,7 +46,7 @@ uint hash(uint x) {
 
 ```
 
-These functions come from the default [ParticleProcessMaterial ](class_ParticleProcessMaterial).
+These functions come from the default [ParticleProcessMaterial ](/docs/Classes/ParticleProcessMaterial).
 They are used to generate a random number from each particle's ``RANDOM_SEED``.
 
 A unique thing about particle shaders is that some built-in variables are saved across frames.

@@ -4,8 +4,8 @@
 ## Introduction
 
 For the most common cases, Redot provides ready to use materials for
-most types of shaders, such as [StandardMaterial3D ](class_StandardMaterial3D),
-[CanvasItemMaterial ](class_CanvasItemMaterial) and [ParticleProcessMaterial ](class_ParticleProcessMaterial).
+most types of shaders, such as [StandardMaterial3D ](/docs/Classes/StandardMaterial3D),
+[CanvasItemMaterial ](/docs/Classes/CanvasItemMaterial) and [ParticleProcessMaterial ](/docs/Classes/ParticleProcessMaterial).
 They are flexible implementations that cover most use cases.
 
 Shader materials allow writing a custom shader directly, for maximum flexibility.

@@ -1,9 +1,9 @@
 
 # C# Variant
 
-For a detailed explanation of Variant in general, see the [Variant ](class_Variant) documentation page.
+For a detailed explanation of Variant in general, see the [Variant ](/docs/Classes/Variant) documentation page.
 
-``Redot.Variant`` is used to represent Redot's native [Variant ](class_Variant) type. Any
+``Redot.Variant`` is used to represent Redot's native [Variant ](/docs/Classes/Variant) type. Any
 [Variant-compatible type ](c_sharp_variant_compatible_types) can be converted from/to it.
 We recommend avoiding ``Redot.Variant`` unless it is necessary to interact with untyped engine APIs.
 Take advantage of C#'s type safety when possible.
@@ -23,7 +23,7 @@ Variant numberVariant3 = Variant.From(x);
 ```
 
 Implicit conversions to ``Redot.Variant`` make passing variants as method arguments very convenient.
-For example, the third argument of [tween_property](class_Tween_method_tween_property)
+For example, the third argument of [tween_property](/docs/Classes/Tween_method_tween_property)
 specifying the final color of the tween is a ``Redot.Variant``.
 
 ```csharp
@@ -86,7 +86,7 @@ These C# types are Variant-compatible:
 * All the [built-in value types ](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/built-in-types-table),
   except ``decimal``, ``nint`` and ``nuint``.
 * ``string``.
-* Classes derived from [RedotObject ](class_Object).
+* Classes derived from [RedotObject ](/docs/Classes/Object).
 * Collections types defined in the ``Godot.Collections`` namespace.
 
 Full list of Variant types and their equivalent C# type:

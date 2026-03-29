@@ -4,8 +4,8 @@ import TabItem from "@theme/TabItem";
 # Using NavigationServer
 
 2D and 3D version of the NavigationServer are available as
-[NavigationServer2D](class_NavigationServer2D) and
-[NavigationServer3D](class_NavigationServer3D) respectively.
+[NavigationServer2D](/docs/Classes/NavigationServer2D) and
+[NavigationServer3D](/docs/Classes/NavigationServer3D) respectively.
 
 Both 2D and 3D use the same NavigationServer with NavigationServer3D being the primary server. The NavigationServer2D is a frontend that converts 2D positions into 3D positions and back.
 Hence it is entirely possible (if not a little cumbersome) to exclusively use the NavigationServer3D API for 2D navigation.

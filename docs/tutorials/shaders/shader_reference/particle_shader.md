@@ -18,10 +18,10 @@ take place over multiple frames.
 :::note
 
 Particle shaders are only available with GPU-based particle nodes
-([class_GPUParticles2D](class_GPUParticles2D) and [class_GPUParticles3D](class_GPUParticles3D)).
+([class_GPUParticles2D](/docs/Classes/GPUParticles2D) and [class_GPUParticles3D](/docs/Classes/GPUParticles3D)).
 
-CPU-based particle nodes ([class_CPUParticles2D](class_CPUParticles2D) and
-[class_CPUParticles3D](class_CPUParticles3D)) are *rendered* on the GPU (which means they can
+CPU-based particle nodes ([class_CPUParticles2D](/docs/Classes/CPUParticles2D) and
+[class_CPUParticles3D](/docs/Classes/CPUParticles3D)) are *rendered* on the GPU (which means they can
 use custom CanvasItem or Spatial shaders), but their motion is *simulated*
 on the CPU.
 

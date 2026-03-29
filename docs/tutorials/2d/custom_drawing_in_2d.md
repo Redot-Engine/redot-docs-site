@@ -8,7 +8,7 @@ import TabItem from "@theme/TabItem";
 Redot has nodes to draw sprites, polygons, particles, text, and many other
 common game development needs. However, if you need something specific
 not covered with the standard nodes you can make any 2D node (for example,
-[Control ](class_Control) or [Node2D ](class_Node2D)-based)
+[Control ](/docs/Classes/Control) or [Node2D ](/docs/Classes/Node2D)-based)
 draw on screen using custom commands.
 
 Custom drawing in a 2D node is *really* useful. Here are some use cases:
@@ -24,10 +24,10 @@ Custom drawing in a 2D node is *really* useful. Here are some use cases:
 
 ## Drawing
 
-Add a script to any [CanvasItem ](class_CanvasItem)
-derived node, like [Control ](class_Control) or
-[Node2D ](class_Node2D). Then override the
-[_draw()](class_CanvasItem_private_method__draw) function.
+Add a script to any [CanvasItem ](/docs/Classes/CanvasItem)
+derived node, like [Control ](/docs/Classes/Control) or
+[Node2D ](/docs/Classes/Node2D). Then override the
+[_draw()](/docs/Classes/CanvasItem_private_method__draw) function.
 
 <Tabs>
 
@@ -62,18 +62,18 @@ public partial class MyNode2D : Node2D
 
 </Tabs>
 
-Draw commands are described in the [CanvasItem ](class_CanvasItem)
+Draw commands are described in the [CanvasItem ](/docs/Classes/CanvasItem)
 class reference. There are plenty of them and we will see some of them
 in the examples below.
 
 ## Updating
 
-The [_draw ](class_CanvasItem_private_method__draw) function is only called
+The [_draw ](/docs/Classes/CanvasItem_private_method__draw) function is only called
 once, and then the draw commands are cached and remembered, so further calls
 are unnecessary.
 
 If re-drawing is required because a variable or something else changed,
-call [CanvasItem.queue_redraw ](class_CanvasItem_method_queue_redraw)
+call [CanvasItem.queue_redraw ](/docs/Classes/CanvasItem_method_queue_redraw)
 in that same node and a new ``_draw()`` call will happen.
 
 Here is a little more complex example, where we have a texture variable
@@ -143,8 +143,8 @@ When changing the ``Texture`` property value while the previous script is
 running, the texture will also change automatically.
 
 In some cases, we may need to redraw every frame. For this,
-call [queue_redraw ](class_CanvasItem_method_queue_redraw)
-from the [_process ](class_Node_private_method__process) method, like this:
+call [queue_redraw ](/docs/Classes/CanvasItem_method_queue_redraw)
+from the [_process ](/docs/Classes/Node_private_method__process) method, like this:
 
 <Tabs>
 
@@ -193,10 +193,10 @@ The drawing API uses the CanvasItem's coordinate system, not necessarily pixel
 coordinates. This means ``_draw()`` uses the coordinate space created after
 applying the CanvasItem's transform. Additionally, you can apply a custom
 transform on top of it by using
-[draw_set_transform](class_CanvasItem_method_draw_set_transform) or
-[draw_set_transform_matrix](class_CanvasItem_method_draw_set_transform_matrix).
+[draw_set_transform](/docs/Classes/CanvasItem_method_draw_set_transform) or
+[draw_set_transform_matrix](/docs/Classes/CanvasItem_method_draw_set_transform_matrix).
 
-When using [draw_line ](class_CanvasItem_method_draw_line), you should
+When using [draw_line ](/docs/Classes/CanvasItem_method_draw_line), you should
 consider the width of the line. When using a width that is an odd size, the
 position of the start and end points should be shifted by ``0.5`` to keep the
 line centered, as shown below.
@@ -233,7 +233,7 @@ public override void _Draw()
 
 </Tabs>
 
-The same applies to the [draw_rect ](class_CanvasItem_method_draw_rect)
+The same applies to the [draw_rect ](/docs/Classes/CanvasItem_method_draw_rect)
 method with ``filled = false``.
 
 ![Image](img/draw_rect.png)
@@ -272,7 +272,7 @@ public override void _Draw()
 
 ## Antialiased drawing
 
-Redot offers method parameters in [draw_line](class_CanvasItem_method_draw_line)
+Redot offers method parameters in [draw_line](/docs/Classes/CanvasItem_method_draw_line)
 to enable antialiasing, but not all custom drawing methods offer this ``antialiased``
 parameter.
 
@@ -311,7 +311,7 @@ You will have to code a function to perform this and draw it yourself.
 The following instructions use a fixed set of coordinates that could be too small
 for high resolution screens (larger than 1080p). If that is your case, and the
 drawing is too small consider increasing your window scale in the project setting
-[Display &gt; Window &gt; Stretch &gt; Scale](class_ProjectSettings_property_display/window/stretch/scale)
+[Display &gt; Window &gt; Stretch &gt; Scale](/docs/Classes/ProjectSettings_property_display/window/stretch/scale)
 to adjust the project to a higher resolution (a 2 or 4 scale tends to work well).
 
 :::
@@ -319,7 +319,7 @@ to adjust the project to a higher resolution (a 2 or 4 scale tends to work well)
 ### Drawing a custom polygon shape
 
 While there is a dedicated node to draw custom polygons (
-[Polygon2D ](class_Polygon2D)), we will use in this case exclusively lower
+[Polygon2D ](/docs/Classes/Polygon2D)), we will use in this case exclusively lower
 level drawing functions to combine them on the same node and be able to create
 more complex shapes later on.
 
@@ -440,7 +440,7 @@ public override void _Ready()
 </Tabs>
 
 To finally draw our first shape, we will use the method
-[draw_polygon ](class_CanvasItem_method_draw_polygon)
+[draw_polygon ](/docs/Classes/CanvasItem_method_draw_polygon)
 and pass the points (as an array of Vector2 coordinates) and its color,
 like this:
 
@@ -570,7 +570,7 @@ public override void _Ready()
 </Tabs>
 
 And finally we will use the method
-[draw_polyline ](class_CanvasItem_method_draw_polyline) to actually
+[draw_polyline ](/docs/Classes/CanvasItem_method_draw_polyline) to actually
 draw the line, like this:
 
 <Tabs>
@@ -628,7 +628,7 @@ resulting in the latest shapes hiding earlier ones if they overlap. In this
 case we want the mouth drawn over the head, so we put it afterwards.
 
 Notice how we can define colors in different ways, either with a hexadecimal
-code or a predefined color name. Check the class [Color ](class_Color) for other
+code or a predefined color name. Check the class [Color ](/docs/Classes/Color) for other
 constants and ways to define Colors.
 
 ### Drawing circles
@@ -637,8 +637,8 @@ To create the eyes, we are going to add 4 additional calls to draw the eye
 shapes, in different sizes, colors and positions.
 
 To draw a circle, you position it based on its center using the
-[draw_circle ](class_CanvasItem_method_draw_circle) method. The first
-parameter is a [Vector2](class_Vector2) with the coordinates of its center, the second is
+[draw_circle ](/docs/Classes/CanvasItem_method_draw_circle) method. The first
+parameter is a [Vector2](/docs/Classes/Vector2) with the coordinates of its center, the second is
 its radius, and the third is its color:
 
 <Tabs>
@@ -695,13 +695,13 @@ When executing it, you should have something like this:
 
 For partial, unfilled arcs (portions of a circle shape between certain
 arbitrary angles), you can use the method
-[draw_arc ](class_CanvasItem_method_draw_arc).
+[draw_arc ](/docs/Classes/CanvasItem_method_draw_arc).
 
 ### Drawing lines
 
 To draw the final shape (the nose) we will use a line to approximate it.
 
-[draw_line ](class_CanvasItem_method_draw_line) can be used to draw
+[draw_line ](/docs/Classes/CanvasItem_method_draw_line) can be used to draw
 a single segment by providing its start and end coordinates as arguments,
 like this:
 
@@ -762,16 +762,16 @@ You should now be able to see the following shape on screen:
 
 Note that if multiple unconnected lines are going to be drawn at the same time,
 you may get additional performance by drawing all of them in a single call, using
-the [draw_multiline ](class_CanvasItem_method_draw_multiline) method.
+the [draw_multiline ](/docs/Classes/CanvasItem_method_draw_multiline) method.
 
 ### Drawing text
 
-While using the [Label ](class_Label) Node is the most common way to add
+While using the [Label ](/docs/Classes/Label) Node is the most common way to add
 text to your application, the low-level `_draw` function includes functionality
 to add text to your custom Node drawing. We will use it to add the name "Redot"
 under the robot head.
 
-We will use the [draw_string ](class_CanvasItem_method_draw_string) method
+We will use the [draw_string ](/docs/Classes/CanvasItem_method_draw_string) method
 to do it, like this:
 
 <Tabs>
@@ -842,7 +842,7 @@ You should see the following on your screen:
 ![Image](img/draw_godot_logo_text.webp)
 
 Additional parameters as well as other methods related to text and characters
-can be found on the [CanvasItem ](class_CanvasItem) class reference.
+can be found on the [CanvasItem ](/docs/Classes/CanvasItem) class reference.
 
 ### Show the drawing while editing
 
@@ -947,7 +947,7 @@ While we could rewrite all of the points' coordinates to be centered around
 ``(0, 0)``, including negative coordinates, that would be a lot of work.
 
 One possible way to work around this is to use the lower level
-[draw_set_transform](class_CanvasItem_method_draw_set_transform)
+[draw_set_transform](/docs/Classes/CanvasItem_method_draw_set_transform)
 method to fix this issue, translating all points in the CanvasItem's own space,
 and then moving it back to its original place with a regular node transform,
 either in the editor or in code, like this:
@@ -1000,7 +1000,7 @@ If what we wanted to animate was a property inside the ``_draw()`` call, we must
 call ``queue_redraw()`` to force a refresh, as otherwise it would not be updated on screen.
 
 For example, this is how we can make the robot appear to open and close its mouth, by
-changing the width of its mouth line follow a sinusoidal ([sin](class_@globalscope_method_sin)) curve:
+changing the width of its mouth line follow a sinusoidal ([sin](/docs/Classes/@globalscope_method_sin)) curve:
 
 <Tabs>
 
@@ -1058,8 +1058,8 @@ It will look somewhat like this when run:
 
 Please note that ``_mouth_width`` is a user defined property like any other
 and it or any other used as a drawing argument can be animated using more
-standard and high-level methods such as a [Tween](class_Tween) or an
-[AnimationPlayer](class_AnimationPlayer) Node. The only difference is
+standard and high-level methods such as a [Tween](/docs/Classes/Tween) or an
+[AnimationPlayer](/docs/Classes/AnimationPlayer) Node. The only difference is
 that a ``queue_redraw()`` call is needed to apply those changes so they get
 shown on screen.
 
@@ -1070,10 +1070,10 @@ custom shapes and animations. This could have some advantages, such as using
 exact coordinates and vectors for drawing, rather than bitmaps -which means
 they will scale well when transformed on screen. In some cases, similar results
 could be achieved composing higher level functionality with nodes such as
-[sprites](class_Sprite2D) or
-[AnimatedSprites](class_AnimatedSprite2D) loading SVG resources (which are
+[sprites](/docs/Classes/Sprite2D) or
+[AnimatedSprites](/docs/Classes/AnimatedSprite2D) loading SVG resources (which are
 also images defined with vectors) and the
-[AnimationPlayer](class_AnimationPlayer) node.
+[AnimationPlayer](/docs/Classes/AnimationPlayer) node.
 
 In other cases that will not be possible because we will not know what the
 resulting graphical representation will be before running the code. Here we
@@ -1152,7 +1152,7 @@ public partial class MyNode2DLine : Node2D
 
 In this example we obtain the position of the mouse in the default viewport
 every frame with the method
-[get_mouse_position ](class_Viewport_method_get_mouse_position). If the
+[get_mouse_position ](/docs/Classes/Viewport_method_get_mouse_position). If the
 position has changed since the last draw request (a small optimization to
 avoid redrawing on every frame)- we will schedule a redraw. Our ``_draw()``
 method only has one line: requesting the drawing of a green line of
@@ -1229,7 +1229,7 @@ public partial class MyNode2DLine : Node2D
 ![Image](img/draw_dynamic_exported_properties.webp)
 
 To draw the arc, we can use the method
-[draw_arc](class_CanvasItem_method_draw_arc). There are many
+[draw_arc](/docs/Classes/CanvasItem_method_draw_arc). There are many
 arcs that pass through 2 points, so we will chose for this example
 the semicircle that has its center in the middle point between the 2 initial
 points.

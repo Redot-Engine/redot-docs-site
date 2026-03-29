@@ -2,7 +2,7 @@
 # GDScript exported properties
 
 In Redot, class members can be exported. This means their value gets saved along
-with the resource (such as the [scene ](class_PackedScene)) they're
+with the resource (such as the [scene ](/docs/Classes/PackedScene)) they're
 attached to. They will also be available for editing in the property editor.
 Exporting is done by using the ``@export`` annotation.
 
@@ -58,7 +58,7 @@ Resources and nodes can be exported.
 ## Grouping exports
 
 It is possible to group your exported properties inside the Inspector
-with the [@export_group ](class_@GDScript_annotation_@export_group)
+with the [@export_group ](/docs/Classes/@GDScript_annotation_@export_group)
 annotation. Every exported property after this annotation will be added to
 the group. Start a new group or use ``@export_group("")`` to break out.
 
@@ -71,7 +71,7 @@ the group. Start a new group or use ``@export_group("")`` to break out.
 The second argument of the annotation can be used to only group properties
 with the specified prefix.
 
-Groups cannot be nested, use [@export_subgroup ](class_@GDScript_annotation_@export_subgroup)
+Groups cannot be nested, use [@export_subgroup ](/docs/Classes/@GDScript_annotation_@export_subgroup)
 to create subgroups within a group.
 
 ```
@@ -82,7 +82,7 @@ to create subgroups within a group.
 ```
 
 You can also change the name of your main category, or create additional
-categories in the property list with the [@export_category ](class_@GDScript_annotation_@export_category)
+categories in the property list with the [@export_category ](/docs/Classes/@GDScript_annotation_@export_category)
 annotation.
 
 ```
@@ -284,7 +284,7 @@ var node = get_node(node_path)
 ```
 
 If you want to limit the types of nodes for NodePaths, you can use the
-[@export_node_path](class_@GDScript_annotation_@export_node_path)
+[@export_node_path](/docs/Classes/@GDScript_annotation_@export_node_path)
 annotation:
 
 ```
@@ -380,7 +380,7 @@ enum NamedEnum {THING_1, THING_2, ANOTHER_THING = -1}
 ```
 
 Integer and string properties can also be limited to a specific list of values using
-the [@export_enum ](class_@GDScript_annotation_@export_enum) annotation.
+the [@export_enum ](/docs/Classes/@GDScript_annotation_@export_enum) annotation.
 The editor will create a widget in the Inspector, enumerating the following as Warrior,
 Magician, Thief. The value will be stored as an integer, corresponding to the index
 of the selected option (i.e. ``0``, ``1``,  or ``2``).
@@ -475,16 +475,16 @@ Other export variants can also be used when exporting arrays:
 
 By default, exporting a property has two effects:
 
-1. makes the property stored in the scene/resource file ([PROPERTY_USAGE_STORAGE ](class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE));
-2. adds a field to the Inspector ([PROPERTY_USAGE_EDITOR ](class_@GlobalScope_constant_PROPERTY_USAGE_EDITOR)).
+1. makes the property stored in the scene/resource file ([PROPERTY_USAGE_STORAGE ](/docs/Classes/@GlobalScope_constant_PROPERTY_USAGE_STORAGE));
+2. adds a field to the Inspector ([PROPERTY_USAGE_EDITOR ](/docs/Classes/@GlobalScope_constant_PROPERTY_USAGE_EDITOR)).
 
 However, sometimes you may want to make a property serializable, but not display it
 in the editor to prevent unintentional changes and cluttering the interface.
 
-To do this you can use [@export_storage ](class_@GDScript_annotation_@export_storage).
-This can be useful for [@tool ](class_@GDScript_annotation_@tool) scripts.
-Also the property value is copied when [Resource.duplicate() ](class_Resource_method_duplicate)
-or [Node.duplicate() ](class_Node_method_duplicate) is called, unlike non-exported variables.
+To do this you can use [@export_storage ](/docs/Classes/@GDScript_annotation_@export_storage).
+This can be useful for [@tool ](/docs/Classes/@GDScript_annotation_@tool) scripts.
+Also the property value is copied when [Resource.duplicate() ](/docs/Classes/Resource_method_duplicate)
+or [Node.duplicate() ](/docs/Classes/Node_method_duplicate) is called, unlike non-exported variables.
 
 ```
 var a # Not stored in the file, not displayed in the editor.
@@ -511,7 +511,7 @@ For example, this exposes the ``altitude`` property with no range limits but a
 The above is normally not feasible with the standard ``@export_range`` syntax,
 since it requires defining a range.
 
-See the [class reference ](class_@GDScript_annotation_@export_custom)
+See the [class reference ](/docs/Classes/@GDScript_annotation_@export_custom)
 for a list of parameters and their allowed values.
 
 :::warning
@@ -544,7 +544,7 @@ func hello():
 When changing an exported variable's value from a script in
 [doc_gdscript_tool_mode](doc_gdscript_tool_mode), the value in the inspector won't be updated
 automatically. To update it, call
-[notify_property_list_changed() ](class_Object_method_notify_property_list_changed)
+[notify_property_list_changed() ](/docs/Classes/Object_method_notify_property_list_changed)
 after setting the exported variable's value.
 
 ## Advanced exports
@@ -555,9 +555,9 @@ common exporting features which can be implemented with a low-level API.
 
 Before reading further, you should get familiar with the way properties are
 handled and how they can be customized with
-[_set() ](class_Object_private_method__set),
-[_get() ](class_Object_private_method__get), and
-[_get_property_list() ](class_Object_private_method__get_property_list) methods as
+[_set() ](/docs/Classes/Object_private_method__set),
+[_get() ](/docs/Classes/Object_private_method__get), and
+[_get_property_list() ](/docs/Classes/Object_private_method__get_property_list) methods as
 described in [doc_accessing_data_or_logic_from_object](doc_accessing_data_or_logic_from_object).
 
 :::info

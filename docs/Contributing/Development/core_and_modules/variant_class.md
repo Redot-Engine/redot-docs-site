@@ -53,48 +53,48 @@ These types are available in Variant:
 | Type | Notes |
 | --- | --- |
 | Nil (can only store ``null``) | Nullable type |
-| [class_bool](class_bool) |  |
-| [class_int](class_int) |  |
-| [class_float](class_float) |  |
-| [class_string](class_string) |  |
-| [class_vector2](class_vector2) |  |
-| [class_vector2i](class_vector2i) |  |
-| [class_rect2](class_rect2) | 2D counterpart of AABB |
-| [class_rect2i](class_rect2i) |  |
-| [class_vector3](class_vector3) |  |
-| [class_vector3i](class_vector3i) |  |
-| [class_transform2d](class_transform2d) |  |
-| [class_vector4](class_vector4) |  |
-| [class_vector4i](class_vector4i) |  |
-| [class_plane](class_plane) |  |
-| [class_quaternion](class_quaternion) |  |
-| [class_aabb](class_aabb) | 3D counterpart of Rect2 |
-| [class_basis](class_basis) |  |
-| [class_transform3d](class_transform3d) |  |
-| [class_projection](class_projection) |  |
-| [class_color](class_color) |  |
-| [class_stringname](class_stringname) |  |
-| [class_nodepath](class_nodepath) |  |
-| [class_rid](class_rid) |  |
-| [class_object](class_object) | Nullable type |
-| [class_callable](class_callable) |  |
-| [class_signal](class_signal) |  |
-| [class_dictionary](class_dictionary) |  |
-| [class_array](class_array) |  |
-| [class_packedbytearray](class_packedbytearray) |  |
-| [class_packedint32array](class_packedint32array) |  |
-| [class_packedint64array](class_packedint64array) |  |
-| [class_packedfloat32array](class_packedfloat32array) |  |
-| [class_packedfloat64array](class_packedfloat64array) |  |
-| [class_packedstringarray](class_packedstringarray) |  |
-| [class_packedvector2array](class_packedvector2array) |  |
-| [class_packedvector3array](class_packedvector3array) |  |
-| [class_packedcolorarray](class_packedcolorarray) |  |
-| [class_packedvector4array](class_packedvector4array) |  |
+| [class_bool](/docs/Classes/bool) |  |
+| [class_int](/docs/Classes/int) |  |
+| [class_float](/docs/Classes/float) |  |
+| [class_string](/docs/Classes/string) |  |
+| [class_vector2](/docs/Classes/vector2) |  |
+| [class_vector2i](/docs/Classes/vector2i) |  |
+| [class_rect2](/docs/Classes/rect2) | 2D counterpart of AABB |
+| [class_rect2i](/docs/Classes/rect2i) |  |
+| [class_vector3](/docs/Classes/vector3) |  |
+| [class_vector3i](/docs/Classes/vector3i) |  |
+| [class_transform2d](/docs/Classes/transform2d) |  |
+| [class_vector4](/docs/Classes/vector4) |  |
+| [class_vector4i](/docs/Classes/vector4i) |  |
+| [class_plane](/docs/Classes/plane) |  |
+| [class_quaternion](/docs/Classes/quaternion) |  |
+| [class_aabb](/docs/Classes/aabb) | 3D counterpart of Rect2 |
+| [class_basis](/docs/Classes/basis) |  |
+| [class_transform3d](/docs/Classes/transform3d) |  |
+| [class_projection](/docs/Classes/projection) |  |
+| [class_color](/docs/Classes/color) |  |
+| [class_stringname](/docs/Classes/stringname) |  |
+| [class_nodepath](/docs/Classes/nodepath) |  |
+| [class_rid](/docs/Classes/rid) |  |
+| [class_object](/docs/Classes/object) | Nullable type |
+| [class_callable](/docs/Classes/callable) |  |
+| [class_signal](/docs/Classes/signal) |  |
+| [class_dictionary](/docs/Classes/dictionary) |  |
+| [class_array](/docs/Classes/array) |  |
+| [class_packedbytearray](/docs/Classes/packedbytearray) |  |
+| [class_packedint32array](/docs/Classes/packedint32array) |  |
+| [class_packedint64array](/docs/Classes/packedint64array) |  |
+| [class_packedfloat32array](/docs/Classes/packedfloat32array) |  |
+| [class_packedfloat64array](/docs/Classes/packedfloat64array) |  |
+| [class_packedstringarray](/docs/Classes/packedstringarray) |  |
+| [class_packedvector2array](/docs/Classes/packedvector2array) |  |
+| [class_packedvector3array](/docs/Classes/packedvector3array) |  |
+| [class_packedcolorarray](/docs/Classes/packedcolorarray) |  |
+| [class_packedvector4array](/docs/Classes/packedvector4array) |  |
 
 ## Containers: Array and Dictionary
 
-Both [class_array](class_array) and [class_dictionary](class_dictionary) are implemented using
+Both [class_array](/docs/Classes/array) and [class_dictionary](/docs/Classes/dictionary) are implemented using
 variants. A Dictionary can match any datatype used as key to any other datatype.
 An Array just holds an array of Variants. Of course, a Variant can also hold a
 Dictionary or an Array inside, making it even more flexible.

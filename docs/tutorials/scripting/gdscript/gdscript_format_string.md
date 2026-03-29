@@ -39,7 +39,7 @@ string.
 
 The ``%s`` seen in the example above is the simplest placeholder and works for
 most use cases: it converts the value by the same method by which an implicit
-String conversion or [str() ](class_@GlobalScope_method_str) would convert
+String conversion or [str() ](/docs/Classes/@GlobalScope_method_str) would convert
 it. Strings remain unchanged, booleans turn into either ``"True"`` or ``"False"``,
 an ``int`` or ``float`` becomes a decimal, and other types usually return their data
 in a human-readable string.
@@ -186,7 +186,7 @@ print("Remaining health: %d%%" % health)
 ## String format method
 
 There is also another way to format text in GDScript, namely the 
-[String.format() ](class_String_method_format)
+[String.format() ](/docs/Classes/String_method_format)
 method. It replaces all occurrences of a key in the string with the corresponding
 value. The method can handle arrays or dictionaries for the key/value pairs.
 
@@ -275,6 +275,6 @@ a better choice. In many cases, string concatenation is also less readable.
 :::note
 
 In Redot's C++ code, GDScript format strings can be accessed using the
-``vformat()`` helper function in the [Variant](class_Variant) header.
+``vformat()`` helper function in the [Variant](/docs/Classes/Variant) header.
 
 :::

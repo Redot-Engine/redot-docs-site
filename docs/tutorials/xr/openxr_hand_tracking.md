@@ -96,7 +96,7 @@ within our tracking space.
 
 This information has been separated out for the following use cases:
 
- *  Tracking happens in the local space of the [XROrigin3D ](class_xrorigin3d) node.
+ *  Tracking happens in the local space of the [XROrigin3D ](/docs/Classes/xrorigin3d) node.
     This node must be a child of the `XROrigin3D` node in order to be correctly placed.
  *  This node can be used as an IK target when an upper body mesh with arms is used instead
     of separate hand meshes.
@@ -106,7 +106,7 @@ This information has been separated out for the following use cases:
 
 We'll concentrate on the first use case only.
 
-For this you need to add an [XRNode3D ](class_xrnode3d) node to your ``XROrigin3D`` node.
+For this you need to add an [XRNode3D ](/docs/Classes/xrnode3d) node to your ``XROrigin3D`` node.
 
  *  On this node the ``tracker`` should be set to ``/user/hand_tracker/left`` or ``/user/hand_tracker/right``
     for the left or right hand respectively.
@@ -117,18 +117,18 @@ For this you need to add an [XRNode3D ](class_xrnode3d) node to your ``XROrigin3
 ### Rigged hand mesh
 
 In order to display our hand we need a hand mesh that is properly rigged and skinned.
-For this Redot uses the hand bone structure as defined for the [Redot Humanoid ](class_skeletonprofilehumanoid)
+For this Redot uses the hand bone structure as defined for the [Redot Humanoid ](/docs/Classes/skeletonprofilehumanoid)
 but optionally supporting an extra tip bone for each finger.
 
 The [OpenXR hand tracking demo ](https://github.com/redot-engine/redot-demo-projects/tree/master/xr/openxr_hand_tracking_demo)
 contains example glTF files of properly rigged hands.
 
 We will be using those here and add them as a child to our ``XRNode3D`` node.
-We also need to enable editable children to gain access to our [Skeleton3D ](class_skeleton3d) node.
+We also need to enable editable children to gain access to our [Skeleton3D ](/docs/Classes/skeleton3d) node.
 
 ### The hand skeleton modifier
 
-Finally we need to add a [XRHandModifier3D ](class_xrhandmodifier3d) node as a child to our ``Skeleton3D`` node.
+Finally we need to add a [XRHandModifier3D ](/docs/Classes/xrhandmodifier3d) node as a child to our ``Skeleton3D`` node.
 This node will obtain the finger tracking data from OpenXR and apply it the hand model.
 
 You need to set the ``Hand Tracker`` property to either ``/user/hand_tracker/left`` or ``/user/hand_tracker/right``
@@ -334,7 +334,7 @@ If the platform doesn't support any interaction profiles when hand tracking is u
 or if you're building an application where you need more complicated gesture support
 you're going to need to build your own gesture recognition system.
 
-You can obtain the full hand tracking data through the [XRHandTracker ](class_xrhandtracker)
+You can obtain the full hand tracking data through the [XRHandTracker ](/docs/Classes/xrhandtracker)
 resource for each hand. You can obtain the hand tracker by calling ``XRServer.get_tracker``
 and using either ``/user/hand_tracker/left`` or ``/user/hand_tracker/left`` as the tracker.
 This resource provides access to all the joint information for the given hand.

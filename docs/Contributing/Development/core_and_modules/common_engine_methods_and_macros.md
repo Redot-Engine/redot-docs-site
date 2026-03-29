@@ -42,7 +42,7 @@ described below.
 
 ## Format a string
 
-The ``vformat()`` function returns a formatted [class_String](class_String). It behaves
+The ``vformat()`` function returns a formatted [class_String](/docs/Classes/String). It behaves
 in a way similar to C's ``sprintf()``:
 
 ```cpp

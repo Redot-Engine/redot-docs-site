@@ -3,7 +3,7 @@
 
 You have decided to start writing your own custom Spatial shader. Maybe you saw
 a cool trick online that was done with shaders, or you have found that the
-[StandardMaterial3D ](class_StandardMaterial3D) isn't quite meeting your
+[StandardMaterial3D ](/docs/Classes/StandardMaterial3D) isn't quite meeting your
 needs. Either way, you have decided to write your own and now you need to figure
 out where to start.
 
@@ -33,16 +33,16 @@ introduction from `The Book of Shaders
 
 ## Where to assign my material
 
-In 3D, objects are drawn using [Meshes ](class_Mesh). Meshes are a resource
+In 3D, objects are drawn using [Meshes ](/docs/Classes/Mesh). Meshes are a resource
 type that store geometry (the shape of your object) and materials (the color and
 how the object reacts to light) in units called "surfaces". A Mesh can have
 multiple surfaces, or just one. Typically, you would import a mesh from another
-program (e.g. Blender). But Redot also has a few [PrimitiveMeshes ](class_primitivemesh) that allow you to add basic geometry to a scene without
+program (e.g. Blender). But Redot also has a few [PrimitiveMeshes ](/docs/Classes/primitivemesh) that allow you to add basic geometry to a scene without
 importing Meshes.
 
 There are multiple node types that you can use to draw a mesh. The main one is
-[MeshInstance3D ](class_MeshInstance3D), but you can also use [GPUParticles3D ](class_GPUParticles3D), [MultiMeshes ](class_MultiMesh) (with a
-[MultiMeshInstance3D ](class_MultiMeshInstance3D)), or others.
+[MeshInstance3D ](/docs/Classes/MeshInstance3D), but you can also use [GPUParticles3D ](/docs/Classes/GPUParticles3D), [MultiMeshes ](/docs/Classes/MultiMesh) (with a
+[MultiMeshInstance3D ](/docs/Classes/MultiMeshInstance3D)), or others.
 
 Typically, a material is associated with a given surface in a mesh, but some
 nodes, like MeshInstance3D, allow you to override the material for a specific
@@ -58,12 +58,12 @@ advantage of the MeshInstance3D's ability to override materials.
 
 ## Setting up
 
-Add a new [MeshInstance3D ](class_MeshInstance3D) node to your scene.
+Add a new [MeshInstance3D ](/docs/Classes/MeshInstance3D) node to your scene.
 
 In the inspector tab beside "Mesh" click "[empty]" and select "New PlaneMesh".
 Then click on the image of a plane that appears.
 
-This adds a [PlaneMesh ](class_planemesh) to our scene.
+This adds a [PlaneMesh ](/docs/Classes/planemesh) to our scene.
 
 Then, in the viewport, click in the upper left corner on the button that says
 "Perspective". A menu will appear. In the middle of the menu are options for how
@@ -73,12 +73,12 @@ This will allow you to see the triangles making up the plane.
 
 ![Image](img/plane.png)
 
-Now set ``Subdivide Width`` and ``Subdivide Depth`` of the [PlaneMesh ](class_planemesh) to ``32``.
+Now set ``Subdivide Width`` and ``Subdivide Depth`` of the [PlaneMesh ](/docs/Classes/planemesh) to ``32``.
 
 ![Image](img/plane-sub-set.webp)
 
 You can see that there are now many more triangles in the
-[MeshInstance3D](class_MeshInstance3D). This will give us more vertices to work with
+[MeshInstance3D](/docs/Classes/MeshInstance3D). This will give us more vertices to work with
 and thus allow us to add more detail.
 
 ![Image](img/plane-sub.png)
@@ -109,7 +109,7 @@ shader_type spatial;
 
 For now ignore the ``fragment()`` function
 and define the ``vertex()`` function. The ``vertex()`` function
-determines where the vertices of your [MeshInstance3D](class_MeshInstance3D) appear in
+determines where the vertices of your [MeshInstance3D](/docs/Classes/MeshInstance3D) appear in
 the final scene. We will be using it to offset the height of each vertex and
 make our flat plane appear like a little terrain.
 
@@ -163,7 +163,7 @@ Noise is a very popular tool for faking the look of terrain. Think of it as
 similar to the cosine function where you have repeating hills except, with
 noise, each hill has a different height.
 
-Redot provides the [NoiseTexture2D ](class_noisetexture2D) resource for
+Redot provides the [NoiseTexture2D ](/docs/Classes/noisetexture2D) resource for
 generating a noise texture that can be accessed from a shader.
 
 To access a texture in a shader add the following code near the top of your
@@ -179,7 +179,7 @@ inspector under your material. You should see a section called "Shader Params".
 If you open it up, you'll see a section called "noise".
 
 Click beside it where it says "[empty]" and select "New NoiseTexture2D". Then in
-your [NoiseTexture2D ](class_noisetexture2D) click beside where it says "Noise" and select "New
+your [NoiseTexture2D ](/docs/Classes/noisetexture2D) click beside where it says "Noise" and select "New
 FastNoiseLite".
 
 :::note
@@ -229,7 +229,7 @@ texture, now let's learn how they work.
 Uniform variables allow you to pass data from the game into the shader. They are
 very useful for controlling shader effects. Uniforms can be almost any datatype
 that can be used in the shader. To use a uniform, you declare it in your
-[Shader](class_Shader) using the keyword ``uniform``.
+[Shader](/docs/Classes/Shader) using the keyword ``uniform``.
 
 Let's make a uniform that changes the height of the terrain.
 
@@ -261,8 +261,8 @@ MeshInstance3D you would access the material using
 :::
 
 Remember that the string passed into ``set_shader_parameter()`` must match the name
-of the uniform variable in the [Shader](class_Shader). You can use the
-uniform variable anywhere inside your [Shader](class_Shader). Here, we will
+of the uniform variable in the [Shader](/docs/Classes/Shader). You can use the
+uniform variable anywhere inside your [Shader](/docs/Classes/Shader). Here, we will
 use it to set the height value instead of arbitrarily multiplying by ``0.5``.
 
 ```glsl
@@ -275,7 +275,7 @@ Now it looks much better.
 ![Image](img/noise-low.png)
 
 Using uniforms, we can even change the value every frame to animate the height
-of the terrain. Combined with [Tweens ](class_Tween), this can be
+of the terrain. Combined with [Tweens ](/docs/Classes/Tween), this can be
 especially useful for animations.
 
 ## Interacting with light
@@ -289,13 +289,13 @@ Additionally in the 3D scene toolbar, turn off preview sunlight.
 Note how the mesh color goes flat. This is because the lighting on it is flat.
 Let's add a light!
 
-First, we will add an [OmniLight3D](class_OmniLight3D) to the scene.
+First, we will add an [OmniLight3D](/docs/Classes/OmniLight3D) to the scene.
 
 ![Image](img/light.png)
 
 You can see the light affecting the terrain, but it looks odd. The problem is
 the light is affecting the terrain as if it were a flat plane. This is because
-the light shader uses the normals from the [Mesh ](class_mesh) to calculate
+the light shader uses the normals from the [Mesh ](/docs/Classes/mesh) to calculate
 light.
 
 The normals are stored in the Mesh, but we are changing the shape of the Mesh in
@@ -316,8 +316,8 @@ uniform sampler2D normalmap;
 
 ```
 
-Set this second uniform texture to another [NoiseTexture2D ](class_noisetexture2D) with another
-[FastNoiseLite ](class_fastnoiselite). But this time, check **As Normalmap**.
+Set this second uniform texture to another [NoiseTexture2D ](/docs/Classes/noisetexture2D) with another
+[FastNoiseLite ](/docs/Classes/fastnoiselite). But this time, check **As Normalmap**.
 
 ![Image](img/normal-set.webp)
 

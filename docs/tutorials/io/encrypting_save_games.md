@@ -3,7 +3,7 @@ import TabItem from "@theme/TabItem";
 
 # Encrypting save games
 
-The class [FileAccess ](class_FileAccess) can open a file at a
+The class [FileAccess ](/docs/Classes/FileAccess) can open a file at a
 location and read/write data (integers, strings and variants).
 It also supports encryption.
 To create an encrypted file, a passphrase must be provided, like this:

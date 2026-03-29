@@ -61,15 +61,3 @@ You can download them by clicking the link below.
 [dodge_the_creeps_2d_assets.zip](https://github.com/redot-engine/redot-docs-site-project-starters/releases/download/latest-4.x/dodge_the_creeps_2d_assets.zip).
 
 ## Contents
-
-.. toctree::
-   :maxdepth: 1
-   :name: toc-learn-first_2d_game
-
-   01.project_setup
-   02.player_scene
-   03.coding_the_player
-   04.creating_the_enemy
-   05.the_main_game_scene
-   06.heads_up_display
-   07.finishing-up

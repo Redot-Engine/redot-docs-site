@@ -11,14 +11,3 @@ step-by-step tutorial where you will code a game from scratch. By the end of it,
 you will have the necessary foundations to explore more features in other
 sections. We also included links to pages that cover a given topic in-depth
 where appropriate.
-
-.. toctree::
-   :maxdepth: 1
-   :name: toc-learn-step_by_step
-
-   nodes_and_scenes
-   instancing
-   scripting_languages
-   scripting_first_script
-   scripting_player_input
-   signals

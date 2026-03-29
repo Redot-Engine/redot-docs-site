@@ -51,18 +51,3 @@ implement the jump and squashing mechanic before refining the game with some
 nice animation. We'll wrap up with the score and the retry screen.
 
 ## Contents
-
-.. toctree::
-   :maxdepth: 1
-   :name: toc-learn-first_3d_game
-
-   01.game_setup
-   02.player_input
-   03.player_movement_code
-   04.mob_scene
-   05.spawning_mobs
-   06.jump_and_squash
-   07.killing_player
-   08.score_and_replay
-   09.adding_animations
-   going_further

@@ -1,8 +1,6 @@
 name: Sync Class Reference
 
 on:
-  repository_dispatch:
-    types: [sync_class_ref]
   workflow_dispatch:
   # Scheduled updates only run on the default/master branch.
   # Other branches need to be run manually (usually after a new release for that branch).
@@ -28,7 +26,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    
+
     steps:
       - name: Checkout the documentation repository
         uses: actions/checkout@v4
@@ -53,7 +51,22 @@ jobs:
 
       - name: Remove old documentation
         run: |
-          rm ${{ github.workspace }}/docs/Classes/class_*.md
+          excluded_files=(
+            "index.md"
+          )
+
+          shopt -s nullglob
+
+          for file in "${{ github.workspace }}/docs/Classes"/*.md; do
+            filename="$(basename "$file")"
+
+            if printf '%s\n' "${excluded_files[@]}" | grep -Fxq "$filename"; then
+              echo "Keeping excluded file: $filename"
+              continue
+            fi
+
+            rm "$file"
+          done
 
       - name: Build new documentation
         run: |

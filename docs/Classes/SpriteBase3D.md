@@ -348,7 +348,7 @@ The direction in which the front of the texture faces.
 
 The billboard mode to use for the sprite.
 
-\ **Note:** When billboarding is enabled and the material also casts shadows, billboards will face **the** camera in the scene when rendering shadows. In scenes with multiple cameras, the intended shadow cannot be determined and this will result in undefined behavior. See [GitHub Pull Request #72638](https://github.com/redot-engine/redot-engine/pull/72638) for details.
+\ **Note:** When billboarding is enabled and the material also casts shadows, billboards will face **the** camera in the scene when rendering shadows. In scenes with multiple cameras, the intended shadow cannot be determined and this will result in undefined behavior. See [GitHub Pull Request #72638](https://github.com/godotengine/godot/pull/72638) for details.
 
 <hr class="classref-item-separator"/>
 

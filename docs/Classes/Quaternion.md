@@ -194,6 +194,14 @@ There are notable differences when using this API with C#. See the C# difference
       <td>[Quaternion](Quaternion.md)</td>
       <td>[spherical_cubic_interpolate_in_time](#Quaternion_method_spherical_cubic_interpolate_in_time)\ (\ b\: [Quaternion](Quaternion.md), pre_a\: [Quaternion](Quaternion.md), post_b\: [Quaternion](Quaternion.md), weight\: [float](float.md), b_t\: [float](float.md), pre_a_t\: [float](float.md), post_b_t\: [float](float.md)\ ) <span class="const">const</span></td>
     </tr>
+    <tr>
+      <td>[Quaternion](Quaternion.md)</td>
+      <td>[spherical_monotonic_cubic_interpolate](#Quaternion_method_spherical_monotonic_cubic_interpolate)\ (\ b\: [Quaternion](Quaternion.md), pre_a\: [Quaternion](Quaternion.md), post_b\: [Quaternion](Quaternion.md), weight\: [float](float.md)\ ) <span class="const">const</span></td>
+    </tr>
+    <tr>
+      <td>[Quaternion](Quaternion.md)</td>
+      <td>[spherical_monotonic_cubic_interpolate_in_time](#Quaternion_method_spherical_monotonic_cubic_interpolate_in_time)\ (\ b\: [Quaternion](Quaternion.md), pre_a\: [Quaternion](Quaternion.md), post_b\: [Quaternion](Quaternion.md), weight\: [float](float.md), b_t\: [float](float.md), pre_a_t\: [float](float.md), post_b_t\: [float](float.md)\ ) <span class="const">const</span></td>
+    </tr>
   </tbody>
 </table>
 
@@ -595,6 +603,28 @@ Performs a spherical cubic interpolation between quaternions `pre_a`, this vecto
 Performs a spherical cubic interpolation between quaternions `pre_a`, this vector, `b`, and `post_b`, by the given amount `weight`.
 
 It can perform smoother interpolation than [spherical_cubic_interpolate()](Quaternion.md#Quaternion_method_spherical_cubic_interpolate) by the time values.
+
+<hr class="classref-item-separator"/>
+
+<a id="Quaternion_method_spherical_monotonic_cubic_interpolate"></a>
+
+<!-- classref-method -->
+
+[Quaternion](Quaternion.md) **spherical_monotonic_cubic_interpolate**\ (\ b\: [Quaternion](Quaternion.md), pre_a\: [Quaternion](Quaternion.md), post_b\: [Quaternion](Quaternion.md), weight\: [float](float.md)\ ) <span class="const">const</span> [🔗](#Quaternion_method_spherical_monotonic_cubic_interpolate)
+
+Performs a spherical monotonic cubic interpolation between quaternions `pre_a`, this vector, `b`, and `post_b`, by the given amount `weight`.
+
+<hr class="classref-item-separator"/>
+
+<a id="Quaternion_method_spherical_monotonic_cubic_interpolate_in_time"></a>
+
+<!-- classref-method -->
+
+[Quaternion](Quaternion.md) **spherical_monotonic_cubic_interpolate_in_time**\ (\ b\: [Quaternion](Quaternion.md), pre_a\: [Quaternion](Quaternion.md), post_b\: [Quaternion](Quaternion.md), weight\: [float](float.md), b_t\: [float](float.md), pre_a_t\: [float](float.md), post_b_t\: [float](float.md)\ ) <span class="const">const</span> [🔗](#Quaternion_method_spherical_monotonic_cubic_interpolate_in_time)
+
+Performs a spherical monotonic cubic interpolation between quaternions `pre_a`, this vector, `b`, and `post_b`, by the given amount `weight`.
+
+It can perform smoother interpolation than [spherical_monotonic_cubic_interpolate()](Quaternion.md#Quaternion_method_spherical_monotonic_cubic_interpolate) by the time values.
 
 <hr class="classref-section-separator"/>
 

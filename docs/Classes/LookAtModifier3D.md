@@ -120,6 +120,11 @@ When applying multiple **LookAtModifier3D**\\ s, the **LookAtModifier3D** assign
       <td>`1`</td>
     </tr>
     <tr>
+      <td>[bool](bool.md)</td>
+      <td>[relative](#LookAtModifier3D_property_relative)</td>
+      <td>`true`</td>
+    </tr>
+    <tr>
       <td>[float](float.md)</td>
       <td>[secondary_damp_threshold](#LookAtModifier3D_property_secondary_damp_threshold)</td>
       <td></td>
@@ -517,6 +522,21 @@ The limit angle of positive side of the primary rotation when [symmetry_limitati
 - [Axis](Vector3.md#enum_Vector3_Axis) **get_primary_rotation_axis**\ (\ )
 
 The axis of the first rotation. This [SkeletonModifier3D](SkeletonModifier3D.md) works by compositing the rotation by Euler angles to prevent to rotate the [forward_axis](LookAtModifier3D.md#LookAtModifier3D_property_forward_axis).
+
+<hr class="classref-item-separator"/>
+
+<a id="LookAtModifier3D_property_relative"></a>
+
+<!-- classref-property -->
+
+[bool](bool.md) **relative** = `true` [🔗](#LookAtModifier3D_property_relative)
+
+<!-- classref-property-setget -->
+
+- `void` **set_relative**\ (\ value\: [bool](bool.md)\ )
+- [bool](bool.md) **is_relative**\ (\ )
+
+The relative option. If ``true``, the rotation is applied relative to the pose. If ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **LookAtModifier3D**'s result.
 
 <hr class="classref-item-separator"/>
 

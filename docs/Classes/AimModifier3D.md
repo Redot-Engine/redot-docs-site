@@ -55,6 +55,10 @@ The feature is simplified, but instead it is implemented with smooth tracking wi
     </tr>
     <tr>
       <td>[bool](bool.md)</td>
+      <td>[is_relative](#AimModifier3D_method_is_relative)\ (\ index\: [int](int.md)\ ) <span class="const">const</span></td>
+    </tr>
+    <tr>
+      <td>[bool](bool.md)</td>
       <td>[is_using_euler](#AimModifier3D_method_is_using_euler)\ (\ index\: [int](int.md)\ ) <span class="const">const</span></td>
     </tr>
     <tr>
@@ -68,6 +72,10 @@ The feature is simplified, but instead it is implemented with smooth tracking wi
     <tr>
       <td>`void`</td>
       <td>[set_primary_rotation_axis](#AimModifier3D_method_set_primary_rotation_axis)\ (\ index\: [int](int.md), axis\: [Axis](Vector3.md#enum_Vector3_Axis)\ )</td>
+    </tr>
+    <tr>
+      <td>`void`</td>
+      <td>[set_relative](#AimModifier3D_method_set_relative)\ (\ index\: [int](int.md), enabled\: [bool](bool.md)\ )</td>
     </tr>
     <tr>
       <td>`void`</td>
@@ -125,6 +133,16 @@ Returns the axis of the first rotation. It is enabled only if [is_using_euler()]
 
 <hr class="classref-item-separator"/>
 
+<a id="AimModifier3D_method_is_relative"></a>
+
+<!-- classref-method -->
+
+[bool](bool.md) **is_relative**\ (\ index\: [int](int.md)\ ) <span class="const">const</span> [🔗](#AimModifier3D_method_is_relative)
+
+Returns ``true`` if the relative option is enabled in the setting at `index`.
+
+<hr class="classref-item-separator"/>
+
 <a id="AimModifier3D_method_is_using_euler"></a>
 
 <!-- classref-method -->
@@ -162,6 +180,20 @@ Sets the forward axis of the bone.
 `void` **set_primary_rotation_axis**\ (\ index\: [int](int.md), axis\: [Axis](Vector3.md#enum_Vector3_Axis)\ ) [🔗](#AimModifier3D_method_set_primary_rotation_axis)
 
 Sets the axis of the first rotation. It is enabled only if [is_using_euler()](AimModifier3D.md#AimModifier3D_method_is_using_euler) is ``true``.
+
+<hr class="classref-item-separator"/>
+
+<a id="AimModifier3D_method_set_relative"></a>
+
+<!-- classref-method -->
+
+`void` **set_relative**\ (\ index\: [int](int.md), enabled\: [bool](bool.md)\ ) [🔗](#AimModifier3D_method_set_relative)
+
+Sets relative option in the setting at `index` to `enabled`.
+
+If sets `enabled` to ``true``, the rotation is applied relative to the pose.
+
+If sets `enabled` to ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **AimModifier3D**'s result.
 
 <hr class="classref-item-separator"/>
 

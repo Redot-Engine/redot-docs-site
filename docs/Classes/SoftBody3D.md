@@ -21,7 +21,7 @@ A deformable 3D physics mesh. Used to create elastic or deformable objects such 
 
 Additionally, **SoftBody3D** is subject to wind forces defined in [Area3D](Area3D.md) (see [Area3D.wind_source_path](Area3D.md#Area3D_property_wind_source_path), [Area3D.wind_force_magnitude](Area3D.md#Area3D_property_wind_force_magnitude), and [Area3D.wind_attenuation_factor](Area3D.md#Area3D_property_wind_attenuation_factor)).
 
-\ **Note:** It's recommended to use Jolt Physics when using **SoftBody3D** instead of the default RedotPhysics3D, as Jolt Physics' soft body implementation is faster and more reliable. You can switch the physics engine using the [ProjectSettings.physics/3d/physics_engine](ProjectSettings.md#ProjectSettings_property_physics/3d/physics_engine) project setting.
+\ **Note:** It's recommended to use Jolt Physics when using **SoftBody3D** instead of the default GodotPhysics3D, as Jolt Physics' soft body implementation is faster and more reliable. You can switch the physics engine using the [ProjectSettings.physics/3d/physics_engine](ProjectSettings.md#ProjectSettings_property_physics/3d/physics_engine) project setting.
 
 <!-- classref-introduction-group -->
 

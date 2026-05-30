@@ -72,7 +72,7 @@ Called by the [PhysicsServer3D](PhysicsServer3D.md) to set the bounding box for 
 
 Called by the [PhysicsServer3D](PhysicsServer3D.md) to set the normal for the [SoftBody3D](SoftBody3D.md) vertex at the index specified by `vertex_id`.
 
-\ **Note:** The `normal` parameter used to be of type ``const void*`` prior to Redot 4.2.
+\ **Note:** The `normal` parameter used to be of type ``const void*`` prior to Godot 4.2.
 
 <hr class="classref-item-separator"/>
 
@@ -84,7 +84,7 @@ Called by the [PhysicsServer3D](PhysicsServer3D.md) to set the normal for the [S
 
 Called by the [PhysicsServer3D](PhysicsServer3D.md) to set the position for the [SoftBody3D](SoftBody3D.md) vertex at the index specified by `vertex_id`.
 
-\ **Note:** The `vertex` parameter used to be of type ``const void*`` prior to Redot 4.2.
+\ **Note:** The `vertex` parameter used to be of type ``const void*`` prior to Godot 4.2.
 
 <hr class="classref-item-separator"/>
 

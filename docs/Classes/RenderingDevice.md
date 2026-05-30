@@ -5518,7 +5518,7 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 \ **Note:** `data` takes an [Array](Array.md) of [PackedByteArray](PackedByteArray.md)\\ s. For [TEXTURE_TYPE_1D](RenderingDevice.md#RenderingDevice_constant_TEXTURE_TYPE_1D), [TEXTURE_TYPE_2D](RenderingDevice.md#RenderingDevice_constant_TEXTURE_TYPE_2D), and [TEXTURE_TYPE_3D](RenderingDevice.md#RenderingDevice_constant_TEXTURE_TYPE_3D) types, this array should only have one element, a [PackedByteArray](PackedByteArray.md) containing all the data for the texture. For ``_ARRAY`` and ``_CUBE`` types, the length should be the same as the number of [RDTextureFormat.array_layers](RDTextureFormat.md#RDTextureFormat_property_array_layers) in `format`.
 
-\ **Note:** Not to be confused with [RenderingServer.texture_2d_create()](RenderingServer.md#RenderingServer_method_texture_2d_create), which creates the Redot-specific [Texture2D](Texture2D.md) resource as opposed to the graphics API's own texture type.
+\ **Note:** Not to be confused with [RenderingServer.texture_2d_create()](RenderingServer.md#RenderingServer_method_texture_2d_create), which creates the Godot-specific [Texture2D](Texture2D.md) resource as opposed to the graphics API's own texture type.
 
 <hr class="classref-item-separator"/>
 

@@ -19,7 +19,7 @@ Registers a custom resource importer in the editor. Use the class to parse any f
 
 **EditorImportPlugin**\\ s provide a way to extend the editor's resource import functionality. Use them to import resources from custom files or to provide alternatives to the editor's existing importers.
 
-EditorImportPlugins work by associating with specific file extensions and a resource type. See [_get_recognized_extensions()](EditorImportPlugin.md#EditorImportPlugin_private_method__get_recognized_extensions) and [_get_resource_type()](EditorImportPlugin.md#EditorImportPlugin_private_method__get_resource_type). They may optionally specify some import presets that affect the import process. EditorImportPlugins are responsible for creating the resources and saving them in the ``.Redot/imported`` directory (see [ProjectSettings.application/config/use_hidden_project_data_directory](ProjectSettings.md#ProjectSettings_property_application/config/use_hidden_project_data_directory)).
+EditorImportPlugins work by associating with specific file extensions and a resource type. See [_get_recognized_extensions()](EditorImportPlugin.md#EditorImportPlugin_private_method__get_recognized_extensions) and [_get_resource_type()](EditorImportPlugin.md#EditorImportPlugin_private_method__get_resource_type). They may optionally specify some import presets that affect the import process. EditorImportPlugins are responsible for creating the resources and saving them in the ``.godot/imported`` directory (see [ProjectSettings.application/config/use_hidden_project_data_directory](ProjectSettings.md#ProjectSettings_property_application/config/use_hidden_project_data_directory)).
 
 Below is an example EditorImportPlugin that imports a [Mesh](Mesh.md) from a file with the extension ".special" or ".spec":
 
@@ -371,7 +371,7 @@ Gets the Redot resource type associated with this loader. e.g. ``"Mesh"`` or ``"
 
 [String](String.md) **_get_save_extension**\ (\ ) <span class="virtual">virtual</span> <span class="const">const</span> [🔗](#EditorImportPlugin_private_method__get_save_extension)
 
-Gets the extension used to save this resource in the ``.Redot/imported`` directory (see [ProjectSettings.application/config/use_hidden_project_data_directory](ProjectSettings.md#ProjectSettings_property_application/config/use_hidden_project_data_directory)).
+Gets the extension used to save this resource in the ``.godot/imported`` directory (see [ProjectSettings.application/config/use_hidden_project_data_directory](ProjectSettings.md#ProjectSettings_property_application/config/use_hidden_project_data_directory)).
 
 <hr class="classref-item-separator"/>
 

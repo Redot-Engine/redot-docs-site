@@ -527,7 +527,7 @@ Returns a [PackedStringArray](PackedStringArray.md) containing filenames of the 
 
 Affected by [include_hidden](DirAccess.md#DirAccess_property_include_hidden).
 
-\ **Note:** When used on a ``res://`` path in an exported project, only the files actually included in the PCK at the given folder level are returned. In practice, this means that since imported resources are stored in a top-level ``.Redot/`` folder, only paths to ``*.gd`` and ``*.import`` files are returned (plus a few files such as ``project.Redot`` or ``project.binary`` and the project icon). In an exported project, the list of returned files will also vary depending on whether [ProjectSettings.editor/export/convert_text_resources_to_binary](ProjectSettings.md#ProjectSettings_property_editor/export/convert_text_resources_to_binary) is ``true``.
+\ **Note:** When used on a ``res://`` path in an exported project, only the files actually included in the PCK at the given folder level are returned. In practice, this means that since imported resources are stored in a top-level ``.godot/`` folder, only paths to ``*.gd`` and ``*.import`` files are returned (plus a few files such as ``project.godot`` or ``project.binary`` and the project icon). In an exported project, the list of returned files will also vary depending on whether [ProjectSettings.editor/export/convert_text_resources_to_binary](ProjectSettings.md#ProjectSettings_property_editor/export/convert_text_resources_to_binary) is ``true``.
 
 <hr class="classref-item-separator"/>
 
@@ -541,7 +541,7 @@ Returns a [PackedStringArray](PackedStringArray.md) containing filenames of the 
 
 Use [get_files()](DirAccess.md#DirAccess_method_get_files) if you want more control of what gets included.
 
-\ **Note:** When used on a ``res://`` path in an exported project, only the files included in the PCK at the given folder level are returned. In practice, this means that since imported resources are stored in a top-level ``.Redot/`` folder, only paths to ``.gd`` and ``.import`` files are returned (plus a few other files, such as ``project.Redot`` or ``project.binary`` and the project icon). In an exported project, the list of returned files will also vary depending on [ProjectSettings.editor/export/convert_text_resources_to_binary](ProjectSettings.md#ProjectSettings_property_editor/export/convert_text_resources_to_binary).
+\ **Note:** When used on a ``res://`` path in an exported project, only the files included in the PCK at the given folder level are returned. In practice, this means that since imported resources are stored in a top-level ``.godot/`` folder, only paths to ``.gd`` and ``.import`` files are returned (plus a few other files, such as ``project.godot`` or ``project.binary`` and the project icon). In an exported project, the list of returned files will also vary depending on [ProjectSettings.editor/export/convert_text_resources_to_binary](ProjectSettings.md#ProjectSettings_property_editor/export/convert_text_resources_to_binary).
 
 <hr class="classref-item-separator"/>
 

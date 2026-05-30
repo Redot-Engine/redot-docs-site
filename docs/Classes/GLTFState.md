@@ -130,7 +130,7 @@ GLTFState can be populated by [GLTFDocument](GLTFDocument.md) reading a file or 
     </tr>
     <tr>
       <td>[int](int.md)</td>
-      <td>[append_gltf_node](#GLTFState_method_append_gltf_node)\ (\ gltf_node\: [GLTFNode](GLTFNode.md), Redot_scene_node\: [Node](Node.md), parent_node_index\: [int](int.md)\ )</td>
+      <td>[append_gltf_node](#GLTFState_method_append_gltf_node)\ (\ gltf_node\: [GLTFNode](GLTFNode.md), godot_scene_node\: [Node](Node.md), parent_node_index\: [int](int.md)\ )</td>
     </tr>
     <tr>
       <td>[Array](Array.md)\[[GLTFAccessor](GLTFAccessor.md)\]</td>
@@ -588,11 +588,11 @@ Appends the given byte array `data` to the buffers and creates a [GLTFBufferView
 
 <!-- classref-method -->
 
-[int](int.md) **append_gltf_node**\ (\ gltf_node\: [GLTFNode](GLTFNode.md), Redot_scene_node\: [Node](Node.md), parent_node_index\: [int](int.md)\ ) [🔗](#GLTFState_method_append_gltf_node)
+[int](int.md) **append_gltf_node**\ (\ gltf_node\: [GLTFNode](GLTFNode.md), godot_scene_node\: [Node](Node.md), parent_node_index\: [int](int.md)\ ) [🔗](#GLTFState_method_append_gltf_node)
 
 Appends the given [GLTFNode](GLTFNode.md) to the state, and returns its new index. This can be used to export one Redot node as multiple glTF nodes, or inject new glTF nodes at import time. On import, this must be called before [GLTFDocumentExtension._generate_scene_node()](GLTFDocumentExtension.md#GLTFDocumentExtension_private_method__generate_scene_node) finishes for the parent node. On export, this must be called before [GLTFDocumentExtension._export_node()](GLTFDocumentExtension.md#GLTFDocumentExtension_private_method__export_node) runs for the parent node.
 
-The `Redot_scene_node` parameter is the Redot scene node that corresponds to this glTF node. This is highly recommended to be set to a valid node, but may be ``null`` if there is no corresponding Redot scene node. One Redot scene node may be used for multiple glTF nodes, so if exporting multiple glTF nodes for one Redot scene node, use the same Redot scene node for each.
+The `godot_scene_node` parameter is the Redot scene node that corresponds to this glTF node. This is highly recommended to be set to a valid node, but may be ``null`` if there is no corresponding Redot scene node. One Redot scene node may be used for multiple glTF nodes, so if exporting multiple glTF nodes for one Redot scene node, use the same Redot scene node for each.
 
 The `parent_node_index` parameter is the index of the parent [GLTFNode](GLTFNode.md) in the state. If ``-1``, the node will be a root node, otherwise the new node will be added to the parent's list of children. The index will also be written to the [GLTFNode.parent](GLTFNode.md#GLTFNode_property_parent) property of the new node.
 

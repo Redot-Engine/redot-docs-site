@@ -504,7 +504,13 @@ Linear interpolation.<a id="Animation_constant_INTERPOLATION_CUBIC"></a>
 
 [InterpolationType](Animation.md#enum_Animation_InterpolationType) **INTERPOLATION_CUBIC** = `2`
 
-Cubic interpolation. This looks smoother than linear interpolation, but is more expensive to interpolate. Stick to [INTERPOLATION_LINEAR](Animation.md#Animation_constant_INTERPOLATION_LINEAR) for complex 3D animations imported from external software, even if it requires using a higher animation framerate in return.<a id="Animation_constant_INTERPOLATION_LINEAR_ANGLE"></a>
+Cubic interpolation. This looks smoother than linear interpolation, but is more expensive to interpolate. Stick to [INTERPOLATION_LINEAR](Animation.md#Animation_constant_INTERPOLATION_LINEAR) for complex 3D animations imported from external software, even if it requires using a higher animation framerate in return.<a id="Animation_constant_INTERPOLATION_CUBIC_MONOTONIC"></a>
+
+<!-- classref-enumeration-constant -->
+
+[InterpolationType](Animation.md#enum_Animation_InterpolationType) **INTERPOLATION_CUBIC_MONOTONIC** = `5`
+
+Monotonic Cubic interpolation. This is an alternate version of [INTERPOLATION_CUBIC](Animation.md#Animation_constant_INTERPOLATION_CUBIC) that ensures no overshooting of key points.<a id="Animation_constant_INTERPOLATION_LINEAR_ANGLE"></a>
 
 <!-- classref-enumeration-constant -->
 
@@ -520,7 +526,13 @@ Linear interpolation with shortest path rotation.
 
 Cubic interpolation with shortest path rotation.
 
-\ **Note:** The result value is always normalized and may not match the key value.<hr class="classref-item-separator"/>
+\ **Note:** The result value is always normalized and may not match the key value.<a id="Animation_constant_INTERPOLATION_CUBIC_MONOTONIC_ANGLE"></a>
+
+<!-- classref-enumeration-constant -->
+
+[InterpolationType](Animation.md#enum_Animation_InterpolationType) **INTERPOLATION_CUBIC_MONOTONIC_ANGLE** = `6`
+
+Monotonic Cubic interpolation with shortest path rotation.<hr class="classref-item-separator"/>
 
 <a id="enum_Animation_UpdateMode"></a>
 

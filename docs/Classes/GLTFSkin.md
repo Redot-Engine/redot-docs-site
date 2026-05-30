@@ -30,7 +30,7 @@ There is currently no description for this class. Please help us by contributing
   <thead>
     <tr>
       <th>[Skin](Skin.md)</th>
-      <th>[Redot_skin](#GLTFSkin_property_Redot_skin)</th>
+      <th>[godot_skin](#GLTFSkin_property_godot_skin)</th>
       <th></th>
     </tr>
   </thead>
@@ -109,16 +109,16 @@ There is currently no description for this class. Please help us by contributing
 
 ## Property Descriptions
 
-<a id="GLTFSkin_property_Redot_skin"></a>
+<a id="GLTFSkin_property_godot_skin"></a>
 
 <!-- classref-property -->
 
-[Skin](Skin.md) **Redot_skin** [🔗](#GLTFSkin_property_Redot_skin)
+[Skin](Skin.md) **godot_skin** [🔗](#GLTFSkin_property_godot_skin)
 
 <!-- classref-property-setget -->
 
-- `void` **set_Redot_skin**\ (\ value\: [Skin](Skin.md)\ )
-- [Skin](Skin.md) **get_Redot_skin**\ (\ )
+- `void` **set_godot_skin**\ (\ value\: [Skin](Skin.md)\ )
+- [Skin](Skin.md) **get_godot_skin**\ (\ )
 
 <div class="contribute">
 There is currently no description for this property. Please help us by contributing one!

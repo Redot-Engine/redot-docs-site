@@ -25,6 +25,8 @@ The default settings are intended for use in an outdoor environment, tips for se
 
 \ **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
 
+\ **Note:** Auto-exposure is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+
 <!-- classref-introduction-group -->
 
 ## Tutorials

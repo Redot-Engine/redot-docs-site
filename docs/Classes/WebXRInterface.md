@@ -120,7 +120,7 @@ You can use both methods to allow your game or app to support a wider or narrowe
 
 ## Tutorials
 
-- [How to make a VR game for WebXR with Redot 4](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-Redot-4)
+- [How to make a VR game for WebXR with Redot 4](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)
 
 <!-- classref-reftable-group -->
 

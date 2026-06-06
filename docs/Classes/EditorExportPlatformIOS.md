@@ -1130,7 +1130,7 @@ Minimum version of iOS required for this application to run in the ``major.minor
 
 Name of the provisioning profile. Sets Xcode PROVISIONING_PROFILE_SPECIFIER for debug. [Used for manual provisioning](https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile).
 
-Can be overridden with the environment variable ``Redot_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG``.
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG``.
 
 <hr class="classref-item-separator"/>
 
@@ -1142,7 +1142,7 @@ Can be overridden with the environment variable ``Redot_APPLE_PLATFORM_PROFILE_S
 
 Name of the provisioning profile. Sets Xcode PROVISIONING_PROFILE_SPECIFIER for release. [Used for manual provisioning](https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile).
 
-Can be overridden with the environment variable ``Redot_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE``.
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE``.
 
 <hr class="classref-item-separator"/>
 
@@ -1154,7 +1154,7 @@ Can be overridden with the environment variable ``Redot_APPLE_PLATFORM_PROFILE_S
 
 UUID of the provisioning profile. If left empty, Xcode will download or create a provisioning profile automatically. See [Edit, download, or delete provisioning profiles](https://developer.apple.com/help/account/manage-profiles/edit-download-or-delete-profiles).
 
-Can be overridden with the environment variable ``Redot_APPLE_PLATFORM_PROVISIONING_PROFILE_UUID_DEBUG``.
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROVISIONING_PROFILE_UUID_DEBUG``.
 
 <hr class="classref-item-separator"/>
 
@@ -1166,7 +1166,7 @@ Can be overridden with the environment variable ``Redot_APPLE_PLATFORM_PROVISION
 
 UUID of the provisioning profile. If left empty, Xcode will download or create a provisioning profile automatically. See [Edit, download, or delete provisioning profiles](https://developer.apple.com/help/account/manage-profiles/edit-download-or-delete-profiles).
 
-Can be overridden with the environment variable ``Redot_APPLE_PLATFORM_PROVISIONING_PROFILE_UUID_RELEASE``.
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROVISIONING_PROFILE_UUID_RELEASE``.
 
 <hr class="classref-item-separator"/>
 

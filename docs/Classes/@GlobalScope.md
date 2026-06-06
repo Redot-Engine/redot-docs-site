@@ -401,7 +401,7 @@ There are notable differences when using this API with C#. See the C# difference
     </tr>
     <tr>
       <td>[Variant](Variant.md)</td>
-      <td>[lerp](#@GlobalScope_method_lerp)\ (\ from\: [Variant](Variant.md), to\: [Variant](Variant.md), weight\: [Variant](Variant.md)\ )</td>
+      <td>[lerp](#@GlobalScope_method_lerp)\ (\ from\: [Variant](Variant.md), to\: [Variant](Variant.md), weight\: [float](float.md)\ )</td>
     </tr>
     <tr>
       <td>[float](float.md)</td>
@@ -442,6 +442,22 @@ There are notable differences when using this API with C#. See the C# difference
     <tr>
       <td>[int](int.md)</td>
       <td>[mini](#@GlobalScope_method_mini)\ (\ a\: [int](int.md), b\: [int](int.md)\ )</td>
+    </tr>
+    <tr>
+      <td>[float](float.md)</td>
+      <td>[monotonic_cubic_interpolate](#@GlobalScope_method_monotonic_cubic_interpolate)\ (\ from\: [float](float.md), to\: [float](float.md), pre\: [float](float.md), post\: [float](float.md), weight\: [float](float.md)\ )</td>
+    </tr>
+    <tr>
+      <td>[float](float.md)</td>
+      <td>[monotonic_cubic_interpolate_angle](#@GlobalScope_method_monotonic_cubic_interpolate_angle)\ (\ from\: [float](float.md), to\: [float](float.md), pre\: [float](float.md), post\: [float](float.md), weight\: [float](float.md)\ )</td>
+    </tr>
+    <tr>
+      <td>[float](float.md)</td>
+      <td>[monotonic_cubic_interpolate_angle_in_time](#@GlobalScope_method_monotonic_cubic_interpolate_angle_in_time)\ (\ from\: [float](float.md), to\: [float](float.md), pre\: [float](float.md), post\: [float](float.md), weight\: [float](float.md), to_t\: [float](float.md), pre_t\: [float](float.md), post_t\: [float](float.md)\ )</td>
+    </tr>
+    <tr>
+      <td>[float](float.md)</td>
+      <td>[monotonic_cubic_interpolate_in_time](#@GlobalScope_method_monotonic_cubic_interpolate_in_time)\ (\ from\: [float](float.md), to\: [float](float.md), pre\: [float](float.md), post\: [float](float.md), weight\: [float](float.md), to_t\: [float](float.md), pre_t\: [float](float.md), post_t\: [float](float.md)\ )</td>
     </tr>
     <tr>
       <td>[float](float.md)</td>
@@ -534,6 +550,10 @@ There are notable differences when using this API with C#. See the C# difference
     <tr>
       <td>[float](float.md)</td>
       <td>[remap](#@GlobalScope_method_remap)\ (\ value\: [float](float.md), istart\: [float](float.md), istop\: [float](float.md), ostart\: [float](float.md), ostop\: [float](float.md)\ )</td>
+    </tr>
+    <tr>
+      <td>[float](float.md)</td>
+      <td>[remap_default](#@GlobalScope_method_remap_default)\ (\ value\: [float](float.md), istart\: [float](float.md), istop\: [float](float.md), ostart\: [float](float.md), ostop\: [float](float.md), default_value\: [float](float.md)\ )</td>
     </tr>
     <tr>
       <td>[int](int.md)</td>
@@ -5308,7 +5328,7 @@ This function is faster than using [is_equal_approx()](@GlobalScope.md#@GlobalSc
 
 <!-- classref-method -->
 
-[Variant](Variant.md) **lerp**\ (\ from\: [Variant](Variant.md), to\: [Variant](Variant.md), weight\: [Variant](Variant.md)\ ) [🔗](#@GlobalScope_method_lerp)
+[Variant](Variant.md) **lerp**\ (\ from\: [Variant](Variant.md), to\: [Variant](Variant.md), weight\: [float](float.md)\ ) [🔗](#@GlobalScope_method_lerp)
 
 Linearly interpolates between two values by the factor defined in `weight`. To perform interpolation, `weight` should be between ``0.0`` and ``1.0`` (inclusive). However, values outside this range are allowed and can be used to perform *extrapolation*. If this is not desired, use [clampf()](@GlobalScope.md#@GlobalScope_method_clampf) to limit `weight`.
 
@@ -5498,6 +5518,92 @@ Returns the minimum of two [int](int.md) values.
     mini(-3, -4) # Returns -4
 ```
 
+
+<hr class="classref-item-separator"/>
+
+<a id="@GlobalScope_method_monotonic_cubic_interpolate"></a>
+
+<!-- classref-method -->
+
+[float](float.md) **monotonic_cubic_interpolate**\ (\ from\: [float](float.md), to\: [float](float.md), pre\: [float](float.md), post\: [float](float.md), weight\: [float](float.md)\ ) [🔗](#@GlobalScope_method_monotonic_cubic_interpolate)
+
+Performs monotonic cubic interpolation between `from` and `to`\\ 
+
+using neighboring values `pre` and `post`.
+
+The interpolation factor `weight` is typically between 0.0 and 1.0.
+
+
+
+Unlike [cubic_interpolate()](@GlobalScope.md#@GlobalScope_method_cubic_interpolate), this method preserves monotonicity
+
+by automatically limiting tangents to prevent overshoot between key values.
+
+This makes it suitable for animation tracks and other data where values
+
+should not exceed surrounding keyframes.
+
+<hr class="classref-item-separator"/>
+
+<a id="@GlobalScope_method_monotonic_cubic_interpolate_angle"></a>
+
+<!-- classref-method -->
+
+[float](float.md) **monotonic_cubic_interpolate_angle**\ (\ from\: [float](float.md), to\: [float](float.md), pre\: [float](float.md), post\: [float](float.md), weight\: [float](float.md)\ ) [🔗](#@GlobalScope_method_monotonic_cubic_interpolate_angle)
+
+Performs monotonic cubic interpolation between angular values, rotating
+
+along the shortest path between `from` and `to`.
+
+
+
+The neighboring angles `pre` and `post` are used to compute
+
+shape-preserving tangents while accounting for angle wrapping.
+
+This prevents overshoot while maintaining continuous rotation.
+
+See also [lerp_angle()](@GlobalScope.md#@GlobalScope_method_lerp_angle).
+
+<hr class="classref-item-separator"/>
+
+<a id="@GlobalScope_method_monotonic_cubic_interpolate_angle_in_time"></a>
+
+<!-- classref-method -->
+
+[float](float.md) **monotonic_cubic_interpolate_angle_in_time**\ (\ from\: [float](float.md), to\: [float](float.md), pre\: [float](float.md), post\: [float](float.md), weight\: [float](float.md), to_t\: [float](float.md), pre_t\: [float](float.md), post_t\: [float](float.md)\ ) [🔗](#@GlobalScope_method_monotonic_cubic_interpolate_angle_in_time)
+
+Time-aware version of [monotonic_cubic_interpolate_angle()](@GlobalScope.md#@GlobalScope_method_monotonic_cubic_interpolate_angle).
+
+
+
+The interpolation factor is derived from the provided keyframe times,
+
+allowing unevenly spaced keyframes to influence tangent calculation.
+
+This produces consistent motion when animation keys are not uniformly
+
+distributed in time while still preventing overshoot.
+
+<hr class="classref-item-separator"/>
+
+<a id="@GlobalScope_method_monotonic_cubic_interpolate_in_time"></a>
+
+<!-- classref-method -->
+
+[float](float.md) **monotonic_cubic_interpolate_in_time**\ (\ from\: [float](float.md), to\: [float](float.md), pre\: [float](float.md), post\: [float](float.md), weight\: [float](float.md), to_t\: [float](float.md), pre_t\: [float](float.md), post_t\: [float](float.md)\ ) [🔗](#@GlobalScope_method_monotonic_cubic_interpolate_in_time)
+
+Time-aware version of [monotonic_cubic_interpolate()](@GlobalScope.md#@GlobalScope_method_monotonic_cubic_interpolate).
+
+
+
+The interpolation parameter is normalized using the supplied keyframe
+
+times, allowing interpolation to account for non-uniform spacing between
+
+values. Tangents are computed in a way that preserves monotonicity and
+
+prevents overshoot between keyframes.
 
 <hr class="classref-item-separator"/>
 
@@ -6036,7 +6142,25 @@ Maps a `value` from range ``[istart, istop]`` to ``[ostart, ostop]``. See also [
 
 For complex use cases where multiple ranges are needed, consider using [Curve](Curve.md) or [Gradient](Gradient.md) instead.
 
-\ **Note:** If ``istart == istop``, the return value is undefined (most likely NaN, INF, or -INF).
+\ **Note:** If ``istart == istop``, the return value is undefined (most likely NaN, INF, or -INF). See also [remap_default()](@GlobalScope.md#@GlobalScope_method_remap_default).
+
+<hr class="classref-item-separator"/>
+
+<a id="@GlobalScope_method_remap_default"></a>
+
+<!-- classref-method -->
+
+[float](float.md) **remap_default**\ (\ value\: [float](float.md), istart\: [float](float.md), istop\: [float](float.md), ostart\: [float](float.md), ostop\: [float](float.md), default_value\: [float](float.md)\ ) [🔗](#@GlobalScope_method_remap_default)
+
+Maps a `value` from range ``[istart, istop]`` to ``[ostart, ostop]`` and returns `default_value` if [remap()](@GlobalScope.md#@GlobalScope_method_remap) would've returned ``INF`` or ``NAN``. See also [remap()](@GlobalScope.md#@GlobalScope_method_remap), [lerp()](@GlobalScope.md#@GlobalScope_method_lerp) and [inverse_lerp()](@GlobalScope.md#@GlobalScope_method_inverse_lerp). If `value` is outside ``[istart, istop]``, then the resulting value will also be outside ``[ostart, ostop]``. If this is not desired, use [clamp()](@GlobalScope.md#@GlobalScope_method_clamp) on the result of this function.
+
+```
+    remap_default(75, 0, 100, -1, 1, 3) # Returns 0.5
+    remap_default(75, 0, 0, -1, 1, 3) # Returns 3.0
+```
+
+
+For complex use cases where multiple ranges are needed, consider using [Curve](Curve.md) or [Gradient](Gradient.md) instead.
 
 <hr class="classref-item-separator"/>
 

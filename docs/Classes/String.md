@@ -2301,14 +2301,14 @@ Decodes the string from its URL-encoded format. This method is meant to properly
 
 
 ```gdscript
-    var url = "$DOCS_URL/?highlight=Redot%20Engine%3%docs"
-    print(url.uri_decode()) # Prints "$DOCS_URL/?highlight=Redot Engine:docs"
+    var url = "$DOCS_URL/?highlight=Godot%20Engine%3%docs"
+    print(url.uri_decode()) # Prints "$DOCS_URL/?highlight=Godot Engine:docs"
 ```
 
 
 ```csharp
-    var url = "$DOCS_URL/?highlight=Redot%20Engine%3%docs"
-    GD.Print(url.URIDecode()) // Prints "$DOCS_URL/?highlight=Redot Engine:docs"
+    var url = "$DOCS_URL/?highlight=Godot%20Engine%3%docs"
+    GD.Print(url.URIDecode()) // Prints "$DOCS_URL/?highlight=Godot Engine:docs"
 ```
 
 
@@ -2333,7 +2333,7 @@ Encodes the string to URL-friendly format. This method is meant to properly enco
     var prefix = "$DOCS_URL/?highlight="
     var url = prefix + "Redot Engine:docs".uri_encode()
 
-    print(url) # Prints "$DOCS_URL/?highlight=Redot%20Engine%3%docs"
+    print(url) # Prints "$DOCS_URL/?highlight=Godot%20Engine%3%docs"
 ```
 
 
@@ -2341,7 +2341,7 @@ Encodes the string to URL-friendly format. This method is meant to properly enco
     var prefix = "$DOCS_URL/?highlight=";
     var url = prefix + "Redot Engine:docs".URIEncode();
 
-    GD.Print(url); // Prints "$DOCS_URL/?highlight=Redot%20Engine%3%docs"
+    GD.Print(url); // Prints "$DOCS_URL/?highlight=Godot%20Engine%3%docs"
 ```
 
 

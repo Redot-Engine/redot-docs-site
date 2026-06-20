@@ -39,7 +39,7 @@ In computer programming, a Variant class is a class that is designed to store a 
     // Redot also provides a Variant type that works like a union of all the Variant-compatible types.
     Variant fooVar = 2; // fooVar is dynamically an integer (stored as a `long` in the Variant type).
     fooVar = "Now fooVar is a string!";
-    fooVar = new RefCounted(); // fooVar is a RedotObject.
+    fooVar = new RefCounted(); // fooVar is a GodotObject.
 ```
 
 
@@ -84,7 +84,7 @@ The global [@GlobalScope.typeof()](@GlobalScope.md#@GlobalScope_method_typeof) f
             break;
         case Variant.Type.Object:
             // Note that Objects are their own special category.
-            // You can convert a Variant to a RedotObject and use reflection to get its name.
+            // You can convert a Variant to a GodotObject and use reflection to get its name.
             GD.Print($"foo is a(n) {foo.AsGodotObject().GetType().Name}");
             break;
     }
@@ -132,5 +132,5 @@ There are notable differences when using this API with C#. See the C# difference
 
 ## Tutorials
 
-- [Variant class introduction](../Contributing/Development/core_and_modules/variant_class.md)
+- [Variant class introduction](../engine_details/architecture/variant_class.md)
 

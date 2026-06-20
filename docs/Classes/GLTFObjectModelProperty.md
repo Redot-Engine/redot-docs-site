@@ -39,14 +39,14 @@ The glTF property is identified by JSON pointer(s) stored in [json_pointers](GLT
   <thead>
     <tr>
       <th>[Expression](Expression.md)</th>
-      <th>[gltf_to_Redot_expression](#GLTFObjectModelProperty_property_gltf_to_Redot_expression)</th>
+      <th>[gltf_to_godot_expression](#GLTFObjectModelProperty_property_gltf_to_godot_expression)</th>
       <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>[Expression](Expression.md)</td>
-      <td>[Redot_to_gltf_expression](#GLTFObjectModelProperty_property_Redot_to_gltf_expression)</td>
+      <td>[godot_to_gltf_expression](#GLTFObjectModelProperty_property_godot_to_gltf_expression)</td>
       <td></td>
     </tr>
     <tr>
@@ -191,31 +191,31 @@ Object model type "int". Represented in the glTF JSON as a number, and encoded i
 
 ## Property Descriptions
 
-<a id="GLTFObjectModelProperty_property_gltf_to_Redot_expression"></a>
+<a id="GLTFObjectModelProperty_property_gltf_to_godot_expression"></a>
 
 <!-- classref-property -->
 
-[Expression](Expression.md) **gltf_to_Redot_expression** [🔗](#GLTFObjectModelProperty_property_gltf_to_Redot_expression)
+[Expression](Expression.md) **gltf_to_godot_expression** [🔗](#GLTFObjectModelProperty_property_gltf_to_godot_expression)
 
 <!-- classref-property-setget -->
 
-- `void` **set_gltf_to_Redot_expression**\ (\ value\: [Expression](Expression.md)\ )
-- [Expression](Expression.md) **get_gltf_to_Redot_expression**\ (\ )
+- `void` **set_gltf_to_godot_expression**\ (\ value\: [Expression](Expression.md)\ )
+- [Expression](Expression.md) **get_gltf_to_godot_expression**\ (\ )
 
 If set, this [Expression](Expression.md) will be used to convert the property value from the glTF object model to the value expected by the Redot property. This is useful when the glTF object model uses a different unit system, or when the data needs to be transformed in some way. If ``null``, the value will be copied as-is.
 
 <hr class="classref-item-separator"/>
 
-<a id="GLTFObjectModelProperty_property_Redot_to_gltf_expression"></a>
+<a id="GLTFObjectModelProperty_property_godot_to_gltf_expression"></a>
 
 <!-- classref-property -->
 
-[Expression](Expression.md) **Redot_to_gltf_expression** [🔗](#GLTFObjectModelProperty_property_Redot_to_gltf_expression)
+[Expression](Expression.md) **godot_to_gltf_expression** [🔗](#GLTFObjectModelProperty_property_godot_to_gltf_expression)
 
 <!-- classref-property-setget -->
 
-- `void` **set_Redot_to_gltf_expression**\ (\ value\: [Expression](Expression.md)\ )
-- [Expression](Expression.md) **get_Redot_to_gltf_expression**\ (\ )
+- `void` **set_godot_to_gltf_expression**\ (\ value\: [Expression](Expression.md)\ )
+- [Expression](Expression.md) **get_godot_to_gltf_expression**\ (\ )
 
 If set, this [Expression](Expression.md) will be used to convert the property value from the Redot property to the value expected by the glTF object model. This is useful when the glTF object model uses a different unit system, or when the data needs to be transformed in some way. If ``null``, the value will be copied as-is.
 

@@ -61,11 +61,11 @@ There is currently no description for this class. Please help us by contributing
     </tr>
     <tr>
       <td>[Dictionary](Dictionary.md)</td>
-      <td>[get_Redot_bone_node](#GLTFSkeleton_method_get_Redot_bone_node)\ (\ )</td>
+      <td>[get_godot_bone_node](#GLTFSkeleton_method_get_godot_bone_node)\ (\ )</td>
     </tr>
     <tr>
       <td>[Skeleton3D](Skeleton3D.md)</td>
-      <td>[get_Redot_skeleton](#GLTFSkeleton_method_get_Redot_skeleton)\ (\ )</td>
+      <td>[get_godot_skeleton](#GLTFSkeleton_method_get_godot_skeleton)\ (\ )</td>
     </tr>
     <tr>
       <td>[Array](Array.md)\[[String](String.md)\]</td>
@@ -73,7 +73,7 @@ There is currently no description for this class. Please help us by contributing
     </tr>
     <tr>
       <td>`void`</td>
-      <td>[set_Redot_bone_node](#GLTFSkeleton_method_set_Redot_bone_node)\ (\ Redot_bone_node\: [Dictionary](Dictionary.md)\ )</td>
+      <td>[set_godot_bone_node](#GLTFSkeleton_method_set_godot_bone_node)\ (\ godot_bone_node\: [Dictionary](Dictionary.md)\ )</td>
     </tr>
     <tr>
       <td>`void`</td>
@@ -158,21 +158,21 @@ There is currently no description for this method. Please help us by contributin
 
 <hr class="classref-item-separator"/>
 
-<a id="GLTFSkeleton_method_get_Redot_bone_node"></a>
+<a id="GLTFSkeleton_method_get_godot_bone_node"></a>
 
 <!-- classref-method -->
 
-[Dictionary](Dictionary.md) **get_Redot_bone_node**\ (\ ) [🔗](#GLTFSkeleton_method_get_Redot_bone_node)
+[Dictionary](Dictionary.md) **get_godot_bone_node**\ (\ ) [🔗](#GLTFSkeleton_method_get_godot_bone_node)
 
 Returns a [Dictionary](Dictionary.md) that maps skeleton bone indices to the indices of glTF nodes. This property is unused during import, and only set during export. In a glTF file, a bone is a node, so Redot converts skeleton bones to glTF nodes.
 
 <hr class="classref-item-separator"/>
 
-<a id="GLTFSkeleton_method_get_Redot_skeleton"></a>
+<a id="GLTFSkeleton_method_get_godot_skeleton"></a>
 
 <!-- classref-method -->
 
-[Skeleton3D](Skeleton3D.md) **get_Redot_skeleton**\ (\ ) [🔗](#GLTFSkeleton_method_get_Redot_skeleton)
+[Skeleton3D](Skeleton3D.md) **get_godot_skeleton**\ (\ ) [🔗](#GLTFSkeleton_method_get_godot_skeleton)
 
 <div class="contribute">
 There is currently no description for this method. Please help us by contributing one!
@@ -194,11 +194,11 @@ There is currently no description for this method. Please help us by contributin
 
 <hr class="classref-item-separator"/>
 
-<a id="GLTFSkeleton_method_set_Redot_bone_node"></a>
+<a id="GLTFSkeleton_method_set_godot_bone_node"></a>
 
 <!-- classref-method -->
 
-`void` **set_Redot_bone_node**\ (\ Redot_bone_node\: [Dictionary](Dictionary.md)\ ) [🔗](#GLTFSkeleton_method_set_Redot_bone_node)
+`void` **set_godot_bone_node**\ (\ godot_bone_node\: [Dictionary](Dictionary.md)\ ) [🔗](#GLTFSkeleton_method_set_godot_bone_node)
 
 Sets a [Dictionary](Dictionary.md) that maps skeleton bone indices to the indices of glTF nodes. This property is unused during import, and only set during export. In a glTF file, a bone is a node, so Redot converts skeleton bones to glTF nodes.
 

@@ -191,6 +191,14 @@ See [Vector4i](Vector4i.md) for its integer counterpart.
     </tr>
     <tr>
       <td>[Vector4](Vector4.md)</td>
+      <td>[monotonic_cubic_interpolate](#Vector4_method_monotonic_cubic_interpolate)\ (\ b\: [Vector4](Vector4.md), pre_a\: [Vector4](Vector4.md), post_b\: [Vector4](Vector4.md), weight\: [float](float.md)\ ) <span class="const">const</span></td>
+    </tr>
+    <tr>
+      <td>[Vector4](Vector4.md)</td>
+      <td>[monotonic_cubic_interpolate_in_time](#Vector4_method_monotonic_cubic_interpolate_in_time)\ (\ b\: [Vector4](Vector4.md), pre_a\: [Vector4](Vector4.md), post_b\: [Vector4](Vector4.md), weight\: [float](float.md), b_t\: [float](float.md), pre_a_t\: [float](float.md), post_b_t\: [float](float.md)\ ) <span class="const">const</span></td>
+    </tr>
+    <tr>
+      <td>[Vector4](Vector4.md)</td>
       <td>[normalized](#Vector4_method_normalized)\ (\ ) <span class="const">const</span></td>
     </tr>
     <tr>
@@ -712,6 +720,28 @@ Returns the axis of the vector's lowest value. See ``AXIS_*`` constants. If all 
 [Vector4](Vector4.md) **minf**\ (\ with\: [float](float.md)\ ) <span class="const">const</span> [🔗](#Vector4_method_minf)
 
 Returns the component-wise minimum of this and `with`, equivalent to ``Vector4(minf(x, with), minf(y, with), minf(z, with), minf(w, with))``.
+
+<hr class="classref-item-separator"/>
+
+<a id="Vector4_method_monotonic_cubic_interpolate"></a>
+
+<!-- classref-method -->
+
+[Vector4](Vector4.md) **monotonic_cubic_interpolate**\ (\ b\: [Vector4](Vector4.md), pre_a\: [Vector4](Vector4.md), post_b\: [Vector4](Vector4.md), weight\: [float](float.md)\ ) <span class="const">const</span> [🔗](#Vector4_method_monotonic_cubic_interpolate)
+
+Performs a monotonic cubic interpolation between this vector and `b` using `pre_a` and `post_b` as handles, and returns the result at position `weight`. `weight` is on the range of 0.0 to 1.0, representing the amount of interpolation.
+
+<hr class="classref-item-separator"/>
+
+<a id="Vector4_method_monotonic_cubic_interpolate_in_time"></a>
+
+<!-- classref-method -->
+
+[Vector4](Vector4.md) **monotonic_cubic_interpolate_in_time**\ (\ b\: [Vector4](Vector4.md), pre_a\: [Vector4](Vector4.md), post_b\: [Vector4](Vector4.md), weight\: [float](float.md), b_t\: [float](float.md), pre_a_t\: [float](float.md), post_b_t\: [float](float.md)\ ) <span class="const">const</span> [🔗](#Vector4_method_monotonic_cubic_interpolate_in_time)
+
+Performs a monotonic cubic interpolation between this vector and `b` using `pre_a` and `post_b` as handles, and returns the result at position `weight`. `weight` is on the range of 0.0 to 1.0, representing the amount of interpolation.
+
+It can perform smoother interpolation than [monotonic_cubic_interpolate()](Vector4.md#Vector4_method_monotonic_cubic_interpolate) by the time values.
 
 <hr class="classref-item-separator"/>
 

@@ -21,6 +21,10 @@ Controls camera-specific attributes such as auto-exposure, depth of field, and e
 
 When used in a [WorldEnvironment](WorldEnvironment.md) it provides default settings for exposure, auto-exposure, and depth of field that will be used by all cameras without their own [CameraAttributes](CameraAttributes.md), including the editor camera. When used in a [Camera3D](Camera3D.md) it will override any [CameraAttributes](CameraAttributes.md) set in the [WorldEnvironment](WorldEnvironment.md). When used in [VoxelGI](VoxelGI.md) or [LightmapGI](LightmapGI.md), only the exposure settings will be used.
 
+\ **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+
+\ **Note:** Auto-exposure is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+
 <!-- classref-reftable-group -->
 
 ## Properties

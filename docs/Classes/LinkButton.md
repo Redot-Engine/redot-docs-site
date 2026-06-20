@@ -291,14 +291,14 @@ The [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) for this **
 
 
 ```gdscript
-    uri = "https://redotengine.org"  # Opens the URL in the default web browser.
+    uri = "https://godotengine.org"  # Opens the URL in the default web browser.
     uri = "C:\SomeFolder"  # Opens the file explorer at the given path.
     uri = "C:\SomeImage.png"  # Opens the given image in the default viewing app.
 ```
 
 
 ```csharp
-    Uri = "https://redotengine.org"; // Opens the URL in the default web browser.
+    Uri = "https://godotengine.org"; // Opens the URL in the default web browser.
     Uri = "C:\SomeFolder"; // Opens the file explorer at the given path.
     Uri = "C:\SomeImage.png"; // Opens the given image in the default viewing app.
 ```

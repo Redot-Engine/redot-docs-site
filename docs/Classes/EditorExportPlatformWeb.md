@@ -111,7 +111,7 @@ The Web exporter customizes how a web build is handled. In the editor's "Export"
     </tr>
     <tr>
       <td>[int](int.md)</td>
-      <td>[threads/Redot_pool_size](#EditorExportPlatformWeb_property_threads/Redot_pool_size)</td>
+      <td>[threads/godot_pool_size](#EditorExportPlatformWeb_property_threads/godot_pool_size)</td>
     </tr>
     <tr>
       <td>[bool](bool.md)</td>
@@ -354,11 +354,11 @@ The number of threads that emscripten will allocate at startup. A smaller value 
 
 <hr class="classref-item-separator"/>
 
-<a id="EditorExportPlatformWeb_property_threads/Redot_pool_size"></a>
+<a id="EditorExportPlatformWeb_property_threads/godot_pool_size"></a>
 
 <!-- classref-property -->
 
-[int](int.md) **threads/Redot_pool_size** [🔗](#EditorExportPlatformWeb_property_threads/Redot_pool_size)
+[int](int.md) **threads/godot_pool_size** [🔗](#EditorExportPlatformWeb_property_threads/godot_pool_size)
 
 Override for the default size of the [WorkerThreadPool](WorkerThreadPool.md). This setting is used when [ProjectSettings.threading/worker_pool/max_threads](ProjectSettings.md#ProjectSettings_property_threading/worker_pool/max_threads) size is set to -1 (which it is by default). This size must be smaller than [threads/emscripten_pool_size](EditorExportPlatformWeb.md#EditorExportPlatformWeb_property_threads/emscripten_pool_size) otherwise deadlocks may occur.
 

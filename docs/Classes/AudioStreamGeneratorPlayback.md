@@ -25,7 +25,7 @@ This class is meant to be used with [AudioStreamGenerator](AudioStreamGenerator.
 
 - [Audio Generator Demo](https://godotengine.org/asset-library/asset/2759)
 
-- [Redot 3.2 will get new audio features](https://godotengine.org/article/godot-32-will-get-new-audio-features)
+- [Godot 3.2 will get new audio features](https://godotengine.org/article/godot-32-will-get-new-audio-features)
 
 <!-- classref-reftable-group -->
 

@@ -11,7 +11,7 @@
 
 **Inherits:** [ResourceImporter](ResourceImporter.md) **\<** [RefCounted](RefCounted.md) **\<** [Object](Object.md)
 
-Imports native GLSL shaders (not Redot Shaders) as an [RDShaderFile](RDShaderFile.md).
+Imports native GLSL shaders (not Godot Shaders) as an [RDShaderFile](RDShaderFile.md).
 
 <!-- classref-introduction-group -->
 

@@ -59,7 +59,7 @@ Negates the ``x`` using ``-(x)``.<a id="VisualShaderNodeUIntFunc_constant_FUNC_B
 
 [Function](VisualShaderNodeUIntFunc.md#enum_VisualShaderNodeUIntFunc_Function) **FUNC_BITWISE_NOT** = `1`
 
-Returns the result of bitwise ``NOT`` operation on the integer. Translates to ``~a`` in the Redot Shader Language.<a id="VisualShaderNodeUIntFunc_constant_FUNC_MAX"></a>
+Returns the result of bitwise ``NOT`` operation on the integer. Translates to ``~a`` in the Godot Shader Language.<a id="VisualShaderNodeUIntFunc_constant_FUNC_MAX"></a>
 
 <!-- classref-enumeration-constant -->
 

@@ -45,6 +45,11 @@ For physical simulation, **SpringBoneSimulator3D** can have children as self-sta
   </thead>
   <tbody>
     <tr>
+      <td>[bool](bool.md)</td>
+      <td>[mutable_bone_axes](#SpringBoneSimulator3D_property_mutable_bone_axes)</td>
+      <td>`true`</td>
+    </tr>
+    <tr>
       <td>[int](int.md)</td>
       <td>[setting_count](#SpringBoneSimulator3D_property_setting_count)</td>
       <td>`0`</td>
@@ -113,7 +118,7 @@ For physical simulation, **SpringBoneSimulator3D** can have children as self-sta
       <td>[get_end_bone](#SpringBoneSimulator3D_method_get_end_bone)\ (\ index\: [int](int.md)\ ) <span class="const">const</span></td>
     </tr>
     <tr>
-      <td>[BoneDirection](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_BoneDirection)</td>
+      <td>[BoneDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_BoneDirection)</td>
       <td>[get_end_bone_direction](#SpringBoneSimulator3D_method_get_end_bone_direction)\ (\ index\: [int](int.md)\ ) <span class="const">const</span></td>
     </tr>
     <tr>
@@ -173,7 +178,7 @@ For physical simulation, **SpringBoneSimulator3D** can have children as self-sta
       <td>[get_joint_radius](#SpringBoneSimulator3D_method_get_joint_radius)\ (\ index\: [int](int.md), joint\: [int](int.md)\ ) <span class="const">const</span></td>
     </tr>
     <tr>
-      <td>[RotationAxis](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_RotationAxis)</td>
+      <td>[RotationAxis](SkeletonModifier3D.md#enum_SkeletonModifier3D_RotationAxis)</td>
       <td>[get_joint_rotation_axis](#SpringBoneSimulator3D_method_get_joint_rotation_axis)\ (\ index\: [int](int.md), joint\: [int](int.md)\ ) <span class="const">const</span></td>
     </tr>
     <tr>
@@ -201,7 +206,7 @@ For physical simulation, **SpringBoneSimulator3D** can have children as self-sta
       <td>[get_root_bone_name](#SpringBoneSimulator3D_method_get_root_bone_name)\ (\ index\: [int](int.md)\ ) <span class="const">const</span></td>
     </tr>
     <tr>
-      <td>[RotationAxis](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_RotationAxis)</td>
+      <td>[RotationAxis](SkeletonModifier3D.md#enum_SkeletonModifier3D_RotationAxis)</td>
       <td>[get_rotation_axis](#SpringBoneSimulator3D_method_get_rotation_axis)\ (\ index\: [int](int.md)\ ) <span class="const">const</span></td>
     </tr>
     <tr>
@@ -270,7 +275,7 @@ For physical simulation, **SpringBoneSimulator3D** can have children as self-sta
     </tr>
     <tr>
       <td>`void`</td>
-      <td>[set_end_bone_direction](#SpringBoneSimulator3D_method_set_end_bone_direction)\ (\ index\: [int](int.md), bone_direction\: [BoneDirection](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_BoneDirection)\ )</td>
+      <td>[set_end_bone_direction](#SpringBoneSimulator3D_method_set_end_bone_direction)\ (\ index\: [int](int.md), bone_direction\: [BoneDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_BoneDirection)\ )</td>
     </tr>
     <tr>
       <td>`void`</td>
@@ -326,7 +331,7 @@ For physical simulation, **SpringBoneSimulator3D** can have children as self-sta
     </tr>
     <tr>
       <td>`void`</td>
-      <td>[set_joint_rotation_axis](#SpringBoneSimulator3D_method_set_joint_rotation_axis)\ (\ index\: [int](int.md), joint\: [int](int.md), axis\: [RotationAxis](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_RotationAxis)\ )</td>
+      <td>[set_joint_rotation_axis](#SpringBoneSimulator3D_method_set_joint_rotation_axis)\ (\ index\: [int](int.md), joint\: [int](int.md), axis\: [RotationAxis](SkeletonModifier3D.md#enum_SkeletonModifier3D_RotationAxis)\ )</td>
     </tr>
     <tr>
       <td>`void`</td>
@@ -354,7 +359,7 @@ For physical simulation, **SpringBoneSimulator3D** can have children as self-sta
     </tr>
     <tr>
       <td>`void`</td>
-      <td>[set_rotation_axis](#SpringBoneSimulator3D_method_set_rotation_axis)\ (\ index\: [int](int.md), axis\: [RotationAxis](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_RotationAxis)\ )</td>
+      <td>[set_rotation_axis](#SpringBoneSimulator3D_method_set_rotation_axis)\ (\ index\: [int](int.md), axis\: [RotationAxis](SkeletonModifier3D.md#enum_SkeletonModifier3D_RotationAxis)\ )</td>
     </tr>
     <tr>
       <td>`void`</td>
@@ -376,56 +381,6 @@ For physical simulation, **SpringBoneSimulator3D** can have children as self-sta
 <!-- classref-descriptions-group -->
 
 ## Enumerations
-
-<a id="enum_SpringBoneSimulator3D_BoneDirection"></a>
-
-<!-- classref-enumeration -->
-
-enum **BoneDirection**: [🔗](#enum_SpringBoneSimulator3D_BoneDirection)
-
-<a id="SpringBoneSimulator3D_constant_BONE_DIRECTION_PLUS_X"></a>
-
-<!-- classref-enumeration-constant -->
-
-[BoneDirection](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_BoneDirection) **BONE_DIRECTION_PLUS_X** = `0`
-
-Enumerated value for the +X axis.<a id="SpringBoneSimulator3D_constant_BONE_DIRECTION_MINUS_X"></a>
-
-<!-- classref-enumeration-constant -->
-
-[BoneDirection](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_BoneDirection) **BONE_DIRECTION_MINUS_X** = `1`
-
-Enumerated value for the -X axis.<a id="SpringBoneSimulator3D_constant_BONE_DIRECTION_PLUS_Y"></a>
-
-<!-- classref-enumeration-constant -->
-
-[BoneDirection](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_BoneDirection) **BONE_DIRECTION_PLUS_Y** = `2`
-
-Enumerated value for the +Y axis.<a id="SpringBoneSimulator3D_constant_BONE_DIRECTION_MINUS_Y"></a>
-
-<!-- classref-enumeration-constant -->
-
-[BoneDirection](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_BoneDirection) **BONE_DIRECTION_MINUS_Y** = `3`
-
-Enumerated value for the -Y axis.<a id="SpringBoneSimulator3D_constant_BONE_DIRECTION_PLUS_Z"></a>
-
-<!-- classref-enumeration-constant -->
-
-[BoneDirection](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_BoneDirection) **BONE_DIRECTION_PLUS_Z** = `4`
-
-Enumerated value for the +Z axis.<a id="SpringBoneSimulator3D_constant_BONE_DIRECTION_MINUS_Z"></a>
-
-<!-- classref-enumeration-constant -->
-
-[BoneDirection](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_BoneDirection) **BONE_DIRECTION_MINUS_Z** = `5`
-
-Enumerated value for the -Z axis.<a id="SpringBoneSimulator3D_constant_BONE_DIRECTION_FROM_PARENT"></a>
-
-<!-- classref-enumeration-constant -->
-
-[BoneDirection](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_BoneDirection) **BONE_DIRECTION_FROM_PARENT** = `6`
-
-Enumerated value for the axis from a parent bone to the child bone.<hr class="classref-item-separator"/>
 
 <a id="enum_SpringBoneSimulator3D_CenterFrom"></a>
 
@@ -455,45 +410,7 @@ If [Node3D](Node3D.md) is not found, the parent [Skeleton3D](Skeleton3D.md) is t
 
 The bone pose origin of the parent [Skeleton3D](Skeleton3D.md) specified by [set_center_bone()](SpringBoneSimulator3D.md#SpringBoneSimulator3D_method_set_center_bone) is defined as center.
 
-If [Node3D](Node3D.md) is not found, the parent [Skeleton3D](Skeleton3D.md) is treated as center.<hr class="classref-item-separator"/>
-
-<a id="enum_SpringBoneSimulator3D_RotationAxis"></a>
-
-<!-- classref-enumeration -->
-
-enum **RotationAxis**: [🔗](#enum_SpringBoneSimulator3D_RotationAxis)
-
-<a id="SpringBoneSimulator3D_constant_ROTATION_AXIS_X"></a>
-
-<!-- classref-enumeration-constant -->
-
-[RotationAxis](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_RotationAxis) **ROTATION_AXIS_X** = `0`
-
-Enumerated value for the rotation of the X axis.<a id="SpringBoneSimulator3D_constant_ROTATION_AXIS_Y"></a>
-
-<!-- classref-enumeration-constant -->
-
-[RotationAxis](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_RotationAxis) **ROTATION_AXIS_Y** = `1`
-
-Enumerated value for the rotation of the Y axis.<a id="SpringBoneSimulator3D_constant_ROTATION_AXIS_Z"></a>
-
-<!-- classref-enumeration-constant -->
-
-[RotationAxis](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_RotationAxis) **ROTATION_AXIS_Z** = `2`
-
-Enumerated value for the rotation of the Z axis.<a id="SpringBoneSimulator3D_constant_ROTATION_AXIS_ALL"></a>
-
-<!-- classref-enumeration-constant -->
-
-[RotationAxis](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_RotationAxis) **ROTATION_AXIS_ALL** = `3`
-
-Enumerated value for the unconstrained rotation.<a id="SpringBoneSimulator3D_constant_ROTATION_AXIS_CUSTOM"></a>
-
-<!-- classref-enumeration-constant -->
-
-[RotationAxis](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_RotationAxis) **ROTATION_AXIS_CUSTOM** = `4`
-
-Enumerated value for an optional rotation axis. See also [set_joint_rotation_axis_vector()](SpringBoneSimulator3D.md#SpringBoneSimulator3D_method_set_joint_rotation_axis_vector).<hr class="classref-section-separator"/>
+If [Node3D](Node3D.md) is not found, the parent [Skeleton3D](Skeleton3D.md) is treated as center.<hr class="classref-section-separator"/>
 
 <!-- classref-descriptions-group -->
 
@@ -513,6 +430,23 @@ Enumerated value for an optional rotation axis. See also [set_joint_rotation_axi
 The constant force that always affected bones. It is equal to the result when the parent [Skeleton3D](Skeleton3D.md) moves at this speed in the opposite direction.
 
 This is useful for effects such as wind and anti-gravity.
+
+<hr class="classref-item-separator"/>
+
+<a id="SpringBoneSimulator3D_property_mutable_bone_axes"></a>
+
+<!-- classref-property -->
+
+[bool](bool.md) **mutable_bone_axes** = `true` [🔗](#SpringBoneSimulator3D_property_mutable_bone_axes)
+
+<!-- classref-property-setget -->
+
+- `void` **set_mutable_bone_axes**\ (\ value\: [bool](bool.md)\ )
+- [bool](bool.md) **are_bone_axes_mutable**\ (\ )
+
+If ``true``, the solver retrieves the bone axis from the bone pose every frame.
+
+If ``false``, the solver retrieves the bone axis from the bone rest and caches it, which increases performance slightly, but position changes in the bone pose made before processing this **SpringBoneSimulator3D** are ignored.
 
 <hr class="classref-item-separator"/>
 
@@ -669,9 +603,9 @@ Returns the end bone index of the bone chain.
 
 <!-- classref-method -->
 
-[BoneDirection](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_BoneDirection) **get_end_bone_direction**\ (\ index\: [int](int.md)\ ) <span class="const">const</span> [🔗](#SpringBoneSimulator3D_method_get_end_bone_direction)
+[BoneDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_BoneDirection) **get_end_bone_direction**\ (\ index\: [int](int.md)\ ) <span class="const">const</span> [🔗](#SpringBoneSimulator3D_method_get_end_bone_direction)
 
-Returns the end bone's tail direction of the bone chain when [is_end_bone_extended()](SpringBoneSimulator3D.md#SpringBoneSimulator3D_method_is_end_bone_extended) is ``true``.
+Returns the tail direction of the end bone of the bone chain when [is_end_bone_extended()](SpringBoneSimulator3D.md#SpringBoneSimulator3D_method_is_end_bone_extended) is ``true``.
 
 <hr class="classref-item-separator"/>
 
@@ -681,7 +615,7 @@ Returns the end bone's tail direction of the bone chain when [is_end_bone_extend
 
 [float](float.md) **get_end_bone_length**\ (\ index\: [int](int.md)\ ) <span class="const">const</span> [🔗](#SpringBoneSimulator3D_method_get_end_bone_length)
 
-Returns the end bone's tail length of the bone chain when [is_end_bone_extended()](SpringBoneSimulator3D.md#SpringBoneSimulator3D_method_is_end_bone_extended) is ``true``.
+Returns the end bone tail length of the bone chain when [is_end_bone_extended()](SpringBoneSimulator3D.md#SpringBoneSimulator3D_method_is_end_bone_extended) is ``true``.
 
 <hr class="classref-item-separator"/>
 
@@ -819,7 +753,7 @@ Returns the radius at `joint` in the bone chain's joint list.
 
 <!-- classref-method -->
 
-[RotationAxis](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_RotationAxis) **get_joint_rotation_axis**\ (\ index\: [int](int.md), joint\: [int](int.md)\ ) <span class="const">const</span> [🔗](#SpringBoneSimulator3D_method_get_joint_rotation_axis)
+[RotationAxis](SkeletonModifier3D.md#enum_SkeletonModifier3D_RotationAxis) **get_joint_rotation_axis**\ (\ index\: [int](int.md), joint\: [int](int.md)\ ) <span class="const">const</span> [🔗](#SpringBoneSimulator3D_method_get_joint_rotation_axis)
 
 Returns the rotation axis at `joint` in the bone chain's joint list.
 
@@ -833,7 +767,7 @@ Returns the rotation axis at `joint` in the bone chain's joint list.
 
 Returns the rotation axis vector for the specified joint in the bone chain. This vector represents the axis around which the joint can rotate. It is determined based on the rotation axis set for the joint.
 
-If [get_joint_rotation_axis()](SpringBoneSimulator3D.md#SpringBoneSimulator3D_method_get_joint_rotation_axis) is [ROTATION_AXIS_ALL](SpringBoneSimulator3D.md#SpringBoneSimulator3D_constant_ROTATION_AXIS_ALL), this method returns ``Vector3(0, 0, 0)``.
+If [get_joint_rotation_axis()](SpringBoneSimulator3D.md#SpringBoneSimulator3D_method_get_joint_rotation_axis) is [SkeletonModifier3D.ROTATION_AXIS_ALL](SkeletonModifier3D.md#SkeletonModifier3D_constant_ROTATION_AXIS_ALL), this method returns ``Vector3(0, 0, 0)``.
 
 <hr class="classref-item-separator"/>
 
@@ -891,7 +825,7 @@ Returns the root bone name of the bone chain.
 
 <!-- classref-method -->
 
-[RotationAxis](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_RotationAxis) **get_rotation_axis**\ (\ index\: [int](int.md)\ ) <span class="const">const</span> [🔗](#SpringBoneSimulator3D_method_get_rotation_axis)
+[RotationAxis](SkeletonModifier3D.md#enum_SkeletonModifier3D_RotationAxis) **get_rotation_axis**\ (\ index\: [int](int.md)\ ) <span class="const">const</span> [🔗](#SpringBoneSimulator3D_method_get_rotation_axis)
 
 Returns the rotation axis of the bone chain.
 
@@ -905,7 +839,7 @@ Returns the rotation axis of the bone chain.
 
 Returns the rotation axis vector of the bone chain. This vector represents the axis around which the bone chain can rotate. It is determined based on the rotation axis set for the bone chain.
 
-If [get_rotation_axis()](SpringBoneSimulator3D.md#SpringBoneSimulator3D_method_get_rotation_axis) is [ROTATION_AXIS_ALL](SpringBoneSimulator3D.md#SpringBoneSimulator3D_constant_ROTATION_AXIS_ALL), this method returns ``Vector3(0, 0, 0)``.
+If [get_rotation_axis()](SpringBoneSimulator3D.md#SpringBoneSimulator3D_method_get_rotation_axis) is [SkeletonModifier3D.ROTATION_AXIS_ALL](SkeletonModifier3D.md#SkeletonModifier3D_constant_ROTATION_AXIS_ALL), this method returns ``Vector3(0, 0, 0)``.
 
 <hr class="classref-item-separator"/>
 
@@ -945,7 +879,7 @@ Returns ``true`` if the config can be edited individually for each joint.
 
 [bool](bool.md) **is_end_bone_extended**\ (\ index\: [int](int.md)\ ) <span class="const">const</span> [🔗](#SpringBoneSimulator3D_method_is_end_bone_extended)
 
-Returns ``true`` if the end bone is extended to have the tail.
+Returns ``true`` if the end bone is extended to have a tail.
 
 <hr class="classref-item-separator"/>
 
@@ -1075,7 +1009,7 @@ Sets the end bone index of the bone chain.
 
 <!-- classref-method -->
 
-`void` **set_end_bone_direction**\ (\ index\: [int](int.md), bone_direction\: [BoneDirection](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_BoneDirection)\ ) [🔗](#SpringBoneSimulator3D_method_set_end_bone_direction)
+`void` **set_end_bone_direction**\ (\ index\: [int](int.md), bone_direction\: [BoneDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_BoneDirection)\ ) [🔗](#SpringBoneSimulator3D_method_set_end_bone_direction)
 
 Sets the end bone tail direction of the bone chain when [is_end_bone_extended()](SpringBoneSimulator3D.md#SpringBoneSimulator3D_method_is_end_bone_extended) is ``true``.
 
@@ -1129,11 +1063,9 @@ Sets the node path of the [SpringBoneCollision3D](SpringBoneCollision3D.md) at `
 
 `void` **set_extend_end_bone**\ (\ index\: [int](int.md), enabled\: [bool](bool.md)\ ) [🔗](#SpringBoneSimulator3D_method_set_extend_end_bone)
 
-If `enabled` is ``true``, the end bone is extended to have the tail.
+If `enabled` is ``true``, the end bone is extended to have a tail.
 
-The extended tail config is allocated to the last element in the joint list.
-
-In other words, if you set `enabled` is ``false``, the config of last element in the joint list has no effect in the simulated result.
+The extended tail config is allocated to the last element in the joint list. In other words, if you set `enabled` to ``false``, the config of the last element in the joint list has no effect in the simulated result.
 
 <hr class="classref-item-separator"/>
 
@@ -1227,11 +1159,11 @@ Sets the joint radius at `joint` in the bone chain's joint list when [is_config_
 
 <!-- classref-method -->
 
-`void` **set_joint_rotation_axis**\ (\ index\: [int](int.md), joint\: [int](int.md), axis\: [RotationAxis](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_RotationAxis)\ ) [🔗](#SpringBoneSimulator3D_method_set_joint_rotation_axis)
+`void` **set_joint_rotation_axis**\ (\ index\: [int](int.md), joint\: [int](int.md), axis\: [RotationAxis](SkeletonModifier3D.md#enum_SkeletonModifier3D_RotationAxis)\ ) [🔗](#SpringBoneSimulator3D_method_set_joint_rotation_axis)
 
 Sets the rotation axis at `joint` in the bone chain's joint list when [is_config_individual()](SpringBoneSimulator3D.md#SpringBoneSimulator3D_method_is_config_individual) is ``true``.
 
-The axes are based on the [Skeleton3D.get_bone_rest()](Skeleton3D.md#Skeleton3D_method_get_bone_rest)'s space, if `axis` is [ROTATION_AXIS_CUSTOM](SpringBoneSimulator3D.md#SpringBoneSimulator3D_constant_ROTATION_AXIS_CUSTOM), you can specify any axis.
+The axes are based on the [Skeleton3D.get_bone_rest()](Skeleton3D.md#Skeleton3D_method_get_bone_rest)'s space, if `axis` is [SkeletonModifier3D.ROTATION_AXIS_CUSTOM](SkeletonModifier3D.md#SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM), you can specify any axis.
 
 \ **Note:** The rotation axis and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
 
@@ -1247,7 +1179,7 @@ Sets the rotation axis vector for the specified joint in the bone chain.
 
 This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
 
-If the vector length is ``0``, it is considered synonymous with [ROTATION_AXIS_ALL](SpringBoneSimulator3D.md#SpringBoneSimulator3D_constant_ROTATION_AXIS_ALL).
+If the vector length is ``0``, it is considered synonymous with [SkeletonModifier3D.ROTATION_AXIS_ALL](SkeletonModifier3D.md#SkeletonModifier3D_constant_ROTATION_AXIS_ALL).
 
 <hr class="classref-item-separator"/>
 
@@ -1307,11 +1239,11 @@ Sets the root bone name of the bone chain.
 
 <!-- classref-method -->
 
-`void` **set_rotation_axis**\ (\ index\: [int](int.md), axis\: [RotationAxis](SpringBoneSimulator3D.md#enum_SpringBoneSimulator3D_RotationAxis)\ ) [🔗](#SpringBoneSimulator3D_method_set_rotation_axis)
+`void` **set_rotation_axis**\ (\ index\: [int](int.md), axis\: [RotationAxis](SkeletonModifier3D.md#enum_SkeletonModifier3D_RotationAxis)\ ) [🔗](#SpringBoneSimulator3D_method_set_rotation_axis)
 
 Sets the rotation axis of the bone chain. If set to a specific axis, it acts like a hinge joint. The value is cached in each joint setting in the joint list.
 
-The axes are based on the [Skeleton3D.get_bone_rest()](Skeleton3D.md#Skeleton3D_method_get_bone_rest)'s space, if `axis` is [ROTATION_AXIS_CUSTOM](SpringBoneSimulator3D.md#SpringBoneSimulator3D_constant_ROTATION_AXIS_CUSTOM), you can specify any axis.
+The axes are based on the [Skeleton3D.get_bone_rest()](Skeleton3D.md#Skeleton3D_method_get_bone_rest)'s space, if `axis` is [SkeletonModifier3D.ROTATION_AXIS_CUSTOM](SkeletonModifier3D.md#SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM), you can specify any axis.
 
 \ **Note:** The rotation axis vector and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
 
@@ -1327,7 +1259,7 @@ Sets the rotation axis vector of the bone chain. The value is cached in each joi
 
 This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
 
-If the vector length is ``0``, it is considered synonymous with [ROTATION_AXIS_ALL](SpringBoneSimulator3D.md#SpringBoneSimulator3D_constant_ROTATION_AXIS_ALL).
+If the vector length is ``0``, it is considered synonymous with [SkeletonModifier3D.ROTATION_AXIS_ALL](SkeletonModifier3D.md#SkeletonModifier3D_constant_ROTATION_AXIS_ALL).
 
 <hr class="classref-item-separator"/>
 

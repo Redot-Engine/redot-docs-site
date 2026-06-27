@@ -27,7 +27,7 @@ The GDExtensionManager loads, initializes, and keeps track of all available [GDE
 
 - [GDExtension overview](../tutorials/scripting/gdextension/what_is_gdextension.md)
 
-- [GDExtension example in C++](../tutorials/scripting/gdextension/gdextension_cpp_example.md)
+- [GDExtension example in C++](../tutorials/scripting/cpp/gdextension_cpp_example.md)
 
 <!-- classref-reftable-group -->
 

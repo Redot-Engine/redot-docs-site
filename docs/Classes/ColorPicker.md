@@ -81,6 +81,11 @@ A widget that provides an interface for selecting or modifying a color. It can o
       <td>`true`</td>
     </tr>
     <tr>
+      <td>[float](float.md)</td>
+      <td>[intensity](#ColorPicker_property_intensity)</td>
+      <td>`0.0`</td>
+    </tr>
+    <tr>
       <td>[Color](Color.md)</td>
       <td>[old_color](#ColorPicker_property_old_color)</td>
       <td>`Color(0, 0, 0, 1)`</td>
@@ -559,6 +564,23 @@ If ``true``, shows an intensity slider. The intensity is applied as follows: mul
 - [bool](bool.md) **is_hex_visible**\ (\ )
 
 If ``true``, the hex color code input field is visible.
+
+<hr class="classref-item-separator"/>
+
+<a id="ColorPicker_property_intensity"></a>
+
+<!-- classref-property -->
+
+[float](float.md) **intensity** = `0.0` [🔗](#ColorPicker_property_intensity)
+
+<!-- classref-property-setget -->
+
+- `void` **set_intensity**\ (\ value\: [float](float.md)\ )
+- [float](float.md) **get_intensity**\ (\ )
+
+The currently selected intensity.
+
+Note: ``set_intensity`` clamps the value in the range ``[-10.0, 10.0]``
 
 <hr class="classref-item-separator"/>
 

@@ -352,7 +352,7 @@ Calling [skip()](EditorExportPlugin.md#EditorExportPlugin_method_skip) inside th
 
 [PackedStringArray](PackedStringArray.md) **_get_android_dependencies**\ (\ platform\: [EditorExportPlatform](EditorExportPlatform.md), debug\: [bool](bool.md)\ ) <span class="virtual">virtual</span> <span class="const">const</span> [🔗](#EditorExportPlugin_private_method__get_android_dependencies)
 
-Virtual method to be overridden by the user. This is called to retrieve the set of Android dependencies provided by this plugin. Each returned Android dependency should have the format of an Android remote binary dependency: ``org.Redot.example:my-plugin:0.0.0``\\ 
+Virtual method to be overridden by the user. This is called to retrieve the set of Android dependencies provided by this plugin. Each returned Android dependency should have the format of an Android remote binary dependency: ``org.godot.example:my-plugin:0.0.0``\\ 
 
 For more information see [Android documentation on dependencies](https://developer.android.com/build/dependencies?agpversion=4.1#dependency-types).
 

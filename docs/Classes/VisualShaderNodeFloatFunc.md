@@ -53,109 +53,109 @@ enum **Function**: [🔗](#enum_VisualShaderNodeFloatFunc_Function)
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_SIN** = `0`
 
-Returns the sine of the parameter. Translates to ``sin(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_COS"></a>
+Returns the sine of the parameter. Translates to ``sin(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_COS"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_COS** = `1`
 
-Returns the cosine of the parameter. Translates to ``cos(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_TAN"></a>
+Returns the cosine of the parameter. Translates to ``cos(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_TAN"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_TAN** = `2`
 
-Returns the tangent of the parameter. Translates to ``tan(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ASIN"></a>
+Returns the tangent of the parameter. Translates to ``tan(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ASIN"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_ASIN** = `3`
 
-Returns the arc-sine of the parameter. Translates to ``asin(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ACOS"></a>
+Returns the arc-sine of the parameter. Translates to ``asin(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ACOS"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_ACOS** = `4`
 
-Returns the arc-cosine of the parameter. Translates to ``acos(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ATAN"></a>
+Returns the arc-cosine of the parameter. Translates to ``acos(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ATAN"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_ATAN** = `5`
 
-Returns the arc-tangent of the parameter. Translates to ``atan(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_SINH"></a>
+Returns the arc-tangent of the parameter. Translates to ``atan(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_SINH"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_SINH** = `6`
 
-Returns the hyperbolic sine of the parameter. Translates to ``sinh(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_COSH"></a>
+Returns the hyperbolic sine of the parameter. Translates to ``sinh(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_COSH"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_COSH** = `7`
 
-Returns the hyperbolic cosine of the parameter. Translates to ``cosh(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_TANH"></a>
+Returns the hyperbolic cosine of the parameter. Translates to ``cosh(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_TANH"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_TANH** = `8`
 
-Returns the hyperbolic tangent of the parameter. Translates to ``tanh(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_LOG"></a>
+Returns the hyperbolic tangent of the parameter. Translates to ``tanh(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_LOG"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_LOG** = `9`
 
-Returns the natural logarithm of the parameter. Translates to ``log(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_EXP"></a>
+Returns the natural logarithm of the parameter. Translates to ``log(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_EXP"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_EXP** = `10`
 
-Returns the natural exponentiation of the parameter. Translates to ``exp(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_SQRT"></a>
+Returns the natural exponentiation of the parameter. Translates to ``exp(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_SQRT"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_SQRT** = `11`
 
-Returns the square root of the parameter. Translates to ``sqrt(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ABS"></a>
+Returns the square root of the parameter. Translates to ``sqrt(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ABS"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_ABS** = `12`
 
-Returns the absolute value of the parameter. Translates to ``abs(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_SIGN"></a>
+Returns the absolute value of the parameter. Translates to ``abs(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_SIGN"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_SIGN** = `13`
 
-Extracts the sign of the parameter. Translates to ``sign(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_FLOOR"></a>
+Extracts the sign of the parameter. Translates to ``sign(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_FLOOR"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_FLOOR** = `14`
 
-Finds the nearest integer less than or equal to the parameter. Translates to ``floor(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ROUND"></a>
+Finds the nearest integer less than or equal to the parameter. Translates to ``floor(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ROUND"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_ROUND** = `15`
 
-Finds the nearest integer to the parameter. Translates to ``round(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_CEIL"></a>
+Finds the nearest integer to the parameter. Translates to ``round(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_CEIL"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_CEIL** = `16`
 
-Finds the nearest integer that is greater than or equal to the parameter. Translates to ``ceil(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_FRACT"></a>
+Finds the nearest integer that is greater than or equal to the parameter. Translates to ``ceil(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_FRACT"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_FRACT** = `17`
 
-Computes the fractional part of the argument. Translates to ``fract(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_SATURATE"></a>
+Computes the fractional part of the argument. Translates to ``fract(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_SATURATE"></a>
 
 <!-- classref-enumeration-constant -->
 
@@ -173,49 +173,49 @@ Negates the ``x`` using ``-(x)``.<a id="VisualShaderNodeFloatFunc_constant_FUNC_
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_ACOSH** = `20`
 
-Returns the arc-hyperbolic-cosine of the parameter. Translates to ``acosh(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ASINH"></a>
+Returns the arc-hyperbolic-cosine of the parameter. Translates to ``acosh(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ASINH"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_ASINH** = `21`
 
-Returns the arc-hyperbolic-sine of the parameter. Translates to ``asinh(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ATANH"></a>
+Returns the arc-hyperbolic-sine of the parameter. Translates to ``asinh(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ATANH"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_ATANH** = `22`
 
-Returns the arc-hyperbolic-tangent of the parameter. Translates to ``atanh(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_DEGREES"></a>
+Returns the arc-hyperbolic-tangent of the parameter. Translates to ``atanh(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_DEGREES"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_DEGREES** = `23`
 
-Convert a quantity in radians to degrees. Translates to ``degrees(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_EXP2"></a>
+Convert a quantity in radians to degrees. Translates to ``degrees(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_EXP2"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_EXP2** = `24`
 
-Returns 2 raised by the power of the parameter. Translates to ``exp2(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_INVERSE_SQRT"></a>
+Returns 2 raised by the power of the parameter. Translates to ``exp2(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_INVERSE_SQRT"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_INVERSE_SQRT** = `25`
 
-Returns the inverse of the square root of the parameter. Translates to ``inversesqrt(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_LOG2"></a>
+Returns the inverse of the square root of the parameter. Translates to ``inversesqrt(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_LOG2"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_LOG2** = `26`
 
-Returns the base 2 logarithm of the parameter. Translates to ``log2(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_RADIANS"></a>
+Returns the base 2 logarithm of the parameter. Translates to ``log2(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_RADIANS"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_RADIANS** = `27`
 
-Convert a quantity in degrees to radians. Translates to ``radians(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_RECIPROCAL"></a>
+Convert a quantity in degrees to radians. Translates to ``radians(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_RECIPROCAL"></a>
 
 <!-- classref-enumeration-constant -->
 
@@ -227,13 +227,13 @@ Finds reciprocal value of dividing 1 by ``x`` (i.e. ``1 / x``).<a id="VisualShad
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_ROUNDEVEN** = `29`
 
-Finds the nearest even integer to the parameter. Translates to ``roundEven(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_TRUNC"></a>
+Finds the nearest even integer to the parameter. Translates to ``roundEven(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_TRUNC"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeFloatFunc.md#enum_VisualShaderNodeFloatFunc_Function) **FUNC_TRUNC** = `30`
 
-Returns a value equal to the nearest integer to ``x`` whose absolute value is not larger than the absolute value of ``x``. Translates to ``trunc(x)`` in the RedotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ONEMINUS"></a>
+Returns a value equal to the nearest integer to ``x`` whose absolute value is not larger than the absolute value of ``x``. Translates to ``trunc(x)`` in the GodotShader Language.<a id="VisualShaderNodeFloatFunc_constant_FUNC_ONEMINUS"></a>
 
 <!-- classref-enumeration-constant -->
 

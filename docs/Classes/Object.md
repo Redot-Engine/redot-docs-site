@@ -19,7 +19,7 @@ Base class for all other classes in the engine.
 
 An advanced [Variant](Variant.md) type. All classes in the engine inherit from Object. Each class may define new properties, methods or signals, which are available to all inheriting classes. For example, a [Sprite2D](Sprite2D.md) instance is able to call [Node.add_child()](Node.md#Node_method_add_child) because it inherits from [Node](Node.md).
 
-You can create new instances, using ``Object.new()`` in GDScript, or ``new RedotObject`` in C#.
+You can create new instances, using ``Object.new()`` in GDScript, or ``new GodotObject`` in C#.
 
 To delete an Object instance, call [free()](Object.md#Object_method_free). This is necessary for most classes inheriting Object, because they do not manage memory on their own, and will otherwise cause memory leaks when no longer in use. There are a few classes that perform memory management. For example, [RefCounted](RefCounted.md) (and by extension [Resource](Resource.md)) deletes itself when no longer referenced, and [Node](Node.md) deletes its children when freed.
 
@@ -54,7 +54,7 @@ Lastly, every object can also contain metadata (data about data). [set_meta()](O
 
 ## Tutorials
 
-- [Object class introduction](../Contributing/Development/core_and_modules/object_class.md)
+- [Object class introduction](../engine_details/architecture/object_class.md)
 
 - [When and how to avoid using nodes for everything](../tutorials/best_practices/node_alternatives.md)
 
@@ -614,7 +614,7 @@ The example below displays a list of numbers shown as words going from ``ZERO`` 
 
 `void` **_init**\ (\ ) <span class="virtual">virtual</span> [🔗](#Object_private_method__init)
 
-Called when the object's script is instantiated, oftentimes after the object is initialized in memory (through ``Object.new()`` in GDScript, or ``new RedotObject`` in C#). It can be also defined to take in parameters. This method is similar to a constructor in most programming languages.
+Called when the object's script is instantiated, oftentimes after the object is initialized in memory (through ``Object.new()`` in GDScript, or ``new GodotObject`` in C#). It can be also defined to take in parameters. This method is similar to a constructor in most programming languages.
 
 \ **Note:** If [_init()](Object.md#Object_private_method__init) is defined with *required* parameters, the Object with script may only be created directly. If any other means (such as [PackedScene.instantiate()](PackedScene.md#PackedScene_method_instantiate) or [Node.duplicate()](Node.md#Node_method_duplicate)) are used, the script's initialization will fail.
 
@@ -1520,10 +1520,10 @@ If `reversed` is ``true``, the call order is reversed.
     player.SetScript(GD.Load("res://player.gd"));
 
     player.Notification(NotificationEnterTree);
-    // The call order is RedotObject -&gt; Node -&gt; Node2D -&gt; player.gd.
+    // The call order is GodotObject -&gt; Node -&gt; Node2D -&gt; player.gd.
 
     player.Notification(NotificationEnterTree, true);
-    // The call order is player.gd -&gt; Node2D -&gt; Node -&gt; RedotObject.
+    // The call order is player.gd -&gt; Node2D -&gt; Node -&gt; GodotObject.
 ```
 
 

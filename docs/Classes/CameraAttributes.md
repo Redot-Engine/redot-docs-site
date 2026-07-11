@@ -82,6 +82,8 @@ This is a pure virtual class that is inherited by [CameraAttributesPhysical](Cam
 
 If ``true``, enables the tonemapping auto exposure mode of the scene renderer. If ``true``, the renderer will automatically determine the exposure setting to adapt to the scene's illumination and the observed light.
 
+\ **Note:** Auto-exposure is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+
 <hr class="classref-item-separator"/>
 
 <a id="CameraAttributes_property_auto_exposure_scale"></a>

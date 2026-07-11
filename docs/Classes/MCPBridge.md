@@ -11,10 +11,13 @@
 
 **Inherits:** [Object](Object.md)
 
-<div class="contribute">
-There is currently no description for this class. Please help us by contributing one!
+TCP bridge relaying commands between the MCP server and a running game process.
 
-</div>
+<!-- classref-introduction-group -->
+
+## Description
+
+**MCPBridge** is a bidirectional TCP relay. On the server (headless) side it listens on an ephemeral loopback port and sends commands produced by MCP tools. On the game side (started with the ``--mcp-bridge-port`` flag) it connects back to that port, receives commands, executes them against the live scene tree/viewport, and returns results. The bridge is single-connection and automatically replaces a stale peer when a new game process connects.
 
 <!-- classref-reftable-group -->
 
@@ -43,8 +46,5 @@ There is currently no description for this class. Please help us by contributing
 
 `void` **update**\ (\ ) [🔗](#MCPBridge_method_update)
 
-<div class="contribute">
-There is currently no description for this method. Please help us by contributing one!
-
-</div>
+Pumps the bridge: on the host side it accepts pending connections; on the game side it reads incoming commands, dispatches them, and writes responses. Called each frame from the main loop (game side) or the server's bridge thread (host side).
 

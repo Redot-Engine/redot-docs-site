@@ -11,7 +11,7 @@
 
 **Inherits:** [Node3D](Node3D.md) **\<** [Node](Node.md) **\<** [Object](Object.md)
 
-**Inherited By:** [BoneConstraint3D](BoneConstraint3D.md), [LookAtModifier3D](LookAtModifier3D.md), [ModifierBoneTarget3D](ModifierBoneTarget3D.md), [PhysicalBoneSimulator3D](PhysicalBoneSimulator3D.md), [RetargetModifier3D](RetargetModifier3D.md), [SkeletonIK3D](SkeletonIK3D.md), [SpringBoneSimulator3D](SpringBoneSimulator3D.md), [XRBodyModifier3D](XRBodyModifier3D.md), [XRHandModifier3D](XRHandModifier3D.md)
+**Inherited By:** [BoneConstraint3D](BoneConstraint3D.md), [BoneTwistDisperser3D](BoneTwistDisperser3D.md), [IKModifier3D](IKModifier3D.md), [LimitAngularVelocityModifier3D](LimitAngularVelocityModifier3D.md), [LookAtModifier3D](LookAtModifier3D.md), [ModifierBoneTarget3D](ModifierBoneTarget3D.md), [PhysicalBoneSimulator3D](PhysicalBoneSimulator3D.md), [RetargetModifier3D](RetargetModifier3D.md), [SkeletonIK3D](SkeletonIK3D.md), [SpringBoneSimulator3D](SpringBoneSimulator3D.md), [XRBodyModifier3D](XRBodyModifier3D.md), [XRHandModifier3D](XRHandModifier3D.md)
 
 A node that may modify a Skeleton3D's bones.
 
@@ -147,7 +147,151 @@ Enumerated value for the +Z axis.<a id="SkeletonModifier3D_constant_BONE_AXIS_MI
 
 [BoneAxis](SkeletonModifier3D.md#enum_SkeletonModifier3D_BoneAxis) **BONE_AXIS_MINUS_Z** = `5`
 
-Enumerated value for the -Z axis.<hr class="classref-section-separator"/>
+Enumerated value for the -Z axis.<hr class="classref-item-separator"/>
+
+<a id="enum_SkeletonModifier3D_BoneDirection"></a>
+
+<!-- classref-enumeration -->
+
+enum **BoneDirection**: [🔗](#enum_SkeletonModifier3D_BoneDirection)
+
+<a id="SkeletonModifier3D_constant_BONE_DIRECTION_PLUS_X"></a>
+
+<!-- classref-enumeration-constant -->
+
+[BoneDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_BoneDirection) **BONE_DIRECTION_PLUS_X** = `0`
+
+Enumerated value for the +X axis.<a id="SkeletonModifier3D_constant_BONE_DIRECTION_MINUS_X"></a>
+
+<!-- classref-enumeration-constant -->
+
+[BoneDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_BoneDirection) **BONE_DIRECTION_MINUS_X** = `1`
+
+Enumerated value for the -X axis.<a id="SkeletonModifier3D_constant_BONE_DIRECTION_PLUS_Y"></a>
+
+<!-- classref-enumeration-constant -->
+
+[BoneDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_BoneDirection) **BONE_DIRECTION_PLUS_Y** = `2`
+
+Enumerated value for the +Y axis.<a id="SkeletonModifier3D_constant_BONE_DIRECTION_MINUS_Y"></a>
+
+<!-- classref-enumeration-constant -->
+
+[BoneDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_BoneDirection) **BONE_DIRECTION_MINUS_Y** = `3`
+
+Enumerated value for the -Y axis.<a id="SkeletonModifier3D_constant_BONE_DIRECTION_PLUS_Z"></a>
+
+<!-- classref-enumeration-constant -->
+
+[BoneDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_BoneDirection) **BONE_DIRECTION_PLUS_Z** = `4`
+
+Enumerated value for the +Z axis.<a id="SkeletonModifier3D_constant_BONE_DIRECTION_MINUS_Z"></a>
+
+<!-- classref-enumeration-constant -->
+
+[BoneDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_BoneDirection) **BONE_DIRECTION_MINUS_Z** = `5`
+
+Enumerated value for the -Z axis.<a id="SkeletonModifier3D_constant_BONE_DIRECTION_FROM_PARENT"></a>
+
+<!-- classref-enumeration-constant -->
+
+[BoneDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_BoneDirection) **BONE_DIRECTION_FROM_PARENT** = `6`
+
+Enumerated value for the axis from a parent bone to the child bone.<hr class="classref-item-separator"/>
+
+<a id="enum_SkeletonModifier3D_SecondaryDirection"></a>
+
+<!-- classref-enumeration -->
+
+enum **SecondaryDirection**: [🔗](#enum_SkeletonModifier3D_SecondaryDirection)
+
+<a id="SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE"></a>
+
+<!-- classref-enumeration-constant -->
+
+[SecondaryDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_SecondaryDirection) **SECONDARY_DIRECTION_NONE** = `0`
+
+Enumerated value for the case when the axis is undefined.<a id="SkeletonModifier3D_constant_SECONDARY_DIRECTION_PLUS_X"></a>
+
+<!-- classref-enumeration-constant -->
+
+[SecondaryDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_SecondaryDirection) **SECONDARY_DIRECTION_PLUS_X** = `1`
+
+Enumerated value for the +X axis.<a id="SkeletonModifier3D_constant_SECONDARY_DIRECTION_MINUS_X"></a>
+
+<!-- classref-enumeration-constant -->
+
+[SecondaryDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_SecondaryDirection) **SECONDARY_DIRECTION_MINUS_X** = `2`
+
+Enumerated value for the -X axis.<a id="SkeletonModifier3D_constant_SECONDARY_DIRECTION_PLUS_Y"></a>
+
+<!-- classref-enumeration-constant -->
+
+[SecondaryDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_SecondaryDirection) **SECONDARY_DIRECTION_PLUS_Y** = `3`
+
+Enumerated value for the +Y axis.<a id="SkeletonModifier3D_constant_SECONDARY_DIRECTION_MINUS_Y"></a>
+
+<!-- classref-enumeration-constant -->
+
+[SecondaryDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_SecondaryDirection) **SECONDARY_DIRECTION_MINUS_Y** = `4`
+
+Enumerated value for the -Y axis.<a id="SkeletonModifier3D_constant_SECONDARY_DIRECTION_PLUS_Z"></a>
+
+<!-- classref-enumeration-constant -->
+
+[SecondaryDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_SecondaryDirection) **SECONDARY_DIRECTION_PLUS_Z** = `5`
+
+Enumerated value for the +Z axis.<a id="SkeletonModifier3D_constant_SECONDARY_DIRECTION_MINUS_Z"></a>
+
+<!-- classref-enumeration-constant -->
+
+[SecondaryDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_SecondaryDirection) **SECONDARY_DIRECTION_MINUS_Z** = `6`
+
+Enumerated value for the -Z axis.<a id="SkeletonModifier3D_constant_SECONDARY_DIRECTION_CUSTOM"></a>
+
+<!-- classref-enumeration-constant -->
+
+[SecondaryDirection](SkeletonModifier3D.md#enum_SkeletonModifier3D_SecondaryDirection) **SECONDARY_DIRECTION_CUSTOM** = `7`
+
+Enumerated value for an optional axis.<hr class="classref-item-separator"/>
+
+<a id="enum_SkeletonModifier3D_RotationAxis"></a>
+
+<!-- classref-enumeration -->
+
+enum **RotationAxis**: [🔗](#enum_SkeletonModifier3D_RotationAxis)
+
+<a id="SkeletonModifier3D_constant_ROTATION_AXIS_X"></a>
+
+<!-- classref-enumeration-constant -->
+
+[RotationAxis](SkeletonModifier3D.md#enum_SkeletonModifier3D_RotationAxis) **ROTATION_AXIS_X** = `0`
+
+Enumerated value for the rotation of the X axis.<a id="SkeletonModifier3D_constant_ROTATION_AXIS_Y"></a>
+
+<!-- classref-enumeration-constant -->
+
+[RotationAxis](SkeletonModifier3D.md#enum_SkeletonModifier3D_RotationAxis) **ROTATION_AXIS_Y** = `1`
+
+Enumerated value for the rotation of the Y axis.<a id="SkeletonModifier3D_constant_ROTATION_AXIS_Z"></a>
+
+<!-- classref-enumeration-constant -->
+
+[RotationAxis](SkeletonModifier3D.md#enum_SkeletonModifier3D_RotationAxis) **ROTATION_AXIS_Z** = `2`
+
+Enumerated value for the rotation of the Z axis.<a id="SkeletonModifier3D_constant_ROTATION_AXIS_ALL"></a>
+
+<!-- classref-enumeration-constant -->
+
+[RotationAxis](SkeletonModifier3D.md#enum_SkeletonModifier3D_RotationAxis) **ROTATION_AXIS_ALL** = `3`
+
+Enumerated value for the unconstrained rotation.<a id="SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM"></a>
+
+<!-- classref-enumeration-constant -->
+
+[RotationAxis](SkeletonModifier3D.md#enum_SkeletonModifier3D_RotationAxis) **ROTATION_AXIS_CUSTOM** = `4`
+
+Enumerated value for an optional rotation axis.<hr class="classref-section-separator"/>
 
 <!-- classref-descriptions-group -->
 
@@ -214,6 +358,8 @@ Override this virtual method to implement a custom skeleton modifier. You should
 \ [_process_modification_with_delta()](SkeletonModifier3D.md#SkeletonModifier3D_private_method__process_modification_with_delta) must not apply [influence](SkeletonModifier3D.md#SkeletonModifier3D_property_influence) to bone poses because the [Skeleton3D](Skeleton3D.md) automatically applies influence to all bone poses set by the modifier.
 
 \ `delta` is passed from parent [Skeleton3D](Skeleton3D.md). See also [Skeleton3D.advance()](Skeleton3D.md#Skeleton3D_method_advance).
+
+\ **Note:** This method may be called outside [Node._process()](Node.md#Node_private_method__process) and [Node._physics_process()](Node.md#Node_private_method__physics_process) with `delta` is ``0.0``, since the modification should be processed immediately after initialization of the [Skeleton3D](Skeleton3D.md).
 
 <hr class="classref-item-separator"/>
 

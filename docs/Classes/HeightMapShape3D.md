@@ -17,7 +17,7 @@ A 3D height map shape used for physics collision.
 
 ## Description
 
-A 3D heightmap shape, intended for use in physics. Usually used to provide a shape for a [CollisionShape3D](CollisionShape3D.md). This type is most commonly used for terrain with vertices placed in a fixed width grid. Due to the nature of the heightmap, it cannot be used to model overhangs or caves, which would require multiple vertices at the same vertical location. Holes can be punched through the collision by assigning [@GDScript.NAN](@GDScript.md#@GDScript_constant_NAN) to the height of the desired vertices (this is supported in both RedotPhysics3D and Jolt Physics). You could then insert meshes with their own separate collision to provide overhangs, caves, and so on.
+A 3D heightmap shape, intended for use in physics. Usually used to provide a shape for a [CollisionShape3D](CollisionShape3D.md). This type is most commonly used for terrain with vertices placed in a fixed width grid. Due to the nature of the heightmap, it cannot be used to model overhangs or caves, which would require multiple vertices at the same vertical location. Holes can be punched through the collision by assigning [@GDScript.NAN](@GDScript.md#@GDScript_constant_NAN) to the height of the desired vertices (this is supported in both GodotPhysics3D and Jolt Physics). You could then insert meshes with their own separate collision to provide overhangs, caves, and so on.
 
 \ **Performance:** **HeightMapShape3D** is faster to check collisions against than [ConcavePolygonShape3D](ConcavePolygonShape3D.md), but it is significantly slower than primitive shapes like [BoxShape3D](BoxShape3D.md).
 

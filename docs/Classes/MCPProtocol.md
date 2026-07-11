@@ -11,10 +11,13 @@
 
 **Inherits:** [JSONRPC](JSONRPC.md) **\<** [Object](Object.md)
 
-<div class="contribute">
-There is currently no description for this class. Please help us by contributing one!
+MCP JSON-RPC protocol handler: capability negotiation, tool listing, and dispatch.
 
-</div>
+<!-- classref-introduction-group -->
+
+## Description
+
+Implements the Model Context Protocol request layer on top of the JSONRPC class. Handles the ``initialize`` handshake with version negotiation, the ``notifications/initialized`` lifecycle event, ``ping``, ``tools/list``, and ``tools/call``. Tool execution is delegated to the internal MCPTools class. The operation phase is gated until the ``initialized`` notification is received, per spec.
 
 <!-- classref-reftable-group -->
 
@@ -43,8 +46,5 @@ There is currently no description for this class. Please help us by contributing
 
 [bool](bool.md) **is_initialized**\ (\ ) <span class="const">const</span> [🔗](#MCPProtocol_method_is_initialized)
 
-<div class="contribute">
-There is currently no description for this method. Please help us by contributing one!
-
-</div>
+Returns ``true`` after the client has sent the ``notifications/initialized`` handshake message, marking the start of the operation phase.
 

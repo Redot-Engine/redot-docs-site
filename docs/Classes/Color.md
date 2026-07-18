@@ -168,10 +168,14 @@ There are notable differences when using this API with C#. See the C# difference
   <thead>
     <tr>
       <th>[Color](Color.md)</th>
-      <th>[blend](#Color_method_blend)\ (\ over\: [Color](Color.md)\ ) <span class="const">const</span></th>
+      <th>[apply_intensity](#Color_method_apply_intensity)\ (\ intensity\: [float](float.md)\ ) <span class="const">const</span></th>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>[Color](Color.md)</td>
+      <td>[blend](#Color_method_blend)\ (\ over\: [Color](Color.md)\ ) <span class="const">const</span></td>
+    </tr>
     <tr>
       <td>[Color](Color.md)</td>
       <td>[clamp](#Color_method_clamp)\ (\ min\: [Color](Color.md) = Color(0, 0, 0, 0), max\: [Color](Color.md) = Color(1, 1, 1, 1)\ ) <span class="const">const</span></td>
@@ -1772,6 +1776,20 @@ Constructs a **Color** from RGBA values, typically between 0.0 and 1.0.
 <!-- classref-descriptions-group -->
 
 ## Method Descriptions
+
+<a id="Color_method_apply_intensity"></a>
+
+<!-- classref-method -->
+
+[Color](Color.md) **apply_intensity**\ (\ intensity\: [float](float.md)\ ) <span class="const">const</span> [🔗](#Color_method_apply_intensity)
+
+Adjusts the color's intensity by multiplying the RGB components with a factor derived from the given intensity.
+
+The factor is calculated as 2 raised to the power of the provided intensity value.
+
+The adjusted RGB values are clamped to the range ``0.0`` and ``1.0``.
+
+<hr class="classref-item-separator"/>
 
 <a id="Color_method_blend"></a>
 

@@ -1006,11 +1006,11 @@ If you're distributing your app via the Play Store, it's generally recommended t
 
 [Dictionary](Dictionary.md) **gradle_build/custom_theme_attributes** [🔗](#EditorExportPlatformAndroid_property_gradle_build/custom_theme_attributes)
 
-A dictionary of custom theme attributes to include in the exported Android project. Each entry defines a theme attribute name and its value, and will be added to the **RedotAppMainTheme**.
+A dictionary of custom theme attributes to include in the exported Android project. Each entry defines a theme attribute name and its value, and will be added to the **GodotAppMainTheme**.
 
 For example, the key ``android:windowSwipeToDismiss`` with the value ``false`` is resolved to ``&lt;item name="android:windowSwipeToDismiss"&gt;false&lt;/item&gt;``.
 
-\ **Note:** To add a custom attribute to the **RedotAppSplashTheme**, prefix the attribute name with ``[splash]``.
+\ **Note:** To add a custom attribute to the **GodotAppSplashTheme**, prefix the attribute name with ``[splash]``.
 
 \ **Note:** Reserved attributes configured via other export options or project settings cannot be overridden by ``custom_theme_attributes`` and are skipped during export.
 
@@ -1084,7 +1084,7 @@ If ``true``, OpenGL ES debug context will be created (additional runtime checkin
 
 Path of the debug keystore file.
 
-Can be overridden with the environment variable ``Redot_ANDROID_KEYSTORE_DEBUG_PATH``.
+Can be overridden with the environment variable ``GODOT_ANDROID_KEYSTORE_DEBUG_PATH``.
 
 Fallbacks to ``EditorSettings.export/android/debug_keystore`` if empty.
 
@@ -1098,7 +1098,7 @@ Fallbacks to ``EditorSettings.export/android/debug_keystore`` if empty.
 
 Password for the debug keystore file.
 
-Can be overridden with the environment variable ``Redot_ANDROID_KEYSTORE_DEBUG_PASSWORD``.
+Can be overridden with the environment variable ``GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD``.
 
 Fallbacks to ``EditorSettings.export/android/debug_keystore_pass`` if both it and [keystore/debug](EditorExportPlatformAndroid.md#EditorExportPlatformAndroid_property_keystore/debug) are empty.
 
@@ -1112,7 +1112,7 @@ Fallbacks to ``EditorSettings.export/android/debug_keystore_pass`` if both it an
 
 User name for the debug keystore file.
 
-Can be overridden with the environment variable ``Redot_ANDROID_KEYSTORE_DEBUG_USER``.
+Can be overridden with the environment variable ``GODOT_ANDROID_KEYSTORE_DEBUG_USER``.
 
 Fallbacks to ``EditorSettings.export/android/debug_keystore_user`` if both it and [keystore/debug](EditorExportPlatformAndroid.md#EditorExportPlatformAndroid_property_keystore/debug) are empty.
 
@@ -1126,7 +1126,7 @@ Fallbacks to ``EditorSettings.export/android/debug_keystore_user`` if both it an
 
 Path of the release keystore file.
 
-Can be overridden with the environment variable ``Redot_ANDROID_KEYSTORE_RELEASE_PATH``.
+Can be overridden with the environment variable ``GODOT_ANDROID_KEYSTORE_RELEASE_PATH``.
 
 <hr class="classref-item-separator"/>
 
@@ -1138,7 +1138,7 @@ Can be overridden with the environment variable ``Redot_ANDROID_KEYSTORE_RELEASE
 
 Password for the release keystore file.
 
-Can be overridden with the environment variable ``Redot_ANDROID_KEYSTORE_RELEASE_PASSWORD``.
+Can be overridden with the environment variable ``GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD``.
 
 <hr class="classref-item-separator"/>
 
@@ -1150,7 +1150,7 @@ Can be overridden with the environment variable ``Redot_ANDROID_KEYSTORE_RELEASE
 
 User name for the release keystore file.
 
-Can be overridden with the environment variable ``Redot_ANDROID_KEYSTORE_RELEASE_USER``.
+Can be overridden with the environment variable ``GODOT_ANDROID_KEYSTORE_RELEASE_USER``.
 
 <hr class="classref-item-separator"/>
 

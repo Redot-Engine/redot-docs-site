@@ -111,13 +111,13 @@ enum **WriteMode**: [🔗](#enum_WebRTCDataChannel_WriteMode)
 
 [WriteMode](WebRTCDataChannel.md#enum_WebRTCDataChannel_WriteMode) **WRITE_MODE_TEXT** = `0`
 
-Tells the channel to send data over this channel as text. An external peer (non-Redot) would receive this as a string.<a id="WebRTCDataChannel_constant_WRITE_MODE_BINARY"></a>
+Tells the channel to send data over this channel as text. An external peer (non-Godot) would receive this as a string.<a id="WebRTCDataChannel_constant_WRITE_MODE_BINARY"></a>
 
 <!-- classref-enumeration-constant -->
 
 [WriteMode](WebRTCDataChannel.md#enum_WebRTCDataChannel_WriteMode) **WRITE_MODE_BINARY** = `1`
 
-Tells the channel to send data over this channel as binary. An external peer (non-Redot) would receive this as array buffer or blob.<hr class="classref-item-separator"/>
+Tells the channel to send data over this channel as binary. An external peer (non-Godot) would receive this as array buffer or blob.<hr class="classref-item-separator"/>
 
 <a id="enum_WebRTCDataChannel_ChannelState"></a>
 

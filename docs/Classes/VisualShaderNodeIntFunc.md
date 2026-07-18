@@ -53,7 +53,7 @@ enum **Function**: [🔗](#enum_VisualShaderNodeIntFunc_Function)
 
 [Function](VisualShaderNodeIntFunc.md#enum_VisualShaderNodeIntFunc_Function) **FUNC_ABS** = `0`
 
-Returns the absolute value of the parameter. Translates to ``abs(x)`` in the Redot Shader Language.<a id="VisualShaderNodeIntFunc_constant_FUNC_NEGATE"></a>
+Returns the absolute value of the parameter. Translates to ``abs(x)`` in the Godot Shader Language.<a id="VisualShaderNodeIntFunc_constant_FUNC_NEGATE"></a>
 
 <!-- classref-enumeration-constant -->
 
@@ -65,13 +65,13 @@ Negates the ``x`` using ``-(x)``.<a id="VisualShaderNodeIntFunc_constant_FUNC_SI
 
 [Function](VisualShaderNodeIntFunc.md#enum_VisualShaderNodeIntFunc_Function) **FUNC_SIGN** = `2`
 
-Extracts the sign of the parameter. Translates to ``sign(x)`` in the Redot Shader Language.<a id="VisualShaderNodeIntFunc_constant_FUNC_BITWISE_NOT"></a>
+Extracts the sign of the parameter. Translates to ``sign(x)`` in the Godot Shader Language.<a id="VisualShaderNodeIntFunc_constant_FUNC_BITWISE_NOT"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Function](VisualShaderNodeIntFunc.md#enum_VisualShaderNodeIntFunc_Function) **FUNC_BITWISE_NOT** = `3`
 
-Returns the result of bitwise ``NOT`` operation on the integer. Translates to ``~a`` in the Redot Shader Language.<a id="VisualShaderNodeIntFunc_constant_FUNC_MAX"></a>
+Returns the result of bitwise ``NOT`` operation on the integer. Translates to ``~a`` in the Godot Shader Language.<a id="VisualShaderNodeIntFunc_constant_FUNC_MAX"></a>
 
 <!-- classref-enumeration-constant -->
 

@@ -977,7 +977,7 @@ Returns ``null`` if opening the file failed. You can use [get_open_error()](File
 
 Creates a new **FileAccess** object and opens a compressed file for reading or writing.
 
-\ **Note:** [open_compressed()](FileAccess.md#FileAccess_method_open_compressed) can only read files that were saved by Redot, not third-party compression formats. See [GitHub issue #28999](https://github.com/redot-engine/redot-engine/issues/28999) for a workaround.
+\ **Note:** [open_compressed()](FileAccess.md#FileAccess_method_open_compressed) can only read files that were saved by Redot, not third-party compression formats. See [GitHub issue #28999](https://github.com/godotengine/godot/issues/28999) for a workaround.
 
 Returns ``null`` if opening the file failed. You can use [get_open_error()](FileAccess.md#FileAccess_method_get_open_error) to check the error that occurred.
 

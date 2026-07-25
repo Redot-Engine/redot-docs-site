@@ -47,7 +47,7 @@ Finally, when a node is freed with [Object.free()](Object.md#Object_method_free)
 
 ## Tutorials
 
-- [Nodes and scenes](../Getting Started/step_by_step/nodes_and_scenes.md)
+- [Nodes and scenes](../getting_started/step_by_step/nodes_and_scenes.md)
 
 - [All Demos](https://github.com/redot-engine/redot-demo-projects/)
 
@@ -2043,7 +2043,7 @@ If `owned` is ``true``, only descendants with a valid [owner](Node.md#Node_prope
 
 Finds all descendants of this node whose names match `pattern`, returning an empty [Array](Array.md) if no match is found. The matching is done against node names, *not* their paths, through [String.match()](String.md#String_method_match). As such, it is case-sensitive, ``"*"`` matches zero or more characters, and ``"?"`` matches any single character.
 
-If `type` is not empty, only ancestors inheriting from `type` are included (see [Object.is_class()](Object.md#Object_method_is_class)).
+If `type` is not empty, only descendants inheriting from `type` are included (see [Object.is_class()](Object.md#Object_method_is_class)).
 
 If `recursive` is ``false``, only this node's direct children are checked. Nodes are checked in tree order, so this node's first direct child is checked first, then its own direct children, etc., before moving to the second direct child, and so on. Internal children are also included in the search (see ``internal`` parameter in [add_child()](Node.md#Node_method_add_child)).
 

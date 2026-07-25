@@ -27,7 +27,7 @@ Affine operations (translation, rotation, scale) are calculated in the coordinat
 
 \ **Note:** Unless otherwise specified, all methods that need angle parameters must receive angles in *radians*. To convert degrees to radians, use [@GlobalScope.deg_to_rad()](@GlobalScope.md#@GlobalScope_method_deg_to_rad).
 
-\ **Note:** In Redot 3 and older, **Node3D** was named *Spatial*.
+\ **Note:** In Godot 3 and older, **Node3D** was named *Spatial*.
 
 <!-- classref-introduction-group -->
 

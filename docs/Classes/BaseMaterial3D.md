@@ -2067,7 +2067,7 @@ If ``true``, the shader will keep the scale set for the mesh. Otherwise, the sca
 
 Controls how the object faces the camera.
 
-\ **Note:** Billboard mode is not suitable for VR because the left-right vector of the camera is not horizontal when the screen is attached to your head instead of on the table. See [GitHub issue #41567](https://github.com/redot-engine/redot-engine/issues/41567) for details.
+\ **Note:** Billboard mode is not suitable for VR because the left-right vector of the camera is not horizontal when the screen is attached to your head instead of on the table. See [GitHub issue #41567](https://github.com/godotengine/godot/issues/41567) for details.
 
 <hr class="classref-item-separator"/>
 
@@ -2661,7 +2661,7 @@ If ``true``, flips the mesh's tangent vectors when interpreting the height map. 
 
 If ``true``, interprets the height map texture as a depth map, with brighter values appearing to be "lower" in altitude compared to darker values.
 
-This can be enabled for compatibility with some materials authored for Redot 3.x. This is not necessary if the Invert import option was used to invert the depth map in Redot 3.x, in which case [heightmap_flip_texture](BaseMaterial3D.md#BaseMaterial3D_property_heightmap_flip_texture) should remain ``false``.
+This can be enabled for compatibility with some materials authored for Godot 3.x. This is not necessary if the Invert import option was used to invert the depth map in Godot 3.x, in which case [heightmap_flip_texture](BaseMaterial3D.md#BaseMaterial3D_property_heightmap_flip_texture) should remain ``false``.
 
 <hr class="classref-item-separator"/>
 

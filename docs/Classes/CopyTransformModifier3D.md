@@ -37,6 +37,8 @@ There are 4 ways to apply the transform, depending on the combination of [set_re
 
 - Extract reference pose absolutely and the apply bone's pose is replaced with it.
 
+\ **Note:** Relative option is available only in the case [BoneConstraint3D.get_reference_type()](BoneConstraint3D.md#BoneConstraint3D_method_get_reference_type) is [BoneConstraint3D.REFERENCE_TYPE_BONE](BoneConstraint3D.md#BoneConstraint3D_constant_REFERENCE_TYPE_BONE). See also [ReferenceType](BoneConstraint3D.md#enum_BoneConstraint3D_ReferenceType).
+
 <!-- classref-reftable-group -->
 
 ## Properties

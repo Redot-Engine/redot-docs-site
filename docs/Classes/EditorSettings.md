@@ -394,6 +394,10 @@ Accessing the settings can be done using the following methods, such as:
     </tr>
     <tr>
       <td>[Color](Color.md)</td>
+      <td>[editors/3d_gizmos/gizmo_colors/ik_chain](#EditorSettings_property_editors/3d_gizmos/gizmo_colors/ik_chain)</td>
+    </tr>
+    <tr>
+      <td>[Color](Color.md)</td>
       <td>[editors/3d_gizmos/gizmo_colors/instantiated](#EditorSettings_property_editors/3d_gizmos/gizmo_colors/instantiated)</td>
     </tr>
     <tr>
@@ -1507,6 +1511,10 @@ Accessing the settings can be done using the following methods, such as:
     <tr>
       <td>[String](String.md)</td>
       <td>[text_editor/external/exec_path](#EditorSettings_property_text_editor/external/exec_path)</td>
+    </tr>
+    <tr>
+      <td>[bool](bool.md)</td>
+      <td>[text_editor/external/prefer_tabs_in_external_editor](#EditorSettings_property_text_editor/external/prefer_tabs_in_external_editor)</td>
     </tr>
     <tr>
       <td>[bool](bool.md)</td>
@@ -2771,6 +2779,16 @@ The 3D editor gizmo color for [FogVolume](FogVolume.md) nodes.
 [Color](Color.md) **editors/3d_gizmos/gizmo_colors/gridmap_grid** [🔗](#EditorSettings_property_editors/3d_gizmos/gizmo_colors/gridmap_grid)
 
 The 3D editor gizmo color for the [GridMap](GridMap.md) grid.
+
+<hr class="classref-item-separator"/>
+
+<a id="EditorSettings_property_editors/3d_gizmos/gizmo_colors/ik_chain"></a>
+
+<!-- classref-property -->
+
+[Color](Color.md) **editors/3d_gizmos/gizmo_colors/ik_chain** [🔗](#EditorSettings_property_editors/3d_gizmos/gizmo_colors/ik_chain)
+
+The 3D editor gizmo color for the [IKModifier3D](IKModifier3D.md) guides.
 
 <hr class="classref-item-separator"/>
 
@@ -4100,7 +4118,7 @@ Tab style of editor docks.
 
 The language to use for the editor interface.
 
-Translations are provided by the community. If you spot a mistake, [contribute to editor translations on Weblate!](https://contributing.redotengine.org/en/latest/documentation/translation/index.html)
+Translations are provided by the community. If you spot a mistake, [contribute to editor translations on Weblate!](https://contributing.godotengine.org/en/latest/documentation/translation/index.html)
 
 <hr class="classref-item-separator"/>
 
@@ -4852,7 +4870,7 @@ The icon and font color scheme to use in the editor.
 
 The saturation to use for editor icons. Higher values result in more vibrant colors.
 
-\ **Note:** The default editor icon saturation was increased by 30% in Redot 4.0 and later. To get Redot 3.x's icon saturation back, set [interface/theme/icon_saturation](EditorSettings.md#EditorSettings_property_interface/theme/icon_saturation) to ``0.77``.
+\ **Note:** The default editor icon saturation was increased by 30% in Godot 4.0 and later. To get Godot 3.x's icon saturation back, set [interface/theme/icon_saturation](EditorSettings.md#EditorSettings_property_interface/theme/icon_saturation) to ``0.77``.
 
 <hr class="classref-item-separator"/>
 
@@ -5676,7 +5694,7 @@ If ``true``, uses the characters in [text_editor/behavior/navigation/custom_word
 
 [bool](bool.md) **text_editor/behavior/navigation/use_default_word_separators** [🔗](#EditorSettings_property_text_editor/behavior/navigation/use_default_word_separators)
 
-If ``true``, uses the characters in `` `!"#$%&'()*+,-./:;&lt;=&gt;?@[\]^`{|}~ ``, the Unicode General Punctuation table, and the Unicode CJK Punctuation table as word separators for word navigation and operations. If ``false``, a subset of these characters are used and does not include the characters ``&lt;&gt;$~^=+|``. This is in addition to custom characters if [text_editor/behavior/navigation/use_custom_word_separators](EditorSettings.md#EditorSettings_property_text_editor/behavior/navigation/use_custom_word_separators) is also enabled. These characters are used to determine where a word stops. Word navigation and operations include double-clicking on a word or holding :kbd:`Ctrl` (:kbd:`Cmd` on macOS) while pressing :kbd:`left`, :kbd:`right`, :kbd:`backspace`, or :kbd:`delete`.
+If ``true``, uses the characters in ```!"#$%&'()*+,-./:;&lt;=&gt;?@[\]^`{|}~``, the Unicode General Punctuation table, and the Unicode CJK Punctuation table as word separators for word navigation and operations. If ``false``, a subset of these characters are used and does not include the characters ``&lt;&gt;$~^=+|``. This is in addition to custom characters if [text_editor/behavior/navigation/use_custom_word_separators](EditorSettings.md#EditorSettings_property_text_editor/behavior/navigation/use_custom_word_separators) is also enabled. These characters are used to determine where a word stops. Word navigation and operations include double-clicking on a word or holding :kbd:`Ctrl` (:kbd:`Cmd` on macOS) while pressing :kbd:`left`, :kbd:`right`, :kbd:`backspace`, or :kbd:`delete`.
 
 <hr class="classref-item-separator"/>
 
@@ -5837,6 +5855,18 @@ The command-line arguments to pass to the external text editor that is run when 
 [String](String.md) **text_editor/external/exec_path** [🔗](#EditorSettings_property_text_editor/external/exec_path)
 
 The path to the text editor executable used to edit text files if [text_editor/external/use_external_editor](EditorSettings.md#EditorSettings_property_text_editor/external/use_external_editor) is ``true``.
+
+<hr class="classref-item-separator"/>
+
+<a id="EditorSettings_property_text_editor/external/prefer_tabs_in_external_editor"></a>
+
+<!-- classref-property -->
+
+[bool](bool.md) **text_editor/external/prefer_tabs_in_external_editor** [🔗](#EditorSettings_property_text_editor/external/prefer_tabs_in_external_editor)
+
+If set, this will instruct the editor to attempt to reopen previously open scripts as tabs in a single instance of the external editor,
+
+by passing them in as command line args instead of trying to launch a single instance for each script file.
 
 <hr class="classref-item-separator"/>
 
@@ -6002,7 +6032,7 @@ The syntax theme to use in the script editor.
 
 You can save your own syntax theme from your current settings by using **File &gt; Theme &gt; Save As...** at the top of the script editor. The syntax theme will then be available locally in the list of color themes.
 
-You can find additional syntax themes to install in the [Redot-syntax-themes](https://github.com/redot-engine/redot-syntax-themes) repository.
+You can find additional syntax themes to install in the [godot-syntax-themes](https://github.com/godotengine/godot-syntax-themes) repository.
 
 <hr class="classref-item-separator"/>
 

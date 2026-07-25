@@ -406,7 +406,7 @@ If ``true``, executable signing is enabled.
 
 PKCS #12 certificate file used to sign executable or certificate SHA-1 hash (if [codesign/identity_type](EditorExportPlatformWindows.md#EditorExportPlatformWindows_property_codesign/identity_type) is set to "Use certificate store"). See [Sign Tool](https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe).
 
-Can be overridden with the environment variable ``Redot_WINDOWS_CODESIGN_IDENTITY``.
+Can be overridden with the environment variable ``GODOT_WINDOWS_CODESIGN_IDENTITY``.
 
 <hr class="classref-item-separator"/>
 
@@ -418,7 +418,7 @@ Can be overridden with the environment variable ``Redot_WINDOWS_CODESIGN_IDENTIT
 
 Type of identity to use. See [Sign Tool](https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe).
 
-Can be overridden with the environment variable ``Redot_WINDOWS_CODESIGN_IDENTITY_TYPE``.
+Can be overridden with the environment variable ``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE``.
 
 <hr class="classref-item-separator"/>
 
@@ -430,7 +430,7 @@ Can be overridden with the environment variable ``Redot_WINDOWS_CODESIGN_IDENTIT
 
 Password for the certificate file used to sign executable. See [Sign Tool](https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe).
 
-Can be overridden with the environment variable ``Redot_WINDOWS_CODESIGN_PASSWORD``.
+Can be overridden with the environment variable ``GODOT_WINDOWS_CODESIGN_PASSWORD``.
 
 <hr class="classref-item-separator"/>
 

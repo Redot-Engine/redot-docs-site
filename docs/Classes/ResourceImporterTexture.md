@@ -304,7 +304,7 @@ Changing this import option only has an effect if a texture is detected as being
 
 [bool](bool.md) **editor/convert_colors_with_editor_theme** = `false` [🔗](#ResourceImporterTexture_property_editor/convert_colors_with_editor_theme)
 
-If ``true``, converts the imported image's colors to match [EditorSettings.interface/theme/icon_and_font_color](EditorSettings.md#EditorSettings_property_interface/theme/icon_and_font_color). This assumes the image uses the exact same colors as [Redot's own color palette for editor icons](../Contributing/Development/editor/creating_icons.md), with the source file designed for a dark editor theme. This should be enabled for editor plugin icons and custom class icons, but should be left disabled otherwise.
+If ``true``, converts the imported image's colors to match [EditorSettings.interface/theme/icon_and_font_color](EditorSettings.md#EditorSettings_property_interface/theme/icon_and_font_color). This assumes the image uses the exact same colors as [Godot's own color palette for editor icons](../engine_details/editor/creating_icons.md), with the source file designed for a dark editor theme. This should be enabled for editor plugin icons and custom class icons, but should be left disabled otherwise.
 
 \ **Note:** Only available for SVG images.
 

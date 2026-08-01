@@ -1154,7 +1154,7 @@ Apple Team ID, unique 10-character string. To locate your Team ID check "Members
 
 PKCS #12 certificate file used to sign ``.app`` bundle.
 
-Can be overridden with the environment variable ``Redot_MACOS_CODESIGN_CERTIFICATE_FILE``.
+Can be overridden with the environment variable ``GODOT_MACOS_CODESIGN_CERTIFICATE_FILE``.
 
 <hr class="classref-item-separator"/>
 
@@ -1166,7 +1166,7 @@ Can be overridden with the environment variable ``Redot_MACOS_CODESIGN_CERTIFICA
 
 Password for the certificate file used to sign ``.app`` bundle.
 
-Can be overridden with the environment variable ``Redot_MACOS_CODESIGN_CERTIFICATE_PASSWORD``.
+Can be overridden with the environment variable ``GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD``.
 
 <hr class="classref-item-separator"/>
 
@@ -1478,7 +1478,7 @@ The "Full Name", "Common Name" or SHA-1 hash of the signing identity used to sig
 
 Provisioning profile file downloaded from Apple developer account dashboard. See [Edit, download, or delete provisioning profiles](https://developer.apple.com/help/account/manage-profiles/edit-download-or-delete-profiles).
 
-Can be overridden with the environment variable ``Redot_MACOS_CODESIGN_PROVISIONING_PROFILE``.
+Can be overridden with the environment variable ``GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE``.
 
 <hr class="classref-item-separator"/>
 
@@ -1540,7 +1540,7 @@ Application distribution target.
 
 Apple App Store Connect API issuer key file.
 
-Can be overridden with the environment variable ``Redot_MACOS_NOTARIZATION_API_KEY``.
+Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_API_KEY``.
 
 <hr class="classref-item-separator"/>
 
@@ -1552,7 +1552,7 @@ Can be overridden with the environment variable ``Redot_MACOS_NOTARIZATION_API_K
 
 Apple App Store Connect API issuer key ID.
 
-Can be overridden with the environment variable ``Redot_MACOS_NOTARIZATION_API_KEY_ID``.
+Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_API_KEY_ID``.
 
 <hr class="classref-item-separator"/>
 
@@ -1564,7 +1564,7 @@ Can be overridden with the environment variable ``Redot_MACOS_NOTARIZATION_API_K
 
 Apple App Store Connect API issuer UUID.
 
-Can be overridden with the environment variable ``Redot_MACOS_NOTARIZATION_API_UUID``.
+Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_API_UUID``.
 
 <hr class="classref-item-separator"/>
 
@@ -1576,7 +1576,7 @@ Can be overridden with the environment variable ``Redot_MACOS_NOTARIZATION_API_U
 
 Apple ID account name (email address).
 
-Can be overridden with the environment variable ``Redot_MACOS_NOTARIZATION_APPLE_ID_NAME``.
+Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME``.
 
 <hr class="classref-item-separator"/>
 
@@ -1588,7 +1588,7 @@ Can be overridden with the environment variable ``Redot_MACOS_NOTARIZATION_APPLE
 
 Apple ID app-specific password.
 
-Can be overridden with the environment variable ``Redot_MACOS_NOTARIZATION_APPLE_ID_PASSWORD``.
+Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD``.
 
 <hr class="classref-item-separator"/>
 

@@ -127,9 +127,9 @@ As seen above, the recommended method to connect signals is not [Object.connect(
         var button = new Button();
         // Option 1: In C#, we can use signals as events and connect with this idiomatic syntax:
         button.ButtonDown += OnButtonDown;
-        // Option 2: RedotObject.Connect() with a constructed Callable from a method group.
+        // Option 2: GodotObject.Connect() with a constructed Callable from a method group.
         button.Connect(Button.SignalName.ButtonDown, Callable.From(OnButtonDown));
-        // Option 3: RedotObject.Connect() with a constructed Callable using a target object and method name.
+        // Option 3: GodotObject.Connect() with a constructed Callable using a target object and method name.
         button.Connect(Button.SignalName.ButtonDown, new Callable(this, MethodName.OnButtonDown));
     }
 
@@ -203,7 +203,7 @@ There are notable differences when using this API with C#. See the C# difference
 
 ## Tutorials
 
-- [Using Signals](../Getting%20Started/step_by_step/signals.md)
+- [Using Signals](../getting_started/step_by_step/signals.md)
 
 - [GDScript Basics](../tutorials/scripting/gdscript/gdscript_basics.md#signals)
 

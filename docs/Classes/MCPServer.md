@@ -11,10 +11,13 @@
 
 **Inherits:** [Object](Object.md)
 
-<div class="contribute">
-There is currently no description for this class. Please help us by contributing one!
+Stdio-based MCP (Model Context Protocol) server for AI agent integration.
 
-</div>
+<!-- classref-introduction-group -->
+
+## Description
+
+The MCP server exposes the running Redot project to AI coding assistants over a JSON-RPC stdio transport. It is started with the ``--mcp-server`` command-line flag, which implies headless mode. The server reads newline-delimited JSON-RPC requests on stdin and writes responses to stdout. A TCP bridge ([MCPBridge](MCPBridge.md)) is used to forward tool calls (screenshots, input, tree inspection) to a separately launched game process. See [the MCP specification](https://modelcontextprotocol.io/) for protocol details.
 
 <!-- classref-reftable-group -->
 
@@ -51,10 +54,7 @@ There is currently no description for this class. Please help us by contributing
 
 [bool](bool.md) **is_running**\ (\ ) <span class="const">const</span> [🔗](#MCPServer_method_is_running)
 
-<div class="contribute">
-There is currently no description for this method. Please help us by contributing one!
-
-</div>
+Returns ``true`` while the server loop is processing requests.
 
 <hr class="classref-item-separator"/>
 
@@ -64,10 +64,7 @@ There is currently no description for this method. Please help us by contributin
 
 `void` **start**\ (\ ) [🔗](#MCPServer_method_start)
 
-<div class="contribute">
-There is currently no description for this method. Please help us by contributing one!
-
-</div>
+Starts the blocking server loop. Reads requests from stdin and dispatches them to the registered protocol handlers. Returns when the input stream is closed or [stop()](MCPServer.md#MCPServer_method_stop) is requested.
 
 <hr class="classref-item-separator"/>
 
@@ -77,8 +74,5 @@ There is currently no description for this method. Please help us by contributin
 
 `void` **stop**\ (\ ) [🔗](#MCPServer_method_stop)
 
-<div class="contribute">
-There is currently no description for this method. Please help us by contributing one!
-
-</div>
+Signals the server loop to stop and wakes the stdin poll.
 

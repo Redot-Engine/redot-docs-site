@@ -103,11 +103,11 @@ The **Engine** singleton allows you to query and modify the project's run-time p
     </tr>
     <tr>
       <td>[Dictionary](Dictionary.md)</td>
-      <td>[get_Redot_author_info](#Engine_method_get_Redot_author_info)\ (\ ) <span class="const">const</span></td>
+      <td>[get_godot_author_info](#Engine_method_get_godot_author_info)\ (\ ) <span class="const">const</span></td>
     </tr>
     <tr>
       <td>[Dictionary](Dictionary.md)</td>
-      <td>[get_Redot_compatible_version_info](#Engine_method_get_Redot_compatible_version_info)\ (\ ) <span class="const">const</span></td>
+      <td>[get_godot_compatible_version_info](#Engine_method_get_godot_compatible_version_info)\ (\ ) <span class="const">const</span></td>
     </tr>
     <tr>
       <td>[Dictionary](Dictionary.md)</td>
@@ -379,7 +379,7 @@ To detect whether the current build is 64-bit, or the type of architecture, don'
 
 Returns the engine author information as a [Dictionary](Dictionary.md), where each entry is an [Array](Array.md) of strings with the names of notable contributors to the Redot Engine: ``lead_developers``, ``founders``, ``project_managers``, and ``developers``.
 
-See also [get_Redot_author_info()](Engine.md#Engine_method_get_Redot_author_info) for Redot's author info.
+See also [get_godot_author_info()](Engine.md#Engine_method_get_godot_author_info) for Godot's author info.
 
 <hr class="classref-item-separator"/>
 
@@ -435,11 +435,11 @@ Returns the average frames rendered every second (FPS), also known as the framer
 
 <hr class="classref-item-separator"/>
 
-<a id="Engine_method_get_Redot_author_info"></a>
+<a id="Engine_method_get_godot_author_info"></a>
 
 <!-- classref-method -->
 
-[Dictionary](Dictionary.md) **get_Redot_author_info**\ (\ ) <span class="const">const</span> [🔗](#Engine_method_get_Redot_author_info)
+[Dictionary](Dictionary.md) **get_godot_author_info**\ (\ ) <span class="const">const</span> [🔗](#Engine_method_get_godot_author_info)
 
 Returns the engine author information for Redot as a [Dictionary](Dictionary.md), where each entry is an [Array](Array.md) of strings with the names of notable contributors to the Redot Engine: ``lead_developers``, ``founders``, ``project_managers``, and ``developers``.
 
@@ -447,13 +447,13 @@ See also [get_author_info()](Engine.md#Engine_method_get_author_info) for Redot'
 
 <hr class="classref-item-separator"/>
 
-<a id="Engine_method_get_Redot_compatible_version_info"></a>
+<a id="Engine_method_get_godot_compatible_version_info"></a>
 
 <!-- classref-method -->
 
-[Dictionary](Dictionary.md) **get_Redot_compatible_version_info**\ (\ ) <span class="const">const</span> [🔗](#Engine_method_get_Redot_compatible_version_info)
+[Dictionary](Dictionary.md) **get_godot_compatible_version_info**\ (\ ) <span class="const">const</span> [🔗](#Engine_method_get_godot_compatible_version_info)
 
-Returns the current engine minimal version compatibility info in relation to Redot as a [Dictionary](Dictionary.md) containing the following entries:
+Returns the current engine minimal version compatibility info in relation to Godot as a [Dictionary](Dictionary.md) containing the following entries:
 
 - ``major`` - Major version number as an int;
 
@@ -477,17 +477,17 @@ The ``hex`` value is encoded as follows, from left to right: one byte for the ma
 
 
 ```gdscript
-    if Engine.get_Redot_compatible_version_info().hex &gt;= 0x040100:
-        pass # Do things specifically based on Redot version 4.1 compatibility or later.
+    if Engine.get_godot_compatible_version_info().hex &gt;= 0x040100:
+        pass # Do things specifically based on Godot version 4.1 compatibility or later.
     else:
         pass # Do things specific to versions before 4.1.
 ```
 
 
 ```csharp
-    if ((int)Engine.GetRedotCompatibleVersionInfo()["hex"] &gt;= 0x040100)
+    if ((int)Engine.GetGodotCompatibleVersionInfo()["hex"] &gt;= 0x040100)
     {
-        // Do things specifically based on Redot version 4.1 compatibility or later.
+        // Do things specifically based on Godot version 4.1 compatibility or later.
     }
     else
     {
@@ -717,7 +717,7 @@ The ``hex`` value is encoded as follows, from left to right: one byte for the ma
 
 
 
-See also [get_Redot_compatible_version_info()](Engine.md#Engine_method_get_Redot_compatible_version_info) for Redot's minimal compatibility version info.
+See also [get_godot_compatible_version_info()](Engine.md#Engine_method_get_godot_compatible_version_info) for Redot's minimal compatibility version info.
 
 <hr class="classref-item-separator"/>
 

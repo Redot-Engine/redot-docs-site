@@ -233,6 +233,14 @@ See [Vector2i](Vector2i.md) for its integer counterpart.
     </tr>
     <tr>
       <td>[Vector2](Vector2.md)</td>
+      <td>[monotonic_cubic_interpolate](#Vector2_method_monotonic_cubic_interpolate)\ (\ b\: [Vector2](Vector2.md), pre_a\: [Vector2](Vector2.md), post_b\: [Vector2](Vector2.md), weight\: [float](float.md)\ ) <span class="const">const</span></td>
+    </tr>
+    <tr>
+      <td>[Vector2](Vector2.md)</td>
+      <td>[monotonic_cubic_interpolate_in_time](#Vector2_method_monotonic_cubic_interpolate_in_time)\ (\ b\: [Vector2](Vector2.md), pre_a\: [Vector2](Vector2.md), post_b\: [Vector2](Vector2.md), weight\: [float](float.md), b_t\: [float](float.md), pre_a_t\: [float](float.md), post_b_t\: [float](float.md)\ ) <span class="const">const</span></td>
+    </tr>
+    <tr>
+      <td>[Vector2](Vector2.md)</td>
       <td>[move_toward](#Vector2_method_move_toward)\ (\ to\: [Vector2](Vector2.md), delta\: [float](float.md)\ ) <span class="const">const</span></td>
     </tr>
     <tr>
@@ -905,6 +913,28 @@ Returns the axis of the vector's lowest value. See ``AXIS_*`` constants. If all 
 [Vector2](Vector2.md) **minf**\ (\ with\: [float](float.md)\ ) <span class="const">const</span> [🔗](#Vector2_method_minf)
 
 Returns the component-wise minimum of this and `with`, equivalent to ``Vector2(minf(x, with), minf(y, with))``.
+
+<hr class="classref-item-separator"/>
+
+<a id="Vector2_method_monotonic_cubic_interpolate"></a>
+
+<!-- classref-method -->
+
+[Vector2](Vector2.md) **monotonic_cubic_interpolate**\ (\ b\: [Vector2](Vector2.md), pre_a\: [Vector2](Vector2.md), post_b\: [Vector2](Vector2.md), weight\: [float](float.md)\ ) <span class="const">const</span> [🔗](#Vector2_method_monotonic_cubic_interpolate)
+
+Performs a monotonic cubic interpolation between this vector and `b` using `pre_a` and `post_b` as handles, and returns the result at position `weight`. `weight` is on the range of 0.0 to 1.0, representing the amount of interpolation.
+
+<hr class="classref-item-separator"/>
+
+<a id="Vector2_method_monotonic_cubic_interpolate_in_time"></a>
+
+<!-- classref-method -->
+
+[Vector2](Vector2.md) **monotonic_cubic_interpolate_in_time**\ (\ b\: [Vector2](Vector2.md), pre_a\: [Vector2](Vector2.md), post_b\: [Vector2](Vector2.md), weight\: [float](float.md), b_t\: [float](float.md), pre_a_t\: [float](float.md), post_b_t\: [float](float.md)\ ) <span class="const">const</span> [🔗](#Vector2_method_monotonic_cubic_interpolate_in_time)
+
+Performs a monotonic cubic interpolation between this vector and `b` using `pre_a` and `post_b` as handles, and returns the result at position `weight`. `weight` is on the range of 0.0 to 1.0, representing the amount of interpolation.
+
+It can perform smoother interpolation than [monotonic_cubic_interpolate()](Vector2.md#Vector2_method_monotonic_cubic_interpolate) by the time values.
 
 <hr class="classref-item-separator"/>
 

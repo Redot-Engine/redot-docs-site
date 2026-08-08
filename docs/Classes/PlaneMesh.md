@@ -83,13 +83,13 @@ enum **Orientation**: [🔗](#enum_PlaneMesh_Orientation)
 
 [Orientation](PlaneMesh.md#enum_PlaneMesh_Orientation) **FACE_Y** = `1`
 
-**PlaneMesh** will face the positive Y-axis. This matches the behavior of the **PlaneMesh** in Redot 3.x.<a id="PlaneMesh_constant_FACE_Z"></a>
+**PlaneMesh** will face the positive Y-axis. This matches the behavior of the **PlaneMesh** in Godot 3.x.<a id="PlaneMesh_constant_FACE_Z"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Orientation](PlaneMesh.md#enum_PlaneMesh_Orientation) **FACE_Z** = `2`
 
-**PlaneMesh** will face the positive Z-axis. This matches the behavior of the QuadMesh in Redot 3.x.<hr class="classref-section-separator"/>
+**PlaneMesh** will face the positive Z-axis. This matches the behavior of the QuadMesh in Godot 3.x.<hr class="classref-section-separator"/>
 
 <!-- classref-descriptions-group -->
 

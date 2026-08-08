@@ -51,7 +51,7 @@ The [_post_import()](EditorScenePostImport.md#EditorScenePostImport_private_meth
     [Tool]
     public partial class NodeRenamer : EditorScenePostImport
     {
-        public override RedotObject _PostImport(Node scene)
+        public override GodotObject _PostImport(Node scene)
         {
             // Change all node names to "modified_[oldnodename]"
             Iterate(scene);

@@ -158,6 +158,21 @@ The **LightmapGI** node is used to compute and store baked lightmaps. Lightmaps 
   </tbody>
 </table>
 
+<!-- classref-reftable-group -->
+
+## Methods
+
+<table>
+  <thead>
+    <tr>
+      <th>[BakeError](LightmapGI.md#enum_LightmapGI_BakeError)</th>
+      <th>[bake](#LightmapGI_method_bake)\ (\ from_node\: [Node](Node.md), image_data_path\: [String](String.md) = ""\ )</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
 <hr class="classref-section-separator"/>
 
 <!-- classref-descriptions-group -->
@@ -707,4 +722,22 @@ If ``true``, uses a GPU-based denoising algorithm on the generated lightmap. Thi
 If ``true``, a texture with the lighting information will be generated to speed up the generation of indirect lighting at the cost of some accuracy. The geometry might exhibit extra light leak artifacts when using low resolution lightmaps or UVs that stretch the lightmap significantly across surfaces. Leave [use_texture_for_bounces](LightmapGI.md#LightmapGI_property_use_texture_for_bounces) at its default value of ``true`` if unsure.
 
 \ **Note:** [use_texture_for_bounces](LightmapGI.md#LightmapGI_property_use_texture_for_bounces) only has an effect if [bounces](LightmapGI.md#LightmapGI_property_bounces) is set to a value greater than or equal to ``1``.
+
+<hr class="classref-section-separator"/>
+
+<!-- classref-descriptions-group -->
+
+## Method Descriptions
+
+<a id="LightmapGI_method_bake"></a>
+
+<!-- classref-method -->
+
+[BakeError](LightmapGI.md#enum_LightmapGI_BakeError) **bake**\ (\ from_node\: [Node](Node.md), image_data_path\: [String](String.md) = ""\ ) [🔗](#LightmapGI_method_bake)
+
+Bakes lightmaps (requires meshes to have UV2 unwrapped) for `from_node` and its children to `image_data_path`. `image_data_path` must end with an ``.exr`` or ``.lmbake`` file extension. If `from_node` is ``null``, lightmaps are baked from the **LightmapGI** node's parent. Baking lightmaps can take from a few seconds to several dozen minutes depending on the GPU speed and quality settings chosen.
+
+\ **Note:** [bake()](LightmapGI.md#LightmapGI_method_bake) only works within the editor, and when running a project from the editor. [bake()](LightmapGI.md#LightmapGI_method_bake) will do nothing when called in a project exported in either debug or release mode. This limitation is in place to reduce the binary size of exported projects. You can [compile custom export templates](../contributing/development/compiling/index.md) with the ``module_lightmapper_rd_enabled=yes module_xatlas_unwrap_enabled=yes`` SCons options to remove this limitation.
+
+\ **Additional Note:** Baking lightmaps from a headless editor instance is not supported. If you attempt to bake lightmaps in this manner, baking will fail.
 

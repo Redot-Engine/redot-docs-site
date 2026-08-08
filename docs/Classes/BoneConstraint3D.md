@@ -54,6 +54,14 @@ Base class of [SkeletonModifier3D](SkeletonModifier3D.md) that modifies the bone
       <td>[get_reference_bone_name](#BoneConstraint3D_method_get_reference_bone_name)\ (\ index\: [int](int.md)\ ) <span class="const">const</span></td>
     </tr>
     <tr>
+      <td>[NodePath](NodePath.md)</td>
+      <td>[get_reference_node](#BoneConstraint3D_method_get_reference_node)\ (\ index\: [int](int.md)\ ) <span class="const">const</span></td>
+    </tr>
+    <tr>
+      <td>[ReferenceType](BoneConstraint3D.md#enum_BoneConstraint3D_ReferenceType)</td>
+      <td>[get_reference_type](#BoneConstraint3D_method_get_reference_type)\ (\ index\: [int](int.md)\ ) <span class="const">const</span></td>
+    </tr>
+    <tr>
       <td>[int](int.md)</td>
       <td>[get_setting_count](#BoneConstraint3D_method_get_setting_count)\ (\ ) <span class="const">const</span></td>
     </tr>
@@ -79,12 +87,46 @@ Base class of [SkeletonModifier3D](SkeletonModifier3D.md) that modifies the bone
     </tr>
     <tr>
       <td>`void`</td>
+      <td>[set_reference_node](#BoneConstraint3D_method_set_reference_node)\ (\ index\: [int](int.md), node\: [NodePath](NodePath.md)\ )</td>
+    </tr>
+    <tr>
+      <td>`void`</td>
+      <td>[set_reference_type](#BoneConstraint3D_method_set_reference_type)\ (\ index\: [int](int.md), type\: [ReferenceType](BoneConstraint3D.md#enum_BoneConstraint3D_ReferenceType)\ )</td>
+    </tr>
+    <tr>
+      <td>`void`</td>
       <td>[set_setting_count](#BoneConstraint3D_method_set_setting_count)\ (\ count\: [int](int.md)\ )</td>
     </tr>
   </tbody>
 </table>
 
 <hr class="classref-section-separator"/>
+
+<!-- classref-descriptions-group -->
+
+## Enumerations
+
+<a id="enum_BoneConstraint3D_ReferenceType"></a>
+
+<!-- classref-enumeration -->
+
+enum **ReferenceType**: [🔗](#enum_BoneConstraint3D_ReferenceType)
+
+<a id="BoneConstraint3D_constant_REFERENCE_TYPE_BONE"></a>
+
+<!-- classref-enumeration-constant -->
+
+[ReferenceType](BoneConstraint3D.md#enum_BoneConstraint3D_ReferenceType) **REFERENCE_TYPE_BONE** = `0`
+
+The reference target is a bone. In this case, the reference target spaces is local space.<a id="BoneConstraint3D_constant_REFERENCE_TYPE_NODE"></a>
+
+<!-- classref-enumeration-constant -->
+
+[ReferenceType](BoneConstraint3D.md#enum_BoneConstraint3D_ReferenceType) **REFERENCE_TYPE_NODE** = `1`
+
+The reference target is a [Node3D](Node3D.md). In this case, the reference target spaces is model space.
+
+In other words, the reference target's coordinates are treated as if it were placed directly under [Skeleton3D](Skeleton3D.md) which parent of the **BoneConstraint3D**.<hr class="classref-section-separator"/>
 
 <!-- classref-descriptions-group -->
 
@@ -154,6 +196,28 @@ This bone will be only referenced and not modified by this modifier.
 
 <hr class="classref-item-separator"/>
 
+<a id="BoneConstraint3D_method_get_reference_node"></a>
+
+<!-- classref-method -->
+
+[NodePath](NodePath.md) **get_reference_node**\ (\ index\: [int](int.md)\ ) <span class="const">const</span> [🔗](#BoneConstraint3D_method_get_reference_node)
+
+Returns the reference node path of the setting at `index`.
+
+This node will be only referenced and not modified by this modifier.
+
+<hr class="classref-item-separator"/>
+
+<a id="BoneConstraint3D_method_get_reference_type"></a>
+
+<!-- classref-method -->
+
+[ReferenceType](BoneConstraint3D.md#enum_BoneConstraint3D_ReferenceType) **get_reference_type**\ (\ index\: [int](int.md)\ ) <span class="const">const</span> [🔗](#BoneConstraint3D_method_get_reference_type)
+
+Returns the reference target type of the setting at `index`. See also [ReferenceType](BoneConstraint3D.md#enum_BoneConstraint3D_ReferenceType).
+
+<hr class="classref-item-separator"/>
+
 <a id="BoneConstraint3D_method_get_setting_count"></a>
 
 <!-- classref-method -->
@@ -215,6 +279,28 @@ This bone will be only referenced and not modified by this modifier.
 Sets the reference bone of the setting at `index` to `bone_name`.
 
 This bone will be only referenced and not modified by this modifier.
+
+<hr class="classref-item-separator"/>
+
+<a id="BoneConstraint3D_method_set_reference_node"></a>
+
+<!-- classref-method -->
+
+`void` **set_reference_node**\ (\ index\: [int](int.md), node\: [NodePath](NodePath.md)\ ) [🔗](#BoneConstraint3D_method_set_reference_node)
+
+Sets the reference node path of the setting at `index` to `node`.
+
+This node will be only referenced and not modified by this modifier.
+
+<hr class="classref-item-separator"/>
+
+<a id="BoneConstraint3D_method_set_reference_type"></a>
+
+<!-- classref-method -->
+
+`void` **set_reference_type**\ (\ index\: [int](int.md), type\: [ReferenceType](BoneConstraint3D.md#enum_BoneConstraint3D_ReferenceType)\ ) [🔗](#BoneConstraint3D_method_set_reference_type)
+
+Sets the reference target type of the setting at `index` to `type`. See also [ReferenceType](BoneConstraint3D.md#enum_BoneConstraint3D_ReferenceType).
 
 <hr class="classref-item-separator"/>
 

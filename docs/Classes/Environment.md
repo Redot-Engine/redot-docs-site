@@ -707,7 +707,7 @@ Uses a film-like tonemapping curve to prevent clipping of bright values and prov
 
 Uses a high-contrast film-like tonemapping curve and desaturates bright values for a more realistic appearance. Slightly slower than [TONE_MAPPER_FILMIC](Environment.md#Environment_constant_TONE_MAPPER_FILMIC).
 
-\ **Note:** This tonemapping operator is called "ACES Fitted" in Redot 3.x.<a id="Environment_constant_TONE_MAPPER_AGX"></a>
+\ **Note:** This tonemapping operator is called "ACES Fitted" in Godot 3.x.<a id="Environment_constant_TONE_MAPPER_AGX"></a>
 
 <!-- classref-enumeration-constant -->
 

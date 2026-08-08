@@ -49,7 +49,7 @@ To use, make a new class extending GLTFDocumentExtension, override any methods y
     </tr>
     <tr>
       <td>[GLTFObjectModelProperty](GLTFObjectModelProperty.md)</td>
-      <td>[_export_object_model_property](#GLTFDocumentExtension_private_method__export_object_model_property)\ (\ state\: [GLTFState](GLTFState.md), node_path\: [NodePath](NodePath.md), Redot_node\: [Node](Node.md), gltf_node_index\: [int](int.md), target_object\: [Object](Object.md), target_depth\: [int](int.md)\ ) <span class="virtual">virtual</span></td>
+      <td>[_export_object_model_property](#GLTFDocumentExtension_private_method__export_object_model_property)\ (\ state\: [GLTFState](GLTFState.md), node_path\: [NodePath](NodePath.md), godot_node\: [Node](Node.md), gltf_node_index\: [int](int.md), target_object\: [Object](Object.md), target_depth\: [int](int.md)\ ) <span class="virtual">virtual</span></td>
     </tr>
     <tr>
       <td>[Error](@GlobalScope.md#enum_@GlobalScope_Error)</td>
@@ -168,13 +168,13 @@ This method can be used to modify the final JSON of each node. Data should be pr
 
 <!-- classref-method -->
 
-[GLTFObjectModelProperty](GLTFObjectModelProperty.md) **_export_object_model_property**\ (\ state\: [GLTFState](GLTFState.md), node_path\: [NodePath](NodePath.md), Redot_node\: [Node](Node.md), gltf_node_index\: [int](int.md), target_object\: [Object](Object.md), target_depth\: [int](int.md)\ ) <span class="virtual">virtual</span> [🔗](#GLTFDocumentExtension_private_method__export_object_model_property)
+[GLTFObjectModelProperty](GLTFObjectModelProperty.md) **_export_object_model_property**\ (\ state\: [GLTFState](GLTFState.md), node_path\: [NodePath](NodePath.md), godot_node\: [Node](Node.md), gltf_node_index\: [int](int.md), target_object\: [Object](Object.md), target_depth\: [int](int.md)\ ) <span class="virtual">virtual</span> [🔗](#GLTFDocumentExtension_private_method__export_object_model_property)
 
 Part of the export process. Allows GLTFDocumentExtension classes to provide mappings for properties of nodes in the Redot scene tree, to JSON pointers to glTF properties, as defined by the glTF object model.
 
 Returns a [GLTFObjectModelProperty](GLTFObjectModelProperty.md) instance that defines how the property should be mapped. If your extension can't handle the property, return ``null`` or an instance without any JSON pointers (see [GLTFObjectModelProperty.has_json_pointers()](GLTFObjectModelProperty.md#GLTFObjectModelProperty_method_has_json_pointers)). You should use [GLTFObjectModelProperty.set_types()](GLTFObjectModelProperty.md#GLTFObjectModelProperty_method_set_types) to set the types, and set the JSON pointer(s) using the [GLTFObjectModelProperty.json_pointers](GLTFObjectModelProperty.md#GLTFObjectModelProperty_property_json_pointers) property.
 
-The parameters provide context for the property, including the NodePath, the Redot node, the GLTF node index, and the target object. The `target_object` will be equal to `Redot_node` if no sub-object can be found, otherwise it will point to a sub-object. For example, if the path is ``^"A/B/C/MeshInstance3D:mesh:surface_0/material:emission_intensity"``, it will get the node, then the mesh, and then the material, so `target_object` will be the [Material](Material.md) resource, and `target_depth` will be 2 because 2 levels were traversed to get to the target.
+The parameters provide context for the property, including the NodePath, the Redot node, the GLTF node index, and the target object. The `target_object` will be equal to `godot_node` if no sub-object can be found, otherwise it will point to a sub-object. For example, if the path is ``^"A/B/C/MeshInstance3D:mesh:surface_0/material:emission_intensity"``, it will get the node, then the mesh, and then the material, so `target_object` will be the [Material](Material.md) resource, and `target_depth` will be 2 because 2 levels were traversed to get to the target.
 
 <hr class="classref-item-separator"/>
 

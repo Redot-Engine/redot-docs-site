@@ -83,43 +83,43 @@ Calculates the remainder of two numbers using ``a % b``.<a id="VisualShaderNodeI
 
 [Operator](VisualShaderNodeIntOp.md#enum_VisualShaderNodeIntOp_Operator) **OP_MAX** = `5`
 
-Returns the greater of two numbers. Translates to ``max(a, b)`` in the Redot Shader Language.<a id="VisualShaderNodeIntOp_constant_OP_MIN"></a>
+Returns the greater of two numbers. Translates to ``max(a, b)`` in the Godot Shader Language.<a id="VisualShaderNodeIntOp_constant_OP_MIN"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Operator](VisualShaderNodeIntOp.md#enum_VisualShaderNodeIntOp_Operator) **OP_MIN** = `6`
 
-Returns the lesser of two numbers. Translates to ``max(a, b)`` in the Redot Shader Language.<a id="VisualShaderNodeIntOp_constant_OP_BITWISE_AND"></a>
+Returns the lesser of two numbers. Translates to ``max(a, b)`` in the Godot Shader Language.<a id="VisualShaderNodeIntOp_constant_OP_BITWISE_AND"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Operator](VisualShaderNodeIntOp.md#enum_VisualShaderNodeIntOp_Operator) **OP_BITWISE_AND** = `7`
 
-Returns the result of bitwise ``AND`` operation on the integer. Translates to ``a & b`` in the Redot Shader Language.<a id="VisualShaderNodeIntOp_constant_OP_BITWISE_OR"></a>
+Returns the result of bitwise ``AND`` operation on the integer. Translates to ``a & b`` in the Godot Shader Language.<a id="VisualShaderNodeIntOp_constant_OP_BITWISE_OR"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Operator](VisualShaderNodeIntOp.md#enum_VisualShaderNodeIntOp_Operator) **OP_BITWISE_OR** = `8`
 
-Returns the result of bitwise ``OR`` operation for two integers. Translates to ``a | b`` in the Redot Shader Language.<a id="VisualShaderNodeIntOp_constant_OP_BITWISE_XOR"></a>
+Returns the result of bitwise ``OR`` operation for two integers. Translates to ``a | b`` in the Godot Shader Language.<a id="VisualShaderNodeIntOp_constant_OP_BITWISE_XOR"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Operator](VisualShaderNodeIntOp.md#enum_VisualShaderNodeIntOp_Operator) **OP_BITWISE_XOR** = `9`
 
-Returns the result of bitwise ``XOR`` operation for two integers. Translates to ``a ^ b`` in the Redot Shader Language.<a id="VisualShaderNodeIntOp_constant_OP_BITWISE_LEFT_SHIFT"></a>
+Returns the result of bitwise ``XOR`` operation for two integers. Translates to ``a ^ b`` in the Godot Shader Language.<a id="VisualShaderNodeIntOp_constant_OP_BITWISE_LEFT_SHIFT"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Operator](VisualShaderNodeIntOp.md#enum_VisualShaderNodeIntOp_Operator) **OP_BITWISE_LEFT_SHIFT** = `10`
 
-Returns the result of bitwise left shift operation on the integer. Translates to ``a << b`` in the Redot Shader Language.<a id="VisualShaderNodeIntOp_constant_OP_BITWISE_RIGHT_SHIFT"></a>
+Returns the result of bitwise left shift operation on the integer. Translates to ``a << b`` in the Godot Shader Language.<a id="VisualShaderNodeIntOp_constant_OP_BITWISE_RIGHT_SHIFT"></a>
 
 <!-- classref-enumeration-constant -->
 
 [Operator](VisualShaderNodeIntOp.md#enum_VisualShaderNodeIntOp_Operator) **OP_BITWISE_RIGHT_SHIFT** = `11`
 
-Returns the result of bitwise right shift operation on the integer. Translates to ``a >> b`` in the Redot Shader Language.<a id="VisualShaderNodeIntOp_constant_OP_ENUM_SIZE"></a>
+Returns the result of bitwise right shift operation on the integer. Translates to ``a >> b`` in the Godot Shader Language.<a id="VisualShaderNodeIntOp_constant_OP_ENUM_SIZE"></a>
 
 <!-- classref-enumeration-constant -->
 

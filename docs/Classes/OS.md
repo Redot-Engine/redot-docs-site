@@ -194,6 +194,10 @@ The **OS** class wraps the most common functionalities for communicating with th
       <td>[get_processor_name](#OS_method_get_processor_name)\ (\ ) <span class="const">const</span></td>
     </tr>
     <tr>
+      <td>[String](String.md)</td>
+      <td>[get_real_path](#OS_method_get_real_path)\ (\ path\: [String](String.md)\ ) <span class="const">const</span></td>
+    </tr>
+    <tr>
       <td>[PackedStringArray](PackedStringArray.md)</td>
       <td>[get_restart_on_exit_arguments](#OS_method_get_restart_on_exit_arguments)\ (\ ) <span class="const">const</span></td>
     </tr>
@@ -1258,6 +1262,20 @@ Returns the number of *logical* CPU cores available on the host machine. On CPUs
 Returns the full name of the CPU model on the host machine (e.g. ``"Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz"``).
 
 \ **Note:** This method is only implemented on Windows, macOS, Linux and iOS. On Android and Web, [get_processor_name()](OS.md#OS_method_get_processor_name) returns an empty string.
+
+<hr class="classref-item-separator"/>
+
+<a id="OS_method_get_real_path"></a>
+
+<!-- classref-method -->
+
+[String](String.md) **get_real_path**\ (\ path\: [String](String.md)\ ) <span class="const">const</span> [🔗](#OS_method_get_real_path)
+
+Normalizes a given path, removing consecutive double-slash path separators, converts relative path logic to absolute, and resolves all symbolic links.
+
+\ **Note:** On Windows, if a path passed to the function contains backwards slashes for any path separators, those are replaced with forward slashes.
+
+\ **Note:** If the function failed for any reason, max path byte limit exceeded, the original input string with forward slash separators is returned.
 
 <hr class="classref-item-separator"/>
 

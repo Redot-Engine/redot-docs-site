@@ -98,7 +98,7 @@ GLTFDocument can be extended with arbitrary functionality by extending the [GLTF
     </tr>
     <tr>
       <td>[GLTFObjectModelProperty](GLTFObjectModelProperty.md)</td>
-      <td>[export_object_model_property](#GLTFDocument_method_export_object_model_property)\ (\ state\: [GLTFState](GLTFState.md), node_path\: [NodePath](NodePath.md), Redot_node\: [Node](Node.md), gltf_node_index\: [int](int.md)\ ) <span class="static">static</span></td>
+      <td>[export_object_model_property](#GLTFDocument_method_export_object_model_property)\ (\ state\: [GLTFState](GLTFState.md), node_path\: [NodePath](NodePath.md), godot_node\: [Node](Node.md), gltf_node_index\: [int](int.md)\ ) <span class="static">static</span></td>
     </tr>
     <tr>
       <td>[PackedByteArray](PackedByteArray.md)</td>
@@ -149,7 +149,7 @@ enum **RootNodeMode**: [🔗](#enum_GLTFDocument_RootNodeMode)
 
 [RootNodeMode](GLTFDocument.md#enum_GLTFDocument_RootNodeMode) **ROOT_NODE_MODE_SINGLE_ROOT** = `0`
 
-Treat the Redot scene's root node as the root node of the glTF file, and mark it as the single root node via the ``Redot_single_root`` glTF extension. This will be parsed the same as [ROOT_NODE_MODE_KEEP_ROOT](GLTFDocument.md#GLTFDocument_constant_ROOT_NODE_MODE_KEEP_ROOT) if the implementation does not support ``Redot_single_root``.<a id="GLTFDocument_constant_ROOT_NODE_MODE_KEEP_ROOT"></a>
+Treat the Redot scene's root node as the root node of the glTF file, and mark it as the single root node via the ``GODOT_single_root`` glTF extension. This will be parsed the same as [ROOT_NODE_MODE_KEEP_ROOT](GLTFDocument.md#GLTFDocument_constant_ROOT_NODE_MODE_KEEP_ROOT) if the implementation does not support ``GODOT_single_root``.<a id="GLTFDocument_constant_ROOT_NODE_MODE_KEEP_ROOT"></a>
 
 <!-- classref-enumeration-constant -->
 
@@ -331,7 +331,7 @@ Takes a Redot Engine scene node and exports it and its descendants to the given 
 
 <!-- classref-method -->
 
-[GLTFObjectModelProperty](GLTFObjectModelProperty.md) **export_object_model_property**\ (\ state\: [GLTFState](GLTFState.md), node_path\: [NodePath](NodePath.md), Redot_node\: [Node](Node.md), gltf_node_index\: [int](int.md)\ ) <span class="static">static</span> [🔗](#GLTFDocument_method_export_object_model_property)
+[GLTFObjectModelProperty](GLTFObjectModelProperty.md) **export_object_model_property**\ (\ state\: [GLTFState](GLTFState.md), node_path\: [NodePath](NodePath.md), godot_node\: [Node](Node.md), gltf_node_index\: [int](int.md)\ ) <span class="static">static</span> [🔗](#GLTFDocument_method_export_object_model_property)
 
 Determines a mapping between the given Redot `node_path` and the corresponding glTF Object Model JSON pointer(s) in the generated glTF file. The details of this mapping are returned in a [GLTFObjectModelProperty](GLTFObjectModelProperty.md) object. Additional mappings can be supplied via the [GLTFDocumentExtension._import_object_model_property()](GLTFDocumentExtension.md#GLTFDocumentExtension_private_method__import_object_model_property) callback method.
 

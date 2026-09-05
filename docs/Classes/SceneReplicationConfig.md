@@ -38,6 +38,10 @@ Configuration for properties to synchronize with a [MultiplayerSynchronizer](Mul
       <td>[property_get_index](#SceneReplicationConfig_method_property_get_index)\ (\ path\: [NodePath](NodePath.md)\ ) <span class="const">const</span></td>
     </tr>
     <tr>
+      <td>[ReplicationPrecision](SceneReplicationConfig.md#enum_SceneReplicationConfig_ReplicationPrecision)</td>
+      <td>[property_get_precision](#SceneReplicationConfig_method_property_get_precision)\ (\ path\: [NodePath](NodePath.md)\ )</td>
+    </tr>
+    <tr>
       <td>[ReplicationMode](SceneReplicationConfig.md#enum_SceneReplicationConfig_ReplicationMode)</td>
       <td>[property_get_replication_mode](#SceneReplicationConfig_method_property_get_replication_mode)\ (\ path\: [NodePath](NodePath.md)\ )</td>
     </tr>
@@ -52,6 +56,10 @@ Configuration for properties to synchronize with a [MultiplayerSynchronizer](Mul
     <tr>
       <td>[bool](bool.md)</td>
       <td>[property_get_watch](#SceneReplicationConfig_method_property_get_watch)\ (\ path\: [NodePath](NodePath.md)\ )</td>
+    </tr>
+    <tr>
+      <td>`void`</td>
+      <td>[property_set_precision](#SceneReplicationConfig_method_property_set_precision)\ (\ path\: [NodePath](NodePath.md), precision\: [ReplicationPrecision](SceneReplicationConfig.md#enum_SceneReplicationConfig_ReplicationPrecision)\ )</td>
     </tr>
     <tr>
       <td>`void`</td>
@@ -106,7 +114,27 @@ Replicate the given property on process by constantly sending updates using unre
 
 [ReplicationMode](SceneReplicationConfig.md#enum_SceneReplicationConfig_ReplicationMode) **REPLICATION_MODE_ON_CHANGE** = `2`
 
-Replicate the given property on process by sending updates using reliable transfer mode when its value changes.<hr class="classref-section-separator"/>
+Replicate the given property on process by sending updates using reliable transfer mode when its value changes.<hr class="classref-item-separator"/>
+
+<a id="enum_SceneReplicationConfig_ReplicationPrecision"></a>
+
+<!-- classref-enumeration -->
+
+enum **ReplicationPrecision**: [🔗](#enum_SceneReplicationConfig_ReplicationPrecision)
+
+<a id="SceneReplicationConfig_constant_PRECISION_FULL"></a>
+
+<!-- classref-enumeration-constant -->
+
+[ReplicationPrecision](SceneReplicationConfig.md#enum_SceneReplicationConfig_ReplicationPrecision) **PRECISION_FULL** = `0`
+
+Replicate the given property at full precision using the standard variant encoding. This is the default.<a id="SceneReplicationConfig_constant_PRECISION_HALF"></a>
+
+<!-- classref-enumeration-constant -->
+
+[ReplicationPrecision](SceneReplicationConfig.md#enum_SceneReplicationConfig_ReplicationPrecision) **PRECISION_HALF** = `1`
+
+Replicate the given property using half-precision (16-bit) floats to save bandwidth. Applies to [float](float.md), [Vector2](Vector2.md), [Vector3](Vector3.md), [Vector4](Vector4.md), [Quaternion](Quaternion.md) and [Color](Color.md); other types fall back to full precision. Reduces range and precision, so it is best suited to values that tolerate small errors (positions on modest maps, velocities, rotations, colors). Both peers must use the same configuration.<hr class="classref-section-separator"/>
 
 <!-- classref-descriptions-group -->
 
@@ -154,6 +182,16 @@ Finds the index of the given `path`.
 
 <hr class="classref-item-separator"/>
 
+<a id="SceneReplicationConfig_method_property_get_precision"></a>
+
+<!-- classref-method -->
+
+[ReplicationPrecision](SceneReplicationConfig.md#enum_SceneReplicationConfig_ReplicationPrecision) **property_get_precision**\ (\ path\: [NodePath](NodePath.md)\ ) [🔗](#SceneReplicationConfig_method_property_get_precision)
+
+Returns the wire precision used for the property identified by the given `path`. See [ReplicationPrecision](SceneReplicationConfig.md#enum_SceneReplicationConfig_ReplicationPrecision).
+
+<hr class="classref-item-separator"/>
+
 <a id="SceneReplicationConfig_method_property_get_replication_mode"></a>
 
 <!-- classref-method -->
@@ -195,6 +233,16 @@ Returns ``true`` if the property identified by the given `path` is configured to
 **Deprecated:** Use [property_get_replication_mode()](SceneReplicationConfig.md#SceneReplicationConfig_method_property_get_replication_mode) instead.
 
 Returns ``true`` if the property identified by the given `path` is configured to be reliably synchronized when changes are detected on process.
+
+<hr class="classref-item-separator"/>
+
+<a id="SceneReplicationConfig_method_property_set_precision"></a>
+
+<!-- classref-method -->
+
+`void` **property_set_precision**\ (\ path\: [NodePath](NodePath.md), precision\: [ReplicationPrecision](SceneReplicationConfig.md#enum_SceneReplicationConfig_ReplicationPrecision)\ ) [🔗](#SceneReplicationConfig_method_property_set_precision)
+
+Sets the wire precision used for the property identified by the given `path`. See [ReplicationPrecision](SceneReplicationConfig.md#enum_SceneReplicationConfig_ReplicationPrecision). Both peers must use the same configuration.
 
 <hr class="classref-item-separator"/>
 

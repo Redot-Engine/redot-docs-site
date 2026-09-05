@@ -61,6 +61,11 @@ A **Parallax2D** is used to create a parallax effect. It can move at a different
       <td>`Vector2(10000000, 10000000)`</td>
     </tr>
     <tr>
+      <td>[Vector2](Vector2.md)</td>
+      <td>[manual_scroll](#Parallax2D_property_manual_scroll)</td>
+      <td>`Vector2(0, 0)`</td>
+    </tr>
+    <tr>
       <td>[PhysicsInterpolationMode](Node.md#enum_Node_PhysicsInterpolationMode)</td>
       <td>physics_interpolation_mode</td>
       <td>`2` (overrides [Node.physics_interpolation_mode](Node.md#Node_property_physics_interpolation_mode))</td>
@@ -171,6 +176,21 @@ Top-left limits for scrolling to begin. If the camera is outside of this limit, 
 - [Vector2](Vector2.md) **get_limit_end**\ (\ )
 
 Bottom-right limits for scrolling to end. If the camera is outside of this limit, the **Parallax2D** will stop scrolling. Must be higher than [limit_begin](Parallax2D.md#Parallax2D_property_limit_begin) and the viewport size combined to work.
+
+<hr class="classref-item-separator"/>
+
+<a id="Parallax2D_property_manual_scroll"></a>
+
+<!-- classref-property -->
+
+[Vector2](Vector2.md) **manual_scroll** = `Vector2(0, 0)` [🔗](#Parallax2D_property_manual_scroll)
+
+<!-- classref-property-setget -->
+
+- `void` **set_manual_scroll**\ (\ value\: [Vector2](Vector2.md)\ )
+- [Vector2](Vector2.md) **get_manual_scroll**\ (\ )
+
+Manual scroll offset applied to this **Parallax2D**, in pixels. This property exposes programmatic infinite scroll behavior outside [autoscroll](Parallax2D.md#Parallax2D_property_autoscroll).
 
 <hr class="classref-item-separator"/>
 

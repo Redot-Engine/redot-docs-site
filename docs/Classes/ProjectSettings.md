@@ -17,7 +17,7 @@ Stores globally-accessible variables.
 
 ## Description
 
-Stores variables that can be accessed from everywhere. Use [get_setting()](ProjectSettings.md#ProjectSettings_method_get_setting), [set_setting()](ProjectSettings.md#ProjectSettings_method_set_setting) or [has_setting()](ProjectSettings.md#ProjectSettings_method_has_setting) to access them. Variables stored in ``project.Redot`` are also loaded into **ProjectSettings**, making this object very useful for reading custom game configuration options.
+Stores variables that can be accessed from everywhere. Use [get_setting()](ProjectSettings.md#ProjectSettings_method_get_setting), [set_setting()](ProjectSettings.md#ProjectSettings_method_set_setting) or [has_setting()](ProjectSettings.md#ProjectSettings_method_has_setting) to access them. Variables stored in ``project.godot`` are also loaded into **ProjectSettings**, making this object very useful for reading custom game configuration options.
 
 When naming a Project Settings property, use the full path to the setting including the category. For example, ``"application/config/name"`` for the project name. Category and property names can be viewed in the Project Settings dialog.
 
@@ -373,7 +373,7 @@ When naming a Project Settings property, use the full path to the setting includ
     <tr>
       <td>[String](String.md)</td>
       <td>[debug/file_logging/log_path](#ProjectSettings_property_debug/file_logging/log_path)</td>
-      <td>`"user://logs/Redot.log"`</td>
+      <td>`"user://logs/godot.log"`</td>
     </tr>
     <tr>
       <td>[int](int.md)</td>
@@ -434,6 +434,16 @@ When naming a Project Settings property, use the full path to the setting includ
       <td>[bool](bool.md)</td>
       <td>[debug/gdscript/warnings/exclude_addons](#ProjectSettings_property_debug/gdscript/warnings/exclude_addons)</td>
       <td>`true`</td>
+    </tr>
+    <tr>
+      <td>[int](int.md)</td>
+      <td>[debug/gdscript/warnings/experimental_struct](#ProjectSettings_property_debug/gdscript/warnings/experimental_struct)</td>
+      <td>`1`</td>
+    </tr>
+    <tr>
+      <td>[int](int.md)</td>
+      <td>[debug/gdscript/warnings/experimental_trait](#ProjectSettings_property_debug/gdscript/warnings/experimental_trait)</td>
+      <td>`1`</td>
     </tr>
     <tr>
       <td>[int](int.md)</td>
@@ -502,7 +512,7 @@ When naming a Project Settings property, use the full path to the setting includ
     </tr>
     <tr>
       <td>[bool](bool.md)</td>
-      <td>[debug/gdscript/warnings/renamed_in_Redot_4_hint](#ProjectSettings_property_debug/gdscript/warnings/renamed_in_Redot_4_hint)</td>
+      <td>[debug/gdscript/warnings/renamed_in_godot_4_hint](#ProjectSettings_property_debug/gdscript/warnings/renamed_in_godot_4_hint)</td>
       <td>`true`</td>
     </tr>
     <tr>
@@ -524,6 +534,16 @@ When naming a Project Settings property, use the full path to the setting includ
       <td>[int](int.md)</td>
       <td>[debug/gdscript/warnings/shadowed_variable_base_class](#ProjectSettings_property_debug/gdscript/warnings/shadowed_variable_base_class)</td>
       <td>`1`</td>
+    </tr>
+    <tr>
+      <td>[bool](bool.md)</td>
+      <td>[debug/gdscript/warnings/show_experimental_struct_warning](#ProjectSettings_property_debug/gdscript/warnings/show_experimental_struct_warning)</td>
+      <td>`true`</td>
+    </tr>
+    <tr>
+      <td>[bool](bool.md)</td>
+      <td>[debug/gdscript/warnings/show_experimental_trait_warning](#ProjectSettings_property_debug/gdscript/warnings/show_experimental_trait_warning)</td>
+      <td>`true`</td>
     </tr>
     <tr>
       <td>[int](int.md)</td>
@@ -577,6 +597,11 @@ When naming a Project Settings property, use the full path to the setting includ
     </tr>
     <tr>
       <td>[int](int.md)</td>
+      <td>[debug/gdscript/warnings/unsafe_nullable_access](#ProjectSettings_property_debug/gdscript/warnings/unsafe_nullable_access)</td>
+      <td>`1`</td>
+    </tr>
+    <tr>
+      <td>[int](int.md)</td>
       <td>[debug/gdscript/warnings/unsafe_property_access](#ProjectSettings_property_debug/gdscript/warnings/unsafe_property_access)</td>
       <td>`0`</td>
     </tr>
@@ -608,6 +633,11 @@ When naming a Project Settings property, use the full path to the setting includ
     <tr>
       <td>[int](int.md)</td>
       <td>[debug/gdscript/warnings/unused_signal](#ProjectSettings_property_debug/gdscript/warnings/unused_signal)</td>
+      <td>`1`</td>
+    </tr>
+    <tr>
+      <td>[int](int.md)</td>
+      <td>[debug/gdscript/warnings/unused_static_overriding_trait](#ProjectSettings_property_debug/gdscript/warnings/unused_static_overriding_trait)</td>
       <td>`1`</td>
     </tr>
     <tr>
@@ -1068,7 +1098,7 @@ When naming a Project Settings property, use the full path to the setting includ
     <tr>
       <td>[bool](bool.md)</td>
       <td>[display/window/energy_saving/keep_screen_on](#ProjectSettings_property_display/window/energy_saving/keep_screen_on)</td>
-      <td>`true`</td>
+      <td>`false`</td>
     </tr>
     <tr>
       <td>[bool](bool.md)</td>
@@ -4923,13 +4953,13 @@ See also [File paths in Redot projects](../tutorials/io/data_paths.md#accessing-
 
 [bool](bool.md) **application/config/use_hidden_project_data_directory** = `true` [🔗](#ProjectSettings_property_application/config/use_hidden_project_data_directory)
 
-If ``true``, the project will use a hidden directory (``.Redot``) for storing project-specific data (metadata, shader cache, etc.).
+If ``true``, the project will use a hidden directory (``.godot``) for storing project-specific data (metadata, shader cache, etc.).
 
-If ``false``, a non-hidden directory (``Redot``) will be used instead.
+If ``false``, a non-hidden directory (``godot``) will be used instead.
 
 \ **Note:** Restart the application after changing this setting.
 
-\ **Note:** Changing this value can help on platforms or with third-party tools where hidden directory patterns are disallowed. Only modify this setting if you know that your environment requires it, as changing the default can impact compatibility with some external tools or plugins which expect the default ``.Redot`` folder.
+\ **Note:** Changing this value can help on platforms or with third-party tools where hidden directory patterns are disallowed. Only modify this setting if you know that your environment requires it, as changing the default can impact compatibility with some external tools or plugins which expect the default ``.godot`` folder.
 
 <hr class="classref-item-separator"/>
 
@@ -5473,7 +5503,7 @@ Desktop override for [debug/file_logging/enable_file_logging](ProjectSettings.md
 
 <!-- classref-property -->
 
-[String](String.md) **debug/file_logging/log_path** = `"user://logs/Redot.log"` [🔗](#ProjectSettings_property_debug/file_logging/log_path)
+[String](String.md) **debug/file_logging/log_path** = `"user://logs/godot.log"` [🔗](#ProjectSettings_property_debug/file_logging/log_path)
 
 Path at which to store log files for the project. Using a path under ``user://`` is recommended.
 
@@ -5602,6 +5632,26 @@ When set to ``warn`` or ``error``, produces a warning or an error respectively w
 [bool](bool.md) **debug/gdscript/warnings/exclude_addons** = `true` [🔗](#ProjectSettings_property_debug/gdscript/warnings/exclude_addons)
 
 If ``true``, scripts in the ``res://addons`` folder will not generate warnings.
+
+<hr class="classref-item-separator"/>
+
+<a id="ProjectSettings_property_debug/gdscript/warnings/experimental_struct"></a>
+
+<!-- classref-property -->
+
+[int](int.md) **debug/gdscript/warnings/experimental_struct** = `1` [🔗](#ProjectSettings_property_debug/gdscript/warnings/experimental_struct)
+
+When set to ``warn`` or ``error``, produces a warning or an error respectively when a ``struct`` is declared. Structs are an experimental feature and their syntax and behavior may change in future releases.
+
+<hr class="classref-item-separator"/>
+
+<a id="ProjectSettings_property_debug/gdscript/warnings/experimental_trait"></a>
+
+<!-- classref-property -->
+
+[int](int.md) **debug/gdscript/warnings/experimental_trait** = `1` [🔗](#ProjectSettings_property_debug/gdscript/warnings/experimental_trait)
+
+When set to ``warn`` or ``error``, produces a warning or an error respectively when using traits, as they are still experimental and may be subject to changes in future releases.
 
 <hr class="classref-item-separator"/>
 
@@ -5737,13 +5787,13 @@ When set to ``warn`` or ``error``, produces a warning or an error respectively w
 
 <hr class="classref-item-separator"/>
 
-<a id="ProjectSettings_property_debug/gdscript/warnings/renamed_in_Redot_4_hint"></a>
+<a id="ProjectSettings_property_debug/gdscript/warnings/renamed_in_godot_4_hint"></a>
 
 <!-- classref-property -->
 
-[bool](bool.md) **debug/gdscript/warnings/renamed_in_Redot_4_hint** = `true` [🔗](#ProjectSettings_property_debug/gdscript/warnings/renamed_in_Redot_4_hint)
+[bool](bool.md) **debug/gdscript/warnings/renamed_in_godot_4_hint** = `true` [🔗](#ProjectSettings_property_debug/gdscript/warnings/renamed_in_godot_4_hint)
 
-When enabled, using a property, enum, or function that was renamed since Redot 3 will produce a hint if an error occurs.
+When enabled, using a property, enum, or function that was renamed since Godot 3 will produce a hint if an error occurs.
 
 <hr class="classref-item-separator"/>
 
@@ -5784,6 +5834,26 @@ When set to ``warn`` or ``error``, produces a warning or an error respectively w
 [int](int.md) **debug/gdscript/warnings/shadowed_variable_base_class** = `1` [🔗](#ProjectSettings_property_debug/gdscript/warnings/shadowed_variable_base_class)
 
 When set to ``warn`` or ``error``, produces a warning or an error respectively when a local variable or local constant shadows a member declared in a base class.
+
+<hr class="classref-item-separator"/>
+
+<a id="ProjectSettings_property_debug/gdscript/warnings/show_experimental_struct_warning"></a>
+
+<!-- classref-property -->
+
+[bool](bool.md) **debug/gdscript/warnings/show_experimental_struct_warning** = `true` [🔗](#ProjectSettings_property_debug/gdscript/warnings/show_experimental_struct_warning)
+
+When set to ``true``, the editor will generate warnings when using structs, as they are still experimental and may be subject to changes in future releases.
+
+<hr class="classref-item-separator"/>
+
+<a id="ProjectSettings_property_debug/gdscript/warnings/show_experimental_trait_warning"></a>
+
+<!-- classref-property -->
+
+[bool](bool.md) **debug/gdscript/warnings/show_experimental_trait_warning** = `true` [🔗](#ProjectSettings_property_debug/gdscript/warnings/show_experimental_trait_warning)
+
+When set to ``true``, the editor will generate warnings when using traits, as they are still experimental and may be subject to changes in future releases.
 
 <hr class="classref-item-separator"/>
 
@@ -5887,6 +5957,16 @@ When set to ``warn`` or ``error``, produces a warning or an error respectively w
 
 <hr class="classref-item-separator"/>
 
+<a id="ProjectSettings_property_debug/gdscript/warnings/unsafe_nullable_access"></a>
+
+<!-- classref-property -->
+
+[int](int.md) **debug/gdscript/warnings/unsafe_nullable_access** = `1` [🔗](#ProjectSettings_property_debug/gdscript/warnings/unsafe_nullable_access)
+
+When set to ``warn`` or ``error``, produces a warning or an error respectively when a value of a nullable type (e.g. ``int?``) is used where it may be ``null`` — such as in an operator, subscript, method or property access, or ``for`` loop, or when passed, returned, or assigned to a non-nullable type — without first checking it against ``null``.
+
+<hr class="classref-item-separator"/>
+
 <a id="ProjectSettings_property_debug/gdscript/warnings/unsafe_property_access"></a>
 
 <!-- classref-property -->
@@ -5956,6 +6036,16 @@ When set to ``warn`` or ``error``, produces a warning or an error respectively w
 [int](int.md) **debug/gdscript/warnings/unused_signal** = `1` [🔗](#ProjectSettings_property_debug/gdscript/warnings/unused_signal)
 
 When set to ``warn`` or ``error``, produces a warning or an error respectively when a signal is declared but never explicitly used in the class.
+
+<hr class="classref-item-separator"/>
+
+<a id="ProjectSettings_property_debug/gdscript/warnings/unused_static_overriding_trait"></a>
+
+<!-- classref-property -->
+
+[int](int.md) **debug/gdscript/warnings/unused_static_overriding_trait** = `1` [🔗](#ProjectSettings_property_debug/gdscript/warnings/unused_static_overriding_trait)
+
+When set to ``warn`` or ``error``, produces a warning or an error respectively when an overridden static member from a trait is not declared with the ``static`` keyword.
 
 <hr class="classref-item-separator"/>
 
@@ -6133,7 +6223,7 @@ When set to ``true``, produces a warning upon encountering certain formatting er
 
 [bool](bool.md) **debug/shader_language/warnings/magic_position_write** = `true` [🔗](#ProjectSettings_property_debug/shader_language/warnings/magic_position_write)
 
-When set to ``true``, produces a warning when the shader contains ``POSITION = vec4(vertex,`` as this was very common code written in Redot 4.2 and earlier that was paired with a QuadMesh to produce a full screen post processes pass. With the switch to reversed z in 4.3, this trick no longer works, as it implicitly relied on the ``VERTEX.z`` being 0.
+When set to ``true``, produces a warning when the shader contains ``POSITION = vec4(vertex,`` as this was very common code written in Godot 4.2 and earlier that was paired with a QuadMesh to produce a full screen post processes pass. With the switch to reversed z in 4.3, this trick no longer works, as it implicitly relied on the ``VERTEX.z`` being 0.
 
 <hr class="classref-item-separator"/>
 
@@ -6883,7 +6973,7 @@ If ``true``, allows HiDPI display on Windows, macOS, Android, iOS and Web. If ``
 
 <!-- classref-property -->
 
-[bool](bool.md) **display/window/energy_saving/keep_screen_on** = `true` [🔗](#ProjectSettings_property_display/window/energy_saving/keep_screen_on)
+[bool](bool.md) **display/window/energy_saving/keep_screen_on** = `false` [🔗](#ProjectSettings_property_display/window/energy_saving/keep_screen_on)
 
 If ``true``, keeps the screen on (even in case of inactivity), so the screensaver does not take over. Works on desktop and mobile platforms.
 
@@ -7310,9 +7400,9 @@ Number of times to attempt assembly reloading after rebuilding .NET assemblies. 
 
 [String](String.md) **dotnet/project/solution_directory** = `""` [🔗](#ProjectSettings_property_dotnet/project/solution_directory)
 
-Directory that contains the ``.sln`` file. By default, the ``.sln`` files is in the root of the project directory, next to the ``project.Redot`` and ``.csproj`` files.
+Directory that contains the ``.sln`` file. By default, the ``.sln`` files is in the root of the project directory, next to the ``project.godot`` and ``.csproj`` files.
 
-Changing this value allows setting up a multi-project scenario where there are multiple ``.csproj``. Keep in mind that the Redot project is considered one of the C# projects in the workspace and it's root directory should contain the ``project.Redot`` and ``.csproj`` next to each other.
+Changing this value allows setting up a multi-project scenario where there are multiple ``.csproj``. Keep in mind that the Redot project is considered one of the C# projects in the workspace and it's root directory should contain the ``project.godot`` and ``.csproj`` next to each other.
 
 <hr class="classref-item-separator"/>
 
@@ -7326,7 +7416,7 @@ If ``true``, text resource (``tres``) and text scene (``tscn``) files are conver
 
 \ **Note:** Because a resource's file extension may change in an exported project, it is heavily recommended to use [@GDScript.load()](@GDScript.md#@GDScript_method_load) or [ResourceLoader](ResourceLoader.md) instead of [FileAccess](FileAccess.md) to load resources dynamically.
 
-\ **Note:** The project settings file (``project.Redot``) will always be converted to binary on export, regardless of this setting.
+\ **Note:** The project settings file (``project.godot``) will always be converted to binary on export, regardless of this setting.
 
 <hr class="classref-item-separator"/>
 
@@ -11564,7 +11654,7 @@ Maximum size (in kiB) for the [WebRTCDataChannel](WebRTCDataChannel.md) input bu
 
 [String](String.md) **network/tls/certificate_bundle_override** = `""` [🔗](#ProjectSettings_property_network/tls/certificate_bundle_override)
 
-The CA certificates bundle to use for TLS connections. If this is set to a non-empty value, this will *override* Redot's default [Mozilla certificate bundle](https://github.com/redot-engine/Redot-engine/blob/master/thirdparty/certs/ca-certificates.crt). If left empty, the default certificate bundle will be used.
+The CA certificates bundle to use for TLS connections. If this is set to a non-empty value, this will *override* Redot's default [Mozilla certificate bundle](https://github.com/redot-engine/godot-engine/blob/master/thirdparty/certs/ca-certificates.crt). If left empty, the default certificate bundle will be used.
 
 If in doubt, leave this setting empty.
 
@@ -11684,9 +11774,9 @@ During each physics tick, Redot will multiply the linear velocity of RigidBodies
 
 Sets which physics engine to use for 2D physics.
 
-\ **DEFAULT** is currently equivalent to **RedotPhysics2D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** is currently equivalent to **GodotPhysics2D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
 
-\ **RedotPhysics2D** is Redot's internal 2D physics engine.
+\ **GodotPhysics2D** is Redot's internal 2D physics engine.
 
 \ **Dummy** is a 2D physics server that does nothing and returns only dummy values, effectively disabling all 2D physics functionality.
 
@@ -11900,11 +11990,11 @@ During each physics tick, Redot will multiply the linear velocity of RigidBodies
 
 Sets which physics engine to use for 3D physics.
 
-\ **DEFAULT** is currently equivalent to **RedotPhysics3D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** is currently equivalent to **GodotPhysics3D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
 
-\ **RedotPhysics3D** is Redot's internal 3D physics engine.
+\ **GodotPhysics3D** is Redot's internal 3D physics engine.
 
-\ **Jolt Physics** is an alternative physics engine that is generally faster and more reliable than **RedotPhysics3D**. As it was recently implemented, it is currently considered experimental and its behavior may change in future releases.
+\ **Jolt Physics** is an alternative physics engine that is generally faster and more reliable than **GodotPhysics3D**. As it was recently implemented, it is currently considered experimental and its behavior may change in future releases.
 
 \ **Dummy** is a 3D physics server that does nothing and returns only dummy values, effectively disabling all 3D physics functionality.
 
@@ -12132,7 +12222,7 @@ The amount of collision margin to use for certain convex collision shapes, such 
 
 Which of the two nodes bound by a joint should represent the world when one of the two is omitted, as either [Joint3D.node_a](Joint3D.md#Joint3D_property_node_a) or [Joint3D.node_b](Joint3D.md#Joint3D_property_node_b). This can be thought of as having the omitted node be a [StaticBody3D](StaticBody3D.md) at the joint's position. Joint limits are more easily expressed when [Joint3D.node_a](Joint3D.md#Joint3D_property_node_a) represents the world.
 
-\ **Note:** In Redot Physics, only [Joint3D.node_b](Joint3D.md#Joint3D_property_node_b) can represent the world.
+\ **Note:** In Godot Physics, only [Joint3D.node_b](Joint3D.md#Joint3D_property_node_b) can represent the world.
 
 <hr class="classref-item-separator"/>
 
@@ -14501,7 +14591,7 @@ If ``true``, the texture importer will import VRAM-compressed textures using the
 
 \ **Note:** This setting is an override. The texture importer will always import the format the host platform needs, even if this is set to ``false``.
 
-\ **Note:** Changing this setting does *not* impact textures that were already imported before. To make this setting apply to textures that were already imported, exit the editor, remove the ``.Redot/imported/`` folder located inside the project folder then restart the editor (see [application/config/use_hidden_project_data_directory](ProjectSettings.md#ProjectSettings_property_application/config/use_hidden_project_data_directory)).
+\ **Note:** Changing this setting does *not* impact textures that were already imported before. To make this setting apply to textures that were already imported, exit the editor, remove the ``.godot/imported/`` folder located inside the project folder then restart the editor (see [application/config/use_hidden_project_data_directory](ProjectSettings.md#ProjectSettings_property_application/config/use_hidden_project_data_directory)).
 
 <hr class="classref-item-separator"/>
 
@@ -14515,7 +14605,7 @@ If ``true``, the texture importer will import VRAM-compressed textures using the
 
 \ **Note:** This setting is an override. The texture importer will always import the format the host platform needs, even if this is set to ``false``.
 
-\ **Note:** Changing this setting does *not* impact textures that were already imported before. To make this setting apply to textures that were already imported, exit the editor, remove the ``.Redot/imported/`` folder located inside the project folder then restart the editor (see [application/config/use_hidden_project_data_directory](ProjectSettings.md#ProjectSettings_property_application/config/use_hidden_project_data_directory)).
+\ **Note:** Changing this setting does *not* impact textures that were already imported before. To make this setting apply to textures that were already imported, exit the editor, remove the ``.godot/imported/`` folder located inside the project folder then restart the editor (see [application/config/use_hidden_project_data_directory](ProjectSettings.md#ProjectSettings_property_application/config/use_hidden_project_data_directory)).
 
 <hr class="classref-item-separator"/>
 
@@ -15042,7 +15132,7 @@ Returns the absolute, native OS path corresponding to the localized `path` (star
 
 Returns ``true`` if a configuration value is present.
 
-\ **Note:** In order to be be detected, custom settings have to be either defined with [set_setting()](ProjectSettings.md#ProjectSettings_method_set_setting), or exist in the ``project.Redot`` file. This is especially relevant when using [set_initial_value()](ProjectSettings.md#ProjectSettings_method_set_initial_value).
+\ **Note:** In order to be be detected, custom settings have to be either defined with [set_setting()](ProjectSettings.md#ProjectSettings_method_set_setting), or exist in the ``project.godot`` file. This is especially relevant when using [set_initial_value()](ProjectSettings.md#ProjectSettings_method_set_initial_value).
 
 <hr class="classref-item-separator"/>
 
@@ -15078,7 +15168,7 @@ Returns the localized path (starting with ``res://``) corresponding to the absol
 
 [Error](@GlobalScope.md#enum_@GlobalScope_Error) **save**\ (\ ) [🔗](#ProjectSettings_method_save)
 
-Saves the configuration to the ``project.Redot`` file.
+Saves the configuration to the ``project.godot`` file.
 
 \ **Note:** This method is intended to be used by editor plugins, as modified **ProjectSettings** can't be loaded back in the running app. If you want to change project settings in exported projects, use [save_custom()](ProjectSettings.md#ProjectSettings_method_save_custom) to save ``override.cfg`` file.
 
@@ -15090,7 +15180,7 @@ Saves the configuration to the ``project.Redot`` file.
 
 [Error](@GlobalScope.md#enum_@GlobalScope_Error) **save_custom**\ (\ file\: [String](String.md)\ ) [🔗](#ProjectSettings_method_save_custom)
 
-Saves the configuration to a custom file. The file extension must be ``.Redot`` (to save in text-based [ConfigFile](ConfigFile.md) format) or ``.binary`` (to save in binary format). You can also save ``override.cfg`` file, which is also text, but can be used in exported projects unlike other formats.
+Saves the configuration to a custom file. The file extension must be ``.godot`` (to save in text-based [ConfigFile](ConfigFile.md) format) or ``.binary`` (to save in binary format). You can also save ``override.cfg`` file, which is also text, but can be used in exported projects unlike other formats.
 
 <hr class="classref-item-separator"/>
 

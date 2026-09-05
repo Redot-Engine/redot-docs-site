@@ -13,7 +13,7 @@
 
 **Inherits:** [Node](Node.md) **\<** [Object](Object.md)
 
-**Inherited By:** [AudioListener3D](AudioListener3D.md), [AudioStreamPlayer3D](AudioStreamPlayer3D.md), [BoneAttachment3D](BoneAttachment3D.md), [Camera3D](Camera3D.md), [CollisionObject3D](CollisionObject3D.md), [CollisionPolygon3D](CollisionPolygon3D.md), [CollisionShape3D](CollisionShape3D.md), [GridMap](GridMap.md), [ImporterMeshInstance3D](ImporterMeshInstance3D.md), [Joint3D](Joint3D.md), [LightmapProbe](LightmapProbe.md), [Marker3D](Marker3D.md), [NavigationLink3D](NavigationLink3D.md), [NavigationObstacle3D](NavigationObstacle3D.md), [NavigationRegion3D](NavigationRegion3D.md), [OpenXRCompositionLayer](OpenXRCompositionLayer.md), [OpenXRHand](OpenXRHand.md), [OpenXRRenderModel](OpenXRRenderModel.md), [OpenXRRenderModelManager](OpenXRRenderModelManager.md), [Path3D](Path3D.md), [PathFollow3D](PathFollow3D.md), [RayCast3D](RayCast3D.md), [RemoteTransform3D](RemoteTransform3D.md), [ShapeCast3D](ShapeCast3D.md), [Skeleton3D](Skeleton3D.md), [SkeletonModifier3D](SkeletonModifier3D.md), [SpringArm3D](SpringArm3D.md), [SpringBoneCollision3D](SpringBoneCollision3D.md), [VehicleWheel3D](VehicleWheel3D.md), [VisualInstance3D](VisualInstance3D.md), [XRFaceModifier3D](XRFaceModifier3D.md), [XRNode3D](XRNode3D.md), [XROrigin3D](XROrigin3D.md)
+**Inherited By:** [AudioListener3D](AudioListener3D.md), [AudioStreamPlayer3D](AudioStreamPlayer3D.md), [BoneAttachment3D](BoneAttachment3D.md), [Camera3D](Camera3D.md), [CollisionObject3D](CollisionObject3D.md), [CollisionPolygon3D](CollisionPolygon3D.md), [CollisionShape3D](CollisionShape3D.md), [GridMap](GridMap.md), [ImporterMeshInstance3D](ImporterMeshInstance3D.md), [Joint3D](Joint3D.md), [LightmapProbe](LightmapProbe.md), [Marker3D](Marker3D.md), [NavigationLink3D](NavigationLink3D.md), [NavigationObstacle3D](NavigationObstacle3D.md), [NavigationRegion3D](NavigationRegion3D.md), [OpenXRCompositionLayer](OpenXRCompositionLayer.md), [OpenXRHand](OpenXRHand.md), [OpenXRRenderModel](OpenXRRenderModel.md), [OpenXRRenderModelManager](OpenXRRenderModelManager.md), [Path3D](Path3D.md), [PathFollow3D](PathFollow3D.md), [RayCast3D](RayCast3D.md), [RemoteTransform3D](RemoteTransform3D.md), [ShapeCast3D](ShapeCast3D.md), [Skeleton3D](Skeleton3D.md), [SkeletonModifier3D](SkeletonModifier3D.md), [SpringArm3D](SpringArm3D.md), [SpringBoneCollision3D](SpringBoneCollision3D.md), [VehicleWheel3D](VehicleWheel3D.md), [VisualInstance3D](VisualInstance3D.md), [WorldScape3D](WorldScape3D.md), [XRFaceModifier3D](XRFaceModifier3D.md), [XRNode3D](XRNode3D.md), [XROrigin3D](XROrigin3D.md)
 
 Base object in 3D space, inherited by all 3D nodes.
 
@@ -27,7 +27,7 @@ Affine operations (translation, rotation, scale) are calculated in the coordinat
 
 \ **Note:** Unless otherwise specified, all methods that need angle parameters must receive angles in *radians*. To convert degrees to radians, use [@GlobalScope.deg_to_rad()](@GlobalScope.md#@GlobalScope_method_deg_to_rad).
 
-\ **Note:** In Redot 3 and older, **Node3D** was named *Spatial*.
+\ **Note:** In Godot 3 and older, **Node3D** was named *Spatial*.
 
 <!-- classref-introduction-group -->
 

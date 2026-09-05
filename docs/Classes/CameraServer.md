@@ -21,7 +21,7 @@ The **CameraServer** keeps track of different cameras accessible in Redot. These
 
 It is notably used to provide AR modules with a video feed from the camera.
 
-\ **Note:** This class is currently only implemented on Linux, Android, macOS, and iOS. On other platforms no [CameraFeed](CameraFeed.md)\\ s will be available. To get a [CameraFeed](CameraFeed.md) on iOS, the camera plugin from [Redot-ios-plugins](https://github.com/redot-engine/redot-ios-plugins) is required.
+\ **Note:** This class is currently only implemented on Linux, Android, macOS, and iOS. On other platforms no [CameraFeed](CameraFeed.md)\\ s will be available. To get a [CameraFeed](CameraFeed.md) on iOS, the camera plugin from [godot-ios-plugins](https://github.com/godotengine/godot-ios-plugins) is required.
 
 <!-- classref-reftable-group -->
 

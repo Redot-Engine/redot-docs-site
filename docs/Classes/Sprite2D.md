@@ -11,6 +11,8 @@
 
 **Inherits:** [Node2D](Node2D.md) **\<** [CanvasItem](CanvasItem.md) **\<** [Node](Node.md) **\<** [Object](Object.md)
 
+**Inherited By:** [Mode7Sprite2D](Mode7Sprite2D.md)
+
 General-purpose sprite node.
 
 <!-- classref-introduction-group -->

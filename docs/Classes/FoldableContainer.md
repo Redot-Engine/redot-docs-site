@@ -288,7 +288,7 @@ The [FoldableGroup](FoldableGroup.md) associated with the container. When multip
 - `void` **set_folded**\ (\ value\: [bool](bool.md)\ )
 - [bool](bool.md) **is_folded**\ (\ )
 
-If ``true``, the container will becomes folded and will hide all its children.
+If ``true``, the container will become folded and will hide all its children.
 
 <hr class="classref-item-separator"/>
 
